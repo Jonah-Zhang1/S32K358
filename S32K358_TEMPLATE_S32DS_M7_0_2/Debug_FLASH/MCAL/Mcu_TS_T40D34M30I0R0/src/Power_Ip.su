@@ -1,0 +1,9 @@
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip.c:331:13:Power_Ip_PrepareSocStandby	8	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip.c:378:6:Power_Ip_SetMode	16	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip.c:481:24:Power_Ip_GetPreviousMode	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip.c:530:20:Power_Ip_GetResetReason	8	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip.c:586:23:Power_Ip_GetResetRawValue	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip.c:606:6:Power_Ip_Init	8	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip.c:689:6:Power_Ip_InstallNotificationsCallback	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip.c:706:6:Power_Ip_EnableSleepOnExit	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip.c:719:6:Power_Ip_DisableSleepOnExit	0	static

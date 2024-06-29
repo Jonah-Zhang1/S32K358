@@ -1,0 +1,5 @@
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/BaseNXP_TS_T40D34M30I0R0/src/OsIf_Timer_System.c:292:6:OsIf_Timer_System_Init	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/BaseNXP_TS_T40D34M30I0R0/src/OsIf_Timer_System.c:337:8:OsIf_Timer_System_GetCounter	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/BaseNXP_TS_T40D34M30I0R0/src/OsIf_Timer_System.c:391:8:OsIf_Timer_System_GetElapsed	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/BaseNXP_TS_T40D34M30I0R0/src/OsIf_Timer_System.c:447:6:OsIf_Timer_System_SetTimerFrequency	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/BaseNXP_TS_T40D34M30I0R0/src/OsIf_Timer_System.c:494:8:OsIf_Timer_System_MicrosToTicks	8	static

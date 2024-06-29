@@ -1,0 +1,841 @@
+Trivially needed symbols: Platform_InstallIrqHandler/16 Platform_GetIrqPriority/15 Platform_SetIrqPriority/14 Platform_SetIrq/13 Platform_Init/12
+
+
+Initial Symbol table:
+
+IntCtrl_Ip_InstallHandler/23 (IntCtrl_Ip_InstallHandler) @075e32a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InstallIrqHandler/11 
+  Calls: 
+IntCtrl_Ip_GetPriority/22 (IntCtrl_Ip_GetPriority) @075e3000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_GetIrqPriority/10 
+  Calls: 
+IntCtrl_Ip_SetPriority/21 (IntCtrl_Ip_SetPriority) @075e0e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrqPriority/9 
+  Calls: 
+IntCtrl_Ip_DisableIrq/20 (IntCtrl_Ip_DisableIrq) @075e0b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 
+  Calls: 
+IntCtrl_Ip_EnableIrq/19 (IntCtrl_Ip_EnableIrq) @075e0a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 
+  Calls: 
+Platform_Ipw_Init/18 (Platform_Ipw_Init) @075e07e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Init/12 
+  Calls: 
+Platform_Config/17 (Platform_Config) @06caad80
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Platform_Init/12 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Platform_InstallIrqHandler/16 (Platform_InstallIrqHandler) @075e01c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_InstallIrqHandler/11 
+Platform_GetIrqPriority/15 (Platform_GetIrqPriority) @06cadee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @075e01c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_GetIrqPriority/10 
+Platform_SetIrqPriority/14 (Platform_SetIrqPriority) @06cad9a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06cadee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrqPriority/9 
+Platform_SetIrq/13 (Platform_SetIrq) @06cade00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06cad9a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrq/8 
+Platform_Init/12 (Platform_Init) @06cadb60
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06cade00
+  References: Platform_Config/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_Init/18 
+Platform_Ipw_InstallIrqHandler/11 (Platform_Ipw_InstallIrqHandler) @06ca8700
+  Type: function definition analyzed
+  Visibility:
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_InstallIrqHandler/16 
+  Calls: IntCtrl_Ip_InstallHandler/23 
+Platform_Ipw_GetIrqPriority/10 (Platform_Ipw_GetIrqPriority) @06ca8460
+  Type: function definition analyzed
+  Visibility:
+  Aux: @075e01c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_GetIrqPriority/15 
+  Calls: IntCtrl_Ip_GetPriority/22 
+Platform_Ipw_SetIrqPriority/9 (Platform_Ipw_SetIrqPriority) @06ca81c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06cadee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_SetIrqPriority/14 
+  Calls: IntCtrl_Ip_SetPriority/21 
+Platform_Ipw_SetIrq/8 (Platform_Ipw_SetIrq) @06ca1b60
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06cad9a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_SetIrq/13 
+  Calls: IntCtrl_Ip_DisableIrq/20 IntCtrl_Ip_EnableIrq/19 
+Intm_Ip_GetStatus/7 (Intm_Ip_GetStatus) @06ca17e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Intm_Ip_ResetTimer/6 (Intm_Ip_ResetTimer) @06ca1540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Intm_Ip_SetLatency/5 (Intm_Ip_SetLatency) @06ca12a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Intm_Ip_SelectMonitoredIrq/4 (Intm_Ip_SelectMonitoredIrq) @06ca1000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Intm_Ip_AckIrq/3 (Intm_Ip_AckIrq) @07597d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Intm_Ip_DisableMonitor/2 (Intm_Ip_DisableMonitor) @07597a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Intm_Ip_EnableMonitor/1 (Intm_Ip_EnableMonitor) @075977e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+DevAssert/0 (DevAssert) @07529a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols: Intm_Ip_GetStatus/7 Intm_Ip_ResetTimer/6 Intm_Ip_SetLatency/5 Intm_Ip_SelectMonitoredIrq/4 Intm_Ip_AckIrq/3 Intm_Ip_DisableMonitor/2 Intm_Ip_EnableMonitor/1 DevAssert/0
+
+Reclaimed Symbol table:
+
+IntCtrl_Ip_InstallHandler/23 (IntCtrl_Ip_InstallHandler) @075e32a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InstallIrqHandler/11 
+  Calls: 
+IntCtrl_Ip_GetPriority/22 (IntCtrl_Ip_GetPriority) @075e3000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_GetIrqPriority/10 
+  Calls: 
+IntCtrl_Ip_SetPriority/21 (IntCtrl_Ip_SetPriority) @075e0e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrqPriority/9 
+  Calls: 
+IntCtrl_Ip_DisableIrq/20 (IntCtrl_Ip_DisableIrq) @075e0b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 
+  Calls: 
+IntCtrl_Ip_EnableIrq/19 (IntCtrl_Ip_EnableIrq) @075e0a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 
+  Calls: 
+Platform_Ipw_Init/18 (Platform_Ipw_Init) @075e07e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Init/12 
+  Calls: 
+Platform_Config/17 (Platform_Config) @06caad80
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Platform_Init/12 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Platform_InstallIrqHandler/16 (Platform_InstallIrqHandler) @075e01c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_InstallIrqHandler/11 
+Platform_GetIrqPriority/15 (Platform_GetIrqPriority) @06cadee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_GetIrqPriority/10 
+Platform_SetIrqPriority/14 (Platform_SetIrqPriority) @06cad9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrqPriority/9 
+Platform_SetIrq/13 (Platform_SetIrq) @06cade00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrq/8 
+Platform_Init/12 (Platform_Init) @06cadb60
+  Type: function definition analyzed
+  Visibility: public
+  References: Platform_Config/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_Init/18 
+Platform_Ipw_InstallIrqHandler/11 (Platform_Ipw_InstallIrqHandler) @06ca8700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_InstallIrqHandler/16 
+  Calls: IntCtrl_Ip_InstallHandler/23 
+Platform_Ipw_GetIrqPriority/10 (Platform_Ipw_GetIrqPriority) @06ca8460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_GetIrqPriority/15 
+  Calls: IntCtrl_Ip_GetPriority/22 
+Platform_Ipw_SetIrqPriority/9 (Platform_Ipw_SetIrqPriority) @06ca81c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_SetIrqPriority/14 
+  Calls: IntCtrl_Ip_SetPriority/21 
+Platform_Ipw_SetIrq/8 (Platform_Ipw_SetIrq) @06ca1b60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_SetIrq/13 
+  Calls: IntCtrl_Ip_DisableIrq/20 IntCtrl_Ip_EnableIrq/19 
+
+
+Initial Symbol table:
+
+IntCtrl_Ip_InstallHandler/23 (IntCtrl_Ip_InstallHandler) @075e32a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InstallIrqHandler/11 
+  Calls: 
+IntCtrl_Ip_GetPriority/22 (IntCtrl_Ip_GetPriority) @075e3000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_GetIrqPriority/10 
+  Calls: 
+IntCtrl_Ip_SetPriority/21 (IntCtrl_Ip_SetPriority) @075e0e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrqPriority/9 
+  Calls: 
+IntCtrl_Ip_DisableIrq/20 (IntCtrl_Ip_DisableIrq) @075e0b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 
+  Calls: 
+IntCtrl_Ip_EnableIrq/19 (IntCtrl_Ip_EnableIrq) @075e0a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 
+  Calls: 
+Platform_Ipw_Init/18 (Platform_Ipw_Init) @075e07e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Init/12 
+  Calls: 
+Platform_Config/17 (Platform_Config) @06caad80
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Platform_Init/12 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Platform_InstallIrqHandler/16 (Platform_InstallIrqHandler) @075e01c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_InstallIrqHandler/11 
+Platform_GetIrqPriority/15 (Platform_GetIrqPriority) @06cadee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_GetIrqPriority/10 
+Platform_SetIrqPriority/14 (Platform_SetIrqPriority) @06cad9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrqPriority/9 
+Platform_SetIrq/13 (Platform_SetIrq) @06cade00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrq/8 
+Platform_Init/12 (Platform_Init) @06cadb60
+  Type: function definition analyzed
+  Visibility: public
+  References: Platform_Config/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_Init/18 
+Platform_Ipw_InstallIrqHandler/11 (Platform_Ipw_InstallIrqHandler) @06ca8700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_InstallIrqHandler/16 
+  Calls: IntCtrl_Ip_InstallHandler/23 
+Platform_Ipw_GetIrqPriority/10 (Platform_Ipw_GetIrqPriority) @06ca8460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_GetIrqPriority/15 
+  Calls: IntCtrl_Ip_GetPriority/22 
+Platform_Ipw_SetIrqPriority/9 (Platform_Ipw_SetIrqPriority) @06ca81c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_SetIrqPriority/14 
+  Calls: IntCtrl_Ip_SetPriority/21 
+Platform_Ipw_SetIrq/8 (Platform_Ipw_SetIrq) @06ca1b60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_SetIrq/13 
+  Calls: IntCtrl_Ip_DisableIrq/20 IntCtrl_Ip_EnableIrq/19 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+IntCtrl_Ip_InstallHandler/23 (IntCtrl_Ip_InstallHandler) @075e32a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_InstallIrqHandler/11 
+  Calls: 
+IntCtrl_Ip_GetPriority/22 (IntCtrl_Ip_GetPriority) @075e3000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_GetIrqPriority/10 
+  Calls: 
+IntCtrl_Ip_SetPriority/21 (IntCtrl_Ip_SetPriority) @075e0e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrqPriority/9 
+  Calls: 
+IntCtrl_Ip_DisableIrq/20 (IntCtrl_Ip_DisableIrq) @075e0b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 
+  Calls: 
+IntCtrl_Ip_EnableIrq/19 (IntCtrl_Ip_EnableIrq) @075e0a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 
+  Calls: 
+Platform_Ipw_Init/18 (Platform_Ipw_Init) @075e07e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Platform_Init/12 
+  Calls: 
+Platform_Config/17 (Platform_Config) @06caad80
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Platform_Init/12 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Platform_InstallIrqHandler/16 (Platform_InstallIrqHandler) @075e01c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_InstallIrqHandler/11 
+Platform_GetIrqPriority/15 (Platform_GetIrqPriority) @06cadee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_GetIrqPriority/10 
+Platform_SetIrqPriority/14 (Platform_SetIrqPriority) @06cad9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrqPriority/9 
+Platform_SetIrq/13 (Platform_SetIrq) @06cade00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrq/8 
+Platform_Init/12 (Platform_Init) @06cadb60
+  Type: function definition analyzed
+  Visibility: public
+  References: Platform_Config/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_Init/18 
+Platform_Ipw_InstallIrqHandler/11 (Platform_Ipw_InstallIrqHandler) @06ca8700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_InstallIrqHandler/16 
+  Calls: IntCtrl_Ip_InstallHandler/23 
+Platform_Ipw_GetIrqPriority/10 (Platform_Ipw_GetIrqPriority) @06ca8460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_GetIrqPriority/15 
+  Calls: IntCtrl_Ip_GetPriority/22 
+Platform_Ipw_SetIrqPriority/9 (Platform_Ipw_SetIrqPriority) @06ca81c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_SetIrqPriority/14 
+  Calls: IntCtrl_Ip_SetPriority/21 
+Platform_Ipw_SetIrq/8 (Platform_Ipw_SetIrq) @06ca1b60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Platform_SetIrq/13 
+  Calls: IntCtrl_Ip_DisableIrq/20 IntCtrl_Ip_EnableIrq/19 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+IntCtrl_Ip_InstallHandler/23 (IntCtrl_Ip_InstallHandler) @075e32a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_InstallIrqHandler/16 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_GetPriority/22 (IntCtrl_Ip_GetPriority) @075e3000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_GetIrqPriority/15 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_SetPriority/21 (IntCtrl_Ip_SetPriority) @075e0e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_SetIrqPriority/14 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_DisableIrq/20 (IntCtrl_Ip_DisableIrq) @075e0b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 (536870913 (estimated locally),0.50 per call) 
+  Calls: 
+IntCtrl_Ip_EnableIrq/19 (IntCtrl_Ip_EnableIrq) @075e0a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 (536870913 (estimated locally),0.50 per call) 
+  Calls: 
+Platform_Ipw_Init/18 (Platform_Ipw_Init) @075e07e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Init/12 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Platform_Config/17 (Platform_Config) @06caad80
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Platform_Init/12 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Platform_InstallIrqHandler/16 (Platform_InstallIrqHandler) @075e01c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_InstallHandler/23 (1073741824 (estimated locally),1.00 per call) 
+Platform_GetIrqPriority/15 (Platform_GetIrqPriority) @06cadee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_GetPriority/22 (1073741824 (estimated locally),1.00 per call) 
+Platform_SetIrqPriority/14 (Platform_SetIrqPriority) @06cad9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_SetPriority/21 (1073741824 (estimated locally),1.00 per call) 
+Platform_SetIrq/13 (Platform_SetIrq) @06cade00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrq/8 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Platform_Init/12 (Platform_Init) @06cadb60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Platform_Config/17 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_Init/18 (1073741824 (estimated locally),1.00 per call) 
+Platform_Ipw_SetIrq/8 (Platform_Ipw_SetIrq) @06ca1b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Platform_Ipw_SetIrq/8 is inline copy in Platform_SetIrq/13
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Platform_SetIrq/13 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: IntCtrl_Ip_DisableIrq/20 (536870913 (estimated locally),0.50 per call) IntCtrl_Ip_EnableIrq/19 (536870913 (estimated locally),0.50 per call) 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+IntCtrl_Ip_InstallHandler/23 (IntCtrl_Ip_InstallHandler) @075e32a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+IntCtrl_Ip_GetPriority/22 (IntCtrl_Ip_GetPriority) @075e3000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+IntCtrl_Ip_SetPriority/21 (IntCtrl_Ip_SetPriority) @075e0e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+IntCtrl_Ip_DisableIrq/20 (IntCtrl_Ip_DisableIrq) @075e0b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+IntCtrl_Ip_EnableIrq/19 (IntCtrl_Ip_EnableIrq) @075e0a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Platform_Ipw_Init/18 (Platform_Ipw_Init) @075e07e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Platform_Config/17 (Platform_Config) @06caad80
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Platform_InstallIrqHandler/16 (Platform_InstallIrqHandler) @075e01c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Platform_InstallIrqHandler (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Platform_GetIrqPriority/15 (Platform_GetIrqPriority) @06cadee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Platform_GetIrqPriority (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Platform_SetIrqPriority/14 (Platform_SetIrqPriority) @06cad9a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Platform_SetIrqPriority (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Platform_SetIrq/13 (Platform_SetIrq) @06cade00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Platform_SetIrq (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Platform_Init/12 (Platform_Init) @06cadb60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Platform_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 

@@ -1,0 +1,1228 @@
+
+Analyzing function: IntCtrl_Ip_GenerateDirectedCpuInterrupt/19
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_GenerateDirectedCpuInterrupt/19
+
+IPA function summary for IntCtrl_Ip_GenerateDirectedCpuInterrupt/19 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged/9 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+
+Analyzing function: IntCtrl_Ip_GetDirectedCpuInterrupt/18
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_GetDirectedCpuInterrupt/18
+
+IPA function summary for IntCtrl_Ip_GetDirectedCpuInterrupt/18 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_GetDirectedCpuInterruptPrivileged/8 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+
+Analyzing function: IntCtrl_Ip_ClearDirectedCpuInterrupt/17
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_ClearDirectedCpuInterrupt/17
+
+IPA function summary for IntCtrl_Ip_ClearDirectedCpuInterrupt/17 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged/7 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: IntCtrl_Ip_ClearPending/16
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_ClearPending/16
+
+IPA function summary for IntCtrl_Ip_ClearPending/16 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_ClearPendingPrivileged/6 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: IntCtrl_Ip_GetPriority/15
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_GetPriority/15
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_GetPriority/15 inlinable
+  global time:     5.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_SetPriority/14
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_SetPriority/14
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_SetPriority/14 inlinable
+  global time:     5.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op1 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_DisableIrq/13
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_DisableIrq/13
+
+IPA function summary for IntCtrl_Ip_DisableIrq/13 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_DisableIrqPrivileged/3 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: IntCtrl_Ip_EnableIrq/12
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_EnableIrq/12
+
+IPA function summary for IntCtrl_Ip_EnableIrq/12 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_EnableIrqPrivileged/2 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: IntCtrl_Ip_InstallHandler/11
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_InstallHandler/11
+
+IPA function summary for IntCtrl_Ip_InstallHandler/11 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_InstallHandlerPrivileged/1 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 4 time: 13
+
+
+Analyzing function: IntCtrl_Ip_Init/10
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8
+;;
+;; Loop 1
+;;  header 7, latch 6
+;;  depth 1, outer 0
+;;  nodes: 7 6 4 5 3
+;; 2 succs { 7 }
+;; 3 succs { 4 5 }
+;; 4 succs { 6 }
+;; 5 succs { 6 }
+;; 6 succs { 7 }
+;; 7 succs { 3 8 }
+;; 8 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_Init/10
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_Init/10 inlinable
+  global time:     466.181822
+  self size:       36
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:21.000000, time:164.318183
+    size:5.000000, time:18.681818,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_DisableIrqPrivileged/3 function not considered for inlining
+      freq:4.05 loop depth: 1 size: 2 time: 11
+    IntCtrl_Ip_EnableIrqPrivileged/2 function not considered for inlining
+      freq:4.05 loop depth: 1 size: 2 time: 11
+    IntCtrl_Ip_InstallHandlerPrivileged/1 function not considered for inlining
+      freq:8.09 loop depth: 1 size: 4 time: 13
+       op2 is compile time invariant
+    IntCtrl_Ip_ClearPendingPrivileged/6 function not considered for inlining
+      freq:8.09 loop depth: 1 size: 2 time: 11
+
+
+Analyzing function: IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged/9
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 12 3 4 5 6 7 8 9 10 11
+;;
+;; Loop 1
+;;  header 6, latch 5
+;;  depth 1, outer 0
+;;  nodes: 6 5 3 4
+;; 2 succs { 12 7 }
+;; 12 succs { 6 }
+;; 3 succs { 4 5 }
+;; 4 succs { 5 }
+;; 5 succs { 6 }
+;; 6 succs { 3 11 }
+;; 7 succs { 8 9 }
+;; 8 succs { 10 }
+;; 9 succs { 10 }
+;; 10 succs { 11 }
+;; 11 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged/9
+		Accounting address calculation.
+		Accounting address calculation.
+		Accounting address calculation.
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged/9 inlinable
+  global time:     17.588400
+  self size:       22
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+    size:2.000000, time:1.320000,  executed if:(op1 != -1),  nonconst if:(op1 changed) && (op1 != -1)
+    size:2.000000, time:0.448800,  executed if:(op1 == -2) && (op1 != -1)
+    size:2.000000, time:1.320000,  executed if:(op1 != -1)
+    size:1.000000, time:0.660000,  executed if:(op1 != -1),  nonconst if:(op0 changed) && (op1 != -1)
+    size:9.000000, time:9.166400,  executed if:(op1 == -1)
+    size:1.000000, time:0.673200,  executed if:(op1 == -1),  nonconst if:(op0 changed) && (op1 == -1)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_GetDirectedCpuInterruptPrivileged/8
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_GetDirectedCpuInterruptPrivileged/8
+		Accounting address calculation.
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_GetDirectedCpuInterruptPrivileged/8 inlinable
+  global time:     8.000000
+  self size:       9
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged/7
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged/7
+		Accounting address calculation.
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged/7 inlinable
+  global time:     7.000000
+  self size:       8
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:4.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_ClearPendingPrivileged/6
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_ClearPendingPrivileged/6
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_ClearPendingPrivileged/6 inlinable
+  global time:     7.000000
+  self size:       8
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:4.000000, time:4.000000,  nonconst if:(op0 changed)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_GetPriorityPrivileged/5
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_GetPriorityPrivileged/5
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_GetPriorityPrivileged/5 inlinable
+  global time:     5.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_SetPriorityPrivileged/4
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_SetPriorityPrivileged/4
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_SetPriorityPrivileged/4 inlinable
+  global time:     5.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op1 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_DisableIrqPrivileged/3
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_DisableIrqPrivileged/3
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_DisableIrqPrivileged/3 inlinable
+  global time:     7.000000
+  self size:       8
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:4.000000, time:4.000000,  nonconst if:(op0 changed)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_EnableIrqPrivileged/2
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_EnableIrqPrivileged/2
+		Accounting address calculation.
+
+IPA function summary for IntCtrl_Ip_EnableIrqPrivileged/2 inlinable
+  global time:     7.000000
+  self size:       8
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:4.000000, time:4.000000,  nonconst if:(op0 changed)
+  calls:
+
+
+Analyzing function: IntCtrl_Ip_InstallHandlerPrivileged/1
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 1 }
+
+Analyzing function body size: IntCtrl_Ip_InstallHandlerPrivileged/1
+
+IPA function summary for IntCtrl_Ip_InstallHandlerPrivileged/1 inlinable
+  global time:     14.500000
+  self size:       17
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op2 changed)
+    size:2.000000, time:1.400000,  executed if:(op2 != 0B),  nonconst if:(op0 changed) && (op2 != 0B)
+    size:2.500000, time:1.750000,  executed if:(op2 != 0B)
+    size:0.500000, time:0.350000,  executed if:(op2 != 0B) && (not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+  calls:
+
+Symbol table:
+
+IntCtrl_Ip_GenerateDirectedCpuInterrupt/19 (IntCtrl_Ip_GenerateDirectedCpuInterrupt) @06d067e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged/9 (1073741824 (estimated locally),1.00 per call) 
+IntCtrl_Ip_GetDirectedCpuInterrupt/18 (IntCtrl_Ip_GetDirectedCpuInterrupt) @06d06540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_GetDirectedCpuInterruptPrivileged/8 (1073741824 (estimated locally),1.00 per call) 
+IntCtrl_Ip_ClearDirectedCpuInterrupt/17 (IntCtrl_Ip_ClearDirectedCpuInterrupt) @06d062a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged/7 (1073741824 (estimated locally),1.00 per call) 
+IntCtrl_Ip_ClearPending/16 (IntCtrl_Ip_ClearPending) @06d06000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_ClearPendingPrivileged/6 (1073741824 (estimated locally),1.00 per call) 
+IntCtrl_Ip_GetPriority/15 (IntCtrl_Ip_GetPriority) @06cfeb60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: IntCtrl_Ip_GetPriorityPrivileged/5 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_SetPriority/14 (IntCtrl_Ip_SetPriority) @06cfe540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: IntCtrl_Ip_SetPriorityPrivileged/4 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_DisableIrq/13 (IntCtrl_Ip_DisableIrq) @06cfe000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_DisableIrqPrivileged/3 (1073741824 (estimated locally),1.00 per call) 
+IntCtrl_Ip_EnableIrq/12 (IntCtrl_Ip_EnableIrq) @06cfed20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_EnableIrqPrivileged/2 (1073741824 (estimated locally),1.00 per call) 
+IntCtrl_Ip_InstallHandler/11 (IntCtrl_Ip_InstallHandler) @06cfea80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_InstallHandlerPrivileged/1 (1073741824 (estimated locally),1.00 per call) 
+IntCtrl_Ip_Init/10 (IntCtrl_Ip_Init) @06cfe700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_DisableIrqPrivileged/3 (477815112 (estimated locally),4.05 per call) IntCtrl_Ip_EnableIrqPrivileged/2 (477815112 (estimated locally),4.05 per call) IntCtrl_Ip_InstallHandlerPrivileged/1 (955630225 (estimated locally),8.09 per call) IntCtrl_Ip_ClearPendingPrivileged/6 (955630225 (estimated locally),8.09 per call) 
+IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged/9 (IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged) @06cfe460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:789516040 (estimated locally) body optimize_size
+  Called by: IntCtrl_Ip_GenerateDirectedCpuInterrupt/19 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_GetDirectedCpuInterruptPrivileged/8 (IntCtrl_Ip_GetDirectedCpuInterruptPrivileged) @06cfe1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: IntCtrl_Ip_GetDirectedCpuInterrupt/18 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged/7 (IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged) @06cf8e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: IntCtrl_Ip_ClearDirectedCpuInterrupt/17 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_ClearPendingPrivileged/6 (IntCtrl_Ip_ClearPendingPrivileged) @06cf88c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: IntCtrl_Ip_Init/10 (955630225 (estimated locally),8.09 per call) IntCtrl_Ip_ClearPending/16 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_GetPriorityPrivileged/5 (IntCtrl_Ip_GetPriorityPrivileged) @06cf8380
+  Type: function definition analyzed
+  Visibility: externally_visible public section:.text.IntCtrl_Ip_GetPriorityPrivileged (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_GetPriority/15 (1073741824 (estimated locally),1.00 per call) 
+IntCtrl_Ip_SetPriorityPrivileged/4 (IntCtrl_Ip_SetPriorityPrivileged) @06cf8d20
+  Type: function definition analyzed
+  Visibility: externally_visible public section:.text.IntCtrl_Ip_SetPriorityPrivileged (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_SetPriority/14 (1073741824 (estimated locally),1.00 per call) 
+IntCtrl_Ip_DisableIrqPrivileged/3 (IntCtrl_Ip_DisableIrqPrivileged) @06cf8a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: IntCtrl_Ip_Init/10 (477815112 (estimated locally),4.05 per call) IntCtrl_Ip_DisableIrq/13 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_EnableIrqPrivileged/2 (IntCtrl_Ip_EnableIrqPrivileged) @06cf87e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: IntCtrl_Ip_Init/10 (477815112 (estimated locally),4.05 per call) IntCtrl_Ip_EnableIrq/12 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_InstallHandlerPrivileged/1 (IntCtrl_Ip_InstallHandlerPrivileged) @06cf8540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: IntCtrl_Ip_Init/10 (955630225 (estimated locally),8.09 per call) IntCtrl_Ip_InstallHandler/11 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_GenerateDirectedCpuInterrupt (IRQn_Type eIrqNumber, IntCtrl_Ip_IrqTargetType eCpuTarget)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged (eIrqNumber_2(D), eCpuTarget_3(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_GetDirectedCpuInterrupt (IRQn_Type eIrqNumber)
+{
+  long unsigned int _1;
+  boolean _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = IntCtrl_Ip_GetDirectedCpuInterruptPrivileged (eIrqNumber_3(D));
+  _5 = _1 != 0;
+  return _5;
+
+}
+
+
+IntCtrl_Ip_ClearDirectedCpuInterrupt (IRQn_Type eIrqNumber)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged (eIrqNumber_2(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_ClearPending (IRQn_Type eIrqNumber)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_ClearPendingPrivileged (eIrqNumber_2(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_GetPriority (IRQn_Type eIrqNumber)
+{
+  uint8 priority;
+  long unsigned int _3;
+  unsigned char _4;
+  int _5;
+  int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => eIrqNumber_2(D)
+  # DEBUG INLINE_ENTRY IntCtrl_Ip_GetPriorityPrivileged
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG shift => 4
+  # DEBUG BEGIN_STMT
+  _3 = (long unsigned int) eIrqNumber_2(D);
+  _4 ={v} MEM[(struct S32_NVIC_Type *)3758153728B].IP[_3];
+  _5 = (int) _4;
+  _6 = _5 >> 4;
+  priority_7 = (uint8) _6;
+  # DEBUG priority => priority_7
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => NULL
+  # DEBUG priority => NULL
+  return priority_7;
+
+}
+
+
+IntCtrl_Ip_SetPriority (IRQn_Type eIrqNumber, uint8 u8Priority)
+{
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  unsigned char _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => eIrqNumber_2(D)
+  # DEBUG u8Priority => u8Priority_3(D)
+  # DEBUG INLINE_ENTRY IntCtrl_Ip_SetPriorityPrivileged
+  # DEBUG BEGIN_STMT
+  # DEBUG shift => 4
+  # DEBUG BEGIN_STMT
+  _4 = (long unsigned int) u8Priority_3(D);
+  _5 = _4 << 4;
+  _6 = (long unsigned int) eIrqNumber_2(D);
+  _7 = (unsigned char) _5;
+  MEM[(struct S32_NVIC_Type *)3758153728B].IP[_6] ={v} _7;
+  # DEBUG eIrqNumber => NULL
+  # DEBUG u8Priority => NULL
+  return;
+
+}
+
+
+IntCtrl_Ip_DisableIrq (IRQn_Type eIrqNumber)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_DisableIrqPrivileged (eIrqNumber_2(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_EnableIrq (IRQn_Type eIrqNumber)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_EnableIrqPrivileged (eIrqNumber_2(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_InstallHandler (IRQn_Type eIrqNumber, void (*IntCtrl_Ip_IrqHandlerType) (void) pfNewHandler, void (*IntCtrl_Ip_IrqHandlerType) (void) * const pfOldHandler)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_InstallHandlerPrivileged (eIrqNumber_2(D), pfNewHandler_3(D), pfOldHandler_4(D));
+  return;
+
+}
+
+
+IntCtrl_Ip_Init (const struct IntCtrl_Ip_CtrlConfigType * pIntCtrlCtrlConfig)
+{
+  uint32 irqIdx;
+  const struct IntCtrl_Ip_IrqConfigType * _1;
+  long unsigned int _2;
+  const struct IntCtrl_Ip_IrqConfigType * _3;
+  <unnamed type> _4;
+  const struct IntCtrl_Ip_IrqConfigType * _5;
+  const struct IntCtrl_Ip_IrqConfigType * _6;
+  <unnamed type> _7;
+  unsigned char _8;
+  void (*<T52c>) (void) _9;
+  const struct IntCtrl_Ip_IrqConfigType * _10;
+  const struct IntCtrl_Ip_IrqConfigType * _11;
+  _Bool _12;
+  <unnamed type> _13;
+  <unnamed type> _14;
+  long unsigned int _15;
+  long unsigned int _22;
+  long unsigned int _23;
+  long unsigned int _24;
+  unsigned char _25;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG irqIdx => 0
+  goto <bb 7>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _1 = pIntCtrlCtrlConfig_20(D)->aIrqConfig;
+  _2 = irqIdx_16 * 8;
+  _3 = _1 + _2;
+  _4 = _3->eIrqNumber;
+  # DEBUG eIrqNumber => _4
+  # DEBUG INLINE_ENTRY IntCtrl_Ip_ClearPending
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_ClearPendingPrivileged (_4);
+  # DEBUG eIrqNumber => NULL
+  # DEBUG BEGIN_STMT
+  _5 = pIntCtrlCtrlConfig_20(D)->aIrqConfig;
+  _6 = _5 + _2;
+  _7 = _6->eIrqNumber;
+  _8 = _6->u8IrqPriority;
+  # DEBUG eIrqNumber => _7
+  # DEBUG u8Priority => _8
+  # DEBUG INLINE_ENTRY IntCtrl_Ip_SetPriority
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => _7
+  # DEBUG u8Priority => _8
+  # DEBUG INLINE_ENTRY IntCtrl_Ip_SetPriorityPrivileged
+  # DEBUG BEGIN_STMT
+  # DEBUG shift => 4
+  # DEBUG BEGIN_STMT
+  _22 = (long unsigned int) _8;
+  _23 = _22 << 4;
+  _24 = (long unsigned int) _7;
+  _25 = (unsigned char) _23;
+  MEM[(struct S32_NVIC_Type *)3758153728B].IP[_24] ={v} _25;
+  # DEBUG eIrqNumber => NULL
+  # DEBUG u8Priority => NULL
+  # DEBUG eIrqNumber => NULL
+  # DEBUG u8Priority => NULL
+  # DEBUG BEGIN_STMT
+  _9 = _6->pfHandler;
+  # DEBUG eIrqNumber => _7
+  # DEBUG pfNewHandler => _9
+  # DEBUG pfOldHandler => 0B
+  # DEBUG INLINE_ENTRY IntCtrl_Ip_InstallHandler
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_InstallHandlerPrivileged (_7, _9, 0B);
+  # DEBUG eIrqNumber => NULL
+  # DEBUG pfNewHandler => NULL
+  # DEBUG pfOldHandler => NULL
+  # DEBUG BEGIN_STMT
+  _10 = pIntCtrlCtrlConfig_20(D)->aIrqConfig;
+  _11 = _10 + _2;
+  _12 = _11->bIrqEnabled;
+  if (_12 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 477815112]:
+  # DEBUG BEGIN_STMT
+  _13 = _11->eIrqNumber;
+  # DEBUG eIrqNumber => _13
+  # DEBUG INLINE_ENTRY IntCtrl_Ip_EnableIrq
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_EnableIrqPrivileged (_13);
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 477815112]:
+  # DEBUG BEGIN_STMT
+  _14 = _11->eIrqNumber;
+  # DEBUG eIrqNumber => _14
+  # DEBUG INLINE_ENTRY IntCtrl_Ip_DisableIrq
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_DisableIrqPrivileged (_14);
+
+  <bb 6> [local count: 955630225]:
+  # DEBUG eIrqNumber => NULL
+  # DEBUG eIrqNumber => NULL
+  # DEBUG BEGIN_STMT
+  irqIdx_21 = irqIdx_16 + 1;
+  # DEBUG irqIdx => irqIdx_21
+
+  <bb 7> [local count: 1073741824]:
+  # irqIdx_16 = PHI <0(2), irqIdx_21(6)>
+  # DEBUG irqIdx => irqIdx_16
+  # DEBUG BEGIN_STMT
+  _15 = pIntCtrlCtrlConfig_20(D)->u32ConfigIrqCount;
+  if (_15 > irqIdx_16)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 8>; [11.00%]
+
+  <bb 8> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+IntCtrl_Ip_GenerateDirectedCpuInterruptPrivileged (IRQn_Type eIrqNumber, IntCtrl_Ip_IrqTargetType eCpuTarget)
+{
+  uint32 target;
+  uint32 core;
+  uint32 irqId;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> [local count: 789516040]:
+  # DEBUG BEGIN_STMT
+  irqId_10 = (uint32) eIrqNumber_9(D);
+  # DEBUG irqId => irqId_10
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (eCpuTarget_11(D) == -1)
+    goto <bb 12>; [34.00%]
+  else
+    goto <bb 7>; [66.00%]
+
+  <bb 12> [local count: 268435456]:
+  goto <bb 6>; [100.00%]
+
+  <bb 3> [local count: 805306369]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MSCM_Type *)1076232192B].CPXNUM;
+  _2 = _1 & 7;
+  if (_2 != core_4)
+    goto <bb 4>; [66.00%]
+  else
+    goto <bb 5>; [34.00%]
+
+  <bb 4> [local count: 531502201]:
+  # DEBUG BEGIN_STMT
+  MEM[(volatile struct MSCM_IRCPnIRx_Type *)1076232704B].IRCPnIRx[core_4][irqId_10].IGR ={v} 1;
+
+  <bb 5> [local count: 805306371]:
+  # DEBUG BEGIN_STMT
+  core_17 = core_4 + 1;
+  # DEBUG core => core_17
+
+  <bb 6> [local count: 1073741824]:
+  # core_4 = PHI <core_17(5), 0(12)>
+  # DEBUG core => core_4
+  # DEBUG BEGIN_STMT
+  if (core_4 != 3)
+    goto <bb 3>; [75.00%]
+  else
+    goto <bb 11>; [25.00%]
+
+  <bb 7> [local count: 521080583]:
+  # DEBUG BEGIN_STMT
+  if (eCpuTarget_11(D) == -2)
+    goto <bb 8>; [34.00%]
+  else
+    goto <bb 9>; [66.00%]
+
+  <bb 8> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MSCM_Type *)1076232192B].CPXNUM;
+  target_14 = _3 & 7;
+  # DEBUG target => target_14
+  goto <bb 10>; [100.00%]
+
+  <bb 9> [local count: 343913183]:
+  # DEBUG BEGIN_STMT
+  target_12 = (uint32) eCpuTarget_11(D);
+  # DEBUG target => target_12
+
+  <bb 10> [local count: 521080583]:
+  # target_5 = PHI <target_14(8), target_12(9)>
+  # DEBUG target => target_5
+  # DEBUG BEGIN_STMT
+  MEM[(volatile struct MSCM_IRCPnIRx_Type *)1076232704B].IRCPnIRx[target_5][irqId_10].IGR ={v} 1;
+
+  <bb 11> [local count: 789516040]:
+  return;
+
+}
+
+
+IntCtrl_Ip_GetDirectedCpuInterruptPrivileged (IRQn_Type eIrqNumber)
+{
+  uint32 irqId;
+  uint32 currentCpu;
+  long unsigned int _1;
+  long unsigned int _2;
+  _Bool _3;
+  uint32 _8;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MSCM_Type *)1076232192B].CPXNUM;
+  currentCpu_5 = _1 & 7;
+  # DEBUG currentCpu => currentCpu_5
+  # DEBUG BEGIN_STMT
+  irqId_7 = (uint32) eIrqNumber_6(D);
+  # DEBUG irqId => irqId_7
+  # DEBUG BEGIN_STMT
+  _2 ={v} MEM[(volatile struct MSCM_IRCPnIRx_Type *)1076232704B].IRCPnIRx[currentCpu_5][irqId_7].IntStatusR;
+  _3 = _2 != 0;
+  _8 = (uint32) _3;
+  return _8;
+
+}
+
+
+IntCtrl_Ip_ClearDirectedCpuInterruptPrivileged (IRQn_Type eIrqNumber)
+{
+  uint32 irqId;
+  uint32 currentCpu;
+  long unsigned int _1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MSCM_Type *)1076232192B].CPXNUM;
+  currentCpu_3 = _1 & 7;
+  # DEBUG currentCpu => currentCpu_3
+  # DEBUG BEGIN_STMT
+  irqId_5 = (uint32) eIrqNumber_4(D);
+  # DEBUG irqId => irqId_5
+  # DEBUG BEGIN_STMT
+  MEM[(volatile struct MSCM_IRCPnIRx_Type *)1076232704B].IRCPnIRx[currentCpu_3][irqId_5].IntStatusR ={v} 127;
+  return;
+
+}
+
+
+IntCtrl_Ip_ClearPendingPrivileged (IRQn_Type eIrqNumber)
+{
+  unsigned short eIrqNumber.2_1;
+  long unsigned int _2;
+  unsigned short _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  eIrqNumber.2_1 = (unsigned short) eIrqNumber_7(D);
+  _3 = eIrqNumber.2_1 & 31;
+  _2 = (long unsigned int) _3;
+  _4 = (long unsigned int) eIrqNumber_7(D);
+  _5 = _4 >> 5;
+  _6 = 1 << _2;
+  MEM[(struct S32_NVIC_Type *)3758153728B].ICPR[_5] ={v} _6;
+  return;
+
+}
+
+
+IntCtrl_Ip_GetPriorityPrivileged (IRQn_Type eIrqNumber)
+{
+  uint8 retval.22;
+
+  <bb 2> [local count: 1073741824]:
+  retval.22_4 = IntCtrl_Ip_GetPriority (eIrqNumber_2(D)); [tail call]
+  return retval.22_4;
+
+}
+
+
+IntCtrl_Ip_SetPriorityPrivileged (IRQn_Type eIrqNumber, uint8 u8Priority)
+{
+  <bb 2> [local count: 1073741824]:
+  IntCtrl_Ip_SetPriority (eIrqNumber_2(D), u8Priority_3(D)); [tail call]
+  return;
+
+}
+
+
+IntCtrl_Ip_DisableIrqPrivileged (IRQn_Type eIrqNumber)
+{
+  unsigned short eIrqNumber.1_1;
+  long unsigned int _2;
+  unsigned short _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  eIrqNumber.1_1 = (unsigned short) eIrqNumber_7(D);
+  _3 = eIrqNumber.1_1 & 31;
+  _2 = (long unsigned int) _3;
+  _4 = (long unsigned int) eIrqNumber_7(D);
+  _5 = _4 >> 5;
+  _6 = 1 << _2;
+  MEM[(struct S32_NVIC_Type *)3758153728B].ICER[_5] ={v} _6;
+  return;
+
+}
+
+
+IntCtrl_Ip_EnableIrqPrivileged (IRQn_Type eIrqNumber)
+{
+  unsigned short eIrqNumber.0_1;
+  long unsigned int _2;
+  unsigned short _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  eIrqNumber.0_1 = (unsigned short) eIrqNumber_7(D);
+  _3 = eIrqNumber.0_1 & 31;
+  _2 = (long unsigned int) _3;
+  _4 = (long unsigned int) eIrqNumber_7(D);
+  _5 = _4 >> 5;
+  _6 = 1 << _2;
+  MEM[(struct S32_NVIC_Type *)3758153728B].ISER[_5] ={v} _6;
+  return;
+
+}
+
+
+IntCtrl_Ip_InstallHandlerPrivileged (IRQn_Type eIrqNumber, void (*IntCtrl_Ip_IrqHandlerType) (void) pfNewHandler, void (*IntCtrl_Ip_IrqHandlerType) (void) * const pfOldHandler)
+{
+  void (*IntCtrl_Ip_IrqHandlerType) (void) * pVectorRam;
+  long unsigned int _1;
+  sizetype _2;
+  sizetype _3;
+  sizetype _4;
+  void (*IntCtrl_Ip_IrqHandlerType) (void) * _5;
+  void (*<T52c>) (void) _6;
+  sizetype _7;
+  sizetype _8;
+  sizetype _9;
+  void (*IntCtrl_Ip_IrqHandlerType) (void) * _10;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct S32_SCB_Type *)3758153728B].VTOR;
+  pVectorRam_13 = (void (*IntCtrl_Ip_IrqHandlerType) (void) *) _1;
+  # DEBUG pVectorRam => pVectorRam_13
+  # DEBUG BEGIN_STMT
+  if (pfOldHandler_14(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 4>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _2 = (sizetype) eIrqNumber_15(D);
+  _3 = _2 + 16;
+  _4 = _3 * 4;
+  _5 = pVectorRam_13 + _4;
+  _6 = *_5;
+  *pfOldHandler_14(D) = _6;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _7 = (sizetype) eIrqNumber_15(D);
+  _8 = _7 + 16;
+  _9 = _8 * 4;
+  _10 = pVectorRam_13 + _9;
+  *_10 = pfNewHandler_17(D);
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+

@@ -1,0 +1,16 @@
+Mc12xs6_schm_read_msr ()
+{
+  register uint32 reg_tmp;
+  uint32 D.5985;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp);
+  # DEBUG BEGIN_STMT
+  D.5985 = reg_tmp;
+  return D.5985;
+
+}
+
+

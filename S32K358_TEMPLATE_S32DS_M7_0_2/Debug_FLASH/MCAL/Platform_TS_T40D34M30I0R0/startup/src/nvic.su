@@ -1,0 +1,4 @@
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Platform_TS_T40D34M30I0R0/startup/src/nvic.c:93:6:NVIC_SetPriorityGrouping	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Platform_TS_T40D34M30I0R0/startup/src/nvic.c:105:6:NVIC_EnableIRQ	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Platform_TS_T40D34M30I0R0/startup/src/nvic.c:116:6:NVIC_DisableIRQ	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Platform_TS_T40D34M30I0R0/startup/src/nvic.c:128:6:NVIC_SetPriority	0	static

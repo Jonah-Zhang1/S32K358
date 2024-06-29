@@ -1,0 +1,8 @@
+-c
+-I"C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_2/include"
+-x assembler-with-cpp
+-g3
+-mcpu=cortex-m7
+-mfloat-abi=hard
+-mfpu=fpv5-sp-d16
+-specs=nosys.specs

@@ -1,0 +1,1169 @@
+Trivially needed symbols: Gpt_Ipw_ChangeNextTimeoutValue/10 Gpt_Ipw_DisableInterrupt/9 Gpt_Ipw_DeInit/8 Gpt_Ipw_EnableInterrupt/7 Gpt_Ipw_StopTimer/6 Gpt_Ipw_GetTimeElapsed/5 Gpt_Ipw_StartTimer/4 Gpt_Ipw_Init/3 Gpt_Ipw_InitInstances/2
+
+
+Initial Symbol table:
+
+Pit_Ip_ChangeNextTimeoutValue/22 (Pit_Ip_ChangeNextTimeoutValue) @063d5000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_ChangeNextTimeoutValue/10 
+  Calls: 
+Pit_Ip_DisableChannelInterrupt/21 (Pit_Ip_DisableChannelInterrupt) @063bbe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DisableInterrupt/9 
+  Calls: 
+Pit_Ip_Deinit/20 (Pit_Ip_Deinit) @063bbc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DeInit/8 
+  Calls: 
+Pit_Ip_EnableChannelInterrupt/19 (Pit_Ip_EnableChannelInterrupt) @063bba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_EnableInterrupt/7 
+  Calls: 
+Pit_Ip_StopChannel/18 (Pit_Ip_StopChannel) @063bb8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StopTimer/6 
+  Calls: 
+pitBase/17 (pitBase) @063bac60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Pit_Ip_GetInterruptStatusFlag/0 (read) Pit_Ip_GetInterruptStatusFlag/0 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Pit_Ip_GetCurrentTimer/16 (Pit_Ip_GetCurrentTimer) @063bb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+Pit_Ip_GetLoadValue/15 (Pit_Ip_GetLoadValue) @063bb540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+Pit_Ip_u32OldTargetValue/14 (Pit_Ip_u32OldTargetValue) @063ba948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Gpt_Ipw_PitGetTimeElapsed/1 (read) 
+  Availability: not-ready
+  Varpool flags:
+Pit_Ip_StartChannel/13 (Pit_Ip_StartChannel) @063bb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StartTimer/4 
+  Calls: 
+Pit_Ip_InitChannel/12 (Pit_Ip_InitChannel) @063bb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_Init/3 
+  Calls: 
+Pit_Ip_Init/11 (Pit_Ip_Init) @06203b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_InitInstances/2 
+  Calls: 
+Gpt_Ipw_ChangeNextTimeoutValue/10 (Gpt_Ipw_ChangeNextTimeoutValue) @06203d20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_ChangeNextTimeoutValue/22 
+Gpt_Ipw_DisableInterrupt/9 (Gpt_Ipw_DisableInterrupt) @06203a80
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06203d20
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_DisableChannelInterrupt/21 
+Gpt_Ipw_DeInit/8 (Gpt_Ipw_DeInit) @062037e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06203a80
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Deinit/20 
+Gpt_Ipw_EnableInterrupt/7 (Gpt_Ipw_EnableInterrupt) @06203540
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @062037e0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_EnableChannelInterrupt/19 
+Gpt_Ipw_StopTimer/6 (Gpt_Ipw_StopTimer) @062032a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06203540
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StopChannel/18 
+Gpt_Ipw_GetTimeElapsed/5 (Gpt_Ipw_GetTimeElapsed) @06203000
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @062032a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Gpt_Ipw_PitGetTimeElapsed/1 
+Gpt_Ipw_StartTimer/4 (Gpt_Ipw_StartTimer) @061fda80
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06203000
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StartChannel/13 
+Gpt_Ipw_Init/3 (Gpt_Ipw_Init) @061fdee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061fda80
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_InitChannel/12 
+Gpt_Ipw_InitInstances/2 (Gpt_Ipw_InitInstances) @061fdc40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061fdee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Init/11 
+Gpt_Ipw_PitGetTimeElapsed/1 (Gpt_Ipw_PitGetTimeElapsed) @061fd9a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @062032a0
+  References: Pit_Ip_u32OldTargetValue/14 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Gpt_Ipw_GetTimeElapsed/5 
+  Calls: Pit_Ip_GetInterruptStatusFlag/0 Pit_Ip_GetCurrentTimer/16 Pit_Ip_GetLoadValue/15 
+Pit_Ip_GetInterruptStatusFlag/0 (Pit_Ip_GetInterruptStatusFlag) @060d32a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @062032a0
+  References: pitBase/17 (read) pitBase/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Pit_Ip_ChangeNextTimeoutValue/22 (Pit_Ip_ChangeNextTimeoutValue) @063d5000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_ChangeNextTimeoutValue/10 
+  Calls: 
+Pit_Ip_DisableChannelInterrupt/21 (Pit_Ip_DisableChannelInterrupt) @063bbe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DisableInterrupt/9 
+  Calls: 
+Pit_Ip_Deinit/20 (Pit_Ip_Deinit) @063bbc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DeInit/8 
+  Calls: 
+Pit_Ip_EnableChannelInterrupt/19 (Pit_Ip_EnableChannelInterrupt) @063bba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_EnableInterrupt/7 
+  Calls: 
+Pit_Ip_StopChannel/18 (Pit_Ip_StopChannel) @063bb8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StopTimer/6 
+  Calls: 
+pitBase/17 (pitBase) @063bac60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Pit_Ip_GetInterruptStatusFlag/0 (read) Pit_Ip_GetInterruptStatusFlag/0 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Pit_Ip_GetCurrentTimer/16 (Pit_Ip_GetCurrentTimer) @063bb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+Pit_Ip_GetLoadValue/15 (Pit_Ip_GetLoadValue) @063bb540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+Pit_Ip_u32OldTargetValue/14 (Pit_Ip_u32OldTargetValue) @063ba948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Gpt_Ipw_PitGetTimeElapsed/1 (read) 
+  Availability: not-ready
+  Varpool flags:
+Pit_Ip_StartChannel/13 (Pit_Ip_StartChannel) @063bb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StartTimer/4 
+  Calls: 
+Pit_Ip_InitChannel/12 (Pit_Ip_InitChannel) @063bb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_Init/3 
+  Calls: 
+Pit_Ip_Init/11 (Pit_Ip_Init) @06203b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_InitInstances/2 
+  Calls: 
+Gpt_Ipw_ChangeNextTimeoutValue/10 (Gpt_Ipw_ChangeNextTimeoutValue) @06203d20
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_ChangeNextTimeoutValue/22 
+Gpt_Ipw_DisableInterrupt/9 (Gpt_Ipw_DisableInterrupt) @06203a80
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_DisableChannelInterrupt/21 
+Gpt_Ipw_DeInit/8 (Gpt_Ipw_DeInit) @062037e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Deinit/20 
+Gpt_Ipw_EnableInterrupt/7 (Gpt_Ipw_EnableInterrupt) @06203540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_EnableChannelInterrupt/19 
+Gpt_Ipw_StopTimer/6 (Gpt_Ipw_StopTimer) @062032a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StopChannel/18 
+Gpt_Ipw_GetTimeElapsed/5 (Gpt_Ipw_GetTimeElapsed) @06203000
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Gpt_Ipw_PitGetTimeElapsed/1 
+Gpt_Ipw_StartTimer/4 (Gpt_Ipw_StartTimer) @061fda80
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StartChannel/13 
+Gpt_Ipw_Init/3 (Gpt_Ipw_Init) @061fdee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_InitChannel/12 
+Gpt_Ipw_InitInstances/2 (Gpt_Ipw_InitInstances) @061fdc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Init/11 
+Gpt_Ipw_PitGetTimeElapsed/1 (Gpt_Ipw_PitGetTimeElapsed) @061fd9a0
+  Type: function definition analyzed
+  Visibility:
+  References: Pit_Ip_u32OldTargetValue/14 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Gpt_Ipw_GetTimeElapsed/5 
+  Calls: Pit_Ip_GetInterruptStatusFlag/0 Pit_Ip_GetCurrentTimer/16 Pit_Ip_GetLoadValue/15 
+Pit_Ip_GetInterruptStatusFlag/0 (Pit_Ip_GetInterruptStatusFlag) @060d32a0
+  Type: function definition analyzed
+  Visibility:
+  References: pitBase/17 (read) pitBase/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+
+
+Initial Symbol table:
+
+Pit_Ip_ChangeNextTimeoutValue/22 (Pit_Ip_ChangeNextTimeoutValue) @063d5000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_ChangeNextTimeoutValue/10 
+  Calls: 
+Pit_Ip_DisableChannelInterrupt/21 (Pit_Ip_DisableChannelInterrupt) @063bbe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DisableInterrupt/9 
+  Calls: 
+Pit_Ip_Deinit/20 (Pit_Ip_Deinit) @063bbc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DeInit/8 
+  Calls: 
+Pit_Ip_EnableChannelInterrupt/19 (Pit_Ip_EnableChannelInterrupt) @063bba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_EnableInterrupt/7 
+  Calls: 
+Pit_Ip_StopChannel/18 (Pit_Ip_StopChannel) @063bb8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StopTimer/6 
+  Calls: 
+pitBase/17 (pitBase) @063bac60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Pit_Ip_GetInterruptStatusFlag/0 (read) Pit_Ip_GetInterruptStatusFlag/0 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Pit_Ip_GetCurrentTimer/16 (Pit_Ip_GetCurrentTimer) @063bb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+Pit_Ip_GetLoadValue/15 (Pit_Ip_GetLoadValue) @063bb540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+Pit_Ip_u32OldTargetValue/14 (Pit_Ip_u32OldTargetValue) @063ba948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Gpt_Ipw_PitGetTimeElapsed/1 (read) 
+  Availability: not-ready
+  Varpool flags:
+Pit_Ip_StartChannel/13 (Pit_Ip_StartChannel) @063bb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StartTimer/4 
+  Calls: 
+Pit_Ip_InitChannel/12 (Pit_Ip_InitChannel) @063bb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_Init/3 
+  Calls: 
+Pit_Ip_Init/11 (Pit_Ip_Init) @06203b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_InitInstances/2 
+  Calls: 
+Gpt_Ipw_ChangeNextTimeoutValue/10 (Gpt_Ipw_ChangeNextTimeoutValue) @06203d20
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_ChangeNextTimeoutValue/22 
+Gpt_Ipw_DisableInterrupt/9 (Gpt_Ipw_DisableInterrupt) @06203a80
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_DisableChannelInterrupt/21 
+Gpt_Ipw_DeInit/8 (Gpt_Ipw_DeInit) @062037e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Deinit/20 
+Gpt_Ipw_EnableInterrupt/7 (Gpt_Ipw_EnableInterrupt) @06203540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_EnableChannelInterrupt/19 
+Gpt_Ipw_StopTimer/6 (Gpt_Ipw_StopTimer) @062032a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StopChannel/18 
+Gpt_Ipw_GetTimeElapsed/5 (Gpt_Ipw_GetTimeElapsed) @06203000
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Gpt_Ipw_PitGetTimeElapsed/1 
+Gpt_Ipw_StartTimer/4 (Gpt_Ipw_StartTimer) @061fda80
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StartChannel/13 
+Gpt_Ipw_Init/3 (Gpt_Ipw_Init) @061fdee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_InitChannel/12 
+Gpt_Ipw_InitInstances/2 (Gpt_Ipw_InitInstances) @061fdc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Init/11 
+Gpt_Ipw_PitGetTimeElapsed/1 (Gpt_Ipw_PitGetTimeElapsed) @061fd9a0
+  Type: function definition analyzed
+  Visibility:
+  References: Pit_Ip_u32OldTargetValue/14 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Gpt_Ipw_GetTimeElapsed/5 
+  Calls: Pit_Ip_GetInterruptStatusFlag/0 Pit_Ip_GetCurrentTimer/16 Pit_Ip_GetLoadValue/15 
+Pit_Ip_GetInterruptStatusFlag/0 (Pit_Ip_GetInterruptStatusFlag) @060d32a0
+  Type: function definition analyzed
+  Visibility:
+  References: pitBase/17 (read) pitBase/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Pit_Ip_ChangeNextTimeoutValue/22 (Pit_Ip_ChangeNextTimeoutValue) @063d5000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_ChangeNextTimeoutValue/10 
+  Calls: 
+Pit_Ip_DisableChannelInterrupt/21 (Pit_Ip_DisableChannelInterrupt) @063bbe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DisableInterrupt/9 
+  Calls: 
+Pit_Ip_Deinit/20 (Pit_Ip_Deinit) @063bbc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DeInit/8 
+  Calls: 
+Pit_Ip_EnableChannelInterrupt/19 (Pit_Ip_EnableChannelInterrupt) @063bba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_EnableInterrupt/7 
+  Calls: 
+Pit_Ip_StopChannel/18 (Pit_Ip_StopChannel) @063bb8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StopTimer/6 
+  Calls: 
+pitBase/17 (pitBase) @063bac60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Pit_Ip_GetInterruptStatusFlag/0 (read) Pit_Ip_GetInterruptStatusFlag/0 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Pit_Ip_GetCurrentTimer/16 (Pit_Ip_GetCurrentTimer) @063bb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+Pit_Ip_GetLoadValue/15 (Pit_Ip_GetLoadValue) @063bb540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+Pit_Ip_u32OldTargetValue/14 (Pit_Ip_u32OldTargetValue) @063ba948
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Gpt_Ipw_PitGetTimeElapsed/1 (read) 
+  Availability: not-ready
+  Varpool flags:
+Pit_Ip_StartChannel/13 (Pit_Ip_StartChannel) @063bb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StartTimer/4 
+  Calls: 
+Pit_Ip_InitChannel/12 (Pit_Ip_InitChannel) @063bb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_Init/3 
+  Calls: 
+Pit_Ip_Init/11 (Pit_Ip_Init) @06203b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_InitInstances/2 
+  Calls: 
+Gpt_Ipw_ChangeNextTimeoutValue/10 (Gpt_Ipw_ChangeNextTimeoutValue) @06203d20
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_ChangeNextTimeoutValue/22 
+Gpt_Ipw_DisableInterrupt/9 (Gpt_Ipw_DisableInterrupt) @06203a80
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_DisableChannelInterrupt/21 
+Gpt_Ipw_DeInit/8 (Gpt_Ipw_DeInit) @062037e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Deinit/20 
+Gpt_Ipw_EnableInterrupt/7 (Gpt_Ipw_EnableInterrupt) @06203540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_EnableChannelInterrupt/19 
+Gpt_Ipw_StopTimer/6 (Gpt_Ipw_StopTimer) @062032a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StopChannel/18 
+Gpt_Ipw_GetTimeElapsed/5 (Gpt_Ipw_GetTimeElapsed) @06203000
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Gpt_Ipw_PitGetTimeElapsed/1 
+Gpt_Ipw_StartTimer/4 (Gpt_Ipw_StartTimer) @061fda80
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StartChannel/13 
+Gpt_Ipw_Init/3 (Gpt_Ipw_Init) @061fdee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_InitChannel/12 
+Gpt_Ipw_InitInstances/2 (Gpt_Ipw_InitInstances) @061fdc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Init/11 
+Gpt_Ipw_PitGetTimeElapsed/1 (Gpt_Ipw_PitGetTimeElapsed) @061fd9a0
+  Type: function definition analyzed
+  Visibility:
+  References: Pit_Ip_u32OldTargetValue/14 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Gpt_Ipw_GetTimeElapsed/5 
+  Calls: Pit_Ip_GetInterruptStatusFlag/0 Pit_Ip_GetCurrentTimer/16 Pit_Ip_GetLoadValue/15 
+Pit_Ip_GetInterruptStatusFlag/0 (Pit_Ip_GetInterruptStatusFlag) @060d32a0
+  Type: function definition analyzed
+  Visibility:
+  References: pitBase/17 (read) pitBase/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Pit_Ip_ChangeNextTimeoutValue/22 (Pit_Ip_ChangeNextTimeoutValue) @063d5000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_ChangeNextTimeoutValue/10 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_DisableChannelInterrupt/21 (Pit_Ip_DisableChannelInterrupt) @063bbe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DisableInterrupt/9 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_Deinit/20 (Pit_Ip_Deinit) @063bbc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DeInit/8 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_EnableChannelInterrupt/19 (Pit_Ip_EnableChannelInterrupt) @063bba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_EnableInterrupt/7 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_StopChannel/18 (Pit_Ip_StopChannel) @063bb8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StopTimer/6 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+pitBase/17 (pitBase) @063bac60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Pit_Ip_GetInterruptStatusFlag/0 (read) Pit_Ip_GetInterruptStatusFlag/0 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Pit_Ip_GetCurrentTimer/16 (Pit_Ip_GetCurrentTimer) @063bb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_GetLoadValue/15 (Pit_Ip_GetLoadValue) @063bb540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_u32OldTargetValue/14 (Pit_Ip_u32OldTargetValue) @063ba948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Gpt_Ipw_PitGetTimeElapsed/1 (read) 
+  Availability: not_available
+  Varpool flags:
+Pit_Ip_StartChannel/13 (Pit_Ip_StartChannel) @063bb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StartTimer/4 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_InitChannel/12 (Pit_Ip_InitChannel) @063bb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_Init/3 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_Init/11 (Pit_Ip_Init) @06203b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_InitInstances/2 (315357972 (estimated locally),2.67 per call) 
+  Calls: 
+Gpt_Ipw_ChangeNextTimeoutValue/10 (Gpt_Ipw_ChangeNextTimeoutValue) @06203d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_ChangeNextTimeoutValue/22 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_DisableInterrupt/9 (Gpt_Ipw_DisableInterrupt) @06203a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_DisableChannelInterrupt/21 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_DeInit/8 (Gpt_Ipw_DeInit) @062037e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Deinit/20 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_EnableInterrupt/7 (Gpt_Ipw_EnableInterrupt) @06203540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_EnableChannelInterrupt/19 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_StopTimer/6 (Gpt_Ipw_StopTimer) @062032a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StopChannel/18 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_GetTimeElapsed/5 (Gpt_Ipw_GetTimeElapsed) @06203000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Gpt_Ipw_PitGetTimeElapsed/1 (inlined) (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_StartTimer/4 (Gpt_Ipw_StartTimer) @061fda80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StartChannel/13 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_Init/3 (Gpt_Ipw_Init) @061fdee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_InitChannel/12 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_InitInstances/2 (Gpt_Ipw_InitInstances) @061fdc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Init/11 (315357972 (estimated locally),2.67 per call) 
+Gpt_Ipw_PitGetTimeElapsed/1 (Gpt_Ipw_PitGetTimeElapsed) @061fd9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Pit_Ip_u32OldTargetValue/14 (read) 
+  Referring: 
+  Function Gpt_Ipw_PitGetTimeElapsed/1 is inline copy in Gpt_Ipw_GetTimeElapsed/5
+  Availability: local
+  Function flags: count:354334800 (estimated locally) body local optimize_size
+  Called by: Gpt_Ipw_GetTimeElapsed/5 (inlined) (354334800 (estimated locally),0.33 per call) 
+  Calls: Pit_Ip_GetInterruptStatusFlag/0 (inlined) (354334800 (estimated locally),0.33 per call) Pit_Ip_GetCurrentTimer/16 (354334800 (estimated locally),0.33 per call) Pit_Ip_GetLoadValue/15 (354334800 (estimated locally),0.33 per call) 
+Pit_Ip_GetInterruptStatusFlag/0 (Pit_Ip_GetInterruptStatusFlag) @060d32a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: pitBase/17 (read) pitBase/17 (read) 
+  Referring: 
+  Function Pit_Ip_GetInterruptStatusFlag/0 is inline copy in Gpt_Ipw_GetTimeElapsed/5
+  Availability: local
+  Function flags: count:354334800 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 (inlined) (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+Pit_Ip_ChangeNextTimeoutValue/22 (Pit_Ip_ChangeNextTimeoutValue) @063d5000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Pit_Ip_DisableChannelInterrupt/21 (Pit_Ip_DisableChannelInterrupt) @063bbe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Pit_Ip_Deinit/20 (Pit_Ip_Deinit) @063bbc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Pit_Ip_EnableChannelInterrupt/19 (Pit_Ip_EnableChannelInterrupt) @063bba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Pit_Ip_StopChannel/18 (Pit_Ip_StopChannel) @063bb8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+pitBase/17 (pitBase) @063bac60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Pit_Ip_GetCurrentTimer/16 (Pit_Ip_GetCurrentTimer) @063bb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Pit_Ip_GetLoadValue/15 (Pit_Ip_GetLoadValue) @063bb540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Pit_Ip_u32OldTargetValue/14 (Pit_Ip_u32OldTargetValue) @063ba948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Pit_Ip_StartChannel/13 (Pit_Ip_StartChannel) @063bb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Pit_Ip_InitChannel/12 (Pit_Ip_InitChannel) @063bb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Pit_Ip_Init/11 (Pit_Ip_Init) @06203b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Gpt_Ipw_ChangeNextTimeoutValue/10 (Gpt_Ipw_ChangeNextTimeoutValue) @06203d20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Gpt_Ipw_ChangeNextTimeoutValue (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Gpt_Ipw_DisableInterrupt/9 (Gpt_Ipw_DisableInterrupt) @06203a80
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Gpt_Ipw_DisableInterrupt (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Gpt_Ipw_DeInit/8 (Gpt_Ipw_DeInit) @062037e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Gpt_Ipw_DeInit (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Gpt_Ipw_EnableInterrupt/7 (Gpt_Ipw_EnableInterrupt) @06203540
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Gpt_Ipw_EnableInterrupt (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Gpt_Ipw_StopTimer/6 (Gpt_Ipw_StopTimer) @062032a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Gpt_Ipw_StopTimer (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Gpt_Ipw_GetTimeElapsed/5 (Gpt_Ipw_GetTimeElapsed) @06203000
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Gpt_Ipw_GetTimeElapsed (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Gpt_Ipw_StartTimer/4 (Gpt_Ipw_StartTimer) @061fda80
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Gpt_Ipw_StartTimer (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Gpt_Ipw_Init/3 (Gpt_Ipw_Init) @061fdee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Gpt_Ipw_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Gpt_Ipw_InitInstances/2 (Gpt_Ipw_InitInstances) @061fdc40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Gpt_Ipw_InitInstances (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) optimize_size
+  Called by: 
+  Calls: 

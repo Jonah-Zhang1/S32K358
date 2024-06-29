@@ -1,0 +1,597 @@
+
+Analyzing function: Mcu_Ipw_SleepOnExit/9
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;; 2 succs { 3 4 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 1 }
+
+Analyzing function body size: Mcu_Ipw_SleepOnExit/9
+
+IPA function summary for Mcu_Ipw_SleepOnExit/9 inlinable
+  global time:     14.000000
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+  calls:
+    Power_Ip_EnableSleepOnExit/20 function body not available
+      freq:0.50 loop depth: 0 size: 1 time: 10 predicate: (op0 != 0)
+    Power_Ip_DisableSleepOnExit/19 function body not available
+      freq:0.50 loop depth: 0 size: 1 time: 10 predicate: (op0 == 0)
+
+
+Analyzing function: Mcu_Ipw_DisableCmu/8
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mcu_Ipw_DisableCmu/8
+
+IPA function summary for Mcu_Ipw_DisableCmu/8 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_DisableClockMonitor/18 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: Mcu_Ipw_GetResetRawValue/7
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mcu_Ipw_GetResetRawValue/7
+
+IPA function summary for Mcu_Ipw_GetResetRawValue/7 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_GetResetRawValue/17 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: Mcu_Ipw_GetResetReason/6
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mcu_Ipw_GetResetReason/6
+
+IPA function summary for Mcu_Ipw_GetResetReason/6 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_GetResetReason/16 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: Mcu_Ipw_SetMode/5
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mcu_Ipw_SetMode/5
+
+IPA function summary for Mcu_Ipw_SetMode/5 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_SetMode/15 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: MCU_Ipw_GetClockFrequency/4
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: MCU_Ipw_GetClockFrequency/4
+
+IPA function summary for MCU_Ipw_GetClockFrequency/4 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_GetClockFrequency/14 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+
+Analyzing function: Mcu_Ipw_GetPllStatus/3
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;; 2 succs { 4 5 3 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 1 }
+
+Analyzing function body size: Mcu_Ipw_GetPllStatus/3
+
+IPA function summary for Mcu_Ipw_GetPllStatus/3 inlinable
+  global time:     15.000000
+  self size:       11
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_GetPllStatus/13 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: Mcu_Ipw_DistributePllClock/2
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mcu_Ipw_DistributePllClock/2
+
+IPA function summary for Mcu_Ipw_DistributePllClock/2 inlinable
+  global time:     12.000000
+  self size:       4
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_DistributePll/12 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+
+Analyzing function: Mcu_Ipw_InitClock/1
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mcu_Ipw_InitClock/1
+
+IPA function summary for Mcu_Ipw_InitClock/1 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_InitClock/11 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: Mcu_Ipw_Init/0
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mcu_Ipw_Init/0
+
+IPA function summary for Mcu_Ipw_Init/0 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_Init/10 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+Symbol table:
+
+Power_Ip_EnableSleepOnExit/20 (Power_Ip_EnableSleepOnExit) @065afee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_SleepOnExit/9 (536870913 (estimated locally),0.50 per call) 
+  Calls: 
+Power_Ip_DisableSleepOnExit/19 (Power_Ip_DisableSleepOnExit) @065afe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_SleepOnExit/9 (536870913 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_DisableClockMonitor/18 (Clock_Ip_DisableClockMonitor) @065afc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_DisableCmu/8 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_GetResetRawValue/17 (Power_Ip_GetResetRawValue) @065afa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_GetResetRawValue/7 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_GetResetReason/16 (Power_Ip_GetResetReason) @065af8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_GetResetReason/6 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_SetMode/15 (Power_Ip_SetMode) @065af700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_SetMode/5 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_GetClockFrequency/14 (Clock_Ip_GetClockFrequency) @065af540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: MCU_Ipw_GetClockFrequency/4 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_GetPllStatus/13 (Clock_Ip_GetPllStatus) @065af380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_GetPllStatus/3 (1073741817 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_DistributePll/12 (Clock_Ip_DistributePll) @065af1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_DistributePllClock/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_InitClock/11 (Clock_Ip_InitClock) @065af000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_InitClock/1 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_Init/10 (Power_Ip_Init) @065a97e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Ipw_Init/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_Ipw_SleepOnExit/9 (Mcu_Ipw_SleepOnExit) @065a9c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_EnableSleepOnExit/20 (536870913 (estimated locally),0.50 per call) Power_Ip_DisableSleepOnExit/19 (536870913 (estimated locally),0.50 per call) 
+Mcu_Ipw_DisableCmu/8 (Mcu_Ipw_DisableCmu) @065a99a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_DisableClockMonitor/18 (1073741824 (estimated locally),1.00 per call) 
+Mcu_Ipw_GetResetRawValue/7 (Mcu_Ipw_GetResetRawValue) @065a9700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_GetResetRawValue/17 (1073741824 (estimated locally),1.00 per call) 
+Mcu_Ipw_GetResetReason/6 (Mcu_Ipw_GetResetReason) @065a9460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_GetResetReason/16 (1073741824 (estimated locally),1.00 per call) 
+Mcu_Ipw_SetMode/5 (Mcu_Ipw_SetMode) @065a91c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_SetMode/15 (1073741824 (estimated locally),1.00 per call) 
+MCU_Ipw_GetClockFrequency/4 (MCU_Ipw_GetClockFrequency) @065a6ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_GetClockFrequency/14 (1073741824 (estimated locally),1.00 per call) 
+Mcu_Ipw_GetPllStatus/3 (Mcu_Ipw_GetPllStatus) @065a69a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741817 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_GetPllStatus/13 (1073741817 (estimated locally),1.00 per call) 
+Mcu_Ipw_DistributePllClock/2 (Mcu_Ipw_DistributePllClock) @065a6e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_DistributePll/12 (1073741824 (estimated locally),1.00 per call) 
+Mcu_Ipw_InitClock/1 (Mcu_Ipw_InitClock) @065a6b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_InitClock/11 (1073741824 (estimated locally),1.00 per call) 
+Mcu_Ipw_Init/0 (Mcu_Ipw_Init) @065a68c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_Init/10 (1073741824 (estimated locally),1.00 per call) 
+Mcu_Ipw_SleepOnExit (Mcu_SleepOnExitType SleepOnExit)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  if (SleepOnExit_2(D) == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_DisableSleepOnExit ();
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_EnableSleepOnExit ();
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+Mcu_Ipw_DisableCmu (Clock_Ip_NameType ClockName)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_DisableClockMonitor (ClockName_2(D));
+  return;
+
+}
+
+
+Mcu_Ipw_GetResetRawValue ()
+{
+  Power_Ip_RawResetType ResetReason;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ResetReason_3 = Power_Ip_GetResetRawValue ();
+  # DEBUG ResetReason => ResetReason_3
+  # DEBUG BEGIN_STMT
+  return ResetReason_3;
+
+}
+
+
+Mcu_Ipw_GetResetReason ()
+{
+  Mcu_ResetType _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _3 = Power_Ip_GetResetReason ();
+  return _3;
+
+}
+
+
+Mcu_Ipw_SetMode (const struct Mcu_ModeConfigType * ModeConfigPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_SetMode (ModeConfigPtr_2(D));
+  return;
+
+}
+
+
+MCU_Ipw_GetClockFrequency (Clock_Ip_NameType ClockName)
+{
+  uint32 _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_GetClockFrequency (ClockName_2(D));
+  return _4;
+
+}
+
+
+Mcu_Ipw_GetPllStatus ()
+{
+  Mcu_PllStatusType PllStatus;
+  <unnamed type> _1;
+
+  <bb 2> [local count: 1073741817]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_GetPllStatus ();
+  switch (_1) <default: <L2> [33.33%], case 0: <L6> [33.33%], case 1: <L1> [33.33%]>
+
+  <bb 3> [local count: 357913942]:
+<L1>:
+  # DEBUG BEGIN_STMT
+  # DEBUG PllStatus => 1
+  # DEBUG BEGIN_STMT
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 357913942]:
+<L2>:
+  # DEBUG BEGIN_STMT
+  # DEBUG PllStatus => 2
+  # DEBUG BEGIN_STMT
+
+  <bb 5> [local count: 1073741824]:
+  # PllStatus_2 = PHI <0(2), 1(3), 2(4)>
+<L6>:
+  # DEBUG PllStatus => PllStatus_2
+  # DEBUG BEGIN_STMT
+  return PllStatus_2;
+
+}
+
+
+Mcu_Ipw_DistributePllClock ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_DistributePll ();
+  return;
+
+}
+
+
+Mcu_Ipw_InitClock (const struct Mcu_ClockConfigType * ClockConfigPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_InitClock (ClockConfigPtr_2(D));
+  return;
+
+}
+
+
+Mcu_Ipw_Init (const struct Power_Ip_HwIPsConfigType * HwIPsConfigPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_Init (HwIPsConfigPtr_2(D));
+  return;
+
+}
+
+

@@ -1,0 +1,1835 @@
+IPA function summary for Power_Ip_MC_ME_TriggerPartitionUpdate.constprop/20 inlinable
+  global time:     18.000000
+  self size:       10
+  global size:     10
+  min size:       5
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:4.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+  calls:
+    Power_Ip_MC_ME_WriteControlKeys/1 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_GetPreviousMode/15 inlinable
+  global time:     7.000000
+  self size:       8
+  global size:     8
+  min size:       5
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Power_Ip_MC_ME_SocStandbyEntry/14 inlinable
+  global time:     27.300000
+  self size:       17
+  global size:     17
+  min size:       13
+  self stack:      0
+  global stack:    0
+    size:11.000000, time:11.000000
+    size:4.000000, time:3.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_CM7_EnableSleepOnExit/19 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+    Power_Ip_MC_ME_TriggerModeUpdate/2 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_CoreStandbyEntry/13 inlinable
+  global time:     11.300000
+  self size:       10
+  global size:     10
+  min size:       7
+  self stack:      0
+  global stack:    0
+    size:5.500000, time:5.500000
+    size:3.500000, time:2.500000,  executed if:(not inlined)
+  calls:
+    Power_Ip_CM7_EnableSleepOnExit/19 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Power_Ip_MC_ME_SocTriggerResetEvent/12 inlinable
+  global time:     16.340000
+  self size:       12
+  global size:     12
+  min size:       1
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:2.000000, time:1.000000,  executed if:(op0 != 0),  nonconst if:(op0 changed) && (op0 != 0)
+    size:2.000000, time:0.340000,  executed if:(op0 == 1) && (op0 != 0)
+    size:2.000000, time:1.000000,  executed if:(op0 == 0)
+  calls:
+    Power_Ip_MC_ME_TriggerModeUpdate/2 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_DisablePartitionClock/11 inlinable
+  global time:     40.472500
+  self size:       22
+  global size:     22
+  min size:       19
+  self stack:      0
+  global stack:    0
+    size:16.500000, time:34.250000
+    size:3.500000, time:3.500000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_ME_ConfigurePartitionClock/6 function not considered for inlining
+      freq:0.25 loop depth: 1 size: 2 time: 11 callee size:22 stack:12
+
+IPA function summary for Power_Ip_MC_ME_EnablePartitionClock/10 inlinable
+  global time:     40.472500
+  self size:       22
+  global size:     22
+  min size:       19
+  self stack:      0
+  global stack:    0
+    size:16.500000, time:34.250000
+    size:3.500000, time:3.500000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_ME_ConfigurePartitionClock/6 function not considered for inlining
+      freq:0.25 loop depth: 1 size: 2 time: 11 callee size:22 stack:12
+
+IPA function summary for Power_Ip_MC_ME_ConfigCoreCOFBClock/9 inlinable
+  global time:     239.215605
+  self size:       43
+  global size:     43
+  min size:       40
+  self stack:      0
+  global stack:    0
+    size:33.500000, time:183.810804
+    size:3.500000, time:3.500000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_ME_ConfigureCore/8 function not considered for inlining
+      freq:2.16 loop depth: 2 size: 3 time: 12 callee size:33 stack:12
+    Power_Ip_MC_ME_ConfigureCOFB/7 function not considered for inlining
+      freq:2.16 loop depth: 2 size: 3 time: 12 callee size:18 stack:12
+
+IPA function summary for Power_Ip_MC_ME_ConfigureCore/8 inlinable
+  global time:     326.441008
+  self size:       67
+  global size:     67
+  min size:       29
+  self stack:      12
+  global stack:    12
+    size:13.000000, time:65.327648
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 64] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 8] changed) && (not inlined)
+    size:2.500000, time:8.260984,  nonconst if:(op0[ref offset: 8] changed)
+    size:11.000000, time:34.203786,  executed if:(op0[ref offset: 64],(# & 1) == 0)
+    size:1.000000, time:4.673989,  executed if:(op0[ref offset: 64],(# & 1) == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 64],(# & 1) == 0)
+    size:1.000000, time:4.673989,  executed if:(op0[ref offset: 64],(# & 1) == 0),  nonconst if:(op1 changed) && (op0[ref offset: 64],(# & 1) == 0)
+    size:2.000000, time:7.760984,  nonconst if:(op1 changed)
+  calls:
+    Power_Ip_ReportPowerErrors/18 function body not available
+      freq:0.25 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_TimeoutExpired/17 function body not available
+      freq:7.01 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/16 function body not available
+      freq:0.75 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Power_Ip_MC_ME_TriggerCoreUpdate/5 function not considered for inlining
+      freq:0.75 loop depth: 0 size: 3 time: 12 callee size: 6 stack: 0
+    Power_Ip_ReportPowerErrors/18 function body not available
+      freq:0.17 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 64],(# & 1) == 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_TimeoutExpired/17 function body not available
+      freq:4.67 loop depth: 1 size: 5 time: 14 predicate: (op0[ref offset: 64],(# & 1) == 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/16 function body not available
+      freq:0.50 loop depth: 0 size: 5 time: 14 predicate: (op0[ref offset: 64],(# & 1) == 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Power_Ip_MC_ME_ConfigureCOFB/7 inlinable
+  global time:     263.283210
+  self size:       37
+  global size:     37
+  min size:       27
+  self stack:      12
+  global stack:    12
+    size:12.000000, time:77.755552
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 32] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 64] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 8] changed) && (not inlined)
+    size:2.500000, time:10.847979,  nonconst if:(op0[ref offset: 8] changed)
+    size:2.000000, time:10.347979,  nonconst if:(op1 changed)
+  calls:
+    Power_Ip_ReportPowerErrors/18 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_TimeoutExpired/17 function body not available
+      freq:9.35 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/16 function body not available
+      freq:1.00 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Power_Ip_MC_ME_TriggerCofbUpdate/4 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 5 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_ConfigurePartitionClock/6 inlinable
+  global time:     94.883459
+  self size:       45
+  global size:     45
+  min size:       0
+  self stack:      12
+  global stack:    12
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 32] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 64] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 16] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 16] changed)
+    size:16.000000, time:29.734165,  executed if:(op0[ref offset: 64],(# & 1) != 0)
+    size:3.000000, time:3.744833,  executed if:(op0[ref offset: 64],(# & 1) != 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 64],(# & 1) != 0)
+    size:1.000000, time:0.330000,  executed if:(op0[ref offset: 64],(# & 1) != 0),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 64],(# & 1) != 0)
+  calls:
+    Power_Ip_ReportPowerErrors/18 function body not available
+      freq:0.11 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 64],(# & 1) != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_TimeoutExpired/17 function body not available
+      freq:3.08 loop depth: 1 size: 5 time: 14 predicate: (op0[ref offset: 64],(# & 1) != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/16 function body not available
+      freq:0.33 loop depth: 0 size: 5 time: 14 predicate: (op0[ref offset: 64],(# & 1) != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Power_Ip_MC_ME_TriggerPartitionUpdate.constprop/20 function not considered for inlining
+      freq:0.33 loop depth: 0 size: 3 time: 12 callee size: 5 stack: 0 predicate: (op0[ref offset: 64],(# & 1) != 0)
+       op0 is compile time invariant
+
+IPA function summary for Power_Ip_MC_ME_TriggerCoreUpdate/5 inlinable
+  global time:     21.000000
+  self size:       13
+  global size:     13
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+  calls:
+    Power_Ip_MC_ME_WriteControlKeys/1 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_TriggerCofbUpdate/4 inlinable
+  global time:     19.000000
+  self size:       11
+  global size:     11
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+  calls:
+    Power_Ip_MC_ME_WriteControlKeys/1 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_TriggerModeUpdate/2 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     6
+  min size:       3
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_ME_WriteControlKeys/1 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_WriteControlKeys/1 inlinable
+  global time:     5.000000
+  self size:       6
+  global size:     6
+  min size:       3
+  self stack:      0
+  global stack:    0
+    size:3.000000, time:3.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Flattening functions:
+Overall time estimate: 1143.708282 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Power_Ip_MC_ME_TriggerPartitionUpdate.constprop/20.
+Enqueueing calls in Power_Ip_MC_ME_GetPreviousMode/15.
+Enqueueing calls in Power_Ip_MC_ME_SocStandbyEntry/14.
+Enqueueing calls in Power_Ip_MC_ME_CoreStandbyEntry/13.
+Enqueueing calls in Power_Ip_MC_ME_SocTriggerResetEvent/12.
+Enqueueing calls in Power_Ip_MC_ME_DisablePartitionClock/11.
+Enqueueing calls in Power_Ip_MC_ME_EnablePartitionClock/10.
+Enqueueing calls in Power_Ip_MC_ME_ConfigCoreCOFBClock/9.
+Enqueueing calls in Power_Ip_MC_ME_ConfigureCore/8.
+Enqueueing calls in Power_Ip_MC_ME_ConfigureCOFB/7.
+Enqueueing calls in Power_Ip_MC_ME_ConfigurePartitionClock/6.
+Enqueueing calls in Power_Ip_MC_ME_TriggerCoreUpdate/5.
+Enqueueing calls in Power_Ip_MC_ME_TriggerCofbUpdate/4.
+Enqueueing calls in Power_Ip_MC_ME_TriggerModeUpdate/2.
+Enqueueing calls in Power_Ip_MC_ME_WriteControlKeys/1.
+
+Considering Power_Ip_MC_ME_TriggerModeUpdate/2 with 6 size
+ to be inlined into Power_Ip_MC_ME_SocTriggerResetEvent/12 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip_MC_ME.c:692
+ Estimated badness is -13.714286, frequency 1.00.
+
+Considering Power_Ip_MC_ME_TriggerModeUpdate/2 with 6 size
+ to be inlined into Power_Ip_MC_ME_SocStandbyEntry/14 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip_MC_ME.c:759
+ Estimated badness is -10.105263, frequency 1.00.
+
+Considering Power_Ip_MC_ME_TriggerCofbUpdate/4 with 11 size
+ to be inlined into Power_Ip_MC_ME_ConfigureCOFB/7 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip_MC_ME.c:413
+ Estimated badness is -1.612403, frequency 1.00.
+
+Considering Power_Ip_MC_ME_TriggerPartitionUpdate.constprop/20 with 10 size
+ to be inlined into Power_Ip_MC_ME_ConfigurePartitionClock/6 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip_MC_ME.c:366
+ Estimated badness is -0.754286, frequency 0.33.
+
+Considering Power_Ip_MC_ME_TriggerCoreUpdate/5 with 13 size
+ to be inlined into Power_Ip_MC_ME_ConfigureCore/8 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip_MC_ME.c:498
+ Estimated badness is -0.648649, frequency 0.75.
+
+Considering Power_Ip_MC_ME_ConfigureCOFB/7 with 43 size
+ to be inlined into Power_Ip_MC_ME_ConfigCoreCOFBClock/9 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Power_Ip_MC_ME.c:576
+ Estimated badness is -0.047147, frequency 2.16.
+node context cache: 12 hits, 0 misses, 10 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+
+Inlining Power_Ip_MC_ME_ConfigureCore/8 size 74.
+ Called once from Power_Ip_MC_ME_ConfigCoreCOFBClock/9 79 insns.
+ Inlined into Power_Ip_MC_ME_ConfigCoreCOFBClock/9 which now has 146 size
+Overall time estimate: 1721.068672 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :       14 calls, 56.143579 freq, 0 count
+--param max-inline-insns-auto limit reached       :        2 calls, 0.495000 freq, 0 count
+call is unlikely and code size would grow         :        5 calls, 6.114725 freq, 0 count
+IPA function summary for Power_Ip_MC_ME_GetPreviousMode/15 inlinable
+  global time:     7.000000
+  self size:       8
+  global size:     8
+  min size:       5
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Power_Ip_MC_ME_SocStandbyEntry/14 inlinable
+  global time:     29.300000
+  self size:       17
+  global size:     19
+  min size:       15
+  self stack:      0
+  global stack:    0
+    size:13.000000, time:13.000000
+    size:4.000000, time:3.000000,  executed if:(not inlined)
+  calls:
+    Power_Ip_CM7_EnableSleepOnExit/19 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+    Power_Ip_MC_ME_TriggerModeUpdate/2 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+      Power_Ip_MC_ME_WriteControlKeys/1 call is unlikely and code size would grow
+        freq:1.00 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_CoreStandbyEntry/13 inlinable
+  global time:     11.300000
+  self size:       10
+  global size:     10
+  min size:       7
+  self stack:      0
+  global stack:    0
+    size:5.500000, time:5.500000
+    size:3.500000, time:2.500000,  executed if:(not inlined)
+  calls:
+    Power_Ip_CM7_EnableSleepOnExit/19 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Power_Ip_MC_ME_SocTriggerResetEvent/12 inlinable
+  global time:     18.340000
+  self size:       12
+  global size:     14
+  min size:       3
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:2.000000, time:1.000000,  executed if:(op0 != 0),  nonconst if:(op0 changed) && (op0 != 0)
+    size:2.000000, time:0.340000,  executed if:(op0 == 1) && (op0 != 0)
+    size:2.000000, time:1.000000,  executed if:(op0 == 0)
+  calls:
+    Power_Ip_MC_ME_TriggerModeUpdate/21 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+      Power_Ip_MC_ME_WriteControlKeys/1 call is unlikely and code size would grow
+        freq:1.00 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_DisablePartitionClock/11 inlinable
+  global time:     40.472500
+  self size:       22
+  global size:     22
+  min size:       19
+  self stack:      0
+  global stack:    0
+    size:16.500000, time:34.250000
+    size:3.500000, time:3.500000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_ME_ConfigurePartitionClock/6 --param max-inline-insns-auto limit reached
+      freq:0.25 loop depth: 1 size: 2 time: 11 callee size:24 stack:12
+
+IPA function summary for Power_Ip_MC_ME_EnablePartitionClock/10 inlinable
+  global time:     40.472500
+  self size:       22
+  global size:     22
+  min size:       19
+  self stack:      0
+  global stack:    0
+    size:16.500000, time:34.250000
+    size:3.500000, time:3.500000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_ME_ConfigurePartitionClock/6 --param max-inline-insns-auto limit reached
+      freq:0.25 loop depth: 1 size: 2 time: 11 callee size:24 stack:12
+
+IPA function summary for Power_Ip_MC_ME_ConfigCoreCOFBClock/9 inlinable
+  global time:     1472.980213
+  self size:       43
+  global size:     146
+  min size:       142
+  self stack:      0
+  global stack:    12
+    size:101.000000, time:707.406732
+    size:3.500000, time:3.500000,  executed if:(not inlined)
+  calls:
+    Power_Ip_MC_ME_ConfigureCore/8 inlined
+      freq:2.16
+      Stack frame offset 0, callee self size 12
+      Power_Ip_ReportPowerErrors/18 function body not available
+        freq:0.54 loop depth: 2 size: 3 time: 12
+         op0 is compile time invariant
+         op1 is compile time invariant
+      Power_Ip_TimeoutExpired/17 function body not available
+        freq:15.16 loop depth: 3 size: 5 time: 14
+         op0 is compile time invariant
+         op1 is compile time invariant
+      Power_Ip_StartTimeout/16 function body not available
+        freq:1.62 loop depth: 2 size: 5 time: 14
+         op0 is compile time invariant
+         op1 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+      Power_Ip_MC_ME_TriggerCoreUpdate/5 inlined
+        freq:1.62
+        Stack frame offset 12, callee self size 0
+        Power_Ip_MC_ME_WriteControlKeys/1 call is unlikely and code size would grow
+          freq:1.62 loop depth: 2 size: 1 time: 10 callee size: 3 stack: 0
+      Power_Ip_ReportPowerErrors/18 function body not available
+        freq:0.36 loop depth: 2 size: 3 time: 12
+         op0 is compile time invariant
+         op1 is compile time invariant
+      Power_Ip_TimeoutExpired/17 function body not available
+        freq:10.11 loop depth: 3 size: 5 time: 14
+         op0 is compile time invariant
+         op1 is compile time invariant
+      Power_Ip_StartTimeout/16 function body not available
+        freq:1.08 loop depth: 2 size: 5 time: 14
+         op0 is compile time invariant
+         op1 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+    Power_Ip_MC_ME_ConfigureCOFB/7 inlined
+      freq:2.16
+      Stack frame offset 0, callee self size 12
+      Power_Ip_ReportPowerErrors/18 function body not available
+        freq:0.71 loop depth: 2 size: 3 time: 12
+         op0 is compile time invariant
+         op1 is compile time invariant
+      Power_Ip_TimeoutExpired/17 function body not available
+        freq:20.22 loop depth: 3 size: 5 time: 14
+         op0 is compile time invariant
+         op1 is compile time invariant
+      Power_Ip_StartTimeout/16 function body not available
+        freq:2.16 loop depth: 2 size: 5 time: 14
+         op0 is compile time invariant
+         op1 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+      Power_Ip_MC_ME_TriggerCofbUpdate/4 inlined
+        freq:2.16
+        Stack frame offset 12, callee self size 0
+        Power_Ip_MC_ME_WriteControlKeys/1 call is unlikely and code size would grow
+          freq:2.16 loop depth: 2 size: 1 time: 10 callee size: 3 stack: 0
+
+IPA function summary for Power_Ip_MC_ME_ConfigurePartitionClock/6 inlinable
+  global time:     96.203459
+  self size:       45
+  global size:     49
+  min size:       0
+  self stack:      12
+  global stack:    12
+  estimated growth:33
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 32] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 64] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 16] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 16] changed)
+    size:22.000000, time:31.714165,  executed if:(op0[ref offset: 64],(# & 1) != 0)
+    size:3.000000, time:3.744833,  executed if:(op0[ref offset: 64],(# & 1) != 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 64],(# & 1) != 0)
+    size:1.000000, time:0.330000,  executed if:(op0[ref offset: 64],(# & 1) != 0),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 64],(# & 1) != 0)
+  calls:
+    Power_Ip_ReportPowerErrors/18 function body not available
+      freq:0.11 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 64],(# & 1) != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_TimeoutExpired/17 function body not available
+      freq:3.08 loop depth: 1 size: 5 time: 14 predicate: (op0[ref offset: 64],(# & 1) != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Power_Ip_StartTimeout/16 function body not available
+      freq:0.33 loop depth: 0 size: 5 time: 14 predicate: (op0[ref offset: 64],(# & 1) != 0)
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Power_Ip_MC_ME_TriggerPartitionUpdate.constprop/20 inlined
+      freq:0.33
+      Stack frame offset 12, callee self size 0
+      Power_Ip_MC_ME_WriteControlKeys/1 call is unlikely and code size would grow
+        freq:0.33 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0 predicate: (op0[ref offset: 64],(# & 1) != 0)
+
+IPA function summary for Power_Ip_MC_ME_WriteControlKeys/1 inlinable
+  global time:     5.000000
+  self size:       6
+  global size:     6
+  min size:       3
+  self stack:      0
+  global stack:    0
+  estimated growth:2
+    size:3.000000, time:3.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Power_Ip_MC_ME_TriggerModeUpdate/21 (Power_Ip_MC_ME_TriggerModeUpdate) @0640a000
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 2
+  References: Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerModeUpdate/21 is inline copy in Power_Ip_MC_ME_SocTriggerResetEvent/12
+  Clone of Power_Ip_MC_ME_TriggerModeUpdate/2
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_SocTriggerResetEvent/12 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_MC_ME_TriggerPartitionUpdate.constprop.0/20 (Power_Ip_MC_ME_TriggerPartitionUpdate.constprop) @0640ad20
+  Type: function definition analyzed
+  Visibility:
+  References: Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerPartitionUpdate.constprop/20 is inline copy in Power_Ip_MC_ME_ConfigurePartitionClock/6
+  Clone of Power_Ip_MC_ME_TriggerPartitionUpdate/3
+  Availability: local
+  Function flags: count:114863530 (estimated locally) local optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionClock/6 (inlined) (114863530 (estimated locally),0.33 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (114863530 (estimated locally),0.33 per call) 
+Power_Ip_CM7_EnableSleepOnExit/19 (Power_Ip_CM7_EnableSleepOnExit) @0627bc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_SocStandbyEntry/14 (354334800 (estimated locally),0.33 per call) Power_Ip_MC_ME_CoreStandbyEntry/13 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Power_Ip_ReportPowerErrors/18 (Power_Ip_ReportPowerErrors) @0627b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionClock/6 (37904965 (estimated locally),0.11 per call) Power_Ip_MC_ME_ConfigureCore/8 (78051098 (estimated locally),0.54 per call) Power_Ip_MC_ME_ConfigureCore/8 (52034066 (estimated locally),0.36 per call) Power_Ip_MC_ME_ConfigureCOFB/7 (104068131 (estimated locally),0.71 per call) 
+  Calls: 
+Power_Ip_TimeoutExpired/17 (Power_Ip_TimeoutExpired) @0627b0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionClock/6 (1073741824 (estimated locally),3.08 per call) Power_Ip_MC_ME_ConfigureCore/8 (2210969693 (estimated locally),15.16 per call) Power_Ip_MC_ME_ConfigureCore/8 (1473979792 (estimated locally),10.11 per call) Power_Ip_MC_ME_ConfigureCOFB/7 (2947959584 (estimated locally),20.22 per call) 
+  Calls: 
+Power_Ip_StartTimeout/16 (Power_Ip_StartTimeout) @0627b000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_MC_ME_ConfigurePartitionClock/6 (114863530 (estimated locally),0.33 per call) Power_Ip_MC_ME_ConfigureCore/8 (236518480 (estimated locally),1.62 per call) Power_Ip_MC_ME_ConfigureCore/8 (157678985 (estimated locally),1.08 per call) Power_Ip_MC_ME_ConfigureCOFB/7 (315357972 (estimated locally),2.16 per call) 
+  Calls: 
+Power_Ip_MC_ME_GetPreviousMode/15 (Power_Ip_MC_ME_GetPreviousMode) @06273c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_SocStandbyEntry/14 (Power_Ip_MC_ME_SocStandbyEntry) @062739a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_ME/0 (read) Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_CM7_EnableSleepOnExit/19 (354334800 (estimated locally),0.33 per call) Power_Ip_MC_ME_TriggerModeUpdate/2 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_MC_ME_CoreStandbyEntry/13 (Power_Ip_MC_ME_CoreStandbyEntry) @06273620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_CM7_EnableSleepOnExit/19 (354334800 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_SocTriggerResetEvent/12 (Power_Ip_MC_ME_SocTriggerResetEvent) @06273380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pxMC_ME/0 (read) Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_TriggerModeUpdate/21 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_MC_ME_DisablePartitionClock/11 (Power_Ip_MC_ME_DisablePartitionClock) @0625ed20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:268435456 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 (66437775 (estimated locally),0.25 per call) 
+Power_Ip_MC_ME_EnablePartitionClock/10 (Power_Ip_MC_ME_EnablePartitionClock) @0625e7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:268435456 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigurePartitionClock/6 (66437775 (estimated locally),0.25 per call) 
+Power_Ip_MC_ME_ConfigCoreCOFBClock/9 (Power_Ip_MC_ME_ConfigCoreCOFBClock) @0625e2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:145816788 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_ConfigureCore/8 (inlined) (315357972 (estimated locally),2.16 per call) Power_Ip_MC_ME_ConfigureCOFB/7 (inlined) (315357972 (estimated locally),2.16 per call) 
+Power_Ip_MC_ME_ConfigureCore/8 (Power_Ip_MC_ME_ConfigureCore) @0625eee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read) Power_Ip_pxMC_ME/0 (read) Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Function Power_Ip_MC_ME_ConfigureCore/8 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/9
+  Availability: local
+  Function flags: count:315357972 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/9 (inlined) (315357972 (estimated locally),2.16 per call) 
+  Calls: Power_Ip_ReportPowerErrors/18 (78051098 (estimated locally),0.54 per call) Power_Ip_TimeoutExpired/17 (2210969693 (estimated locally),15.16 per call) Power_Ip_StartTimeout/16 (236518480 (estimated locally),1.62 per call) Power_Ip_MC_ME_TriggerCoreUpdate/5 (inlined) (236518480 (estimated locally),1.62 per call) Power_Ip_ReportPowerErrors/18 (52034066 (estimated locally),0.36 per call) Power_Ip_TimeoutExpired/17 (1473979792 (estimated locally),10.11 per call) Power_Ip_StartTimeout/16 (157678985 (estimated locally),1.08 per call) 
+Power_Ip_MC_ME_ConfigureCOFB/7 (Power_Ip_MC_ME_ConfigureCOFB) @0625ec40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read) Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Function Power_Ip_MC_ME_ConfigureCOFB/7 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/9
+  Availability: local
+  Function flags: count:315357972 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_ConfigCoreCOFBClock/9 (inlined) (315357972 (estimated locally),2.16 per call) 
+  Calls: Power_Ip_ReportPowerErrors/18 (104068131 (estimated locally),0.71 per call) Power_Ip_TimeoutExpired/17 (2947959584 (estimated locally),20.22 per call) Power_Ip_StartTimeout/16 (315357972 (estimated locally),2.16 per call) Power_Ip_MC_ME_TriggerCofbUpdate/4 (inlined) (315357972 (estimated locally),2.16 per call) 
+Power_Ip_MC_ME_ConfigurePartitionClock/6 (Power_Ip_MC_ME_ConfigurePartitionClock) @0625e9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read) Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Availability: local
+  Function flags: count:348071305 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_DisablePartitionClock/11 (66437775 (estimated locally),0.25 per call) Power_Ip_MC_ME_EnablePartitionClock/10 (66437775 (estimated locally),0.25 per call) 
+  Calls: Power_Ip_ReportPowerErrors/18 (37904965 (estimated locally),0.11 per call) Power_Ip_TimeoutExpired/17 (1073741824 (estimated locally),3.08 per call) Power_Ip_StartTimeout/16 (114863530 (estimated locally),0.33 per call) Power_Ip_MC_ME_TriggerPartitionUpdate.constprop.0/20 (inlined) (114863530 (estimated locally),0.33 per call) 
+Power_Ip_MC_ME_TriggerCoreUpdate/5 (Power_Ip_MC_ME_TriggerCoreUpdate) @0625e700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerCoreUpdate/5 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/9
+  Availability: local
+  Function flags: count:236518480 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCore/8 (inlined) (236518480 (estimated locally),1.62 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (236518480 (estimated locally),1.62 per call) 
+Power_Ip_MC_ME_TriggerCofbUpdate/4 (Power_Ip_MC_ME_TriggerCofbUpdate) @0625e460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerCofbUpdate/4 is inline copy in Power_Ip_MC_ME_ConfigCoreCOFBClock/9
+  Availability: local
+  Function flags: count:315357972 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_ConfigureCOFB/7 (inlined) (315357972 (estimated locally),2.16 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (315357972 (estimated locally),2.16 per call) 
+Power_Ip_MC_ME_TriggerPartitionUpdate/3 (Power_Ip_MC_ME_TriggerPartitionUpdate) @0625e1c0
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_MC_ME_TriggerModeUpdate/2 (Power_Ip_MC_ME_TriggerModeUpdate) @0625ae00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 21
+  References: Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Function Power_Ip_MC_ME_TriggerModeUpdate/2 is inline copy in Power_Ip_MC_ME_SocStandbyEntry/14
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_SocStandbyEntry/14 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: Power_Ip_MC_ME_WriteControlKeys/1 (1073741824 (estimated locally),1.00 per call) 
+Power_Ip_MC_ME_WriteControlKeys/1 (Power_Ip_MC_ME_WriteControlKeys) @0625ad20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_pxMC_ME/0 (read) 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Power_Ip_MC_ME_TriggerModeUpdate/21 (1073741824 (estimated locally),1.00 per call) Power_Ip_MC_ME_TriggerPartitionUpdate.constprop.0/20 (114863530 (estimated locally),0.33 per call) Power_Ip_MC_ME_TriggerCoreUpdate/5 (236518480 (estimated locally),1.62 per call) Power_Ip_MC_ME_TriggerCofbUpdate/4 (315357972 (estimated locally),2.16 per call) Power_Ip_MC_ME_TriggerModeUpdate/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Power_Ip_pxMC_ME/0 (Power_Ip_pxMC_ME) @06259b40
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_ME_ConfigureCore/8 (read) Power_Ip_MC_ME_TriggerCofbUpdate/4 (read) Power_Ip_MC_ME_ConfigureCore/8 (read) Power_Ip_MC_ME_TriggerModeUpdate/2 (read) Power_Ip_MC_ME_ConfigurePartitionClock/6 (read) Power_Ip_MC_ME_SocTriggerResetEvent/12 (read) Power_Ip_MC_ME_ConfigurePartitionClock/6 (read) Power_Ip_MC_ME_ConfigureCore/8 (read) Power_Ip_MC_ME_TriggerCoreUpdate/5 (read) Power_Ip_MC_ME_SocStandbyEntry/14 (read) Power_Ip_MC_ME_TriggerPartitionUpdate.constprop.0/20 (read) Power_Ip_MC_ME_WriteControlKeys/1 (read) Power_Ip_MC_ME_ConfigureCOFB/7 (read) Power_Ip_MC_ME_ConfigureCOFB/7 (read) Power_Ip_MC_ME_SocTriggerResetEvent/12 (read) Power_Ip_MC_ME_SocStandbyEntry/14 (read) Power_Ip_MC_ME_GetPreviousMode/15 (read) Power_Ip_MC_ME_TriggerModeUpdate/21 (read) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+
+;; Function Power_Ip_MC_ME_WriteControlKeys (Power_Ip_MC_ME_WriteControlKeys, funcdef_no=0, decl_uid=6380, cgraph_uid=1, symbol_order=1)
+
+Power_Ip_MC_ME_WriteControlKeys ()
+{
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.5_1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.5_1 = Power_Ip_pxMC_ME;
+  Power_Ip_pxMC_ME.5_1->CTL_KEY ={v} 23280;
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.5_1->CTL_KEY ={v} 42255;
+  return;
+
+}
+
+
+
+;; Function Power_Ip_MC_ME_ConfigurePartitionClock (Power_Ip_MC_ME_ConfigurePartitionClock, funcdef_no=5, decl_uid=6392, cgraph_uid=6, symbol_order=6)
+
+
+Symbols to be put in SSA form
+{ D.6569 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 13
+Number of blocks to update: 12 ( 92%)
+
+
+Merging blocks 3 and 11
+Removing basic block 9
+Merging blocks 3 and 12
+Merging blocks 3 and 10
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8
+;;
+;; Loop 1
+;;  header 4, latch 5
+;;  depth 1, outer 0
+;;  nodes: 4 5
+;; 2 succs { 3 8 }
+;; 3 succs { 4 }
+;; 4 succs { 5 6 }
+;; 5 succs { 4 6 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+cyclic probability of bb 4 is 0.893025; turning freq 0.330000 to 3.084833
+Power_Ip_MC_ME_ConfigurePartitionClock (const struct Power_Ip_MC_ME_PartitionConfigType * PartitionConfigPtr)
+{
+  uint32 TempValue;
+  uint8 PartitionIndex;
+  boolean TimeoutOccurred;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  uint32 PartitionStatus;
+  uint32 PartitionTriggerMask;
+  uint32 PartitionConfig;
+  uint32 TempValue;
+  long unsigned int _1;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.15_2;
+  int _3;
+  long unsigned int _4;
+  long unsigned int TimeoutTicks.17_6;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.18_7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.19_30;
+  int _31;
+
+  <bb 2> [local count: 348071305]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => 0
+  # DEBUG BEGIN_STMT
+  PartitionConfig_14 = PartitionConfigPtr_13(D)->PartitionPconfRegValue;
+  # DEBUG PartitionConfig => PartitionConfig_14
+  # DEBUG BEGIN_STMT
+  PartitionTriggerMask_15 = PartitionConfigPtr_13(D)->PartitionTriggerMask;
+  # DEBUG PartitionTriggerMask => PartitionTriggerMask_15
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  PartitionIndex_16 = PartitionConfigPtr_13(D)->PartitionIndex;
+  # DEBUG PartitionIndex => PartitionIndex_16
+  # DEBUG BEGIN_STMT
+  _1 = PartitionTriggerMask_15 & 1;
+  if (_1 != 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 3> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.15_2 = Power_Ip_pxMC_ME;
+  _3 = (int) PartitionIndex_16;
+  TempValue_17 ={v} Power_Ip_pxMC_ME.15_2->McMePrtnArray[_3].PRTN_PCONF;
+  # DEBUG TempValue => TempValue_17
+  # DEBUG BEGIN_STMT
+  TempValue_18 = TempValue_17 & 4294967294;
+  # DEBUG TempValue => TempValue_18
+  # DEBUG BEGIN_STMT
+  _4 = PartitionConfig_14 & 1;
+  TempValue_19 = _4 | TempValue_18;
+  # DEBUG TempValue => TempValue_19
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.15_2->McMePrtnArray[_3].PRTN_PCONF ={v} TempValue_19;
+  # DEBUG BEGIN_STMT
+  # DEBUG D#3 => 1
+  # DEBUG PartitionIndex => PartitionIndex_16
+  # DEBUG INLINE_ENTRY Power_Ip_MC_ME_TriggerPartitionUpdate
+  # DEBUG TriggerMask => 1
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => 0
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.19_30 = 1076740096B;
+  _31 = (int) PartitionIndex_16;
+  TempValue_32 ={v} Power_Ip_pxMC_ME.19_30->McMePrtnArray[_31].PRTN_PUPD;
+  # DEBUG TempValue => TempValue_32
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => ~1
+  # DEBUG TempValue => D#1 & TempValue_32
+  # DEBUG BEGIN_STMT
+  TempValue_33 = TempValue_32 | 1;
+  # DEBUG TempValue => TempValue_33
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.19_30->McMePrtnArray[_31].PRTN_PUPD ={v} TempValue_33;
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_WriteControlKeys ();
+  # DEBUG PartitionIndex => NULL
+  # DEBUG TempValue => NULL
+  # DEBUG TriggerMask => NULL
+  # DEBUG BEGIN_STMT
+  Power_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.17_6 = TimeoutTicks;
+  TimeoutOccurred_24 = Power_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.17_6);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_24
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.18_7 = Power_Ip_pxMC_ME;
+  PartitionStatus_25 ={v} Power_Ip_pxMC_ME.18_7->McMePrtnArray[_3].PRTN_STAT;
+  # DEBUG PartitionStatus => PartitionStatus_25
+  # DEBUG BEGIN_STMT
+  _8 = PartitionConfig_14 ^ PartitionStatus_25;
+  _9 = _8 & 1;
+  if (_9 != 0)
+    goto <bb 5>; [94.50%]
+  else
+    goto <bb 6>; [5.50%]
+
+  <bb 5> [local count: 1014686026]:
+  if (TimeoutOccurred_24 != 0)
+    goto <bb 6>; [5.50%]
+  else
+    goto <bb 4>; [94.50%]
+
+  <bb 6> [local count: 114863531]:
+  # TimeoutOccurred_5 = PHI <TimeoutOccurred_24(4), TimeoutOccurred_24(5)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_5 != 0)
+    goto <bb 7>; [33.00%]
+  else
+    goto <bb 8>; [67.00%]
+
+  <bb 7> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_ReportPowerErrors (0, 255);
+
+  <bb 8> [local count: 348071307]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function Power_Ip_MC_ME_ConfigCoreCOFBClock (Power_Ip_MC_ME_ConfigCoreCOFBClock, funcdef_no=8, decl_uid=6357, cgraph_uid=9, symbol_order=9)
+
+
+Symbols to be put in SSA form
+{ D.6570 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 45
+Number of blocks to update: 44 ( 98%)
+
+
+Merging blocks 5 and 18
+Merging blocks 9 and 28
+Removing basic block 15
+Removing basic block 16
+Removing basic block 17
+Removing basic block 21
+Removing basic block 27
+Removing basic block 32
+Merging blocks 36 and 44
+Removing basic block 39
+Merging blocks 5 and 26
+Merging blocks 5 and 25
+Merging blocks 36 and 43
+;; 7 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
+;;
+;; Loop 1
+;;  header 30, latch 29
+;;  depth 1, outer 0
+;;  nodes: 30 29 3 28 27 12 11 4 10 8 9 6 7 5 13 26 20 24 25 22 23 21 14 18 19 16 17 15
+;;
+;; Loop 3
+;;  header 28, latch 27
+;;  depth 2, outer 1
+;;  nodes: 28 27 13 26 20 24 25 22 23 21 14 18 19 16 17 15
+;;
+;; Loop 5
+;;  header 22, latch 23
+;;  depth 3, outer 3
+;;  nodes: 22 23
+;;
+;; Loop 6
+;;  header 16, latch 17
+;;  depth 3, outer 3
+;;  nodes: 16 17
+;;
+;; Loop 2
+;;  header 12, latch 11
+;;  depth 2, outer 1
+;;  nodes: 12 11 4 10 8 9 6 7 5
+;;
+;; Loop 4
+;;  header 6, latch 7
+;;  depth 3, outer 2
+;;  nodes: 6 7
+;; 2 succs { 30 }
+;; 3 succs { 12 29 }
+;; 4 succs { 5 11 }
+;; 5 succs { 6 }
+;; 6 succs { 7 8 }
+;; 7 succs { 6 8 }
+;; 8 succs { 9 10 }
+;; 9 succs { 10 }
+;; 10 succs { 11 }
+;; 11 succs { 12 }
+;; 12 succs { 4 28 }
+;; 13 succs { 14 27 }
+;; 14 succs { 15 21 }
+;; 15 succs { 16 }
+;; 16 succs { 17 18 }
+;; 17 succs { 16 18 }
+;; 18 succs { 19 20 }
+;; 19 succs { 20 }
+;; 20 succs { 21 26 }
+;; 21 succs { 22 }
+;; 22 succs { 23 24 }
+;; 23 succs { 22 24 }
+;; 24 succs { 25 26 }
+;; 25 succs { 26 }
+;; 26 succs { 27 }
+;; 27 succs { 28 }
+;; 28 succs { 13 29 }
+;; 29 succs { 30 }
+;; 30 succs { 3 31 }
+;; 31 succs { 1 }
+cyclic probability of bb 16 is 0.893025; turning freq 0.146850 to 1.372751
+cyclic probability of bb 22 is 0.893025; turning freq 0.220275 to 2.059126
+cyclic probability of bb 6 is 0.893025; turning freq 0.293700 to 2.745501
+cyclic probability of bb 12 is 0.890000; turning freq 0.202500 to 1.840909
+cyclic probability of bb 28 is 0.890000; turning freq 0.202500 to 1.840909
+cyclic probability of bb 6 is 0.893025; turning freq 0.540675 to 5.054219
+cyclic probability of bb 16 is 0.893025; turning freq 0.270338 to 2.527109
+cyclic probability of bb 22 is 0.893025; turning freq 0.405506 to 3.790664
+cyclic probability of bb 30 is 0.750000; turning freq 1.000000 to 4.000000
+cyclic probability of bb 12 is 0.890000; turning freq 0.810000 to 7.363637
+cyclic probability of bb 28 is 0.890000; turning freq 0.810000 to 7.363637
+cyclic probability of bb 6 is 0.893025; turning freq 2.162700 to 20.216876
+cyclic probability of bb 16 is 0.893025; turning freq 1.081350 to 10.108438
+cyclic probability of bb 22 is 0.893025; turning freq 1.622025 to 15.162657
+Power_Ip_MC_ME_ConfigCoreCOFBClock (const struct Power_Ip_MC_ME_ModeConfigType * ModeConfigPtr)
+{
+  uint32 TempValue;
+  uint32 CoreConfig;
+  uint32 CoreStatus;
+  uint32 StartTime;
+  uint32 ElapsedTime;
+  uint32 TimeoutTicks;
+  boolean TimeoutOccurred;
+  uint8 CoreIndex;
+  uint32 TempValue;
+  uint32 PeripheralsConfig;
+  uint32 PeripheralsToUpdate;
+  uint32 PeripheralsStatus;
+  uint32 StartTime;
+  uint32 ElapsedTime;
+  uint32 TimeoutTicks;
+  boolean TimeoutOccurred;
+  uint8 CofbIndex;
+  uint8 CoreIndex;
+  uint8 CofbIndex;
+  uint8 PartitionIndex;
+  const struct Power_Ip_MC_ME_PartitionConfigType[3] * _1;
+  int _2;
+  _Bool _3;
+  const struct Power_Ip_MC_ME_CofbConfigType[<unknown>] * _4;
+  int _5;
+  _Bool _6;
+  const struct Power_Ip_MC_ME_CofbConfigType * _7;
+  unsigned char _8;
+  unsigned char _9;
+  const struct Power_Ip_MC_ME_CoreConfigType[<unknown>] * _10;
+  int _11;
+  _Bool _12;
+  const struct Power_Ip_MC_ME_CoreConfigType * _13;
+  unsigned char _14;
+  unsigned char _15;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.0_35;
+  int _36;
+  int _37;
+  long unsigned int TimeoutTicks.1_38;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.2_40;
+  long unsigned int _42;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.3_44;
+  int _45;
+  long unsigned int _51;
+  long unsigned int TimeoutTicks.7_52;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.8_54;
+  int _55;
+  int _56;
+  signed int CoreStatus.9_58;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.10_60;
+  int _61;
+  int _62;
+  long unsigned int TimeoutTicks.11_63;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.12_65;
+  long unsigned int _67;
+  long unsigned int _68;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.13_70;
+  int _71;
+  int _72;
+
+  <bb 2> [local count: 53111166]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempPartitionConfig => 0B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG PartitionIndex => 0
+  goto <bb 30>; [100.00%]
+
+  <bb 3> [local count: 159333506]:
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_26(D)->ArrayPartitionConfigPtr;
+  _2 = (int) PartitionIndex_16;
+  # DEBUG D#2 => &(*_1)[_2]
+  # DEBUG TempPartitionConfig => D#2
+  # DEBUG BEGIN_STMT
+  _3 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].PartitionUnderMcuControl;
+  if (_3 != 0)
+    goto <bb 12>; [27.00%]
+  else
+    goto <bb 29>; [73.00%]
+
+  <bb 4> [local count: 348071305]:
+  # DEBUG BEGIN_STMT
+  _4 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].ArrayPartitionCofbConfigPtr;
+  _5 = (int) CofbIndex_17;
+  _6 = (*_4)[_5].CofbUnderMcuControl;
+  if (_6 != 0)
+    goto <bb 5>; [33.00%]
+  else
+    goto <bb 11>; [67.00%]
+
+  <bb 5> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  _7 = &(*_4)[_5];
+  _8 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].PartitionIndex;
+  # DEBUG CofbConfigPtr => _7
+  # DEBUG PartitionIndex => _8
+  # DEBUG INLINE_ENTRY Power_Ip_MC_ME_ConfigureCOFB
+  # DEBUG BEGIN_STMT
+  PeripheralsConfig_32 = _7->CofbClkenRegValue;
+  # DEBUG PeripheralsConfig => PeripheralsConfig_32
+  # DEBUG BEGIN_STMT
+  PeripheralsToUpdate_33 = _7->CofbBlocksToUpdateMask;
+  # DEBUG PeripheralsToUpdate => PeripheralsToUpdate_33
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  CofbIndex_34 = _7->CofbIndex;
+  # DEBUG CofbIndex => CofbIndex_34
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.0_35 = 1076740096B;
+  _36 = (int) _8;
+  _37 = (int) CofbIndex_34;
+  Power_Ip_pxMC_ME.0_35->McMePrtnArray[_36].PRTN_COFB_CLKEN[_37] ={v} PeripheralsConfig_32;
+  # DEBUG BEGIN_STMT
+  # DEBUG PartitionIndex => _8
+  # DEBUG INLINE_ENTRY Power_Ip_MC_ME_TriggerCofbUpdate
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => 0
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.3_44 = 1076740096B;
+  _45 = (int) _8;
+  TempValue_46 ={v} Power_Ip_pxMC_ME.3_44->McMePrtnArray[_45].PRTN_PUPD;
+  # DEBUG TempValue => TempValue_46
+  # DEBUG BEGIN_STMT
+  TempValue_47 = TempValue_46 & 4294967294;
+  # DEBUG TempValue => TempValue_47
+  # DEBUG BEGIN_STMT
+  TempValue_48 = TempValue_47 | 1;
+  # DEBUG TempValue => TempValue_48
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.3_44->McMePrtnArray[_45].PRTN_PUPD ={v} TempValue_48;
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_WriteControlKeys ();
+  # DEBUG PartitionIndex => NULL
+  # DEBUG TempValue => NULL
+  # DEBUG BEGIN_STMT
+  Power_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.1_38 = TimeoutTicks;
+  TimeoutOccurred_39 = Power_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_38);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_39
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.2_40 = 1076740096B;
+  PeripheralsStatus_41 ={v} Power_Ip_pxMC_ME.2_40->McMePrtnArray[_36].PRTN_COFB_STAT[_37];
+  # DEBUG PeripheralsStatus => PeripheralsStatus_41
+  # DEBUG BEGIN_STMT
+  _42 = PeripheralsToUpdate_33 & PeripheralsStatus_41;
+  if (PeripheralsConfig_32 != _42)
+    goto <bb 7>; [94.50%]
+  else
+    goto <bb 8>; [5.50%]
+
+  <bb 7> [local count: 1014686026]:
+  if (TimeoutOccurred_39 != 0)
+    goto <bb 8>; [5.50%]
+  else
+    goto <bb 6>; [94.50%]
+
+  <bb 8> [local count: 114863531]:
+  # TimeoutOccurred_43 = PHI <TimeoutOccurred_39(6), TimeoutOccurred_39(7)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_43 != 0)
+    goto <bb 9>; [33.00%]
+  else
+    goto <bb 10>; [67.00%]
+
+  <bb 9> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_ReportPowerErrors (0, 255);
+
+  <bb 10> [local count: 114863531]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+
+  <bb 11> [local count: 348071307]:
+  # DEBUG CofbConfigPtr => NULL
+  # DEBUG PartitionIndex => NULL
+  # DEBUG CofbIndex => NULL
+  # DEBUG TimeoutOccurred => NULL
+  # DEBUG TimeoutTicks => NULL
+  # DEBUG ElapsedTime => NULL
+  # DEBUG StartTime => NULL
+  # DEBUG PeripheralsStatus => NULL
+  # DEBUG PeripheralsToUpdate => NULL
+  # DEBUG PeripheralsConfig => NULL
+  # DEBUG BEGIN_STMT
+  CofbIndex_30 = CofbIndex_17 + 1;
+  # DEBUG CofbIndex => CofbIndex_30
+
+  <bb 12> [local count: 391091354]:
+  # CofbIndex_17 = PHI <CofbIndex_30(11), 0(3)>
+  # DEBUG CofbIndex => CofbIndex_17
+  # DEBUG BEGIN_STMT
+  _9 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].NumberOfCofbs;
+  if (_9 > CofbIndex_17)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 28>; [11.00%]
+
+  <bb 13> [local count: 348071317]:
+  # DEBUG BEGIN_STMT
+  _10 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].ArrayPartitionCoreConfigPtr;
+  _11 = (int) CoreIndex_18;
+  _12 = (*_10)[_11].CoreUnderMcuControl;
+  if (_12 != 0)
+    goto <bb 14>; [33.00%]
+  else
+    goto <bb 27>; [67.00%]
+
+  <bb 14> [local count: 114863534]:
+  # DEBUG BEGIN_STMT
+  _13 = &(*_10)[_11];
+  _14 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].PartitionIndex;
+  # DEBUG CoreConfigPtr => _13
+  # DEBUG PartitionIndex => _14
+  # DEBUG INLINE_ENTRY Power_Ip_MC_ME_ConfigureCore
+  # DEBUG BEGIN_STMT
+  CoreConfig_49 = _13->CorePconfRegValue;
+  # DEBUG CoreConfig => CoreConfig_49
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  CoreIndex_50 = _13->CoreIndex;
+  # DEBUG CoreIndex => CoreIndex_50
+  # DEBUG BEGIN_STMT
+  _51 = CoreConfig_49 & 1;
+  if (_51 == 0)
+    goto <bb 15>; [50.00%]
+  else
+    goto <bb 21>; [50.00%]
+
+  <bb 15> [local count: 57431767]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 16> [local count: 536870931]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.7_52 = TimeoutTicks;
+  TimeoutOccurred_53 = Power_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.7_52);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_53
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.8_54 = 1076740096B;
+  _55 = (int) _14;
+  _56 = (int) CoreIndex_50;
+  CoreStatus_57 ={v} Power_Ip_pxMC_ME.8_54->McMePrtnArray[_55].McMePrtnCoreArray[_56].PRTN_CORE_STAT;
+  # DEBUG CoreStatus => CoreStatus_57
+  # DEBUG BEGIN_STMT
+  CoreStatus.9_58 = (signed int) CoreStatus_57;
+  if (CoreStatus.9_58 >= 0)
+    goto <bb 17>; [94.50%]
+  else
+    goto <bb 18>; [5.50%]
+
+  <bb 17> [local count: 507343029]:
+  if (TimeoutOccurred_53 != 0)
+    goto <bb 18>; [5.50%]
+  else
+    goto <bb 16>; [94.50%]
+
+  <bb 18> [local count: 57431767]:
+  # TimeoutOccurred_59 = PHI <TimeoutOccurred_53(16), TimeoutOccurred_53(17)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_59 != 0)
+    goto <bb 19>; [33.00%]
+  else
+    goto <bb 20>; [67.00%]
+
+  <bb 19> [local count: 18952483]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_ReportPowerErrors (0, 255);
+
+  <bb 20> [local count: 57431768]:
+  # DEBUG TimeoutOccurred => TimeoutOccurred_59
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_59 != 0)
+    goto <bb 26>; [50.00%]
+  else
+    goto <bb 21>; [50.00%]
+
+  <bb 21> [local count: 86147651]:
+  # DEBUG TimeoutOccurred => NULL
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.10_60 = 1076740096B;
+  _61 = (int) _14;
+  _62 = (int) CoreIndex_50;
+  Power_Ip_pxMC_ME.10_60->McMePrtnArray[_61].McMePrtnCoreArray[_62].PRTN_CORE_PCONF ={v} CoreConfig_49;
+  # DEBUG BEGIN_STMT
+  # DEBUG PartitionIndex => _14
+  # DEBUG CoreIndex => CoreIndex_50
+  # DEBUG INLINE_ENTRY Power_Ip_MC_ME_TriggerCoreUpdate
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => 0
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.13_70 = 1076740096B;
+  _71 = (int) _14;
+  _72 = (int) CoreIndex_50;
+  TempValue_73 ={v} Power_Ip_pxMC_ME.13_70->McMePrtnArray[_71].McMePrtnCoreArray[_72].PRTN_CORE_PUPD;
+  # DEBUG TempValue => TempValue_73
+  # DEBUG BEGIN_STMT
+  TempValue_74 = TempValue_73 & 4294967294;
+  # DEBUG TempValue => TempValue_74
+  # DEBUG BEGIN_STMT
+  TempValue_75 = TempValue_74 | 1;
+  # DEBUG TempValue => TempValue_75
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.13_70->McMePrtnArray[_71].McMePrtnCoreArray[_72].PRTN_CORE_PUPD ={v} TempValue_75;
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_WriteControlKeys ();
+  # DEBUG PartitionIndex => NULL
+  # DEBUG CoreIndex => NULL
+  # DEBUG TempValue => NULL
+  # DEBUG BEGIN_STMT
+  Power_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 22> [local count: 805306399]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.11_63 = TimeoutTicks;
+  TimeoutOccurred_64 = Power_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.11_63);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_64
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.12_65 = 1076740096B;
+  CoreStatus_66 ={v} Power_Ip_pxMC_ME.12_65->McMePrtnArray[_61].McMePrtnCoreArray[_62].PRTN_CORE_STAT;
+  # DEBUG CoreStatus => CoreStatus_66
+  # DEBUG BEGIN_STMT
+  _67 = CoreConfig_49 ^ CoreStatus_66;
+  _68 = _67 & 1;
+  if (_68 != 0)
+    goto <bb 23>; [94.50%]
+  else
+    goto <bb 24>; [5.50%]
+
+  <bb 23> [local count: 761014547]:
+  if (TimeoutOccurred_64 != 0)
+    goto <bb 24>; [5.50%]
+  else
+    goto <bb 22>; [94.50%]
+
+  <bb 24> [local count: 86147652]:
+  # TimeoutOccurred_69 = PHI <TimeoutOccurred_64(22), TimeoutOccurred_64(23)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_69 != 0)
+    goto <bb 25>; [33.00%]
+  else
+    goto <bb 26>; [67.00%]
+
+  <bb 25> [local count: 28428725]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_ReportPowerErrors (0, 255);
+
+  <bb 26> [local count: 114863535]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+
+  <bb 27> [local count: 348071318]:
+  # DEBUG CoreConfigPtr => NULL
+  # DEBUG PartitionIndex => NULL
+  # DEBUG CoreIndex => NULL
+  # DEBUG TimeoutOccurred => NULL
+  # DEBUG TimeoutTicks => NULL
+  # DEBUG ElapsedTime => NULL
+  # DEBUG StartTime => NULL
+  # DEBUG CoreStatus => NULL
+  # DEBUG CoreConfig => NULL
+  # DEBUG BEGIN_STMT
+  CoreIndex_28 = CoreIndex_18 + 1;
+  # DEBUG CoreIndex => CoreIndex_28
+
+  <bb 28> [local count: 391091367]:
+  # CoreIndex_18 = PHI <CoreIndex_28(27), 0(12)>
+  # DEBUG CoreIndex => CoreIndex_18
+  # DEBUG BEGIN_STMT
+  _15 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].NumberOfCores;
+  if (_15 > CoreIndex_18)
+    goto <bb 13>; [89.00%]
+  else
+    goto <bb 29>; [11.00%]
+
+  <bb 29> [local count: 159333509]:
+  # DEBUG BEGIN_STMT
+  PartitionIndex_31 = PartitionIndex_16 + 1;
+  # DEBUG PartitionIndex => PartitionIndex_31
+
+  <bb 30> [local count: 212444675]:
+  # PartitionIndex_16 = PHI <0(2), PartitionIndex_31(29)>
+  # DEBUG PartitionIndex => PartitionIndex_16
+  # DEBUG BEGIN_STMT
+  if (PartitionIndex_16 != 3)
+    goto <bb 3>; [75.00%]
+  else
+    goto <bb 31>; [25.00%]
+
+  <bb 31> [local count: 53111169]:
+  return;
+
+}
+
+
+
+;; Function Power_Ip_MC_ME_EnablePartitionClock (Power_Ip_MC_ME_EnablePartitionClock, funcdef_no=9, decl_uid=6359, cgraph_uid=10, symbol_order=10)
+
+Power_Ip_MC_ME_EnablePartitionClock (const struct Power_Ip_MC_ME_ModeConfigType * ModeConfigPtr)
+{
+  uint8 PartitionIndex;
+  const struct Power_Ip_MC_ME_PartitionConfigType * TempPartitionConfig;
+  const struct Power_Ip_MC_ME_PartitionConfigType[3] * _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempPartitionConfig => 0B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG PartitionIndex => 0
+  goto <bb 8>; [100.00%]
+
+  <bb 3> [local count: 805306369]:
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_11(D)->ArrayPartitionConfigPtr;
+  _2 = (int) PartitionIndex_7;
+  TempPartitionConfig_12 = &(*_1)[_2];
+  # DEBUG TempPartitionConfig => TempPartitionConfig_12
+  # DEBUG BEGIN_STMT
+  _3 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].PartitionUnderMcuControl;
+  if (_3 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 4> [local count: 402653184]:
+  # DEBUG BEGIN_STMT
+  _4 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].PartitionPowerUnderMcuControl;
+  if (_4 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 5> [local count: 201326592]:
+  # DEBUG BEGIN_STMT
+  _5 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].PartitionPconfRegValue;
+  _6 = _5 & 1;
+  if (_6 != 0)
+    goto <bb 6>; [33.00%]
+  else
+    goto <bb 7>; [67.00%]
+
+  <bb 6> [local count: 66437775]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_ConfigurePartitionClock (TempPartitionConfig_12);
+
+  <bb 7> [local count: 805306369]:
+  # DEBUG BEGIN_STMT
+  PartitionIndex_14 = PartitionIndex_7 + 1;
+  # DEBUG PartitionIndex => PartitionIndex_14
+
+  <bb 8> [local count: 1073741824]:
+  # PartitionIndex_7 = PHI <0(2), PartitionIndex_14(7)>
+  # DEBUG PartitionIndex => PartitionIndex_7
+  # DEBUG BEGIN_STMT
+  if (PartitionIndex_7 != 3)
+    goto <bb 3>; [75.00%]
+  else
+    goto <bb 9>; [25.00%]
+
+  <bb 9> [local count: 268435456]:
+  return;
+
+}
+
+
+
+;; Function Power_Ip_MC_ME_DisablePartitionClock (Power_Ip_MC_ME_DisablePartitionClock, funcdef_no=10, decl_uid=6361, cgraph_uid=11, symbol_order=11)
+
+Power_Ip_MC_ME_DisablePartitionClock (const struct Power_Ip_MC_ME_ModeConfigType * ModeConfigPtr)
+{
+  uint8 PartitionIndex;
+  const struct Power_Ip_MC_ME_PartitionConfigType * TempPartitionConfig;
+  const struct Power_Ip_MC_ME_PartitionConfigType[3] * _1;
+  int _2;
+  _Bool _3;
+  _Bool _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempPartitionConfig => 0B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG PartitionIndex => 0
+  goto <bb 8>; [100.00%]
+
+  <bb 3> [local count: 805306369]:
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_11(D)->ArrayPartitionConfigPtr;
+  _2 = (int) PartitionIndex_7;
+  TempPartitionConfig_12 = &(*_1)[_2];
+  # DEBUG TempPartitionConfig => TempPartitionConfig_12
+  # DEBUG BEGIN_STMT
+  _3 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].PartitionUnderMcuControl;
+  if (_3 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 4> [local count: 402653184]:
+  # DEBUG BEGIN_STMT
+  _4 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].PartitionPowerUnderMcuControl;
+  if (_4 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 5> [local count: 201326592]:
+  # DEBUG BEGIN_STMT
+  _5 = MEM <const struct Power_Ip_MC_ME_PartitionConfigType[3]> [(const struct Power_Ip_MC_ME_PartitionConfigType *)_1][_2].PartitionPconfRegValue;
+  _6 = _5 & 1;
+  if (_6 == 0)
+    goto <bb 6>; [33.00%]
+  else
+    goto <bb 7>; [67.00%]
+
+  <bb 6> [local count: 66437775]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_ConfigurePartitionClock (TempPartitionConfig_12);
+
+  <bb 7> [local count: 805306369]:
+  # DEBUG BEGIN_STMT
+  PartitionIndex_14 = PartitionIndex_7 + 1;
+  # DEBUG PartitionIndex => PartitionIndex_14
+
+  <bb 8> [local count: 1073741824]:
+  # PartitionIndex_7 = PHI <0(2), PartitionIndex_14(7)>
+  # DEBUG PartitionIndex => PartitionIndex_7
+  # DEBUG BEGIN_STMT
+  if (PartitionIndex_7 != 3)
+    goto <bb 3>; [75.00%]
+  else
+    goto <bb 9>; [25.00%]
+
+  <bb 9> [local count: 268435456]:
+  return;
+
+}
+
+
+
+;; Function Power_Ip_MC_ME_SocTriggerResetEvent (Power_Ip_MC_ME_SocTriggerResetEvent, funcdef_no=11, decl_uid=6363, cgraph_uid=12, symbol_order=12)
+
+
+Symbols to be put in SSA form
+{ D.6573 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 9
+Number of blocks to update: 8 ( 89%)
+
+
+Merging blocks 6 and 8
+Merging blocks 6 and 7
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6
+;; 2 succs { 3 4 }
+;; 3 succs { 6 }
+;; 4 succs { 5 6 }
+;; 5 succs { 6 }
+;; 6 succs { 1 }
+Power_Ip_MC_ME_SocTriggerResetEvent (Power_Ip_PowerModeType PowerMode)
+{
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.21_1;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.22_2;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.23_9;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  if (PowerMode_4(D) == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.21_1 = Power_Ip_pxMC_ME;
+  Power_Ip_pxMC_ME.21_1->MODE_CONF ={v} 1;
+  goto <bb 6>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  if (PowerMode_4(D) == 1)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 6>; [66.00%]
+
+  <bb 5> [local count: 182536112]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.22_2 = Power_Ip_pxMC_ME;
+  Power_Ip_pxMC_ME.22_2->MODE_CONF ={v} 2;
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Power_Ip_MC_ME_TriggerModeUpdate
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.23_9 = 1076740096B;
+  Power_Ip_pxMC_ME.23_9->MODE_UPD ={v} 1;
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_WriteControlKeys ();
+  return;
+
+}
+
+
+
+;; Function Power_Ip_MC_ME_CoreStandbyEntry (Power_Ip_MC_ME_CoreStandbyEntry, funcdef_no=12, decl_uid=6365, cgraph_uid=13, symbol_order=13)
+
+Power_Ip_MC_ME_CoreStandbyEntry (const struct Power_Ip_ModeConfigType * ModeConfigPtr)
+{
+  _Bool _1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_5(D)->SleepOnExit;
+  if (_1 != 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_CM7_EnableSleepOnExit ();
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("  wfi");
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  return;
+
+}
+
+
+
+;; Function Power_Ip_MC_ME_SocStandbyEntry (Power_Ip_MC_ME_SocStandbyEntry, funcdef_no=13, decl_uid=6367, cgraph_uid=14, symbol_order=14)
+
+
+Symbols to be put in SSA form
+{ D.6575 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 7
+Number of blocks to update: 6 ( 86%)
+
+
+Merging blocks 2 and 6
+Merging blocks 2 and 5
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 1 }
+Power_Ip_MC_ME_SocStandbyEntry (const struct Power_Ip_ModeConfigType * ModeConfigPtr)
+{
+  const struct Power_Ip_MC_ME_ModeConfigType * _1;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.24_2;
+  long unsigned int _3;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.25_4;
+  _Bool _5;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.23_16;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr_8(D)->McMeModeConfigPtr;
+  Power_Ip_pxMC_ME.24_2 = Power_Ip_pxMC_ME;
+  _3 = _1->MainCoreIdRegValue;
+  Power_Ip_pxMC_ME.24_2->MAIN_COREID ={v} _3;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.25_4 = Power_Ip_pxMC_ME;
+  Power_Ip_pxMC_ME.25_4->MODE_CONF ={v} 32768;
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Power_Ip_MC_ME_TriggerModeUpdate
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.23_16 = 1076740096B;
+  Power_Ip_pxMC_ME.23_16->MODE_UPD ={v} 1;
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_WriteControlKeys ();
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  _5 = ModeConfigPtr_8(D)->SleepOnExit;
+  if (_5 != 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  Power_Ip_CM7_EnableSleepOnExit ();
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("  wfi");
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Power_Ip_MC_ME_GetPreviousMode (Power_Ip_MC_ME_GetPreviousMode, funcdef_no=14, decl_uid=6369, cgraph_uid=15, symbol_order=15)
+
+Power_Ip_MC_ME_GetPreviousMode ()
+{
+  Power_Ip_PowerModeType PrevMode;
+  struct Power_Ip_MC_ME_Type * Power_Ip_pxMC_ME.26_1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Power_Ip_pxMC_ME.26_1 = Power_Ip_pxMC_ME;
+  _2 ={v} Power_Ip_pxMC_ME.26_1->MODE_STAT;
+  _3 = _2 & 1;
+  if (_3 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 3>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG PrevMode => 2
+
+  <bb 4> [local count: 1073741824]:
+  # PrevMode_4 = PHI <15(2), 2(3)>
+  # DEBUG PrevMode => PrevMode_4
+  # DEBUG BEGIN_STMT
+  return PrevMode_4;
+
+}
+
+

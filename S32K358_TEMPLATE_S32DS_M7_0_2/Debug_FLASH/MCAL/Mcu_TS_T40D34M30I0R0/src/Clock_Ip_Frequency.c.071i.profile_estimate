@@ -1,0 +1,4935 @@
+Histogram:
+
+========== IPA-profile speculative targets: ==========
+
+Summary for node Clock_Ip_SetExternalSignalFrequency/172:
+
+Summary for node Clock_Ip_GetFreq/171:
+  Summary for Clock_Ip_GetFreq/171 of indirect edge 0:
+
+Summary for node Clock_Ip_SetExternalOscillatorFrequency/170:
+
+Summary for node Clock_Ip_PLL_VCO/169:
+
+Summary for node Clock_Ip_Get_WKPU0_CLK_Frequency/168:
+
+Summary for node Clock_Ip_Get_TSENSE0_CLK_Frequency/167:
+
+Summary for node Clock_Ip_Get_TRGMUX0_CLK_Frequency/166:
+
+Summary for node Clock_Ip_Get_TRACE_CLK_Frequency/165:
+  Summary for Clock_Ip_Get_TRACE_CLK_Frequency/165 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_TEMPSENSE_CLK_Frequency/164:
+
+Summary for node Clock_Ip_Get_SWT2_CLK_Frequency/163:
+
+Summary for node Clock_Ip_Get_SWT1_CLK_Frequency/162:
+
+Summary for node Clock_Ip_Get_SWT0_CLK_Frequency/161:
+
+Summary for node Clock_Ip_Get_USDHC_CLK_Frequency/160:
+  Summary for Clock_Ip_Get_USDHC_CLK_Frequency/160 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_STM2_CLK_Frequency/159:
+
+Summary for node Clock_Ip_Get_STMC_CLK_Frequency/158:
+  Summary for Clock_Ip_Get_STMC_CLK_Frequency/158 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_STM1_CLK_Frequency/157:
+
+Summary for node Clock_Ip_Get_STMB_CLK_Frequency/156:
+  Summary for Clock_Ip_Get_STMB_CLK_Frequency/156 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_STM0_CLK_Frequency/155:
+
+Summary for node Clock_Ip_Get_STMA_CLK_Frequency/154:
+  Summary for Clock_Ip_Get_STMA_CLK_Frequency/154 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_STCU0_CLK_Frequency/153:
+
+Summary for node Clock_Ip_Get_SIUL2_CLK_Frequency/152:
+
+Summary for node Clock_Ip_Get_SEMA42_CLK_Frequency/151:
+
+Summary for node Clock_Ip_Get_SDA_AP_CLK_Frequency/150:
+
+Summary for node Clock_Ip_Get_SAI1_CLK_Frequency/149:
+
+Summary for node Clock_Ip_Get_SAI0_CLK_Frequency/148:
+
+Summary for node Clock_Ip_Get_RTC0_CLK_Frequency/147:
+
+Summary for node Clock_Ip_Get_RTC_CLK_Frequency_TrustedCall/146:
+  Summary for Clock_Ip_Get_RTC_CLK_Frequency_TrustedCall/146 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_RTC_CLK_Frequency/145:
+
+Summary for node Clock_Ip_Get_QSPI_SFCK_CLK_Frequency/144:
+
+Summary for node Clock_Ip_Get_QSPI0_TX_MEM_CLK_Frequency/143:
+
+Summary for node Clock_Ip_Get_QSPI0_RAM_CLK_Frequency/142:
+
+Summary for node Clock_Ip_Get_QSPI0_CLK_Frequency/141:
+
+Summary for node Clock_Ip_Get_QSPI_2XSFIF_CLK_Frequency/140:
+  Summary for Clock_Ip_Get_QSPI_2XSFIF_CLK_Frequency/140 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_PIT2_CLK_Frequency/139:
+
+Summary for node Clock_Ip_Get_PIT1_CLK_Frequency/138:
+
+Summary for node Clock_Ip_Get_PIT0_CLK_Frequency/137:
+
+Summary for node Clock_Ip_Get_MU2B_CLK_Frequency/136:
+
+Summary for node Clock_Ip_Get_MU2A_CLK_Frequency/135:
+
+Summary for node Clock_Ip_Get_MSCM_CLK_Frequency/134:
+
+Summary for node Clock_Ip_Get_LPUART15_CLK_Frequency/133:
+
+Summary for node Clock_Ip_Get_LPUART14_CLK_Frequency/132:
+
+Summary for node Clock_Ip_Get_LPUART13_CLK_Frequency/131:
+
+Summary for node Clock_Ip_Get_LPUART12_CLK_Frequency/130:
+
+Summary for node Clock_Ip_Get_LPUART11_CLK_Frequency/129:
+
+Summary for node Clock_Ip_Get_LPUART10_CLK_Frequency/128:
+
+Summary for node Clock_Ip_Get_LPUART9_CLK_Frequency/127:
+
+Summary for node Clock_Ip_Get_LPUART8_CLK_Frequency/126:
+
+Summary for node Clock_Ip_Get_LPUART7_CLK_Frequency/125:
+
+Summary for node Clock_Ip_Get_LPUART6_CLK_Frequency/124:
+
+Summary for node Clock_Ip_Get_LPUART5_CLK_Frequency/123:
+
+Summary for node Clock_Ip_Get_LPUART4_CLK_Frequency/122:
+
+Summary for node Clock_Ip_Get_LPUART3_CLK_Frequency/121:
+
+Summary for node Clock_Ip_Get_LPUART2_CLK_Frequency/120:
+
+Summary for node Clock_Ip_Get_LPUART1_CLK_Frequency/119:
+
+Summary for node Clock_Ip_Get_LPUART0_CLK_Frequency/118:
+
+Summary for node Clock_Ip_Get_LPSPI5_CLK_Frequency/117:
+
+Summary for node Clock_Ip_Get_LPSPI4_CLK_Frequency/116:
+
+Summary for node Clock_Ip_Get_LPSPI3_CLK_Frequency/115:
+
+Summary for node Clock_Ip_Get_LPSPI2_CLK_Frequency/114:
+
+Summary for node Clock_Ip_Get_LPSPI1_CLK_Frequency/113:
+
+Summary for node Clock_Ip_Get_LPSPI0_CLK_Frequency/112:
+
+Summary for node Clock_Ip_Get_LPI2C1_CLK_Frequency/111:
+
+Summary for node Clock_Ip_Get_LPI2C0_CLK_Frequency/110:
+
+Summary for node Clock_Ip_Get_LCU1_CLK_Frequency/109:
+
+Summary for node Clock_Ip_Get_LCU0_CLK_Frequency/108:
+
+Summary for node Clock_Ip_Get_INTM_CLK_Frequency/107:
+
+Summary for node Clock_Ip_Get_FLEXIO0_CLK_Frequency/106:
+
+Summary for node Clock_Ip_Get_FLEXCAN7_CLK_Frequency/105:
+
+Summary for node Clock_Ip_Get_FLEXCAN6_CLK_Frequency/104:
+
+Summary for node Clock_Ip_Get_FLEXCAN5_CLK_Frequency/103:
+
+Summary for node Clock_Ip_Get_FLEXCAN4_CLK_Frequency/102:
+
+Summary for node Clock_Ip_Get_FLEXCAN3_CLK_Frequency/101:
+
+Summary for node Clock_Ip_Get_FLEXCANB_CLK_Frequency/100:
+  Summary for Clock_Ip_Get_FLEXCANB_CLK_Frequency/100 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_FLEXCAN2_CLK_Frequency/99:
+
+Summary for node Clock_Ip_Get_FLEXCAN1_CLK_Frequency/98:
+
+Summary for node Clock_Ip_Get_FLEXCAN0_CLK_Frequency/97:
+
+Summary for node Clock_Ip_Get_FLEXCANA_CLK_Frequency/96:
+  Summary for Clock_Ip_Get_FLEXCANA_CLK_Frequency/96 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_ERM1_CLK_Frequency/95:
+
+Summary for node Clock_Ip_Get_ERM0_CLK_Frequency/94:
+
+Summary for node Clock_Ip_Get_EMIOS2_CLK_Frequency/93:
+
+Summary for node Clock_Ip_Get_EMIOS1_CLK_Frequency/92:
+
+Summary for node Clock_Ip_Get_EMIOS0_CLK_Frequency/91:
+
+Summary for node Clock_Ip_Get_EMAC_TX_CLK_Frequency/90:
+  Summary for Clock_Ip_Get_EMAC_TX_CLK_Frequency/90 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_EMAC_TS_CLK_Frequency/89:
+  Summary for Clock_Ip_Get_EMAC_TS_CLK_Frequency/89 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_EMAC_RX_CLK_Frequency/88:
+  Summary for Clock_Ip_Get_EMAC_RX_CLK_Frequency/88 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_GMAC0_CLK_Frequency/87:
+
+Summary for node Clock_Ip_Get_EIM2_CLK_Frequency/86:
+
+Summary for node Clock_Ip_Get_EIM1_CLK_Frequency/85:
+
+Summary for node Clock_Ip_Get_EIM0_CLK_Frequency/84:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD31_CLK_Frequency/83:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD30_CLK_Frequency/82:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD29_CLK_Frequency/81:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD28_CLK_Frequency/80:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD27_CLK_Frequency/79:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD26_CLK_Frequency/78:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD25_CLK_Frequency/77:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD24_CLK_Frequency/76:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD23_CLK_Frequency/75:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD22_CLK_Frequency/74:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD21_CLK_Frequency/73:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD20_CLK_Frequency/72:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD19_CLK_Frequency/71:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD18_CLK_Frequency/70:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD17_CLK_Frequency/69:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD16_CLK_Frequency/68:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD15_CLK_Frequency/67:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD14_CLK_Frequency/66:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD13_CLK_Frequency/65:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD12_CLK_Frequency/64:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD11_CLK_Frequency/63:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD10_CLK_Frequency/62:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD9_CLK_Frequency/61:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD8_CLK_Frequency/60:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD7_CLK_Frequency/59:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD6_CLK_Frequency/58:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD5_CLK_Frequency/57:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD4_CLK_Frequency/56:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD3_CLK_Frequency/55:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD2_CLK_Frequency/54:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD1_CLK_Frequency/53:
+
+Summary for node Clock_Ip_Get_EDMA0_TCD0_CLK_Frequency/52:
+
+Summary for node Clock_Ip_Get_EDMA0_CLK_Frequency/51:
+
+Summary for node Clock_Ip_Get_DMAMUX1_CLK_Frequency/50:
+
+Summary for node Clock_Ip_Get_DMAMUX0_CLK_Frequency/49:
+
+Summary for node Clock_Ip_Get_CRC0_CLK_Frequency/48:
+
+Summary for node Clock_Ip_Get_CMP2_CLK_Frequency/47:
+
+Summary for node Clock_Ip_Get_CMP1_CLK_Frequency/46:
+
+Summary for node Clock_Ip_Get_CMP0_CLK_Frequency/45:
+
+Summary for node Clock_Ip_Get_CLKOUT_STANDBY_CLK_Frequency/44:
+  Summary for Clock_Ip_Get_CLKOUT_STANDBY_CLK_Frequency/44 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_BCTU0_CLK_Frequency/43:
+
+Summary for node Clock_Ip_Get_ADC2_CLK_Frequency/42:
+
+Summary for node Clock_Ip_Get_ADC1_CLK_Frequency/41:
+
+Summary for node Clock_Ip_Get_ADC0_CLK_Frequency/40:
+
+Summary for node Clock_Ip_Get_CLKOUT_RUN_CLK_Frequency/39:
+  Summary for Clock_Ip_Get_CLKOUT_RUN_CLK_Frequency/39 of indirect edge 0:
+
+Summary for node Clock_Ip_Get_QSPI_MEM_CLK_Frequency/38:
+
+Summary for node Clock_Ip_Get_LBIST_CLK_Frequency/37:
+
+Summary for node Clock_Ip_Get_DCM_CLK_Frequency/36:
+
+Summary for node Clock_Ip_Get_HSE_CLK_Frequency/35:
+
+Summary for node Clock_Ip_Get_AIPS_SLOW_CLK_Frequency/34:
+
+Summary for node Clock_Ip_Get_AIPS_PLAT_CLK_Frequency/33:
+
+Summary for node Clock_Ip_Get_CORE_CLK_Frequency/32:
+
+Summary for node Clock_Ip_Get_SCS_CLK_Frequency/31:
+
+Summary for node Clock_Ip_Get_emac_mii_rmii_tx_Frequency/30:
+
+Summary for node Clock_Ip_Get_emac_mii_rx_Frequency/29:
+
+Summary for node Clock_Ip_Get_PLLAUX_PHI2_Frequency/28:
+
+Summary for node Clock_Ip_Get_PLLAUX_PHI1_Frequency/27:
+
+Summary for node Clock_Ip_Get_PLLAUX_PHI0_Frequency/26:
+
+Summary for node Clock_Ip_Get_PLL_PHI1_Frequency/25:
+
+Summary for node Clock_Ip_Get_PLL_PHI0_Frequency/24:
+
+Summary for node Clock_Ip_Get_PLLAUX_POSTDIV_CLK_Frequency/23:
+
+Summary for node Clock_Ip_Get_PLL_POSTDIV_CLK_Frequency/22:
+
+Summary for node Clock_Ip_Get_PLLAUX_CLK_Frequency/21:
+
+Summary for node Clock_Ip_Get_PLL_CLK_Frequency/20:
+
+Summary for node Clock_Ip_Get_SXOSC_CLK_Frequency/19:
+
+Summary for node Clock_Ip_Get_FXOSC_CLK_Frequency/18:
+
+Summary for node Clock_Ip_Get_SIRC_STANDBY_CLK_Frequency/17:
+
+Summary for node Clock_Ip_Get_SIRC_CLK_Frequency/16:
+
+Summary for node Clock_Ip_Get_FIRC_STANDBY_CLK_Frequency/15:
+
+Summary for node Clock_Ip_Get_FIRC_CLK_Frequency/14:
+
+Summary for node Clock_Ip_Get_Zero_Frequency/13:
+
+
+15 indirect calls trained.
+0 (0.00%) have common target.
+0 (0.00%) targets was not found.
+0 (0.00%) targets had parameter count mismatch.
+0 (0.00%) targets was not in polymorphic call target list.
+0 (0.00%) speculations seems useless.
+0 (0.00%) speculations produced.
+Clock_Ip_SetExternalSignalFrequency (Clock_Ip_NameType SignalName, uint32 Frequency)
+{
+  uint32 Index;
+  <unnamed type> _1;
+
+  <bb 2> [local count: 261993008]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => 0
+  goto <bb 6>; [100.00%]
+
+  <bb 3> [local count: 858993457]:
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_axExtSignalFreqEntries[Index_2].Name;
+  if (_1 == SignalName_6(D))
+    goto <bb 4>; [5.50%]
+  else
+    goto <bb 5>; [94.50%]
+
+  <bb 4> [local count: 47244640]:
+  # Index_4 = PHI <Index_2(3)>
+  # DEBUG BEGIN_STMT
+  Clock_Ip_axExtSignalFreqEntries[Index_4].Frequency = Frequency_8(D);
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [100.00%]
+
+  <bb 5> [local count: 811748817]:
+  # DEBUG BEGIN_STMT
+  Index_7 = Index_2 + 1;
+  # DEBUG Index => Index_7
+
+  <bb 6> [local count: 1073741824]:
+  # Index_2 = PHI <0(2), Index_7(5)>
+  # DEBUG Index => Index_2
+  # DEBUG BEGIN_STMT
+  if (Index_2 != 4)
+    goto <bb 3>; [80.00%]
+  else
+    goto <bb 7>; [20.00%]
+
+  <bb 7> [local count: 261993008]:
+  return;
+
+}
+
+
+Clock_Ip_GetFreq (Clock_Ip_NameType ClockName)
+{
+  int _1;
+  uint32 (*<T78c>) (void) _2;
+  uint32 _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) ClockName_3(D);
+  _2 = Clock_Ip_apfFreqTable[_1];
+  _6 = _2 ();
+  return _6;
+
+}
+
+
+Clock_Ip_SetExternalOscillatorFrequency (Clock_Ip_NameType ExtOscName, uint32 Frequency)
+{
+  <bb 2> [local count: 1073741817]:
+  # DEBUG BEGIN_STMT
+  switch (ExtOscName_2(D)) <default: <L4> [33.33%], case 5: <L0> [33.33%], case 6: <L1> [33.33%]>
+
+  <bb 3> [local count: 357913942]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_u32fxosc = Frequency_4(D);
+  # DEBUG BEGIN_STMT
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 357913942]:
+<L1>:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_u32sxosc = Frequency_4(D);
+  # DEBUG BEGIN_STMT
+
+  <bb 5> [local count: 1073741824]:
+<L4>:
+  return;
+
+}
+
+
+Clock_Ip_PLL_VCO (const struct PLL_Type * Base)
+{
+  boolean Overflow;
+  uint32 Var4;
+  uint32 Var3;
+  uint32 Var1;
+  uint32 Fout;
+  uint32 Mfn;
+  uint32 Mfi;
+  uint32 Rdiv;
+  uint32 Fin;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _27;
+  long unsigned int _28;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Fout => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Overflow => 0
+  # DEBUG BEGIN_STMT
+  Fin_31 = Clock_Ip_Get_FXOSC_CLK_Frequency ();
+  # DEBUG Fin => Fin_31
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_32(D)->PLLDV;
+  _2 = _1 >> 12;
+  Rdiv_33 = _2 & 7;
+  # DEBUG Rdiv => Rdiv_33
+  # DEBUG BEGIN_STMT
+  _3 ={v} Base_32(D)->PLLDV;
+  Mfi_34 = _3 & 255;
+  # DEBUG Mfi => Mfi_34
+  # DEBUG BEGIN_STMT
+  if (Base_32(D) != 1076772864B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 4>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _4 ={v} Base_32(D)->PLLFD;
+  Mfn_35 = _4 & 32767;
+  # DEBUG Mfn => Mfn_35
+
+  <bb 4> [local count: 1073741824]:
+  # Mfn_18 = PHI <Mfn_35(3), 0(2)>
+  # DEBUG Mfn => Mfn_18
+  # DEBUG BEGIN_STMT
+  Var1_36 = Mfi_34 / Rdiv_33;
+  # DEBUG Var1 => Var1_36
+  # DEBUG BEGIN_STMT
+  _27 = Mfi_34 % Rdiv_33;
+  # DEBUG Var2 => _27
+  # DEBUG BEGIN_STMT
+  _5 = Rdiv_33 << 14;
+  _6 = Rdiv_33 << 11;
+  Var3_37 = _5 + _6;
+  # DEBUG Var3 => Var3_37
+  # DEBUG BEGIN_STMT
+  Var4_38 = Fin_31 / Var3_37;
+  # DEBUG Var4 => Var4_38
+  # DEBUG BEGIN_STMT
+  _28 = Fin_31 % Var3_37;
+  # DEBUG Var5 => _28
+  # DEBUG BEGIN_STMT
+  if (Fin_31 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 20>; [50.00%]
+
+  <bb 5> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _7 = Fin_31 * Var1_36;
+  _8 = _7 / Fin_31;
+  if (_8 == Var1_36)
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 7>; [66.00%]
+
+  <bb 6> [local count: 182536112]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Fout => _7
+
+  <bb 7> [local count: 536870913]:
+  # Fout_19 = PHI <_7(6), 0(5)>
+  # Overflow_24 = PHI <0(6), 1(5)>
+  # DEBUG Overflow => Overflow_24
+  # DEBUG Fout => Fout_19
+  # DEBUG BEGIN_STMT
+  _9 = _27 * Fin_31;
+  _10 = _9 / Fin_31;
+  if (_10 == _27)
+    goto <bb 8>; [34.00%]
+  else
+    goto <bb 10>; [66.00%]
+
+  <bb 8> [local count: 182536112]:
+  if (Fout_19 <= 1280000000)
+    goto <bb 9>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 9> [local count: 91268056]:
+  # DEBUG BEGIN_STMT
+  _11 = Fin_31 / Rdiv_33;
+  _12 = _11 * _27;
+  Fout_39 = _12 + Fout_19;
+  # DEBUG Fout => Fout_39
+
+  <bb 10> [local count: 536870913]:
+  # Fout_20 = PHI <Fout_39(9), Fout_19(8), Fout_19(7)>
+  # Overflow_25 = PHI <Overflow_24(9), 1(8), 1(7)>
+  # DEBUG Overflow => Overflow_25
+  # DEBUG Fout => Fout_20
+  # DEBUG BEGIN_STMT
+  if (Fin_31 >= Var3_37)
+    goto <bb 11>; [50.00%]
+  else
+    goto <bb 14>; [50.00%]
+
+  <bb 11> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  _13 = Mfn_18 * Var4_38;
+  _14 = _13 / Var4_38;
+  if (_14 == Mfn_18)
+    goto <bb 12>; [34.00%]
+  else
+    goto <bb 14>; [66.00%]
+
+  <bb 12> [local count: 91268056]:
+  if (Fout_20 <= 1280000000)
+    goto <bb 13>; [50.00%]
+  else
+    goto <bb 14>; [50.00%]
+
+  <bb 13> [local count: 45634028]:
+  # DEBUG BEGIN_STMT
+  Fout_40 = _13 + Fout_20;
+  # DEBUG Fout => Fout_40
+
+  <bb 14> [local count: 536870913]:
+  # Fout_21 = PHI <Fout_20(10), Fout_40(13), Fout_20(12), Fout_20(11)>
+  # Overflow_26 = PHI <Overflow_25(10), Overflow_25(13), 1(12), 1(11)>
+  # DEBUG Overflow => Overflow_26
+  # DEBUG Fout => Fout_21
+  # DEBUG BEGIN_STMT
+  if (Mfn_18 != 0)
+    goto <bb 15>; [50.00%]
+  else
+    goto <bb 18>; [50.00%]
+
+  <bb 15> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  _15 = Mfn_18 * _28;
+  _16 = _15 / Mfn_18;
+  if (_16 == _28)
+    goto <bb 16>; [34.00%]
+  else
+    goto <bb 19>; [66.00%]
+
+  <bb 16> [local count: 91268056]:
+  if (Fout_21 <= 1280000000)
+    goto <bb 17>; [50.00%]
+  else
+    goto <bb 19>; [50.00%]
+
+  <bb 17> [local count: 45634028]:
+  # DEBUG BEGIN_STMT
+  _17 = _15 / Var3_37;
+  Fout_41 = _17 + Fout_21;
+  # DEBUG Fout => Fout_41
+
+  <bb 18> [local count: 314069484]:
+  # Fout_22 = PHI <Fout_41(17), Fout_21(14)>
+  # DEBUG Overflow => Overflow_26
+  # DEBUG Fout => Fout_22
+  # DEBUG BEGIN_STMT
+  if (Overflow_26 != 0)
+    goto <bb 19>; [50.00%]
+  else
+    goto <bb 20>; [50.00%]
+
+  <bb 19> [local count: 379836170]:
+  # DEBUG Overflow => NULL
+  # DEBUG Fout => NULL
+  # DEBUG BEGIN_STMT
+  # DEBUG Fout => 0
+
+  <bb 20> [local count: 1073741824]:
+  # Fout_23 = PHI <Fout_22(18), 0(19), 0(4)>
+  # DEBUG Overflow => NULL
+  # DEBUG Fout => Fout_23
+  # DEBUG BEGIN_STMT
+  return Fout_23;
+
+}
+
+
+Clock_Ip_Get_WKPU0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB1_STAT;
+  _2 = _1 >> 13;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_TSENSE0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB1_STAT;
+  _2 = _1 >> 17;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_TRGMUX0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_5 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_5
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 & 1;
+  _6 = Clock_Ip_u32EnableGate[_2];
+  Frequency_7 = Frequency_5 & _6;
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  return Frequency_7;
+
+}
+
+
+Clock_Ip_Get_TRACE_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_11_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 15;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_11_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_11_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 15;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_TEMPSENSE_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_5 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_5
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 31;
+  _6 = Clock_Ip_u32EnableGate[_2];
+  Frequency_7 = Frequency_5 & _6;
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  return Frequency_7;
+
+}
+
+
+Clock_Ip_Get_SWT2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY NULL
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => 32000
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 28;
+  _3 = _2 & 1;
+  _5 = Clock_Ip_u32EnableGate[_3];
+  Frequency_6 = _5 & 32000;
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  return Frequency_6;
+
+}
+
+
+Clock_Ip_Get_SWT1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY NULL
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => 32000
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 27;
+  _3 = _2 & 1;
+  _5 = Clock_Ip_u32EnableGate[_3];
+  Frequency_6 = _5 & 32000;
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  return Frequency_6;
+
+}
+
+
+Clock_Ip_Get_SWT0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY NULL
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => 32000
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 28;
+  _3 = _2 & 1;
+  _5 = Clock_Ip_u32EnableGate[_3];
+  Frequency_6 = _5 & 32000;
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  return Frequency_6;
+
+}
+
+
+Clock_Ip_Get_USDHC_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _16;
+  long unsigned int _18;
+  long unsigned int _20;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_14_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 31;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_15 = _4 ();
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_14_DC_0;
+  _6 = _5 >> 31;
+  _16 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_17 = Frequency_15 & _16;
+  # DEBUG Frequency => Frequency_17
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_14_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 1;
+  _18 = _9 + 1;
+  Frequency_19 = Frequency_17 / _18;
+  # DEBUG Frequency => Frequency_19
+  # DEBUG BEGIN_STMT
+  _10 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _11 = _10 >> 25;
+  _12 = _11 & 1;
+  _20 = Clock_Ip_u32EnableGate[_12];
+  Frequency_21 = Frequency_19 & _20;
+  # DEBUG Frequency => Frequency_21
+  # DEBUG BEGIN_STMT
+  return Frequency_21;
+
+}
+
+
+Clock_Ip_Get_STM2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_STMC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 30;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_STMC_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_13_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 31;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_13_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_13_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 1;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_STM1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_STMB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 29;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_STMB_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_2_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 31;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_2_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_2_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 1;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_STM0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_STMA_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 29;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_STMA_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_1_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 31;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_1_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_1_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 1;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_STCU0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB3_STAT;
+  _2 = _1 >> 8;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_SIUL2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB1_STAT;
+  _2 = _1 >> 10;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_SEMA42_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 24;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_SDA_AP_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 21;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_SAI1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 23;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_SAI0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 27;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_RTC0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Clock_Ip_Get_RTC_CLK_Frequency
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => 0
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_RTC_CLK_Frequency_TrustedCall ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => NULL
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB1_STAT;
+  _2 = _1 >> 2;
+  _3 = _2 & 1;
+  _5 = Clock_Ip_u32EnableGate[_3];
+  Frequency_6 = _5 & Frequency_7;
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  return Frequency_6;
+
+}
+
+
+Clock_Ip_Get_RTC_CLK_Frequency_TrustedCall ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct RTC_Type *)1076396032B].RTCC;
+  _2 = _1 >> 12;
+  _3 = _2 & 3;
+  _4 = Clock_Ip_apfFreqTableRTC_CLK[_3];
+  Frequency_7 = _4 ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  return Frequency_7;
+
+}
+
+
+Clock_Ip_Get_RTC_CLK_Frequency ()
+{
+  uint32 Frequency;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => 0
+  # DEBUG BEGIN_STMT
+  Frequency_3 = Clock_Ip_Get_RTC_CLK_Frequency_TrustedCall ();
+  # DEBUG Frequency => Frequency_3
+  # DEBUG BEGIN_STMT
+  return Frequency_3;
+
+}
+
+
+Clock_Ip_Get_QSPI_SFCK_CLK_Frequency ()
+{
+  long unsigned int _1;
+  uint32 _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_Get_QSPI_2XSFIF_CLK_Frequency ();
+  _4 = _1 >> 1;
+  return _4;
+
+}
+
+
+Clock_Ip_Get_QSPI0_TX_MEM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_QSPI_MEM_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 19;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_QSPI0_RAM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_QSPI_MEM_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 19;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_QSPI0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_QSPI_SFCK_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 19;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_QSPI_2XSFIF_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _14;
+  long unsigned int _16;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_10_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 15;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_13 = _4 ();
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_10_DC_0;
+  _6 = _5 >> 31;
+  _14 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_15 = Frequency_13 & _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_10_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 7;
+  _10 = _9 + 1;
+  _16 = _10 * 2;
+  Frequency_17 = Frequency_15 / _16;
+  # DEBUG Frequency => Frequency_17
+  # DEBUG BEGIN_STMT
+  return Frequency_17;
+
+}
+
+
+Clock_Ip_Get_PIT2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_5 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_5
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB1_STAT;
+  _2 = _1 >> 31;
+  _6 = Clock_Ip_u32EnableGate[_2];
+  Frequency_7 = Frequency_5 & _6;
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  return Frequency_7;
+
+}
+
+
+Clock_Ip_Get_PIT1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 13;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_PIT0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 12;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_MU2B_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 15;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_MU2A_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 14;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_MSCM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 24;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART15_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 10;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART14_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 9;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART13_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 8;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART12_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 7;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART11_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 6;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART10_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 5;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART9_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 4;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART8_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 3;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART7_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 17;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART6_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 16;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART5_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 15;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART4_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 14;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART3_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 13;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 12;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 11;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPUART0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 10;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPSPI5_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 16;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPSPI4_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 15;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPSPI3_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 25;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPSPI2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 24;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPSPI1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 23;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPSPI0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 22;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPI2C1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 21;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LPI2C0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 20;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LCU1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 7;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_LCU0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 6;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_INTM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_5 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_5
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 31;
+  _6 = Clock_Ip_u32EnableGate[_2];
+  Frequency_7 = Frequency_5 & _6;
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  return Frequency_7;
+
+}
+
+
+Clock_Ip_Get_FLEXIO0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 9;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN7_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 8;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN6_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 7;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN5_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 6;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN4_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 5;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN3_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 4;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_FLEXCANB_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_4_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 31;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_4_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_4_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 3;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_FLEXCANA_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 3;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_FLEXCANA_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 2;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_FLEXCANA_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 1;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_FLEXCANA_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_3_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 31;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_3_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_3_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 3;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_ERM1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB0_STAT;
+  _2 = _1 >> 3;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_ERM0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 23;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EMIOS2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 4;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EMIOS1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 3;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EMIOS0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 2;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EMAC_TX_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_8_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 31;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_8_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_8_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 63;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_EMAC_TS_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_9_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 31;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_9_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_9_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 63;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_EMAC_RX_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_7_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 31;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_7_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_7_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 63;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_GMAC0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 1;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EIM2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB2_STAT;
+  _2 = _1 >> 5;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EIM1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB2_STAT;
+  _2 = _1 >> 4;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EIM0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB2_STAT;
+  _2 = _1 >> 3;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD31_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 23;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD30_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 22;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD29_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 21;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD28_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 20;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD27_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 19;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD26_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 18;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD25_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 17;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD24_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 16;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD23_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 15;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD22_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 14;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD21_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 13;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD20_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 12;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD19_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 11;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD18_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 10;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD17_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 9;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD16_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 8;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD15_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 7;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD14_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 6;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD13_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 5;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD12_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB0_STAT;
+  _2 = _1 >> 4;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD11_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 15;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD10_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 14;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD9_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 13;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD8_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 12;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD7_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 11;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD6_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 10;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD5_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 9;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD4_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 8;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD3_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 7;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 6;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 5;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 4;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_EDMA0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB0_STAT;
+  _2 = _1 >> 3;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_DMAMUX1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB1_STAT;
+  _2 = _1 >> 1;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_DMAMUX0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_5 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_5
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB1_STAT;
+  _2 = _1 & 1;
+  _6 = Clock_Ip_u32EnableGate[_2];
+  Frequency_7 = Frequency_5 & _6;
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  return Frequency_7;
+
+}
+
+
+Clock_Ip_Get_CRC0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_5 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_5
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB3_STAT;
+  _2 = _1 & 1;
+  _6 = Clock_Ip_u32EnableGate[_2];
+  Frequency_7 = Frequency_5 & _6;
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  return Frequency_7;
+
+}
+
+
+Clock_Ip_Get_CMP2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN2_COFB1_STAT;
+  _2 = _1 >> 26;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_CMP1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 29;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_CMP0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB2_STAT;
+  _2 = _1 >> 28;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_CLKOUT_STANDBY_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_5_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 63;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_5_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_5_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 63;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_BCTU0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 1;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_ADC2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 10;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_ADC1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 9;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_ADC0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_COFB1_STAT;
+  _2 = _1 >> 8;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = Frequency_6 & _7;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  return Frequency_8;
+
+}
+
+
+Clock_Ip_Get_CLKOUT_RUN_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 (*<T78c>) (void) _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _13;
+  long unsigned int _15;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_6_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 63;
+  _4 = Clock_Ip_apfFreqTableClkSrc[_3];
+  Frequency_12 = _4 ();
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_6_DC_0;
+  _6 = _5 >> 31;
+  _13 = Clock_Ip_au32EnableDivider[_6];
+  Frequency_14 = Frequency_12 & _13;
+  # DEBUG Frequency => Frequency_14
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_6_DC_0;
+  _8 = _7 >> 16;
+  _9 = _8 & 63;
+  _15 = _9 + 1;
+  Frequency_16 = Frequency_14 / _15;
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  return Frequency_16;
+
+}
+
+
+Clock_Ip_Get_QSPI_MEM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_6;
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_6;
+  _4 = _3 >> 16;
+  _5 = _4 & 7;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_LBIST_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_5;
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_5;
+  _4 = _3 >> 16;
+  _5 = _4 & 7;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_DCM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_4;
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_4;
+  _4 = _3 >> 16;
+  _5 = _4 & 7;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_HSE_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_3;
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_3;
+  _4 = _3 >> 16;
+  _5 = _4 & 7;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_2;
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_2;
+  _4 = _3 >> 16;
+  _5 = _4 & 15;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_1;
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_1;
+  _4 = _3 >> 16;
+  _5 = _4 & 7;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_CORE_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_0;
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_DC_0;
+  _4 = _3 >> 16;
+  _5 = _4 & 7;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_SCS_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_CGM_Type *)1076723712B].MUX_0_CSS;
+  _2 = _1 >> 24;
+  _3 = _2 & 15;
+  if (_3 != 8)
+    goto <bb 3>; [66.00%]
+  else
+    goto <bb 4>; [34.00%]
+
+  <bb 3> [local count: 708669601]:
+  # DEBUG BEGIN_STMT
+  Frequency_10 = Clock_Ip_Get_FIRC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_10
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 365072224]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_PLL_PHI0_Frequency ();
+  # DEBUG Frequency => Frequency_8
+
+  <bb 5> [local count: 1073741824]:
+  # Frequency_4 = PHI <Frequency_10(3), Frequency_8(4)>
+  # DEBUG Frequency => Frequency_4
+  # DEBUG BEGIN_STMT
+  return Frequency_4;
+
+}
+
+
+Clock_Ip_Get_emac_mii_rmii_tx_Frequency ()
+{
+  uint32 _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _2 = Clock_Ip_axExtSignalFreqEntries[1].Frequency;
+  return _2;
+
+}
+
+
+Clock_Ip_Get_emac_mii_rx_Frequency ()
+{
+  uint32 _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _2 = Clock_Ip_axExtSignalFreqEntries[0].Frequency;
+  return _2;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_PHI2_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_PLLAUX_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct PLL_Type *)1076772864B].PLLODIV[2];
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct PLL_Type *)1076772864B].PLLODIV[2];
+  _4 = _3 >> 16;
+  _5 = _4 & 255;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_PHI1_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_PLLAUX_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct PLL_Type *)1076772864B].PLLODIV[1];
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct PLL_Type *)1076772864B].PLLODIV[1];
+  _4 = _3 >> 16;
+  _5 = _4 & 255;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_PHI0_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_PLLAUX_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct PLL_Type *)1076772864B].PLLODIV[0];
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct PLL_Type *)1076772864B].PLLODIV[0];
+  _4 = _3 >> 16;
+  _5 = _4 & 255;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_PLL_PHI1_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_PLL_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct PLL_Type *)1076756480B].PLLODIV[1];
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct PLL_Type *)1076756480B].PLLODIV[1];
+  _4 = _3 >> 16;
+  _5 = _4 & 255;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_PLL_PHI0_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_Get_PLL_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct PLL_Type *)1076756480B].PLLODIV[0];
+  _2 = _1 >> 31;
+  _9 = Clock_Ip_au32EnableDivider[_2];
+  Frequency_10 = Frequency_8 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct PLL_Type *)1076756480B].PLLODIV[0];
+  _4 = _3 >> 16;
+  _5 = _4 & 255;
+  _11 = _5 + 1;
+  Frequency_12 = Frequency_10 / _11;
+  # DEBUG Frequency => Frequency_12
+  # DEBUG BEGIN_STMT
+  return Frequency_12;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_POSTDIV_CLK_Frequency ()
+{
+  uint32 DividerValue;
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_PLLAUX_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct PLL_Type *)1076772864B].PLLDV;
+  _2 = _1 >> 25;
+  DividerValue_7 = _2 & 63;
+  # DEBUG DividerValue => DividerValue_7
+  # DEBUG BEGIN_STMT
+  if (DividerValue_7 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Frequency_6 / DividerValue_7;
+  # DEBUG Frequency => Frequency_8
+
+  <bb 4> [local count: 1073741824]:
+  # Frequency_3 = PHI <Frequency_8(3), 0(2)>
+  # DEBUG Frequency => Frequency_3
+  # DEBUG BEGIN_STMT
+  return Frequency_3;
+
+}
+
+
+Clock_Ip_Get_PLL_POSTDIV_CLK_Frequency ()
+{
+  uint32 DividerValue;
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_PLL_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct PLL_Type *)1076756480B].PLLDV;
+  _2 = _1 >> 25;
+  DividerValue_7 = _2 & 63;
+  # DEBUG DividerValue => DividerValue_7
+  # DEBUG BEGIN_STMT
+  if (DividerValue_7 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Frequency_6 / DividerValue_7;
+  # DEBUG Frequency => Frequency_8
+
+  <bb 4> [local count: 1073741824]:
+  # Frequency_3 = PHI <Frequency_8(3), 0(2)>
+  # DEBUG Frequency => Frequency_3
+  # DEBUG BEGIN_STMT
+  return Frequency_3;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_CLK_Frequency ()
+{
+  long unsigned int _1;
+  long unsigned int Clock_Ip_u32PLLAUX_CLKChecksum.0_2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  uint32 iftmp.1_7;
+  uint32 iftmp.1_13;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct PLL_Type *)1076772864B].PLLDV;
+  Clock_Ip_u32PLLAUX_CLKChecksum.0_2 = Clock_Ip_u32PLLAUX_CLKChecksum;
+  if (_1 != Clock_Ip_u32PLLAUX_CLKChecksum.0_2)
+    goto <bb 3>; [48.88%]
+  else
+    goto <bb 4>; [51.12%]
+
+  <bb 3> [local count: 524845000]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct PLL_Type *)1076772864B].PLLDV;
+  Clock_Ip_u32PLLAUX_CLKChecksum = _3;
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_PLL_VCO (1076772864B);
+  Clock_Ip_u32PLLAUX_CLKFreq = _4;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} MEM[(struct PLL_Type *)1076772864B].PLLSR;
+  _6 = _5 & 4;
+  if (_6 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 5> [local count: 536870913]:
+  iftmp.1_13 = Clock_Ip_u32PLLAUX_CLKFreq;
+
+  <bb 6> [local count: 1073741824]:
+  # iftmp.1_7 = PHI <iftmp.1_13(5), 0(4)>
+  return iftmp.1_7;
+
+}
+
+
+Clock_Ip_Get_PLL_CLK_Frequency ()
+{
+  uint32 PLLFDBuffer;
+  uint32 PLLDVBuffer;
+  long unsigned int _1;
+  long unsigned int Clock_Ip_u32PLL_CLKChecksum.2_2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  uint32 iftmp.3_6;
+  uint32 iftmp.3_14;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  PLLDVBuffer_9 ={v} MEM[(struct PLL_Type *)1076756480B].PLLDV;
+  # DEBUG PLLDVBuffer => PLLDVBuffer_9
+  # DEBUG BEGIN_STMT
+  PLLFDBuffer_10 ={v} MEM[(struct PLL_Type *)1076756480B].PLLFD;
+  # DEBUG PLLFDBuffer => PLLFDBuffer_10
+  # DEBUG BEGIN_STMT
+  _1 = PLLDVBuffer_9 ^ PLLFDBuffer_10;
+  Clock_Ip_u32PLL_CLKChecksum.2_2 = Clock_Ip_u32PLL_CLKChecksum;
+  if (_1 != Clock_Ip_u32PLL_CLKChecksum.2_2)
+    goto <bb 3>; [48.88%]
+  else
+    goto <bb 4>; [51.12%]
+
+  <bb 3> [local count: 524845000]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_u32PLL_CLKChecksum = _1;
+  # DEBUG BEGIN_STMT
+  _3 = Clock_Ip_PLL_VCO (1076756480B);
+  Clock_Ip_u32PLL_CLKFreq = _3;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _4 ={v} MEM[(struct PLL_Type *)1076756480B].PLLSR;
+  _5 = _4 & 4;
+  if (_5 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 5> [local count: 536870913]:
+  iftmp.3_14 = Clock_Ip_u32PLL_CLKFreq;
+
+  <bb 6> [local count: 1073741824]:
+  # iftmp.3_6 = PHI <iftmp.3_14(5), 0(4)>
+  return iftmp.3_6;
+
+}
+
+
+Clock_Ip_Get_SXOSC_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  signed int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_u32sxosc;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct SXOSC_Type *)1076674560B].SXOSC_STAT;
+  _2 = (signed int) _1;
+  if (_2 >= 0)
+    goto <bb 3>; [59.00%]
+  else
+    goto <bb 4>; [41.00%]
+
+  <bb 3> [local count: 633507681]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => 0
+
+  <bb 4> [local count: 1073741824]:
+  # Frequency_6 = PHI <Frequency_8(2), 0(3)>
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB1_STAT;
+  _4 = _3 >> 19;
+  _5 = _4 & 1;
+  _9 = Clock_Ip_u32EnableGate[_5];
+  Frequency_10 = Frequency_6 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  return Frequency_10;
+
+}
+
+
+Clock_Ip_Get_FXOSC_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  signed int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _9;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_8 = Clock_Ip_u32fxosc;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct FXOSC_Type *)1076707328B].STAT;
+  _2 = (signed int) _1;
+  if (_2 >= 0)
+    goto <bb 3>; [59.00%]
+  else
+    goto <bb 4>; [41.00%]
+
+  <bb 3> [local count: 633507681]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => 0
+
+  <bb 4> [local count: 1073741824]:
+  # Frequency_6 = PHI <Frequency_8(2), 0(3)>
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN1_COFB1_STAT;
+  _4 = _3 >> 21;
+  _5 = _4 & 1;
+  _9 = Clock_Ip_u32EnableGate[_5];
+  Frequency_10 = Frequency_6 & _9;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  return Frequency_10;
+
+}
+
+
+Clock_Ip_Get_SIRC_STANDBY_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY NULL
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => 32000
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+  _2 = _1 >> 8;
+  _3 = _2 & 1;
+  _5 = Clock_Ip_u32EnableGate[_3];
+  Frequency_6 = _5 & 32000;
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  return Frequency_6;
+
+}
+
+
+Clock_Ip_Get_SIRC_CLK_Frequency ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return 32000;
+
+}
+
+
+Clock_Ip_Get_FIRC_STANDBY_CLK_Frequency ()
+{
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Frequency_5 = Clock_Ip_Get_FIRC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_5
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+  _2 = _1 & 1;
+  _6 = Clock_Ip_u32EnableGate[_2];
+  Frequency_7 = Frequency_5 & _6;
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  return Frequency_7;
+
+}
+
+
+Clock_Ip_Get_FIRC_CLK_Frequency ()
+{
+  uint32 DividerValue;
+  uint32 Frequency;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Frequency => 48000000
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct CONFIGURATION_GPR_Type *)1077526528B].CONFIG_REG_GPR;
+  _2 = _1 & 3;
+  DividerValue_4 = Clock_Ip_apfTableDividerValue[_2];
+  # DEBUG DividerValue => DividerValue_4
+  # DEBUG BEGIN_STMT
+  Frequency_5 = 48000000 / DividerValue_4;
+  # DEBUG Frequency => Frequency_5
+  # DEBUG BEGIN_STMT
+  return Frequency_5;
+
+}
+
+
+Clock_Ip_Get_Zero_Frequency ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+

@@ -1,0 +1,993 @@
+Siul2_Port_Ip_GetPinConfiguration (const struct Siul2_Port_Ip_PortType * const base, struct Siul2_Port_Ip_PinSettingsConfig * config, uint16 pin)
+{
+  uint8 inputMuxIterator;
+  uint32 u32PinIdx;
+  uint32 u32MscrBase;
+  uint32 u32MscrId;
+  uint32 portNumber;
+  uint32 MaxPinConfigured;
+  const struct Siul2_Port_Ip_PinSettingsConfig * ConfigPtr;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  ConfigPtr = pPort_Setting;
+  # DEBUG BEGIN_STMT
+  MaxPinConfigured = u32MaxPinConfigured;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  u32MscrBase = 1076429376;
+  # DEBUG BEGIN_STMT
+  base.5_1 = (long unsigned int) base;
+  _2 = base.5_1 - u32MscrBase;
+  portNumber = _2 / 64;
+  # DEBUG BEGIN_STMT
+  _3 = portNumber << 4;
+  _4 = (long unsigned int) pin;
+  u32MscrId = _3 + _4;
+  # DEBUG BEGIN_STMT
+  u32PinIdx = 0;
+  goto <bb 9>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 = u32PinIdx * 108;
+  _6 = ConfigPtr + _5;
+  _7 = _6->pinPortIdx;
+  if (u32MscrId == _7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _8 = u32PinIdx * 108;
+  _9 = ConfigPtr + _8;
+  _10 = _9->base;
+  config->base = _10;
+  # DEBUG BEGIN_STMT
+  _11 = u32PinIdx * 108;
+  _12 = ConfigPtr + _11;
+  _13 = _12->pinPortIdx;
+  config->pinPortIdx = _13;
+  # DEBUG BEGIN_STMT
+  _14 = u32PinIdx * 108;
+  _15 = ConfigPtr + _14;
+  _16 = _15->initValue;
+  config->initValue = _16;
+  # DEBUG BEGIN_STMT
+  inputMuxIterator = 0;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _17 = u32PinIdx * 108;
+  _18 = ConfigPtr + _17;
+  _19 = (int) inputMuxIterator;
+  _20 = (int) inputMuxIterator;
+  _21 = _18->inputMuxReg[_19];
+  config->inputMuxReg[_20] = _21;
+  # DEBUG BEGIN_STMT
+  _22 = u32PinIdx * 108;
+  _23 = ConfigPtr + _22;
+  _24 = (int) inputMuxIterator;
+  _25 = (int) inputMuxIterator;
+  _26 = _23->inputMux[_24];
+  config->inputMux[_25] = _26;
+  # DEBUG BEGIN_STMT
+  inputMuxIterator.6_27 = inputMuxIterator;
+  inputMuxIterator = inputMuxIterator.6_27 + 1;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  if (inputMuxIterator <= 15)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Siul2_Port_Ip_GetMSCRConfiguration (config, base, pin);
+  # DEBUG BEGIN_STMT
+  goto <bb 10>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  u32PinIdx = u32PinIdx + 1;
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  if (u32PinIdx < MaxPinConfigured)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  return;
+
+}
+
+
+Siul2_Port_Ip_RevertPinConfiguration (const struct Siul2_Port_Ip_PortType * const base, uint16 pin)
+{
+  uint32 u32MscrId;
+  uint32 portNumber;
+  uint32 MaxPinConfigured;
+  const struct Siul2_Port_Ip_PinSettingsConfig * ConfigPtr;
+  uint32 u32RegVal;
+  uint32 u32PinIdx;
+  uint32 D.7008;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  u32RegVal = 4294967295;
+  # DEBUG BEGIN_STMT
+  ConfigPtr = pPort_Setting;
+  # DEBUG BEGIN_STMT
+  MaxPinConfigured = u32MaxPinConfigured;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  base.4_1 = (long unsigned int) base;
+  _2 = base.4_1 + 3218537920;
+  portNumber = _2 >> 6;
+  # DEBUG BEGIN_STMT
+  _3 = portNumber << 4;
+  _4 = (long unsigned int) pin;
+  u32MscrId = _3 + _4;
+  # DEBUG BEGIN_STMT
+  u32PinIdx = 0;
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 = u32PinIdx * 108;
+  _6 = ConfigPtr + _5;
+  _7 = _6->pinPortIdx;
+  if (u32MscrId == _7)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _8 = u32PinIdx * 108;
+  _9 = ConfigPtr + _8;
+  Siul2_Port_Ip_PinInit (_9);
+  # DEBUG BEGIN_STMT
+  _10 = (int) pin;
+  u32RegVal = base->MSCR[_10];
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  u32PinIdx = u32PinIdx + 1;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  if (u32PinIdx < MaxPinConfigured)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.7008 = u32RegVal;
+  return D.7008;
+
+}
+
+
+Siul2_Port_Ip_SetPinDirection (struct Siul2_Port_Ip_PortType * const base, uint16 pin, Siul2_Port_Ip_PortDirectionType direction)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Port_PORT_EXCLUSIVE_AREA_04 ();
+  # DEBUG BEGIN_STMT
+  _1 = (int) direction;
+  switch (_1) <default: <L6> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = (int) pin;
+  _3 = base->MSCR[_2];
+  _4 = (int) pin;
+  _5 = _3 & 4292870143;
+  base->MSCR[_4] = _5;
+  # DEBUG BEGIN_STMT
+  _6 = (int) pin;
+  _7 = base->MSCR[_6];
+  _8 = (int) pin;
+  _9 = _7 | 524288;
+  base->MSCR[_8] = _9;
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  _10 = (int) pin;
+  _11 = base->MSCR[_10];
+  _12 = (int) pin;
+  _13 = _11 & 4294443007;
+  base->MSCR[_12] = _13;
+  # DEBUG BEGIN_STMT
+  _14 = (int) pin;
+  _15 = base->MSCR[_14];
+  _16 = (int) pin;
+  _17 = _15 | 2097152;
+  base->MSCR[_16] = _17;
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  _18 = (int) pin;
+  _19 = base->MSCR[_18];
+  _20 = (int) pin;
+  _21 = _19 | 2621440;
+  base->MSCR[_20] = _21;
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  _22 = (int) pin;
+  _23 = base->MSCR[_22];
+  _24 = (int) pin;
+  _25 = _23 & 4292345855;
+  base->MSCR[_24] = _25;
+  # DEBUG BEGIN_STMT
+
+  <bb 7> :
+<L6>:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Port_PORT_EXCLUSIVE_AREA_04 ();
+  return;
+
+}
+
+
+Siul2_Port_Ip_SetInputBuffer (struct Siul2_Port_Ip_PortType * const base, uint16 pin, boolean enable, uint32 inputMuxReg, Siul2_Port_Ip_PortInputMux inputMux)
+{
+  uint32 imcrVal;
+  uint32 imcrRegIdx;
+  struct SIUL2_Type * siul2Base;
+  long unsigned int iftmp.3;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  siul2Base = 4294967295B;
+  # DEBUG BEGIN_STMT
+  imcrRegIdx = inputMuxReg;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Port_PORT_EXCLUSIVE_AREA_03 ();
+  # DEBUG BEGIN_STMT
+  if (base != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) pin;
+  _2 = base->MSCR[_1];
+  _3 = (int) pin;
+  _4 = _2 & 4294443007;
+  base->MSCR[_3] = _4;
+  # DEBUG BEGIN_STMT
+  _5 = (int) pin;
+  _6 = base->MSCR[_5];
+  if (enable != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.3 = 524288;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.3 = 0;
+
+  <bb 6> :
+  _7 = (int) pin;
+  _8 = iftmp.3 | _6;
+  base->MSCR[_7] = _8;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  if (inputMux != 16)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  if (imcrRegIdx <= 511)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  siul2Base = 1076428800B;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  if (imcrRegIdx <= 440)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _9 = imcrRegIdx & 511;
+  imcrVal = siul2Base->IMCR[_9];
+  # DEBUG BEGIN_STMT
+  imcrVal = imcrVal & 4294967280;
+  # DEBUG BEGIN_STMT
+  _10 = (long unsigned int) inputMux;
+  _11 = _10 & 15;
+  imcrVal = imcrVal | _11;
+  # DEBUG BEGIN_STMT
+  _12 = imcrRegIdx & 511;
+  siul2Base->IMCR[_12] = imcrVal;
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Port_PORT_EXCLUSIVE_AREA_03 ();
+  return;
+
+}
+
+
+Siul2_Port_Ip_SetOutputBuffer (struct Siul2_Port_Ip_PortType * const base, uint16 pin, boolean enable, Siul2_Port_Ip_PortMux mux)
+{
+  long unsigned int iftmp.2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Port_PORT_EXCLUSIVE_AREA_02 ();
+  # DEBUG BEGIN_STMT
+  _1 = (int) pin;
+  _2 = base->MSCR[_1];
+  _3 = (int) pin;
+  _4 = _2 & 4292870143;
+  base->MSCR[_3] = _4;
+  # DEBUG BEGIN_STMT
+  _5 = (int) pin;
+  _6 = base->MSCR[_5];
+  if (enable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.2 = 2097152;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.2 = 0;
+
+  <bb 5> :
+  _7 = (int) pin;
+  _8 = iftmp.2 | _6;
+  base->MSCR[_7] = _8;
+  # DEBUG BEGIN_STMT
+  _9 = (int) pin;
+  _10 = base->MSCR[_9];
+  _11 = (int) pin;
+  _12 = _10 & 4294967280;
+  base->MSCR[_11] = _12;
+  # DEBUG BEGIN_STMT
+  _13 = (int) pin;
+  _14 = base->MSCR[_13];
+  _15 = (long unsigned int) mux;
+  _16 = _15 & 15;
+  _17 = (int) pin;
+  _18 = _14 | _16;
+  base->MSCR[_17] = _18;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Port_PORT_EXCLUSIVE_AREA_02 ();
+  return;
+
+}
+
+
+Siul2_Port_Ip_SetPullSel (struct Siul2_Port_Ip_PortType * const base, uint16 pin, Siul2_Port_Ip_PortPullConfig pullConfig)
+{
+  uint32 pusVal;
+  uint32 pueVal;
+  uint32 regVal;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  pueVal = 8192;
+  # DEBUG BEGIN_STMT
+  pusVal = 2048;
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Port_PORT_EXCLUSIVE_AREA_01 ();
+  # DEBUG BEGIN_STMT
+  _1 = (int) pullConfig;
+  switch (_1) <default: <L5> [INV], case 0: <L1> [INV], case 1: <L2> [INV], case 2: <L0> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = (int) pin;
+  _3 = base->MSCR[_2];
+  _4 = ~pueVal;
+  _5 = (int) pin;
+  _6 = _3 & _4;
+  base->MSCR[_5] = _6;
+  # DEBUG BEGIN_STMT
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  _7 = (int) pin;
+  regVal = base->MSCR[_7];
+  # DEBUG BEGIN_STMT
+  regVal = regVal | pueVal;
+  # DEBUG BEGIN_STMT
+  _8 = ~pusVal;
+  regVal = regVal & _8;
+  # DEBUG BEGIN_STMT
+  _9 = (int) pin;
+  base->MSCR[_9] = regVal;
+  # DEBUG BEGIN_STMT
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  _10 = (int) pin;
+  regVal = base->MSCR[_10];
+  # DEBUG BEGIN_STMT
+  regVal = regVal | pueVal;
+  # DEBUG BEGIN_STMT
+  regVal = regVal | pusVal;
+  # DEBUG BEGIN_STMT
+  _11 = (int) pin;
+  base->MSCR[_11] = regVal;
+  # DEBUG BEGIN_STMT
+
+  <bb 6> :
+<L5>:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Port_PORT_EXCLUSIVE_AREA_01 ();
+  return;
+
+}
+
+
+Siul2_Port_Ip_Init (uint32 pinCount, const struct Siul2_Port_Ip_PinSettingsConfig * config)
+{
+  uint32 i;
+  Siul2_Port_Ip_PortStatusType D.6947;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  pPort_Setting = config;
+  # DEBUG BEGIN_STMT
+  u32MaxPinConfigured = pinCount;
+  # DEBUG BEGIN_STMT
+  i = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = i * 108;
+  _2 = config + _1;
+  Siul2_Port_Ip_PinInit (_2);
+  # DEBUG BEGIN_STMT
+  i = i + 1;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  if (i < pinCount)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  D.6947 = 0;
+  return D.6947;
+
+}
+
+
+Siul2_Port_Ip_GetMSCRConfiguration (struct Siul2_Port_Ip_PinSettingsConfig * config, const struct Siul2_Port_Ip_PortType * const base, uint16 pin)
+{
+  Siul2_Port_Ip_PortPullConfig pullValue;
+  uint32 u32TempVal;
+  uint32 u32RegVal;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  u32RegVal = 0;
+  # DEBUG BEGIN_STMT
+  u32TempVal = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) pin;
+  u32RegVal = base->MSCR[_1];
+  # DEBUG BEGIN_STMT
+  u32TempVal = u32RegVal & 15;
+  # DEBUG BEGIN_STMT
+  _2 = (<unnamed type>) u32TempVal;
+  config->mux = _2;
+  # DEBUG BEGIN_STMT
+  _3 = u32RegVal >> 5;
+  u32TempVal = _3 & 1;
+  # DEBUG BEGIN_STMT
+  _4 = (<unnamed type>) u32TempVal;
+  config->safeMode = _4;
+  # DEBUG BEGIN_STMT
+  _5 = u32RegVal & 8192;
+  if (_5 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  pullValue = 2;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _6 = u32RegVal >> 11;
+  u32TempVal = _6 & 1;
+  # DEBUG BEGIN_STMT
+  pullValue = (Siul2_Port_Ip_PortPullConfig) u32TempVal;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  config->pullConfig = pullValue;
+  # DEBUG BEGIN_STMT
+  _7 = u32RegVal >> 14;
+  u32TempVal = _7 & 1;
+  # DEBUG BEGIN_STMT
+  _8 = (<unnamed type>) u32TempVal;
+  config->slewRateCtrlSel = _8;
+  # DEBUG BEGIN_STMT
+  _9 = u32RegVal >> 8;
+  u32TempVal = _9 & 1;
+  # DEBUG BEGIN_STMT
+  _10 = (<unnamed type>) u32TempVal;
+  config->driveStrength = _10;
+  # DEBUG BEGIN_STMT
+  _11 = u32RegVal >> 6;
+  u32TempVal = _11 & 1;
+  # DEBUG BEGIN_STMT
+  _12 = (<unnamed type>) u32TempVal;
+  config->inputFilter = _12;
+  # DEBUG BEGIN_STMT
+  _13 = u32RegVal >> 17;
+  u32TempVal = _13 & 1;
+  # DEBUG BEGIN_STMT
+  _14 = (<unnamed type>) u32TempVal;
+  config->invert = _14;
+  # DEBUG BEGIN_STMT
+  _15 = u32RegVal >> 16;
+  u32TempVal = _15 & 1;
+  # DEBUG BEGIN_STMT
+  _16 = (<unnamed type>) u32TempVal;
+  config->pullKeep = _16;
+  # DEBUG BEGIN_STMT
+  _17 = u32RegVal >> 19;
+  u32TempVal = _17 & 1;
+  # DEBUG BEGIN_STMT
+  _18 = (<unnamed type>) u32TempVal;
+  config->inputBuffer = _18;
+  # DEBUG BEGIN_STMT
+  _19 = u32RegVal >> 21;
+  u32TempVal = _19 & 1;
+  # DEBUG BEGIN_STMT
+  _20 = (<unnamed type>) u32TempVal;
+  config->outputBuffer = _20;
+  return;
+
+}
+
+
+Siul2_Port_Ip_WriteIMCRConfiguration (const struct Siul2_Port_Ip_PinSettingsConfig * config)
+{
+  struct SIUL2_Type * imcrBase;
+  uint32 imcrRegIdx;
+  uint8 inputMuxIterator;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  imcrBase = 1076428800B;
+  # DEBUG BEGIN_STMT
+  _1 = config->inputBuffer;
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  inputMuxIterator = 0;
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _2 = (int) inputMuxIterator;
+  _3 = config->inputMux[_2];
+  if (_3 != 16)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _4 = (int) inputMuxIterator;
+  imcrRegIdx = config->inputMuxReg[_4];
+  # DEBUG BEGIN_STMT
+  if (imcrRegIdx <= 511)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  imcrBase = 1076428800B;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  if (imcrRegIdx <= 440)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _5 = (int) inputMuxIterator;
+  _6 = config->inputMux[_5];
+  _7 = (long unsigned int) _6;
+  _8 = imcrRegIdx & 511;
+  _9 = _7 & 15;
+  imcrBase->IMCR[_8] = _9;
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  inputMuxIterator.0_10 = inputMuxIterator;
+  inputMuxIterator = inputMuxIterator.0_10 + 1;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  if (inputMuxIterator <= 15)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  return;
+
+}
+
+
+Siul2_Port_Ip_WriteDCMConfiguration (const struct Siul2_Port_Ip_PinSettingsConfig * config)
+{
+  uint32 adcInterleaves;
+  uint8 iterator;
+  uint32 dcmrwf4RegValue;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 1076545036B;
+  dcmrwf4RegValue = *_1;
+  # DEBUG BEGIN_STMT
+  iterator = 0;
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _2 = (int) iterator;
+  _3 = config->adcInterleaves[_2];
+  adcInterleaves = (uint32) _3;
+  # DEBUG BEGIN_STMT
+  if (adcInterleaves != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _4 = adcInterleaves & 32768;
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _5 = adcInterleaves | 4294965633;
+  dcmrwf4RegValue = dcmrwf4RegValue & _5;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  dcmrwf4RegValue = dcmrwf4RegValue | adcInterleaves;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  iterator.1_6 = iterator;
+  iterator = iterator.1_6 + 1;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  if (iterator <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _7 = 1076545036B;
+  *_7 = dcmrwf4RegValue;
+  return;
+
+}
+
+
+Siul2_Port_Ip_PinInit (const struct Siul2_Port_Ip_PinSettingsConfig * config)
+{
+  uint8 siulInstance;
+  uint32 pinsValues;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  pinsValues = 0;
+  # DEBUG BEGIN_STMT
+  siulInstance = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = config->base;
+  if (_1 == 1076428800B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  siulInstance = 0;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _2 = config->pullConfig;
+  if (_2 != 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  pinsValues = pinsValues | 8192;
+  # DEBUG BEGIN_STMT
+  _3 = config->pullConfig;
+  _4 = (long unsigned int) _3;
+  _5 = _4 << 11;
+  _6 = _5 & 2048;
+  pinsValues = pinsValues | _6;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _7 = config->outputBuffer;
+  if (_7 != 2)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _8 = config->outputBuffer;
+  _9 = (long unsigned int) _8;
+  _10 = _9 << 21;
+  _11 = _10 & 2097152;
+  pinsValues = pinsValues | _11;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _12 = config->invert;
+  if (_12 != 2)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _13 = config->invert;
+  _14 = (long unsigned int) _13;
+  _15 = _14 << 17;
+  _16 = _15 & 131072;
+  pinsValues = pinsValues | _16;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _17 = config->pullKeep;
+  if (_17 != 2)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _18 = config->pullKeep;
+  _19 = (long unsigned int) _18;
+  _20 = _19 << 16;
+  _21 = _20 & 65536;
+  pinsValues = pinsValues | _21;
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  _22 = config->driveStrength;
+  if (_22 != 2)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  _23 = config->driveStrength;
+  _24 = (long unsigned int) _23;
+  _25 = _24 << 8;
+  _26 = _25 & 256;
+  pinsValues = pinsValues | _26;
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _27 = config->inputFilter;
+  if (_27 != 2)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  _28 = config->inputFilter;
+  _29 = (long unsigned int) _28;
+  _30 = _29 << 6;
+  _31 = _30 & 64;
+  pinsValues = pinsValues | _31;
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _32 = config->inputBuffer;
+  if (_32 != 2)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  _33 = config->inputBuffer;
+  _34 = (long unsigned int) _33;
+  _35 = _34 << 19;
+  _36 = _35 & 524288;
+  pinsValues = pinsValues | _36;
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  _37 = config->slewRateCtrlSel;
+  if (_37 != 2)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  _38 = config->slewRateCtrlSel;
+  _39 = (long unsigned int) _38;
+  _40 = _39 << 14;
+  _41 = _40 & 16384;
+  pinsValues = pinsValues | _41;
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  _42 = config->safeMode;
+  if (_42 != 2)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 21> :
+  # DEBUG BEGIN_STMT
+  _43 = config->safeMode;
+  _44 = (long unsigned int) _43;
+  _45 = _44 << 5;
+  _46 = _45 & 32;
+  pinsValues = pinsValues | _46;
+
+  <bb 22> :
+  # DEBUG BEGIN_STMT
+  _47 = config->mux;
+  _48 = (long unsigned int) _47;
+  _49 = _48 & 15;
+  pinsValues = pinsValues | _49;
+  # DEBUG BEGIN_STMT
+  _50 = config->mux;
+  if (_50 == 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 23> :
+  _51 = config->outputBuffer;
+  if (_51 == 1)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 24> :
+  # DEBUG BEGIN_STMT
+  _52 = config->initValue;
+  if (_52 != 2)
+    goto <bb 25>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 25> :
+  # DEBUG BEGIN_STMT
+  _53 = (int) siulInstance;
+  _54 = 1076428800;
+  _55 = config->pinPortIdx;
+  _56 = (short unsigned int) _55;
+  _57 = _56 ^ 3;
+  _58 = (long unsigned int) _57;
+  _59 = _54 + _58;
+  _60 = _59 + 4864;
+  _61 = (volatile uint8 *) _60;
+  _62 = config->initValue;
+  *_61 = _62;
+
+  <bb 26> :
+  # DEBUG BEGIN_STMT
+  _63 = config->base;
+  _64 = config->pinPortIdx;
+  _63->MSCR[_64] = pinsValues;
+  # DEBUG BEGIN_STMT
+  Siul2_Port_Ip_WriteIMCRConfiguration (config);
+  # DEBUG BEGIN_STMT
+  Siul2_Port_Ip_WriteDCMConfiguration (config);
+  return;
+
+}
+
+

@@ -1,0 +1,338 @@
+Wdg_Ipw_ClearResetRequest (Wdg_Ipw_InstanceType Instance)
+{
+  Swt_Ip_StatusType RetClrReq;
+  Wdg_Ipw_StatusType Ret;
+  long unsigned int _1;
+  Wdg_Ipw_StatusType _12;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Ret_3 = 0;
+  # DEBUG Ret => Ret_3
+  # DEBUG BEGIN_STMT
+  RetClrReq_4 = 0;
+  # DEBUG RetClrReq => RetClrReq_4
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) Instance_5(D);
+  RetClrReq_8 = Swt_Ip_ClearResetRequest (_1);
+  # DEBUG RetClrReq => RetClrReq_8
+  # DEBUG BEGIN_STMT
+  if (RetClrReq_8 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Ret_11 = 0;
+  # DEBUG Ret => Ret_11
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  if (RetClrReq_8 == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Ret_10 = 2;
+  # DEBUG Ret => Ret_10
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Ret_9 = 1;
+  # DEBUG Ret => Ret_9
+
+  <bb 7> :
+  # Ret_2 = PHI <Ret_11(3), Ret_10(5), Ret_9(6)>
+  # DEBUG Ret => Ret_2
+  # DEBUG BEGIN_STMT
+  _12 = Ret_2;
+  return _12;
+
+}
+
+
+Wdg_Ipw_Service (Wdg_Ipw_InstanceType Instance)
+{
+  int _1;
+  <unnamed type> _2;
+  int _3;
+  long unsigned int _4;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_6(D);
+  _2 = Wdg_Ipw_aeIp[_1];
+  _3 = (int) _2;
+  if (_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _4 = (long unsigned int) Instance_6(D);
+  Swt_Ip_Service (_4);
+  # DEBUG BEGIN_STMT
+
+  <bb 4> :
+  return;
+
+}
+
+
+Wdg_Ipw_Deinit (Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType Ret;
+  long unsigned int _1;
+  <unnamed type> _2;
+  Std_ReturnType _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Ret_4 = 0;
+  # DEBUG Ret => Ret_4
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) Instance_5(D);
+  _2 = Swt_Ip_Deinit (_1);
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Ret_8 = 1;
+  # DEBUG Ret => Ret_8
+
+  <bb 4> :
+  # Ret_3 = PHI <Ret_4(2), Ret_8(3)>
+  # DEBUG Ret => Ret_3
+  # DEBUG BEGIN_STMT
+  _9 = Ret_3;
+  return _9;
+
+}
+
+
+Wdg_Ipw_StopTimer (Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType Ret;
+  long unsigned int _1;
+  <unnamed type> _2;
+  Std_ReturnType _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Ret_4 = 0;
+  # DEBUG Ret => Ret_4
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) Instance_5(D);
+  _2 = Swt_Ip_StopTimer (_1);
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Ret_8 = 1;
+  # DEBUG Ret => Ret_8
+
+  <bb 4> :
+  # Ret_3 = PHI <Ret_4(2), Ret_8(3)>
+  # DEBUG Ret => Ret_3
+  # DEBUG BEGIN_STMT
+  _9 = Ret_3;
+  return _9;
+
+}
+
+
+Wdg_Ipw_StartTimer (Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType Ret;
+  int _1;
+  <unnamed type> _2;
+  int _3;
+  long unsigned int _4;
+  <unnamed type> _5;
+  Std_ReturnType _14;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Ret_8 = 0;
+  # DEBUG Ret => Ret_8
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_9(D);
+  _2 = Wdg_Ipw_aeIp[_1];
+  _3 = (int) _2;
+  if (_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _4 = (long unsigned int) Instance_9(D);
+  _5 = Swt_Ip_StartTimer (_4);
+  if (_5 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Ret_12 = 1;
+  # DEBUG Ret => Ret_12
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  Ret_13 = 1;
+  # DEBUG Ret => Ret_13
+  # DEBUG BEGIN_STMT
+
+  <bb 6> :
+  # Ret_6 = PHI <Ret_12(4), Ret_13(5), Ret_8(3)>
+  # DEBUG Ret => Ret_6
+  # DEBUG BEGIN_STMT
+  _14 = Ret_6;
+  return _14;
+
+}
+
+
+Wdg_Ipw_SetMode (Wdg_Ipw_InstanceType Instance, const struct Wdg_Ipw_ConfigType * const IpwConfig)
+{
+  Std_ReturnType Ret;
+  int _1;
+  <unnamed type> _2;
+  int _3;
+  <unnamed type> _4;
+  int _5;
+  long unsigned int _6;
+  const struct Swt_Ip_ConfigType * _7;
+  <unnamed type> _8;
+  Std_ReturnType _19;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Ret_11 = 0;
+  # DEBUG Ret => Ret_11
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_12(D);
+  _2 = IpwConfig_14(D)->eWdgIp;
+  Wdg_Ipw_aeIp[_1] = _2;
+  # DEBUG BEGIN_STMT
+  _3 = (int) Instance_12(D);
+  _4 = Wdg_Ipw_aeIp[_3];
+  _5 = (int) _4;
+  if (_5 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _6 = (long unsigned int) Instance_12(D);
+  _7 = IpwConfig_14(D)->aSwtConfig;
+  _8 = Swt_Ip_Config (_6, _7);
+  if (_8 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Ret_17 = 1;
+  # DEBUG Ret => Ret_17
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  Ret_18 = 1;
+  # DEBUG Ret => Ret_18
+  # DEBUG BEGIN_STMT
+
+  <bb 6> :
+  # Ret_9 = PHI <Ret_17(4), Ret_18(5), Ret_11(3)>
+  # DEBUG Ret => Ret_9
+  # DEBUG BEGIN_STMT
+  _19 = Ret_9;
+  return _19;
+
+}
+
+
+Wdg_Ipw_Init (Wdg_Ipw_InstanceType Instance, const struct Wdg_Ipw_ConfigType * const IpwConfig)
+{
+  Std_ReturnType Ret;
+  int _1;
+  <unnamed type> _2;
+  <unnamed type> _3;
+  int _4;
+  long unsigned int _5;
+  const struct Swt_Ip_ConfigType * _6;
+  <unnamed type> _7;
+  Std_ReturnType _18;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Ret_10 = 0;
+  # DEBUG Ret => Ret_10
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_11(D);
+  _2 = IpwConfig_13(D)->eWdgIp;
+  Wdg_Ipw_aeIp[_1] = _2;
+  # DEBUG BEGIN_STMT
+  _3 = IpwConfig_13(D)->eWdgIp;
+  _4 = (int) _3;
+  if (_4 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _5 = (long unsigned int) Instance_11(D);
+  _6 = IpwConfig_13(D)->aSwtConfig;
+  _7 = Swt_Ip_Init (_5, _6);
+  if (_7 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Ret_16 = 1;
+  # DEBUG Ret => Ret_16
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  Ret_17 = 1;
+  # DEBUG Ret => Ret_17
+  # DEBUG BEGIN_STMT
+
+  <bb 6> :
+  # Ret_8 = PHI <Ret_16(4), Ret_17(5), Ret_10(3)>
+  # DEBUG Ret => Ret_8
+  # DEBUG BEGIN_STMT
+  _18 = Ret_8;
+  return _18;
+
+}
+
+

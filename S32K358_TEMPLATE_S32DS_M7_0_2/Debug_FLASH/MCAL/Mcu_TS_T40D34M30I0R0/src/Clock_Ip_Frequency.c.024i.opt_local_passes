@@ -1,0 +1,5403 @@
+Clock_Ip_SetExternalSignalFrequency (Clock_Ip_NameType SignalName, uint32 Frequency)
+{
+  uint32 Index;
+  <unnamed type> _1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Index_4 = 0;
+  # DEBUG Index => Index_4
+  goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_axExtSignalFreqEntries[Index_2].Name;
+  if (SignalName_6(D) == _1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_axExtSignalFreqEntries[Index_2].Frequency = Frequency_8(D);
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Index_7 = Index_2 + 1;
+  # DEBUG Index => Index_7
+
+  <bb 6> :
+  # Index_2 = PHI <Index_4(2), Index_7(5)>
+  # DEBUG Index => Index_2
+  # DEBUG BEGIN_STMT
+  if (Index_2 <= 3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  return;
+
+}
+
+
+Clock_Ip_GetFreq (Clock_Ip_NameType ClockName)
+{
+  int _1;
+  uint32 (*<T78c>) (void) _2;
+  uint32 _6;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) ClockName_3(D);
+  _2 = Clock_Ip_apfFreqTable[_1];
+  _6 = _2 ();
+  return _6;
+
+}
+
+
+Clock_Ip_SetExternalOscillatorFrequency (Clock_Ip_NameType ExtOscName, uint32 Frequency)
+{
+  int _1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) ExtOscName_3(D);
+  switch (_1) <default: <L4> [INV], case 5: <L0> [INV], case 6: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_u32fxosc = Frequency_5(D);
+  # DEBUG BEGIN_STMT
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_u32sxosc = Frequency_5(D);
+  # DEBUG BEGIN_STMT
+
+  <bb 5> :
+<L4>:
+  return;
+
+}
+
+
+Clock_Ip_PLL_VCO (const struct PLL_Type * Base)
+{
+  boolean Overflow;
+  uint32 Var5;
+  uint32 Var4;
+  uint32 Var3;
+  uint32 Var2;
+  uint32 Var1;
+  uint32 Fout;
+  uint32 Mfn;
+  uint32 Mfi;
+  uint32 Rdiv;
+  uint32 Fin;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  uint32 _56;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Fout_32 = 0;
+  # DEBUG Fout => Fout_32
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Overflow_33 = 0;
+  # DEBUG Overflow => Overflow_33
+  # DEBUG BEGIN_STMT
+  Fin_36 = Clock_Ip_Get_FXOSC_CLK_Frequency ();
+  # DEBUG Fin => Fin_36
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_37(D)->PLLDV;
+  _2 = _1 >> 12;
+  Rdiv_38 = _2 & 7;
+  # DEBUG Rdiv => Rdiv_38
+  # DEBUG BEGIN_STMT
+  _3 ={v} Base_37(D)->PLLDV;
+  Mfi_39 = _3 & 255;
+  # DEBUG Mfi => Mfi_39
+  # DEBUG BEGIN_STMT
+  if (Base_37(D) != 1076772864B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _4 ={v} Base_37(D)->PLLFD;
+  Mfn_41 = _4 & 32767;
+  # DEBUG Mfn => Mfn_41
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Mfn_40 = 0;
+  # DEBUG Mfn => Mfn_40
+
+  <bb 5> :
+  # Mfn_22 = PHI <Mfn_41(3), Mfn_40(4)>
+  # DEBUG Mfn => Mfn_22
+  # DEBUG BEGIN_STMT
+  Var1_42 = Mfi_39 / Rdiv_38;
+  # DEBUG Var1 => Var1_42
+  # DEBUG BEGIN_STMT
+  _5 = Var1_42 * Rdiv_38;
+  Var2_43 = Mfi_39 - _5;
+  # DEBUG Var2 => Var2_43
+  # DEBUG BEGIN_STMT
+  _6 = Rdiv_38 << 14;
+  _7 = Rdiv_38 << 11;
+  Var3_44 = _6 + _7;
+  # DEBUG Var3 => Var3_44
+  # DEBUG BEGIN_STMT
+  Var4_45 = Fin_36 / Var3_44;
+  # DEBUG Var4 => Var4_45
+  # DEBUG BEGIN_STMT
+  _8 = Var4_45 * Var3_44;
+  Var5_46 = Fin_36 - _8;
+  # DEBUG Var5 => Var5_46
+  # DEBUG BEGIN_STMT
+  if (Fin_36 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _9 = Var1_42 * Fin_36;
+  _10 = _9 / Fin_36;
+  if (Var1_42 == _10)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Fout_48 = Var1_42 * Fin_36;
+  # DEBUG Fout => Fout_48
+  goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  Overflow_47 = 1;
+  # DEBUG Overflow => Overflow_47
+
+  <bb 9> :
+  # Fout_23 = PHI <Fout_48(7), Fout_32(8)>
+  # Overflow_28 = PHI <Overflow_33(7), Overflow_47(8)>
+  # DEBUG Overflow => Overflow_28
+  # DEBUG Fout => Fout_23
+  # DEBUG BEGIN_STMT
+  _11 = Fin_36 * Var2_43;
+  _12 = _11 / Fin_36;
+  if (Var2_43 == _12)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 10> :
+  if (Fout_23 <= 1280000000)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _13 = Fin_36 / Rdiv_38;
+  _14 = Var2_43 * _13;
+  Fout_49 = Fout_23 + _14;
+  # DEBUG Fout => Fout_49
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  Overflow_50 = 1;
+  # DEBUG Overflow => Overflow_50
+
+  <bb 13> :
+  # Fout_24 = PHI <Fout_49(11), Fout_23(12)>
+  # Overflow_29 = PHI <Overflow_28(11), Overflow_50(12)>
+  # DEBUG Overflow => Overflow_29
+  # DEBUG Fout => Fout_24
+  # DEBUG BEGIN_STMT
+  if (Var4_45 != 0)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _15 = Var4_45 * Mfn_22;
+  _16 = _15 / Var4_45;
+  if (Mfn_22 == _16)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  if (Fout_24 <= 1280000000)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _17 = Var4_45 * Mfn_22;
+  Fout_51 = Fout_24 + _17;
+  # DEBUG Fout => Fout_51
+  goto <bb 18>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  Overflow_52 = 1;
+  # DEBUG Overflow => Overflow_52
+
+  <bb 18> :
+  # Fout_25 = PHI <Fout_24(13), Fout_51(16), Fout_24(17)>
+  # Overflow_30 = PHI <Overflow_29(13), Overflow_29(16), Overflow_52(17)>
+  # DEBUG Overflow => Overflow_30
+  # DEBUG Fout => Fout_25
+  # DEBUG BEGIN_STMT
+  if (Mfn_22 != 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  _18 = Var5_46 * Mfn_22;
+  _19 = _18 / Mfn_22;
+  if (Var5_46 == _19)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 20> :
+  if (Fout_25 <= 1280000000)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 21> :
+  # DEBUG BEGIN_STMT
+  _20 = Var5_46 * Mfn_22;
+  _21 = _20 / Var3_44;
+  Fout_53 = Fout_25 + _21;
+  # DEBUG Fout => Fout_53
+  goto <bb 23>; [INV]
+
+  <bb 22> :
+  # DEBUG BEGIN_STMT
+  Overflow_54 = 1;
+  # DEBUG Overflow => Overflow_54
+
+  <bb 23> :
+  # Fout_26 = PHI <Fout_32(5), Fout_25(18), Fout_53(21), Fout_25(22)>
+  # Overflow_31 = PHI <Overflow_33(5), Overflow_30(18), Overflow_30(21), Overflow_54(22)>
+  # DEBUG Overflow => Overflow_31
+  # DEBUG Fout => Fout_26
+  # DEBUG BEGIN_STMT
+  if (Overflow_31 != 0)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 24> :
+  # DEBUG BEGIN_STMT
+  Fout_55 = 0;
+  # DEBUG Fout => Fout_55
+
+  <bb 25> :
+  # Fout_27 = PHI <Fout_26(23), Fout_55(24)>
+  # DEBUG Fout => Fout_27
+  # DEBUG BEGIN_STMT
+  _56 = Fout_27;
+  return _56;
+
+}
+
+
+Clock_Ip_Get_WKPU0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB1_STAT;
+  _3 = _2 >> 13;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_TSENSE0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB1_STAT;
+  _3 = _2 >> 17;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_TRGMUX0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+  uint32 _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = _7 & Frequency_6;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _9 = Frequency_8;
+  return _9;
+
+}
+
+
+Clock_Ip_Get_TRACE_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_11_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 15;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_11_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_11_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 15;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_TEMPSENSE_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_SWT2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_SIRC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 28;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_SWT1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_SIRC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 27;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_SWT0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_SIRC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 28;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_USDHC_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  struct MC_ME_Type * _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _21;
+  long unsigned int _23;
+  long unsigned int _25;
+  uint32 _27;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_14_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 31;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_20 = _5 ();
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_14_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _21 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_22 = _21 & Frequency_20;
+  # DEBUG Frequency => Frequency_22
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_14_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 1;
+  _23 = _13 + 1;
+  Frequency_24 = Frequency_22 / _23;
+  # DEBUG Frequency => Frequency_24
+  # DEBUG BEGIN_STMT
+  _14 = 1076740096B;
+  _15 ={v} _14->PRTN2_COFB1_STAT;
+  _16 = _15 >> 25;
+  _17 = _16 & 1;
+  _25 = Clock_Ip_u32EnableGate[_17];
+  Frequency_26 = _25 & Frequency_24;
+  # DEBUG Frequency => Frequency_26
+  # DEBUG BEGIN_STMT
+  _27 = Frequency_26;
+  return _27;
+
+}
+
+
+Clock_Ip_Get_STM2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_STMC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 30;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_STMC_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_13_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 31;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_13_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_13_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 1;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_STM1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_STMB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 29;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_STMB_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_2_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 31;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_2_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_2_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 1;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_STM0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_STMA_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 29;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_STMA_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_1_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 31;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_1_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_1_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 1;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_STCU0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB3_STAT;
+  _3 = _2 >> 8;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_SIUL2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB1_STAT;
+  _3 = _2 >> 10;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_SEMA42_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 24;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_SDA_AP_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 21;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_SAI1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 23;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_SAI0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 27;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_RTC0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_RTC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB1_STAT;
+  _3 = _2 >> 2;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_RTC_CLK_Frequency_TrustedCall ()
+{
+  uint32 Frequency;
+  struct RTC_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  uint32 _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076396032B;
+  _2 ={v} _1->RTCC;
+  _3 = _2 >> 12;
+  _4 = _3 & 3;
+  _5 = Clock_Ip_apfFreqTableRTC_CLK[_4];
+  Frequency_8 = _5 ();
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _9 = Frequency_8;
+  return _9;
+
+}
+
+
+Clock_Ip_Get_RTC_CLK_Frequency ()
+{
+  uint32 Frequency;
+  uint32 _5;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_1 = 0;
+  # DEBUG Frequency => Frequency_1
+  # DEBUG BEGIN_STMT
+  Frequency_4 = Clock_Ip_Get_RTC_CLK_Frequency_TrustedCall ();
+  # DEBUG Frequency => Frequency_4
+  # DEBUG BEGIN_STMT
+  _5 = Frequency_4;
+  return _5;
+
+}
+
+
+Clock_Ip_Get_QSPI_SFCK_CLK_Frequency ()
+{
+  long unsigned int _1;
+  uint32 _4;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_Get_QSPI_2XSFIF_CLK_Frequency ();
+  _4 = _1 / 2;
+  return _4;
+
+}
+
+
+Clock_Ip_Get_QSPI0_TX_MEM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_QSPI_MEM_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 19;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_QSPI0_RAM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_QSPI_MEM_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 19;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_QSPI0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_QSPI_SFCK_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 19;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_QSPI_2XSFIF_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _18;
+  long unsigned int _20;
+  uint32 _22;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_10_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 15;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_17 = _5 ();
+  # DEBUG Frequency => Frequency_17
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_10_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _18 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_19 = _18 & Frequency_17;
+  # DEBUG Frequency => Frequency_19
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_10_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 7;
+  _14 = _13 + 1;
+  _20 = _14 * 2;
+  Frequency_21 = Frequency_19 / _20;
+  # DEBUG Frequency => Frequency_21
+  # DEBUG BEGIN_STMT
+  _22 = Frequency_21;
+  return _22;
+
+}
+
+
+Clock_Ip_Get_PIT2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB1_STAT;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_PIT1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 13;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_PIT0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 12;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_MU2B_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 15;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_MU2A_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 14;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_MSCM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 24;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART15_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 10;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART14_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 9;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART13_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 8;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART12_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 7;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART11_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 6;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART10_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 5;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART9_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 4;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART8_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 3;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART7_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 17;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART6_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 16;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART5_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 15;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART4_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 14;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART3_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 13;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 12;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 11;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPUART0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 10;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPSPI5_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 16;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPSPI4_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 15;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPSPI3_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 25;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPSPI2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 24;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPSPI1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 23;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPSPI0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 22;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPI2C1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 21;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LPI2C0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 20;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LCU1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 7;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_LCU0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 6;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_INTM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXIO0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 9;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN7_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 8;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN6_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 7;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN5_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 6;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN4_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 5;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN3_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_FLEXCANB_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 4;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXCANB_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_4_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 31;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_4_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_4_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 3;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_FLEXCANA_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 3;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_FLEXCANA_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 2;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXCAN0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_FLEXCANA_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 1;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_FLEXCANA_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_3_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 31;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_3_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_3_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 3;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_ERM1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB0_STAT;
+  _3 = _2 >> 3;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_ERM0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 23;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EMIOS2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 4;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EMIOS1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 3;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EMIOS0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 2;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EMAC_TX_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_8_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 31;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_8_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_8_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 63;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_EMAC_TS_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_9_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 31;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_9_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_9_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 63;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_EMAC_RX_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_7_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 31;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_7_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_7_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 63;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_GMAC0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 1;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EIM2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB2_STAT;
+  _3 = _2 >> 5;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EIM1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB2_STAT;
+  _3 = _2 >> 4;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EIM0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB2_STAT;
+  _3 = _2 >> 3;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD31_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 23;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD30_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 22;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD29_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 21;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD28_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 20;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD27_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 19;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD26_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 18;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD25_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 17;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD24_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 16;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD23_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 15;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD22_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 14;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD21_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 13;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD20_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 12;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD19_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 11;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD18_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 10;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD17_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 9;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD16_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 8;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD15_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 7;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD14_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 6;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD13_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 5;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD12_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB0_STAT;
+  _3 = _2 >> 4;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD11_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 15;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD10_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 14;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD9_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 13;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD8_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 12;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD7_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 11;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD6_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 10;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD5_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 9;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD4_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 8;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD3_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 7;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 6;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 5;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_TCD0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 4;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_EDMA0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB0_STAT;
+  _3 = _2 >> 3;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_DMAMUX1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB1_STAT;
+  _3 = _2 >> 1;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_DMAMUX0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+  uint32 _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB1_STAT;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = _7 & Frequency_6;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _9 = Frequency_8;
+  return _9;
+
+}
+
+
+Clock_Ip_Get_CRC0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+  uint32 _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB3_STAT;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = _7 & Frequency_6;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _9 = Frequency_8;
+  return _9;
+
+}
+
+
+Clock_Ip_Get_CMP2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN2_COFB1_STAT;
+  _3 = _2 >> 26;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_CMP1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 29;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_CMP0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN1_COFB2_STAT;
+  _3 = _2 >> 28;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_CLKOUT_STANDBY_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_5_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 63;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_5_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_5_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 63;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_BCTU0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 1;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_ADC2_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 10;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_ADC1_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 9;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_ADC0_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_CORE_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_COFB1_STAT;
+  _3 = _2 >> 8;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_CLKOUT_RUN_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 (*<T78c>) (void) _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  struct MC_CGM_Type * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _17;
+  long unsigned int _19;
+  uint32 _21;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_6_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 63;
+  _5 = Clock_Ip_apfFreqTableClkSrc[_4];
+  Frequency_16 = _5 ();
+  # DEBUG Frequency => Frequency_16
+  # DEBUG BEGIN_STMT
+  _6 = 1076723712B;
+  _7 ={v} _6->MUX_6_DC_0;
+  _8 = _7 >> 31;
+  _9 = _8 & 1;
+  _17 = Clock_Ip_au32EnableDivider[_9];
+  Frequency_18 = _17 & Frequency_16;
+  # DEBUG Frequency => Frequency_18
+  # DEBUG BEGIN_STMT
+  _10 = 1076723712B;
+  _11 ={v} _10->MUX_6_DC_0;
+  _12 = _11 >> 16;
+  _13 = _12 & 63;
+  _19 = _13 + 1;
+  Frequency_20 = Frequency_18 / _19;
+  # DEBUG Frequency => Frequency_20
+  # DEBUG BEGIN_STMT
+  _21 = Frequency_20;
+  return _21;
+
+}
+
+
+Clock_Ip_Get_QSPI_MEM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct MC_CGM_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_DC_6;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076723712B;
+  _6 ={v} _5->MUX_0_DC_6;
+  _7 = _6 >> 16;
+  _8 = _7 & 7;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_LBIST_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct MC_CGM_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_DC_5;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076723712B;
+  _6 ={v} _5->MUX_0_DC_5;
+  _7 = _6 >> 16;
+  _8 = _7 & 7;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_DCM_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct MC_CGM_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_DC_4;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076723712B;
+  _6 ={v} _5->MUX_0_DC_4;
+  _7 = _6 >> 16;
+  _8 = _7 & 7;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_HSE_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct MC_CGM_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_DC_3;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076723712B;
+  _6 ={v} _5->MUX_0_DC_3;
+  _7 = _6 >> 16;
+  _8 = _7 & 7;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_AIPS_SLOW_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct MC_CGM_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_DC_2;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076723712B;
+  _6 ={v} _5->MUX_0_DC_2;
+  _7 = _6 >> 16;
+  _8 = _7 & 15;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_AIPS_PLAT_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct MC_CGM_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_DC_1;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076723712B;
+  _6 ={v} _5->MUX_0_DC_1;
+  _7 = _6 >> 16;
+  _8 = _7 & 7;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_CORE_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct MC_CGM_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_SCS_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_DC_0;
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076723712B;
+  _6 ={v} _5->MUX_0_DC_0;
+  _7 = _6 >> 16;
+  _8 = _7 & 7;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_SCS_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  uint32 _12;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_CSS;
+  _3 = _2 >> 24;
+  _4 = _3 & 15;
+  if (_4 != 8)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_FIRC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Frequency_9 = Clock_Ip_Get_PLL_PHI0_Frequency ();
+  # DEBUG Frequency => Frequency_9
+
+  <bb 5> :
+  # Frequency_5 = PHI <Frequency_11(3), Frequency_9(4)>
+  # DEBUG Frequency => Frequency_5
+  # DEBUG BEGIN_STMT
+  _12 = Frequency_5;
+  return _12;
+
+}
+
+
+Clock_Ip_Get_emac_mii_rmii_tx_Frequency ()
+{
+  uint32 _2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _2 = Clock_Ip_axExtSignalFreqEntries[1].Frequency;
+  return _2;
+
+}
+
+
+Clock_Ip_Get_emac_mii_rx_Frequency ()
+{
+  uint32 _2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _2 = Clock_Ip_axExtSignalFreqEntries[0].Frequency;
+  return _2;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_PHI2_Frequency ()
+{
+  uint32 Frequency;
+  struct PLL_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct PLL_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_PLLAUX_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076772864B;
+  _2 ={v} _1->PLLODIV[2];
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076772864B;
+  _6 ={v} _5->PLLODIV[2];
+  _7 = _6 >> 16;
+  _8 = _7 & 255;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_PHI1_Frequency ()
+{
+  uint32 Frequency;
+  struct PLL_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct PLL_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_PLLAUX_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076772864B;
+  _2 ={v} _1->PLLODIV[1];
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076772864B;
+  _6 ={v} _5->PLLODIV[1];
+  _7 = _6 >> 16;
+  _8 = _7 & 255;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_PHI0_Frequency ()
+{
+  uint32 Frequency;
+  struct PLL_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct PLL_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_PLLAUX_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076772864B;
+  _2 ={v} _1->PLLODIV[0];
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076772864B;
+  _6 ={v} _5->PLLODIV[0];
+  _7 = _6 >> 16;
+  _8 = _7 & 255;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_PLL_PHI1_Frequency ()
+{
+  uint32 Frequency;
+  struct PLL_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct PLL_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_PLL_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076756480B;
+  _2 ={v} _1->PLLODIV[1];
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076756480B;
+  _6 ={v} _5->PLLODIV[1];
+  _7 = _6 >> 16;
+  _8 = _7 & 255;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_PLL_PHI0_Frequency ()
+{
+  uint32 Frequency;
+  struct PLL_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct PLL_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _12;
+  long unsigned int _14;
+  uint32 _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = Clock_Ip_Get_PLL_POSTDIV_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_11
+  # DEBUG BEGIN_STMT
+  _1 = 1076756480B;
+  _2 ={v} _1->PLLODIV[0];
+  _3 = _2 >> 31;
+  _4 = _3 & 1;
+  _12 = Clock_Ip_au32EnableDivider[_4];
+  Frequency_13 = _12 & Frequency_11;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _5 = 1076756480B;
+  _6 ={v} _5->PLLODIV[0];
+  _7 = _6 >> 16;
+  _8 = _7 & 255;
+  _14 = _8 + 1;
+  Frequency_15 = Frequency_13 / _14;
+  # DEBUG Frequency => Frequency_15
+  # DEBUG BEGIN_STMT
+  _16 = Frequency_15;
+  return _16;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_POSTDIV_CLK_Frequency ()
+{
+  uint32 DividerValue;
+  uint32 Frequency;
+  struct PLL_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 _11;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_PLLAUX_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076772864B;
+  _2 ={v} _1->PLLDV;
+  _3 = _2 >> 25;
+  DividerValue_8 = _3 & 63;
+  # DEBUG DividerValue => DividerValue_8
+  # DEBUG BEGIN_STMT
+  if (DividerValue_8 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Frequency_10 = Frequency_7 / DividerValue_8;
+  # DEBUG Frequency => Frequency_10
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Frequency_9 = 0;
+  # DEBUG Frequency => Frequency_9
+
+  <bb 5> :
+  # Frequency_4 = PHI <Frequency_10(3), Frequency_9(4)>
+  # DEBUG Frequency => Frequency_4
+  # DEBUG BEGIN_STMT
+  _11 = Frequency_4;
+  return _11;
+
+}
+
+
+Clock_Ip_Get_PLL_POSTDIV_CLK_Frequency ()
+{
+  uint32 DividerValue;
+  uint32 Frequency;
+  struct PLL_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 _11;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_PLL_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076756480B;
+  _2 ={v} _1->PLLDV;
+  _3 = _2 >> 25;
+  DividerValue_8 = _3 & 63;
+  # DEBUG DividerValue => DividerValue_8
+  # DEBUG BEGIN_STMT
+  if (DividerValue_8 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Frequency_10 = Frequency_7 / DividerValue_8;
+  # DEBUG Frequency => Frequency_10
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Frequency_9 = 0;
+  # DEBUG Frequency => Frequency_9
+
+  <bb 5> :
+  # Frequency_4 = PHI <Frequency_10(3), Frequency_9(4)>
+  # DEBUG Frequency => Frequency_4
+  # DEBUG BEGIN_STMT
+  _11 = Frequency_4;
+  return _11;
+
+}
+
+
+Clock_Ip_Get_PLLAUX_CLK_Frequency ()
+{
+  struct PLL_Type * _1;
+  long unsigned int _2;
+  long unsigned int Clock_Ip_u32PLLAUX_CLKChecksum.0_3;
+  struct PLL_Type * _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  struct PLL_Type * _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  uint32 iftmp.1_10;
+  uint32 iftmp.1_16;
+  uint32 iftmp.1_17;
+  uint32 _18;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076772864B;
+  _2 ={v} _1->PLLDV;
+  Clock_Ip_u32PLLAUX_CLKChecksum.0_3 = Clock_Ip_u32PLLAUX_CLKChecksum;
+  if (_2 != Clock_Ip_u32PLLAUX_CLKChecksum.0_3)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _4 = 1076772864B;
+  _5 ={v} _4->PLLDV;
+  Clock_Ip_u32PLLAUX_CLKChecksum = _5;
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_PLL_VCO (1076772864B);
+  Clock_Ip_u32PLLAUX_CLKFreq = _6;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _7 = 1076772864B;
+  _8 ={v} _7->PLLSR;
+  _9 = _8 & 4;
+  if (_9 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.1_17 = Clock_Ip_u32PLLAUX_CLKFreq;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.1_16 = 0;
+
+  <bb 7> :
+  # iftmp.1_10 = PHI <iftmp.1_17(5), iftmp.1_16(6)>
+  _18 = iftmp.1_10;
+  return _18;
+
+}
+
+
+Clock_Ip_Get_PLL_CLK_Frequency ()
+{
+  uint32 PLLFDBuffer;
+  uint32 PLLDVBuffer;
+  struct PLL_Type * _1;
+  struct PLL_Type * _2;
+  long unsigned int _3;
+  long unsigned int Clock_Ip_u32PLL_CLKChecksum.2_4;
+  long unsigned int _5;
+  long unsigned int _6;
+  struct PLL_Type * _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  uint32 iftmp.3_10;
+  uint32 iftmp.3_18;
+  uint32 iftmp.3_19;
+  uint32 _20;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076756480B;
+  PLLDVBuffer_13 ={v} _1->PLLDV;
+  # DEBUG PLLDVBuffer => PLLDVBuffer_13
+  # DEBUG BEGIN_STMT
+  _2 = 1076756480B;
+  PLLFDBuffer_14 ={v} _2->PLLFD;
+  # DEBUG PLLFDBuffer => PLLFDBuffer_14
+  # DEBUG BEGIN_STMT
+  _3 = PLLDVBuffer_13 ^ PLLFDBuffer_14;
+  Clock_Ip_u32PLL_CLKChecksum.2_4 = Clock_Ip_u32PLL_CLKChecksum;
+  if (_3 != Clock_Ip_u32PLL_CLKChecksum.2_4)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 = PLLDVBuffer_13 ^ PLLFDBuffer_14;
+  Clock_Ip_u32PLL_CLKChecksum = _5;
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_PLL_VCO (1076756480B);
+  Clock_Ip_u32PLL_CLKFreq = _6;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _7 = 1076756480B;
+  _8 ={v} _7->PLLSR;
+  _9 = _8 & 4;
+  if (_9 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  iftmp.3_19 = Clock_Ip_u32PLL_CLKFreq;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.3_18 = 0;
+
+  <bb 7> :
+  # iftmp.3_10 = PHI <iftmp.3_19(5), iftmp.3_18(6)>
+  _20 = iftmp.3_10;
+  return _20;
+
+}
+
+
+Clock_Ip_Get_SXOSC_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct SXOSC_Type * _1;
+  long unsigned int _2;
+  signed int _3;
+  struct MC_ME_Type * _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _12;
+  uint32 _14;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_10 = Clock_Ip_u32sxosc;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _1 = 1076674560B;
+  _2 ={v} _1->SXOSC_STAT;
+  _3 = (signed int) _2;
+  if (_3 >= 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = 0;
+  # DEBUG Frequency => Frequency_11
+
+  <bb 4> :
+  # Frequency_8 = PHI <Frequency_10(2), Frequency_11(3)>
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _4 = 1076740096B;
+  _5 ={v} _4->PRTN1_COFB1_STAT;
+  _6 = _5 >> 19;
+  _7 = _6 & 1;
+  _12 = Clock_Ip_u32EnableGate[_7];
+  Frequency_13 = _12 & Frequency_8;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _14 = Frequency_13;
+  return _14;
+
+}
+
+
+Clock_Ip_Get_FXOSC_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct FXOSC_Type * _1;
+  long unsigned int _2;
+  signed int _3;
+  struct MC_ME_Type * _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _12;
+  uint32 _14;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_10 = Clock_Ip_u32fxosc;
+  # DEBUG Frequency => Frequency_10
+  # DEBUG BEGIN_STMT
+  _1 = 1076707328B;
+  _2 ={v} _1->STAT;
+  _3 = (signed int) _2;
+  if (_3 >= 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Frequency_11 = 0;
+  # DEBUG Frequency => Frequency_11
+
+  <bb 4> :
+  # Frequency_8 = PHI <Frequency_10(2), Frequency_11(3)>
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _4 = 1076740096B;
+  _5 ={v} _4->PRTN1_COFB1_STAT;
+  _6 = _5 >> 21;
+  _7 = _6 & 1;
+  _12 = Clock_Ip_u32EnableGate[_7];
+  Frequency_13 = _12 & Frequency_8;
+  # DEBUG Frequency => Frequency_13
+  # DEBUG BEGIN_STMT
+  _14 = Frequency_13;
+  return _14;
+
+}
+
+
+Clock_Ip_Get_SIRC_STANDBY_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct SIRC_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _8;
+  uint32 _10;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Clock_Ip_Get_SIRC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _1 = 1076658176B;
+  _2 ={v} _1->MISCELLANEOUS_IN;
+  _3 = _2 >> 8;
+  _4 = _3 & 1;
+  _8 = Clock_Ip_u32EnableGate[_4];
+  Frequency_9 = _8 & Frequency_7;
+  # DEBUG Frequency => Frequency_9
+  # DEBUG BEGIN_STMT
+  _10 = Frequency_9;
+  return _10;
+
+}
+
+
+Clock_Ip_Get_SIRC_CLK_Frequency ()
+{
+  uint32 _1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 32000;
+  return _1;
+
+}
+
+
+Clock_Ip_Get_FIRC_STANDBY_CLK_Frequency ()
+{
+  uint32 Frequency;
+  struct FIRC_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _7;
+  uint32 _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_6 = Clock_Ip_Get_FIRC_CLK_Frequency ();
+  # DEBUG Frequency => Frequency_6
+  # DEBUG BEGIN_STMT
+  _1 = 1076690944B;
+  _2 ={v} _1->STDBY_ENABLE;
+  _3 = _2 & 1;
+  _7 = Clock_Ip_u32EnableGate[_3];
+  Frequency_8 = _7 & Frequency_6;
+  # DEBUG Frequency => Frequency_8
+  # DEBUG BEGIN_STMT
+  _9 = Frequency_8;
+  return _9;
+
+}
+
+
+Clock_Ip_Get_FIRC_CLK_Frequency ()
+{
+  uint32 DividerValue;
+  uint32 Frequency;
+  struct CONFIGURATION_GPR_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  uint32 _8;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Frequency_4 = 48000000;
+  # DEBUG Frequency => Frequency_4
+  # DEBUG BEGIN_STMT
+  _1 = 1077526528B;
+  _2 ={v} _1->CONFIG_REG_GPR;
+  _3 = _2 & 3;
+  DividerValue_6 = Clock_Ip_apfTableDividerValue[_3];
+  # DEBUG DividerValue => DividerValue_6
+  # DEBUG BEGIN_STMT
+  Frequency_7 = Frequency_4 / DividerValue_6;
+  # DEBUG Frequency => Frequency_7
+  # DEBUG BEGIN_STMT
+  _8 = Frequency_7;
+  return _8;
+
+}
+
+
+Clock_Ip_Get_Zero_Frequency ()
+{
+  uint32 _1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 0;
+  return _1;
+
+}
+
+

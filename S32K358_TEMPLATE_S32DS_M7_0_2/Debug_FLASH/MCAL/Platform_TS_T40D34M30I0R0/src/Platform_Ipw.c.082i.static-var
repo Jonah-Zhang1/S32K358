@@ -1,0 +1,66 @@
+callgraph:
+
+IntCtrl_Ip_Init/13 (IntCtrl_Ip_Init) @06ca7ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_Init/12 (574129753 (estimated locally),0.53 per call) 
+  Calls: 
+Platform_Ipw_Init/12 (Platform_Ipw_Init) @06ca78c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_Init/13 (574129753 (estimated locally),0.53 per call) 
+Clearing variable flags:
+
+Function name:Platform_Ipw_Init/12:
+  locals read: 
+  locals written: 
+
+ ordered call graph: reduced
+Platform_Ipw_Init/12 (Platform_Ipw_Init) @06ca78c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @06892478
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_Init/13 (574129753 (estimated locally),0.53 per call) 
+
+
+Function name:Platform_Ipw_Init/12:
+    locals read: 
+    locals written: 
+  globals read: ALL
+  globals written: ALL
+Platform_Ipw_Init (const struct Platform_Ipw_ConfigType * pConfig)
+{
+  const struct IntCtrl_Ip_CtrlConfigType * _1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_4(D)->pIntCtrlConfig;
+  if (_1 != 0B)
+    goto <bb 3>; [53.47%]
+  else
+    goto <bb 4>; [46.53%]
+
+  <bb 3> [local count: 574129753]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_Init (_1);
+
+  <bb 4> [local count: 1073741824]:
+  return;
+
+}
+
+

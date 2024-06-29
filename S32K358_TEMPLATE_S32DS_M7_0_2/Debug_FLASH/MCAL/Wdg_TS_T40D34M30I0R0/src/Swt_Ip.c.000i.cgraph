@@ -1,0 +1,1810 @@
+Trivially needed symbols: Swt_Ip_IrqHandler/28 Swt_Ip_ClearResetRequest/27 Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Service/22 Swt_Ip_Deinit/21 Swt_Ip_Init/20
+
+
+Initial Symbol table:
+
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @061557e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @06155700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @06155540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @06155460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @06144d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @06144c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+OsIf_GetElapsed/31 (OsIf_GetElapsed) @06144380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @061442a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+OsIf_MicrosToTicks/29 (OsIf_MicrosToTicks) @061441c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+Swt_Ip_IrqHandler/28 (Swt_Ip_IrqHandler) @06242ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (read) Swt_Ip_apCallbackPtr/2 (read) Swt_Ip_apCallbackPtr/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_ClearIntFlag/19 Swt_Ip_ClearIntFlag/19 Swt_Ip_IsIntEnabled/18 Swt_Ip_GetIntFlag/17 DevAssert/0 
+   Indirect call Num speculative call targets: 0
+Swt_Ip_ClearResetRequest/27 (Swt_Ip_ClearResetRequest) @06242c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06242ee0
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_RequestedReset/15 Swt_Ip_RequestedReset/15 OsIf_GetElapsed/31 OsIf_GetCounter/30 Swt_Ip_ClearRequest/16 Swt_Ip_RequestedReset/15 DevAssert/0 DevAssert/0 OsIf_MicrosToTicks/29 
+Swt_Ip_StopTimer/26 (Swt_Ip_StopTimer) @062429a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06242c40
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 Swt_Ip_Lock/9 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_StartTimer/25 (Swt_Ip_StartTimer) @06242700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @062429a0
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_Unlock/10 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_SetTimeout/24 (Swt_Ip_SetTimeout) @06242460
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06242700
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 Swt_Ip_CheckTimeout/12 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_Config/23 (Swt_Ip_Config) @062421c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06242460
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_RegisterConfig/11 Swt_Ip_Disable/6 Swt_Ip_IsEnable/4 Swt_Ip_Unlock/10 Swt_Ip_CheckTimeout/12 DevAssert/0 DevAssert/0 
+Swt_Ip_Service/22 (Swt_Ip_Service) @061a7d20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @062421c0
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceCmd/13 Swt_Ip_Lock/9 Swt_Ip_ServiceCmd/13 Swt_Ip_GetLock/8 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceKeyGen/14 Swt_Ip_GetServiceMode/7 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 DevAssert/0 
+Swt_Ip_Deinit/21 (Swt_Ip_Deinit) @061a7ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061a7d20
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_ClearRequest/16 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 DevAssert/0 
+Swt_Ip_Init/20 (Swt_Ip_Init) @061a7c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061a7ee0
+  References: Swt_Ip_sBase/1 (read) Swt_Ip_apCallbackPtr/2 (write) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_RegisterConfig/11 Swt_Ip_CheckTimeout/12 Swt_Ip_Disable/6 Swt_Ip_IsEnable/4 Swt_Ip_Unlock/10 DevAssert/0 DevAssert/0 
+Swt_Ip_ClearIntFlag/19 (Swt_Ip_ClearIntFlag) @061a79a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_IsIntEnabled/18 (Swt_Ip_IsIntEnabled) @061a7700
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061a79a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_GetIntFlag/17 (Swt_Ip_GetIntFlag) @061a7460
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061a7700
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_ClearRequest/16 (Swt_Ip_ClearRequest) @061a71c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061a7d20
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Deinit/21 
+  Calls: 
+Swt_Ip_RequestedReset/15 (Swt_Ip_RequestedReset) @061a2e00
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06242ee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 
+  Calls: 
+Swt_Ip_ServiceKeyGen/14 (Swt_Ip_ServiceKeyGen) @061a2b60
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06198460
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_ServiceCmd/13 (Swt_Ip_ServiceCmd) @061a28c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @062421c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_CheckTimeout/12 (Swt_Ip_CheckTimeout) @061a2540
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061a22a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_RegisterConfig/11 (Swt_Ip_RegisterConfig) @061a22a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06195c40
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_Unlock/10 (Swt_Ip_Unlock) @06198d20
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061959a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Deinit/21 Swt_Ip_Init/20 
+  Calls: Swt_Ip_Lock/9 OsIf_GetElapsed/31 OsIf_GetCounter/30 OsIf_MicrosToTicks/29 
+Swt_Ip_Lock/9 (Swt_Ip_Lock) @061988c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061a7ee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Service/22 Swt_Ip_Unlock/10 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_GetLock/8 (Swt_Ip_GetLock) @06198460
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061a28c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_GetServiceMode/7 (Swt_Ip_GetServiceMode) @061981c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061a2b60
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_Disable/6 (Swt_Ip_Disable) @06195ee0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061a2540
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Deinit/21 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_Enable/5 (Swt_Ip_Enable) @06195c40
+  Type: function definition analyzed
+  Visibility:
+  Aux: @061988c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_IsEnable/4 (Swt_Ip_IsEnable) @061959a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06195ee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Wdg_Ip_abStatus/3 (Wdg_Ip_abStatus) @06194a68
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @061949d8
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_Deinit/21 (write) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+Swt_Ip_apCallbackPtr/2 (Swt_Ip_apCallbackPtr) @061949d8
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @06194900
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_IrqHandler/28 (read) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+Swt_Ip_sBase/1 (Swt_Ip_sBase) @06194900
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05ffab60
+  References: 
+  Referring: Swt_Ip_Init/20 (read) Swt_Ip_Deinit/21 (read) Swt_Ip_Service/22 (read) Swt_Ip_Config/23 (read) Swt_Ip_SetTimeout/24 (read) Swt_Ip_StartTimer/25 (read) Swt_Ip_StopTimer/26 (read) Swt_Ip_ClearResetRequest/27 (read) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05ffab60
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06198d20
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Config/23 Swt_Ip_Service/22 Swt_Ip_Deinit/21 Swt_Ip_Init/20 Swt_Ip_Init/20 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @061557e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @06155700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @06155540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @06155460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @06144d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @06144c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+OsIf_GetElapsed/31 (OsIf_GetElapsed) @06144380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @061442a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+OsIf_MicrosToTicks/29 (OsIf_MicrosToTicks) @061441c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+Swt_Ip_IrqHandler/28 (Swt_Ip_IrqHandler) @06242ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (read) Swt_Ip_apCallbackPtr/2 (read) Swt_Ip_apCallbackPtr/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_ClearIntFlag/19 Swt_Ip_ClearIntFlag/19 Swt_Ip_IsIntEnabled/18 Swt_Ip_GetIntFlag/17 DevAssert/0 
+   Indirect call Num speculative call targets: 0
+Swt_Ip_ClearResetRequest/27 (Swt_Ip_ClearResetRequest) @06242c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_RequestedReset/15 Swt_Ip_RequestedReset/15 OsIf_GetElapsed/31 OsIf_GetCounter/30 Swt_Ip_ClearRequest/16 Swt_Ip_RequestedReset/15 DevAssert/0 DevAssert/0 OsIf_MicrosToTicks/29 
+Swt_Ip_StopTimer/26 (Swt_Ip_StopTimer) @062429a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 Swt_Ip_Lock/9 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_StartTimer/25 (Swt_Ip_StartTimer) @06242700
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_Unlock/10 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_SetTimeout/24 (Swt_Ip_SetTimeout) @06242460
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 Swt_Ip_CheckTimeout/12 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_Config/23 (Swt_Ip_Config) @062421c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_RegisterConfig/11 Swt_Ip_Disable/6 Swt_Ip_IsEnable/4 Swt_Ip_Unlock/10 Swt_Ip_CheckTimeout/12 DevAssert/0 DevAssert/0 
+Swt_Ip_Service/22 (Swt_Ip_Service) @061a7d20
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceCmd/13 Swt_Ip_Lock/9 Swt_Ip_ServiceCmd/13 Swt_Ip_GetLock/8 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceKeyGen/14 Swt_Ip_GetServiceMode/7 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 DevAssert/0 
+Swt_Ip_Deinit/21 (Swt_Ip_Deinit) @061a7ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_ClearRequest/16 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 DevAssert/0 
+Swt_Ip_Init/20 (Swt_Ip_Init) @061a7c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) Swt_Ip_apCallbackPtr/2 (write) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_RegisterConfig/11 Swt_Ip_CheckTimeout/12 Swt_Ip_Disable/6 Swt_Ip_IsEnable/4 Swt_Ip_Unlock/10 DevAssert/0 DevAssert/0 
+Swt_Ip_ClearIntFlag/19 (Swt_Ip_ClearIntFlag) @061a79a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_IsIntEnabled/18 (Swt_Ip_IsIntEnabled) @061a7700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_GetIntFlag/17 (Swt_Ip_GetIntFlag) @061a7460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_ClearRequest/16 (Swt_Ip_ClearRequest) @061a71c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Deinit/21 
+  Calls: 
+Swt_Ip_RequestedReset/15 (Swt_Ip_RequestedReset) @061a2e00
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 
+  Calls: 
+Swt_Ip_ServiceKeyGen/14 (Swt_Ip_ServiceKeyGen) @061a2b60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_ServiceCmd/13 (Swt_Ip_ServiceCmd) @061a28c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_CheckTimeout/12 (Swt_Ip_CheckTimeout) @061a2540
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_RegisterConfig/11 (Swt_Ip_RegisterConfig) @061a22a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_Unlock/10 (Swt_Ip_Unlock) @06198d20
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Deinit/21 Swt_Ip_Init/20 
+  Calls: Swt_Ip_Lock/9 OsIf_GetElapsed/31 OsIf_GetCounter/30 OsIf_MicrosToTicks/29 
+Swt_Ip_Lock/9 (Swt_Ip_Lock) @061988c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Service/22 Swt_Ip_Unlock/10 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_GetLock/8 (Swt_Ip_GetLock) @06198460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_GetServiceMode/7 (Swt_Ip_GetServiceMode) @061981c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_Disable/6 (Swt_Ip_Disable) @06195ee0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Deinit/21 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_Enable/5 (Swt_Ip_Enable) @06195c40
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_IsEnable/4 (Swt_Ip_IsEnable) @061959a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Wdg_Ip_abStatus/3 (Wdg_Ip_abStatus) @06194a68
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_Deinit/21 (write) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+Swt_Ip_apCallbackPtr/2 (Swt_Ip_apCallbackPtr) @061949d8
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_IrqHandler/28 (read) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+Swt_Ip_sBase/1 (Swt_Ip_sBase) @06194900
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Swt_Ip_Init/20 (read) Swt_Ip_Deinit/21 (read) Swt_Ip_Service/22 (read) Swt_Ip_Config/23 (read) Swt_Ip_SetTimeout/24 (read) Swt_Ip_StartTimer/25 (read) Swt_Ip_StopTimer/26 (read) Swt_Ip_ClearResetRequest/27 (read) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05ffab60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Config/23 Swt_Ip_Service/22 Swt_Ip_Deinit/21 Swt_Ip_Init/20 Swt_Ip_Init/20 
+  Calls: 
+
+
+Initial Symbol table:
+
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @061557e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @06155700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @06155540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @06155460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @06144d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @06144c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+OsIf_GetElapsed/31 (OsIf_GetElapsed) @06144380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @061442a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+OsIf_MicrosToTicks/29 (OsIf_MicrosToTicks) @061441c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+Swt_Ip_IrqHandler/28 (Swt_Ip_IrqHandler) @06242ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (read) Swt_Ip_apCallbackPtr/2 (read) Swt_Ip_apCallbackPtr/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_ClearIntFlag/19 Swt_Ip_ClearIntFlag/19 Swt_Ip_IsIntEnabled/18 Swt_Ip_GetIntFlag/17 DevAssert/0 
+   Indirect call Num speculative call targets: 0
+Swt_Ip_ClearResetRequest/27 (Swt_Ip_ClearResetRequest) @06242c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_RequestedReset/15 Swt_Ip_RequestedReset/15 OsIf_GetElapsed/31 OsIf_GetCounter/30 Swt_Ip_ClearRequest/16 Swt_Ip_RequestedReset/15 DevAssert/0 DevAssert/0 OsIf_MicrosToTicks/29 
+Swt_Ip_StopTimer/26 (Swt_Ip_StopTimer) @062429a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 Swt_Ip_Lock/9 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_StartTimer/25 (Swt_Ip_StartTimer) @06242700
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_Unlock/10 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_SetTimeout/24 (Swt_Ip_SetTimeout) @06242460
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 Swt_Ip_CheckTimeout/12 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_Config/23 (Swt_Ip_Config) @062421c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_RegisterConfig/11 Swt_Ip_Disable/6 Swt_Ip_IsEnable/4 Swt_Ip_Unlock/10 Swt_Ip_CheckTimeout/12 DevAssert/0 DevAssert/0 
+Swt_Ip_Service/22 (Swt_Ip_Service) @061a7d20
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceCmd/13 Swt_Ip_Lock/9 Swt_Ip_ServiceCmd/13 Swt_Ip_GetLock/8 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceKeyGen/14 Swt_Ip_GetServiceMode/7 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 DevAssert/0 
+Swt_Ip_Deinit/21 (Swt_Ip_Deinit) @061a7ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_ClearRequest/16 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 DevAssert/0 
+Swt_Ip_Init/20 (Swt_Ip_Init) @061a7c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) Swt_Ip_apCallbackPtr/2 (write) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_RegisterConfig/11 Swt_Ip_CheckTimeout/12 Swt_Ip_Disable/6 Swt_Ip_IsEnable/4 Swt_Ip_Unlock/10 DevAssert/0 DevAssert/0 
+Swt_Ip_ClearIntFlag/19 (Swt_Ip_ClearIntFlag) @061a79a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_IsIntEnabled/18 (Swt_Ip_IsIntEnabled) @061a7700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_GetIntFlag/17 (Swt_Ip_GetIntFlag) @061a7460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_ClearRequest/16 (Swt_Ip_ClearRequest) @061a71c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Deinit/21 
+  Calls: 
+Swt_Ip_RequestedReset/15 (Swt_Ip_RequestedReset) @061a2e00
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 
+  Calls: 
+Swt_Ip_ServiceKeyGen/14 (Swt_Ip_ServiceKeyGen) @061a2b60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_ServiceCmd/13 (Swt_Ip_ServiceCmd) @061a28c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_CheckTimeout/12 (Swt_Ip_CheckTimeout) @061a2540
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_RegisterConfig/11 (Swt_Ip_RegisterConfig) @061a22a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_Unlock/10 (Swt_Ip_Unlock) @06198d20
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Deinit/21 Swt_Ip_Init/20 
+  Calls: Swt_Ip_Lock/9 OsIf_GetElapsed/31 OsIf_GetCounter/30 OsIf_MicrosToTicks/29 
+Swt_Ip_Lock/9 (Swt_Ip_Lock) @061988c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Service/22 Swt_Ip_Unlock/10 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_GetLock/8 (Swt_Ip_GetLock) @06198460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_GetServiceMode/7 (Swt_Ip_GetServiceMode) @061981c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_Disable/6 (Swt_Ip_Disable) @06195ee0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Deinit/21 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_Enable/5 (Swt_Ip_Enable) @06195c40
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_IsEnable/4 (Swt_Ip_IsEnable) @061959a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Wdg_Ip_abStatus/3 (Wdg_Ip_abStatus) @06194a68
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_Deinit/21 (write) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+Swt_Ip_apCallbackPtr/2 (Swt_Ip_apCallbackPtr) @061949d8
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_IrqHandler/28 (read) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+Swt_Ip_sBase/1 (Swt_Ip_sBase) @06194900
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Swt_Ip_Init/20 (read) Swt_Ip_Deinit/21 (read) Swt_Ip_Service/22 (read) Swt_Ip_Config/23 (read) Swt_Ip_SetTimeout/24 (read) Swt_Ip_StartTimer/25 (read) Swt_Ip_StopTimer/26 (read) Swt_Ip_ClearResetRequest/27 (read) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05ffab60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Config/23 Swt_Ip_Service/22 Swt_Ip_Deinit/21 Swt_Ip_Init/20 Swt_Ip_Init/20 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @061557e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @06155700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @06155540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @06155460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @06144d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @06144c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+OsIf_GetElapsed/31 (OsIf_GetElapsed) @06144380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @061442a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+OsIf_MicrosToTicks/29 (OsIf_MicrosToTicks) @061441c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Unlock/10 
+  Calls: 
+Swt_Ip_IrqHandler/28 (Swt_Ip_IrqHandler) @06242ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (read) Swt_Ip_apCallbackPtr/2 (read) Swt_Ip_apCallbackPtr/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_ClearIntFlag/19 Swt_Ip_ClearIntFlag/19 Swt_Ip_IsIntEnabled/18 Swt_Ip_GetIntFlag/17 DevAssert/0 
+   Indirect call Num speculative call targets: 0
+Swt_Ip_ClearResetRequest/27 (Swt_Ip_ClearResetRequest) @06242c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_RequestedReset/15 Swt_Ip_RequestedReset/15 OsIf_GetElapsed/31 OsIf_GetCounter/30 Swt_Ip_ClearRequest/16 Swt_Ip_RequestedReset/15 DevAssert/0 DevAssert/0 OsIf_MicrosToTicks/29 
+Swt_Ip_StopTimer/26 (Swt_Ip_StopTimer) @062429a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 Swt_Ip_Lock/9 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_StartTimer/25 (Swt_Ip_StartTimer) @06242700
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_Unlock/10 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_SetTimeout/24 (Swt_Ip_SetTimeout) @06242460
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 Swt_Ip_CheckTimeout/12 Swt_Ip_GetLock/8 DevAssert/0 
+Swt_Ip_Config/23 (Swt_Ip_Config) @062421c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_RegisterConfig/11 Swt_Ip_Disable/6 Swt_Ip_IsEnable/4 Swt_Ip_Unlock/10 Swt_Ip_CheckTimeout/12 DevAssert/0 DevAssert/0 
+Swt_Ip_Service/22 (Swt_Ip_Service) @061a7d20
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceCmd/13 Swt_Ip_Lock/9 Swt_Ip_ServiceCmd/13 Swt_Ip_GetLock/8 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceCmd/13 Swt_Ip_ServiceKeyGen/14 Swt_Ip_ServiceKeyGen/14 Swt_Ip_GetServiceMode/7 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 DevAssert/0 
+Swt_Ip_Deinit/21 (Swt_Ip_Deinit) @061a7ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_ClearRequest/16 Swt_Ip_Disable/6 Swt_Ip_Unlock/10 DevAssert/0 
+Swt_Ip_Init/20 (Swt_Ip_Init) @061a7c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Swt_Ip_sBase/1 (read) Swt_Ip_apCallbackPtr/2 (write) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 Swt_Ip_Enable/5 Swt_Ip_RegisterConfig/11 Swt_Ip_CheckTimeout/12 Swt_Ip_Disable/6 Swt_Ip_IsEnable/4 Swt_Ip_Unlock/10 DevAssert/0 DevAssert/0 
+Swt_Ip_ClearIntFlag/19 (Swt_Ip_ClearIntFlag) @061a79a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_IsIntEnabled/18 (Swt_Ip_IsIntEnabled) @061a7700
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_GetIntFlag/17 (Swt_Ip_GetIntFlag) @061a7460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 
+  Calls: 
+Swt_Ip_ClearRequest/16 (Swt_Ip_ClearRequest) @061a71c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_Deinit/21 
+  Calls: 
+Swt_Ip_RequestedReset/15 (Swt_Ip_RequestedReset) @061a2e00
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 
+  Calls: 
+Swt_Ip_ServiceKeyGen/14 (Swt_Ip_ServiceKeyGen) @061a2b60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_ServiceCmd/13 (Swt_Ip_ServiceCmd) @061a28c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_CheckTimeout/12 (Swt_Ip_CheckTimeout) @061a2540
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_RegisterConfig/11 (Swt_Ip_RegisterConfig) @061a22a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_Unlock/10 (Swt_Ip_Unlock) @06198d20
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Deinit/21 Swt_Ip_Init/20 
+  Calls: Swt_Ip_Lock/9 OsIf_GetElapsed/31 OsIf_GetCounter/30 OsIf_MicrosToTicks/29 
+Swt_Ip_Lock/9 (Swt_Ip_Lock) @061988c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Service/22 Swt_Ip_Unlock/10 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_GetLock/8 (Swt_Ip_GetLock) @06198460
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_GetServiceMode/7 (Swt_Ip_GetServiceMode) @061981c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Service/22 
+  Calls: 
+Swt_Ip_Disable/6 (Swt_Ip_Disable) @06195ee0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StopTimer/26 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Deinit/21 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_Enable/5 (Swt_Ip_Enable) @06195c40
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Swt_Ip_IsEnable/4 (Swt_Ip_IsEnable) @061959a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_Config/23 Swt_Ip_Init/20 
+  Calls: 
+Wdg_Ip_abStatus/3 (Wdg_Ip_abStatus) @06194a68
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_Deinit/21 (write) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+Swt_Ip_apCallbackPtr/2 (Swt_Ip_apCallbackPtr) @061949d8
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_IrqHandler/28 (read) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags:
+Swt_Ip_sBase/1 (Swt_Ip_sBase) @06194900
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Swt_Ip_Init/20 (read) Swt_Ip_Deinit/21 (read) Swt_Ip_Service/22 (read) Swt_Ip_Config/23 (read) Swt_Ip_SetTimeout/24 (read) Swt_Ip_StartTimer/25 (read) Swt_Ip_StopTimer/26 (read) Swt_Ip_ClearResetRequest/27 (read) Swt_Ip_IrqHandler/28 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05ffab60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Swt_Ip_IrqHandler/28 Swt_Ip_ClearResetRequest/27 Swt_Ip_ClearResetRequest/27 Swt_Ip_StopTimer/26 Swt_Ip_StartTimer/25 Swt_Ip_SetTimeout/24 Swt_Ip_Config/23 Swt_Ip_Config/23 Swt_Ip_Service/22 Swt_Ip_Deinit/21 Swt_Ip_Init/20 Swt_Ip_Init/20 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Swt_Ip_GetLock/63 (Swt_Ip_GetLock) @064041c0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 62
+  References: 
+  Referring: 
+  Function Swt_Ip_GetLock/63 is inline copy in Swt_Ip_SetTimeout/24
+  Clone of Swt_Ip_GetLock/8
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_SetTimeout/24 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Swt_Ip_GetLock/62 (Swt_Ip_GetLock) @06144ee0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 61
+  previous sharing asm name: 63
+  References: 
+  Referring: 
+  Function Swt_Ip_GetLock/62 is inline copy in Swt_Ip_StartTimer/25
+  Clone of Swt_Ip_GetLock/8
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_StartTimer/25 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Swt_Ip_GetLock/61 (Swt_Ip_GetLock) @061a2e00
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 8
+  previous sharing asm name: 62
+  References: 
+  Referring: 
+  Function Swt_Ip_GetLock/61 is inline copy in Swt_Ip_StopTimer/26
+  Clone of Swt_Ip_GetLock/8
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_StopTimer/26 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Swt_Ip_CheckTimeout/60 (Swt_Ip_CheckTimeout) @061447e0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 59
+  References: 
+  Referring: 
+  Function Swt_Ip_CheckTimeout/60 is inline copy in Swt_Ip_Config/23
+  Clone of Swt_Ip_CheckTimeout/12
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_Config/23 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Swt_Ip_CheckTimeout/59 (Swt_Ip_CheckTimeout) @061a7460
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 12
+  previous sharing asm name: 60
+  References: 
+  Referring: 
+  Function Swt_Ip_CheckTimeout/59 is inline copy in Swt_Ip_SetTimeout/24
+  Clone of Swt_Ip_CheckTimeout/12
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_SetTimeout/24 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @061557e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @06155700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_StopTimer/26 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @06155540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @06155460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_StartTimer/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @06144d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @06144c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_Service/22 (1073741817 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_GetElapsed/31 (OsIf_GetElapsed) @06144380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 (958878294 (estimated locally),2.75 per call) Swt_Ip_Unlock/10 (958878294 (estimated locally),1.38 per call) 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @061442a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 (114863530 (estimated locally),0.33 per call) Swt_Ip_Unlock/10 (114863530 (estimated locally),0.16 per call) 
+  Calls: 
+OsIf_MicrosToTicks/29 (OsIf_MicrosToTicks) @061441c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_ClearResetRequest/27 (348071305 (estimated locally),1.00 per call) Swt_Ip_Unlock/10 (696142611 (estimated locally),1.00 per call) 
+  Calls: 
+Swt_Ip_IrqHandler/28 (Swt_Ip_IrqHandler) @06242ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (read) Swt_Ip_apCallbackPtr/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: DevAssert/0 (1073741824 (estimated locally),1.00 per call) 
+   Indirect call(93952410 (estimated locally),0.09 per call)  Num speculative call targets: 0
+Swt_Ip_ClearResetRequest/27 (Swt_Ip_ClearResetRequest) @06242c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:348071305 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_GetElapsed/31 (958878294 (estimated locally),2.75 per call) OsIf_GetCounter/30 (114863530 (estimated locally),0.33 per call) DevAssert/0 (348071305 (estimated locally),1.00 per call) DevAssert/0 (348071305 (estimated locally),1.00 per call) OsIf_MicrosToTicks/29 (348071305 (estimated locally),1.00 per call) 
+Swt_Ip_StopTimer/26 (Swt_Ip_StopTimer) @062429a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 (1073741824 (estimated locally),1.00 per call) Swt_Ip_Lock/9 (354334800 (estimated locally),0.33 per call) Swt_Ip_Unlock/10 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 (1073741824 (estimated locally),1.00 per call) Swt_Ip_GetLock/61 (inlined) (1073741824 (estimated locally),1.00 per call) DevAssert/0 (1073741824 (estimated locally),1.00 per call) 
+Swt_Ip_StartTimer/25 (Swt_Ip_StartTimer) @06242700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 (1073741824 (estimated locally),1.00 per call) Swt_Ip_Lock/9 (354334800 (estimated locally),0.33 per call) Swt_Ip_Unlock/10 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 (1073741824 (estimated locally),1.00 per call) Swt_Ip_GetLock/62 (inlined) (1073741824 (estimated locally),1.00 per call) DevAssert/0 (1073741824 (estimated locally),1.00 per call) 
+Swt_Ip_SetTimeout/24 (Swt_Ip_SetTimeout) @06242460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 (233860967 (estimated locally),0.22 per call) Swt_Ip_Unlock/10 (354334800 (estimated locally),0.33 per call) Swt_Ip_CheckTimeout/59 (inlined) (1073741824 (estimated locally),1.00 per call) Swt_Ip_GetLock/63 (inlined) (1073741824 (estimated locally),1.00 per call) DevAssert/0 (1073741824 (estimated locally),1.00 per call) 
+Swt_Ip_Config/23 (Swt_Ip_Config) @062421c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 (233860967 (estimated locally),0.22 per call) Swt_Ip_RegisterConfig/11 (233860967 (estimated locally),0.22 per call) Swt_Ip_Unlock/10 (354334800 (estimated locally),0.33 per call) Swt_Ip_CheckTimeout/60 (inlined) (1073741824 (estimated locally),1.00 per call) DevAssert/0 (1073741824 (estimated locally),1.00 per call) DevAssert/0 (1073741824 (estimated locally),1.00 per call) 
+Swt_Ip_Service/22 (Swt_Ip_Service) @061a7d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Swt_Ip_sBase/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741817 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 (1073741824 (estimated locally),1.00 per call) Swt_Ip_GetLock/8 (inlined) (357913942 (estimated locally),0.33 per call) Swt_Ip_GetServiceMode/7 (inlined) (1073741817 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 (1073741817 (estimated locally),1.00 per call) DevAssert/0 (1073741817 (estimated locally),1.00 per call) 
+Swt_Ip_Deinit/21 (Swt_Ip_Deinit) @061a7ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Swt_Ip_sBase/1 (read) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Unlock/10 (1073741824 (estimated locally),1.00 per call) DevAssert/0 (1073741824 (estimated locally),1.00 per call) 
+Swt_Ip_Init/20 (Swt_Ip_Init) @061a7c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Swt_Ip_sBase/1 (read) Swt_Ip_apCallbackPtr/2 (write) Wdg_Ip_abStatus/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Swt_Ip_Lock/9 (233860966 (estimated locally),0.22 per call) Swt_Ip_RegisterConfig/11 (233860966 (estimated locally),0.22 per call) Swt_Ip_CheckTimeout/12 (inlined) (708669600 (estimated locally),0.66 per call) Swt_Ip_Unlock/10 (1073741823 (estimated locally),1.00 per call) DevAssert/0 (1073741823 (estimated locally),1.00 per call) DevAssert/0 (1073741823 (estimated locally),1.00 per call) 
+Swt_Ip_CheckTimeout/12 (Swt_Ip_CheckTimeout) @061a2540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 59
+  References: 
+  Referring: 
+  Function Swt_Ip_CheckTimeout/12 is inline copy in Swt_Ip_Init/20
+  Availability: local
+  Function flags: count:708669600 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_Init/20 (inlined) (708669600 (estimated locally),0.66 per call) 
+  Calls: 
+Swt_Ip_RegisterConfig/11 (Swt_Ip_RegisterConfig) @061a22a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_Config/23 (233860967 (estimated locally),0.22 per call) Swt_Ip_Init/20 (233860966 (estimated locally),0.22 per call) 
+  Calls: 
+Swt_Ip_Unlock/10 (Swt_Ip_Unlock) @06198d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:696142611 (estimated locally) body local optimize_size
+  Called by: Swt_Ip_StopTimer/26 (1073741824 (estimated locally),1.00 per call) Swt_Ip_StartTimer/25 (1073741824 (estimated locally),1.00 per call) Swt_Ip_SetTimeout/24 (354334800 (estimated locally),0.33 per call) Swt_Ip_Config/23 (354334800 (estimated locally),0.33 per call) Swt_Ip_Deinit/21 (1073741824 (estimated locally),1.00 per call) Swt_Ip_Init/20 (1073741823 (estimated locally),1.00 per call) 
+  Calls: OsIf_GetElapsed/31 (958878294 (estimated locally),1.38 per call) OsIf_GetCounter/30 (114863530 (estimated locally),0.16 per call) OsIf_MicrosToTicks/29 (696142611 (estimated locally),1.00 per call) 
+Swt_Ip_Lock/9 (Swt_Ip_Lock) @061988c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741817 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_StopTimer/26 (354334800 (estimated locally),0.33 per call) Swt_Ip_StartTimer/25 (354334800 (estimated locally),0.33 per call) Swt_Ip_SetTimeout/24 (233860967 (estimated locally),0.22 per call) Swt_Ip_Config/23 (233860967 (estimated locally),0.22 per call) Swt_Ip_Init/20 (233860966 (estimated locally),0.22 per call) 
+  Calls: 
+Swt_Ip_GetLock/8 (Swt_Ip_GetLock) @06198460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 61
+  References: 
+  Referring: 
+  Function Swt_Ip_GetLock/8 is inline copy in Swt_Ip_Service/22
+  Availability: local
+  Function flags: count:357913942 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_Service/22 (inlined) (357913942 (estimated locally),0.33 per call) 
+  Calls: 
+Swt_Ip_GetServiceMode/7 (Swt_Ip_GetServiceMode) @061981c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Swt_Ip_GetServiceMode/7 is inline copy in Swt_Ip_Service/22
+  Availability: local
+  Function flags: count:1073741817 (estimated locally) body local nonfreeing_fn optimize_size
+  Called by: Swt_Ip_Service/22 (inlined) (1073741817 (estimated locally),1.00 per call) 
+  Calls: 
+Wdg_Ip_abStatus/3 (Wdg_Ip_abStatus) @06194a68
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_Deinit/21 (write) Swt_Ip_IrqHandler/28 (read) 
+  Availability: available
+  Varpool flags:
+Swt_Ip_apCallbackPtr/2 (Swt_Ip_apCallbackPtr) @061949d8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Swt_Ip_Init/20 (write) Swt_Ip_IrqHandler/28 (read) 
+  Availability: available
+  Varpool flags:
+Swt_Ip_sBase/1 (Swt_Ip_sBase) @06194900
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Swt_Ip_StopTimer/26 (read) Swt_Ip_ClearResetRequest/27 (read) Swt_Ip_Init/20 (read) Swt_Ip_Deinit/21 (read) Swt_Ip_Service/22 (read) Swt_Ip_Config/23 (read) Swt_Ip_SetTimeout/24 (read) Swt_Ip_StartTimer/25 (read) Swt_Ip_IrqHandler/28 (read) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05ffab60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:21262216 (estimated locally) body local optimize_size
+  Called by: Swt_Ip_IrqHandler/28 (1073741824 (estimated locally),1.00 per call) Swt_Ip_ClearResetRequest/27 (348071305 (estimated locally),1.00 per call) Swt_Ip_ClearResetRequest/27 (348071305 (estimated locally),1.00 per call) Swt_Ip_StopTimer/26 (1073741824 (estimated locally),1.00 per call) Swt_Ip_StartTimer/25 (1073741824 (estimated locally),1.00 per call) Swt_Ip_SetTimeout/24 (1073741824 (estimated locally),1.00 per call) Swt_Ip_Config/23 (1073741824 (estimated locally),1.00 per call) Swt_Ip_Config/23 (1073741824 (estimated locally),1.00 per call) Swt_Ip_Service/22 (1073741817 (estimated locally),1.00 per call) Swt_Ip_Deinit/21 (1073741824 (estimated locally),1.00 per call) Swt_Ip_Init/20 (1073741823 (estimated locally),1.00 per call) Swt_Ip_Init/20 (1073741823 (estimated locally),1.00 per call) 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Wdg_Ip_abStatus/3 Swt_Ip_apCallbackPtr/2 Swt_Ip_sBase/1
+Removing variables:
+
+Final Symbol table:
+
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/37 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @061557e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/36 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @06155700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/35 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @06155540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/34 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @06155460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/33 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @06144d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/32 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @06144c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_GetElapsed/31 (OsIf_GetElapsed) @06144380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_GetCounter/30 (OsIf_GetCounter) @061442a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_MicrosToTicks/29 (OsIf_MicrosToTicks) @061441c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_IrqHandler/28 (Swt_Ip_IrqHandler) @06242ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Swt_Ip_IrqHandler (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_ClearResetRequest/27 (Swt_Ip_ClearResetRequest) @06242c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Swt_Ip_ClearResetRequest (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:348071305 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_StopTimer/26 (Swt_Ip_StopTimer) @062429a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Swt_Ip_StopTimer (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_StartTimer/25 (Swt_Ip_StartTimer) @06242700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Swt_Ip_StartTimer (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_SetTimeout/24 (Swt_Ip_SetTimeout) @06242460
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Swt_Ip_SetTimeout (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_Config/23 (Swt_Ip_Config) @062421c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Swt_Ip_Config (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_Service/22 (Swt_Ip_Service) @061a7d20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Swt_Ip_Service (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741817 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_Deinit/21 (Swt_Ip_Deinit) @061a7ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Swt_Ip_Deinit (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_Init/20 (Swt_Ip_Init) @061a7c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Swt_Ip_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_RegisterConfig/11 (Swt_Ip_RegisterConfig) @061a22a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Swt_Ip_RegisterConfig (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) local nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_Unlock/10 (Swt_Ip_Unlock) @06198d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Swt_Ip_Unlock (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:696142611 (estimated locally) local optimize_size
+  Called by: 
+  Calls: 
+Swt_Ip_Lock/9 (Swt_Ip_Lock) @061988c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Swt_Ip_Lock (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741817 (estimated locally) local nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Wdg_Ip_abStatus/3 (Wdg_Ip_abStatus) @06194a68
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.bss.Wdg_Ip_abStatus (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Swt_Ip_apCallbackPtr/2 (Swt_Ip_apCallbackPtr) @061949d8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.bss.Swt_Ip_apCallbackPtr (implicit_section)
+  Aux: @06194a68
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Swt_Ip_sBase/1 (Swt_Ip_sBase) @06194900
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Swt_Ip_sBase (implicit_section)
+  Aux: @061949d8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @05ffab60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.DevAssert (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:21262216 (estimated locally) local optimize_size
+  Called by: 
+  Calls: 

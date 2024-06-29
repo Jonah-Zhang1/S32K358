@@ -1,0 +1,565 @@
+
+Marking local functions: Power_Ip_PrepareSocStandby/1
+
+
+Marking externally visible functions: Power_Ip_DisableSleepOnExit/9 Power_Ip_EnableSleepOnExit/8 Power_Ip_InstallNotificationsCallback/7 Power_Ip_Init/6 Power_Ip_GetResetRawValue/5 Power_Ip_GetResetReason/4 Power_Ip_GetPreviousMode/3 Power_Ip_SetMode/2
+
+
+Marking externally visible variables: Power_Ip_pfReportErrorsCallback/0
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Power_Ip_CM7_DisableSleepOnExit/29 (Power_Ip_CM7_DisableSleepOnExit) @06492ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_DisableSleepOnExit/9 
+  Calls: 
+Power_Ip_CM7_EnableSleepOnExit/28 (Power_Ip_CM7_EnableSleepOnExit) @06492d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_EnableSleepOnExit/8 
+  Calls: 
+Power_Ip_PMC_PowerInit/27 (Power_Ip_PMC_PowerInit) @06492a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_Init/6 
+  Calls: 
+Power_Ip_MC_RGM_ResetInit/26 (Power_Ip_MC_RGM_ResetInit) @064929a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_Init/6 
+  Calls: 
+Power_Ip_MC_RGM_GetResetRawValue/25 (Power_Ip_MC_RGM_GetResetRawValue) @064927e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_GetResetRawValue/5 
+  Calls: 
+Power_Ip_MC_RGM_GetResetReason/24 (Power_Ip_MC_RGM_GetResetReason) @06492620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_GetResetReason/4 
+  Calls: 
+Power_Ip_MC_RGM_ResetDuringStandby/23 (Power_Ip_MC_RGM_ResetDuringStandby) @06492540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_GetResetReason/4 
+  Calls: 
+Power_Ip_MC_ME_GetPreviousMode/22 (Power_Ip_MC_ME_GetPreviousMode) @06492380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_GetResetReason/4 Power_Ip_GetPreviousMode/3 
+  Calls: 
+Power_Ip_ReportPowerErrors/21 (Power_Ip_ReportPowerErrors) @064921c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_PrepareSocStandby/1 
+  Calls: 
+Power_Ip_PMC_PrepareLowPowerEntry/20 (Power_Ip_PMC_PrepareLowPowerEntry) @064920e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_PrepareSocStandby/1 
+  Calls: 
+Power_Ip_FLASH_HighVoltageOperationOngoing/19 (Power_Ip_FLASH_HighVoltageOperationOngoing) @06492000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_PrepareSocStandby/1 
+  Calls: 
+Power_Ip_DCM_GPR_GlobalPadkeepingConfig/18 (Power_Ip_DCM_GPR_GlobalPadkeepingConfig) @0648a000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_Init/6 Power_Ip_PrepareSocStandby/1 
+  Calls: 
+Power_Ip_DCM_GPR_Config/17 (Power_Ip_DCM_GPR_Config) @0648aee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_PrepareSocStandby/1 
+  Calls: 
+Power_Ip_MC_ME_SocStandbyEntry/16 (Power_Ip_MC_ME_SocStandbyEntry) @0648ad20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_SetMode/2 Power_Ip_SetMode/2 
+  Calls: 
+Power_Ip_MC_ME_CoreStandbyEntry/15 (Power_Ip_MC_ME_CoreStandbyEntry) @0648ac40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_SetMode/2 
+  Calls: 
+Power_Ip_MC_ME_SocTriggerResetEvent/14 (Power_Ip_MC_ME_SocTriggerResetEvent) @0648ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_SetMode/2 
+  Calls: 
+Power_Ip_MC_ME_DisablePartitionClock/13 (Power_Ip_MC_ME_DisablePartitionClock) @0648aa80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_SetMode/2 
+  Calls: 
+Power_Ip_MC_ME_ConfigCoreCOFBClock/12 (Power_Ip_MC_ME_ConfigCoreCOFBClock) @0648a9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_SetMode/2 
+  Calls: 
+Power_Ip_MC_ME_EnablePartitionClock/11 (Power_Ip_MC_ME_EnablePartitionClock) @0648a8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Power_Ip_SetMode/2 
+  Calls: 
+Power_Ip_ReportPowerErrorsEmptyCallback/10 (Power_Ip_ReportPowerErrorsEmptyCallback) @0648a460
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: Power_Ip_pfReportErrorsCallback/0 (addr) 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_DisableSleepOnExit/9 (Power_Ip_DisableSleepOnExit) @0648a1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_CM7_DisableSleepOnExit/29 
+Power_Ip_EnableSleepOnExit/8 (Power_Ip_EnableSleepOnExit) @06481ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_CM7_EnableSleepOnExit/28 
+Power_Ip_InstallNotificationsCallback/7 (Power_Ip_InstallNotificationsCallback) @064819a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_pfReportErrorsCallback/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_Init/6 (Power_Ip_Init) @06481460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_DCM_GPR_GlobalPadkeepingConfig/18 Power_Ip_PMC_PowerInit/27 Power_Ip_MC_RGM_ResetInit/26 
+Power_Ip_GetResetRawValue/5 (Power_Ip_GetResetRawValue) @06481e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_GetResetRawValue/25 
+Power_Ip_GetResetReason/4 (Power_Ip_GetResetReason) @06481b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_RGM_GetResetReason/24 Power_Ip_MC_ME_GetPreviousMode/22 Power_Ip_MC_RGM_ResetDuringStandby/23 
+Power_Ip_GetPreviousMode/3 (Power_Ip_GetPreviousMode) @064818c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_GetPreviousMode/22 
+Power_Ip_SetMode/2 (Power_Ip_SetMode) @06481620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Power_Ip_MC_ME_SocStandbyEntry/16 Power_Ip_PrepareSocStandby/1 Power_Ip_MC_ME_SocStandbyEntry/16 Power_Ip_PrepareSocStandby/1 Power_Ip_MC_ME_CoreStandbyEntry/15 Power_Ip_MC_ME_SocTriggerResetEvent/14 Power_Ip_MC_ME_DisablePartitionClock/13 Power_Ip_MC_ME_ConfigCoreCOFBClock/12 Power_Ip_MC_ME_EnablePartitionClock/11 
+Power_Ip_PrepareSocStandby/1 (Power_Ip_PrepareSocStandby) @06481380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Power_Ip_SetMode/2 Power_Ip_SetMode/2 
+  Calls: Power_Ip_ReportPowerErrors/21 Power_Ip_PMC_PrepareLowPowerEntry/20 Power_Ip_FLASH_HighVoltageOperationOngoing/19 Power_Ip_DCM_GPR_GlobalPadkeepingConfig/18 Power_Ip_DCM_GPR_Config/17 
+Power_Ip_pfReportErrorsCallback/0 (Power_Ip_pfReportErrorsCallback) @064803a8
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_ReportPowerErrorsEmptyCallback/10 (addr) 
+  Referring: Power_Ip_InstallNotificationsCallback/7 (write) 
+  Availability: available
+  Varpool flags: initialized
+Power_Ip_DisableSleepOnExit ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_CM7_DisableSleepOnExit ();
+  return;
+
+}
+
+
+Power_Ip_EnableSleepOnExit ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_CM7_EnableSleepOnExit ();
+  return;
+
+}
+
+
+Power_Ip_InstallNotificationsCallback (void (*Power_Ip_ReportErrorsCallbackType) (Power_Ip_ReportErrorType, uint8) ReportErrorsCallback)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Power_Ip_pfReportErrorsCallback = ReportErrorsCallback;
+  return;
+
+}
+
+
+Power_Ip_Init (const struct Power_Ip_HwIPsConfigType * HwIPsConfigPtr)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = HwIPsConfigPtr->McRgmConfigPtr;
+  Power_Ip_MC_RGM_ResetInit (_1);
+  # DEBUG BEGIN_STMT
+  _2 = HwIPsConfigPtr->PMCConfigPtr;
+  Power_Ip_PMC_PowerInit (_2);
+  # DEBUG BEGIN_STMT
+  Power_Ip_DCM_GPR_GlobalPadkeepingConfig (1);
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Power_Ip_GetResetRawValue ()
+{
+  Power_Ip_RawResetType ResetReason;
+  Power_Ip_RawResetType D.6485;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ResetReason = Power_Ip_MC_RGM_GetResetRawValue ();
+  # DEBUG BEGIN_STMT
+  D.6485 = ResetReason;
+  return D.6485;
+
+}
+
+
+Power_Ip_GetResetReason ()
+{
+  Power_Ip_PowerModeType PreviousMode;
+  Power_Ip_ResetType ResetReason;
+  Power_Ip_ResetType D.6483;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  ResetReason = 31;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Power_Ip_MC_RGM_ResetDuringStandby ();
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  ResetReason = 28;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  PreviousMode = Power_Ip_MC_ME_GetPreviousMode ();
+  # DEBUG BEGIN_STMT
+  if (PreviousMode == 15)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  ResetReason = 28;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  ResetReason = Power_Ip_MC_RGM_GetResetReason ();
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.6483 = ResetReason;
+  return D.6483;
+
+}
+
+
+Power_Ip_GetPreviousMode ()
+{
+  Power_Ip_PowerModeType PowerPrevMode;
+  Power_Ip_PowerModeType D.6475;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  PowerPrevMode = Power_Ip_MC_ME_GetPreviousMode ();
+  # DEBUG BEGIN_STMT
+  D.6475 = PowerPrevMode;
+  return D.6475;
+
+}
+
+
+Power_Ip_SetMode (const struct Power_Ip_ModeConfigType * ModeConfigPtr)
+{
+  Power_Ip_PowerModeType PowerMode;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  PowerMode = ModeConfigPtr->PowerMode;
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr->McMeModeConfigPtr;
+  Power_Ip_MC_ME_EnablePartitionClock (_1);
+  # DEBUG BEGIN_STMT
+  _2 = ModeConfigPtr->McMeModeConfigPtr;
+  Power_Ip_MC_ME_ConfigCoreCOFBClock (_2);
+  # DEBUG BEGIN_STMT
+  _3 = ModeConfigPtr->McMeModeConfigPtr;
+  Power_Ip_MC_ME_DisablePartitionClock (_3);
+  # DEBUG BEGIN_STMT
+  if (PowerMode <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_SocTriggerResetEvent (PowerMode);
+  goto <bb 15>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  if (PowerMode == 13)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_CoreStandbyEntry (ModeConfigPtr);
+  goto <bb 15>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  if (PowerMode == 14)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  if (PowerMode == 17)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_PrepareSocStandby (ModeConfigPtr);
+  goto <bb 15>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  if (PowerMode == 15)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  if (PowerMode == 18)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_SocStandbyEntry (ModeConfigPtr);
+  goto <bb 15>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  if (PowerMode == 16)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  if (PowerMode == 19)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_PrepareSocStandby (ModeConfigPtr);
+  # DEBUG BEGIN_STMT
+  Power_Ip_MC_ME_SocStandbyEntry (ModeConfigPtr);
+
+  <bb 15> :
+  return;
+
+}
+
+
+Power_Ip_PrepareSocStandby (const struct Power_Ip_ModeConfigType * ModeConfigPtr)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = ModeConfigPtr->DcmGprConfigPtr;
+  Power_Ip_DCM_GPR_Config (_1);
+  # DEBUG BEGIN_STMT
+  _2 = ModeConfigPtr->DcmGprConfigPtr;
+  _3 = _2->GlobalPadkeeping;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+  _4 = ModeConfigPtr->DcmGprConfigPtr;
+  _5 = _4->DcmGprUnderMcuControl;
+  if (_5 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_DCM_GPR_GlobalPadkeepingConfig (0);
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _6 = Power_Ip_FLASH_HighVoltageOperationOngoing ();
+  _7 = ~_6;
+  if (_7 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_PMC_PrepareLowPowerEntry ();
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Power_Ip_ReportPowerErrors (1, 7);
+
+  <bb 8> :
+  return;
+
+}
+
+

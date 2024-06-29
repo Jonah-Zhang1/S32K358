@@ -1,0 +1,2987 @@
+Trivially needed symbols: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 Wdg_schm_read_msr/30 reentry_guard_WDG_EXCLUSIVE_AREA_14/29 msr_WDG_EXCLUSIVE_AREA_14/28 reentry_guard_WDG_EXCLUSIVE_AREA_13/27 msr_WDG_EXCLUSIVE_AREA_13/26 reentry_guard_WDG_EXCLUSIVE_AREA_12/25 msr_WDG_EXCLUSIVE_AREA_12/24 reentry_guard_WDG_EXCLUSIVE_AREA_11/23 msr_WDG_EXCLUSIVE_AREA_11/22 reentry_guard_WDG_EXCLUSIVE_AREA_10/21 msr_WDG_EXCLUSIVE_AREA_10/20 reentry_guard_WDG_EXCLUSIVE_AREA_09/19 msr_WDG_EXCLUSIVE_AREA_09/18 reentry_guard_WDG_EXCLUSIVE_AREA_08/17 msr_WDG_EXCLUSIVE_AREA_08/16 reentry_guard_WDG_EXCLUSIVE_AREA_07/15 msr_WDG_EXCLUSIVE_AREA_07/14 reentry_guard_WDG_EXCLUSIVE_AREA_06/13 msr_WDG_EXCLUSIVE_AREA_06/12 reentry_guard_WDG_EXCLUSIVE_AREA_05/11 msr_WDG_EXCLUSIVE_AREA_05/10 reentry_guard_WDG_EXCLUSIVE_AREA_04/9 msr_WDG_EXCLUSIVE_AREA_04/8 reentry_guard_WDG_EXCLUSIVE_AREA_03/7 msr_WDG_EXCLUSIVE_AREA_03/6 reentry_guard_WDG_EXCLUSIVE_AREA_02/5 msr_WDG_EXCLUSIVE_AREA_02/4 reentry_guard_WDG_EXCLUSIVE_AREA_01/3 msr_WDG_EXCLUSIVE_AREA_01/2 reentry_guard_WDG_EXCLUSIVE_AREA_00/1 msr_WDG_EXCLUSIVE_AREA_00/0
+
+
+Initial Symbol table:
+
+Sys_GetCoreID/61 (Sys_GetCoreID) @05fd20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbe00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) msr_WDG_EXCLUSIVE_AREA_14/28 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbb60
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fcbe00
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) msr_WDG_EXCLUSIVE_AREA_14/28 (write) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb7e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fcbb60
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) msr_WDG_EXCLUSIVE_AREA_13/26 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb540
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fcb7e0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) msr_WDG_EXCLUSIVE_AREA_13/26 (write) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12) @05fcb1c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fcb540
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) msr_WDG_EXCLUSIVE_AREA_12/24 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12) @05fc5c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fcb1c0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) msr_WDG_EXCLUSIVE_AREA_12/24 (write) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5380
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc5c40
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) msr_WDG_EXCLUSIVE_AREA_11/22 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc5380
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) msr_WDG_EXCLUSIVE_AREA_11/22 (write) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc5b60
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc5ee0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) msr_WDG_EXCLUSIVE_AREA_10/20 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc58c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc5b60
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) msr_WDG_EXCLUSIVE_AREA_10/20 (write) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc5540
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc58c0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) msr_WDG_EXCLUSIVE_AREA_09/18 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc52a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc5540
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) msr_WDG_EXCLUSIVE_AREA_09/18 (write) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0d20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc52a0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) msr_WDG_EXCLUSIVE_AREA_08/16 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc0d20
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) msr_WDG_EXCLUSIVE_AREA_08/16 (write) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc0700
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) msr_WDG_EXCLUSIVE_AREA_07/14 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc0ee0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) msr_WDG_EXCLUSIVE_AREA_07/14 (write) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc08c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc0c40
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) msr_WDG_EXCLUSIVE_AREA_06/12 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc0620
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc08c0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) msr_WDG_EXCLUSIVE_AREA_06/12 (write) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc02a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc0620
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) msr_WDG_EXCLUSIVE_AREA_05/10 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc0000
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc02a0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) msr_WDG_EXCLUSIVE_AREA_05/10 (write) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb9700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fc0000
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) msr_WDG_EXCLUSIVE_AREA_04/8 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb90e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fb9700
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) msr_WDG_EXCLUSIVE_AREA_04/8 (write) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb9c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fb90e0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) msr_WDG_EXCLUSIVE_AREA_03/6 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb99a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fb9c40
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) msr_WDG_EXCLUSIVE_AREA_03/6 (write) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9620
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fb99a0
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) msr_WDG_EXCLUSIVE_AREA_02/4 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9380
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fb9620
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) msr_WDG_EXCLUSIVE_AREA_02/4 (write) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01) @05fb9000
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fb9380
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) msr_WDG_EXCLUSIVE_AREA_01/2 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01) @06053c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05fb9000
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) msr_WDG_EXCLUSIVE_AREA_01/2 (write) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00) @06053e00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06053c40
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) msr_WDG_EXCLUSIVE_AREA_00/0 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00) @06053b60
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06053e00
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) msr_WDG_EXCLUSIVE_AREA_00/0 (write) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+Wdg_schm_read_msr/30 (Wdg_schm_read_msr) @06053620
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06053b60
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 
+  Calls: 
+reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (reentry_guard_WDG_EXCLUSIVE_AREA_14) @06052750
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06053620
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_14/28 (msr_WDG_EXCLUSIVE_AREA_14) @060526c0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06052750
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (reentry_guard_WDG_EXCLUSIVE_AREA_13) @06052630
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @060526c0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_13/26 (msr_WDG_EXCLUSIVE_AREA_13) @060525a0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06052630
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (reentry_guard_WDG_EXCLUSIVE_AREA_12) @06052510
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @060525a0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_12/24 (msr_WDG_EXCLUSIVE_AREA_12) @06052480
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06052510
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (reentry_guard_WDG_EXCLUSIVE_AREA_11) @060523f0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06052480
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_11/22 (msr_WDG_EXCLUSIVE_AREA_11) @06052360
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @060523f0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (reentry_guard_WDG_EXCLUSIVE_AREA_10) @060522d0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06052360
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_10/20 (msr_WDG_EXCLUSIVE_AREA_10) @06052240
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @060522d0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (reentry_guard_WDG_EXCLUSIVE_AREA_09) @060521b0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06052240
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_09/18 (msr_WDG_EXCLUSIVE_AREA_09) @06052120
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @060521b0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (reentry_guard_WDG_EXCLUSIVE_AREA_08) @06052090
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06052120
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_08/16 (msr_WDG_EXCLUSIVE_AREA_08) @06052000
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06052090
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (reentry_guard_WDG_EXCLUSIVE_AREA_07) @0604af30
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @06052000
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_07/14 (msr_WDG_EXCLUSIVE_AREA_07) @0604aea0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604af30
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (reentry_guard_WDG_EXCLUSIVE_AREA_06) @0604ae10
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604aea0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_06/12 (msr_WDG_EXCLUSIVE_AREA_06) @0604ad80
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604ae10
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (reentry_guard_WDG_EXCLUSIVE_AREA_05) @0604acf0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604ad80
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_05/10 (msr_WDG_EXCLUSIVE_AREA_05) @0604ac60
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604acf0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (reentry_guard_WDG_EXCLUSIVE_AREA_04) @0604abd0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604ac60
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_04/8 (msr_WDG_EXCLUSIVE_AREA_04) @0604ab40
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604abd0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (reentry_guard_WDG_EXCLUSIVE_AREA_03) @0604aab0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604ab40
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_03/6 (msr_WDG_EXCLUSIVE_AREA_03) @0604aa20
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604aab0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (reentry_guard_WDG_EXCLUSIVE_AREA_02) @0604a990
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604aa20
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_02/4 (msr_WDG_EXCLUSIVE_AREA_02) @0604a900
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604a990
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (reentry_guard_WDG_EXCLUSIVE_AREA_01) @0604a870
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604a900
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_01/2 (msr_WDG_EXCLUSIVE_AREA_01) @0604a7e0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604a870
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (reentry_guard_WDG_EXCLUSIVE_AREA_00) @0604a750
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604a7e0
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_00/0 (msr_WDG_EXCLUSIVE_AREA_00) @0604a6c0
+  Type: variable definition analyzed
+  Visibility: force_output
+  Aux: @0604a750
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Sys_GetCoreID/61 (Sys_GetCoreID) @05fd20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbe00
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) msr_WDG_EXCLUSIVE_AREA_14/28 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbb60
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) msr_WDG_EXCLUSIVE_AREA_14/28 (write) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) msr_WDG_EXCLUSIVE_AREA_13/26 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb540
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) msr_WDG_EXCLUSIVE_AREA_13/26 (write) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12) @05fcb1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) msr_WDG_EXCLUSIVE_AREA_12/24 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12) @05fc5c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) msr_WDG_EXCLUSIVE_AREA_12/24 (write) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5380
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) msr_WDG_EXCLUSIVE_AREA_11/22 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) msr_WDG_EXCLUSIVE_AREA_11/22 (write) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc5b60
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) msr_WDG_EXCLUSIVE_AREA_10/20 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc58c0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) msr_WDG_EXCLUSIVE_AREA_10/20 (write) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc5540
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) msr_WDG_EXCLUSIVE_AREA_09/18 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc52a0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) msr_WDG_EXCLUSIVE_AREA_09/18 (write) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0d20
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) msr_WDG_EXCLUSIVE_AREA_08/16 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0700
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) msr_WDG_EXCLUSIVE_AREA_08/16 (write) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) msr_WDG_EXCLUSIVE_AREA_07/14 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) msr_WDG_EXCLUSIVE_AREA_07/14 (write) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc08c0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) msr_WDG_EXCLUSIVE_AREA_06/12 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc0620
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) msr_WDG_EXCLUSIVE_AREA_06/12 (write) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc02a0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) msr_WDG_EXCLUSIVE_AREA_05/10 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc0000
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) msr_WDG_EXCLUSIVE_AREA_05/10 (write) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb9700
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) msr_WDG_EXCLUSIVE_AREA_04/8 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb90e0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) msr_WDG_EXCLUSIVE_AREA_04/8 (write) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb9c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) msr_WDG_EXCLUSIVE_AREA_03/6 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb99a0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) msr_WDG_EXCLUSIVE_AREA_03/6 (write) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9620
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) msr_WDG_EXCLUSIVE_AREA_02/4 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9380
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) msr_WDG_EXCLUSIVE_AREA_02/4 (write) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01) @05fb9000
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) msr_WDG_EXCLUSIVE_AREA_01/2 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01) @06053c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) msr_WDG_EXCLUSIVE_AREA_01/2 (write) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00) @06053e00
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) msr_WDG_EXCLUSIVE_AREA_00/0 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00) @06053b60
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) msr_WDG_EXCLUSIVE_AREA_00/0 (write) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+Wdg_schm_read_msr/30 (Wdg_schm_read_msr) @06053620
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 
+  Calls: 
+reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (reentry_guard_WDG_EXCLUSIVE_AREA_14) @06052750
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_14/28 (msr_WDG_EXCLUSIVE_AREA_14) @060526c0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (reentry_guard_WDG_EXCLUSIVE_AREA_13) @06052630
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_13/26 (msr_WDG_EXCLUSIVE_AREA_13) @060525a0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (reentry_guard_WDG_EXCLUSIVE_AREA_12) @06052510
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_12/24 (msr_WDG_EXCLUSIVE_AREA_12) @06052480
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (reentry_guard_WDG_EXCLUSIVE_AREA_11) @060523f0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_11/22 (msr_WDG_EXCLUSIVE_AREA_11) @06052360
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (reentry_guard_WDG_EXCLUSIVE_AREA_10) @060522d0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_10/20 (msr_WDG_EXCLUSIVE_AREA_10) @06052240
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (reentry_guard_WDG_EXCLUSIVE_AREA_09) @060521b0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_09/18 (msr_WDG_EXCLUSIVE_AREA_09) @06052120
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (reentry_guard_WDG_EXCLUSIVE_AREA_08) @06052090
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_08/16 (msr_WDG_EXCLUSIVE_AREA_08) @06052000
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (reentry_guard_WDG_EXCLUSIVE_AREA_07) @0604af30
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_07/14 (msr_WDG_EXCLUSIVE_AREA_07) @0604aea0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (reentry_guard_WDG_EXCLUSIVE_AREA_06) @0604ae10
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_06/12 (msr_WDG_EXCLUSIVE_AREA_06) @0604ad80
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (reentry_guard_WDG_EXCLUSIVE_AREA_05) @0604acf0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_05/10 (msr_WDG_EXCLUSIVE_AREA_05) @0604ac60
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (reentry_guard_WDG_EXCLUSIVE_AREA_04) @0604abd0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_04/8 (msr_WDG_EXCLUSIVE_AREA_04) @0604ab40
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (reentry_guard_WDG_EXCLUSIVE_AREA_03) @0604aab0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_03/6 (msr_WDG_EXCLUSIVE_AREA_03) @0604aa20
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (reentry_guard_WDG_EXCLUSIVE_AREA_02) @0604a990
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_02/4 (msr_WDG_EXCLUSIVE_AREA_02) @0604a900
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (reentry_guard_WDG_EXCLUSIVE_AREA_01) @0604a870
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_01/2 (msr_WDG_EXCLUSIVE_AREA_01) @0604a7e0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (reentry_guard_WDG_EXCLUSIVE_AREA_00) @0604a750
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_00/0 (msr_WDG_EXCLUSIVE_AREA_00) @0604a6c0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Sys_GetCoreID/61 (Sys_GetCoreID) @05fd20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbe00
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) msr_WDG_EXCLUSIVE_AREA_14/28 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbb60
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) msr_WDG_EXCLUSIVE_AREA_14/28 (write) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) msr_WDG_EXCLUSIVE_AREA_13/26 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb540
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) msr_WDG_EXCLUSIVE_AREA_13/26 (write) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12) @05fcb1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) msr_WDG_EXCLUSIVE_AREA_12/24 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12) @05fc5c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) msr_WDG_EXCLUSIVE_AREA_12/24 (write) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5380
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) msr_WDG_EXCLUSIVE_AREA_11/22 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) msr_WDG_EXCLUSIVE_AREA_11/22 (write) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc5b60
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) msr_WDG_EXCLUSIVE_AREA_10/20 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc58c0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) msr_WDG_EXCLUSIVE_AREA_10/20 (write) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc5540
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) msr_WDG_EXCLUSIVE_AREA_09/18 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc52a0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) msr_WDG_EXCLUSIVE_AREA_09/18 (write) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0d20
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) msr_WDG_EXCLUSIVE_AREA_08/16 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0700
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) msr_WDG_EXCLUSIVE_AREA_08/16 (write) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) msr_WDG_EXCLUSIVE_AREA_07/14 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) msr_WDG_EXCLUSIVE_AREA_07/14 (write) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc08c0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) msr_WDG_EXCLUSIVE_AREA_06/12 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc0620
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) msr_WDG_EXCLUSIVE_AREA_06/12 (write) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc02a0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) msr_WDG_EXCLUSIVE_AREA_05/10 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc0000
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) msr_WDG_EXCLUSIVE_AREA_05/10 (write) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb9700
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) msr_WDG_EXCLUSIVE_AREA_04/8 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb90e0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) msr_WDG_EXCLUSIVE_AREA_04/8 (write) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb9c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) msr_WDG_EXCLUSIVE_AREA_03/6 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb99a0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) msr_WDG_EXCLUSIVE_AREA_03/6 (write) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9620
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) msr_WDG_EXCLUSIVE_AREA_02/4 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9380
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) msr_WDG_EXCLUSIVE_AREA_02/4 (write) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01) @05fb9000
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) msr_WDG_EXCLUSIVE_AREA_01/2 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01) @06053c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) msr_WDG_EXCLUSIVE_AREA_01/2 (write) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00) @06053e00
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) msr_WDG_EXCLUSIVE_AREA_00/0 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00) @06053b60
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) msr_WDG_EXCLUSIVE_AREA_00/0 (write) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+Wdg_schm_read_msr/30 (Wdg_schm_read_msr) @06053620
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 
+  Calls: 
+reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (reentry_guard_WDG_EXCLUSIVE_AREA_14) @06052750
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_14/28 (msr_WDG_EXCLUSIVE_AREA_14) @060526c0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (reentry_guard_WDG_EXCLUSIVE_AREA_13) @06052630
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_13/26 (msr_WDG_EXCLUSIVE_AREA_13) @060525a0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (reentry_guard_WDG_EXCLUSIVE_AREA_12) @06052510
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_12/24 (msr_WDG_EXCLUSIVE_AREA_12) @06052480
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (reentry_guard_WDG_EXCLUSIVE_AREA_11) @060523f0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_11/22 (msr_WDG_EXCLUSIVE_AREA_11) @06052360
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (reentry_guard_WDG_EXCLUSIVE_AREA_10) @060522d0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_10/20 (msr_WDG_EXCLUSIVE_AREA_10) @06052240
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (reentry_guard_WDG_EXCLUSIVE_AREA_09) @060521b0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_09/18 (msr_WDG_EXCLUSIVE_AREA_09) @06052120
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (reentry_guard_WDG_EXCLUSIVE_AREA_08) @06052090
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_08/16 (msr_WDG_EXCLUSIVE_AREA_08) @06052000
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (reentry_guard_WDG_EXCLUSIVE_AREA_07) @0604af30
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_07/14 (msr_WDG_EXCLUSIVE_AREA_07) @0604aea0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (reentry_guard_WDG_EXCLUSIVE_AREA_06) @0604ae10
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_06/12 (msr_WDG_EXCLUSIVE_AREA_06) @0604ad80
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (reentry_guard_WDG_EXCLUSIVE_AREA_05) @0604acf0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_05/10 (msr_WDG_EXCLUSIVE_AREA_05) @0604ac60
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (reentry_guard_WDG_EXCLUSIVE_AREA_04) @0604abd0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_04/8 (msr_WDG_EXCLUSIVE_AREA_04) @0604ab40
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (reentry_guard_WDG_EXCLUSIVE_AREA_03) @0604aab0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_03/6 (msr_WDG_EXCLUSIVE_AREA_03) @0604aa20
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (reentry_guard_WDG_EXCLUSIVE_AREA_02) @0604a990
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_02/4 (msr_WDG_EXCLUSIVE_AREA_02) @0604a900
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (reentry_guard_WDG_EXCLUSIVE_AREA_01) @0604a870
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_01/2 (msr_WDG_EXCLUSIVE_AREA_01) @0604a7e0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (reentry_guard_WDG_EXCLUSIVE_AREA_00) @0604a750
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_00/0 (msr_WDG_EXCLUSIVE_AREA_00) @0604a6c0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Sys_GetCoreID/61 (Sys_GetCoreID) @05fd20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbe00
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) msr_WDG_EXCLUSIVE_AREA_14/28 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbb60
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) msr_WDG_EXCLUSIVE_AREA_14/28 (write) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) msr_WDG_EXCLUSIVE_AREA_13/26 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb540
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) msr_WDG_EXCLUSIVE_AREA_13/26 (write) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12) @05fcb1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) msr_WDG_EXCLUSIVE_AREA_12/24 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12) @05fc5c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) msr_WDG_EXCLUSIVE_AREA_12/24 (write) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5380
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) msr_WDG_EXCLUSIVE_AREA_11/22 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) msr_WDG_EXCLUSIVE_AREA_11/22 (write) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc5b60
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) msr_WDG_EXCLUSIVE_AREA_10/20 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc58c0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) msr_WDG_EXCLUSIVE_AREA_10/20 (write) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc5540
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) msr_WDG_EXCLUSIVE_AREA_09/18 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc52a0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) msr_WDG_EXCLUSIVE_AREA_09/18 (write) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0d20
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) msr_WDG_EXCLUSIVE_AREA_08/16 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0700
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) msr_WDG_EXCLUSIVE_AREA_08/16 (write) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) msr_WDG_EXCLUSIVE_AREA_07/14 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) msr_WDG_EXCLUSIVE_AREA_07/14 (write) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc08c0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) msr_WDG_EXCLUSIVE_AREA_06/12 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc0620
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) msr_WDG_EXCLUSIVE_AREA_06/12 (write) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc02a0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) msr_WDG_EXCLUSIVE_AREA_05/10 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc0000
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) msr_WDG_EXCLUSIVE_AREA_05/10 (write) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb9700
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) msr_WDG_EXCLUSIVE_AREA_04/8 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb90e0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) msr_WDG_EXCLUSIVE_AREA_04/8 (write) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb9c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) msr_WDG_EXCLUSIVE_AREA_03/6 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb99a0
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) msr_WDG_EXCLUSIVE_AREA_03/6 (write) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9620
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) msr_WDG_EXCLUSIVE_AREA_02/4 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9380
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) msr_WDG_EXCLUSIVE_AREA_02/4 (write) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01) @05fb9000
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) msr_WDG_EXCLUSIVE_AREA_01/2 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01) @06053c40
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) msr_WDG_EXCLUSIVE_AREA_01/2 (write) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00) @06053e00
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) msr_WDG_EXCLUSIVE_AREA_00/0 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00) @06053b60
+  Type: function definition analyzed
+  Visibility: public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) msr_WDG_EXCLUSIVE_AREA_00/0 (write) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Wdg_schm_read_msr/30 Sys_GetCoreID/61 
+Wdg_schm_read_msr/30 (Wdg_schm_read_msr) @06053620
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 
+  Calls: 
+reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (reentry_guard_WDG_EXCLUSIVE_AREA_14) @06052750
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_14/28 (msr_WDG_EXCLUSIVE_AREA_14) @060526c0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (reentry_guard_WDG_EXCLUSIVE_AREA_13) @06052630
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_13/26 (msr_WDG_EXCLUSIVE_AREA_13) @060525a0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (reentry_guard_WDG_EXCLUSIVE_AREA_12) @06052510
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_12/24 (msr_WDG_EXCLUSIVE_AREA_12) @06052480
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (reentry_guard_WDG_EXCLUSIVE_AREA_11) @060523f0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_11/22 (msr_WDG_EXCLUSIVE_AREA_11) @06052360
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (reentry_guard_WDG_EXCLUSIVE_AREA_10) @060522d0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_10/20 (msr_WDG_EXCLUSIVE_AREA_10) @06052240
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (reentry_guard_WDG_EXCLUSIVE_AREA_09) @060521b0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_09/18 (msr_WDG_EXCLUSIVE_AREA_09) @06052120
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (reentry_guard_WDG_EXCLUSIVE_AREA_08) @06052090
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_08/16 (msr_WDG_EXCLUSIVE_AREA_08) @06052000
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (reentry_guard_WDG_EXCLUSIVE_AREA_07) @0604af30
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_07/14 (msr_WDG_EXCLUSIVE_AREA_07) @0604aea0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (reentry_guard_WDG_EXCLUSIVE_AREA_06) @0604ae10
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_06/12 (msr_WDG_EXCLUSIVE_AREA_06) @0604ad80
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (reentry_guard_WDG_EXCLUSIVE_AREA_05) @0604acf0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_05/10 (msr_WDG_EXCLUSIVE_AREA_05) @0604ac60
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (reentry_guard_WDG_EXCLUSIVE_AREA_04) @0604abd0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_04/8 (msr_WDG_EXCLUSIVE_AREA_04) @0604ab40
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (reentry_guard_WDG_EXCLUSIVE_AREA_03) @0604aab0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_03/6 (msr_WDG_EXCLUSIVE_AREA_03) @0604aa20
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (reentry_guard_WDG_EXCLUSIVE_AREA_02) @0604a990
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_02/4 (msr_WDG_EXCLUSIVE_AREA_02) @0604a900
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (reentry_guard_WDG_EXCLUSIVE_AREA_01) @0604a870
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_01/2 (msr_WDG_EXCLUSIVE_AREA_01) @0604a7e0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: not-ready
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (reentry_guard_WDG_EXCLUSIVE_AREA_00) @0604a750
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_00/0 (msr_WDG_EXCLUSIVE_AREA_00) @0604a6c0
+  Type: variable definition analyzed
+  Visibility: force_output
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Sys_GetCoreID/61 (Sys_GetCoreID) @05fd20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbe00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) msr_WDG_EXCLUSIVE_AREA_14/28 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbb60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) msr_WDG_EXCLUSIVE_AREA_14/28 (write) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (read) reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) msr_WDG_EXCLUSIVE_AREA_13/26 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) msr_WDG_EXCLUSIVE_AREA_13/26 (write) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (read) reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12) @05fcb1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) msr_WDG_EXCLUSIVE_AREA_12/24 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12) @05fc5c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) msr_WDG_EXCLUSIVE_AREA_12/24 (write) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (read) reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) msr_WDG_EXCLUSIVE_AREA_11/22 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) msr_WDG_EXCLUSIVE_AREA_11/22 (write) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (read) reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc5b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) msr_WDG_EXCLUSIVE_AREA_10/20 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc58c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) msr_WDG_EXCLUSIVE_AREA_10/20 (write) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (read) reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc5540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) msr_WDG_EXCLUSIVE_AREA_09/18 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc52a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) msr_WDG_EXCLUSIVE_AREA_09/18 (write) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (read) reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) msr_WDG_EXCLUSIVE_AREA_08/16 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) msr_WDG_EXCLUSIVE_AREA_08/16 (write) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (read) reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) msr_WDG_EXCLUSIVE_AREA_07/14 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) msr_WDG_EXCLUSIVE_AREA_07/14 (write) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (read) reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc08c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) msr_WDG_EXCLUSIVE_AREA_06/12 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc0620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) msr_WDG_EXCLUSIVE_AREA_06/12 (write) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (read) reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc02a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) msr_WDG_EXCLUSIVE_AREA_05/10 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc0000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) msr_WDG_EXCLUSIVE_AREA_05/10 (write) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (read) reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb9700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) msr_WDG_EXCLUSIVE_AREA_04/8 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb90e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) msr_WDG_EXCLUSIVE_AREA_04/8 (write) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (read) reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb9c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) msr_WDG_EXCLUSIVE_AREA_03/6 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb99a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) msr_WDG_EXCLUSIVE_AREA_03/6 (write) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (read) reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) msr_WDG_EXCLUSIVE_AREA_02/4 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) msr_WDG_EXCLUSIVE_AREA_02/4 (write) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (read) reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01) @05fb9000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) msr_WDG_EXCLUSIVE_AREA_01/2 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01) @06053c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) msr_WDG_EXCLUSIVE_AREA_01/2 (write) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (read) reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00) @06053e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) msr_WDG_EXCLUSIVE_AREA_00/0 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00) @06053b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) msr_WDG_EXCLUSIVE_AREA_00/0 (write) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (read) reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/61 (1073741824 (estimated locally),1.00 per call) 
+Wdg_schm_read_msr/30 (Wdg_schm_read_msr) @06053620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (reentry_guard_WDG_EXCLUSIVE_AREA_14) @06052750
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_14/28 (msr_WDG_EXCLUSIVE_AREA_14) @060526c0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (reentry_guard_WDG_EXCLUSIVE_AREA_13) @06052630
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_13/26 (msr_WDG_EXCLUSIVE_AREA_13) @060525a0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (reentry_guard_WDG_EXCLUSIVE_AREA_12) @06052510
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_12/24 (msr_WDG_EXCLUSIVE_AREA_12) @06052480
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (reentry_guard_WDG_EXCLUSIVE_AREA_11) @060523f0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_11/22 (msr_WDG_EXCLUSIVE_AREA_11) @06052360
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (reentry_guard_WDG_EXCLUSIVE_AREA_10) @060522d0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_10/20 (msr_WDG_EXCLUSIVE_AREA_10) @06052240
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (reentry_guard_WDG_EXCLUSIVE_AREA_09) @060521b0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_09/18 (msr_WDG_EXCLUSIVE_AREA_09) @06052120
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (reentry_guard_WDG_EXCLUSIVE_AREA_08) @06052090
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_08/16 (msr_WDG_EXCLUSIVE_AREA_08) @06052000
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (reentry_guard_WDG_EXCLUSIVE_AREA_07) @0604af30
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_07/14 (msr_WDG_EXCLUSIVE_AREA_07) @0604aea0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (reentry_guard_WDG_EXCLUSIVE_AREA_06) @0604ae10
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_06/12 (msr_WDG_EXCLUSIVE_AREA_06) @0604ad80
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (reentry_guard_WDG_EXCLUSIVE_AREA_05) @0604acf0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_05/10 (msr_WDG_EXCLUSIVE_AREA_05) @0604ac60
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (reentry_guard_WDG_EXCLUSIVE_AREA_04) @0604abd0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_04/8 (msr_WDG_EXCLUSIVE_AREA_04) @0604ab40
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (reentry_guard_WDG_EXCLUSIVE_AREA_03) @0604aab0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_03/6 (msr_WDG_EXCLUSIVE_AREA_03) @0604aa20
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (reentry_guard_WDG_EXCLUSIVE_AREA_02) @0604a990
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_02/4 (msr_WDG_EXCLUSIVE_AREA_02) @0604a900
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (reentry_guard_WDG_EXCLUSIVE_AREA_01) @0604a870
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_01/2 (msr_WDG_EXCLUSIVE_AREA_01) @0604a7e0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (read) 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (reentry_guard_WDG_EXCLUSIVE_AREA_00) @0604a750
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (read) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_00/0 (msr_WDG_EXCLUSIVE_AREA_00) @0604a6c0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly
+  References: 
+  Referring: SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (write) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (read) 
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: reentry_guard_WDG_EXCLUSIVE_AREA_14/29 msr_WDG_EXCLUSIVE_AREA_14/28 reentry_guard_WDG_EXCLUSIVE_AREA_13/27 msr_WDG_EXCLUSIVE_AREA_13/26 reentry_guard_WDG_EXCLUSIVE_AREA_12/25 msr_WDG_EXCLUSIVE_AREA_12/24 reentry_guard_WDG_EXCLUSIVE_AREA_11/23 msr_WDG_EXCLUSIVE_AREA_11/22 reentry_guard_WDG_EXCLUSIVE_AREA_10/21 msr_WDG_EXCLUSIVE_AREA_10/20 reentry_guard_WDG_EXCLUSIVE_AREA_09/19 msr_WDG_EXCLUSIVE_AREA_09/18 reentry_guard_WDG_EXCLUSIVE_AREA_08/17 msr_WDG_EXCLUSIVE_AREA_08/16 reentry_guard_WDG_EXCLUSIVE_AREA_07/15 msr_WDG_EXCLUSIVE_AREA_07/14 reentry_guard_WDG_EXCLUSIVE_AREA_06/13 msr_WDG_EXCLUSIVE_AREA_06/12 reentry_guard_WDG_EXCLUSIVE_AREA_05/11 msr_WDG_EXCLUSIVE_AREA_05/10 reentry_guard_WDG_EXCLUSIVE_AREA_04/9 msr_WDG_EXCLUSIVE_AREA_04/8 reentry_guard_WDG_EXCLUSIVE_AREA_03/7 msr_WDG_EXCLUSIVE_AREA_03/6 reentry_guard_WDG_EXCLUSIVE_AREA_02/5 msr_WDG_EXCLUSIVE_AREA_02/4 reentry_guard_WDG_EXCLUSIVE_AREA_01/3 msr_WDG_EXCLUSIVE_AREA_01/2 reentry_guard_WDG_EXCLUSIVE_AREA_00/1 msr_WDG_EXCLUSIVE_AREA_00/0
+Removing variables:
+
+Final Symbol table:
+
+Sys_GetCoreID/61 (Sys_GetCoreID) @05fd20e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14/60 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbe00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_14 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14/59 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14) @05fcbb60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_14 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13/58 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb7e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_13 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13/57 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13) @05fcb540
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_13 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12/56 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12) @05fcb1c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_12 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12/55 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12) @05fc5c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_12 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11/54 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5380
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11/53 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11) @05fc5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10/52 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc5b60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10/51 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10) @05fc58c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09/50 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc5540
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09/49 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09) @05fc52a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/48 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0d20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/47 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08) @05fc0700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/46 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/45 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @05fc0c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/44 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc08c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/43 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @05fc0620
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/42 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc02a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/41 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05) @05fc0000
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/40 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb9700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/39 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @05fb90e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/38 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb9c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/37 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03) @05fb99a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/36 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9620
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/35 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @05fb9380
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/34 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01) @05fb9000
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/33 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01) @06053c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/32 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00) @06053e00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/31 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00) @06053b60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Wdg_schm_read_msr/30 (Wdg_schm_read_msr) @06053620
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Wdg_schm_read_msr (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+reentry_guard_WDG_EXCLUSIVE_AREA_14/29 (reentry_guard_WDG_EXCLUSIVE_AREA_14) @06052750
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_14 (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_14/28 (msr_WDG_EXCLUSIVE_AREA_14) @060526c0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_14 (implicit_section)
+  Aux: @06052750
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_13/27 (reentry_guard_WDG_EXCLUSIVE_AREA_13) @06052630
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_13 (implicit_section)
+  Aux: @060526c0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_13/26 (msr_WDG_EXCLUSIVE_AREA_13) @060525a0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_13 (implicit_section)
+  Aux: @06052630
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_12/25 (reentry_guard_WDG_EXCLUSIVE_AREA_12) @06052510
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_12 (implicit_section)
+  Aux: @060525a0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_12/24 (msr_WDG_EXCLUSIVE_AREA_12) @06052480
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_12 (implicit_section)
+  Aux: @06052510
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_11/23 (reentry_guard_WDG_EXCLUSIVE_AREA_11) @060523f0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_11 (implicit_section)
+  Aux: @06052480
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_11/22 (msr_WDG_EXCLUSIVE_AREA_11) @06052360
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_11 (implicit_section)
+  Aux: @060523f0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_10/21 (reentry_guard_WDG_EXCLUSIVE_AREA_10) @060522d0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_10 (implicit_section)
+  Aux: @06052360
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_10/20 (msr_WDG_EXCLUSIVE_AREA_10) @06052240
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_10 (implicit_section)
+  Aux: @060522d0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_09/19 (reentry_guard_WDG_EXCLUSIVE_AREA_09) @060521b0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_09 (implicit_section)
+  Aux: @06052240
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_09/18 (msr_WDG_EXCLUSIVE_AREA_09) @06052120
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_09 (implicit_section)
+  Aux: @060521b0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_08/17 (reentry_guard_WDG_EXCLUSIVE_AREA_08) @06052090
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_08 (implicit_section)
+  Aux: @06052120
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_08/16 (msr_WDG_EXCLUSIVE_AREA_08) @06052000
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_08 (implicit_section)
+  Aux: @06052090
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_07/15 (reentry_guard_WDG_EXCLUSIVE_AREA_07) @0604af30
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_07 (implicit_section)
+  Aux: @06052000
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_07/14 (msr_WDG_EXCLUSIVE_AREA_07) @0604aea0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_07 (implicit_section)
+  Aux: @0604af30
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_06/13 (reentry_guard_WDG_EXCLUSIVE_AREA_06) @0604ae10
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_06 (implicit_section)
+  Aux: @0604aea0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_06/12 (msr_WDG_EXCLUSIVE_AREA_06) @0604ad80
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_06 (implicit_section)
+  Aux: @0604ae10
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_05/11 (reentry_guard_WDG_EXCLUSIVE_AREA_05) @0604acf0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_05 (implicit_section)
+  Aux: @0604ad80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_05/10 (msr_WDG_EXCLUSIVE_AREA_05) @0604ac60
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_05 (implicit_section)
+  Aux: @0604acf0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_04/9 (reentry_guard_WDG_EXCLUSIVE_AREA_04) @0604abd0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_04 (implicit_section)
+  Aux: @0604ac60
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_04/8 (msr_WDG_EXCLUSIVE_AREA_04) @0604ab40
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_04 (implicit_section)
+  Aux: @0604abd0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_03/7 (reentry_guard_WDG_EXCLUSIVE_AREA_03) @0604aab0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_03 (implicit_section)
+  Aux: @0604ab40
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_03/6 (msr_WDG_EXCLUSIVE_AREA_03) @0604aa20
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_03 (implicit_section)
+  Aux: @0604aab0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_02/5 (reentry_guard_WDG_EXCLUSIVE_AREA_02) @0604a990
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_02 (implicit_section)
+  Aux: @0604aa20
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_02/4 (msr_WDG_EXCLUSIVE_AREA_02) @0604a900
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_02 (implicit_section)
+  Aux: @0604a990
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_01/3 (reentry_guard_WDG_EXCLUSIVE_AREA_01) @0604a870
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_01 (implicit_section)
+  Aux: @0604a900
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_01/2 (msr_WDG_EXCLUSIVE_AREA_01) @0604a7e0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_01 (implicit_section)
+  Aux: @0604a870
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+reentry_guard_WDG_EXCLUSIVE_AREA_00/1 (reentry_guard_WDG_EXCLUSIVE_AREA_00) @0604a750
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.reentry_guard_WDG_EXCLUSIVE_AREA_00 (implicit_section)
+  Aux: @0604a7e0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+msr_WDG_EXCLUSIVE_AREA_00/0 (msr_WDG_EXCLUSIVE_AREA_00) @0604a6c0
+  Type: variable definition analyzed
+  Visibility: force_output prevailing_def_ironly asm_written section:.bss.msr_WDG_EXCLUSIVE_AREA_00 (implicit_section)
+  Aux: @0604a750
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

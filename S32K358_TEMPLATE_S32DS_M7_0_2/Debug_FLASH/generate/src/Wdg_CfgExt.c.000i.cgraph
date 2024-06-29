@@ -1,0 +1,220 @@
+Trivially needed symbols: Wdg_E_Mode_Failed/4 Wdg_E_Disable_Rejected/3 Wdg_au16CfgMaxTimeout/2 Wdg_au16CfgInitialTimeout/1
+
+
+Initial Symbol table:
+
+Wdg_E_Mode_Failed/4 (Wdg_E_Mode_Failed) @06111b88
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_E_Disable_Rejected/3 (Wdg_E_Disable_Rejected) @06111b40
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @06111b88
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgMaxTimeout/2 (Wdg_au16CfgMaxTimeout) @06111af8
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @06111b40
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgInitialTimeout/1 (Wdg_au16CfgInitialTimeout) @06111ab0
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @06111af8
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Pit_Ip_GetInterruptStatusFlag/0 (Pit_Ip_GetInterruptStatusFlag) @05fdf9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols: Pit_Ip_GetInterruptStatusFlag/0
+
+Reclaimed Symbol table:
+
+Wdg_E_Mode_Failed/4 (Wdg_E_Mode_Failed) @06111b88
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_E_Disable_Rejected/3 (Wdg_E_Disable_Rejected) @06111b40
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgMaxTimeout/2 (Wdg_au16CfgMaxTimeout) @06111af8
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgInitialTimeout/1 (Wdg_au16CfgInitialTimeout) @06111ab0
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+Wdg_E_Mode_Failed/4 (Wdg_E_Mode_Failed) @06111b88
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_E_Disable_Rejected/3 (Wdg_E_Disable_Rejected) @06111b40
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgMaxTimeout/2 (Wdg_au16CfgMaxTimeout) @06111af8
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgInitialTimeout/1 (Wdg_au16CfgInitialTimeout) @06111ab0
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Wdg_E_Mode_Failed/4 (Wdg_E_Mode_Failed) @06111b88
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_E_Disable_Rejected/3 (Wdg_E_Disable_Rejected) @06111b40
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgMaxTimeout/2 (Wdg_au16CfgMaxTimeout) @06111af8
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgInitialTimeout/1 (Wdg_au16CfgInitialTimeout) @06111ab0
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Wdg_E_Mode_Failed/4 (Wdg_E_Mode_Failed) @06111b88
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdg_E_Disable_Rejected/3 (Wdg_E_Disable_Rejected) @06111b40
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgMaxTimeout/2 (Wdg_au16CfgMaxTimeout) @06111af8
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgInitialTimeout/1 (Wdg_au16CfgInitialTimeout) @06111ab0
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Wdg_E_Mode_Failed/4 Wdg_E_Disable_Rejected/3 Wdg_au16CfgMaxTimeout/2 Wdg_au16CfgInitialTimeout/1
+Removing variables:
+
+Final Symbol table:
+
+Wdg_E_Mode_Failed/4 (Wdg_E_Mode_Failed) @06111b88
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public section:.rodata.Wdg_E_Mode_Failed (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdg_E_Disable_Rejected/3 (Wdg_E_Disable_Rejected) @06111b40
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public section:.rodata.Wdg_E_Disable_Rejected (implicit_section)
+  Aux: @06111b88
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgMaxTimeout/2 (Wdg_au16CfgMaxTimeout) @06111af8
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public section:.rodata.Wdg_au16CfgMaxTimeout (implicit_section)
+  Aux: @06111b40
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Wdg_au16CfgInitialTimeout/1 (Wdg_au16CfgInitialTimeout) @06111ab0
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public section:.rodata.Wdg_au16CfgInitialTimeout (implicit_section)
+  Aux: @06111af8
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

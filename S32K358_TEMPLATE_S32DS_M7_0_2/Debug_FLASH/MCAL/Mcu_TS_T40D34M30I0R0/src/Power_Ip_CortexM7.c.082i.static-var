@@ -1,0 +1,179 @@
+callgraph:
+
+Power_Ip_CM7_EnableDeepSleep/3 (Power_Ip_CM7_EnableDeepSleep) @06241540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_CM7_DisableDeepSleep/2 (Power_Ip_CM7_DisableDeepSleep) @062412a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_CM7_EnableSleepOnExit/1 (Power_Ip_CM7_EnableSleepOnExit) @06241000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_CM7_DisableSleepOnExit/0 (Power_Ip_CM7_DisableSleepOnExit) @06226ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clearing variable flags:
+
+Function name:Power_Ip_CM7_EnableDeepSleep/3:
+  locals read: 
+  locals written: 
+Function name:Power_Ip_CM7_DisableDeepSleep/2:
+  locals read: 
+  locals written: 
+Function name:Power_Ip_CM7_EnableSleepOnExit/1:
+  locals read: 
+  locals written: 
+Function name:Power_Ip_CM7_DisableSleepOnExit/0:
+  locals read: 
+  locals written: 
+
+ ordered call graph: reduced
+Power_Ip_CM7_EnableDeepSleep/3 (Power_Ip_CM7_EnableDeepSleep) @06241540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @02717570
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_CM7_DisableDeepSleep/2 (Power_Ip_CM7_DisableDeepSleep) @062412a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @027176b0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_CM7_EnableSleepOnExit/1 (Power_Ip_CM7_EnableSleepOnExit) @06241000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @027177f0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Power_Ip_CM7_DisableSleepOnExit/0 (Power_Ip_CM7_DisableSleepOnExit) @06226ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @02717550
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+
+
+Function name:Power_Ip_CM7_DisableSleepOnExit/0:
+    locals read: 
+    locals written: 
+  globals read: 
+  globals written: 
+
+Function name:Power_Ip_CM7_EnableSleepOnExit/1:
+    locals read: 
+    locals written: 
+  globals read: 
+  globals written: 
+
+Function name:Power_Ip_CM7_DisableDeepSleep/2:
+    locals read: 
+    locals written: 
+  globals read: 
+  globals written: 
+
+Function name:Power_Ip_CM7_EnableDeepSleep/3:
+    locals read: 
+    locals written: 
+  globals read: 
+  globals written: 
+Power_Ip_CM7_EnableDeepSleep ()
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct S32_SCB_Type *)3758153728B].SCR;
+  _2 = _1 | 4;
+  MEM[(struct S32_SCB_Type *)3758153728B].SCR ={v} _2;
+  return;
+
+}
+
+
+Power_Ip_CM7_DisableDeepSleep ()
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct S32_SCB_Type *)3758153728B].SCR;
+  _2 = _1 & 4294967291;
+  MEM[(struct S32_SCB_Type *)3758153728B].SCR ={v} _2;
+  return;
+
+}
+
+
+Power_Ip_CM7_EnableSleepOnExit ()
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct S32_SCB_Type *)3758153728B].SCR;
+  _2 = _1 | 2;
+  MEM[(struct S32_SCB_Type *)3758153728B].SCR ={v} _2;
+  return;
+
+}
+
+
+Power_Ip_CM7_DisableSleepOnExit ()
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct S32_SCB_Type *)3758153728B].SCR;
+  _2 = _1 & 4294967293;
+  MEM[(struct S32_SCB_Type *)3758153728B].SCR ={v} _2;
+  return;
+
+}
+
+

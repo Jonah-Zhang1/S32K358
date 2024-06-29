@@ -1,0 +1,27 @@
+callgraph:
+
+Wdg_43_Instance0_SetTriggerCondition/4 (Wdg_43_Instance0_SetTriggerCondition) @06d82b60
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: WdgIf_SetTriggerConditionFctPtr/2 (addr) 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Wdg_43_Instance0_SetMode/3 (Wdg_43_Instance0_SetMode) @06d82a80
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: WdgIf_SetModeFctPtr/1 (addr) 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clearing variable flags:
+
+
+ ordered call graph: reduced
+

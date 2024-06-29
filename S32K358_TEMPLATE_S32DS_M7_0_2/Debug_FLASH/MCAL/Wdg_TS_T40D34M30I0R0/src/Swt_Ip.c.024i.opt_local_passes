@@ -1,0 +1,1371 @@
+Swt_Ip_IrqHandler (uint32 Instance)
+{
+  struct SWT_Type * const Base;
+  _Bool _1;
+  _Bool _2;
+  _Bool _3;
+  _Bool _4;
+  void (*<T4cf>) (void) _5;
+  void (*<T4cf>) (void) _6;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_10 = Swt_Ip_sBase[Instance_9(D)];
+  # DEBUG Base => Base_10
+  # DEBUG BEGIN_STMT
+  _1 = Instance_9(D) <= 2;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = Wdg_Ip_abStatus[Instance_9(D)];
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _3 = Swt_Ip_GetIntFlag (Base_10);
+  if (_3 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  _4 = Swt_Ip_IsIntEnabled (Base_10);
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_ClearIntFlag (Base_10);
+  # DEBUG BEGIN_STMT
+  _5 = Swt_Ip_apCallbackPtr[Instance_9(D)];
+  if (_5 != 0B)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _6 = Swt_Ip_apCallbackPtr[Instance_9(D)];
+  _6 ();
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_ClearIntFlag (Base_10);
+
+  <bb 8> :
+  return;
+
+}
+
+
+Swt_Ip_ClearResetRequest (const uint32 Instance)
+{
+  uint32 ElapsedTicks;
+  uint32 CurrentTicks;
+  uint32 TimeoutTicks;
+  Swt_Ip_StatusType Ret;
+  struct SWT_Type * const Base;
+  _Bool _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  _Bool _4;
+  _Bool _5;
+  long unsigned int _6;
+  _Bool _7;
+  _Bool _8;
+  long unsigned int _30;
+  Swt_Ip_StatusType _34;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_15 = Swt_Ip_sBase[Instance_14(D)];
+  # DEBUG Base => Base_15
+  # DEBUG BEGIN_STMT
+  Ret_16 = 0;
+  # DEBUG Ret => Ret_16
+  # DEBUG BEGIN_STMT
+  TimeoutTicks_18 = OsIf_MicrosToTicks (3000, 0);
+  # DEBUG TimeoutTicks => TimeoutTicks_18
+  # DEBUG BEGIN_STMT
+  CurrentTicks = 0;
+  # DEBUG BEGIN_STMT
+  ElapsedTicks_20 = 0;
+  # DEBUG ElapsedTicks => ElapsedTicks_20
+  # DEBUG BEGIN_STMT
+  _1 = Instance_14(D) <= 2;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = 7 >> Instance_14(D);
+  _3 = _2 & 1;
+  _4 = _3 != 0;
+  DevAssert (_4);
+  # DEBUG BEGIN_STMT
+  _5 = Swt_Ip_RequestedReset (Base_15);
+  if (_5 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_ClearRequest (Base_15);
+  # DEBUG BEGIN_STMT
+  _6 = OsIf_GetCounter (0);
+  CurrentTicks = _6;
+  # DEBUG BEGIN_STMT
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _30 = OsIf_GetElapsed (&CurrentTicks, 0);
+  ElapsedTicks_31 = _30 + ElapsedTicks_10;
+  # DEBUG ElapsedTicks => ElapsedTicks_31
+
+  <bb 5> :
+  # ElapsedTicks_10 = PHI <ElapsedTicks_20(3), ElapsedTicks_31(4)>
+  # DEBUG ElapsedTicks => ElapsedTicks_10
+  # DEBUG BEGIN_STMT
+  _7 = Swt_Ip_RequestedReset (Base_15);
+  if (_7 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  if (ElapsedTicks_10 < TimeoutTicks_18)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  if (ElapsedTicks_10 >= TimeoutTicks_18)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 8> :
+  _8 = Swt_Ip_RequestedReset (Base_15);
+  if (_8 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Ret_33 = 2;
+  # DEBUG Ret => Ret_33
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Ret_24 = 1;
+  # DEBUG Ret => Ret_24
+
+  <bb 11> :
+  # Ret_9 = PHI <Ret_16(8), Ret_24(10), Ret_16(7), Ret_33(9)>
+  # DEBUG Ret => Ret_9
+  # DEBUG BEGIN_STMT
+  _34 = Ret_9;
+  CurrentTicks ={v} {CLOBBER};
+  return _34;
+
+}
+
+
+Swt_Ip_StopTimer (const uint32 Instance)
+{
+  Swt_Ip_StatusType Ret;
+  Swt_Ip_LockType LockConfig;
+  struct SWT_Type * const Base;
+  _Bool _1;
+  Swt_Ip_StatusType _15;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_5 = Swt_Ip_sBase[Instance_4(D)];
+  # DEBUG Base => Base_5
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Instance_4(D) <= 2;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  LockConfig_8 = Swt_Ip_GetLock (Base_5);
+  # DEBUG LockConfig => LockConfig_8
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_11 ();
+  # DEBUG BEGIN_STMT
+  Ret_11 = Swt_Ip_Unlock (Base_5);
+  # DEBUG Ret => Ret_11
+  # DEBUG BEGIN_STMT
+  if (Ret_11 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Disable (Base_5);
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Lock (Base_5, LockConfig_8);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_11 ();
+  # DEBUG BEGIN_STMT
+  _15 = Ret_11;
+  return _15;
+
+}
+
+
+Swt_Ip_StartTimer (const uint32 Instance)
+{
+  Swt_Ip_StatusType Ret;
+  Swt_Ip_LockType LockConfig;
+  struct SWT_Type * const Base;
+  _Bool _1;
+  Swt_Ip_StatusType _15;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_5 = Swt_Ip_sBase[Instance_4(D)];
+  # DEBUG Base => Base_5
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Instance_4(D) <= 2;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  LockConfig_8 = Swt_Ip_GetLock (Base_5);
+  # DEBUG LockConfig => LockConfig_8
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_10 ();
+  # DEBUG BEGIN_STMT
+  Ret_11 = Swt_Ip_Unlock (Base_5);
+  # DEBUG Ret => Ret_11
+  # DEBUG BEGIN_STMT
+  if (Ret_11 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Enable (Base_5);
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Lock (Base_5, LockConfig_8);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_10 ();
+  # DEBUG BEGIN_STMT
+  _15 = Ret_11;
+  return _15;
+
+}
+
+
+Swt_Ip_SetTimeout (const uint32 Instance, const uint32 TimeoutValue, const uint32 WindowValue)
+{
+  Swt_Ip_StatusType Ret;
+  Swt_Ip_LockType LockConfig;
+  struct SWT_Type * const Base;
+  _Bool _1;
+  <unnamed type> _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  Swt_Ip_StatusType _29;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_12 = Swt_Ip_sBase[Instance_11(D)];
+  # DEBUG Base => Base_12
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Instance_11(D) <= 2;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  LockConfig_15 = Swt_Ip_GetLock (Base_12);
+  # DEBUG LockConfig => LockConfig_15
+  # DEBUG BEGIN_STMT
+  Ret_19 = Swt_Ip_CheckTimeout (TimeoutValue_16(D), WindowValue_17(D));
+  # DEBUG Ret => Ret_19
+  # DEBUG BEGIN_STMT
+  if (Ret_19 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _2 = Swt_Ip_Unlock (Base_12);
+  if (_2 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Ret_28 = 1;
+  # DEBUG Ret => Ret_28
+  goto <bb 9>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Disable (Base_12);
+  # DEBUG BEGIN_STMT
+  Base_12->TO ={v} TimeoutValue_16(D);
+  # DEBUG BEGIN_STMT
+  if (WindowValue_17(D) != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Base_12->WN ={v} WindowValue_17(D);
+  # DEBUG BEGIN_STMT
+  _3 ={v} Base_12->CR;
+  _4 = _3 | 128;
+  Base_12->CR ={v} _4;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _5 ={v} Base_12->CR;
+  _6 = _5 & 4294967167;
+  Base_12->CR ={v} _6;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Enable (Base_12);
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Lock (Base_12, LockConfig_15);
+
+  <bb 9> :
+  # Ret_7 = PHI <Ret_19(2), Ret_28(4), Ret_19(8)>
+  # DEBUG Ret => Ret_7
+  # DEBUG BEGIN_STMT
+  _29 = Ret_7;
+  return _29;
+
+}
+
+
+Swt_Ip_Config (const uint32 Instance, const struct Swt_Ip_ConfigType * const ConfigPtr)
+{
+  boolean bSwtEnabled;
+  Swt_Ip_StatusType Ret;
+  struct SWT_Type * const Base;
+  _Bool _1;
+  _Bool _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  <unnamed type> _5;
+  <unnamed type> _6;
+  Swt_Ip_StatusType _27;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_13 = Swt_Ip_sBase[Instance_12(D)];
+  # DEBUG Base => Base_13
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Instance_12(D) <= 2;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = ConfigPtr_15(D) != 0B;
+  DevAssert (_2);
+  # DEBUG BEGIN_STMT
+  _3 = ConfigPtr_15(D)->u32TimeoutValue;
+  _4 = ConfigPtr_15(D)->u32WindowValue;
+  Ret_18 = Swt_Ip_CheckTimeout (_3, _4);
+  # DEBUG Ret => Ret_18
+  # DEBUG BEGIN_STMT
+  if (Ret_18 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 = Swt_Ip_Unlock (Base_13);
+  if (_5 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Ret_26 = 1;
+  # DEBUG Ret => Ret_26
+  goto <bb 10>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  bSwtEnabled_21 = Swt_Ip_IsEnable (Base_13);
+  # DEBUG bSwtEnabled => bSwtEnabled_21
+  # DEBUG BEGIN_STMT
+  if (bSwtEnabled_21 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Disable (Base_13);
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_RegisterConfig (Base_13, ConfigPtr_15(D));
+  # DEBUG BEGIN_STMT
+  if (bSwtEnabled_21 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Enable (Base_13);
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _6 = ConfigPtr_15(D)->lockConfig;
+  Swt_Ip_Lock (Base_13, _6);
+
+  <bb 10> :
+  # Ret_7 = PHI <Ret_18(2), Ret_26(4), Ret_18(9)>
+  # DEBUG Ret => Ret_7
+  # DEBUG BEGIN_STMT
+  _27 = Ret_7;
+  return _27;
+
+}
+
+
+Swt_Ip_Service (const uint32 Instance)
+{
+  Swt_Ip_ServiceModeType ServiceMode;
+  boolean BUnlockSequence;
+  struct SWT_Type * const Base;
+  _Bool _1;
+  int _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  short unsigned int _6;
+  <unnamed type> _7;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_13 = Swt_Ip_sBase[Instance_12(D)];
+  # DEBUG Base => Base_13
+  # DEBUG BEGIN_STMT
+  BUnlockSequence_14 = 0;
+  # DEBUG BUnlockSequence => BUnlockSequence_14
+  # DEBUG BEGIN_STMT
+  _1 = Instance_12(D) <= 2;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_09 ();
+  # DEBUG BEGIN_STMT
+  ServiceMode_18 = Swt_Ip_GetServiceMode (Base_13);
+  # DEBUG ServiceMode => ServiceMode_18
+  # DEBUG BEGIN_STMT
+  _2 = (int) ServiceMode_18;
+  switch (_2) <default: <L12> [INV], case 0: <L9> [INV], case 1: <L0> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _3 = Swt_Ip_ServiceKeyGen (Base_13);
+  if (_3 == 50464)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  BUnlockSequence_20 = 1;
+  # DEBUG BUnlockSequence => BUnlockSequence_20
+
+  <bb 5> :
+  # BUnlockSequence_8 = PHI <BUnlockSequence_14(3), BUnlockSequence_20(4)>
+  # DEBUG BUnlockSequence => BUnlockSequence_8
+  # DEBUG BEGIN_STMT
+  _4 = Swt_Ip_ServiceKeyGen (Base_13);
+  Swt_Ip_ServiceCmd (Base_13, _4);
+  # DEBUG BEGIN_STMT
+  _5 = Swt_Ip_ServiceKeyGen (Base_13);
+  if (_5 == 50464)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  BUnlockSequence_24 = 1;
+  # DEBUG BUnlockSequence => BUnlockSequence_24
+
+  <bb 7> :
+  # BUnlockSequence_9 = PHI <BUnlockSequence_8(5), BUnlockSequence_24(6)>
+  # DEBUG BUnlockSequence => BUnlockSequence_9
+  # DEBUG BEGIN_STMT
+  _6 = Swt_Ip_ServiceKeyGen (Base_13);
+  Swt_Ip_ServiceCmd (Base_13, _6);
+  # DEBUG BEGIN_STMT
+  _7 = Swt_Ip_GetLock (Base_13);
+  if (_7 == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 8> :
+  if (BUnlockSequence_9 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_ServiceCmd (Base_13, 55592);
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Lock (Base_13, 1);
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L9>:
+  # DEBUG BEGIN_STMT
+  Swt_Ip_ServiceCmd (Base_13, 42498);
+  # DEBUG BEGIN_STMT
+  Swt_Ip_ServiceCmd (Base_13, 46208);
+  # DEBUG BEGIN_STMT
+
+  <bb 11> :
+<L12>:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_09 ();
+  return;
+
+}
+
+
+Swt_Ip_Deinit (const uint32 Instance)
+{
+  Swt_Ip_StatusType Ret;
+  struct SWT_Type * const Base;
+  _Bool _1;
+  Swt_Ip_StatusType _17;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_5 = Swt_Ip_sBase[Instance_4(D)];
+  # DEBUG Base => Base_5
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Instance_4(D) <= 2;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  Ret_8 = Swt_Ip_Unlock (Base_5);
+  # DEBUG Ret => Ret_8
+  # DEBUG BEGIN_STMT
+  if (Ret_8 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Disable (Base_5);
+  # DEBUG BEGIN_STMT
+  Base_5->IR ={v} 1;
+  # DEBUG BEGIN_STMT
+  Base_5->TO ={v} 800;
+  # DEBUG BEGIN_STMT
+  Base_5->WN ={v} 0;
+  # DEBUG BEGIN_STMT
+  Base_5->SK ={v} 0;
+  # DEBUG BEGIN_STMT
+  Base_5->CR ={v} 4278190346;
+  # DEBUG BEGIN_STMT
+  Swt_Ip_ClearRequest (Base_5);
+  # DEBUG BEGIN_STMT
+  Wdg_Ip_abStatus[Instance_4(D)] = 0;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _17 = Ret_8;
+  return _17;
+
+}
+
+
+Swt_Ip_Init (const uint32 Instance, const struct Swt_Ip_ConfigType * const ConfigPtr)
+{
+  boolean bSwtEnabled;
+  Swt_Ip_StatusType Ret;
+  struct SWT_Type * const Base;
+  _Bool _1;
+  _Bool _2;
+  <unnamed type> _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  _Bool _6;
+  void (*<T4cf>) (void) _7;
+  <unnamed type> _8;
+  Swt_Ip_StatusType _32;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_15 = Swt_Ip_sBase[Instance_14(D)];
+  # DEBUG Base => Base_15
+  # DEBUG BEGIN_STMT
+  Ret_16 = 0;
+  # DEBUG Ret => Ret_16
+  # DEBUG BEGIN_STMT
+  _1 = Instance_14(D) <= 2;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = ConfigPtr_18(D) != 0B;
+  DevAssert (_2);
+  # DEBUG BEGIN_STMT
+  _3 = Swt_Ip_Unlock (Base_15);
+  if (_3 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Ret_31 = 1;
+  # DEBUG Ret => Ret_31
+  goto <bb 10>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  bSwtEnabled_22 = Swt_Ip_IsEnable (Base_15);
+  # DEBUG bSwtEnabled => bSwtEnabled_22
+  # DEBUG BEGIN_STMT
+  if (bSwtEnabled_22 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Disable (Base_15);
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _4 = ConfigPtr_18(D)->u32TimeoutValue;
+  _5 = ConfigPtr_18(D)->u32WindowValue;
+  Ret_25 = Swt_Ip_CheckTimeout (_4, _5);
+  # DEBUG Ret => Ret_25
+  # DEBUG BEGIN_STMT
+  if (Ret_25 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_RegisterConfig (Base_15, ConfigPtr_18(D));
+  # DEBUG BEGIN_STMT
+  _6 = ConfigPtr_18(D)->bEnInterrupt;
+  if (_6 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _7 = ConfigPtr_18(D)->pfSwtCallback;
+  Swt_Ip_apCallbackPtr[Instance_14(D)] = _7;
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Enable (Base_15);
+  # DEBUG BEGIN_STMT
+  _8 = ConfigPtr_18(D)->lockConfig;
+  Swt_Ip_Lock (Base_15, _8);
+  # DEBUG BEGIN_STMT
+  Wdg_Ip_abStatus[Instance_14(D)] = 1;
+
+  <bb 10> :
+  # Ret_9 = PHI <Ret_31(3), Ret_25(6), Ret_25(9)>
+  # DEBUG Ret => Ret_9
+  # DEBUG BEGIN_STMT
+  _32 = Ret_9;
+  return _32;
+
+}
+
+
+Swt_Ip_ClearIntFlag (struct SWT_Type * const Base)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_4(D)->IR;
+  _2 = _1 & 1;
+  Base_4(D)->IR ={v} _2;
+  return;
+
+}
+
+
+Swt_Ip_IsIntEnabled (const struct SWT_Type * const Base)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  boolean _5;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_4(D)->CR;
+  _2 = _1 & 64;
+  _5 = _2 != 0;
+  return _5;
+
+}
+
+
+Swt_Ip_GetIntFlag (const struct SWT_Type * const Base)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  boolean _5;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_4(D)->IR;
+  _2 = _1 & 1;
+  _5 = _2 != 0;
+  return _5;
+
+}
+
+
+Swt_Ip_ClearRequest (struct SWT_Type * const Base)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Base_2(D)->RRR ={v} 1;
+  return;
+
+}
+
+
+Swt_Ip_RequestedReset (const struct SWT_Type * const Base)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  boolean _5;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_4(D)->RRR;
+  _2 = _1 & 1;
+  _5 = _2 == 1;
+  return _5;
+
+}
+
+
+Swt_Ip_ServiceKeyGen (const struct SWT_Type * const Base)
+{
+  long unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  uint16 _6;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_5(D)->SK;
+  _2 = (short unsigned int) _1;
+  _3 = _2 * 17;
+  _6 = _3 + 3;
+  return _6;
+
+}
+
+
+Swt_Ip_ServiceCmd (struct SWT_Type * const Base, uint16 ServiceKey)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_6(D)->SR;
+  _2 = _1 & 4294901760;
+  _3 = (long unsigned int) ServiceKey_7(D);
+  _4 = _2 | _3;
+  Base_6(D)->SR ={v} _4;
+  return;
+
+}
+
+
+Swt_Ip_CheckTimeout (uint32 u32TimeoutValue, uint32 u32WindowValue)
+{
+  Swt_Ip_StatusType Ret;
+  Swt_Ip_StatusType _8;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Ret_3 = 0;
+  # DEBUG Ret => Ret_3
+  # DEBUG BEGIN_STMT
+  if (u32TimeoutValue_4(D) <= 2)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Ret_5 = 1;
+  # DEBUG Ret => Ret_5
+
+  <bb 4> :
+  # Ret_1 = PHI <Ret_3(2), Ret_5(3)>
+  # DEBUG Ret => Ret_1
+  # DEBUG BEGIN_STMT
+  if (u32WindowValue_6(D) != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  if (u32TimeoutValue_4(D) <= u32WindowValue_6(D))
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Ret_7 = 1;
+  # DEBUG Ret => Ret_7
+
+  <bb 7> :
+  # Ret_2 = PHI <Ret_1(4), Ret_1(5), Ret_7(6)>
+  # DEBUG Ret => Ret_2
+  # DEBUG BEGIN_STMT
+  _8 = Ret_2;
+  return _8;
+
+}
+
+
+Swt_Ip_RegisterConfig (struct SWT_Type * const Base, const struct Swt_Ip_ConfigType * const ConfigPtr)
+{
+  Swt_Ip_ServiceModeType ServiceMode;
+  uint32 TempCr;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  _Bool _8;
+  long unsigned int _9;
+  _Bool _10;
+  long unsigned int _11;
+  _Bool _12;
+  long unsigned int _13;
+  _Bool _14;
+  long unsigned int _15;
+  _Bool _16;
+  long unsigned int _17;
+  _Bool _18;
+  long unsigned int _19;
+  short unsigned int _20;
+  long unsigned int _21;
+  long unsigned int iftmp.1_22;
+  long unsigned int iftmp.2_23;
+  long unsigned int iftmp.3_24;
+  long unsigned int iftmp.4_25;
+  long unsigned int iftmp.5_26;
+  long unsigned int iftmp.1_33;
+  long unsigned int iftmp.1_34;
+  long unsigned int iftmp.2_35;
+  long unsigned int iftmp.2_36;
+  long unsigned int iftmp.3_37;
+  long unsigned int iftmp.3_38;
+  long unsigned int iftmp.4_39;
+  long unsigned int iftmp.4_40;
+  long unsigned int iftmp.5_41;
+  long unsigned int iftmp.5_42;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  TempCr_29 = 0;
+  # DEBUG TempCr => TempCr_29
+  # DEBUG BEGIN_STMT
+  ServiceMode_32 = ConfigPtr_31(D)->eServiceMode;
+  # DEBUG ServiceMode => ServiceMode_32
+  # DEBUG BEGIN_STMT
+  _1 = ConfigPtr_31(D)->u8MapEnBitmask;
+  _2 = (long unsigned int) _1;
+  _3 = _2 << 24;
+  _4 = (long unsigned int) ServiceMode_32;
+  _5 = _4 << 9;
+  _6 = _5 & 1536;
+  _7 = _3 | _6;
+  _8 = ConfigPtr_31(D)->bEnResetOnInvalidAccess;
+  if (_8 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  iftmp.1_34 = 256;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  iftmp.1_33 = 0;
+
+  <bb 5> :
+  # iftmp.1_22 = PHI <iftmp.1_34(3), iftmp.1_33(4)>
+  _9 = iftmp.1_22 | _7;
+  _10 = ConfigPtr_31(D)->bEnWindow;
+  if (_10 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  iftmp.2_36 = 128;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  iftmp.2_35 = 0;
+
+  <bb 8> :
+  # iftmp.2_23 = PHI <iftmp.2_36(6), iftmp.2_35(7)>
+  _11 = iftmp.2_23 | _9;
+  _12 = ConfigPtr_31(D)->bEnRunInStopMode;
+  if (_12 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  iftmp.3_38 = 0;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  iftmp.3_37 = 4;
+
+  <bb 11> :
+  # iftmp.3_24 = PHI <iftmp.3_38(9), iftmp.3_37(10)>
+  _13 = iftmp.3_24 | _11;
+  _14 = ConfigPtr_31(D)->bEnRunInDebugMode;
+  if (_14 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  iftmp.4_40 = 0;
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  iftmp.4_39 = 2;
+
+  <bb 14> :
+  # iftmp.4_25 = PHI <iftmp.4_40(12), iftmp.4_39(13)>
+  _15 = iftmp.4_25 | _13;
+  _16 = ConfigPtr_31(D)->bEnInterrupt;
+  if (_16 != 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  iftmp.5_42 = 64;
+  goto <bb 17>; [INV]
+
+  <bb 16> :
+  iftmp.5_41 = 0;
+
+  <bb 17> :
+  # iftmp.5_26 = PHI <iftmp.5_42(15), iftmp.5_41(16)>
+  TempCr_43 = iftmp.5_26 | _15;
+  # DEBUG TempCr => TempCr_43
+  # DEBUG BEGIN_STMT
+  Base_44(D)->CR ={v} TempCr_43;
+  # DEBUG BEGIN_STMT
+  Base_44(D)->IR ={v} 1;
+  # DEBUG BEGIN_STMT
+  _17 = ConfigPtr_31(D)->u32TimeoutValue;
+  Base_44(D)->TO ={v} _17;
+  # DEBUG BEGIN_STMT
+  _18 = ConfigPtr_31(D)->bEnWindow;
+  if (_18 != 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  _19 = ConfigPtr_31(D)->u32WindowValue;
+  Base_44(D)->WN ={v} _19;
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  if (ServiceMode_32 == 1)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  _20 = ConfigPtr_31(D)->u16InitialKey;
+  _21 = (long unsigned int) _20;
+  Base_44(D)->SK ={v} _21;
+
+  <bb 21> :
+  return;
+
+}
+
+
+Swt_Ip_Unlock (struct SWT_Type * const Base)
+{
+  uint32 ElapsedTicks;
+  uint32 CurrentTicks;
+  uint32 TimeoutTicks;
+  Swt_Ip_StatusType Ret;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _24;
+  Swt_Ip_StatusType _29;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Ret_12 = 0;
+  # DEBUG Ret => Ret_12
+  # DEBUG BEGIN_STMT
+  TimeoutTicks_15 = OsIf_MicrosToTicks (3000, 0);
+  # DEBUG TimeoutTicks => TimeoutTicks_15
+  # DEBUG BEGIN_STMT
+  CurrentTicks = 0;
+  # DEBUG BEGIN_STMT
+  ElapsedTicks_17 = 0;
+  # DEBUG ElapsedTicks => ElapsedTicks_17
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_18(D)->CR;
+  _2 = _1 & 32;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Ret_28 = 1;
+  # DEBUG Ret => Ret_28
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _3 ={v} Base_18(D)->CR;
+  _4 = _3 & 16;
+  if (_4 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Base_18(D)->SR ={v} 50464;
+  # DEBUG BEGIN_STMT
+  Base_18(D)->SR ={v} 55592;
+  # DEBUG BEGIN_STMT
+  _5 = OsIf_GetCounter (0);
+  CurrentTicks = _5;
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _24 = OsIf_GetElapsed (&CurrentTicks, 0);
+  ElapsedTicks_25 = _24 + ElapsedTicks_9;
+  # DEBUG ElapsedTicks => ElapsedTicks_25
+
+  <bb 7> :
+  # ElapsedTicks_9 = PHI <ElapsedTicks_17(5), ElapsedTicks_25(6)>
+  # DEBUG ElapsedTicks => ElapsedTicks_9
+  # DEBUG BEGIN_STMT
+  _6 ={v} Base_18(D)->CR;
+  _7 = _6 & 16;
+  if (_7 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  if (ElapsedTicks_9 < TimeoutTicks_15)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  if (ElapsedTicks_9 >= TimeoutTicks_15)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_Lock (Base_18(D), 1);
+  # DEBUG BEGIN_STMT
+  Ret_27 = 1;
+  # DEBUG Ret => Ret_27
+
+  <bb 11> :
+  # Ret_8 = PHI <Ret_28(3), Ret_12(4), Ret_27(10), Ret_12(9)>
+  # DEBUG Ret => Ret_8
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _29 = Ret_8;
+  CurrentTicks ={v} {CLOBBER};
+  return _29;
+
+}
+
+
+Swt_Ip_Lock (struct SWT_Type * const Base, Swt_Ip_LockType LockConfig)
+{
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) LockConfig_7(D);
+  switch (_1) <default: <L4> [INV], case 1: <L1> [INV], case 2: <L0> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 ={v} Base_9(D)->CR;
+  _3 = _2 | 32;
+  Base_9(D)->CR ={v} _3;
+  # DEBUG BEGIN_STMT
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  _4 ={v} Base_9(D)->CR;
+  _5 = _4 | 16;
+  Base_9(D)->CR ={v} _5;
+  # DEBUG BEGIN_STMT
+
+  <bb 5> :
+<L4>:
+  return;
+
+}
+
+
+Swt_Ip_GetLock (const struct SWT_Type * const Base)
+{
+  Swt_Ip_LockType LockMode;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  Swt_Ip_LockType _12;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  LockMode_5 = 0;
+  # DEBUG LockMode => LockMode_5
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_7(D)->CR;
+  _2 = _1 >> 4;
+  _3 = _2 & 3;
+  switch (_3) <default: <L3> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  LockMode_10 = 0;
+  # DEBUG LockMode => LockMode_10
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  LockMode_9 = 1;
+  # DEBUG LockMode => LockMode_9
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  LockMode_8 = 2;
+  # DEBUG LockMode => LockMode_8
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  LockMode_11 = 2;
+  # DEBUG LockMode => LockMode_11
+  # DEBUG BEGIN_STMT
+
+  <bb 7> :
+  # LockMode_4 = PHI <LockMode_10(3), LockMode_9(4), LockMode_8(5), LockMode_11(6)>
+  # DEBUG LockMode => LockMode_4
+  # DEBUG BEGIN_STMT
+  _12 = LockMode_4;
+  return _12;
+
+}
+
+
+Swt_Ip_GetServiceMode (const struct SWT_Type * const Base)
+{
+  Swt_Ip_ServiceModeType Mode;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  Swt_Ip_ServiceModeType _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_6(D)->CR;
+  _2 = _1 >> 9;
+  _3 = _2 & 3;
+  if (_3 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  Mode_7 = 1;
+  # DEBUG Mode => Mode_7
+  # DEBUG BEGIN_STMT
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  Mode_8 = 0;
+  # DEBUG Mode => Mode_8
+  # DEBUG BEGIN_STMT
+
+  <bb 5> :
+  # Mode_4 = PHI <Mode_7(3), Mode_8(4)>
+  # DEBUG Mode => Mode_4
+  # DEBUG BEGIN_STMT
+  _9 = Mode_4;
+  return _9;
+
+}
+
+
+Swt_Ip_Disable (struct SWT_Type * const Base)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_4(D)->CR;
+  _2 = _1 & 4294967294;
+  Base_4(D)->CR ={v} _2;
+  return;
+
+}
+
+
+Swt_Ip_Enable (struct SWT_Type * const Base)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_4(D)->CR;
+  _2 = _1 | 1;
+  Base_4(D)->CR ={v} _2;
+  return;
+
+}
+
+
+Swt_Ip_IsEnable (const struct SWT_Type * const Base)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  boolean _5;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 ={v} Base_4(D)->CR;
+  _2 = _1 & 1;
+  _5 = _2 != 0;
+  return _5;
+
+}
+
+
+DevAssert (volatile boolean x)
+{
+  _Bool x.0_1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  x.0_1 ={v} x;
+  if (x.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("BKPT #0");
+  # DEBUG BEGIN_STMT
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

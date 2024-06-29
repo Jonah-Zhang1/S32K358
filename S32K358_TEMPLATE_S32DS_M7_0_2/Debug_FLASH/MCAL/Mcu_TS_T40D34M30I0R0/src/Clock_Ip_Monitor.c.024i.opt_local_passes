@@ -1,0 +1,611 @@
+Clock_Ip_CMU_ClockFailInt ()
+{
+  uint32 IndexCmu;
+  uint32 CmuIsrValue;
+  uint32 CmuIerValue;
+  struct Clock_Ip_ClockMonitorType * _1;
+  long unsigned int _2;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.0_3;
+  struct Clock_Ip_ClockMonitorType * _4;
+  long unsigned int _5;
+  struct Clock_Ip_ClockMonitorType * _6;
+  <unnamed type> _7;
+  struct Clock_Ip_ClockMonitorType * _8;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  CmuIsrValue_12 = 0;
+  # DEBUG CmuIsrValue => CmuIsrValue_12
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  IndexCmu_13 = 0;
+  # DEBUG IndexCmu => IndexCmu_13
+  goto <bb 8>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_apxCmu[IndexCmu_9];
+  _2 ={v} _1->SR;
+  CmuIsrValue_15 = _2 & 3;
+  # DEBUG CmuIsrValue => CmuIsrValue_15
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.0_3 = Clock_Ip_pxConfig;
+  if (Clock_Ip_pxConfig.0_3 != 0B)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_apxCmu[IndexCmu_9];
+  _5 = _4->IER;
+  CmuIerValue_17 = _5 & 3;
+  # DEBUG CmuIerValue => CmuIerValue_17
+  # DEBUG BEGIN_STMT
+  CmuIsrValue_18 = CmuIsrValue_15 & CmuIerValue_17;
+  # DEBUG CmuIsrValue => CmuIsrValue_18
+  # DEBUG BEGIN_STMT
+  if (CmuIsrValue_18 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_apxCmu[IndexCmu_9];
+  _6->SR ={v} CmuIsrValue_18;
+  # DEBUG BEGIN_STMT
+  _7 = Clock_Ip_aeCmuNames[IndexCmu_9];
+  Clock_Ip_ReportClockErrors (0, _7);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _8 = Clock_Ip_apxCmu[IndexCmu_9];
+  _8->SR ={v} CmuIsrValue_15;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  IndexCmu_21 = IndexCmu_9 + 1;
+  # DEBUG IndexCmu => IndexCmu_21
+
+  <bb 8> :
+  # IndexCmu_9 = PHI <IndexCmu_13(2), IndexCmu_21(7)>
+  # DEBUG IndexCmu => IndexCmu_9
+  # DEBUG BEGIN_STMT
+  if (IndexCmu_9 <= 6)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  return;
+
+}
+
+
+Clock_Ip_CMU_GetInterruptStatus (uint8 IndexCmu)
+{
+  uint32 CmuIsrValue;
+  int _1;
+  struct Clock_Ip_ClockMonitorType * _2;
+  long unsigned int _3;
+  uint32 _7;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) IndexCmu_4(D);
+  _2 = Clock_Ip_apxCmu[_1];
+  _3 ={v} _2->SR;
+  CmuIsrValue_6 = _3 & 3;
+  # DEBUG CmuIsrValue => CmuIsrValue_6
+  # DEBUG BEGIN_STMT
+  _7 = CmuIsrValue_6;
+  return _7;
+
+}
+
+
+Clock_Ip_EnableCmuFcFceRefCntLfrefHfref (const struct Clock_Ip_CmuConfigType * Config)
+{
+  struct Clock_Ip_ClockMonitorType * CmuFc;
+  const struct Clock_Ip_CmuInfoType * CmuInformation;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  int _4;
+  unsigned char _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_11(D) != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = Config_11(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][8];
+  _4 = (int) _3;
+  CmuInformation_13 = &Clock_Ip_axCmuInfo[_4];
+  # DEBUG CmuInformation => CmuInformation_13
+  # DEBUG BEGIN_STMT
+  CmuFc_14 = CmuInformation_13->CmuInstance;
+  # DEBUG CmuFc => CmuFc_14
+  # DEBUG BEGIN_STMT
+  _5 = Config_11(D)->Enable;
+  if (_5 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _6 = CmuFc_14->GCR;
+  _7 = _6 | 1;
+  CmuFc_14->GCR = _7;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _8 = CmuFc_14->GCR;
+  _9 = _8 & 4294967294;
+  CmuFc_14->GCR = _9;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_SetCmuFcFceRefCntLfrefHfref (const struct Clock_Ip_CmuConfigType * Config, uint32 Index)
+{
+  uint32 ModuloValue;
+  uint32 DividerResult;
+  uint32 DivideBy;
+  uint32 Cmp2;
+  uint32 Cmp1;
+  uint32 LfRef;
+  uint32 HfRef;
+  uint32 RefCount;
+  uint32 BusClk;
+  uint32 MonitoredClk;
+  uint32 ReferenceClk;
+  struct Clock_Ip_ClockMonitorType * CmuFc;
+  const struct Clock_Ip_CmuInfoType * CmuInformation;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  int _4;
+  long unsigned int _5;
+  unsigned char _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  <unnamed type> _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  unsigned char _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  <unnamed type> _21;
+  long unsigned int _22;
+  long unsigned int _23;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.2_24;
+  const struct Clock_Ip_ConfiguredFrequencyType[<unknown>] * _25;
+  <unnamed type> _26;
+  int _27;
+  unsigned char _28;
+  int _29;
+  long unsigned int _30;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.3_31;
+  const struct Clock_Ip_ConfiguredFrequencyType[<unknown>] * _32;
+  <unnamed type> _33;
+  int _34;
+  unsigned char _35;
+  int _36;
+  long unsigned int _37;
+  long unsigned int _38;
+  long unsigned int _39;
+  long unsigned int _40;
+  long unsigned int _41;
+  long unsigned int _42;
+  long unsigned int _43;
+  long unsigned int _44;
+  long unsigned int _45;
+  long unsigned int _46;
+  long unsigned int _47;
+  long unsigned int _48;
+  long unsigned int _49;
+  long unsigned int _50;
+  long unsigned int _51;
+  long unsigned int _52;
+  long unsigned int _53;
+  long unsigned int _54;
+  long unsigned int _55;
+  long unsigned int _56;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ReferenceClk_59 = 0;
+  # DEBUG ReferenceClk => ReferenceClk_59
+  # DEBUG BEGIN_STMT
+  MonitoredClk_60 = 0;
+  # DEBUG MonitoredClk => MonitoredClk_60
+  # DEBUG BEGIN_STMT
+  BusClk_61 = 0;
+  # DEBUG BusClk => BusClk_61
+  # DEBUG BEGIN_STMT
+  RefCount_62 = 0;
+  # DEBUG RefCount => RefCount_62
+  # DEBUG BEGIN_STMT
+  HfRef_63 = 0;
+  # DEBUG HfRef => HfRef_63
+  # DEBUG BEGIN_STMT
+  LfRef_64 = 0;
+  # DEBUG LfRef => LfRef_64
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_65(D) != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = Config_65(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][8];
+  _4 = (int) _3;
+  CmuInformation_67 = &Clock_Ip_axCmuInfo[_4];
+  # DEBUG CmuInformation => CmuInformation_67
+  # DEBUG BEGIN_STMT
+  CmuFc_68 = CmuInformation_67->CmuInstance;
+  # DEBUG CmuFc => CmuFc_68
+  # DEBUG BEGIN_STMT
+  _5 = HashCmu[Index_69(D)];
+  _6 = Config_65(D)->Enable;
+  _7 = (long unsigned int) _6;
+  _8 = Config_65(D)->Interrupt;
+  _9 = _7 ^ _8;
+  _10 = Config_65(D)->MonitoredClockFrequency;
+  _11 = _9 ^ _10;
+  _12 = Config_65(D)->Name;
+  _13 = (long unsigned int) _12;
+  _14 = _11 ^ _13;
+  if (_5 != _14)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _15 = Config_65(D)->Enable;
+  _16 = (long unsigned int) _15;
+  _17 = Config_65(D)->Interrupt;
+  _18 = _16 ^ _17;
+  _19 = Config_65(D)->MonitoredClockFrequency;
+  _20 = _18 ^ _19;
+  _21 = Config_65(D)->Name;
+  _22 = (long unsigned int) _21;
+  _23 = _20 ^ _22;
+  HashCmu[Index_69(D)] = _23;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.2_24 = Clock_Ip_pxConfig;
+  _25 = Clock_Ip_pxConfig.2_24->ConfiguredFrequencies;
+  _26 = CmuInformation_67->Reference;
+  _27 = (int) _26;
+  _28 = Clock_Ip_FreqIds[_27];
+  _29 = (int) _28;
+  _30 = (*_25)[_29].ConfiguredFrequencyValue;
+  ReferenceClk_71 = _30 / 1000;
+  # DEBUG ReferenceClk => ReferenceClk_71
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.3_31 = Clock_Ip_pxConfig;
+  _32 = Clock_Ip_pxConfig.3_31->ConfiguredFrequencies;
+  _33 = CmuInformation_67->Bus;
+  _34 = (int) _33;
+  _35 = Clock_Ip_FreqIds[_34];
+  _36 = (int) _35;
+  _37 = (*_32)[_36].ConfiguredFrequencyValue;
+  BusClk_72 = _37 / 1000;
+  # DEBUG BusClk => BusClk_72
+  # DEBUG BEGIN_STMT
+  _38 = Config_65(D)->MonitoredClockFrequency;
+  MonitoredClk_73 = _38 / 1000;
+  # DEBUG MonitoredClk => MonitoredClk_73
+  # DEBUG BEGIN_STMT
+  if (ReferenceClk_71 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 5> :
+  if (BusClk_72 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 6> :
+  if (MonitoredClk_73 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _39 = ReferenceClk_71 * 3;
+  _40 = _39 / BusClk_72;
+  Cmp1_74 = _40 + 1;
+  # DEBUG Cmp1 => Cmp1_74
+  # DEBUG BEGIN_STMT
+  _41 = ReferenceClk_71 * 5;
+  _42 = _41 / MonitoredClk_73;
+  Cmp2_75 = _42 + 9;
+  # DEBUG Cmp2 => Cmp2_75
+  # DEBUG BEGIN_STMT
+  RefCount_76 = MAX_EXPR <Cmp2_75, Cmp1_74>;
+  # DEBUG RefCount => RefCount_76
+  # DEBUG BEGIN_STMT
+  _43 = MonitoredClk_73 * RefCount_76;
+  HfRef_77 = _43 * 1011;
+  # DEBUG HfRef => HfRef_77
+  # DEBUG BEGIN_STMT
+  DivideBy_78 = ReferenceClk_71 * 967;
+  # DEBUG DivideBy => DivideBy_78
+  # DEBUG BEGIN_STMT
+  DividerResult_79 = HfRef_77 / DivideBy_78;
+  # DEBUG DividerResult => DividerResult_79
+  # DEBUG BEGIN_STMT
+  _44 = DivideBy_78 * DividerResult_79;
+  ModuloValue_80 = HfRef_77 - _44;
+  # DEBUG ModuloValue => ModuloValue_80
+  # DEBUG BEGIN_STMT
+  _45 = DividerResult_79 * 10;
+  _46 = ModuloValue_80 * 10;
+  _47 = _46 / DivideBy_78;
+  _48 = _45 + _47;
+  HfRef_81 = _48 + 4;
+  # DEBUG HfRef => HfRef_81
+  # DEBUG BEGIN_STMT
+  _49 = MonitoredClk_73 * RefCount_76;
+  LfRef_82 = _49 * 989;
+  # DEBUG LfRef => LfRef_82
+  # DEBUG BEGIN_STMT
+  DivideBy_83 = ReferenceClk_71 * 1033;
+  # DEBUG DivideBy => DivideBy_83
+  # DEBUG BEGIN_STMT
+  DividerResult_84 = LfRef_82 / DivideBy_83;
+  # DEBUG DividerResult => DividerResult_84
+  # DEBUG BEGIN_STMT
+  _50 = DivideBy_83 * DividerResult_84;
+  ModuloValue_85 = LfRef_82 - _50;
+  # DEBUG ModuloValue => ModuloValue_85
+  # DEBUG BEGIN_STMT
+  _51 = DividerResult_84 * 10;
+  _52 = ModuloValue_85 * 10;
+  _53 = _52 / DivideBy_83;
+  _54 = _51 + _53;
+  LfRef_86 = _54 + 4294967293;
+  # DEBUG LfRef => LfRef_86
+  # DEBUG BEGIN_STMT
+  _55 = RefCount_76 * 10;
+  CmuFc_68->RCCR = _55;
+  # DEBUG BEGIN_STMT
+  CmuFc_68->HTCR = HfRef_81;
+  # DEBUG BEGIN_STMT
+  CmuFc_68->LTCR = LfRef_86;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _56 = Config_65(D)->Interrupt;
+  CmuFc_68->IER = _56;
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ResetCmuFcFceRefCntLfrefHfref (const struct Clock_Ip_CmuConfigType * Config)
+{
+  <unnamed type> _1;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  if (Config_3(D) != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = Config_3(D)->Name;
+  Clock_Ip_DisableCmuFcFceRefCntLfrefHfref (_1);
+
+  <bb 4> :
+  return;
+
+}
+
+
+Clock_Ip_DisableCmuFcFceRefCntLfrefHfref (Clock_Ip_NameType Name)
+{
+  uint32 FrequencyCheckStatus;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  struct Clock_Ip_ClockMonitorType * const CmuFc;
+  const struct Clock_Ip_CmuInfoType * CmuInformation;
+  int _1;
+  unsigned char _2;
+  int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int TimeoutTicks.1_7;
+  _Bool _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) Name_18(D);
+  _2 = Clock_Ip_au8ClockFeatures[_1][8];
+  _3 = (int) _2;
+  CmuInformation_20 = &Clock_Ip_axCmuInfo[_3];
+  # DEBUG CmuInformation => CmuInformation_20
+  # DEBUG BEGIN_STMT
+  CmuFc_21 = CmuInformation_20->CmuInstance;
+  # DEBUG CmuFc => CmuFc_21
+  # DEBUG BEGIN_STMT
+  TimeoutOccurred_22 = 0;
+  # DEBUG TimeoutOccurred => TimeoutOccurred_22
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Mcu_MCU_EXCLUSIVE_AREA_01 ();
+  # DEBUG BEGIN_STMT
+  _4 = CmuFc_21->GCR;
+  _5 = _4 & 1;
+  if (_5 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _6 ={v} CmuFc_21->SR;
+  FrequencyCheckStatus_25 = _6 & 16;
+  # DEBUG FrequencyCheckStatus => FrequencyCheckStatus_25
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.1_7 = TimeoutTicks;
+  TimeoutOccurred_27 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_7);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_27
+  # DEBUG BEGIN_STMT
+  if (FrequencyCheckStatus_25 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _8 = ~TimeoutOccurred_27;
+  if (_8 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_27 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ReportClockErrors (1, Name_18(D));
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _9 = CmuFc_21->GCR;
+  _10 = _9 & 4294967294;
+  CmuFc_21->GCR = _10;
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _11 = CmuFc_21->IER;
+  _12 = _11 & 4294967280;
+  CmuFc_21->IER = _12;
+  # DEBUG BEGIN_STMT
+  _13 ={v} CmuFc_21->SR;
+  _14 = _13 | 3;
+  CmuFc_21->SR ={v} _14;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Mcu_MCU_EXCLUSIVE_AREA_01 ();
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Clock_Ip_ClockMonitorEmpty_Disable (Clock_Ip_NameType Name)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ClockMonitorEmpty_Set (const struct Clock_Ip_CmuConfigType * Config, uint32 Index)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ClockMonitorEmpty (const struct Clock_Ip_CmuConfigType * Config)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

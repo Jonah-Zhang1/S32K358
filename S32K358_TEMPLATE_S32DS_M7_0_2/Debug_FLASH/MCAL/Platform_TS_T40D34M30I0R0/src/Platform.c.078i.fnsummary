@@ -1,0 +1,390 @@
+
+Analyzing function: Platform_InstallIrqHandler/16
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Platform_InstallIrqHandler/16
+
+IPA function summary for Platform_InstallIrqHandler/16 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_InstallHandler/23 function body not available
+      freq:1.00 loop depth: 0 size: 4 time: 13
+
+
+Analyzing function: Platform_GetIrqPriority/15
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Platform_GetIrqPriority/15
+
+IPA function summary for Platform_GetIrqPriority/15 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.500000, time:0.500000
+    size:3.500000, time:2.500000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_GetPriority/22 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+
+Analyzing function: Platform_SetIrqPriority/14
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Platform_SetIrqPriority/14
+
+IPA function summary for Platform_SetIrqPriority/14 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    IntCtrl_Ip_SetPriority/21 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+
+Analyzing function: Platform_SetIrq/13
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Platform_SetIrq/13
+
+IPA function summary for Platform_SetIrq/13 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Platform_Ipw_SetIrq/8 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+
+Analyzing function: Platform_Init/12
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Platform_Init/12
+
+IPA function summary for Platform_Init/12 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Platform_Ipw_Init/18 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: Platform_Ipw_SetIrq/8
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;; 2 succs { 3 4 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 1 }
+
+Analyzing function body size: Platform_Ipw_SetIrq/8
+
+IPA function summary for Platform_Ipw_SetIrq/8 inlinable
+  global time:     15.000000
+  self size:       9
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+  calls:
+    IntCtrl_Ip_DisableIrq/20 function body not available
+      freq:0.50 loop depth: 0 size: 2 time: 11 predicate: (op1 == 0)
+    IntCtrl_Ip_EnableIrq/19 function body not available
+      freq:0.50 loop depth: 0 size: 2 time: 11 predicate: (op1 != 0)
+
+Symbol table:
+
+IntCtrl_Ip_InstallHandler/23 (IntCtrl_Ip_InstallHandler) @075e32a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_InstallIrqHandler/16 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_GetPriority/22 (IntCtrl_Ip_GetPriority) @075e3000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_GetIrqPriority/15 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_SetPriority/21 (IntCtrl_Ip_SetPriority) @075e0e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_SetIrqPriority/14 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+IntCtrl_Ip_DisableIrq/20 (IntCtrl_Ip_DisableIrq) @075e0b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 (536870913 (estimated locally),0.50 per call) 
+  Calls: 
+IntCtrl_Ip_EnableIrq/19 (IntCtrl_Ip_EnableIrq) @075e0a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Ipw_SetIrq/8 (536870913 (estimated locally),0.50 per call) 
+  Calls: 
+Platform_Ipw_Init/18 (Platform_Ipw_Init) @075e07e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Platform_Init/12 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Platform_Config/17 (Platform_Config) @06caad80
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Platform_Init/12 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Platform_InstallIrqHandler/16 (Platform_InstallIrqHandler) @075e01c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_InstallHandler/23 (1073741824 (estimated locally),1.00 per call) 
+Platform_GetIrqPriority/15 (Platform_GetIrqPriority) @06cadee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_GetPriority/22 (1073741824 (estimated locally),1.00 per call) 
+Platform_SetIrqPriority/14 (Platform_SetIrqPriority) @06cad9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: IntCtrl_Ip_SetPriority/21 (1073741824 (estimated locally),1.00 per call) 
+Platform_SetIrq/13 (Platform_SetIrq) @06cade00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_SetIrq/8 (1073741824 (estimated locally),1.00 per call) 
+Platform_Init/12 (Platform_Init) @06cadb60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Platform_Config/17 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Platform_Ipw_Init/18 (1073741824 (estimated locally),1.00 per call) 
+Platform_Ipw_SetIrq/8 (Platform_Ipw_SetIrq) @06ca1b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Platform_SetIrq/13 (1073741824 (estimated locally),1.00 per call) 
+  Calls: IntCtrl_Ip_DisableIrq/20 (536870913 (estimated locally),0.50 per call) IntCtrl_Ip_EnableIrq/19 (536870913 (estimated locally),0.50 per call) 
+Platform_InstallIrqHandler (IRQn_Type eIrqNumber, void (*Platform_IrqHandlerType) (void) pfNewHandler, void (*Platform_IrqHandlerType) (void) * const pfOldHandler)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => eIrqNumber_2(D)
+  # DEBUG pfNewHandler => pfNewHandler_3(D)
+  # DEBUG pfOldHandler => pfOldHandler_4(D)
+  # DEBUG INLINE_ENTRY Platform_Ipw_InstallIrqHandler
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_InstallHandler (eIrqNumber_2(D), pfNewHandler_3(D), pfOldHandler_4(D));
+  # DEBUG eIrqNumber => NULL
+  # DEBUG pfNewHandler => NULL
+  # DEBUG pfOldHandler => NULL
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+Platform_GetIrqPriority (IRQn_Type eIrqNumber, uint8 * u8Priority)
+{
+  unsigned char _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => eIrqNumber_2(D)
+  # DEBUG INLINE_ENTRY Platform_Ipw_GetIrqPriority
+  # DEBUG BEGIN_STMT
+  _5 = IntCtrl_Ip_GetPriority (eIrqNumber_2(D));
+  # DEBUG eIrqNumber => NULL
+  *u8Priority_3(D) = _5;
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+Platform_SetIrqPriority (IRQn_Type eIrqNumber, uint8 u8Priority)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => eIrqNumber_2(D)
+  # DEBUG u8Priority => u8Priority_3(D)
+  # DEBUG INLINE_ENTRY Platform_Ipw_SetIrqPriority
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_SetPriority (eIrqNumber_2(D), u8Priority_3(D));
+  # DEBUG eIrqNumber => NULL
+  # DEBUG u8Priority => NULL
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+Platform_SetIrq (IRQn_Type eIrqNumber, boolean bEnable)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 0
+  # DEBUG BEGIN_STMT
+  Platform_Ipw_SetIrq (eIrqNumber_2(D), bEnable_3(D));
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+Platform_Init (const struct Platform_ConfigType * pConfig)
+{
+  const struct Platform_ConfigType * _1;
+  const struct Platform_Ipw_ConfigType * _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG u8CoreId => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Platform_Config[0];
+  _2 = _1->pIpwConfig;
+  Platform_Ipw_Init (_2);
+  return;
+
+}
+
+
+Platform_Ipw_SetIrq (IRQn_Type eIrqNumber, boolean bEnable)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  if (bEnable_2(D) != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_EnableIrq (eIrqNumber_4(D));
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_DisableIrq (eIrqNumber_4(D));
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+

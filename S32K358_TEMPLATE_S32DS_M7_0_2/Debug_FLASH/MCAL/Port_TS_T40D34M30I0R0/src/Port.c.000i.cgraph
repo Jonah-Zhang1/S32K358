@@ -1,0 +1,593 @@
+Trivially needed symbols: Port_GetVersionInfo/6 Port_RefreshPortDirection/5 Port_SetPinMode/4 Port_SetPinDirection/3 Port_Init/2
+
+
+Initial Symbol table:
+
+Port_Ipw_RefreshPortDirection/11 (Port_Ipw_RefreshPortDirection) @05f53ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_RefreshPortDirection/5 
+  Calls: 
+Port_Ipw_SetPinMode/10 (Port_Ipw_SetPinMode) @05f53d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_SetPinMode/4 
+  Calls: 
+Port_Ipw_SetPinDirection/9 (Port_Ipw_SetPinDirection) @05f53b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_SetPinDirection/3 
+  Calls: 
+Port_Ipw_Init/8 (Port_Ipw_Init) @05f539a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_Init/2 
+  Calls: 
+Det_ReportError/7 (Det_ReportError) @05f538c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_GetVersionInfo/6 Port_RefreshPortDirection/5 Port_RefreshPortDirection/5 Port_SetPinMode/4 Port_SetPinMode/4 Port_SetPinDirection/3 Port_SetPinDirection/3 Port_Init/2 Port_Init/2 
+  Calls: 
+Port_GetVersionInfo/6 (Port_GetVersionInfo) @05f532a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 
+Port_RefreshPortDirection/5 (Port_RefreshPortDirection) @05f53000
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f532a0
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Port_Ipw_RefreshPortDirection/11 Det_ReportError/7 Det_ReportError/7 
+Port_SetPinMode/4 (Port_SetPinMode) @05f4dc40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f53000
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 Port_Ipw_SetPinMode/10 Det_ReportError/7 
+Port_SetPinDirection/3 (Port_SetPinDirection) @05f4de00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f4dc40
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 Port_Ipw_SetPinDirection/9 Det_ReportError/7 
+Port_Init/2 (Port_Init) @05f4db60
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f4de00
+  References: Port_pConfigPtr/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Port_Ipw_Init/8 Det_ReportError/7 Det_ReportError/7 
+Port_pConfigPtr/1 (Port_pConfigPtr) @05f4c360
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @05f4de00
+  References: 
+  Referring: Port_Init/2 (write) Port_SetPinDirection/3 (read) Port_SetPinDirection/3 (read) Port_SetPinMode/4 (read) Port_SetPinMode/4 (read) Port_RefreshPortDirection/5 (read) Port_RefreshPortDirection/5 (read) Port_RefreshPortDirection/5 (read) 
+  Availability: not-ready
+  Varpool flags:
+DevAssert/0 (DevAssert) @063d1540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert/0
+
+Reclaimed Symbol table:
+
+Port_Ipw_RefreshPortDirection/11 (Port_Ipw_RefreshPortDirection) @05f53ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_RefreshPortDirection/5 
+  Calls: 
+Port_Ipw_SetPinMode/10 (Port_Ipw_SetPinMode) @05f53d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_SetPinMode/4 
+  Calls: 
+Port_Ipw_SetPinDirection/9 (Port_Ipw_SetPinDirection) @05f53b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_SetPinDirection/3 
+  Calls: 
+Port_Ipw_Init/8 (Port_Ipw_Init) @05f539a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_Init/2 
+  Calls: 
+Det_ReportError/7 (Det_ReportError) @05f538c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_GetVersionInfo/6 Port_RefreshPortDirection/5 Port_RefreshPortDirection/5 Port_SetPinMode/4 Port_SetPinMode/4 Port_SetPinDirection/3 Port_SetPinDirection/3 Port_Init/2 Port_Init/2 
+  Calls: 
+Port_GetVersionInfo/6 (Port_GetVersionInfo) @05f532a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 
+Port_RefreshPortDirection/5 (Port_RefreshPortDirection) @05f53000
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Port_Ipw_RefreshPortDirection/11 Det_ReportError/7 Det_ReportError/7 
+Port_SetPinMode/4 (Port_SetPinMode) @05f4dc40
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 Port_Ipw_SetPinMode/10 Det_ReportError/7 
+Port_SetPinDirection/3 (Port_SetPinDirection) @05f4de00
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 Port_Ipw_SetPinDirection/9 Det_ReportError/7 
+Port_Init/2 (Port_Init) @05f4db60
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Port_Ipw_Init/8 Det_ReportError/7 Det_ReportError/7 
+Port_pConfigPtr/1 (Port_pConfigPtr) @05f4c360
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Port_Init/2 (write) Port_SetPinDirection/3 (read) Port_SetPinDirection/3 (read) Port_SetPinMode/4 (read) Port_SetPinMode/4 (read) Port_RefreshPortDirection/5 (read) Port_RefreshPortDirection/5 (read) Port_RefreshPortDirection/5 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Port_Ipw_RefreshPortDirection/11 (Port_Ipw_RefreshPortDirection) @05f53ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_RefreshPortDirection/5 
+  Calls: 
+Port_Ipw_SetPinMode/10 (Port_Ipw_SetPinMode) @05f53d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_SetPinMode/4 
+  Calls: 
+Port_Ipw_SetPinDirection/9 (Port_Ipw_SetPinDirection) @05f53b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_SetPinDirection/3 
+  Calls: 
+Port_Ipw_Init/8 (Port_Ipw_Init) @05f539a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_Init/2 
+  Calls: 
+Det_ReportError/7 (Det_ReportError) @05f538c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_GetVersionInfo/6 Port_RefreshPortDirection/5 Port_RefreshPortDirection/5 Port_SetPinMode/4 Port_SetPinMode/4 Port_SetPinDirection/3 Port_SetPinDirection/3 Port_Init/2 Port_Init/2 
+  Calls: 
+Port_GetVersionInfo/6 (Port_GetVersionInfo) @05f532a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 
+Port_RefreshPortDirection/5 (Port_RefreshPortDirection) @05f53000
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Port_Ipw_RefreshPortDirection/11 Det_ReportError/7 Det_ReportError/7 
+Port_SetPinMode/4 (Port_SetPinMode) @05f4dc40
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 Port_Ipw_SetPinMode/10 Det_ReportError/7 
+Port_SetPinDirection/3 (Port_SetPinDirection) @05f4de00
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 Port_Ipw_SetPinDirection/9 Det_ReportError/7 
+Port_Init/2 (Port_Init) @05f4db60
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Port_Ipw_Init/8 Det_ReportError/7 Det_ReportError/7 
+Port_pConfigPtr/1 (Port_pConfigPtr) @05f4c360
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Port_Init/2 (write) Port_SetPinDirection/3 (read) Port_SetPinDirection/3 (read) Port_SetPinMode/4 (read) Port_SetPinMode/4 (read) Port_RefreshPortDirection/5 (read) Port_RefreshPortDirection/5 (read) Port_RefreshPortDirection/5 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Port_Ipw_RefreshPortDirection/11 (Port_Ipw_RefreshPortDirection) @05f53ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_RefreshPortDirection/5 
+  Calls: 
+Port_Ipw_SetPinMode/10 (Port_Ipw_SetPinMode) @05f53d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_SetPinMode/4 
+  Calls: 
+Port_Ipw_SetPinDirection/9 (Port_Ipw_SetPinDirection) @05f53b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_SetPinDirection/3 
+  Calls: 
+Port_Ipw_Init/8 (Port_Ipw_Init) @05f539a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_Init/2 
+  Calls: 
+Det_ReportError/7 (Det_ReportError) @05f538c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Port_GetVersionInfo/6 Port_RefreshPortDirection/5 Port_RefreshPortDirection/5 Port_SetPinMode/4 Port_SetPinMode/4 Port_SetPinDirection/3 Port_SetPinDirection/3 Port_Init/2 Port_Init/2 
+  Calls: 
+Port_GetVersionInfo/6 (Port_GetVersionInfo) @05f532a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 
+Port_RefreshPortDirection/5 (Port_RefreshPortDirection) @05f53000
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Port_Ipw_RefreshPortDirection/11 Det_ReportError/7 Det_ReportError/7 
+Port_SetPinMode/4 (Port_SetPinMode) @05f4dc40
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 Port_Ipw_SetPinMode/10 Det_ReportError/7 
+Port_SetPinDirection/3 (Port_SetPinDirection) @05f4de00
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (read) Port_pConfigPtr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 Port_Ipw_SetPinDirection/9 Det_ReportError/7 
+Port_Init/2 (Port_Init) @05f4db60
+  Type: function definition analyzed
+  Visibility: public
+  References: Port_pConfigPtr/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Port_Ipw_Init/8 Det_ReportError/7 Det_ReportError/7 
+Port_pConfigPtr/1 (Port_pConfigPtr) @05f4c360
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Port_Init/2 (write) Port_SetPinDirection/3 (read) Port_SetPinDirection/3 (read) Port_SetPinMode/4 (read) Port_SetPinMode/4 (read) Port_RefreshPortDirection/5 (read) Port_RefreshPortDirection/5 (read) Port_RefreshPortDirection/5 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Port_Ipw_RefreshPortDirection/11 (Port_Ipw_RefreshPortDirection) @05f53ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Port_RefreshPortDirection/5 (301440135 (estimated locally),0.28 per call) 
+  Calls: 
+Port_Ipw_SetPinMode/10 (Port_Ipw_SetPinMode) @05f53d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Port_SetPinMode/4 (751619280 (estimated locally),0.70 per call) 
+  Calls: 
+Port_Ipw_SetPinDirection/9 (Port_Ipw_SetPinDirection) @05f53b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Port_SetPinDirection/3 (751619280 (estimated locally),0.70 per call) 
+  Calls: 
+Port_Ipw_Init/8 (Port_Ipw_Init) @05f539a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Port_Init/2 (301440135 (estimated locally),0.28 per call) 
+  Calls: 
+Det_ReportError/7 (Det_ReportError) @05f538c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Port_GetVersionInfo/6 (187153200 (estimated locally),0.17 per call) Port_RefreshPortDirection/5 (585148489 (estimated locally),0.54 per call) Port_RefreshPortDirection/5 (187153200 (estimated locally),0.17 per call) Port_SetPinMode/4 (152127741 (estimated locally),0.14 per call) Port_SetPinMode/4 (322122544 (estimated locally),0.30 per call) Port_SetPinDirection/3 (152127741 (estimated locally),0.14 per call) Port_SetPinDirection/3 (322122544 (estimated locally),0.30 per call) Port_Init/2 (585148489 (estimated locally),0.54 per call) Port_Init/2 (187153200 (estimated locally),0.17 per call) 
+  Calls: 
+Port_GetVersionInfo/6 (Port_GetVersionInfo) @05f532a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 (187153200 (estimated locally),0.17 per call) 
+Port_RefreshPortDirection/5 (Port_RefreshPortDirection) @05f53000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Port_pConfigPtr/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Port_Ipw_RefreshPortDirection/11 (301440135 (estimated locally),0.28 per call) Det_ReportError/7 (585148489 (estimated locally),0.54 per call) Det_ReportError/7 (187153200 (estimated locally),0.17 per call) 
+Port_SetPinMode/4 (Port_SetPinMode) @05f4dc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Port_pConfigPtr/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 (152127741 (estimated locally),0.14 per call) Port_Ipw_SetPinMode/10 (751619280 (estimated locally),0.70 per call) Det_ReportError/7 (322122544 (estimated locally),0.30 per call) 
+Port_SetPinDirection/3 (Port_SetPinDirection) @05f4de00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Port_pConfigPtr/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Det_ReportError/7 (152127741 (estimated locally),0.14 per call) Port_Ipw_SetPinDirection/9 (751619280 (estimated locally),0.70 per call) Det_ReportError/7 (322122544 (estimated locally),0.30 per call) 
+Port_Init/2 (Port_Init) @05f4db60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Port_pConfigPtr/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Port_Ipw_Init/8 (301440135 (estimated locally),0.28 per call) Det_ReportError/7 (585148489 (estimated locally),0.54 per call) Det_ReportError/7 (187153200 (estimated locally),0.17 per call) 
+Port_pConfigPtr/1 (Port_pConfigPtr) @05f4c360
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Port_SetPinDirection/3 (read) Port_Init/2 (write) Port_SetPinMode/4 (read) Port_RefreshPortDirection/5 (read) 
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Port_pConfigPtr/1
+Removing variables:
+
+Final Symbol table:
+
+Port_Ipw_RefreshPortDirection/11 (Port_Ipw_RefreshPortDirection) @05f53ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Port_Ipw_SetPinMode/10 (Port_Ipw_SetPinMode) @05f53d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Port_Ipw_SetPinDirection/9 (Port_Ipw_SetPinDirection) @05f53b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Port_Ipw_Init/8 (Port_Ipw_Init) @05f539a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Det_ReportError/7 (Det_ReportError) @05f538c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Port_GetVersionInfo/6 (Port_GetVersionInfo) @05f532a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Port_GetVersionInfo (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Port_RefreshPortDirection/5 (Port_RefreshPortDirection) @05f53000
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Port_RefreshPortDirection (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Port_SetPinMode/4 (Port_SetPinMode) @05f4dc40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Port_SetPinMode (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Port_SetPinDirection/3 (Port_SetPinDirection) @05f4de00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Port_SetPinDirection (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Port_Init/2 (Port_Init) @05f4db60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Port_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Port_pConfigPtr/1 (Port_pConfigPtr) @05f4c360
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.bss.Port_pConfigPtr (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

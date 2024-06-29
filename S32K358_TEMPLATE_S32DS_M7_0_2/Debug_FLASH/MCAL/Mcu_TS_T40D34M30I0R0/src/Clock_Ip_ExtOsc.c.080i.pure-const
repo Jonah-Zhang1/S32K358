@@ -1,0 +1,1538 @@
+
+
+ local analysis of Clock_Ip_EnableSxoscOsconEocv/11
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of Clock_Ip_DisableSxoscOsconEocv/10
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of Clock_Ip_CompleteSxoscOsconEocv/9
+   scanning: if (Config_14(D) != 0B)
+  scanning: _1 = Config_14(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_16 = (uint32) _3;
+  scanning: _4 = Config_14(D)->Enable;
+    Indirect ref read is not const
+  scanning: if (_4 != 0)
+  scanning: _5 = Config_14(D)->BypassOption;
+    Indirect ref read is not const
+  scanning: if (_5 == 0)
+  scanning: Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+  scanning: _6 = Clock_Ip_apxXosc[Instance_16];
+  scanning: _7 ={v} _6->STAT;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _8 = _7 >> 31;
+  scanning: TimeoutTicks.0_9 = TimeoutTicks;
+  scanning: TimeoutOccurred_20 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.0_9);
+  scanning: if (_8 == 0)
+  scanning: if (TimeoutOccurred_20 != 0)
+  scanning: if (TimeoutOccurred_11 != 0)
+  scanning: _10 = Config_14(D)->Name;
+    Indirect ref read is not const
+  scanning: Clock_Ip_ReportClockErrors (1, _10);
+  scanning: Clock_Ip_ReportClockErrors (2, _1);
+  scanning: return;
+
+
+ local analysis of Clock_Ip_SetSxoscOsconEocv/8
+   scanning: if (Config_14(D) != 0B)
+  scanning: _1 = Config_14(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_16 = (uint32) _3;
+  scanning: _4 = Config_14(D)->Enable;
+    Indirect ref read is not const
+  scanning: if (_4 != 0)
+  scanning: _5 = Config_14(D)->StartupDelay;
+    Indirect ref read is not const
+  scanning: _6 = (long unsigned int) _5;
+  scanning: _7 = _6 << 16;
+  scanning: _8 = _7 & 16711680;
+  scanning: _9 = Clock_Ip_apxXosc[Instance_16];
+  scanning: _10 = _8 | 1;
+  scanning: _9->CTRL ={v} _10;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _11 = Config_14(D)->Freq;
+    Indirect ref read is not const
+  scanning: Clock_Ip_SetExternalOscillatorFrequency (_1, _11);
+  scanning: return;
+
+
+ local analysis of Clock_Ip_ResetSxoscOsconEocv/7
+   scanning: if (Config_8(D) != 0B)
+  scanning: _1 = Config_8(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_10 = (uint32) _3;
+  scanning: _4 = Clock_Ip_apxXosc[Instance_10];
+  scanning: _5 ={v} _4->CTRL;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _6 = _5 & 4294967294;
+  scanning: _4->CTRL ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_EnableFxoscOsconBypEocvGmSel/6
+   scanning: if (Config_9(D) != 0B)
+  scanning: _1 = Config_9(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_11 = (uint32) _3;
+  scanning: _4 = Config_9(D)->Enable;
+    Indirect ref read is not const
+  scanning: if (_4 == 1)
+  scanning: _5 = Clock_Ip_apxXosc[Instance_11];
+  scanning: _6 ={v} _5->CTRL;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _7 = _6 | 1;
+  scanning: _5->CTRL ={v} _7;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_DisableFxoscOsconBypEocvGmSel/5
+   scanning: _1 = (int) XoscName_6(D);
+  scanning: _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  scanning: Instance_8 = (uint32) _2;
+  scanning: _3 = Clock_Ip_apxXosc[Instance_8];
+  scanning: _4 ={v} _3->CTRL;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _5 = _4 & 4294967294;
+  scanning: _3->CTRL ={v} _5;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4
+   scanning: if (Config_15(D) != 0B)
+  scanning: _1 = Config_15(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_17 = (uint32) _3;
+  scanning: _4 = Config_15(D)->Enable;
+    Indirect ref read is not const
+  scanning: if (_4 != 0)
+  scanning: _5 = Config_15(D)->CompEn;
+    Indirect ref read is not const
+  scanning: if (_5 != 0)
+  scanning: _6 = Config_15(D)->BypassOption;
+    Indirect ref read is not const
+  scanning: if (_6 == 0)
+  scanning: Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+  scanning: _7 = Clock_Ip_apxXosc[Instance_17];
+  scanning: _8 ={v} _7->STAT;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _9 = _8 >> 31;
+  scanning: TimeoutTicks.1_10 = TimeoutTicks;
+  scanning: TimeoutOccurred_21 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_10);
+  scanning: if (_9 == 0)
+  scanning: if (TimeoutOccurred_21 != 0)
+  scanning: if (TimeoutOccurred_12 != 0)
+  scanning: _11 = Config_15(D)->Name;
+    Indirect ref read is not const
+  scanning: Clock_Ip_ReportClockErrors (1, _11);
+  scanning: Clock_Ip_ReportClockErrors (2, _1);
+  scanning: return;
+
+
+ local analysis of Clock_Ip_SetFxoscOsconBypEocvGmSel/3
+   scanning: if (Config_28(D) != 0B)
+  scanning: _1 = Config_28(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_30 = (uint32) _3;
+  scanning: _4 = Config_28(D)->Enable;
+    Indirect ref read is not const
+  scanning: if (_4 != 0)
+  scanning: _5 = Config_28(D)->BypassOption;
+    Indirect ref read is not const
+  scanning: _6 = (long unsigned int) _5;
+  scanning: _7 = _6 << 31;
+  scanning: _8 = Config_28(D)->StartupDelay;
+    Indirect ref read is not const
+  scanning: _9 = (long unsigned int) _8;
+  scanning: _10 = _9 << 16;
+  scanning: _11 = _10 & 16711680;
+  scanning: _12 = _7 | _11;
+  scanning: _13 = Config_28(D)->TransConductance;
+    Indirect ref read is not const
+  scanning: _14 = (long unsigned int) _13;
+  scanning: _15 = _14 << 4;
+  scanning: _16 = _15 & 255;
+  scanning: _17 = _12 | _16;
+  scanning: _18 = Config_28(D)->CompEn;
+    Indirect ref read is not const
+  scanning: _19 = (long unsigned int) _18;
+  scanning: _20 = _19 << 24;
+  scanning: _21 = _20 & 16777216;
+  scanning: _22 = _17 | _21;
+  scanning: _23 = Clock_Ip_apxXosc[Instance_30];
+  scanning: _24 = _22 | 1;
+  scanning: _23->CTRL ={v} _24;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _25 = Config_28(D)->Freq;
+    Indirect ref read is not const
+  scanning: Clock_Ip_SetExternalOscillatorFrequency (_1, _25);
+  scanning: return;
+
+
+ local analysis of Clock_Ip_ResetFxoscOsconBypEocvGmSel/2
+   scanning: if (Config_8(D) != 0B)
+  scanning: _1 = Config_8(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_10 = (uint32) _3;
+  scanning: _4 = Clock_Ip_apxXosc[Instance_10];
+  scanning: _5 ={v} _4->CTRL;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _6 = _5 & 4294967294;
+  scanning: _4->CTRL ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_DisableClockIpExternalOscillatorEmpty/1
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of Clock_Ip_ExternalOscillatorEmpty/0
+   scanning: return;
+Function is locally const.
+callgraph:
+
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @065f81c0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 1
+  Aux: @02716b80
+  References: 
+  Referring: 
+  Function Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 is inline copy in Clock_Ip_DisableSxoscOsconEocv/10
+  Clone of Clock_Ip_DisableClockIpExternalOscillatorEmpty/1
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged optimize_size
+  Called by: Clock_Ip_DisableSxoscOsconEocv/10 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/19 (Clock_Ip_ExternalOscillatorEmpty) @065f80e0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 0
+  Aux: @02716bc0
+  References: 
+  Referring: 
+  Function Clock_Ip_ExternalOscillatorEmpty/19 is inline copy in Clock_Ip_EnableSxoscOsconEocv/11
+  Clone of Clock_Ip_ExternalOscillatorEmpty/0
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged optimize_size
+  Called by: Clock_Ip_EnableSxoscOsconEocv/11 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_SetExternalOscillatorFrequency/18 (Clock_Ip_SetExternalOscillatorFrequency) @06482540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (751619281 (estimated locally),0.70 per call) Clock_Ip_SetSxoscOsconEocv/8 (751619281 (estimated locally),0.70 per call) 
+  Calls: 
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @06482380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (93952410 (estimated locally),0.09 per call) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (31004295 (estimated locally),0.03 per call) Clock_Ip_CompleteSxoscOsconEocv/9 (114863530 (estimated locally),0.18 per call) Clock_Ip_CompleteSxoscOsconEocv/9 (37904965 (estimated locally),0.06 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @064822a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (878265122 (estimated locally),0.82 per call) Clock_Ip_CompleteSxoscOsconEocv/9 (1073741824 (estimated locally),1.64 per call) 
+  Calls: 
+Clock_Ip_StartTimeout/14 (Clock_Ip_StartTimeout) @064821c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (93952410 (estimated locally),0.09 per call) Clock_Ip_CompleteSxoscOsconEocv/9 (114863530 (estimated locally),0.18 per call) 
+  Calls: 
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @0640a9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_EnableSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716a20
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_ExternalOscillatorEmpty/19 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @0640a700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_DisableSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716c00
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @0640a460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027168e0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:656363027 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (114863530 (estimated locally),0.18 per call) Clock_Ip_ReportClockErrors/17 (37904965 (estimated locally),0.06 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),1.64 per call) Clock_Ip_StartTimeout/14 (114863530 (estimated locally),0.18 per call) 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @0640a1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716c20
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetExternalOscillatorFrequency/18 (751619281 (estimated locally),0.70 per call) 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06400c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_ResetSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716860
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @064002a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027169c0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06400e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716880
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06400b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716940
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (93952410 (estimated locally),0.09 per call) Clock_Ip_ReportClockErrors/17 (31004295 (estimated locally),0.03 per call) Clock_Ip_TimeoutExpired/16 (878265122 (estimated locally),0.82 per call) Clock_Ip_StartTimeout/14 (93952410 (estimated locally),0.09 per call) 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @064008c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716a40
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetExternalOscillatorFrequency/18 (751619281 (estimated locally),0.70 per call) 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @064001c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027168c0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: Clock_Ip_ResetSxoscOsconEocv/7 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06287d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 20
+  Address is taken.
+  Aux: @02716900
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06287ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 19
+  Address is taken.
+  Aux: @02716ae0
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @065f81c0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 1
+  Aux: @02716b80
+  References: 
+  Referring: 
+  Function Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 is inline copy in Clock_Ip_DisableSxoscOsconEocv/10
+  Clone of Clock_Ip_DisableClockIpExternalOscillatorEmpty/1
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged optimize_size
+  Called by: Clock_Ip_DisableSxoscOsconEocv/10 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/19 (Clock_Ip_ExternalOscillatorEmpty) @065f80e0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 0
+  Aux: @02716bc0
+  References: 
+  Referring: 
+  Function Clock_Ip_ExternalOscillatorEmpty/19 is inline copy in Clock_Ip_EnableSxoscOsconEocv/11
+  Clone of Clock_Ip_ExternalOscillatorEmpty/0
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged optimize_size
+  Called by: Clock_Ip_EnableSxoscOsconEocv/11 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @0640a9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_EnableSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716a20
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_ExternalOscillatorEmpty/19 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @0640a700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_DisableSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716c00
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @0640a460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027168e0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:656363027 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (114863530 (estimated locally),0.18 per call) Clock_Ip_ReportClockErrors/17 (37904965 (estimated locally),0.06 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),1.64 per call) Clock_Ip_StartTimeout/14 (114863530 (estimated locally),0.18 per call) 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @0640a1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716c20
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetExternalOscillatorFrequency/18 (751619281 (estimated locally),0.70 per call) 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06400c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_ResetSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716860
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @064002a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027169c0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06400e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716880
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06400b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716940
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (93952410 (estimated locally),0.09 per call) Clock_Ip_ReportClockErrors/17 (31004295 (estimated locally),0.03 per call) Clock_Ip_TimeoutExpired/16 (878265122 (estimated locally),0.82 per call) Clock_Ip_StartTimeout/14 (93952410 (estimated locally),0.09 per call) 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @064008c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716a40
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetExternalOscillatorFrequency/18 (751619281 (estimated locally),0.70 per call) 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @064001c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027168c0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: Clock_Ip_ResetSxoscOsconEocv/7 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06287d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 20
+  Address is taken.
+  Aux: @02716900
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06287ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 19
+  Address is taken.
+  Aux: @02716ae0
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: 
+
+
+
+MALLOC LATTICE Initial:
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/20: malloc_bottom
+Clock_Ip_ExternalOscillatorEmpty/19: malloc_bottom
+Clock_Ip_EnableSxoscOsconEocv/11: malloc_bottom
+Clock_Ip_DisableSxoscOsconEocv/10: malloc_bottom
+Clock_Ip_CompleteSxoscOsconEocv/9: malloc_bottom
+Clock_Ip_SetSxoscOsconEocv/8: malloc_bottom
+Clock_Ip_ResetSxoscOsconEocv/7: malloc_bottom
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6: malloc_bottom
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5: malloc_bottom
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4: malloc_bottom
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3: malloc_bottom
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2: malloc_bottom
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1: malloc_bottom
+Clock_Ip_ExternalOscillatorEmpty/0: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/20: malloc_bottom
+Clock_Ip_ExternalOscillatorEmpty/19: malloc_bottom
+Clock_Ip_EnableSxoscOsconEocv/11: malloc_bottom
+Clock_Ip_DisableSxoscOsconEocv/10: malloc_bottom
+Clock_Ip_CompleteSxoscOsconEocv/9: malloc_bottom
+Clock_Ip_SetSxoscOsconEocv/8: malloc_bottom
+Clock_Ip_ResetSxoscOsconEocv/7: malloc_bottom
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6: malloc_bottom
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5: malloc_bottom
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4: malloc_bottom
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3: malloc_bottom
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2: malloc_bottom
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1: malloc_bottom
+Clock_Ip_ExternalOscillatorEmpty/0: malloc_bottom
+callgraph:
+
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @065f81c0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 1
+  Aux: @02716bc0
+  References: 
+  Referring: 
+  Function Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 is inline copy in Clock_Ip_DisableSxoscOsconEocv/10
+  Clone of Clock_Ip_DisableClockIpExternalOscillatorEmpty/1
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged optimize_size
+  Called by: Clock_Ip_DisableSxoscOsconEocv/10 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/19 (Clock_Ip_ExternalOscillatorEmpty) @065f80e0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 0
+  Aux: @02716ae0
+  References: 
+  Referring: 
+  Function Clock_Ip_ExternalOscillatorEmpty/19 is inline copy in Clock_Ip_EnableSxoscOsconEocv/11
+  Clone of Clock_Ip_ExternalOscillatorEmpty/0
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged optimize_size
+  Called by: Clock_Ip_EnableSxoscOsconEocv/11 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_SetExternalOscillatorFrequency/18 (Clock_Ip_SetExternalOscillatorFrequency) @06482540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (751619281 (estimated locally),0.70 per call) Clock_Ip_SetSxoscOsconEocv/8 (751619281 (estimated locally),0.70 per call) 
+  Calls: 
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @06482380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (93952410 (estimated locally),0.09 per call) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (31004295 (estimated locally),0.03 per call) Clock_Ip_CompleteSxoscOsconEocv/9 (114863530 (estimated locally),0.18 per call) Clock_Ip_CompleteSxoscOsconEocv/9 (37904965 (estimated locally),0.06 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @064822a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (878265122 (estimated locally),0.82 per call) Clock_Ip_CompleteSxoscOsconEocv/9 (1073741824 (estimated locally),1.64 per call) 
+  Calls: 
+Clock_Ip_StartTimeout/14 (Clock_Ip_StartTimeout) @064821c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (93952410 (estimated locally),0.09 per call) Clock_Ip_CompleteSxoscOsconEocv/9 (114863530 (estimated locally),0.18 per call) 
+  Calls: 
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @0640a9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_EnableSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716b80
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_ExternalOscillatorEmpty/19 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @0640a700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_DisableSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716a20
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @0640a460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716860
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:656363027 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (114863530 (estimated locally),0.18 per call) Clock_Ip_ReportClockErrors/17 (37904965 (estimated locally),0.06 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),1.64 per call) Clock_Ip_StartTimeout/14 (114863530 (estimated locally),0.18 per call) 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @0640a1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716880
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetExternalOscillatorFrequency/18 (751619281 (estimated locally),0.70 per call) 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06400c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_ResetSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @027169c0
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @064002a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716c20
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06400e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716a40
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06400b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027168c0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (93952410 (estimated locally),0.09 per call) Clock_Ip_ReportClockErrors/17 (31004295 (estimated locally),0.03 per call) Clock_Ip_TimeoutExpired/16 (878265122 (estimated locally),0.82 per call) Clock_Ip_StartTimeout/14 (93952410 (estimated locally),0.09 per call) 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @064008c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716c00
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetExternalOscillatorFrequency/18 (751619281 (estimated locally),0.70 per call) 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @064001c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027168e0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: Clock_Ip_ResetSxoscOsconEocv/7 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06287d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 20
+  Address is taken.
+  Aux: @02716900
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06287ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 19
+  Address is taken.
+  Aux: @02716920
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @0640a9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_EnableSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716b80
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_ExternalOscillatorEmpty/19 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_ExternalOscillatorEmpty/19 (Clock_Ip_ExternalOscillatorEmpty) @065f80e0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 0
+  Aux: @02716ae0
+  References: 
+  Referring: 
+  Function Clock_Ip_ExternalOscillatorEmpty/19 is inline copy in Clock_Ip_EnableSxoscOsconEocv/11
+  Clone of Clock_Ip_ExternalOscillatorEmpty/0
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged optimize_size
+  Called by: Clock_Ip_EnableSxoscOsconEocv/11 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @0640a700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_DisableSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @02716a20
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @065f81c0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 1
+  Aux: @02716bc0
+  References: 
+  Referring: 
+  Function Clock_Ip_DisableClockIpExternalOscillatorEmpty/20 is inline copy in Clock_Ip_DisableSxoscOsconEocv/10
+  Clone of Clock_Ip_DisableClockIpExternalOscillatorEmpty/1
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged optimize_size
+  Called by: Clock_Ip_DisableSxoscOsconEocv/10 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @0640a460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716860
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:656363027 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (114863530 (estimated locally),0.18 per call) Clock_Ip_ReportClockErrors/17 (37904965 (estimated locally),0.06 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),1.64 per call) Clock_Ip_StartTimeout/14 (114863530 (estimated locally),0.18 per call) 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @0640a1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716880
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetExternalOscillatorFrequency/18 (751619281 (estimated locally),0.70 per call) 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06400c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_ResetSxoscOsconEocv (implicit_section)
+  Address is taken.
+  Aux: @027169c0
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @064002a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716c20
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06400e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716a40
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06400b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027168c0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (93952410 (estimated locally),0.09 per call) Clock_Ip_ReportClockErrors/17 (31004295 (estimated locally),0.03 per call) Clock_Ip_TimeoutExpired/16 (878265122 (estimated locally),0.82 per call) Clock_Ip_StartTimeout/14 (93952410 (estimated locally),0.09 per call) 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @064008c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02716c00
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetExternalOscillatorFrequency/18 (751619281 (estimated locally),0.70 per call) 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @064001c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027168e0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: Clock_Ip_ResetSxoscOsconEocv/7 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06287d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 20
+  Address is taken.
+  Aux: @02716900
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06287ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 19
+  Address is taken.
+  Aux: @02716920
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: 
+
+Function found not to call free: Clock_Ip_ExternalOscillatorEmpty/0
+Function found not to call free: Clock_Ip_DisableClockIpExternalOscillatorEmpty/1
+Function found not to call free: Clock_Ip_ResetFxoscOsconBypEocvGmSel/2
+Function found not to call free: Clock_Ip_DisableFxoscOsconBypEocvGmSel/5
+Function found not to call free: Clock_Ip_EnableFxoscOsconBypEocvGmSel/6
+Function found not to call free: Clock_Ip_ResetSxoscOsconEocv/7
+Function found not to call free: Clock_Ip_DisableClockIpExternalOscillatorEmpty/20
+Function found not to call free: Clock_Ip_DisableSxoscOsconEocv/10
+Function found not to call free: Clock_Ip_ExternalOscillatorEmpty/19
+Function found not to call free: Clock_Ip_EnableSxoscOsconEocv/11
+Clock_Ip_EnableSxoscOsconEocv (const struct Clock_Ip_XoscConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  Clock_Ip_ExternalOscillatorEmpty (Config_1(D)); [tail call]
+  return;
+
+}
+
+
+Clock_Ip_DisableSxoscOsconEocv (Clock_Ip_NameType XoscName)
+{
+  <bb 2> [local count: 1073741824]:
+  Clock_Ip_DisableClockIpExternalOscillatorEmpty (XoscName_1(D)); [tail call]
+  return;
+
+}
+
+
+Clock_Ip_CompleteSxoscOsconEocv (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  short unsigned int _4;
+  unsigned char _5;
+  volatile struct Clock_Ip_ExtOSCType * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int TimeoutTicks.0_9;
+  <unnamed type> _10;
+
+  <bb 2> [local count: 656363027]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_14(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 11>; [30.00%]
+
+  <bb 3> [local count: 459454120]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_14(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_16 = (uint32) _3;
+  # DEBUG Instance => Instance_16
+  # DEBUG BEGIN_STMT
+  _4 = Config_14(D)->Enable;
+  if (_4 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 4> [local count: 229727060]:
+  # DEBUG BEGIN_STMT
+  _5 = Config_14(D)->BypassOption;
+  if (_5 == 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 5> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_apxXosc[Instance_16];
+  _7 ={v} _6->STAT;
+  _8 = _7 >> 31;
+  # DEBUG SxoscStatus => _8
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.0_9 = TimeoutTicks;
+  TimeoutOccurred_20 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.0_9);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_20
+  # DEBUG BEGIN_STMT
+  if (_8 == 0)
+    goto <bb 7>; [94.50%]
+  else
+    goto <bb 8>; [5.50%]
+
+  <bb 7> [local count: 1014686026]:
+  if (TimeoutOccurred_20 != 0)
+    goto <bb 8>; [5.50%]
+  else
+    goto <bb 12>; [94.50%]
+
+  <bb 12> [local count: 958878295]:
+  goto <bb 6>; [100.00%]
+
+  <bb 8> [local count: 114863531]:
+  # TimeoutOccurred_11 = PHI <TimeoutOccurred_20(6), TimeoutOccurred_20(7)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_11 != 0)
+    goto <bb 9>; [33.00%]
+  else
+    goto <bb 11>; [67.00%]
+
+  <bb 9> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  _10 = Config_14(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _10);
+  goto <bb 11>; [100.00%]
+
+  <bb 10> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ReportClockErrors (2, _1);
+
+  <bb 11> [local count: 656363028]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Clock_Ip_SetSxoscOsconEocv (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  short unsigned int _4;
+  short unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  volatile struct Clock_Ip_ExtOSCType * _9;
+  long unsigned int _10;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_14(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 6>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_14(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_16 = (uint32) _3;
+  # DEBUG Instance => Instance_16
+  # DEBUG BEGIN_STMT
+  _4 = Config_14(D)->Enable;
+  if (_4 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 375809640]:
+  # DEBUG BEGIN_STMT
+  _5 = Config_14(D)->StartupDelay;
+  _6 = (long unsigned int) _5;
+  _7 = _6 << 16;
+  _8 = _7 & 16711680;
+  _9 = Clock_Ip_apxXosc[Instance_16];
+  _10 = _8 | 1;
+  _9->CTRL ={v} _10;
+
+  <bb 5> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _11 = Config_14(D)->Freq;
+  Clock_Ip_SetExternalOscillatorFrequency (_1, _11);
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ResetSxoscOsconEocv (const struct Clock_Ip_XoscConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  Clock_Ip_ResetFxoscOsconBypEocvGmSel (Config_2(D)); [tail call]
+  return;
+
+}
+
+
+Clock_Ip_EnableFxoscOsconBypEocvGmSel (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  short unsigned int _4;
+  volatile struct Clock_Ip_ExtOSCType * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_9(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 5>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_9(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_11 = (uint32) _3;
+  # DEBUG Instance => Instance_11
+  # DEBUG BEGIN_STMT
+  _4 = Config_9(D)->Enable;
+  if (_4 == 1)
+    goto <bb 4>; [34.00%]
+  else
+    goto <bb 5>; [66.00%]
+
+  <bb 4> [local count: 255550558]:
+  # DEBUG BEGIN_STMT
+  _5 = Clock_Ip_apxXosc[Instance_11];
+  _6 ={v} _5->CTRL;
+  _7 = _6 | 1;
+  _5->CTRL ={v} _7;
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_DisableFxoscOsconBypEocvGmSel (Clock_Ip_NameType XoscName)
+{
+  uint32 Instance;
+  int _1;
+  unsigned char _2;
+  volatile struct Clock_Ip_ExtOSCType * _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) XoscName_6(D);
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_8 = (uint32) _2;
+  # DEBUG Instance => Instance_8
+  # DEBUG BEGIN_STMT
+  _3 = Clock_Ip_apxXosc[Instance_8];
+  _4 ={v} _3->CTRL;
+  _5 = _4 & 4294967294;
+  _3->CTRL ={v} _5;
+  return;
+
+}
+
+
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  short unsigned int _4;
+  unsigned char _5;
+  unsigned char _6;
+  volatile struct Clock_Ip_ExtOSCType * _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int TimeoutTicks.1_10;
+  <unnamed type> _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_15(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 12>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_15(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_17 = (uint32) _3;
+  # DEBUG Instance => Instance_17
+  # DEBUG BEGIN_STMT
+  _4 = Config_15(D)->Enable;
+  if (_4 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 12>; [50.00%]
+
+  <bb 4> [local count: 375809640]:
+  # DEBUG BEGIN_STMT
+  _5 = Config_15(D)->CompEn;
+  if (_5 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 12>; [50.00%]
+
+  <bb 5> [local count: 187904820]:
+  # DEBUG BEGIN_STMT
+  _6 = Config_15(D)->BypassOption;
+  if (_6 == 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 6> [local count: 93952410]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 7> [local count: 878265122]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _7 = Clock_Ip_apxXosc[Instance_17];
+  _8 ={v} _7->STAT;
+  _9 = _8 >> 31;
+  # DEBUG FxoscStatus => _9
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.1_10 = TimeoutTicks;
+  TimeoutOccurred_21 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_10);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_21
+  # DEBUG BEGIN_STMT
+  if (_9 == 0)
+    goto <bb 8>; [94.50%]
+  else
+    goto <bb 9>; [5.50%]
+
+  <bb 8> [local count: 829960541]:
+  if (TimeoutOccurred_21 != 0)
+    goto <bb 9>; [5.50%]
+  else
+    goto <bb 13>; [94.50%]
+
+  <bb 13> [local count: 784312712]:
+  goto <bb 7>; [100.00%]
+
+  <bb 9> [local count: 93952411]:
+  # TimeoutOccurred_12 = PHI <TimeoutOccurred_21(7), TimeoutOccurred_21(8)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_12 != 0)
+    goto <bb 10>; [33.00%]
+  else
+    goto <bb 12>; [67.00%]
+
+  <bb 10> [local count: 31004295]:
+  # DEBUG BEGIN_STMT
+  _11 = Config_15(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _11);
+  goto <bb 12>; [100.00%]
+
+  <bb 11> [local count: 93952410]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ReportClockErrors (2, _1);
+
+  <bb 12> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Clock_Ip_SetFxoscOsconBypEocvGmSel (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  short unsigned int _4;
+  unsigned char _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  short unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  unsigned char _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  unsigned char _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  long unsigned int _22;
+  volatile struct Clock_Ip_ExtOSCType * _23;
+  long unsigned int _24;
+  long unsigned int _25;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_28(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 6>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_28(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_30 = (uint32) _3;
+  # DEBUG Instance => Instance_30
+  # DEBUG BEGIN_STMT
+  _4 = Config_28(D)->Enable;
+  if (_4 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 375809640]:
+  # DEBUG BEGIN_STMT
+  _5 = Config_28(D)->BypassOption;
+  _6 = (long unsigned int) _5;
+  _7 = _6 << 31;
+  _8 = Config_28(D)->StartupDelay;
+  _9 = (long unsigned int) _8;
+  _10 = _9 << 16;
+  _11 = _10 & 16711680;
+  _12 = _7 | _11;
+  _13 = Config_28(D)->TransConductance;
+  _14 = (long unsigned int) _13;
+  _15 = _14 << 4;
+  _16 = _15 & 255;
+  _17 = _12 | _16;
+  _18 = Config_28(D)->CompEn;
+  _19 = (long unsigned int) _18;
+  _20 = _19 << 24;
+  _21 = _20 & 16777216;
+  _22 = _17 | _21;
+  _23 = Clock_Ip_apxXosc[Instance_30];
+  _24 = _22 | 1;
+  _23->CTRL ={v} _24;
+
+  <bb 5> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _25 = Config_28(D)->Freq;
+  Clock_Ip_SetExternalOscillatorFrequency (_1, _25);
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ResetFxoscOsconBypEocvGmSel (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  volatile struct Clock_Ip_ExtOSCType * _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_8(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 4>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_8(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_10 = (uint32) _3;
+  # DEBUG Instance => Instance_10
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_apxXosc[Instance_10];
+  _5 ={v} _4->CTRL;
+  _6 = _5 & 4294967294;
+  _4->CTRL ={v} _6;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_DisableClockIpExternalOscillatorEmpty (Clock_Ip_NameType XoscName)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ExternalOscillatorEmpty (const struct Clock_Ip_XoscConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

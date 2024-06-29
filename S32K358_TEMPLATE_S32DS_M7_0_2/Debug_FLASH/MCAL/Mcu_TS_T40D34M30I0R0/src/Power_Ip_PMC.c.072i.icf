@@ -1,0 +1,129 @@
+Dump after hash based groups
+Congruence classes: 2 with total: 2 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      2
+Dump after WPA based types groups
+Congruence classes: 2 with total: 2 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      2
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 2 with total: 2 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      2
+Init called for 0 items (0.00%).
+Dump after full equality comparison of groups
+Congruence classes: 2 with total: 2 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      2
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Congruence classes: 2 with total: 2 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      2
+
+Item count: 2
+Congruent classes before: 2, after: 2
+Average class size before: 1.00, after: 1.00
+Average non-singular class size: 0.00, count: 0
+Equal symbols: 0
+Totally needed symbols: 0, fraction of loaded symbols: 0.00%
+
+Power_Ip_PMC_PrepareLowPowerEntry ()
+{
+  uint32 TempValue;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => 0
+  # DEBUG BEGIN_STMT
+  TempValue_2 ={v} MEM[(struct PMC_Type *)1076789248B].CONFIG;
+  # DEBUG TempValue => TempValue_2
+  # DEBUG BEGIN_STMT
+  TempValue_3 = TempValue_2 & 4294966527;
+  # DEBUG TempValue => TempValue_3
+  # DEBUG BEGIN_STMT
+  # DEBUG TempValue => TempValue_3
+  # DEBUG BEGIN_STMT
+  MEM[(struct PMC_Type *)1076789248B].CONFIG ={v} TempValue_3;
+  return;
+
+}
+
+
+Power_Ip_PMC_PowerInit (const struct Power_Ip_PMC_ConfigType * ConfigPtr)
+{
+  uint32 ConfigValue;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ConfigValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct PMC_Type *)1076789248B].LVSC;
+  _2 = _1 & 2164195328;
+  if (_2 == 2164195328)
+    goto <bb 3>; [34.00%]
+  else
+    goto <bb 4>; [66.00%]
+
+  <bb 3> [local count: 365072224]:
+  # DEBUG BEGIN_STMT
+  MEM[(struct PMC_Type *)1076789248B].LVSC ={v} 2214551391;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  ConfigValue_10 ={v} MEM[(struct PMC_Type *)1076789248B].CONFIG;
+  # DEBUG ConfigValue => ConfigValue_10
+  # DEBUG BEGIN_STMT
+  ConfigValue_11 = ConfigValue_10 & 4294966369;
+  # DEBUG ConfigValue => ConfigValue_11
+  # DEBUG BEGIN_STMT
+  _3 = ConfigPtr_12(D)->ConfigRegister;
+  _4 = _3 & 926;
+  ConfigValue_13 = _4 | ConfigValue_11;
+  # DEBUG ConfigValue => ConfigValue_13
+  # DEBUG BEGIN_STMT
+  MEM[(struct PMC_Type *)1076789248B].CONFIG ={v} ConfigValue_13;
+  # DEBUG BEGIN_STMT
+  ConfigValue_15 = ConfigPtr_12(D)->SMPSRegister;
+  # DEBUG ConfigValue => ConfigValue_15
+  # DEBUG BEGIN_STMT
+  _5 = ConfigValue_15 & 128;
+  if (_5 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 5> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  MEM[(struct PMC_Type *)1076789248B].SMPSCONFIG ={v} 0;
+  # DEBUG BEGIN_STMT
+  ConfigValue_18 = ConfigValue_15 & 4294967167;
+  # DEBUG ConfigValue => ConfigValue_18
+  # DEBUG BEGIN_STMT
+  MEM[(struct PMC_Type *)1076789248B].SMPSCONFIG ={v} ConfigValue_18;
+  # DEBUG BEGIN_STMT
+  ConfigValue_20 = ConfigValue_18 | 128;
+  # DEBUG ConfigValue => ConfigValue_20
+  # DEBUG BEGIN_STMT
+  MEM[(struct PMC_Type *)1076789248B].SMPSCONFIG ={v} ConfigValue_20;
+  goto <bb 7>; [100.00%]
+
+  <bb 6> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  MEM[(struct PMC_Type *)1076789248B].SMPSCONFIG ={v} ConfigValue_15;
+
+  <bb 7> [local count: 1073741824]:
+  return;
+
+}
+
+

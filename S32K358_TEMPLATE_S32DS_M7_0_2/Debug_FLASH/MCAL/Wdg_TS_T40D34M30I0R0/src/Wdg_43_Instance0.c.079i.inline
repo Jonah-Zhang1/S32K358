@@ -1,0 +1,320 @@
+IPA function summary for Wdg_43_Instance0_GetVersionInfo/5 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     6
+  min size:       3
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelGetVersionInfo/10 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+
+IPA function summary for Wdg_43_Instance0_ClearResetRequest/4 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelClearResetRequest/9 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+       op0 is compile time invariant
+
+IPA function summary for Wdg_43_Instance0_SetTriggerCondition/3 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     6
+  min size:       3
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelSetTriggerCondition/8 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+
+IPA function summary for Wdg_43_Instance0_SetMode/2 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     7
+  min size:       4
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelSetMode/7 function body not available
+      freq:1.00 loop depth: 0 size: 4 time: 13
+       op0 is compile time invariant
+
+IPA function summary for Wdg_43_Instance0_Init/1 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     6
+  min size:       3
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelInit/6 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+
+
+Flattening functions:
+Overall time estimate: 70.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Wdg_43_Instance0_GetVersionInfo/5.
+Enqueueing calls in Wdg_43_Instance0_ClearResetRequest/4.
+Enqueueing calls in Wdg_43_Instance0_SetTriggerCondition/3.
+Enqueueing calls in Wdg_43_Instance0_SetMode/2.
+Enqueueing calls in Wdg_43_Instance0_Init/1.
+node context cache: 0 hits, 0 misses, 0 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 70.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        5 calls, 5.000000 freq, 0 count
+IPA function summary for Wdg_43_Instance0_GetVersionInfo/5 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     6
+  min size:       3
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelGetVersionInfo/10 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+
+IPA function summary for Wdg_43_Instance0_ClearResetRequest/4 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelClearResetRequest/9 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+       op0 is compile time invariant
+
+IPA function summary for Wdg_43_Instance0_SetTriggerCondition/3 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     6
+  min size:       3
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelSetTriggerCondition/8 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+
+IPA function summary for Wdg_43_Instance0_SetMode/2 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     7
+  min size:       4
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelSetMode/7 function body not available
+      freq:1.00 loop depth: 0 size: 4 time: 13
+       op0 is compile time invariant
+
+IPA function summary for Wdg_43_Instance0_Init/1 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     6
+  min size:       3
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelInit/6 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+
+Symbol table:
+
+Wdg_ChannelGetVersionInfo/10 (Wdg_ChannelGetVersionInfo) @062f47e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_43_Instance0_GetVersionInfo/5 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Wdg_ChannelClearResetRequest/9 (Wdg_ChannelClearResetRequest) @062f4620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_43_Instance0_ClearResetRequest/4 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Wdg_ChannelSetTriggerCondition/8 (Wdg_ChannelSetTriggerCondition) @062f4460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_43_Instance0_SetTriggerCondition/3 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Wdg_ChannelSetMode/7 (Wdg_ChannelSetMode) @062f42a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_43_Instance0_SetMode/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Wdg_ChannelInit/6 (Wdg_ChannelInit) @062f40e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_43_Instance0_Init/1 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Wdg_43_Instance0_GetVersionInfo/5 (Wdg_43_Instance0_GetVersionInfo) @062efee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Wdg_ChannelGetVersionInfo/10 (1073741824 (estimated locally),1.00 per call) 
+Wdg_43_Instance0_ClearResetRequest/4 (Wdg_43_Instance0_ClearResetRequest) @062efc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Wdg_ChannelClearResetRequest/9 (1073741824 (estimated locally),1.00 per call) 
+Wdg_43_Instance0_SetTriggerCondition/3 (Wdg_43_Instance0_SetTriggerCondition) @062ef9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Wdg_ChannelSetTriggerCondition/8 (1073741824 (estimated locally),1.00 per call) 
+Wdg_43_Instance0_SetMode/2 (Wdg_43_Instance0_SetMode) @062ef700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Wdg_ChannelSetMode/7 (1073741824 (estimated locally),1.00 per call) 
+Wdg_43_Instance0_Init/1 (Wdg_43_Instance0_Init) @062ef460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Wdg_ChannelInit/6 (1073741824 (estimated locally),1.00 per call) 
+
+;; Function Wdg_43_Instance0_Init (Wdg_43_Instance0_Init, funcdef_no=1, decl_uid=6615, cgraph_uid=2, symbol_order=1)
+
+Wdg_43_Instance0_Init (const struct Wdg_ConfigType * ConfigPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelInit (0, ConfigPtr_2(D));
+  return;
+
+}
+
+
+
+;; Function Wdg_43_Instance0_SetMode (Wdg_43_Instance0_SetMode, funcdef_no=2, decl_uid=6617, cgraph_uid=3, symbol_order=2)
+
+Wdg_43_Instance0_SetMode (WdgIf_ModeType Mode)
+{
+  Std_ReturnType _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _4 = Wdg_ChannelSetMode (0, Mode_2(D));
+  return _4;
+
+}
+
+
+
+;; Function Wdg_43_Instance0_SetTriggerCondition (Wdg_43_Instance0_SetTriggerCondition, funcdef_no=3, decl_uid=6619, cgraph_uid=4, symbol_order=3)
+
+Wdg_43_Instance0_SetTriggerCondition (uint16 Timeout)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelSetTriggerCondition (0, Timeout_2(D));
+  return;
+
+}
+
+
+
+;; Function Wdg_43_Instance0_ClearResetRequest (Wdg_43_Instance0_ClearResetRequest, funcdef_no=4, decl_uid=6621, cgraph_uid=5, symbol_order=4)
+
+Wdg_43_Instance0_ClearResetRequest ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelClearResetRequest (0);
+  return;
+
+}
+
+
+
+;; Function Wdg_43_Instance0_GetVersionInfo (Wdg_43_Instance0_GetVersionInfo, funcdef_no=5, decl_uid=6623, cgraph_uid=6, symbol_order=5)
+
+Wdg_43_Instance0_GetVersionInfo (struct Std_VersionInfoType * Versioninfo)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelGetVersionInfo (0, Versioninfo_2(D));
+  return;
+
+}
+
+

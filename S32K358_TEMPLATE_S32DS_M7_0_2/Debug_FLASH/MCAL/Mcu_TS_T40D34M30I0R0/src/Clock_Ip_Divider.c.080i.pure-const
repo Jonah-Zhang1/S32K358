@@ -1,0 +1,711 @@
+
+
+ local analysis of Clock_Ip_SetPllPlldvOdiv2Output/3
+   scanning: if (Config_9(D) != 0B)
+  scanning: _1 = Config_9(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_11 = (uint32) _3;
+  scanning: _4 = Config_9(D)->Value;
+    Indirect ref read is not const
+  scanning: iftmp.0_12 = MAX_EXPR <_4, 1>;
+  scanning: _5 = Clock_Ip_apxPll[Instance_11].PllInstance;
+  scanning: RegValue_13 ={v} _5->PLLDV;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: RegValue_14 = RegValue_13 & 2181038079;
+  scanning: _6 = iftmp.0_12 << 25;
+  scanning: _7 = _6 & 2113929216;
+  scanning: RegValue_15 = _7 | RegValue_14;
+  scanning: _5->PLLDV ={v} RegValue_15;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_SetPllPll0divDeDivOutput/2
+   scanning: if (Config_11(D) != 0B)
+  scanning: _1 = Config_11(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_13 = (uint32) _3;
+  scanning: _4 = Clock_Ip_au8ClockFeatures[_2][5];
+  scanning: DividerIndex_14 = (uint32) _4;
+  scanning: _5 = Config_11(D)->Value;
+    Indirect ref read is not const
+  scanning: if (_5 != 0)
+  scanning: _6 = Clock_Ip_apxPll[Instance_13].PllInstance;
+  scanning: RegValue_15 ={v} _6->PLLODIV[DividerIndex_14];
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _19 = RegValue_15 & 4278255615;
+  scanning: RegValue_16 = _19 | 2147483648;
+  scanning: _7 = _5 + 4294967295;
+  scanning: _8 = _7 << 16;
+  scanning: _9 = _8 & 16711680;
+  scanning: RegValue_17 = _9 | RegValue_16;
+  scanning: _6->PLLODIV[DividerIndex_14] ={v} RegValue_17;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_SetCgmXDeDivStatWithoutPhase/1
+   scanning: if (Config_27(D) != 0B)
+  scanning: _1 = Config_27(D)->Name;
+    Indirect ref read is not const
+  scanning: _2 = (int) _1;
+  scanning: _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  scanning: Instance_29 = (uint32) _3;
+  scanning: _6 = Clock_Ip_au8ClockFeatures[_2][4];
+  scanning: SelectorIndex_30 = (uint32) _6;
+  scanning: _7 = Clock_Ip_au8ClockFeatures[_2][5];
+  scanning: DividerIndex_31 = (uint32) _7;
+  scanning: _8 = Clock_Ip_au8ClockFeatures[_2][2];
+  scanning: _9 = (int) _8;
+  scanning: DividerMask_32 = Clock_Ip_axFeatureExtensions[_9].DividerValueMask;
+  scanning: DividerShift_33 = Clock_Ip_axFeatureExtensions[_9].DividerValueShift;
+  scanning: _10 = Config_27(D)->Value;
+    Indirect ref read is not const
+  scanning: if (_10 != 0)
+  scanning: _11 = Clock_Ip_apxCgm[Instance_29][SelectorIndex_30];
+  scanning: RegValue_34 ={v} _11->Divider[DividerIndex_31];
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _12 = _10 + 4294967295;
+  scanning: _13 = _12 << DividerShift_33;
+  scanning: _26 = _13 ^ RegValue_34;
+  scanning: _47 = _26 & DividerMask_32;
+  scanning: RegValue_35 = RegValue_34 ^ _47;
+  scanning: _11->Divider[DividerIndex_31] ={v} RegValue_35;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+  scanning: _14 = Clock_Ip_apxCgm[Instance_29][SelectorIndex_30];
+  scanning: _15 ={v} _14->MUX_DIV_UPD_STAT;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: DividerStatus_38 = _15 & 1;
+  scanning: TimeoutTicks.1_16 = TimeoutTicks;
+  scanning: TimeoutOccurred_40 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_16);
+  scanning: if (DividerStatus_38 != 0)
+  scanning: if (TimeoutOccurred_40 != 0)
+  scanning: if (TimeoutOccurred_5 != 0)
+  scanning: _17 = Config_27(D)->Value;
+    Indirect ref read is not const
+  scanning: if (_17 != 0)
+  scanning: _18 ={v} _4->Divider[DividerIndex_31];
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _19 = _18 | 2147483648;
+  scanning: _4->Divider[DividerIndex_31] ={v} _19;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _20 ={v} _4->Divider[DividerIndex_31];
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _21 = _20 & 2147483647;
+  scanning: _4->Divider[DividerIndex_31] ={v} _21;
+    Volatile stmt is not const/pure
+    Volatile indirect ref is not const/pure
+  scanning: _22 = Config_27(D)->Name;
+    Indirect ref read is not const
+  scanning: Clock_Ip_ReportClockErrors (1, _22);
+  scanning: return;
+
+
+ local analysis of Clock_Ip_Callback_DividerEmpty/0
+   scanning: return;
+Function is locally const.
+callgraph:
+
+Clock_Ip_ReportClockErrors/11 (Clock_Ip_ReportClockErrors) @064ada80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (37904965 (estimated locally),0.23 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/10 (Clock_Ip_TimeoutExpired) @064ad9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (1073741824 (estimated locally),6.54 per call) 
+  Calls: 
+Clock_Ip_StartTimeout/9 (Clock_Ip_StartTimeout) @064ad8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (114863530 (estimated locally),0.70 per call) 
+  Calls: 
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @063257e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027173e8
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_apxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06325d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027172c8
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_apxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @063259a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717428
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:164090757 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/11 (37904965 (estimated locally),0.23 per call) Clock_Ip_TimeoutExpired/10 (1073741824 (estimated locally),6.54 per call) Clock_Ip_StartTimeout/9 (114863530 (estimated locally),0.70 per call) 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06325700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717368
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @063257e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027173e8
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_apxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06325d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027172c8
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_apxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @063259a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717428
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:164090757 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/11 (37904965 (estimated locally),0.23 per call) Clock_Ip_TimeoutExpired/10 (1073741824 (estimated locally),6.54 per call) Clock_Ip_StartTimeout/9 (114863530 (estimated locally),0.70 per call) 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06325700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717368
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+
+MALLOC LATTICE Initial:
+Clock_Ip_SetPllPlldvOdiv2Output/3: malloc_bottom
+Clock_Ip_SetPllPll0divDeDivOutput/2: malloc_bottom
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1: malloc_bottom
+Clock_Ip_Callback_DividerEmpty/0: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+Clock_Ip_SetPllPlldvOdiv2Output/3: malloc_bottom
+Clock_Ip_SetPllPll0divDeDivOutput/2: malloc_bottom
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1: malloc_bottom
+Clock_Ip_Callback_DividerEmpty/0: malloc_bottom
+callgraph:
+
+Clock_Ip_ReportClockErrors/11 (Clock_Ip_ReportClockErrors) @064ada80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (37904965 (estimated locally),0.23 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/10 (Clock_Ip_TimeoutExpired) @064ad9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (1073741824 (estimated locally),6.54 per call) 
+  Calls: 
+Clock_Ip_StartTimeout/9 (Clock_Ip_StartTimeout) @064ad8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (114863530 (estimated locally),0.70 per call) 
+  Calls: 
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @063257e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027173e8
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_apxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06325d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717428
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_apxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @063259a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717608
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:164090757 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/11 (37904965 (estimated locally),0.23 per call) Clock_Ip_TimeoutExpired/10 (1073741824 (estimated locally),6.54 per call) Clock_Ip_StartTimeout/9 (114863530 (estimated locally),0.70 per call) 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06325700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717468
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @063257e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @027173e8
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_apxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06325d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717428
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_apxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @063259a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717608
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:164090757 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/11 (37904965 (estimated locally),0.23 per call) Clock_Ip_TimeoutExpired/10 (1073741824 (estimated locally),6.54 per call) Clock_Ip_StartTimeout/9 (114863530 (estimated locally),0.70 per call) 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06325700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @02717468
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+Function found not to call free: Clock_Ip_Callback_DividerEmpty/0
+Function found not to call free: Clock_Ip_SetPllPll0divDeDivOutput/2
+Function found not to call free: Clock_Ip_SetPllPlldvOdiv2Output/3
+Clock_Ip_SetPllPlldvOdiv2Output (const struct Clock_Ip_DividerConfigType * Config)
+{
+  uint32 RegValue;
+  uint32 Instance;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  long unsigned int _4;
+  struct PLL_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int iftmp.0_12;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_9(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 4>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_9(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_11 = (uint32) _3;
+  # DEBUG Instance => Instance_11
+  # DEBUG BEGIN_STMT
+  _4 = Config_9(D)->Value;
+  iftmp.0_12 = MAX_EXPR <_4, 1>;
+  # DEBUG DividerValue => iftmp.0_12
+  # DEBUG BEGIN_STMT
+  _5 = Clock_Ip_apxPll[Instance_11].PllInstance;
+  RegValue_13 ={v} _5->PLLDV;
+  # DEBUG RegValue => RegValue_13
+  # DEBUG BEGIN_STMT
+  RegValue_14 = RegValue_13 & 2181038079;
+  # DEBUG RegValue => RegValue_14
+  # DEBUG BEGIN_STMT
+  _6 = iftmp.0_12 << 25;
+  _7 = _6 & 2113929216;
+  RegValue_15 = _7 | RegValue_14;
+  # DEBUG RegValue => RegValue_15
+  # DEBUG BEGIN_STMT
+  _5->PLLDV ={v} RegValue_15;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_SetPllPll0divDeDivOutput (const struct Clock_Ip_DividerConfigType * Config)
+{
+  uint32 RegValue;
+  uint32 DividerIndex;
+  uint32 Instance;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  unsigned char _4;
+  long unsigned int _5;
+  struct PLL_Type * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _19;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_11(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 5>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_11(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_13 = (uint32) _3;
+  # DEBUG Instance => Instance_13
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_au8ClockFeatures[_2][5];
+  DividerIndex_14 = (uint32) _4;
+  # DEBUG DividerIndex => DividerIndex_14
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _5 = Config_11(D)->Value;
+  if (_5 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 375809640]:
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_apxPll[Instance_13].PllInstance;
+  RegValue_15 ={v} _6->PLLODIV[DividerIndex_14];
+  # DEBUG RegValue => RegValue_15
+  # DEBUG BEGIN_STMT
+  # DEBUG RegValue => RegValue_15 | 2147483648
+  # DEBUG BEGIN_STMT
+  _19 = RegValue_15 & 4278255615;
+  RegValue_16 = _19 | 2147483648;
+  # DEBUG RegValue => RegValue_16
+  # DEBUG BEGIN_STMT
+  _7 = _5 + 4294967295;
+  _8 = _7 << 16;
+  _9 = _8 & 16711680;
+  RegValue_17 = _9 | RegValue_16;
+  # DEBUG RegValue => RegValue_17
+  # DEBUG BEGIN_STMT
+  _6->PLLODIV[DividerIndex_14] ={v} RegValue_17;
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_SetCgmXDeDivStatWithoutPhase (const struct Clock_Ip_DividerConfigType * Config)
+{
+  uint32 DividerStatus;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  uint32 RegValue;
+  uint32 DividerShift;
+  uint32 DividerMask;
+  uint32 DividerIndex;
+  uint32 SelectorIndex;
+  uint32 Instance;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  volatile struct Clock_Ip_CgmMuxType * _4;
+  unsigned char _6;
+  unsigned char _7;
+  unsigned char _8;
+  int _9;
+  long unsigned int _10;
+  volatile struct Clock_Ip_CgmMuxType * _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  volatile struct Clock_Ip_CgmMuxType * _14;
+  long unsigned int _15;
+  long unsigned int TimeoutTicks.1_16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  <unnamed type> _22;
+  long unsigned int _26;
+  long unsigned int _47;
+
+  <bb 2> [local count: 164090757]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_27(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 13>; [30.00%]
+
+  <bb 3> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_27(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_29 = (uint32) _3;
+  # DEBUG Instance => Instance_29
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_au8ClockFeatures[_2][4];
+  SelectorIndex_30 = (uint32) _6;
+  # DEBUG SelectorIndex => SelectorIndex_30
+  # DEBUG BEGIN_STMT
+  _7 = Clock_Ip_au8ClockFeatures[_2][5];
+  DividerIndex_31 = (uint32) _7;
+  # DEBUG DividerIndex => DividerIndex_31
+  # DEBUG BEGIN_STMT
+  _8 = Clock_Ip_au8ClockFeatures[_2][2];
+  _9 = (int) _8;
+  DividerMask_32 = Clock_Ip_axFeatureExtensions[_9].DividerValueMask;
+  # DEBUG DividerMask => DividerMask_32
+  # DEBUG BEGIN_STMT
+  DividerShift_33 = Clock_Ip_axFeatureExtensions[_9].DividerValueShift;
+  # DEBUG DividerShift => DividerShift_33
+  # DEBUG BEGIN_STMT
+  _10 = Config_27(D)->Value;
+  if (_10 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 57431765]:
+  # DEBUG BEGIN_STMT
+  _11 = Clock_Ip_apxCgm[Instance_29][SelectorIndex_30];
+  RegValue_34 ={v} _11->Divider[DividerIndex_31];
+  # DEBUG RegValue => RegValue_34
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => ~DividerMask_32
+  # DEBUG RegValue => D#1 & RegValue_34
+  # DEBUG BEGIN_STMT
+  _12 = _10 + 4294967295;
+  _13 = _12 << DividerShift_33;
+  _26 = _13 ^ RegValue_34;
+  _47 = _26 & DividerMask_32;
+  RegValue_35 = RegValue_34 ^ _47;
+  # DEBUG RegValue => RegValue_35
+  # DEBUG BEGIN_STMT
+  _11->Divider[DividerIndex_31] ={v} RegValue_35;
+
+  <bb 5> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _14 = Clock_Ip_apxCgm[Instance_29][SelectorIndex_30];
+  _15 ={v} _14->MUX_DIV_UPD_STAT;
+  DividerStatus_38 = _15 & 1;
+  # DEBUG DividerStatus => DividerStatus_38
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.1_16 = TimeoutTicks;
+  TimeoutOccurred_40 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_16);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_40
+  # DEBUG BEGIN_STMT
+  if (DividerStatus_38 != 0)
+    goto <bb 7>; [94.50%]
+  else
+    goto <bb 8>; [5.50%]
+
+  <bb 7> [local count: 1014686026]:
+  if (TimeoutOccurred_40 != 0)
+    goto <bb 8>; [5.50%]
+  else
+    goto <bb 14>; [94.50%]
+
+  <bb 14> [local count: 958878295]:
+  goto <bb 6>; [100.00%]
+
+  <bb 8> [local count: 114863531]:
+  # _4 = PHI <_14(6), _14(7)>
+  # TimeoutOccurred_5 = PHI <TimeoutOccurred_40(6), TimeoutOccurred_40(7)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_5 != 0)
+    goto <bb 12>; [33.00%]
+  else
+    goto <bb 9>; [67.00%]
+
+  <bb 9> [local count: 76958566]:
+  # DEBUG BEGIN_STMT
+  _17 = Config_27(D)->Value;
+  if (_17 != 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 10> [local count: 38479283]:
+  # DEBUG BEGIN_STMT
+  _18 ={v} _4->Divider[DividerIndex_31];
+  _19 = _18 | 2147483648;
+  _4->Divider[DividerIndex_31] ={v} _19;
+  goto <bb 13>; [100.00%]
+
+  <bb 11> [local count: 38479283]:
+  # DEBUG BEGIN_STMT
+  _20 ={v} _4->Divider[DividerIndex_31];
+  _21 = _20 & 2147483647;
+  _4->Divider[DividerIndex_31] ={v} _21;
+  goto <bb 13>; [100.00%]
+
+  <bb 12> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  _22 = Config_27(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _22);
+
+  <bb 13> [local count: 164090758]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Clock_Ip_Callback_DividerEmpty (const struct Clock_Ip_DividerConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

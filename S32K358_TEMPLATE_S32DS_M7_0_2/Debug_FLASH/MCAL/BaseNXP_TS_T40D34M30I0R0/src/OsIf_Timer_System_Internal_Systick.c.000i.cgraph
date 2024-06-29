@@ -1,0 +1,189 @@
+Trivially needed symbols: OsIf_Timer_System_Internal_GetElapsed/2 OsIf_Timer_System_Internal_GetCounter/1 OsIf_Timer_System_Internal_Init/0
+
+
+Initial Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/2 (OsIf_Timer_System_Internal_GetElapsed) @05f9f1c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/1 (OsIf_Timer_System_Internal_GetCounter) @05f39ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f9f1c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_Init/0 (OsIf_Timer_System_Internal_Init) @05f39e00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @05f39ee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/2 (OsIf_Timer_System_Internal_GetElapsed) @05f9f1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/1 (OsIf_Timer_System_Internal_GetCounter) @05f39ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_Init/0 (OsIf_Timer_System_Internal_Init) @05f39e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/2 (OsIf_Timer_System_Internal_GetElapsed) @05f9f1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/1 (OsIf_Timer_System_Internal_GetCounter) @05f39ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_Init/0 (OsIf_Timer_System_Internal_Init) @05f39e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/2 (OsIf_Timer_System_Internal_GetElapsed) @05f9f1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/1 (OsIf_Timer_System_Internal_GetCounter) @05f39ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_Init/0 (OsIf_Timer_System_Internal_Init) @05f39e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/2 (OsIf_Timer_System_Internal_GetElapsed) @05f9f1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/1 (OsIf_Timer_System_Internal_GetCounter) @05f39ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_Init/0 (OsIf_Timer_System_Internal_Init) @05f39e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/2 (OsIf_Timer_System_Internal_GetElapsed) @05f9f1c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.OsIf_Timer_System_Internal_GetElapsed (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/1 (OsIf_Timer_System_Internal_GetCounter) @05f39ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.OsIf_Timer_System_Internal_GetCounter (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_Init/0 (OsIf_Timer_System_Internal_Init) @05f39e00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.OsIf_Timer_System_Internal_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 

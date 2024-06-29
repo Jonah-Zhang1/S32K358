@@ -1,0 +1,1922 @@
+IPA function summary for Siul2_Port_Ip_GetPinConfiguration/14 inlinable
+  global time:     174.478290
+  self size:       37
+  global size:     37
+  min size:       28
+  self stack:      0
+  global stack:    0
+    size:23.500000, time:153.656218
+    size:5.500000, time:10.505876,  executed if:(not inlined)
+    size:3.000000, time:3.000000,  nonconst if:(op0 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed || op2 changed)
+  calls:
+    Siul2_Port_Ip_GetMSCRConfiguration/7 function not considered for inlining
+      freq:0.49 loop depth: 0 size: 4 time: 13 callee size:18 stack: 0
+
+IPA function summary for Siul2_Port_Ip_RevertPinConfiguration/13 inlinable
+  global time:     85.529331
+  self size:       21
+  global size:     21
+  min size:       13
+  self stack:      0
+  global stack:    0
+    size:10.500000, time:73.456066
+    size:3.500000, time:2.242931,  executed if:(not inlined)
+    size:3.000000, time:3.000000,  nonconst if:(op0 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed || op1 changed)
+    size:1.000000, time:0.485861,  nonconst if:(op1 changed)
+  calls:
+    Siul2_Port_Ip_PinInit/4 function not considered for inlining
+      freq:0.49 loop depth: 0 size: 2 time: 11 callee size:39 stack: 0
+
+IPA function summary for Siul2_Port_Ip_SetPinDirection/12 inlinable
+  global time:     32.000000
+  self size:       45
+  global size:     45
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:10.000000, time:4.000000,  nonconst if:(op2 changed)
+    size:1.000000, time:0.200000,  executed if:(op2 == 3) && (not inlined)
+    size:2.000000, time:0.400000,  executed if:(op2 == 3)
+    size:2.000000, time:0.400000,  executed if:(op2 == 3),  nonconst if:(op1 changed) && (op2 == 3)
+    size:1.000000, time:0.200000,  executed if:(op2 == 2) && (not inlined)
+    size:2.000000, time:0.400000,  executed if:(op2 == 2)
+    size:2.000000, time:0.400000,  executed if:(op2 == 2),  nonconst if:(op1 changed) && (op2 == 2)
+    size:2.000000, time:0.400000,  executed if:(op2 == 1) && (not inlined)
+    size:4.000000, time:0.800000,  executed if:(op2 == 1)
+    size:4.000000, time:0.800000,  executed if:(op2 == 1),  nonconst if:(op1 changed) && (op2 == 1)
+    size:2.000000, time:0.400000,  executed if:(op2 == 0) && (not inlined)
+    size:4.000000, time:0.800000,  executed if:(op2 == 0)
+    size:4.000000, time:0.800000,  executed if:(op2 == 0),  nonconst if:(op1 changed) && (op2 == 0)
+  calls:
+    SchM_Exit_Port_PORT_EXCLUSIVE_AREA_04/22 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Port_PORT_EXCLUSIVE_AREA_04/21 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Siul2_Port_Ip_SetInputBuffer/11 inlinable
+  global time:     39.350000
+  self size:       32
+  global size:     32
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:2.000000, time:1.400000,  executed if:(op0 != 0B) && (not inlined)
+    size:4.000000, time:2.800000,  executed if:(op0 != 0B)
+    size:4.000000, time:2.800000,  executed if:(op0 != 0B),  nonconst if:(op1 changed) && (op0 != 0B)
+    size:2.000000, time:1.400000,  executed if:(op0 != 0B),  nonconst if:(op2 changed) && (op0 != 0B)
+    size:2.000000, time:2.000000,  nonconst if:(op4 changed)
+    size:4.000000, time:2.640000,  executed if:(op4 != 16),  nonconst if:(op3 changed) && (op4 != 16)
+    size:4.000000, time:1.320000,  executed if:(op3 <= 440) && (op4 != 16)
+    size:2.000000, time:0.660000,  executed if:(op3 <= 440) && (op4 != 16),  nonconst if:(op3 changed) && (op3 <= 440) && (op4 != 16)
+    size:1.000000, time:0.330000,  executed if:(op3 <= 440) && (op4 != 16),  nonconst if:(op4 changed) && (op3 <= 440) && (op4 != 16)
+  calls:
+    SchM_Exit_Port_PORT_EXCLUSIVE_AREA_03/20 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Port_PORT_EXCLUSIVE_AREA_03/19 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Siul2_Port_Ip_SetOutputBuffer/10 inlinable
+  global time:     45.000000
+  self size:       28
+  global size:     28
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:8.000000, time:8.000000
+    size:7.000000, time:6.000000,  executed if:(not inlined)
+    size:8.000000, time:8.000000,  nonconst if:(op1 changed)
+    size:2.000000, time:2.000000,  nonconst if:(op2 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op3 changed)
+  calls:
+    SchM_Exit_Port_PORT_EXCLUSIVE_AREA_02/18 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Port_PORT_EXCLUSIVE_AREA_02/17 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Siul2_Port_Ip_SetPullSel/9 inlinable
+  global time:     30.000000
+  self size:       29
+  global size:     29
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:8.000000, time:4.000000,  nonconst if:(op2 changed)
+    size:1.000000, time:0.250000,  executed if:(op2 == 2) && (not inlined)
+    size:2.000000, time:0.500000,  executed if:(op2 == 2)
+    size:2.000000, time:0.500000,  executed if:(op2 == 2),  nonconst if:(op1 changed) && (op2 == 2)
+    size:1.000000, time:0.250000,  executed if:(op2 == 1) && (not inlined)
+    size:2.000000, time:0.500000,  executed if:(op2 == 1)
+    size:2.000000, time:0.500000,  executed if:(op2 == 1),  nonconst if:(op1 changed) && (op2 == 1)
+    size:1.000000, time:0.250000,  executed if:(op2 == 0) && (not inlined)
+    size:3.000000, time:0.750000,  executed if:(op2 == 0)
+    size:2.000000, time:0.500000,  executed if:(op2 == 0),  nonconst if:(op1 changed) && (op2 == 0)
+  calls:
+    SchM_Exit_Port_PORT_EXCLUSIVE_AREA_01/16 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Port_PORT_EXCLUSIVE_AREA_01/15 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Siul2_Port_Ip_Init/8 inlinable
+  global time:     135.454547
+  self size:       12
+  global size:     12
+  min size:       9
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:44.454546
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  loop iterations:(op0 changed)
+  calls:
+    Siul2_Port_Ip_PinInit/4 function not considered for inlining
+      freq:8.09 loop depth: 1 size: 2 time: 11 callee size:39 stack: 0
+
+IPA function summary for Siul2_Port_Ip_GetMSCRConfiguration/7 inlinable
+  global time:     35.000000
+  self size:       37
+  global size:     37
+  min size:       28
+  self stack:      0
+  global stack:    0
+    size:27.500000, time:26.500000
+    size:8.500000, time:7.500000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op2 changed)
+  calls:
+
+IPA function summary for Siul2_Port_Ip_WriteIMCRConfiguration/6 inlinable
+  global time:     63.531792
+  self size:       20
+  global size:     20
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 136] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 136] changed)
+    size:13.000000, time:54.014672,  executed if:(op0[ref offset: 136] == 1)
+    size:1.000000, time:4.517120,  executed if:(op0[ref offset: 136] == 1) && (not inlined)
+  calls:
+
+IPA function summary for Siul2_Port_Ip_WriteDCMConfiguration/5 inlinable
+  global time:     23.412612
+  self size:       17
+  global size:     17
+  min size:       14
+  self stack:      0
+  global stack:    0
+    size:13.500000, time:20.412462
+    size:3.500000, time:3.000150,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Siul2_Port_Ip_PinInit/4 inlinable
+  global time:     79.778800
+  self size:       79
+  global size:     79
+  min size:       7
+  self stack:      0
+  global stack:    0
+    size:3.000000, time:3.000000
+    size:4.000000, time:3.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 64] changed)
+    size:3.000000, time:1.980000,  executed if:(op0[ref offset: 64] != 2),  nonconst if:(op0[ref offset: 64] changed) && (op0[ref offset: 64] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 128] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 128] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 128] != 2),  nonconst if:(op0[ref offset: 128] changed) && (op0[ref offset: 128] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 128] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed) && (op0[ref offset: 128] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 120] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 120] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 120] != 2),  nonconst if:(op0[ref offset: 120] changed) && (op0[ref offset: 120] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 120] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed) && (op0[ref offset: 120] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 112] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 112] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 112] != 2),  nonconst if:(op0[ref offset: 112] changed) && (op0[ref offset: 112] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 112] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed) && (op0[ref offset: 112] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 96] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 96] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 96] != 2),  nonconst if:(op0[ref offset: 96] changed) && (op0[ref offset: 96] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 96] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed) && (op0[ref offset: 96] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 104] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 104] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 104] != 2),  nonconst if:(op0[ref offset: 104] changed) && (op0[ref offset: 104] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 104] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed) && (op0[ref offset: 104] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 136] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 136] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 136] != 2),  nonconst if:(op0[ref offset: 136] changed) && (op0[ref offset: 136] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 136] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed || op0[ref offset: 136] changed) && (op0[ref offset: 136] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 88] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 88] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 88] != 2),  nonconst if:(op0[ref offset: 88] changed) && (op0[ref offset: 88] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 88] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed || op0[ref offset: 136] changed || op0[ref offset: 88] changed) && (op0[ref offset: 88] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 80] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 80] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 80] != 2),  nonconst if:(op0[ref offset: 80] changed) && (op0[ref offset: 80] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 80] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed || op0[ref offset: 136] changed || op0[ref offset: 88] changed || op0[ref offset: 80] changed) && (op0[ref offset: 80] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 72] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 72] changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed || op0[ref offset: 136] changed || op0[ref offset: 88] changed || op0[ref offset: 80] changed || op0[ref offset: 72] changed)
+    size:2.000000, time:1.000000,  executed if:(op0[ref offset: 72] == 0),  nonconst if:(op0[ref offset: 128] changed) && (op0[ref offset: 72] == 0)
+    size:0.500000, time:0.085000,  executed if:(op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0) && (not inlined),  nonconst if:(op0[ref offset: 832] changed) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0) && (not inlined)
+    size:2.500000, time:0.425000,  executed if:(op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0),  nonconst if:(op0[ref offset: 832] changed) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0)
+    size:0.500000, time:0.056100,  executed if:(op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0) && (not inlined),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0) && (not inlined)
+    size:2.500000, time:0.280500,  executed if:(op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0)
+    size:1.000000, time:0.112200,  executed if:(op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0)
+  calls:
+    Siul2_Port_Ip_WriteDCMConfiguration/5 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 8 stack: 0
+    Siul2_Port_Ip_WriteIMCRConfiguration/6 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size:10 stack: 0
+
+
+Flattening functions:
+Overall time estimate: 743.535372 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Siul2_Port_Ip_GetPinConfiguration/14.
+Enqueueing calls in Siul2_Port_Ip_RevertPinConfiguration/13.
+Enqueueing calls in Siul2_Port_Ip_SetPinDirection/12.
+Enqueueing calls in Siul2_Port_Ip_SetInputBuffer/11.
+Enqueueing calls in Siul2_Port_Ip_SetOutputBuffer/10.
+Enqueueing calls in Siul2_Port_Ip_SetPullSel/9.
+Enqueueing calls in Siul2_Port_Ip_Init/8.
+Enqueueing calls in Siul2_Port_Ip_GetMSCRConfiguration/7.
+Enqueueing calls in Siul2_Port_Ip_WriteIMCRConfiguration/6.
+Enqueueing calls in Siul2_Port_Ip_WriteDCMConfiguration/5.
+Enqueueing calls in Siul2_Port_Ip_PinInit/4.
+
+Considering Siul2_Port_Ip_WriteIMCRConfiguration/6 with 20 size
+ to be inlined into Siul2_Port_Ip_PinInit/4 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Port_TS_T40D34M30I0R0/src/Siul2_Port_Ip.c:396
+ Estimated badness is -0.442817, frequency 1.00.
+
+Considering Siul2_Port_Ip_WriteDCMConfiguration/5 with 17 size
+ to be inlined into Siul2_Port_Ip_PinInit/4 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Port_TS_T40D34M30I0R0/src/Siul2_Port_Ip.c:400
+ Estimated badness is -0.355559, frequency 1.00.
+
+Considering Siul2_Port_Ip_GetMSCRConfiguration/7 with 37 size
+ to be inlined into Siul2_Port_Ip_GetPinConfiguration/14 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Port_TS_T40D34M30I0R0/src/Siul2_Port_Ip.c:978
+ Estimated badness is -0.205629, frequency 0.49.
+node context cache: 3 hits, 0 misses, 6 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 683.563089 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        8 calls, 8.000000 freq, 0 count
+--param max-inline-insns-auto limit reached       :        2 calls, 8.576770 freq, 0 count
+IPA function summary for Siul2_Port_Ip_GetPinConfiguration/14 inlinable
+  global time:     181.523277
+  self size:       37
+  global size:     62
+  min size:       51
+  self stack:      0
+  global stack:    0
+    size:51.000000, time:166.531539
+    size:5.500000, time:10.505876,  executed if:(not inlined)
+    size:3.000000, time:3.000000,  nonconst if:(op0 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed || op2 changed)
+    size:1.000000, time:0.485861,  nonconst if:(op2 changed)
+  calls:
+    Siul2_Port_Ip_GetMSCRConfiguration/7 inlined
+      freq:0.49
+      Stack frame offset 0, callee self size 0
+
+IPA function summary for Siul2_Port_Ip_RevertPinConfiguration/13 inlinable
+  global time:     85.529331
+  self size:       21
+  global size:     21
+  min size:       13
+  self stack:      0
+  global stack:    0
+    size:10.500000, time:73.456066
+    size:3.500000, time:2.242931,  executed if:(not inlined)
+    size:3.000000, time:3.000000,  nonconst if:(op0 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed || op1 changed)
+    size:1.000000, time:0.485861,  nonconst if:(op1 changed)
+  calls:
+    Siul2_Port_Ip_PinInit/4 --param max-inline-insns-auto limit reached
+      freq:0.49 loop depth: 0 size: 2 time: 11 callee size:52 stack: 0
+
+IPA function summary for Siul2_Port_Ip_SetPinDirection/12 inlinable
+  global time:     32.000000
+  self size:       45
+  global size:     45
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:10.000000, time:4.000000,  nonconst if:(op2 changed)
+    size:1.000000, time:0.200000,  executed if:(op2 == 3) && (not inlined)
+    size:2.000000, time:0.400000,  executed if:(op2 == 3)
+    size:2.000000, time:0.400000,  executed if:(op2 == 3),  nonconst if:(op1 changed) && (op2 == 3)
+    size:1.000000, time:0.200000,  executed if:(op2 == 2) && (not inlined)
+    size:2.000000, time:0.400000,  executed if:(op2 == 2)
+    size:2.000000, time:0.400000,  executed if:(op2 == 2),  nonconst if:(op1 changed) && (op2 == 2)
+    size:2.000000, time:0.400000,  executed if:(op2 == 1) && (not inlined)
+    size:4.000000, time:0.800000,  executed if:(op2 == 1)
+    size:4.000000, time:0.800000,  executed if:(op2 == 1),  nonconst if:(op1 changed) && (op2 == 1)
+    size:2.000000, time:0.400000,  executed if:(op2 == 0) && (not inlined)
+    size:4.000000, time:0.800000,  executed if:(op2 == 0)
+    size:4.000000, time:0.800000,  executed if:(op2 == 0),  nonconst if:(op1 changed) && (op2 == 0)
+  calls:
+    SchM_Exit_Port_PORT_EXCLUSIVE_AREA_04/22 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Port_PORT_EXCLUSIVE_AREA_04/21 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Siul2_Port_Ip_SetInputBuffer/11 inlinable
+  global time:     39.350000
+  self size:       32
+  global size:     32
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:2.000000, time:1.400000,  executed if:(op0 != 0B) && (not inlined)
+    size:4.000000, time:2.800000,  executed if:(op0 != 0B)
+    size:4.000000, time:2.800000,  executed if:(op0 != 0B),  nonconst if:(op1 changed) && (op0 != 0B)
+    size:2.000000, time:1.400000,  executed if:(op0 != 0B),  nonconst if:(op2 changed) && (op0 != 0B)
+    size:2.000000, time:2.000000,  nonconst if:(op4 changed)
+    size:4.000000, time:2.640000,  executed if:(op4 != 16),  nonconst if:(op3 changed) && (op4 != 16)
+    size:4.000000, time:1.320000,  executed if:(op3 <= 440) && (op4 != 16)
+    size:2.000000, time:0.660000,  executed if:(op3 <= 440) && (op4 != 16),  nonconst if:(op3 changed) && (op3 <= 440) && (op4 != 16)
+    size:1.000000, time:0.330000,  executed if:(op3 <= 440) && (op4 != 16),  nonconst if:(op4 changed) && (op3 <= 440) && (op4 != 16)
+  calls:
+    SchM_Exit_Port_PORT_EXCLUSIVE_AREA_03/20 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Port_PORT_EXCLUSIVE_AREA_03/19 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Siul2_Port_Ip_SetOutputBuffer/10 inlinable
+  global time:     45.000000
+  self size:       28
+  global size:     28
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:8.000000, time:8.000000
+    size:7.000000, time:6.000000,  executed if:(not inlined)
+    size:8.000000, time:8.000000,  nonconst if:(op1 changed)
+    size:2.000000, time:2.000000,  nonconst if:(op2 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op3 changed)
+  calls:
+    SchM_Exit_Port_PORT_EXCLUSIVE_AREA_02/18 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Port_PORT_EXCLUSIVE_AREA_02/17 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Siul2_Port_Ip_SetPullSel/9 inlinable
+  global time:     30.000000
+  self size:       29
+  global size:     29
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:8.000000, time:4.000000,  nonconst if:(op2 changed)
+    size:1.000000, time:0.250000,  executed if:(op2 == 2) && (not inlined)
+    size:2.000000, time:0.500000,  executed if:(op2 == 2)
+    size:2.000000, time:0.500000,  executed if:(op2 == 2),  nonconst if:(op1 changed) && (op2 == 2)
+    size:1.000000, time:0.250000,  executed if:(op2 == 1) && (not inlined)
+    size:2.000000, time:0.500000,  executed if:(op2 == 1)
+    size:2.000000, time:0.500000,  executed if:(op2 == 1),  nonconst if:(op1 changed) && (op2 == 1)
+    size:1.000000, time:0.250000,  executed if:(op2 == 0) && (not inlined)
+    size:3.000000, time:0.750000,  executed if:(op2 == 0)
+    size:2.000000, time:0.500000,  executed if:(op2 == 0),  nonconst if:(op1 changed) && (op2 == 0)
+  calls:
+    SchM_Exit_Port_PORT_EXCLUSIVE_AREA_01/16 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Port_PORT_EXCLUSIVE_AREA_01/15 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Siul2_Port_Ip_Init/8 inlinable
+  global time:     135.454547
+  self size:       12
+  global size:     12
+  min size:       9
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:44.454546
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  loop iterations:(op0 changed)
+  calls:
+    Siul2_Port_Ip_PinInit/4 --param max-inline-insns-auto limit reached
+      freq:8.09 loop depth: 1 size: 2 time: 11 callee size:52 stack: 0
+
+IPA function summary for Siul2_Port_Ip_PinInit/4 inlinable
+  global time:     134.705934
+  self size:       79
+  global size:     104
+  min size:       32
+  self stack:      0
+  global stack:    0
+  estimated growth:55
+    size:32.000000, time:79.927134
+    size:4.000000, time:3.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 64] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 64] changed)
+    size:3.000000, time:1.980000,  executed if:(op0[ref offset: 64] != 2),  nonconst if:(op0[ref offset: 64] changed) && (op0[ref offset: 64] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 128] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 128] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 128] != 2),  nonconst if:(op0[ref offset: 128] changed) && (op0[ref offset: 128] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 128] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed) && (op0[ref offset: 128] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 120] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 120] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 120] != 2),  nonconst if:(op0[ref offset: 120] changed) && (op0[ref offset: 120] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 120] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed) && (op0[ref offset: 120] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 112] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 112] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 112] != 2),  nonconst if:(op0[ref offset: 112] changed) && (op0[ref offset: 112] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 112] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed) && (op0[ref offset: 112] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 96] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 96] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 96] != 2),  nonconst if:(op0[ref offset: 96] changed) && (op0[ref offset: 96] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 96] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed) && (op0[ref offset: 96] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 104] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 104] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 104] != 2),  nonconst if:(op0[ref offset: 104] changed) && (op0[ref offset: 104] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 104] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed) && (op0[ref offset: 104] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 136] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 136] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 136] != 2),  nonconst if:(op0[ref offset: 136] changed) && (op0[ref offset: 136] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 136] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed || op0[ref offset: 136] changed) && (op0[ref offset: 136] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 88] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 88] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 88] != 2),  nonconst if:(op0[ref offset: 88] changed) && (op0[ref offset: 88] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 88] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed || op0[ref offset: 136] changed || op0[ref offset: 88] changed) && (op0[ref offset: 88] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 80] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 80] changed)
+    size:2.000000, time:1.320000,  executed if:(op0[ref offset: 80] != 2),  nonconst if:(op0[ref offset: 80] changed) && (op0[ref offset: 80] != 2)
+    size:1.000000, time:0.660000,  executed if:(op0[ref offset: 80] != 2),  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed || op0[ref offset: 136] changed || op0[ref offset: 88] changed || op0[ref offset: 80] changed) && (op0[ref offset: 80] != 2)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 72] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 72] changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0[ref offset: 64] changed || op0[ref offset: 128] changed || op0[ref offset: 120] changed || op0[ref offset: 112] changed || op0[ref offset: 96] changed || op0[ref offset: 104] changed || op0[ref offset: 136] changed || op0[ref offset: 88] changed || op0[ref offset: 80] changed || op0[ref offset: 72] changed)
+    size:2.000000, time:1.000000,  executed if:(op0[ref offset: 72] == 0),  nonconst if:(op0[ref offset: 128] changed) && (op0[ref offset: 72] == 0)
+    size:0.500000, time:0.085000,  executed if:(op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0) && (not inlined),  nonconst if:(op0[ref offset: 832] changed) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0) && (not inlined)
+    size:2.500000, time:0.425000,  executed if:(op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0),  nonconst if:(op0[ref offset: 832] changed) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0)
+    size:0.500000, time:0.056100,  executed if:(op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0) && (not inlined),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0) && (not inlined)
+    size:2.500000, time:0.280500,  executed if:(op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0)
+    size:1.000000, time:0.112200,  executed if:(op0[ref offset: 832] != 2) && (op0[ref offset: 128] == 1) && (op0[ref offset: 72] == 0)
+  calls:
+    Siul2_Port_Ip_WriteDCMConfiguration/5 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+    Siul2_Port_Ip_WriteIMCRConfiguration/6 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+
+Symbol table:
+
+SchM_Exit_Port_PORT_EXCLUSIVE_AREA_04/22 (SchM_Exit_Port_PORT_EXCLUSIVE_AREA_04) @0645b7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Port_Ip_SetPinDirection/12 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Port_PORT_EXCLUSIVE_AREA_04/21 (SchM_Enter_Port_PORT_EXCLUSIVE_AREA_04) @0645b700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Port_Ip_SetPinDirection/12 (1073741809 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Port_PORT_EXCLUSIVE_AREA_03/20 (SchM_Exit_Port_PORT_EXCLUSIVE_AREA_03) @0645b540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Port_Ip_SetInputBuffer/11 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Port_PORT_EXCLUSIVE_AREA_03/19 (SchM_Enter_Port_PORT_EXCLUSIVE_AREA_03) @0645b460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Port_Ip_SetInputBuffer/11 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Port_PORT_EXCLUSIVE_AREA_02/18 (SchM_Exit_Port_PORT_EXCLUSIVE_AREA_02) @0645b2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Port_Ip_SetOutputBuffer/10 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Port_PORT_EXCLUSIVE_AREA_02/17 (SchM_Enter_Port_PORT_EXCLUSIVE_AREA_02) @0645b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Port_Ip_SetOutputBuffer/10 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Port_PORT_EXCLUSIVE_AREA_01/16 (SchM_Exit_Port_PORT_EXCLUSIVE_AREA_01) @0645b000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Port_Ip_SetPullSel/9 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Port_PORT_EXCLUSIVE_AREA_01/15 (SchM_Enter_Port_PORT_EXCLUSIVE_AREA_01) @06376c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Port_Ip_SetPullSel/9 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Siul2_Port_Ip_GetPinConfiguration/14 (Siul2_Port_Ip_GetPinConfiguration) @06376620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: pPort_Setting/2 (read) u32MaxPinConfigured/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:114863530 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Siul2_Port_Ip_GetMSCRConfiguration/7 (inlined) (55807731 (estimated locally),0.49 per call) 
+Siul2_Port_Ip_RevertPinConfiguration/13 (Siul2_Port_Ip_RevertPinConfiguration) @06376380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: pPort_Setting/2 (read) u32MaxPinConfigured/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:114863530 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Siul2_Port_Ip_PinInit/4 (55807731 (estimated locally),0.49 per call) 
+Siul2_Port_Ip_SetPinDirection/12 (Siul2_Port_Ip_SetPinDirection) @063760e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741809 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Port_PORT_EXCLUSIVE_AREA_04/22 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Port_PORT_EXCLUSIVE_AREA_04/21 (1073741809 (estimated locally),1.00 per call) 
+Siul2_Port_Ip_SetInputBuffer/11 (Siul2_Port_Ip_SetInputBuffer) @063e8700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Port_PORT_EXCLUSIVE_AREA_03/20 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Port_PORT_EXCLUSIVE_AREA_03/19 (1073741824 (estimated locally),1.00 per call) 
+Siul2_Port_Ip_SetOutputBuffer/10 (Siul2_Port_Ip_SetOutputBuffer) @063e8d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Port_PORT_EXCLUSIVE_AREA_02/18 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Port_PORT_EXCLUSIVE_AREA_02/17 (1073741824 (estimated locally),1.00 per call) 
+Siul2_Port_Ip_SetPullSel/9 (Siul2_Port_Ip_SetPullSel) @063e88c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Port_PORT_EXCLUSIVE_AREA_01/16 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Port_PORT_EXCLUSIVE_AREA_01/15 (1073741824 (estimated locally),1.00 per call) 
+Siul2_Port_Ip_Init/8 (Siul2_Port_Ip_Init) @063e8620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: pPort_Setting/2 (write) u32MaxPinConfigured/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Siul2_Port_Ip_PinInit/4 (955630225 (estimated locally),8.09 per call) 
+Siul2_Port_Ip_GetMSCRConfiguration/7 (Siul2_Port_Ip_GetMSCRConfiguration) @063e8380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Siul2_Port_Ip_GetMSCRConfiguration/7 is inline copy in Siul2_Port_Ip_GetPinConfiguration/14
+  Availability: local
+  Function flags: count:55807731 (estimated locally) body local optimize_size
+  Called by: Siul2_Port_Ip_GetPinConfiguration/14 (inlined) (55807731 (estimated locally),0.49 per call) 
+  Calls: 
+Siul2_Port_Ip_WriteIMCRConfiguration/6 (Siul2_Port_Ip_WriteIMCRConfiguration) @063e80e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Siul2_Port_Ip_WriteIMCRConfiguration/6 is inline copy in Siul2_Port_Ip_PinInit/4
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Siul2_Port_Ip_PinInit/4 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Siul2_Port_Ip_WriteDCMConfiguration/5 (Siul2_Port_Ip_WriteDCMConfiguration) @0635b1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Siul2_Port_Ip_WriteDCMConfiguration/5 is inline copy in Siul2_Port_Ip_PinInit/4
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Siul2_Port_Ip_PinInit/4 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Siul2_Port_Ip_PinInit/4 (Siul2_Port_Ip_PinInit) @0635bd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Siul2_Port_Ip_RevertPinConfiguration/13 (55807731 (estimated locally),0.49 per call) Siul2_Port_Ip_Init/8 (955630225 (estimated locally),8.09 per call) 
+  Calls: Siul2_Port_Ip_WriteDCMConfiguration/5 (inlined) (1073741824 (estimated locally),1.00 per call) Siul2_Port_Ip_WriteIMCRConfiguration/6 (inlined) (1073741824 (estimated locally),1.00 per call) 
+u32MaxPinConfigured/3 (u32MaxPinConfigured) @06357af8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Siul2_Port_Ip_Init/8 (write) Siul2_Port_Ip_RevertPinConfiguration/13 (read) Siul2_Port_Ip_GetPinConfiguration/14 (read) 
+  Availability: available
+  Varpool flags:
+pPort_Setting/2 (pPort_Setting) @06357a68
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Siul2_Port_Ip_Init/8 (write) Siul2_Port_Ip_RevertPinConfiguration/13 (read) Siul2_Port_Ip_GetPinConfiguration/14 (read) 
+  Availability: available
+  Varpool flags:
+Port_au32Siul2BaseAddr/1 (Port_au32Siul2BaseAddr) @063579d8
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+
+;; Function Siul2_Port_Ip_PinInit (Siul2_Port_Ip_PinInit, funcdef_no=1, decl_uid=6824, cgraph_uid=2, symbol_order=4)
+
+
+Symbols to be put in SSA form
+{ D.7017 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 43
+Number of blocks to update: 42 ( 98%)
+
+
+Merging blocks 24 and 35
+Merging blocks 33 and 25
+Removing basic block 34
+Removing basic block 36
+Merging blocks 42 and 26
+;; 3 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37
+;;
+;; Loop 1
+;;  header 36, latch 35
+;;  depth 1, outer 0
+;;  nodes: 36 35 31 33 34 32
+;;
+;; Loop 2
+;;  header 29, latch 28
+;;  depth 1, outer 0
+;;  nodes: 29 28 25 26 27
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 5 6 }
+;; 5 succs { 6 }
+;; 6 succs { 7 8 }
+;; 7 succs { 8 }
+;; 8 succs { 9 10 }
+;; 9 succs { 10 }
+;; 10 succs { 11 12 }
+;; 11 succs { 12 }
+;; 12 succs { 13 14 }
+;; 13 succs { 14 }
+;; 14 succs { 15 16 }
+;; 15 succs { 16 }
+;; 16 succs { 17 18 }
+;; 17 succs { 18 }
+;; 18 succs { 19 20 }
+;; 19 succs { 20 }
+;; 20 succs { 21 24 }
+;; 21 succs { 22 24 }
+;; 22 succs { 23 24 }
+;; 23 succs { 24 }
+;; 24 succs { 29 30 }
+;; 25 succs { 26 28 }
+;; 26 succs { 27 28 }
+;; 27 succs { 28 }
+;; 28 succs { 29 }
+;; 29 succs { 25 30 }
+;; 30 succs { 36 }
+;; 31 succs { 32 35 }
+;; 32 succs { 33 34 }
+;; 33 succs { 35 }
+;; 34 succs { 35 }
+;; 35 succs { 36 }
+;; 36 succs { 31 37 }
+;; 37 succs { 1 }
+cyclic probability of bb 29 is 0.941200; turning freq 0.340000 to 5.782313
+cyclic probability of bb 36 is 0.666700; turning freq 1.000000 to 3.000300
+Siul2_Port_Ip_PinInit (const struct Siul2_Port_Ip_PinSettingsConfig * config)
+{
+  uint8 inputMuxIterator;
+  uint32 imcrRegIdx;
+  uint32 dcmrwf4RegValue;
+  uint8 iterator;
+  uint32 adcInterleaves;
+  uint32 pinsValues;
+  <unnamed type> _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  <unnamed type> _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  <unnamed type> _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  <unnamed type> _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  <unnamed type> _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  <unnamed type> _21;
+  long unsigned int _22;
+  long unsigned int _23;
+  long unsigned int _24;
+  <unnamed type> _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  long unsigned int _28;
+  <unnamed type> _29;
+  long unsigned int _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  <unnamed type> _33;
+  long unsigned int _34;
+  long unsigned int _35;
+  long unsigned int _36;
+  <unnamed type> _37;
+  long unsigned int _38;
+  unsigned char _39;
+  long unsigned int _40;
+  short unsigned int _41;
+  short unsigned int _42;
+  long unsigned int _43;
+  long unsigned int _44;
+  volatile uint8 * _45;
+  struct SIUL2_Type * _46;
+  long unsigned int _47;
+  <unnamed type> _58;
+  int _77;
+  <unnamed type> _78;
+  signed short _80;
+  long unsigned int _81;
+  <unnamed type> _88;
+  int _90;
+  <unnamed type> _91;
+  long unsigned int _93;
+  <unnamed type> _94;
+  long unsigned int _95;
+
+  <bb 2> [local count: 185694157]:
+  # DEBUG BEGIN_STMT
+  # DEBUG pinsValues => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG siulInstance => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG siulInstance => 0
+  # DEBUG BEGIN_STMT
+  _1 = config_60(D)->pullConfig;
+  if (_1 != 2)
+    goto <bb 3>; [66.00%]
+  else
+    goto <bb 4>; [34.00%]
+
+  <bb 3> [local count: 122558143]:
+  # DEBUG BEGIN_STMT
+  # DEBUG pinsValues => 8192
+  # DEBUG BEGIN_STMT
+  _2 = (long unsigned int) _1;
+  _3 = _2 << 11;
+  _4 = _3 & 2048;
+  pinsValues_61 = _4 | 8192;
+  # DEBUG pinsValues => pinsValues_61
+
+  <bb 4> [local count: 185694157]:
+  # pinsValues_48 = PHI <0(2), pinsValues_61(3)>
+  # DEBUG pinsValues => pinsValues_48
+  # DEBUG BEGIN_STMT
+  _5 = config_60(D)->outputBuffer;
+  if (_5 != 2)
+    goto <bb 5>; [66.00%]
+  else
+    goto <bb 6>; [34.00%]
+
+  <bb 5> [local count: 122558143]:
+  # DEBUG BEGIN_STMT
+  _6 = (long unsigned int) _5;
+  _7 = _6 << 21;
+  _8 = _7 & 2097152;
+  pinsValues_62 = _8 | pinsValues_48;
+  # DEBUG pinsValues => pinsValues_62
+
+  <bb 6> [local count: 185694157]:
+  # pinsValues_49 = PHI <pinsValues_48(4), pinsValues_62(5)>
+  # DEBUG pinsValues => pinsValues_49
+  # DEBUG BEGIN_STMT
+  _9 = config_60(D)->invert;
+  if (_9 != 2)
+    goto <bb 7>; [66.00%]
+  else
+    goto <bb 8>; [34.00%]
+
+  <bb 7> [local count: 122558143]:
+  # DEBUG BEGIN_STMT
+  _10 = (long unsigned int) _9;
+  _11 = _10 << 17;
+  _12 = _11 & 131072;
+  pinsValues_63 = _12 | pinsValues_49;
+  # DEBUG pinsValues => pinsValues_63
+
+  <bb 8> [local count: 185694157]:
+  # pinsValues_50 = PHI <pinsValues_49(6), pinsValues_63(7)>
+  # DEBUG pinsValues => pinsValues_50
+  # DEBUG BEGIN_STMT
+  _13 = config_60(D)->pullKeep;
+  if (_13 != 2)
+    goto <bb 9>; [66.00%]
+  else
+    goto <bb 10>; [34.00%]
+
+  <bb 9> [local count: 122558143]:
+  # DEBUG BEGIN_STMT
+  _14 = (long unsigned int) _13;
+  _15 = _14 << 16;
+  _16 = _15 & 65536;
+  pinsValues_64 = _16 | pinsValues_50;
+  # DEBUG pinsValues => pinsValues_64
+
+  <bb 10> [local count: 185694157]:
+  # pinsValues_51 = PHI <pinsValues_50(8), pinsValues_64(9)>
+  # DEBUG pinsValues => pinsValues_51
+  # DEBUG BEGIN_STMT
+  _17 = config_60(D)->driveStrength;
+  if (_17 != 2)
+    goto <bb 11>; [66.00%]
+  else
+    goto <bb 12>; [34.00%]
+
+  <bb 11> [local count: 122558143]:
+  # DEBUG BEGIN_STMT
+  _18 = (long unsigned int) _17;
+  _19 = _18 << 8;
+  _20 = _19 & 256;
+  pinsValues_65 = _20 | pinsValues_51;
+  # DEBUG pinsValues => pinsValues_65
+
+  <bb 12> [local count: 185694157]:
+  # pinsValues_52 = PHI <pinsValues_51(10), pinsValues_65(11)>
+  # DEBUG pinsValues => pinsValues_52
+  # DEBUG BEGIN_STMT
+  _21 = config_60(D)->inputFilter;
+  if (_21 != 2)
+    goto <bb 13>; [66.00%]
+  else
+    goto <bb 14>; [34.00%]
+
+  <bb 13> [local count: 122558143]:
+  # DEBUG BEGIN_STMT
+  _22 = (long unsigned int) _21;
+  _23 = _22 << 6;
+  _24 = _23 & 64;
+  pinsValues_66 = _24 | pinsValues_52;
+  # DEBUG pinsValues => pinsValues_66
+
+  <bb 14> [local count: 185694157]:
+  # pinsValues_53 = PHI <pinsValues_52(12), pinsValues_66(13)>
+  # DEBUG pinsValues => pinsValues_53
+  # DEBUG BEGIN_STMT
+  _25 = config_60(D)->inputBuffer;
+  if (_25 != 2)
+    goto <bb 15>; [66.00%]
+  else
+    goto <bb 16>; [34.00%]
+
+  <bb 15> [local count: 122558143]:
+  # DEBUG BEGIN_STMT
+  _26 = (long unsigned int) _25;
+  _27 = _26 << 19;
+  _28 = _27 & 524288;
+  pinsValues_67 = _28 | pinsValues_53;
+  # DEBUG pinsValues => pinsValues_67
+
+  <bb 16> [local count: 185694157]:
+  # pinsValues_54 = PHI <pinsValues_53(14), pinsValues_67(15)>
+  # DEBUG pinsValues => pinsValues_54
+  # DEBUG BEGIN_STMT
+  _29 = config_60(D)->slewRateCtrlSel;
+  if (_29 != 2)
+    goto <bb 17>; [66.00%]
+  else
+    goto <bb 18>; [34.00%]
+
+  <bb 17> [local count: 122558143]:
+  # DEBUG BEGIN_STMT
+  _30 = (long unsigned int) _29;
+  _31 = _30 << 14;
+  _32 = _31 & 16384;
+  pinsValues_68 = _32 | pinsValues_54;
+  # DEBUG pinsValues => pinsValues_68
+
+  <bb 18> [local count: 185694157]:
+  # pinsValues_55 = PHI <pinsValues_54(16), pinsValues_68(17)>
+  # DEBUG pinsValues => pinsValues_55
+  # DEBUG BEGIN_STMT
+  _33 = config_60(D)->safeMode;
+  if (_33 != 2)
+    goto <bb 19>; [66.00%]
+  else
+    goto <bb 20>; [34.00%]
+
+  <bb 19> [local count: 122558143]:
+  # DEBUG BEGIN_STMT
+  _34 = (long unsigned int) _33;
+  _35 = _34 << 5;
+  _36 = _35 & 32;
+  pinsValues_69 = _36 | pinsValues_55;
+  # DEBUG pinsValues => pinsValues_69
+
+  <bb 20> [local count: 185694157]:
+  # pinsValues_56 = PHI <pinsValues_55(18), pinsValues_69(19)>
+  # DEBUG pinsValues => pinsValues_56
+  # DEBUG BEGIN_STMT
+  _37 = config_60(D)->mux;
+  _58 = _37 & 15;
+  _38 = (long unsigned int) _58;
+  pinsValues_70 = _38 | pinsValues_56;
+  # DEBUG pinsValues => pinsValues_70
+  # DEBUG BEGIN_STMT
+  if (_37 == 0)
+    goto <bb 21>; [50.00%]
+  else
+    goto <bb 24>; [50.00%]
+
+  <bb 21> [local count: 92847079]:
+  if (_5 == 1)
+    goto <bb 22>; [34.00%]
+  else
+    goto <bb 24>; [66.00%]
+
+  <bb 22> [local count: 31568007]:
+  # DEBUG BEGIN_STMT
+  _39 = config_60(D)->initValue;
+  if (_39 != 2)
+    goto <bb 23>; [66.00%]
+  else
+    goto <bb 24>; [34.00%]
+
+  <bb 23> [local count: 20834885]:
+  # DEBUG BEGIN_STMT
+  _40 = config_60(D)->pinPortIdx;
+  _41 = (short unsigned int) _40;
+  _42 = _41 ^ 3;
+  _43 = (long unsigned int) _42;
+  _44 = _43 + 1076433664;
+  _45 = (volatile uint8 *) _44;
+  *_45 ={v} _39;
+
+  <bb 24> [local count: 185694157]:
+  # DEBUG BEGIN_STMT
+  _46 = config_60(D)->base;
+  _47 = config_60(D)->pinPortIdx;
+  _46->MSCR[_47] ={v} pinsValues_70;
+  # DEBUG BEGIN_STMT
+  # DEBUG config => config_60(D)
+  # DEBUG INLINE_ENTRY Siul2_Port_Ip_WriteIMCRConfiguration
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG imcrBase => 1076428800B
+  # DEBUG BEGIN_STMT
+  _88 = config_60(D)->inputBuffer;
+  if (_88 == 1)
+    goto <bb 29>; [34.00%]
+  else
+    goto <bb 30>; [66.00%]
+
+  <bb 25> [local count: 1010605810]:
+  # DEBUG BEGIN_STMT
+  _90 = (int) inputMuxIterator_89;
+  _91 = config_60(D)->inputMux[_90];
+  if (_91 != 16)
+    goto <bb 26>; [66.00%]
+  else
+    goto <bb 28>; [34.00%]
+
+  <bb 26> [local count: 666999832]:
+  # DEBUG BEGIN_STMT
+  imcrRegIdx_92 = config_60(D)->inputMuxReg[_90];
+  # DEBUG imcrRegIdx => imcrRegIdx_92
+  # DEBUG BEGIN_STMT
+  # DEBUG imcrBase => 1076428800B
+  # DEBUG BEGIN_STMT
+  if (imcrRegIdx_92 <= 440)
+    goto <bb 27>; [50.00%]
+  else
+    goto <bb 28>; [50.00%]
+
+  <bb 27> [local count: 333499916]:
+  # DEBUG BEGIN_STMT
+  _93 = imcrRegIdx_92;
+  _94 = _91 & 15;
+  _95 = (long unsigned int) _94;
+  MEM[(struct SIUL2_Type *)1076428800B].IMCR[_93] ={v} _95;
+
+  <bb 28> [local count: 1010605812]:
+  # DEBUG imcrBase => 1076428800B
+  # DEBUG BEGIN_STMT
+  inputMuxIterator_96 = inputMuxIterator_89 + 1;
+  # DEBUG inputMuxIterator => inputMuxIterator_96
+
+  <bb 29> [local count: 1073741824]:
+  # inputMuxIterator_89 = PHI <0(24), inputMuxIterator_96(28)>
+  # DEBUG imcrBase => 1076428800B
+  # DEBUG inputMuxIterator => inputMuxIterator_89
+  # DEBUG BEGIN_STMT
+  if (inputMuxIterator_89 != 16)
+    goto <bb 25>; [94.12%]
+  else
+    goto <bb 30>; [5.88%]
+
+  <bb 30> [local count: 185694159]:
+  # DEBUG config => NULL
+  # DEBUG imcrRegIdx => NULL
+  # DEBUG inputMuxIterator => NULL
+  # DEBUG BEGIN_STMT
+  # DEBUG config => config_60(D)
+  # DEBUG INLINE_ENTRY Siul2_Port_Ip_WriteDCMConfiguration
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  dcmrwf4RegValue_75 ={v} MEM[(volatile uint32 *)1076545036B];
+  # DEBUG dcmrwf4RegValue => dcmrwf4RegValue_75
+  # DEBUG BEGIN_STMT
+  # DEBUG iterator => 0
+  goto <bb 36>; [100.00%]
+
+  <bb 31> [local count: 371444029]:
+  # DEBUG BEGIN_STMT
+  _77 = (int) iterator_76;
+  _78 = config_60(D)->adcInterleaves[_77];
+  adcInterleaves_79 = (uint32) _78;
+  # DEBUG adcInterleaves => adcInterleaves_79
+  # DEBUG BEGIN_STMT
+  if (adcInterleaves_79 != 0)
+    goto <bb 32>; [50.00%]
+  else
+    goto <bb 35>; [50.00%]
+
+  <bb 32> [local count: 185722014]:
+  # DEBUG BEGIN_STMT
+  _80 = (signed short) _78;
+  if (_80 < 0)
+    goto <bb 33>; [41.00%]
+  else
+    goto <bb 34>; [59.00%]
+
+  <bb 33> [local count: 76146025]:
+  # DEBUG BEGIN_STMT
+  _81 = adcInterleaves_79 | 4294965633;
+  dcmrwf4RegValue_83 = _81 & dcmrwf4RegValue_82;
+  # DEBUG dcmrwf4RegValue => dcmrwf4RegValue_83
+  goto <bb 35>; [100.00%]
+
+  <bb 34> [local count: 109575989]:
+  # DEBUG BEGIN_STMT
+  dcmrwf4RegValue_84 = adcInterleaves_79 | dcmrwf4RegValue_82;
+  # DEBUG dcmrwf4RegValue => dcmrwf4RegValue_84
+
+  <bb 35> [local count: 371444030]:
+  # dcmrwf4RegValue_87 = PHI <dcmrwf4RegValue_82(31), dcmrwf4RegValue_83(33), dcmrwf4RegValue_84(34)>
+  # DEBUG dcmrwf4RegValue => dcmrwf4RegValue_87
+  # DEBUG BEGIN_STMT
+  iterator_85 = iterator_76 + 1;
+  # DEBUG iterator => iterator_85
+
+  <bb 36> [local count: 557138189]:
+  # dcmrwf4RegValue_82 = PHI <dcmrwf4RegValue_75(30), dcmrwf4RegValue_87(35)>
+  # iterator_76 = PHI <0(30), iterator_85(35)>
+  # DEBUG iterator => iterator_76
+  # DEBUG dcmrwf4RegValue => dcmrwf4RegValue_82
+  # DEBUG BEGIN_STMT
+  if (iterator_76 != 2)
+    goto <bb 31>; [66.67%]
+  else
+    goto <bb 37>; [33.33%]
+
+  <bb 37> [local count: 185694159]:
+  # dcmrwf4RegValue_86 = PHI <dcmrwf4RegValue_82(36)>
+  # DEBUG BEGIN_STMT
+  MEM[(volatile uint32 *)1076545036B] ={v} dcmrwf4RegValue_86;
+  # DEBUG config => NULL
+  # DEBUG adcInterleaves => NULL
+  # DEBUG iterator => NULL
+  # DEBUG dcmrwf4RegValue => NULL
+  return;
+
+}
+
+
+
+;; Function Siul2_Port_Ip_Init (Siul2_Port_Ip_Init, funcdef_no=5, decl_uid=6696, cgraph_uid=6, symbol_order=8)
+
+Siul2_Port_Ip_Init (uint32 pinCount, const struct Siul2_Port_Ip_PinSettingsConfig * config)
+{
+  uint32 i;
+  long unsigned int _1;
+  const struct Siul2_Port_Ip_PinSettingsConfig * _2;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  pPort_Setting = config_6(D);
+  # DEBUG BEGIN_STMT
+  u32MaxPinConfigured = pinCount_8(D);
+  # DEBUG BEGIN_STMT
+  # DEBUG i => 0
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _1 = i_3 * 108;
+  _2 = config_6(D) + _1;
+  Siul2_Port_Ip_PinInit (_2);
+  # DEBUG BEGIN_STMT
+  i_11 = i_3 + 1;
+  # DEBUG i => i_11
+
+  <bb 4> [local count: 1073741824]:
+  # i_3 = PHI <0(2), i_11(3)>
+  # DEBUG i => i_3
+  # DEBUG BEGIN_STMT
+  if (i_3 < pinCount_8(D))
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 5> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+
+;; Function Siul2_Port_Ip_SetPullSel (Siul2_Port_Ip_SetPullSel, funcdef_no=6, decl_uid=6682, cgraph_uid=7, symbol_order=9)
+
+Siul2_Port_Ip_SetPullSel (struct Siul2_Port_Ip_PortType * const base, uint16 pin, Siul2_Port_Ip_PortPullConfig pullConfig)
+{
+  uint32 regVal;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  int _4;
+  int _5;
+  long unsigned int _20;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG pueVal => 8192
+  # DEBUG BEGIN_STMT
+  # DEBUG pusVal => 2048
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Port_PORT_EXCLUSIVE_AREA_01 ();
+  # DEBUG BEGIN_STMT
+  switch (pullConfig_9(D)) <default: <L5> [25.00%], case 0: <L1> [25.00%], case 1: <L2> [25.00%], case 2: <L0> [25.00%]>
+
+  <bb 3> [local count: 268435456]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _1 = (int) pin_10(D);
+  _2 ={v} base_11(D)->MSCR[_1];
+  _3 = _2 & 4294959103;
+  base_11(D)->MSCR[_1] ={v} _3;
+  # DEBUG BEGIN_STMT
+  goto <bb 6>; [100.00%]
+
+  <bb 4> [local count: 268435456]:
+<L1>:
+  # DEBUG BEGIN_STMT
+  _4 = (int) pin_10(D);
+  regVal_16 ={v} base_11(D)->MSCR[_4];
+  # DEBUG regVal => regVal_16
+  # DEBUG BEGIN_STMT
+  # DEBUG regVal => regVal_16 | 8192
+  # DEBUG BEGIN_STMT
+  _20 = regVal_16 & 4294965247;
+  regVal_17 = _20 | 8192;
+  # DEBUG regVal => regVal_17
+  # DEBUG BEGIN_STMT
+  base_11(D)->MSCR[_4] ={v} regVal_17;
+  # DEBUG BEGIN_STMT
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 268435456]:
+<L2>:
+  # DEBUG BEGIN_STMT
+  _5 = (int) pin_10(D);
+  regVal_13 ={v} base_11(D)->MSCR[_5];
+  # DEBUG regVal => regVal_13
+  # DEBUG BEGIN_STMT
+  # DEBUG regVal => regVal_13 | 8192
+  # DEBUG BEGIN_STMT
+  regVal_14 = regVal_13 | 10240;
+  # DEBUG regVal => regVal_14
+  # DEBUG BEGIN_STMT
+  base_11(D)->MSCR[_5] ={v} regVal_14;
+  # DEBUG BEGIN_STMT
+
+  <bb 6> [local count: 1073741824]:
+<L5>:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Port_PORT_EXCLUSIVE_AREA_01 ();
+  return;
+
+}
+
+
+
+;; Function Siul2_Port_Ip_SetOutputBuffer (Siul2_Port_Ip_SetOutputBuffer, funcdef_no=7, decl_uid=6687, cgraph_uid=8, symbol_order=10)
+
+Siul2_Port_Ip_SetOutputBuffer (struct Siul2_Port_Ip_PortType * const base, uint16 pin, boolean enable, Siul2_Port_Ip_PortMux mux)
+{
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int iftmp.2_11;
+  <unnamed type> _18;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Port_PORT_EXCLUSIVE_AREA_02 ();
+  # DEBUG BEGIN_STMT
+  _1 = (int) pin_14(D);
+  _2 ={v} base_15(D)->MSCR[_1];
+  _3 = _2 & 4292870143;
+  base_15(D)->MSCR[_1] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} base_15(D)->MSCR[_1];
+  if (enable_17(D) != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 3>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+
+  <bb 4> [local count: 1073741824]:
+  # iftmp.2_11 = PHI <2097152(2), 0(3)>
+  _5 = _4 | iftmp.2_11;
+  base_15(D)->MSCR[_1] ={v} _5;
+  # DEBUG BEGIN_STMT
+  _6 ={v} base_15(D)->MSCR[_1];
+  _7 = _6 & 4294967280;
+  base_15(D)->MSCR[_1] ={v} _7;
+  # DEBUG BEGIN_STMT
+  _8 ={v} base_15(D)->MSCR[_1];
+  _18 = mux_21(D) & 15;
+  _9 = (long unsigned int) _18;
+  _10 = _8 | _9;
+  base_15(D)->MSCR[_1] ={v} _10;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Port_PORT_EXCLUSIVE_AREA_02 ();
+  return;
+
+}
+
+
+
+;; Function Siul2_Port_Ip_SetInputBuffer (Siul2_Port_Ip_SetInputBuffer, funcdef_no=8, decl_uid=6693, cgraph_uid=9, symbol_order=11)
+
+Siul2_Port_Ip_SetInputBuffer (struct Siul2_Port_Ip_PortType * const base, uint16 pin, boolean enable, uint32 inputMuxReg, Siul2_Port_Ip_PortInputMux inputMux)
+{
+  uint32 imcrVal;
+  struct SIUL2_Type * siul2Base;
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int iftmp.3_9;
+  <unnamed type> _12;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG siul2Base => 4294967295B
+  # DEBUG BEGIN_STMT
+  # DEBUG imcrRegIdx => inputMuxReg_13(D)
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Port_PORT_EXCLUSIVE_AREA_03 ();
+  # DEBUG BEGIN_STMT
+  if (base_16(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 6>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) pin_17(D);
+  _2 ={v} base_16(D)->MSCR[_1];
+  _3 = _2 & 4294443007;
+  base_16(D)->MSCR[_1] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} base_16(D)->MSCR[_1];
+  if (enable_19(D) != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 4> [local count: 375809640]:
+
+  <bb 5> [local count: 751619281]:
+  # iftmp.3_9 = PHI <524288(3), 0(4)>
+  _5 = _4 | iftmp.3_9;
+  base_16(D)->MSCR[_1] ={v} _5;
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  if (inputMux_21(D) != 16)
+    goto <bb 7>; [66.00%]
+  else
+    goto <bb 11>; [34.00%]
+
+  <bb 7> [local count: 708669601]:
+  # DEBUG BEGIN_STMT
+  if (inputMuxReg_13(D) <= 511)
+    goto <bb 8>; [50.00%]
+  else
+    goto <bb 9>; [50.00%]
+
+  <bb 8> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  # DEBUG siul2Base => 1076428800B
+
+  <bb 9> [local count: 708669601]:
+  # siul2Base_8 = PHI <4294967295B(7), 1076428800B(8)>
+  # DEBUG siul2Base => siul2Base_8
+  # DEBUG BEGIN_STMT
+  if (inputMuxReg_13(D) <= 440)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 10> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  _6 = inputMuxReg_13(D);
+  imcrVal_22 ={v} siul2Base_8->IMCR[_6];
+  # DEBUG imcrVal => imcrVal_22
+  # DEBUG BEGIN_STMT
+  imcrVal_23 = imcrVal_22 & 4294967280;
+  # DEBUG imcrVal => imcrVal_23
+  # DEBUG BEGIN_STMT
+  _12 = inputMux_21(D) & 15;
+  _7 = (long unsigned int) _12;
+  imcrVal_24 = _7 | imcrVal_23;
+  # DEBUG imcrVal => imcrVal_24
+  # DEBUG BEGIN_STMT
+  siul2Base_8->IMCR[_6] ={v} imcrVal_24;
+
+  <bb 11> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Port_PORT_EXCLUSIVE_AREA_03 ();
+  return;
+
+}
+
+
+
+;; Function Siul2_Port_Ip_SetPinDirection (Siul2_Port_Ip_SetPinDirection, funcdef_no=9, decl_uid=6700, cgraph_uid=10, symbol_order=12)
+
+Siul2_Port_Ip_SetPinDirection (struct Siul2_Port_Ip_PortType * const base, uint16 pin, Siul2_Port_Ip_PortDirectionType direction)
+{
+  int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+
+  <bb 2> [local count: 1073741809]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Port_PORT_EXCLUSIVE_AREA_04 ();
+  # DEBUG BEGIN_STMT
+  switch (direction_20(D)) <default: <L6> [20.00%], case 0: <L0> [20.00%], case 1: <L1> [20.00%], case 2: <L2> [20.00%], case 3: <L3> [20.00%]>
+
+  <bb 3> [local count: 214748365]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _1 = (int) pin_21(D);
+  _2 ={v} base_22(D)->MSCR[_1];
+  _3 = _2 & 4292870143;
+  base_22(D)->MSCR[_1] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} base_22(D)->MSCR[_1];
+  _5 = _4 | 524288;
+  base_22(D)->MSCR[_1] ={v} _5;
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [100.00%]
+
+  <bb 4> [local count: 214748365]:
+<L1>:
+  # DEBUG BEGIN_STMT
+  _6 = (int) pin_21(D);
+  _7 ={v} base_22(D)->MSCR[_6];
+  _8 = _7 & 4294443007;
+  base_22(D)->MSCR[_6] ={v} _8;
+  # DEBUG BEGIN_STMT
+  _9 ={v} base_22(D)->MSCR[_6];
+  _10 = _9 | 2097152;
+  base_22(D)->MSCR[_6] ={v} _10;
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [100.00%]
+
+  <bb 5> [local count: 214748365]:
+<L2>:
+  # DEBUG BEGIN_STMT
+  _11 = (int) pin_21(D);
+  _12 ={v} base_22(D)->MSCR[_11];
+  _13 = _12 | 2621440;
+  base_22(D)->MSCR[_11] ={v} _13;
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [100.00%]
+
+  <bb 6> [local count: 214748365]:
+<L3>:
+  # DEBUG BEGIN_STMT
+  _14 = (int) pin_21(D);
+  _15 ={v} base_22(D)->MSCR[_14];
+  _16 = _15 & 4292345855;
+  base_22(D)->MSCR[_14] ={v} _16;
+  # DEBUG BEGIN_STMT
+
+  <bb 7> [local count: 1073741824]:
+<L6>:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Port_PORT_EXCLUSIVE_AREA_04 ();
+  return;
+
+}
+
+
+
+;; Function Siul2_Port_Ip_RevertPinConfiguration (Siul2_Port_Ip_RevertPinConfiguration, funcdef_no=10, decl_uid=6703, cgraph_uid=11, symbol_order=13)
+
+Siul2_Port_Ip_RevertPinConfiguration (const struct Siul2_Port_Ip_PortType * const base, uint16 pin)
+{
+  uint32 u32MscrId;
+  uint32 portNumber;
+  uint32 MaxPinConfigured;
+  const struct Siul2_Port_Ip_PinSettingsConfig * ConfigPtr;
+  uint32 u32RegVal;
+  uint32 u32PinIdx;
+  long unsigned int base.4_1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  const struct Siul2_Port_Ip_PinSettingsConfig * _6;
+  long unsigned int _7;
+  const struct Siul2_Port_Ip_PinSettingsConfig * _8;
+  int _9;
+
+  <bb 2> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG u32RegVal => 4294967295
+  # DEBUG BEGIN_STMT
+  ConfigPtr_14 = pPort_Setting;
+  # DEBUG ConfigPtr => ConfigPtr_14
+  # DEBUG BEGIN_STMT
+  MaxPinConfigured_15 = u32MaxPinConfigured;
+  # DEBUG MaxPinConfigured => MaxPinConfigured_15
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  base.4_1 = (long unsigned int) base_16(D);
+  _2 = base.4_1 + 3218537920;
+  portNumber_17 = _2 >> 6;
+  # DEBUG portNumber => portNumber_17
+  # DEBUG BEGIN_STMT
+  _3 = portNumber_17 << 4;
+  _4 = (long unsigned int) pin_18(D);
+  u32MscrId_19 = _3 + _4;
+  # DEBUG u32MscrId => u32MscrId_19
+  # DEBUG BEGIN_STMT
+  # DEBUG u32PinIdx => 0
+  goto <bb 6>; [100.00%]
+
+  <bb 3> [local count: 1014686026]:
+  # DEBUG BEGIN_STMT
+  _5 = u32PinIdx_10 * 108;
+  _6 = ConfigPtr_14 + _5;
+  _7 = _6->pinPortIdx;
+  if (_7 == u32MscrId_19)
+    goto <bb 4>; [5.50%]
+  else
+    goto <bb 5>; [94.50%]
+
+  <bb 4> [local count: 55807731]:
+  # _8 = PHI <_6(3)>
+  # DEBUG BEGIN_STMT
+  Siul2_Port_Ip_PinInit (_8);
+  # DEBUG BEGIN_STMT
+  _9 = (int) pin_18(D);
+  u32RegVal_22 ={v} base_16(D)->MSCR[_9];
+  # DEBUG u32RegVal => u32RegVal_22
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [100.00%]
+
+  <bb 5> [local count: 958878296]:
+  # DEBUG BEGIN_STMT
+  u32PinIdx_20 = u32PinIdx_10 + 1;
+  # DEBUG u32PinIdx => u32PinIdx_20
+
+  <bb 6> [local count: 1073741824]:
+  # u32PinIdx_10 = PHI <0(2), u32PinIdx_20(5)>
+  # DEBUG u32PinIdx => u32PinIdx_10
+  # DEBUG BEGIN_STMT
+  if (u32PinIdx_10 < MaxPinConfigured_15)
+    goto <bb 3>; [94.50%]
+  else
+    goto <bb 7>; [5.50%]
+
+  <bb 7> [local count: 114863531]:
+  # u32RegVal_11 = PHI <u32RegVal_22(4), 4294967295(6)>
+  # DEBUG u32RegVal => u32RegVal_11
+  # DEBUG BEGIN_STMT
+  return u32RegVal_11;
+
+}
+
+
+
+;; Function Siul2_Port_Ip_GetPinConfiguration (Siul2_Port_Ip_GetPinConfiguration, funcdef_no=11, decl_uid=6707, cgraph_uid=12, symbol_order=14)
+
+
+Symbols to be put in SSA form
+{ D.7025 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 15
+Number of blocks to update: 14 ( 93%)
+
+
+Removing basic block 7
+Removing basic block 11
+;; 3 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12
+;;
+;; Loop 2
+;;  header 6, latch 5
+;;  depth 1, outer 0
+;;  nodes: 6 5
+;;
+;; Loop 1
+;;  header 11, latch 10
+;;  depth 1, outer 0
+;;  nodes: 11 10 3
+;; 2 succs { 11 }
+;; 3 succs { 4 10 }
+;; 4 succs { 6 }
+;; 5 succs { 6 }
+;; 6 succs { 5 7 }
+;; 7 succs { 9 8 }
+;; 8 succs { 9 }
+;; 9 succs { 12 }
+;; 10 succs { 11 }
+;; 11 succs { 3 12 }
+;; 12 succs { 1 }
+cyclic probability of bb 11 is 0.893025; turning freq 1.000000 to 9.347979
+cyclic probability of bb 6 is 0.941200; turning freq 0.485861 to 8.262946
+Siul2_Port_Ip_GetPinConfiguration (const struct Siul2_Port_Ip_PortType * const base, struct Siul2_Port_Ip_PinSettingsConfig * config, uint16 pin)
+{
+  uint32 u32RegVal;
+  uint32 u32TempVal;
+  Siul2_Port_Ip_PortPullConfig pullValue;
+  uint8 inputMuxIterator;
+  uint32 u32PinIdx;
+  uint32 u32MscrId;
+  uint32 portNumber;
+  uint32 MaxPinConfigured;
+  const struct Siul2_Port_Ip_PinSettingsConfig * ConfigPtr;
+  long unsigned int base.5_1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  const struct Siul2_Port_Ip_PinSettingsConfig * _6;
+  long unsigned int _7;
+  const struct Siul2_Port_Ip_PinSettingsConfig * _8;
+  long unsigned int _9;
+  struct SIUL2_Type * _10;
+  unsigned char _11;
+  int _12;
+  long unsigned int _13;
+  <unnamed type> _14;
+  int _35;
+  <unnamed type> _38;
+  long unsigned int _39;
+  <unnamed type> _41;
+  long unsigned int _42;
+  long unsigned int _43;
+  long unsigned int _47;
+  <unnamed type> _49;
+  long unsigned int _50;
+  <unnamed type> _52;
+  long unsigned int _53;
+  <unnamed type> _55;
+  long unsigned int _56;
+  <unnamed type> _58;
+  long unsigned int _59;
+  <unnamed type> _61;
+  long unsigned int _62;
+  <unnamed type> _64;
+  long unsigned int _65;
+  <unnamed type> _67;
+
+  <bb 2> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  ConfigPtr_20 = pPort_Setting;
+  # DEBUG ConfigPtr => ConfigPtr_20
+  # DEBUG BEGIN_STMT
+  MaxPinConfigured_21 = u32MaxPinConfigured;
+  # DEBUG MaxPinConfigured => MaxPinConfigured_21
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG u32MscrBase => 1076429376
+  # DEBUG BEGIN_STMT
+  base.5_1 = (long unsigned int) base_22(D);
+  _2 = base.5_1 + 3218537920;
+  portNumber_23 = _2 >> 6;
+  # DEBUG portNumber => portNumber_23
+  # DEBUG BEGIN_STMT
+  _3 = portNumber_23 << 4;
+  _4 = (long unsigned int) pin_24(D);
+  u32MscrId_25 = _3 + _4;
+  # DEBUG u32MscrId => u32MscrId_25
+  # DEBUG BEGIN_STMT
+  # DEBUG u32PinIdx => 0
+  goto <bb 11>; [100.00%]
+
+  <bb 3> [local count: 1014686026]:
+  # DEBUG BEGIN_STMT
+  _5 = u32PinIdx_15 * 108;
+  _6 = ConfigPtr_20 + _5;
+  _7 = _6->pinPortIdx;
+  if (_7 == u32MscrId_25)
+    goto <bb 4>; [5.50%]
+  else
+    goto <bb 10>; [94.50%]
+
+  <bb 4> [local count: 55807731]:
+  # _8 = PHI <_6(3)>
+  # _9 = PHI <_7(3)>
+  # DEBUG BEGIN_STMT
+  _10 = _8->base;
+  config_27(D)->base = _10;
+  # DEBUG BEGIN_STMT
+  config_27(D)->pinPortIdx = _9;
+  # DEBUG BEGIN_STMT
+  _11 = _8->initValue;
+  config_27(D)->initValue = _11;
+  # DEBUG BEGIN_STMT
+  # DEBUG inputMuxIterator => 0
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 893303391]:
+  # DEBUG BEGIN_STMT
+  _12 = (int) inputMuxIterator_16;
+  _13 = _8->inputMuxReg[_12];
+  config_27(D)->inputMuxReg[_12] = _13;
+  # DEBUG BEGIN_STMT
+  _14 = _8->inputMux[_12];
+  config_27(D)->inputMux[_12] = _14;
+  # DEBUG BEGIN_STMT
+  inputMuxIterator_34 = inputMuxIterator_16 + 1;
+  # DEBUG inputMuxIterator => inputMuxIterator_34
+
+  <bb 6> [local count: 949111122]:
+  # inputMuxIterator_16 = PHI <0(4), inputMuxIterator_34(5)>
+  # DEBUG inputMuxIterator => inputMuxIterator_16
+  # DEBUG BEGIN_STMT
+  if (inputMuxIterator_16 != 16)
+    goto <bb 5>; [94.12%]
+  else
+    goto <bb 7>; [5.88%]
+
+  <bb 7> [local count: 55807731]:
+  # DEBUG BEGIN_STMT
+  # DEBUG config => config_27(D)
+  # DEBUG base => base_22(D)
+  # DEBUG pin => pin_24(D)
+  # DEBUG INLINE_ENTRY Siul2_Port_Ip_GetMSCRConfiguration
+  # DEBUG BEGIN_STMT
+  # DEBUG u32RegVal => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG u32TempVal => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _35 = (int) pin_24(D);
+  u32RegVal_36 ={v} base_22(D)->MSCR[_35];
+  # DEBUG u32RegVal => u32RegVal_36
+  # DEBUG BEGIN_STMT
+  u32TempVal_37 = u32RegVal_36 & 15;
+  # DEBUG u32TempVal => u32TempVal_37
+  # DEBUG BEGIN_STMT
+  _38 = (<unnamed type>) u32TempVal_37;
+  config_27(D)->mux = _38;
+  # DEBUG BEGIN_STMT
+  _39 = u32RegVal_36 >> 5;
+  u32TempVal_40 = _39 & 1;
+  # DEBUG u32TempVal => u32TempVal_40
+  # DEBUG BEGIN_STMT
+  _41 = (<unnamed type>) u32TempVal_40;
+  config_27(D)->safeMode = _41;
+  # DEBUG BEGIN_STMT
+  _42 = u32RegVal_36 & 8192;
+  if (_42 == 0)
+    goto <bb 9>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 8> [local count: 27903866]:
+  # DEBUG BEGIN_STMT
+  _43 = u32RegVal_36 >> 11;
+  u32TempVal_44 = _43 & 1;
+  # DEBUG u32TempVal => u32TempVal_44
+  # DEBUG BEGIN_STMT
+  pullValue_45 = (Siul2_Port_Ip_PortPullConfig) u32TempVal_44;
+  # DEBUG pullValue => pullValue_45
+
+  <bb 9> [local count: 55807731]:
+  # pullValue_46 = PHI <2(7), pullValue_45(8)>
+  # DEBUG pullValue => pullValue_46
+  # DEBUG BEGIN_STMT
+  config_27(D)->pullConfig = pullValue_46;
+  # DEBUG BEGIN_STMT
+  _47 = u32RegVal_36 >> 14;
+  u32TempVal_48 = _47 & 1;
+  # DEBUG u32TempVal => u32TempVal_48
+  # DEBUG BEGIN_STMT
+  _49 = (<unnamed type>) u32TempVal_48;
+  config_27(D)->slewRateCtrlSel = _49;
+  # DEBUG BEGIN_STMT
+  _50 = u32RegVal_36 >> 8;
+  u32TempVal_51 = _50 & 1;
+  # DEBUG u32TempVal => u32TempVal_51
+  # DEBUG BEGIN_STMT
+  _52 = (<unnamed type>) u32TempVal_51;
+  config_27(D)->driveStrength = _52;
+  # DEBUG BEGIN_STMT
+  _53 = u32RegVal_36 >> 6;
+  u32TempVal_54 = _53 & 1;
+  # DEBUG u32TempVal => u32TempVal_54
+  # DEBUG BEGIN_STMT
+  _55 = (<unnamed type>) u32TempVal_54;
+  config_27(D)->inputFilter = _55;
+  # DEBUG BEGIN_STMT
+  _56 = u32RegVal_36 >> 17;
+  u32TempVal_57 = _56 & 1;
+  # DEBUG u32TempVal => u32TempVal_57
+  # DEBUG BEGIN_STMT
+  _58 = (<unnamed type>) u32TempVal_57;
+  config_27(D)->invert = _58;
+  # DEBUG BEGIN_STMT
+  _59 = u32RegVal_36 >> 16;
+  u32TempVal_60 = _59 & 1;
+  # DEBUG u32TempVal => u32TempVal_60
+  # DEBUG BEGIN_STMT
+  _61 = (<unnamed type>) u32TempVal_60;
+  config_27(D)->pullKeep = _61;
+  # DEBUG BEGIN_STMT
+  _62 = u32RegVal_36 >> 19;
+  u32TempVal_63 = _62 & 1;
+  # DEBUG u32TempVal => u32TempVal_63
+  # DEBUG BEGIN_STMT
+  _64 = (<unnamed type>) u32TempVal_63;
+  config_27(D)->inputBuffer = _64;
+  # DEBUG BEGIN_STMT
+  _65 = u32RegVal_36 >> 21;
+  u32TempVal_66 = _65 & 1;
+  # DEBUG u32TempVal => u32TempVal_66
+  # DEBUG BEGIN_STMT
+  _67 = (<unnamed type>) u32TempVal_66;
+  config_27(D)->outputBuffer = _67;
+  goto <bb 12>; [100.00%]
+
+  <bb 10> [local count: 958878296]:
+  # DEBUG BEGIN_STMT
+  u32PinIdx_26 = u32PinIdx_15 + 1;
+  # DEBUG u32PinIdx => u32PinIdx_26
+
+  <bb 11> [local count: 1073741824]:
+  # u32PinIdx_15 = PHI <0(2), u32PinIdx_26(10)>
+  # DEBUG u32PinIdx => u32PinIdx_15
+  # DEBUG BEGIN_STMT
+  if (u32PinIdx_15 < MaxPinConfigured_21)
+    goto <bb 3>; [94.50%]
+  else
+    goto <bb 12>; [5.50%]
+
+  <bb 12> [local count: 114863531]:
+  # DEBUG config => NULL
+  # DEBUG base => NULL
+  # DEBUG pin => NULL
+  # DEBUG pullValue => NULL
+  # DEBUG u32TempVal => NULL
+  # DEBUG u32RegVal => NULL
+  return;
+
+}
+
+

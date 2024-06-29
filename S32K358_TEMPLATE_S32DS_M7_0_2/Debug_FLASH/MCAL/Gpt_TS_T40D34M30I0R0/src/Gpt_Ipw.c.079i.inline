@@ -1,0 +1,1071 @@
+IPA function summary for Gpt_Ipw_ChangeNextTimeoutValue/10 inlinable
+  global time:     9.950000
+  self size:       12
+  global size:     12
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_ChangeNextTimeoutValue/22 function body not available
+      freq:0.33 loop depth: 0 size: 4 time: 13 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_DisableInterrupt/9 inlinable
+  global time:     9.620000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_DisableChannelInterrupt/21 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_DeInit/8 inlinable
+  global time:     8.960000
+  self size:       9
+  global size:     9
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_Deinit/20 function body not available
+      freq:0.33 loop depth: 0 size: 2 time: 11 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_EnableInterrupt/7 inlinable
+  global time:     9.620000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_EnableChannelInterrupt/19 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_StopTimer/6 inlinable
+  global time:     9.620000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_StopChannel/18 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_GetTimeElapsed/5 inlinable
+  global time:     9.290000
+  self size:       10
+  global size:     10
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+  calls:
+    Gpt_Ipw_PitGetTimeElapsed/1 function not considered for inlining
+      freq:0.33 loop depth: 0 size: 4 time: 13 callee size:15 stack: 0 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_StartTimer/4 inlinable
+  global time:     10.280000
+  self size:       13
+  global size:     13
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_StartChannel/13 function body not available
+      freq:0.33 loop depth: 0 size: 5 time: 14 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_Init/3 inlinable
+  global time:     9.620000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_InitChannel/12 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_InitInstances/2 inlinable
+  global time:     120.538182
+  self size:       19
+  global size:     19
+  min size:       15
+  self stack:      0
+  global stack:    0
+    size:12.000000, time:77.907273
+    size:4.000000, time:10.590909,  executed if:(not inlined)
+  calls:
+    Pit_Ip_Init/11 function body not available
+      freq:2.67 loop depth: 1 size: 3 time: 12
+
+IPA function summary for Gpt_Ipw_PitGetTimeElapsed/1 inlinable
+  global time:     56.000000
+  self size:       31
+  global size:     31
+  min size:       22
+  self stack:      0
+  global stack:    0
+    size:9.000000, time:8.500000
+    size:7.000000, time:5.500000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 8] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 8] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 16] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 16] changed)
+  calls:
+    Pit_Ip_GetInterruptStatusFlag/0 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 4 time: 13 callee size: 6 stack: 0
+    Pit_Ip_GetCurrentTimer/16 function body not available
+      freq:1.00 loop depth: 0 size: 5 time: 14
+    Pit_Ip_GetLoadValue/15 function body not available
+      freq:1.00 loop depth: 0 size: 4 time: 13
+
+IPA function summary for Pit_Ip_GetInterruptStatusFlag/0 inlinable
+  global time:     7.660000
+  self size:       12
+  global size:     12
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+    size:2.000000, time:1.320000,  executed if:(op1 != 4)
+    size:1.000000, time:0.660000,  executed if:(op1 != 4),  nonconst if:(op0 changed) && (op1 != 4)
+    size:1.000000, time:0.660000,  executed if:(op1 != 4),  nonconst if:(op1 changed) && (op1 != 4)
+    size:2.000000, time:0.680000,  executed if:(op1 == 4)
+    size:1.000000, time:0.340000,  executed if:(op1 == 4),  nonconst if:(op0 changed) && (op1 == 4)
+  calls:
+
+
+Flattening functions:
+Overall time estimate: 261.158183 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Gpt_Ipw_ChangeNextTimeoutValue/10.
+Enqueueing calls in Gpt_Ipw_DisableInterrupt/9.
+Enqueueing calls in Gpt_Ipw_DeInit/8.
+Enqueueing calls in Gpt_Ipw_EnableInterrupt/7.
+Enqueueing calls in Gpt_Ipw_StopTimer/6.
+Enqueueing calls in Gpt_Ipw_GetTimeElapsed/5.
+Enqueueing calls in Gpt_Ipw_StartTimer/4.
+Enqueueing calls in Gpt_Ipw_Init/3.
+Enqueueing calls in Gpt_Ipw_InitInstances/2.
+Enqueueing calls in Gpt_Ipw_PitGetTimeElapsed/1.
+Enqueueing calls in Pit_Ip_GetInterruptStatusFlag/0.
+
+Considering Pit_Ip_GetInterruptStatusFlag/0 with 12 size
+ to be inlined into Gpt_Ipw_PitGetTimeElapsed/1 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Gpt_TS_T40D34M30I0R0/src/Gpt_Ipw.c:275
+ Estimated badness is -2.666667, frequency 1.00.
+
+Considering Gpt_Ipw_PitGetTimeElapsed/1 with 36 size
+ to be inlined into Gpt_Ipw_GetTimeElapsed/5 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Gpt_TS_T40D34M30I0R0/src/Gpt_Ipw.c:489
+ Estimated badness is -0.031544, frequency 0.33.
+node context cache: 0 hits, 0 misses, 3 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 207.120982 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :       10 calls, 5.640000 freq, 0 count
+IPA function summary for Gpt_Ipw_ChangeNextTimeoutValue/10 inlinable
+  global time:     9.950000
+  self size:       12
+  global size:     12
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_ChangeNextTimeoutValue/22 function body not available
+      freq:0.33 loop depth: 0 size: 4 time: 13 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_DisableInterrupt/9 inlinable
+  global time:     9.620000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_DisableChannelInterrupt/21 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_DeInit/8 inlinable
+  global time:     8.960000
+  self size:       9
+  global size:     9
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_Deinit/20 function body not available
+      freq:0.33 loop depth: 0 size: 2 time: 11 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_EnableInterrupt/7 inlinable
+  global time:     9.620000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_EnableChannelInterrupt/19 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_StopTimer/6 inlinable
+  global time:     9.620000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_StopChannel/18 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_GetTimeElapsed/5 inlinable
+  global time:     18.912800
+  self size:       10
+  global size:     34
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:18.000000, time:4.672800,  executed if:(op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Gpt_Ipw_PitGetTimeElapsed/1 inlined
+      freq:0.33
+      Stack frame offset 0, callee self size 0
+      Pit_Ip_GetInterruptStatusFlag/0 inlined
+        freq:0.33
+        Stack frame offset 0, callee self size 0
+      Pit_Ip_GetCurrentTimer/16 function body not available
+        freq:0.33 loop depth: 0 size: 5 time: 14 predicate: (op0[ref offset: 0] == 0)
+      Pit_Ip_GetLoadValue/15 function body not available
+        freq:0.33 loop depth: 0 size: 4 time: 13 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_StartTimer/4 inlinable
+  global time:     10.280000
+  self size:       13
+  global size:     13
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 16] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_StartChannel/13 function body not available
+      freq:0.33 loop depth: 0 size: 5 time: 14 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_Init/3 inlinable
+  global time:     9.620000
+  self size:       11
+  global size:     11
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 8] changed) && (op0[ref offset: 0] == 0)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0) && (not inlined),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 0] == 0) && (not inlined)
+    size:0.500000, time:0.165000,  executed if:(op0[ref offset: 0] == 0),  nonconst if:(op0[ref offset: 32] changed) && (op0[ref offset: 0] == 0)
+  calls:
+    Pit_Ip_InitChannel/12 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 0] == 0)
+
+IPA function summary for Gpt_Ipw_InitInstances/2 inlinable
+  global time:     120.538182
+  self size:       19
+  global size:     19
+  min size:       15
+  self stack:      0
+  global stack:    0
+    size:12.000000, time:77.907273
+    size:4.000000, time:10.590909,  executed if:(not inlined)
+  calls:
+    Pit_Ip_Init/11 function body not available
+      freq:2.67 loop depth: 1 size: 3 time: 12
+
+Symbol table:
+
+Pit_Ip_ChangeNextTimeoutValue/22 (Pit_Ip_ChangeNextTimeoutValue) @063d5000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_ChangeNextTimeoutValue/10 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_DisableChannelInterrupt/21 (Pit_Ip_DisableChannelInterrupt) @063bbe00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DisableInterrupt/9 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_Deinit/20 (Pit_Ip_Deinit) @063bbc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_DeInit/8 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_EnableChannelInterrupt/19 (Pit_Ip_EnableChannelInterrupt) @063bba80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_EnableInterrupt/7 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_StopChannel/18 (Pit_Ip_StopChannel) @063bb8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StopTimer/6 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+pitBase/17 (pitBase) @063bac60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Pit_Ip_GetInterruptStatusFlag/0 (read) Pit_Ip_GetInterruptStatusFlag/0 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Pit_Ip_GetCurrentTimer/16 (Pit_Ip_GetCurrentTimer) @063bb620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_GetLoadValue/15 (Pit_Ip_GetLoadValue) @063bb540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_u32OldTargetValue/14 (Pit_Ip_u32OldTargetValue) @063ba948
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Gpt_Ipw_PitGetTimeElapsed/1 (read) 
+  Availability: not_available
+  Varpool flags:
+Pit_Ip_StartChannel/13 (Pit_Ip_StartChannel) @063bb2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_StartTimer/4 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_InitChannel/12 (Pit_Ip_InitChannel) @063bb0e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_Init/3 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Pit_Ip_Init/11 (Pit_Ip_Init) @06203b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Gpt_Ipw_InitInstances/2 (315357972 (estimated locally),2.67 per call) 
+  Calls: 
+Gpt_Ipw_ChangeNextTimeoutValue/10 (Gpt_Ipw_ChangeNextTimeoutValue) @06203d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_ChangeNextTimeoutValue/22 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_DisableInterrupt/9 (Gpt_Ipw_DisableInterrupt) @06203a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_DisableChannelInterrupt/21 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_DeInit/8 (Gpt_Ipw_DeInit) @062037e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Deinit/20 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_EnableInterrupt/7 (Gpt_Ipw_EnableInterrupt) @06203540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_EnableChannelInterrupt/19 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_StopTimer/6 (Gpt_Ipw_StopTimer) @062032a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StopChannel/18 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_GetTimeElapsed/5 (Gpt_Ipw_GetTimeElapsed) @06203000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Gpt_Ipw_PitGetTimeElapsed/1 (inlined) (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_StartTimer/4 (Gpt_Ipw_StartTimer) @061fda80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_StartChannel/13 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_Init/3 (Gpt_Ipw_Init) @061fdee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_InitChannel/12 (354334800 (estimated locally),0.33 per call) 
+Gpt_Ipw_InitInstances/2 (Gpt_Ipw_InitInstances) @061fdc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Pit_Ip_Init/11 (315357972 (estimated locally),2.67 per call) 
+Gpt_Ipw_PitGetTimeElapsed/1 (Gpt_Ipw_PitGetTimeElapsed) @061fd9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Pit_Ip_u32OldTargetValue/14 (read) 
+  Referring: 
+  Function Gpt_Ipw_PitGetTimeElapsed/1 is inline copy in Gpt_Ipw_GetTimeElapsed/5
+  Availability: local
+  Function flags: count:354334800 (estimated locally) body local optimize_size
+  Called by: Gpt_Ipw_GetTimeElapsed/5 (inlined) (354334800 (estimated locally),0.33 per call) 
+  Calls: Pit_Ip_GetInterruptStatusFlag/0 (inlined) (354334800 (estimated locally),0.33 per call) Pit_Ip_GetCurrentTimer/16 (354334800 (estimated locally),0.33 per call) Pit_Ip_GetLoadValue/15 (354334800 (estimated locally),0.33 per call) 
+Pit_Ip_GetInterruptStatusFlag/0 (Pit_Ip_GetInterruptStatusFlag) @060d32a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: pitBase/17 (read) pitBase/17 (read) 
+  Referring: 
+  Function Pit_Ip_GetInterruptStatusFlag/0 is inline copy in Gpt_Ipw_GetTimeElapsed/5
+  Availability: local
+  Function flags: count:354334800 (estimated locally) body local optimize_size
+  Called by: Gpt_Ipw_PitGetTimeElapsed/1 (inlined) (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+
+;; Function Gpt_Ipw_InitInstances (Gpt_Ipw_InitInstances, funcdef_no=2, decl_uid=6498, cgraph_uid=3, symbol_order=2)
+
+Gpt_Ipw_InitInstances (const struct Gpt_ConfigType * configPtr)
+{
+  uint8 index;
+  struct Gpt_Ipw_HwInstanceConfigType[<unknown>] * _1;
+  int _2;
+  <unnamed type> _3;
+  unsigned char _4;
+  const struct Pit_Ip_InstanceConfigType * _5;
+  unsigned char _6;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG index => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG index => 0
+  goto <bb 6>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _1 = configPtr_11(D)->Gpt_Ipw_HwInstanceConfig;
+  _2 = (int) index_7;
+  _3 = (*_1)[_2].instanceType;
+  if (_3 == 0)
+    goto <bb 4>; [33.00%]
+  else
+    goto <bb 5>; [67.00%]
+
+  <bb 4> [local count: 315357972]:
+<L1>:
+  # DEBUG BEGIN_STMT
+  _4 = (*_1)[_2].instance;
+  _5 = (*_1)[_2].Gpt_Ipw_InstanceConfig.Pit_Ip_InstanceConfig;
+  Pit_Ip_Init (_4, _5);
+  # DEBUG BEGIN_STMT
+
+  <bb 5> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  index_13 = index_7 + 1;
+  # DEBUG index => index_13
+
+  <bb 6> [local count: 1073741824]:
+  # index_7 = PHI <0(2), index_13(5)>
+  # DEBUG index => index_7
+  # DEBUG BEGIN_STMT
+  _6 = configPtr_11(D)->instanceCount;
+  if (_6 > index_7)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 7>; [11.00%]
+
+  <bb 7> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_Init (Gpt_Ipw_Init, funcdef_no=3, decl_uid=6496, cgraph_uid=4, symbol_order=3)
+
+Gpt_Ipw_Init (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  const struct Pit_Ip_ChannelConfigType * _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = pHwChannelConfig_6(D)->instanceType;
+  if (_1 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = pHwChannelConfig_6(D)->instance;
+  _3 = pHwChannelConfig_6(D)->Gpt_Ipw_ChannelConfig.Pit_Ip_ChannelConfig;
+  Pit_Ip_InitChannel (_2, _3);
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_StartTimer (Gpt_Ipw_StartTimer, funcdef_no=4, decl_uid=6504, cgraph_uid=5, symbol_order=4)
+
+Gpt_Ipw_StartTimer (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig, Gpt_ValueType uValue)
+{
+  Std_ReturnType returnValue;
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG returnValue => 1
+  # DEBUG BEGIN_STMT
+  _1 = pHwChannelConfig_7(D)->instanceType;
+  if (_1 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = pHwChannelConfig_7(D)->instance;
+  _3 = pHwChannelConfig_7(D)->channel;
+  returnValue_10 = Pit_Ip_StartChannel (_2, _3, uValue_8(D));
+  # DEBUG returnValue => returnValue_10
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  # returnValue_4 = PHI <returnValue_10(3), 1(2)>
+  # DEBUG returnValue => returnValue_4
+  # DEBUG BEGIN_STMT
+  return returnValue_4;
+
+}
+
+
+
+;; Function Gpt_Ipw_GetTimeElapsed (Gpt_Ipw_GetTimeElapsed, funcdef_no=5, decl_uid=6501, cgraph_uid=6, symbol_order=5)
+
+
+Symbols to be put in SSA form
+{ D.6620 D.6654 D.6658 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 15
+Number of blocks to update: 14 ( 93%)
+
+
+Removing basic block 3
+Merging blocks 6 and 11
+Merging blocks 9 and 5
+Merging blocks 14 and 10
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10
+;; 2 succs { 10 3 }
+;; 3 succs { 4 5 }
+;; 4 succs { 6 }
+;; 5 succs { 6 }
+;; 6 succs { 7 8 }
+;; 7 succs { 9 }
+;; 8 succs { 9 }
+;; 9 succs { 10 }
+;; 10 succs { 1 }
+Gpt_Ipw_GetTimeElapsed (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig, struct Gpt_HwChannelInfoType * pReturnHwChannelInfo)
+{
+  boolean returnFlag;
+  boolean D.6658;
+  Gpt_ValueType returnValue;
+  boolean HasChEvOccurred;
+  Gpt_ValueType D.6654;
+  uint32 returnValue;
+  <unnamed type> _1;
+  long unsigned int Pit_Ip_u32OldTargetValue.1_9;
+  unsigned char _10;
+  unsigned char _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  unsigned char _14;
+  unsigned char _15;
+  long long unsigned int _16;
+  long unsigned int _17;
+  unsigned char _19;
+  unsigned char _20;
+  int _22;
+  struct PIT_Type * _23;
+  long unsigned int _24;
+  int _26;
+  struct PIT_Type * _27;
+  int _28;
+  long unsigned int _29;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG returnValue => 0
+  # DEBUG BEGIN_STMT
+  _1 = pHwChannelConfig_5(D)->instanceType;
+  if (_1 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 10>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  # DEBUG pHwChannelConfig => pHwChannelConfig_5(D)
+  # DEBUG pReturnHwChannelInfo => pReturnHwChannelInfo_6(D)
+  # DEBUG INLINE_ENTRY Gpt_Ipw_PitGetTimeElapsed
+  # DEBUG BEGIN_STMT
+  Pit_Ip_u32OldTargetValue.1_9 = Pit_Ip_u32OldTargetValue;
+  pReturnHwChannelInfo_6(D)->uTargetTime = Pit_Ip_u32OldTargetValue.1_9;
+  # DEBUG BEGIN_STMT
+  _10 = pHwChannelConfig_5(D)->instance;
+  _11 = pHwChannelConfig_5(D)->channel;
+  _12 = Pit_Ip_GetLoadValue (_10, _11);
+  _13 = _12 + 1;
+  pReturnHwChannelInfo_6(D)->uTargetTime = _13;
+  # DEBUG BEGIN_STMT
+  _14 = pHwChannelConfig_5(D)->instance;
+  _15 = pHwChannelConfig_5(D)->channel;
+  _16 = Pit_Ip_GetCurrentTimer (_14, _15);
+  _17 = (long unsigned int) _16;
+  returnValue_18 = _13 - _17;
+  # DEBUG returnValue => returnValue_18
+  # DEBUG BEGIN_STMT
+  _19 = pHwChannelConfig_5(D)->instance;
+  _20 = pHwChannelConfig_5(D)->channel;
+  # DEBUG instance => _19
+  # DEBUG channel => _20
+  # DEBUG INLINE_ENTRY Pit_Ip_GetInterruptStatusFlag
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (_20 == 4)
+    goto <bb 4>; [34.00%]
+  else
+    goto <bb 5>; [66.00%]
+
+  <bb 4> [local count: 120473833]:
+  # DEBUG BEGIN_STMT
+  _22 = (int) _19;
+  _23 = pitBase[_22];
+  _24 ={v} _23->RTI_TFLG;
+  returnFlag_25 = (boolean) _24;
+  # DEBUG returnFlag => returnFlag_25
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 233860967]:
+  # DEBUG BEGIN_STMT
+  _26 = (int) _19;
+  _27 = pitBase[_26];
+  _28 = (int) _20;
+  _29 ={v} _27->TIMER[_28].TFLG;
+  returnFlag_30 = (boolean) _29;
+  # DEBUG returnFlag => returnFlag_30
+
+  <bb 6> [local count: 354334800]:
+  # returnFlag_31 = PHI <returnFlag_25(4), returnFlag_30(5)>
+  # DEBUG returnFlag => returnFlag_31
+  # DEBUG BEGIN_STMT
+  _37 = returnFlag_31;
+  # DEBUG instance => NULL
+  # DEBUG channel => NULL
+  # DEBUG returnFlag => NULL
+  HasChEvOccurred_21 = _37;
+  # DEBUG HasChEvOccurred => HasChEvOccurred_21
+  # DEBUG BEGIN_STMT
+  if (HasChEvOccurred_21 != 0)
+    goto <bb 7>; [50.00%]
+  else
+    goto <bb 8>; [50.00%]
+
+  <bb 7> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  pReturnHwChannelInfo_6(D)->bChannelRollover = 1;
+  goto <bb 9>; [100.00%]
+
+  <bb 8> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  pReturnHwChannelInfo_6(D)->bChannelRollover = 0;
+
+  <bb 9> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  _40 = returnValue_18;
+  # DEBUG pHwChannelConfig => NULL
+  # DEBUG pReturnHwChannelInfo => NULL
+  # DEBUG HasChEvOccurred => NULL
+  # DEBUG returnValue => NULL
+  returnValue_8 = _40;
+  # DEBUG returnValue => returnValue_8
+  # DEBUG BEGIN_STMT
+
+  <bb 10> [local count: 1073741824]:
+  # returnValue_2 = PHI <returnValue_8(9), 0(2)>
+  # DEBUG returnValue => returnValue_2
+  # DEBUG BEGIN_STMT
+  return returnValue_2;
+
+}
+
+
+
+;; Function Gpt_Ipw_StopTimer (Gpt_Ipw_StopTimer, funcdef_no=6, decl_uid=6506, cgraph_uid=7, symbol_order=6)
+
+Gpt_Ipw_StopTimer (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = pHwChannelConfig_6(D)->instanceType;
+  if (_1 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = pHwChannelConfig_6(D)->instance;
+  _3 = pHwChannelConfig_6(D)->channel;
+  Pit_Ip_StopChannel (_2, _3);
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_EnableInterrupt (Gpt_Ipw_EnableInterrupt, funcdef_no=7, decl_uid=6508, cgraph_uid=8, symbol_order=7)
+
+Gpt_Ipw_EnableInterrupt (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = pHwChannelConfig_6(D)->instanceType;
+  if (_1 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = pHwChannelConfig_6(D)->instance;
+  _3 = pHwChannelConfig_6(D)->channel;
+  Pit_Ip_EnableChannelInterrupt (_2, _3);
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_DeInit (Gpt_Ipw_DeInit, funcdef_no=8, decl_uid=6510, cgraph_uid=9, symbol_order=8)
+
+Gpt_Ipw_DeInit (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = pHwChannelConfig_5(D)->instanceType;
+  if (_1 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = pHwChannelConfig_5(D)->instance;
+  Pit_Ip_Deinit (_2);
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_DisableInterrupt (Gpt_Ipw_DisableInterrupt, funcdef_no=9, decl_uid=6512, cgraph_uid=10, symbol_order=9)
+
+Gpt_Ipw_DisableInterrupt (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig)
+{
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = pHwChannelConfig_6(D)->instanceType;
+  if (_1 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = pHwChannelConfig_6(D)->instance;
+  _3 = pHwChannelConfig_6(D)->channel;
+  Pit_Ip_DisableChannelInterrupt (_2, _3);
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Gpt_Ipw_ChangeNextTimeoutValue (Gpt_Ipw_ChangeNextTimeoutValue, funcdef_no=10, decl_uid=6515, cgraph_uid=11, symbol_order=10)
+
+Gpt_Ipw_ChangeNextTimeoutValue (const struct Gpt_Ipw_HwChannelConfigType * pHwChannelConfig, Gpt_ValueType value)
+{
+  Std_ReturnType returnValue;
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG returnValue => 1
+  # DEBUG BEGIN_STMT
+  _1 = pHwChannelConfig_7(D)->instanceType;
+  if (_1 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = pHwChannelConfig_7(D)->instance;
+  _3 = pHwChannelConfig_7(D)->channel;
+  Pit_Ip_ChangeNextTimeoutValue (_2, _3, value_8(D));
+  # DEBUG BEGIN_STMT
+  # DEBUG returnValue => 0
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  # returnValue_4 = PHI <0(3), 1(2)>
+  # DEBUG returnValue => returnValue_4
+  # DEBUG BEGIN_STMT
+  return returnValue_4;
+
+}
+
+

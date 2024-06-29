@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "aewdog_ip_vs_0_pbcfg.h": "c",
+        "aewdog_ip_cfg_defines.h": "c",
+        "standardtypes.h": "c",
+        "aewdog_ip_types.h": "c",
+        "os_cfg.h": "c",
+        "port_ipw.h": "c",
+        "port_cfg.h": "c",
+        "port_vs_0_pbcfg.h": "c"
+    }
+}

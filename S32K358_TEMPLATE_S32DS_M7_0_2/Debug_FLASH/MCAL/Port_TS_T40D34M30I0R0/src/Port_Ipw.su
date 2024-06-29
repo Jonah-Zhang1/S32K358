@@ -1,0 +1,6 @@
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Port_TS_T40D34M30I0R0/src/Port_Ipw.c:486:6:Port_Ipw_Init	24	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Port_TS_T40D34M30I0R0/src/Port_Ipw.c:623:16:Port_Ipw_SetPinDirection	16	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Port_TS_T40D34M30I0R0/src/Port_Ipw.c:1276:6:Port_Ipw_SetGpioDirChangeability	24	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Port_TS_T40D34M30I0R0/src/Port_Ipw.c:1327:6:Port_Ipw_SetGpioPadOutput	8	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Port_TS_T40D34M30I0R0/src/Port_Ipw.c:1106:16:Port_Ipw_SetPinMode	40	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Port_TS_T40D34M30I0R0/src/Port_Ipw.c:1373:6:Port_Ipw_RefreshPortDirection	40	static

@@ -1,0 +1,1021 @@
+Trivially needed symbols: Clock_Ip_axSelectorCallbacks/9 Clock_Ip_SetRtcRtccClksel_TrustedCall/8
+
+
+Initial Symbol table:
+
+Clock_Ip_au8SoftwareMuxResetValue/18 (Clock_Ip_au8SoftwareMuxResetValue) @063c3438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @063387e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06338700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_StartTimeout/15 (Clock_Ip_StartTimeout) @06338620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_apxCgm/14 (Clock_Ip_apxCgm) @06322ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/13 (Clock_Ip_axFeatureExtensions) @06322e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/12 (Clock_Ip_au16SelectorEntryHardwareValue) @06322e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/11 (Clock_Ip_au8ClockFeatures) @06322dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (Clock_Ip_au16SelectorEntryRtcHardwareValue) @06322678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/9 (Clock_Ip_axSelectorCallbacks) @063223a8
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (addr) Clock_Ip_SetCgmXCscCssClkswSwip/2 (addr) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (addr) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (addr) Clock_Ip_ResetCgmXCscCssCsGrip/5 (addr) Clock_Ip_SetCgmXCscCssCsGrip/6 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_SetRtcRtccClksel/7 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (Clock_Ip_SetRtcRtccClksel_TrustedCall) @06328e00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @063223a8
+  References: Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRtcRtccClksel/7 
+  Calls: 
+Clock_Ip_SetRtcRtccClksel/7 (Clock_Ip_SetRtcRtccClksel) @06328a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @063287e0
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 
+Clock_Ip_SetCgmXCscCssCsGrip/6 (Clock_Ip_SetCgmXCscCssCsGrip) @063287e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06328540
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssCsGrip/5 (Clock_Ip_ResetCgmXCscCssCsGrip) @06328540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @063282a0
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8SoftwareMuxResetValue/18 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip) @063282a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06328000
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip) @06328000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @061a5c40
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXCscCssClkswSwip/2 (Clock_Ip_SetCgmXCscCssClkswSwip) @061a5c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @061a5e00
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswSwip/1 (Clock_Ip_ResetCgmXCscCssClkswSwip) @061a5e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @061a5b60
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CallbackSelectorEmpty/0 (Clock_Ip_CallbackSelectorEmpty) @061a5b60
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @01981040
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_au8SoftwareMuxResetValue/18 (Clock_Ip_au8SoftwareMuxResetValue) @063c3438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @063387e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06338700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_StartTimeout/15 (Clock_Ip_StartTimeout) @06338620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_apxCgm/14 (Clock_Ip_apxCgm) @06322ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/13 (Clock_Ip_axFeatureExtensions) @06322e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/12 (Clock_Ip_au16SelectorEntryHardwareValue) @06322e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/11 (Clock_Ip_au8ClockFeatures) @06322dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (Clock_Ip_au16SelectorEntryRtcHardwareValue) @06322678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/9 (Clock_Ip_axSelectorCallbacks) @063223a8
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (addr) Clock_Ip_SetCgmXCscCssClkswSwip/2 (addr) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (addr) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (addr) Clock_Ip_ResetCgmXCscCssCsGrip/5 (addr) Clock_Ip_SetCgmXCscCssCsGrip/6 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_SetRtcRtccClksel/7 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (Clock_Ip_SetRtcRtccClksel_TrustedCall) @06328e00
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRtcRtccClksel/7 
+  Calls: 
+Clock_Ip_SetRtcRtccClksel/7 (Clock_Ip_SetRtcRtccClksel) @06328a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 
+Clock_Ip_SetCgmXCscCssCsGrip/6 (Clock_Ip_SetCgmXCscCssCsGrip) @063287e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssCsGrip/5 (Clock_Ip_ResetCgmXCscCssCsGrip) @06328540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8SoftwareMuxResetValue/18 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip) @063282a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip) @06328000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXCscCssClkswSwip/2 (Clock_Ip_SetCgmXCscCssClkswSwip) @061a5c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswSwip/1 (Clock_Ip_ResetCgmXCscCssClkswSwip) @061a5e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CallbackSelectorEmpty/0 (Clock_Ip_CallbackSelectorEmpty) @061a5b60
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+Clock_Ip_au8SoftwareMuxResetValue/18 (Clock_Ip_au8SoftwareMuxResetValue) @063c3438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @063387e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06338700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_StartTimeout/15 (Clock_Ip_StartTimeout) @06338620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_apxCgm/14 (Clock_Ip_apxCgm) @06322ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/13 (Clock_Ip_axFeatureExtensions) @06322e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/12 (Clock_Ip_au16SelectorEntryHardwareValue) @06322e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/11 (Clock_Ip_au8ClockFeatures) @06322dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (Clock_Ip_au16SelectorEntryRtcHardwareValue) @06322678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/9 (Clock_Ip_axSelectorCallbacks) @063223a8
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (addr) Clock_Ip_SetCgmXCscCssClkswSwip/2 (addr) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (addr) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (addr) Clock_Ip_ResetCgmXCscCssCsGrip/5 (addr) Clock_Ip_SetCgmXCscCssCsGrip/6 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_SetRtcRtccClksel/7 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (Clock_Ip_SetRtcRtccClksel_TrustedCall) @06328e00
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRtcRtccClksel/7 
+  Calls: 
+Clock_Ip_SetRtcRtccClksel/7 (Clock_Ip_SetRtcRtccClksel) @06328a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 
+Clock_Ip_SetCgmXCscCssCsGrip/6 (Clock_Ip_SetCgmXCscCssCsGrip) @063287e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssCsGrip/5 (Clock_Ip_ResetCgmXCscCssCsGrip) @06328540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8SoftwareMuxResetValue/18 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip) @063282a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip) @06328000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXCscCssClkswSwip/2 (Clock_Ip_SetCgmXCscCssClkswSwip) @061a5c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswSwip/1 (Clock_Ip_ResetCgmXCscCssClkswSwip) @061a5e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CallbackSelectorEmpty/0 (Clock_Ip_CallbackSelectorEmpty) @061a5b60
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_au8SoftwareMuxResetValue/18 (Clock_Ip_au8SoftwareMuxResetValue) @063c3438
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @063387e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06338700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_StartTimeout/15 (Clock_Ip_StartTimeout) @06338620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_ResetCgmXCscCssCsGrip/5 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_apxCgm/14 (Clock_Ip_apxCgm) @06322ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/13 (Clock_Ip_axFeatureExtensions) @06322e58
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/12 (Clock_Ip_au16SelectorEntryHardwareValue) @06322e10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/11 (Clock_Ip_au8ClockFeatures) @06322dc8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_ResetCgmXCscCssCsGrip/5 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (Clock_Ip_au16SelectorEntryRtcHardwareValue) @06322678
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/9 (Clock_Ip_axSelectorCallbacks) @063223a8
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (addr) Clock_Ip_SetCgmXCscCssClkswSwip/2 (addr) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (addr) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (addr) Clock_Ip_ResetCgmXCscCssCsGrip/5 (addr) Clock_Ip_SetCgmXCscCssCsGrip/6 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_SetRtcRtccClksel/7 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (Clock_Ip_SetRtcRtccClksel_TrustedCall) @06328e00
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRtcRtccClksel/7 
+  Calls: 
+Clock_Ip_SetRtcRtccClksel/7 (Clock_Ip_SetRtcRtccClksel) @06328a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 
+Clock_Ip_SetCgmXCscCssCsGrip/6 (Clock_Ip_SetCgmXCscCssCsGrip) @063287e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssCsGrip/5 (Clock_Ip_ResetCgmXCscCssCsGrip) @06328540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8SoftwareMuxResetValue/18 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip) @063282a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip) @06328000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXCscCssClkswSwip/2 (Clock_Ip_SetCgmXCscCssClkswSwip) @061a5c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswSwip/1 (Clock_Ip_ResetCgmXCscCssClkswSwip) @061a5e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CallbackSelectorEmpty/0 (Clock_Ip_CallbackSelectorEmpty) @061a5b60
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (Clock_Ip_ResetCgmXCscCssCsGrip.part.0) @0646a8c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8SoftwareMuxResetValue/18 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: 
+  Function Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 is inline copy in Clock_Ip_ResetCgmXCscCssCsGrip/5
+  Availability: local
+  Function flags: count:114863530 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_ResetCgmXCscCssCsGrip/5 (inlined) (114863530 (estimated locally),0.53 per call) 
+  Calls: Clock_Ip_StartTimeout/15 (114863530 (estimated locally),0.53 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),5.00 per call) Clock_Ip_ReportClockErrors/17 (37904965 (estimated locally),0.18 per call) 
+Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (Clock_Ip_SetCgmXCscCssCsGrip.part.0) @06436c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: 
+  Function Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 is inline copy in Clock_Ip_SetCgmXCscCssCsGrip/6
+  Availability: local
+  Function flags: count:114863530 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssCsGrip/6 (inlined) (114863530 (estimated locally),0.53 per call) 
+  Calls: Clock_Ip_StartTimeout/15 (114863530 (estimated locally),0.53 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),5.00 per call) Clock_Ip_StartTimeout/15 (57431766 (estimated locally),0.27 per call) Clock_Ip_TimeoutExpired/16 (536870919 (estimated locally),2.50 per call) Clock_Ip_ReportClockErrors/17 (18952483 (estimated locally),0.09 per call) Clock_Ip_ReportClockErrors/17 (57431766 (estimated locally),0.27 per call) 
+Clock_Ip_au8SoftwareMuxResetValue/18 (Clock_Ip_au8SoftwareMuxResetValue) @063c3438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @063387e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 (57431766 (estimated locally),0.17 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (28715883 (estimated locally),0.09 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (9476241 (estimated locally),0.03 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (9404337 (estimated locally),0.03 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (57431766 (estimated locally),0.17 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (28715883 (estimated locally),0.09 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (9476241 (estimated locally),0.03 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (9404337 (estimated locally),0.03 per call) Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (37904965 (estimated locally),0.18 per call) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (18952483 (estimated locally),0.09 per call) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (57431766 (estimated locally),0.27 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06338700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 (268435461 (estimated locally),0.80 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (536870918 (estimated locally),1.60 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (1073741824 (estimated locally),3.20 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (268435461 (estimated locally),0.80 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (536870918 (estimated locally),1.60 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (1073741824 (estimated locally),3.20 per call) Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (1073741824 (estimated locally),5.00 per call) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (1073741824 (estimated locally),5.00 per call) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (536870919 (estimated locally),2.50 per call) 
+  Calls: 
+Clock_Ip_StartTimeout/15 (Clock_Ip_StartTimeout) @06338620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 (28715883 (estimated locally),0.09 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (57431766 (estimated locally),0.17 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (114863530 (estimated locally),0.34 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (28715883 (estimated locally),0.09 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (57431766 (estimated locally),0.17 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (114863530 (estimated locally),0.34 per call) Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (114863530 (estimated locally),0.53 per call) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (114863530 (estimated locally),0.53 per call) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (57431766 (estimated locally),0.27 per call) 
+  Calls: 
+Clock_Ip_apxCgm/14 (Clock_Ip_apxCgm) @06322ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/13 (Clock_Ip_axFeatureExtensions) @06322e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (read) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/12 (Clock_Ip_au16SelectorEntryHardwareValue) @06322e10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/11 (Clock_Ip_au8ClockFeatures) @06322dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (read) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (read) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (read) Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (Clock_Ip_au16SelectorEntryRtcHardwareValue) @06322678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/9 (Clock_Ip_axSelectorCallbacks) @063223a8
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (addr) Clock_Ip_SetCgmXCscCssClkswSwip/2 (addr) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (addr) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (addr) Clock_Ip_ResetCgmXCscCssCsGrip/5 (addr) Clock_Ip_SetCgmXCscCssCsGrip/6 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_SetRtcRtccClksel/7 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (Clock_Ip_SetRtcRtccClksel_TrustedCall) @06328e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: Clock_Ip_SetRtcRtccClksel/7 (574129753 (estimated locally),0.53 per call) 
+  Calls: 
+Clock_Ip_SetRtcRtccClksel/7 (Clock_Ip_SetRtcRtccClksel) @06328a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (574129753 (estimated locally),0.53 per call) 
+Clock_Ip_SetCgmXCscCssCsGrip/6 (Clock_Ip_SetCgmXCscCssCsGrip) @063287e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:214818646 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetCgmXCscCssCsGrip.part.0/19 (inlined) (114863530 (estimated locally),0.53 per call) 
+Clock_Ip_ResetCgmXCscCssCsGrip/5 (Clock_Ip_ResetCgmXCscCssCsGrip) @06328540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:214818646 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ResetCgmXCscCssCsGrip.part.0/20 (inlined) (114863530 (estimated locally),0.53 per call) 
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip) @063282a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:335701223 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (57431766 (estimated locally),0.17 per call) Clock_Ip_ReportClockErrors/17 (28715883 (estimated locally),0.09 per call) Clock_Ip_ReportClockErrors/17 (9476241 (estimated locally),0.03 per call) Clock_Ip_ReportClockErrors/17 (9404337 (estimated locally),0.03 per call) Clock_Ip_TimeoutExpired/16 (268435461 (estimated locally),0.80 per call) Clock_Ip_StartTimeout/15 (28715883 (estimated locally),0.09 per call) Clock_Ip_TimeoutExpired/16 (536870918 (estimated locally),1.60 per call) Clock_Ip_StartTimeout/15 (57431766 (estimated locally),0.17 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),3.20 per call) Clock_Ip_StartTimeout/15 (114863530 (estimated locally),0.34 per call) 
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip) @06328000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly section:.text.Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip (implicit_section)
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Clock_Ip_ResetCgmXCscCssClkswSwip/1 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_SetCgmXCscCssClkswSwip/2 (Clock_Ip_SetCgmXCscCssClkswSwip) @061a5c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:335701223 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (57431766 (estimated locally),0.17 per call) Clock_Ip_ReportClockErrors/17 (28715883 (estimated locally),0.09 per call) Clock_Ip_ReportClockErrors/17 (9476241 (estimated locally),0.03 per call) Clock_Ip_ReportClockErrors/17 (9404337 (estimated locally),0.03 per call) Clock_Ip_TimeoutExpired/16 (268435461 (estimated locally),0.80 per call) Clock_Ip_StartTimeout/15 (28715883 (estimated locally),0.09 per call) Clock_Ip_TimeoutExpired/16 (536870918 (estimated locally),1.60 per call) Clock_Ip_StartTimeout/15 (57431766 (estimated locally),0.17 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),3.20 per call) Clock_Ip_StartTimeout/15 (114863530 (estimated locally),0.34 per call) 
+Clock_Ip_ResetCgmXCscCssClkswSwip/1 (Clock_Ip_ResetCgmXCscCssClkswSwip) @061a5e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_CallbackSelectorEmpty/0 (Clock_Ip_CallbackSelectorEmpty) @061a5b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Clock_Ip_axSelectorCallbacks/9
+Removing variables:
+
+Final Symbol table:
+
+Clock_Ip_au8SoftwareMuxResetValue/18 (Clock_Ip_au8SoftwareMuxResetValue) @063c3438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @063387e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06338700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_StartTimeout/15 (Clock_Ip_StartTimeout) @06338620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_apxCgm/14 (Clock_Ip_apxCgm) @06322ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/13 (Clock_Ip_axFeatureExtensions) @06322e58
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/12 (Clock_Ip_au16SelectorEntryHardwareValue) @06322e10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/11 (Clock_Ip_au8ClockFeatures) @06322dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryRtcHardwareValue/10 (Clock_Ip_au16SelectorEntryRtcHardwareValue) @06322678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/9 (Clock_Ip_axSelectorCallbacks) @063223a8
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public section:.rodata.Clock_Ip_axSelectorCallbacks (implicit_section)
+  Aux: @00000001
+  References: Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (addr) Clock_Ip_SetCgmXCscCssClkswSwip/2 (addr) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (addr) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (addr) Clock_Ip_ResetCgmXCscCssCsGrip/5 (addr) Clock_Ip_SetCgmXCscCssCsGrip/6 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_SetRtcRtccClksel/7 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (Clock_Ip_SetRtcRtccClksel_TrustedCall) @06328e00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.Clock_Ip_SetRtcRtccClksel_TrustedCall (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetRtcRtccClksel/7 (Clock_Ip_SetRtcRtccClksel) @06328a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Clock_Ip_SetRtcRtccClksel (implicit_section)
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXCscCssCsGrip/6 (Clock_Ip_SetCgmXCscCssCsGrip) @063287e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Clock_Ip_SetCgmXCscCssCsGrip (implicit_section)
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:214818646 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetCgmXCscCssCsGrip/5 (Clock_Ip_ResetCgmXCscCssCsGrip) @06328540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Clock_Ip_ResetCgmXCscCssCsGrip (implicit_section)
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:214818646 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip) @063282a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip (implicit_section)
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:335701223 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip) @06328000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip (implicit_section)
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXCscCssClkswSwip/2 (Clock_Ip_SetCgmXCscCssClkswSwip) @061a5c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Clock_Ip_SetCgmXCscCssClkswSwip (implicit_section)
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:335701223 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetCgmXCscCssClkswSwip/1 (Clock_Ip_ResetCgmXCscCssClkswSwip) @061a5e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Clock_Ip_ResetCgmXCscCssClkswSwip (implicit_section)
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CallbackSelectorEmpty/0 (Clock_Ip_CallbackSelectorEmpty) @061a5b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.Clock_Ip_CallbackSelectorEmpty (implicit_section)
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 

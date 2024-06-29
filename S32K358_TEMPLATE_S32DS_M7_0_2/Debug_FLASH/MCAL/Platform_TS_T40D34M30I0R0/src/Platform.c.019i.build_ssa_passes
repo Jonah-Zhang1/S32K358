@@ -1,0 +1,144 @@
+Platform_InstallIrqHandler (IRQn_Type eIrqNumber, void (*Platform_IrqHandlerType) (void) pfNewHandler, void (*Platform_IrqHandlerType) (void) * const pfOldHandler)
+{
+  Std_ReturnType RetValue;
+  Std_ReturnType D.9798;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetValue = 0;
+  # DEBUG BEGIN_STMT
+  Platform_Ipw_InstallIrqHandler (eIrqNumber, pfNewHandler, pfOldHandler);
+  # DEBUG BEGIN_STMT
+  D.9798 = RetValue;
+  return D.9798;
+
+}
+
+
+Platform_GetIrqPriority (IRQn_Type eIrqNumber, uint8 * u8Priority)
+{
+  Std_ReturnType RetValue;
+  Std_ReturnType D.9794;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetValue = 0;
+  # DEBUG BEGIN_STMT
+  _1 = Platform_Ipw_GetIrqPriority (eIrqNumber);
+  *u8Priority = _1;
+  # DEBUG BEGIN_STMT
+  D.9794 = RetValue;
+  return D.9794;
+
+}
+
+
+Platform_SetIrqPriority (IRQn_Type eIrqNumber, uint8 u8Priority)
+{
+  Std_ReturnType RetValue;
+  Std_ReturnType D.9792;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetValue = 0;
+  # DEBUG BEGIN_STMT
+  Platform_Ipw_SetIrqPriority (eIrqNumber, u8Priority);
+  # DEBUG BEGIN_STMT
+  D.9792 = RetValue;
+  return D.9792;
+
+}
+
+
+Platform_SetIrq (IRQn_Type eIrqNumber, boolean bEnable)
+{
+  Std_ReturnType RetValue;
+  Std_ReturnType D.9787;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RetValue = 0;
+  # DEBUG BEGIN_STMT
+  Platform_Ipw_SetIrq (eIrqNumber, bEnable);
+  # DEBUG BEGIN_STMT
+  D.9787 = RetValue;
+  return D.9787;
+
+}
+
+
+Platform_Init (const struct Platform_ConfigType * pConfig)
+{
+  uint8 u8CoreId;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  u8CoreId = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = (int) u8CoreId;
+  _2 = Platform_Config[_1];
+  _3 = _2->pIpwConfig;
+  Platform_Ipw_Init (_3);
+  return;
+
+}
+
+
+Platform_Ipw_InstallIrqHandler (IRQn_Type eIrqNumber, void (*IntCtrl_Ip_IrqHandlerType) (void) pfNewHandler, void (*IntCtrl_Ip_IrqHandlerType) (void) * const pfOldHandler)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_InstallHandler (eIrqNumber, pfNewHandler, pfOldHandler);
+  return;
+
+}
+
+
+Platform_Ipw_GetIrqPriority (IRQn_Type eIrqNumber)
+{
+  uint8 D.9796;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  D.9796 = IntCtrl_Ip_GetPriority (eIrqNumber);
+  return D.9796;
+
+}
+
+
+Platform_Ipw_SetIrqPriority (IRQn_Type eIrqNumber, uint8 u8Priority)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_SetPriority (eIrqNumber, u8Priority);
+  return;
+
+}
+
+
+Platform_Ipw_SetIrq (IRQn_Type eIrqNumber, boolean bEnable)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  if (bEnable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_EnableIrq (eIrqNumber);
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_DisableIrq (eIrqNumber);
+
+  <bb 5> :
+  return;
+
+}
+
+

@@ -1,0 +1,520 @@
+Trivially needed symbols: Power_Ip_HwIPsConfigPB_VS_0/10 Power_Ip_aModeConfigPB_VS_0/7
+
+
+Initial Symbol table:
+
+Power_Ip_HwIPsConfigPB_VS_0/10 (Power_Ip_HwIPsConfigPB_VS_0) @027231b0
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: Power_Ip_MC_RGM_ConfigPB_VS_0/8 (addr) Power_Ip_PMC_ConfigPB_VS_0/9 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_PMC_ConfigPB_VS_0/9 (Power_Ip_PMC_ConfigPB_VS_0) @061b3f30
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @061b3ea0
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_RGM_ConfigPB_VS_0/8 (Power_Ip_MC_RGM_ConfigPB_VS_0) @061b3ea0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @01981040
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_aModeConfigPB_VS_0/7 (Power_Ip_aModeConfigPB_VS_0) @061b3e10
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @027231b0
+  References: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (Power_Ip_DCM_GPR_ConfigPB_0_VS_0) @061b3d80
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @061b3ca8
+  References: 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (Power_Ip_MC_ME_ModeConfigPB_0_VS_0) @061b3ca8
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @027231b0
+  References: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0) @061b3c18
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @027231b0
+  References: Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (addr) Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (addr) Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (addr) Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (addr) 
+  Referring: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0) @061b3ab0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @061b3a20
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0) @061b3a20
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @061b3900
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0) @061b3990
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @027231b0
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0) @061b3900
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @061b3990
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Power_Ip_HwIPsConfigPB_VS_0/10 (Power_Ip_HwIPsConfigPB_VS_0) @027231b0
+  Type: variable definition analyzed
+  Visibility: public
+  References: Power_Ip_MC_RGM_ConfigPB_VS_0/8 (addr) Power_Ip_PMC_ConfigPB_VS_0/9 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_PMC_ConfigPB_VS_0/9 (Power_Ip_PMC_ConfigPB_VS_0) @061b3f30
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_RGM_ConfigPB_VS_0/8 (Power_Ip_MC_RGM_ConfigPB_VS_0) @061b3ea0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_aModeConfigPB_VS_0/7 (Power_Ip_aModeConfigPB_VS_0) @061b3e10
+  Type: variable definition analyzed
+  Visibility: public
+  References: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (Power_Ip_DCM_GPR_ConfigPB_0_VS_0) @061b3d80
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (Power_Ip_MC_ME_ModeConfigPB_0_VS_0) @061b3ca8
+  Type: variable definition analyzed
+  Visibility:
+  References: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0) @061b3c18
+  Type: variable definition analyzed
+  Visibility:
+  References: Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (addr) Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (addr) Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (addr) Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (addr) 
+  Referring: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0) @061b3ab0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0) @061b3a20
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0) @061b3990
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0) @061b3900
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+Power_Ip_HwIPsConfigPB_VS_0/10 (Power_Ip_HwIPsConfigPB_VS_0) @027231b0
+  Type: variable definition analyzed
+  Visibility: public
+  References: Power_Ip_MC_RGM_ConfigPB_VS_0/8 (addr) Power_Ip_PMC_ConfigPB_VS_0/9 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_PMC_ConfigPB_VS_0/9 (Power_Ip_PMC_ConfigPB_VS_0) @061b3f30
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_RGM_ConfigPB_VS_0/8 (Power_Ip_MC_RGM_ConfigPB_VS_0) @061b3ea0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_aModeConfigPB_VS_0/7 (Power_Ip_aModeConfigPB_VS_0) @061b3e10
+  Type: variable definition analyzed
+  Visibility: public
+  References: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (Power_Ip_DCM_GPR_ConfigPB_0_VS_0) @061b3d80
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (Power_Ip_MC_ME_ModeConfigPB_0_VS_0) @061b3ca8
+  Type: variable definition analyzed
+  Visibility:
+  References: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0) @061b3c18
+  Type: variable definition analyzed
+  Visibility:
+  References: Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (addr) Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (addr) Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (addr) Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (addr) 
+  Referring: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0) @061b3ab0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0) @061b3a20
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0) @061b3990
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0) @061b3900
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Power_Ip_HwIPsConfigPB_VS_0/10 (Power_Ip_HwIPsConfigPB_VS_0) @027231b0
+  Type: variable definition analyzed
+  Visibility: public
+  References: Power_Ip_MC_RGM_ConfigPB_VS_0/8 (addr) Power_Ip_PMC_ConfigPB_VS_0/9 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_PMC_ConfigPB_VS_0/9 (Power_Ip_PMC_ConfigPB_VS_0) @061b3f30
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_RGM_ConfigPB_VS_0/8 (Power_Ip_MC_RGM_ConfigPB_VS_0) @061b3ea0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_aModeConfigPB_VS_0/7 (Power_Ip_aModeConfigPB_VS_0) @061b3e10
+  Type: variable definition analyzed
+  Visibility: public
+  References: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (Power_Ip_DCM_GPR_ConfigPB_0_VS_0) @061b3d80
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (Power_Ip_MC_ME_ModeConfigPB_0_VS_0) @061b3ca8
+  Type: variable definition analyzed
+  Visibility:
+  References: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0) @061b3c18
+  Type: variable definition analyzed
+  Visibility:
+  References: Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (addr) Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (addr) Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (addr) Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (addr) 
+  Referring: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0) @061b3ab0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0) @061b3a20
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0) @061b3990
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0) @061b3900
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Power_Ip_HwIPsConfigPB_VS_0/10 (Power_Ip_HwIPsConfigPB_VS_0) @027231b0
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_MC_RGM_ConfigPB_VS_0/8 (addr) Power_Ip_PMC_ConfigPB_VS_0/9 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_PMC_ConfigPB_VS_0/9 (Power_Ip_PMC_ConfigPB_VS_0) @061b3f30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_RGM_ConfigPB_VS_0/8 (Power_Ip_MC_RGM_ConfigPB_VS_0) @061b3ea0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_aModeConfigPB_VS_0/7 (Power_Ip_aModeConfigPB_VS_0) @061b3e10
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (Power_Ip_DCM_GPR_ConfigPB_0_VS_0) @061b3d80
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (Power_Ip_MC_ME_ModeConfigPB_0_VS_0) @061b3ca8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0) @061b3c18
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (addr) Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (addr) Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (addr) Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (addr) 
+  Referring: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0) @061b3ab0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0) @061b3a20
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0) @061b3990
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0) @061b3900
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Power_Ip_HwIPsConfigPB_VS_0/10 Power_Ip_aModeConfigPB_VS_0/7
+Removing variables:
+
+Final Symbol table:
+
+Power_Ip_HwIPsConfigPB_VS_0/10 (Power_Ip_HwIPsConfigPB_VS_0) @027231b0
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public section:.rodata.Power_Ip_HwIPsConfigPB_VS_0 (implicit_section)
+  Aux: @00000001
+  References: Power_Ip_MC_RGM_ConfigPB_VS_0/8 (addr) Power_Ip_PMC_ConfigPB_VS_0/9 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_PMC_ConfigPB_VS_0/9 (Power_Ip_PMC_ConfigPB_VS_0) @061b3f30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Power_Ip_PMC_ConfigPB_VS_0 (implicit_section)
+  Aux: @061b3ea0
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_RGM_ConfigPB_VS_0/8 (Power_Ip_MC_RGM_ConfigPB_VS_0) @061b3ea0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Power_Ip_MC_RGM_ConfigPB_VS_0 (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: Power_Ip_HwIPsConfigPB_VS_0/10 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_aModeConfigPB_VS_0/7 (Power_Ip_aModeConfigPB_VS_0) @061b3e10
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public section:.rodata.Power_Ip_aModeConfigPB_VS_0 (implicit_section)
+  Aux: @027231b0
+  References: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_DCM_GPR_ConfigPB_0_VS_0/6 (Power_Ip_DCM_GPR_ConfigPB_0_VS_0) @061b3d80
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Power_Ip_DCM_GPR_ConfigPB_0_VS_0 (implicit_section)
+  Aux: @061b3ca8
+  References: 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (Power_Ip_MC_ME_ModeConfigPB_0_VS_0) @061b3ca8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Power_Ip_MC_ME_ModeConfigPB_0_VS_0 (implicit_section)
+  Aux: @027231b0
+  References: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Referring: Power_Ip_aModeConfigPB_VS_0/7 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0) @061b3c18
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0 (implicit_section)
+  Aux: @027231b0
+  References: Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (addr) Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (addr) Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (addr) Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (addr) 
+  Referring: Power_Ip_MC_ME_ModeConfigPB_0_VS_0/5 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0/3 (Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0) @061b3ab0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Power_Ip_MC_ME_aPartition2CofbConfigPB_0_VS_0 (implicit_section)
+  Aux: @061b3a20
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0/2 (Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0) @061b3a20
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Power_Ip_MC_ME_aPartition1CofbConfigPB_0_VS_0 (implicit_section)
+  Aux: @061b3900
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0/1 (Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0) @061b3990
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Power_Ip_MC_ME_aPartition0CofbConfigPB_0_VS_0 (implicit_section)
+  Aux: @027231b0
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0/0 (Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0) @061b3900
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.Power_Ip_MC_ME_aPartition0CoreConfigPB_0_VS_0 (implicit_section)
+  Aux: @061b3990
+  References: 
+  Referring: Power_Ip_MC_ME_aPartitionConfigPB_0_VS_0/4 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

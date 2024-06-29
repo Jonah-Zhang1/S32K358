@@ -1,0 +1,87 @@
+Trivially needed symbols: EthSwt_43_SJA11XX_schm_read_msr/0
+
+
+Initial Symbol table:
+
+EthSwt_43_SJA11XX_schm_read_msr/0 (EthSwt_43_SJA11XX_schm_read_msr) @05f41e00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+EthSwt_43_SJA11XX_schm_read_msr/0 (EthSwt_43_SJA11XX_schm_read_msr) @05f41e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+EthSwt_43_SJA11XX_schm_read_msr/0 (EthSwt_43_SJA11XX_schm_read_msr) @05f41e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+EthSwt_43_SJA11XX_schm_read_msr/0 (EthSwt_43_SJA11XX_schm_read_msr) @05f41e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+EthSwt_43_SJA11XX_schm_read_msr/0 (EthSwt_43_SJA11XX_schm_read_msr) @05f41e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+EthSwt_43_SJA11XX_schm_read_msr/0 (EthSwt_43_SJA11XX_schm_read_msr) @05f41e00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.EthSwt_43_SJA11XX_schm_read_msr (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 

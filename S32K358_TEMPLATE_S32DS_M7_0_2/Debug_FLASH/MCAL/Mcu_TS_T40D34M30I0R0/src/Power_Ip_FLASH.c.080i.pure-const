@@ -1,0 +1,93 @@
+
+
+ local analysis of Power_Ip_FLASH_HighVoltageOperationOngoing/0
+   scanning: McrReg_4 ={v} MEM[(struct FLASH_Type *)1076805632B].MCR;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _1 = McrReg_4 & 1;
+  scanning: _2 = (_Bool) _1;
+  scanning: return _2;
+callgraph:
+
+Power_Ip_FLASH_HighVoltageOperationOngoing/0 (Power_Ip_FLASH_HighVoltageOperationOngoing) @06dee380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @06786200
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+Power_Ip_FLASH_HighVoltageOperationOngoing/0 (Power_Ip_FLASH_HighVoltageOperationOngoing) @06dee380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @06786200
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+
+MALLOC LATTICE Initial:
+Power_Ip_FLASH_HighVoltageOperationOngoing/0: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+Power_Ip_FLASH_HighVoltageOperationOngoing/0: malloc_bottom
+callgraph:
+
+Power_Ip_FLASH_HighVoltageOperationOngoing/0 (Power_Ip_FLASH_HighVoltageOperationOngoing) @06dee380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @067860a0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced
+Power_Ip_FLASH_HighVoltageOperationOngoing/0 (Power_Ip_FLASH_HighVoltageOperationOngoing) @06dee380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @067860a0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+Function found not to call free: Power_Ip_FLASH_HighVoltageOperationOngoing/0
+Power_Ip_FLASH_HighVoltageOperationOngoing ()
+{
+  uint32 McrReg;
+  long unsigned int _1;
+  _Bool _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG FlashBusy => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  McrReg_4 ={v} MEM[(struct FLASH_Type *)1076805632B].MCR;
+  # DEBUG McrReg => McrReg_4
+  # DEBUG BEGIN_STMT
+  _1 = McrReg_4 & 1;
+  _2 = (_Bool) _1;
+  # DEBUG FlashBusy => _2
+  # DEBUG BEGIN_STMT
+  return _2;
+
+}
+
+

@@ -1,0 +1,17 @@
+Histogram:
+
+========== IPA-profile speculative targets: ==========
+
+Summary for node Swt_Ip_Swt0_Isr/0:
+
+
+Swt_Ip_Swt0_Isr ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Swt_Ip_IrqHandler (0);
+  return;
+
+}
+
+

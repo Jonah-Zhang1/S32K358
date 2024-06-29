@@ -1,0 +1,9 @@
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:467:20:Wdg_ChannelEndValidateGlobalCall	16	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:424:30:Wdg_ChannelValidateGlobalCall	16	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:790:30:Wdg_ChannelValidateMode.constprop	8	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:608:10:Wdg_Cbk_GptNotification0	8	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1149:6:Wdg_ChannelInit	32	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1255:16:Wdg_ChannelSetMode	24	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1308:10:Wdg_ChannelSetTriggerCondition	64	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1384:6:Wdg_ChannelGetVersionInfo	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1440:7:Wdg_ChannelClearResetRequest	8	static

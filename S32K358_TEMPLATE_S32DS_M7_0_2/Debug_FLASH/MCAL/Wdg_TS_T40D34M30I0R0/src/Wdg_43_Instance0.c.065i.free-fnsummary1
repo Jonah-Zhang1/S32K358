@@ -1,0 +1,52 @@
+Wdg_43_Instance0_GetVersionInfo (struct Std_VersionInfoType * Versioninfo)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelGetVersionInfo (0, Versioninfo_2(D));
+  return;
+
+}
+
+
+Wdg_43_Instance0_ClearResetRequest ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelClearResetRequest (0);
+  return;
+
+}
+
+
+Wdg_43_Instance0_SetTriggerCondition (uint16 Timeout)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelSetTriggerCondition (0, Timeout_2(D));
+  return;
+
+}
+
+
+Wdg_43_Instance0_SetMode (WdgIf_ModeType Mode)
+{
+  Std_ReturnType _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _4 = Wdg_ChannelSetMode (0, Mode_2(D));
+  return _4;
+
+}
+
+
+Wdg_43_Instance0_Init (const struct Wdg_ConfigType * ConfigPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelInit (0, ConfigPtr_2(D));
+  return;
+
+}
+
+

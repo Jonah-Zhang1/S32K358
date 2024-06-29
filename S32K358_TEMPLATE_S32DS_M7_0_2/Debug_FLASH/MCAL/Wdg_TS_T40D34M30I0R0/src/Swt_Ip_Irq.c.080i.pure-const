@@ -1,0 +1,94 @@
+
+
+ local analysis of Swt_Ip_Swt0_Isr/0
+   scanning: Swt_Ip_IrqHandler (0);
+  scanning: return;
+Function is locally const.
+callgraph:
+
+Swt_Ip_IrqHandler/1 (Swt_Ip_IrqHandler) @06bfbee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_Swt0_Isr/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Swt_Ip_Swt0_Isr/0 (Swt_Ip_Swt0_Isr) @06bfb8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @06826728
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Swt_Ip_IrqHandler/1 (1073741824 (estimated locally),1.00 per call) 
+
+
+ ordered call graph: reduced for nothrow
+Swt_Ip_Swt0_Isr/0 (Swt_Ip_Swt0_Isr) @06bfb8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @06826728
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Swt_Ip_IrqHandler/1 (1073741824 (estimated locally),1.00 per call) 
+
+
+
+MALLOC LATTICE Initial:
+Swt_Ip_Swt0_Isr/0: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+Swt_Ip_Swt0_Isr/0: malloc_bottom
+callgraph:
+
+Swt_Ip_IrqHandler/1 (Swt_Ip_IrqHandler) @06bfbee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_Swt0_Isr/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Swt_Ip_Swt0_Isr/0 (Swt_Ip_Swt0_Isr) @06bfb8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @06826908
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Swt_Ip_IrqHandler/1 (1073741824 (estimated locally),1.00 per call) 
+
+
+ ordered call graph: reduced
+Swt_Ip_Swt0_Isr/0 (Swt_Ip_Swt0_Isr) @06bfb8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @06826908
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Swt_Ip_IrqHandler/1 (1073741824 (estimated locally),1.00 per call) 
+
+Swt_Ip_Swt0_Isr ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Swt_Ip_IrqHandler (0);
+  return;
+
+}
+
+

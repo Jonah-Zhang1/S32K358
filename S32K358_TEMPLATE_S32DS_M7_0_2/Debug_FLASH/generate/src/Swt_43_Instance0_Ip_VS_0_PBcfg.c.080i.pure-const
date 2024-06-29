@@ -1,0 +1,38 @@
+callgraph:
+
+Wdg_CallBackNotification0/3 (Wdg_CallBackNotification0) @05fab700
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: Swt_Ip_SlowModeSettings_0_VS_0/1 (addr) Swt_Ip_FastModeSettings_0_VS_0/2 (addr) 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+
+
+
+MALLOC LATTICE Initial:
+
+
+MALLOC LATTICE after propagation:
+callgraph:
+
+Wdg_CallBackNotification0/3 (Wdg_CallBackNotification0) @05fab700
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: Swt_Ip_SlowModeSettings_0_VS_0/1 (addr) Swt_Ip_FastModeSettings_0_VS_0/2 (addr) 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced
+

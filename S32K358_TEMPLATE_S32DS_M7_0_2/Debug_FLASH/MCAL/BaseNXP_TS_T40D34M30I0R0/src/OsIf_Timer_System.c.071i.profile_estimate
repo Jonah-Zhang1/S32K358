@@ -1,0 +1,117 @@
+Histogram:
+
+========== IPA-profile speculative targets: ==========
+
+Summary for node OsIf_Timer_System_MicrosToTicks/5:
+
+Summary for node OsIf_Timer_System_SetTimerFrequency/4:
+
+Summary for node OsIf_Timer_System_GetElapsed/3:
+
+Summary for node OsIf_Timer_System_GetCounter/2:
+
+Summary for node OsIf_Timer_System_Init/1:
+
+
+OsIf_Timer_System_MicrosToTicks (uint32 Micros)
+{
+  uint32 ticks;
+  uint64 interim;
+  long long unsigned int _1;
+  long unsigned int _2;
+  long long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG ticks => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  _1 = (long long unsigned int) Micros_4(D);
+  _2 = OsIf_au32InternalFrequencies[0];
+  _3 = (long long unsigned int) _2;
+  interim_6 = _1 * _3;
+  # DEBUG interim => interim_6
+  # DEBUG BEGIN_STMT
+  interim_7 = interim_6 / 1000000;
+  # DEBUG interim => interim_7
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ticks_8 = (uint32) interim_7;
+  # DEBUG ticks => ticks_8
+  # DEBUG BEGIN_STMT
+  return ticks_8;
+
+}
+
+
+OsIf_Timer_System_SetTimerFrequency (uint32 Freq)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  OsIf_au32InternalFrequencies[0] = Freq_2(D);
+  return;
+
+}
+
+
+OsIf_Timer_System_GetElapsed (uint32 * const CurrentRef)
+{
+  uint32 Elapsed;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Elapsed => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Elapsed_4 = OsIf_Timer_System_Internal_GetElapsed (CurrentRef_2(D));
+  # DEBUG Elapsed => Elapsed_4
+  # DEBUG BEGIN_STMT
+  return Elapsed_4;
+
+}
+
+
+OsIf_Timer_System_GetCounter ()
+{
+  uint32 Counter;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Counter => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Counter_3 = OsIf_Timer_System_Internal_GetCounter ();
+  # DEBUG Counter => Counter_3
+  # DEBUG BEGIN_STMT
+  return Counter_3;
+
+}
+
+
+OsIf_Timer_System_Init ()
+{
+  const struct OsIf_ConfigType * _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_apxPredefinedConfig[0];
+  _2 = _1->counterFrequency;
+  OsIf_au32InternalFrequencies[0] = _2;
+  # DEBUG BEGIN_STMT
+  OsIf_Timer_System_Internal_Init (_2);
+  return;
+
+}
+
+

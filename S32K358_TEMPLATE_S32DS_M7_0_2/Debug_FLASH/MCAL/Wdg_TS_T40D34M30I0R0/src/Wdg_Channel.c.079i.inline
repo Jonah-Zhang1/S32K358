@@ -1,0 +1,2997 @@
+IPA function summary for Wdg_ChannelTrigger.constprop/66 inlinable
+  global time:     41.210000
+  self size:       31
+  global size:     27
+  min size:       24
+  self stack:      0
+  global stack:    0
+    size:10.000000, time:3.980000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelValidateGlobalCall/7 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 4 time: 13 callee size:12 stack: 0
+       op0 is compile time invariant
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/26 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/27 function body not available
+      freq:0.16 loop depth: 0 size: 1 time: 10
+    Gpt_StopTimer/28 function body not available
+      freq:0.16 loop depth: 0 size: 2 time: 11
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/27 function body not available
+      freq:0.16 loop depth: 0 size: 1 time: 10
+    Wdg_Ipw_Service/29 function body not available
+      freq:0.16 loop depth: 0 size: 2 time: 11
+    Wdg_ChannelEndValidateGlobalCall/8 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12 callee size:11 stack: 0
+
+IPA function summary for Wdg_ChannelValidateMode.constprop/65 inlinable
+  global time:     24.277640
+  self size:       30
+  global size:     30
+  min size:       15
+  self stack:      0
+  global stack:    0
+    size:6.000000, time:3.850000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:2.000000, time:1.000000,  executed if:(op0 != 0),  nonconst if:(op0 changed) && (op0 != 0)
+    size:2.000000, time:0.660000,  executed if:(op0 != 2) && (op0 != 0),  nonconst if:(op0 changed) && (op0 != 2) && (op0 != 0)
+    size:4.000000, time:3.128800,  executed if:(op0 == 0 || op0 == 2 || op0 == 1)
+    size:1.000000, time:0.782200,  executed if:(op0 == 0 || op0 == 2 || op0 == 1),  nonconst if:(op3 changed) && (op0 == 0 || op0 == 2 || op0 == 1)
+    size:1.000000, time:0.782200,  executed if:(op0 == 0 || op0 == 2 || op0 == 1),  nonconst if:(op0 changed) && (op0 == 0 || op0 == 2 || op0 == 1)
+  calls:
+    Det_ReportError/32 function body not available
+      freq:0.45 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+    Wdg_ChannelValidateMode.part.0/64 function not considered for inlining
+      freq:0.17 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+    Dem_SetEventStatus/40 function body not available
+      freq:0.17 loop depth: 0 size: 3 time: 12
+       op1 is compile time invariant
+
+IPA function summary for Wdg_ChannelValidateMode.part.0/64 inlinable
+  global time:     15.000000
+  self size:       7
+  global size:     7
+  min size:       4
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Dem_SetEventStatus/40 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op1 is compile time invariant
+
+IPA function summary for Wdg_ChannelValidateGlobalCall.part.0/63 inlinable
+  global time:     26.000000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/31 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Det_ReportError/32 function body not available
+      freq:1.00 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Wdg_ChannelClearResetRequest/25 inlinable
+  global time:     54.275088
+  self size:       34
+  global size:     34
+  min size:       30
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/62 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/61 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Det_ReportError/32 function body not available
+      freq:0.44 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Det_ReportRuntimeError/60 function body not available
+      freq:0.23 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Det_ReportError/32 function body not available
+      freq:0.07 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Wdg_Ipw_Deinit/59 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12
+    Wdg_Ipw_ClearResetRequest/58 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+IPA function summary for Wdg_ChannelGetVersionInfo/24 inlinable
+  global time:     19.500000
+  self size:       14
+  global size:     14
+  min size:       9
+  self stack:      0
+  global stack:    0
+    size:4.500000, time:3.250000
+    size:5.500000, time:3.250000,  executed if:(not inlined)
+  calls:
+    Wdg_ValidatePtrVersion/13 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 4 time: 13 callee size: 5 stack: 0
+
+IPA function summary for Wdg_ChannelSetTriggerCondition/23 inlinable
+  global time:     26.868726
+  self size:       43
+  global size:     43
+  min size:       26
+  self stack:      0
+  global stack:    0
+    size:12.000000, time:3.458967
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:4.000000, time:0.387444,  nonconst if:(op0 changed)
+    size:2.000000, time:0.145926,  nonconst if:(op1 changed)
+    size:5.000000, time:0.120389,  executed if:(op1 != 0)
+    size:2.000000, time:0.048156,  executed if:(op1 != 0),  nonconst if:(op0 changed) && (op1 != 0)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/55 function body not available
+      freq:0.02 loop depth: 0 size: 1 time: 10 predicate: (op1 != 0)
+    Gpt_StopTimer/28 function body not available
+      freq:0.08 loop depth: 0 size: 2 time: 11
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/55 function body not available
+      freq:0.08 loop depth: 0 size: 1 time: 10
+    Gpt_GetTimeElapsed/49 function body not available
+      freq:0.11 loop depth: 0 size: 3 time: 12
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/54 function body not available
+      freq:0.11 loop depth: 0 size: 1 time: 10
+    Wdg_ValidateTimeout/15 function not considered for inlining
+      freq:0.33 loop depth: 0 size: 4 time: 13 callee size:14 stack:36
+    Wdg_ChannelValidateTrigerCondition/12 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12 callee size: 7 stack: 0
+
+IPA function summary for Wdg_ChannelSetMode/22 inlinable
+  global time:     37.768100
+  self size:       31
+  global size:     31
+  min size:       27
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:2.768900
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:0.108900,  nonconst if:(op0 changed)
+  calls:
+    Wdg_ChannelEndValidateGlobalCall/8 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12 callee size:11 stack: 0
+    Wdg_VadidateDoChannelSetMode/19 function not considered for inlining
+      freq:0.11 loop depth: 0 size: 5 time: 14 callee size:30 stack: 0
+    Wdg_DoChannelSetMode/18 function not considered for inlining
+      freq:0.11 loop depth: 0 size: 4 time: 13 callee size:22 stack: 0
+    Wdg_ChannelValidateMode.constprop/65 function not considered for inlining
+      freq:0.33 loop depth: 0 size: 6 time: 15 callee size:15 stack: 0
+       op1 is compile time invariant
+       op2 is compile time invariant
+    Wdg_ChannelValidateGlobalCall/7 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 4 time: 13 callee size:12 stack: 0
+       op0 is compile time invariant
+
+IPA function summary for Wdg_ChannelInit/21 inlinable
+  global time:     42.780800
+  self size:       57
+  global size:     57
+  min size:       47
+  self stack:      0
+  global stack:    0
+    size:18.000000, time:4.321962
+    size:4.000000, time:2.096113,  executed if:(not inlined)
+    size:6.000000, time:0.686400,  nonconst if:(op0 changed)
+  calls:
+    Wdg_ChannelEndValidateGlobalCall/8 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12 callee size:11 stack: 0
+       op0 change 99.990000% of time
+       op1 change 99.990000% of time
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/37 function body not available
+      freq:0.05 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/36 function body not available
+      freq:0.05 loop depth: 0 size: 1 time: 10
+    Wdg_ChannelStartGpt/20 function not considered for inlining
+      freq:0.05 loop depth: 0 size: 2 time: 11 callee size:20 stack: 0
+    Wdg_VadidateHardwareSetting/17 function not considered for inlining
+      freq:0.16 loop depth: 0 size: 4 time: 13 callee size:13 stack: 0
+    Wdg_InitialHardware/16 function not considered for inlining
+      freq:0.16 loop depth: 0 size: 4 time: 13 callee size:11 stack: 0
+    Wdg_ChannelValidateMode.constprop/65 function not considered for inlining
+      freq:0.03 loop depth: 0 size: 6 time: 15 callee size:15 stack: 0
+       op1 is compile time invariant
+       op2 is compile time invariant
+    Wdg_ValidatePtrInit/11 function not considered for inlining
+      freq:0.33 loop depth: 0 size: 4 time: 13 callee size: 9 stack: 0
+    Wdg_ChannelValidateGlobalCall/7 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 4 time: 13 callee size:12 stack: 0
+       op0 is compile time invariant
+
+IPA function summary for Wdg_ChannelStartGpt/20 inlinable
+  global time:     73.950000
+  self size:       40
+  global size:     40
+  min size:       29
+  self stack:      0
+  global stack:    0
+    size:20.000000, time:18.660000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:8.000000, time:7.330000,  nonconst if:(op0 changed)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/46 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/45 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Gpt_StartTimer/44 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12
+    Gpt_EnableNotification/43 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+    Gpt_StopTimer/28 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+IPA function summary for Wdg_VadidateDoChannelSetMode/19 inlinable
+  global time:     84.878904
+  self size:       61
+  global size:     61
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op2 changed)
+    size:18.000000, time:13.321834,  executed if:(op2 != 1)
+    size:7.000000, time:5.583200,  executed if:(op2 != 1),  nonconst if:(op0 changed) && (op2 != 1)
+    size:3.000000, time:2.392800,  executed if:(op2 != 1),  nonconst if:(op1 changed) && (op2 != 1)
+    size:1.000000, time:0.263208,  executed if:(op1 != 0) && (op2 != 1)
+    size:4.000000, time:0.648166,  executed if:(op2 == 1)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/53 function body not available
+      freq:0.80 loop depth: 0 size: 1 time: 10 predicate: (op2 != 1)
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/52 function body not available
+      freq:0.80 loop depth: 0 size: 1 time: 10 predicate: (op2 != 1)
+    Gpt_StartTimer/44 function body not available
+      freq:0.26 loop depth: 0 size: 3 time: 12 predicate: (op1 != 0) && (op2 != 1)
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/51 function body not available
+      freq:0.80 loop depth: 0 size: 1 time: 10 predicate: (op2 != 1)
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/50 function body not available
+      freq:0.80 loop depth: 0 size: 1 time: 10 predicate: (op2 != 1)
+    Gpt_GetTimeElapsed/49 function body not available
+      freq:0.80 loop depth: 0 size: 3 time: 12 predicate: (op2 != 1)
+    Gpt_StopTimer/28 function body not available
+      freq:0.80 loop depth: 0 size: 2 time: 11 predicate: (op2 != 1)
+    Dem_SetEventStatus/40 function body not available
+      freq:0.16 loop depth: 0 size: 3 time: 12 predicate: (op2 != 1)
+       op1 is compile time invariant
+    Dem_SetEventStatus/40 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12 predicate: (op2 == 1)
+       op1 is compile time invariant
+    Det_ReportError/32 function body not available
+      freq:0.20 loop depth: 0 size: 5 time: 14 predicate: (op2 == 1)
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Wdg_DoChannelSetMode/18 inlinable
+  global time:     27.207900
+  self size:       45
+  global size:     45
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+    size:11.000000, time:4.690000,  executed if:(op1 != 0)
+    size:3.000000, time:1.340000,  executed if:(op1 != 0),  nonconst if:(op0 changed) && (op1 != 0)
+    size:2.000000, time:0.670000,  executed if:(op1 != 0),  nonconst if:(op1 changed) && (op1 != 0)
+    size:5.000000, time:0.986700,  executed if:(op1 == 0)
+    size:1.000000, time:0.108900,  executed if:(op1 == 0),  nonconst if:(op0 changed) && (op1 == 0)
+  calls:
+    Wdg_Ipw_SetMode/41 function body not available
+      freq:0.34 loop depth: 0 size: 4 time: 13 predicate: (op1 != 0)
+    Wdg_Ipw_StartTimer/48 function body not available
+      freq:0.11 loop depth: 0 size: 3 time: 12 predicate: (op1 != 0)
+    Wdg_Ipw_SetMode/41 function body not available
+      freq:0.34 loop depth: 0 size: 4 time: 13 predicate: (op1 != 0)
+    Wdg_Ipw_SetMode/41 function body not available
+      freq:0.11 loop depth: 0 size: 4 time: 13 predicate: (op1 == 0)
+    Wdg_Ipw_StopTimer/47 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12 predicate: (op1 == 0)
+
+IPA function summary for Wdg_VadidateHardwareSetting/17 inlinable
+  global time:     12.869600
+  self size:       26
+  global size:     26
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+    size:4.000000, time:2.554234,  executed if:(op1 != 1)
+    size:5.000000, time:0.850566,  executed if:(op1 == 1)
+    size:1.000000, time:0.202400,  executed if:(op1 == 1),  nonconst if:(op0 changed) && (op1 == 1)
+  calls:
+    Dem_SetEventStatus/40 function body not available
+      freq:0.16 loop depth: 0 size: 3 time: 12 predicate: (op1 != 1)
+       op1 is compile time invariant
+    Dem_SetEventStatus/40 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12 predicate: (op1 == 1)
+       op1 is compile time invariant
+    Det_ReportError/32 function body not available
+      freq:0.20 loop depth: 0 size: 5 time: 14 predicate: (op1 == 1)
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Wdg_InitialHardware/16 inlinable
+  global time:     14.250000
+  self size:       23
+  global size:     23
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+    size:9.000000, time:3.250000,  executed if:(op1 == 0)
+    size:1.000000, time:0.500000,  executed if:(op1 == 0),  nonconst if:(op0 changed) && (op1 == 0)
+  calls:
+    Wdg_Ipw_Init/42 function body not available
+      freq:0.25 loop depth: 0 size: 4 time: 13 predicate: (op1 == 0)
+    Wdg_Ipw_SetMode/41 function body not available
+      freq:0.25 loop depth: 0 size: 4 time: 13 predicate: (op1 == 0)
+
+IPA function summary for Wdg_ValidateTimeout/15 inlinable
+  global time:     26.325000
+  self size:       29
+  global size:     29
+  min size:       21
+  self stack:      36
+  global stack:    36
+    size:16.000000, time:14.350000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:3.000000, time:2.340000,  nonconst if:(op1 changed)
+    size:2.000000, time:0.670000,  nonconst if:(op0 changed)
+  calls:
+    Det_ReportError/32 function body not available
+      freq:0.50 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Wdg_ValidatePtrVersion/13 inlinable
+  global time:     6.440200
+  self size:       10
+  global size:     10
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+  calls:
+    Det_ReportError/32 function body not available
+      freq:0.17 loop depth: 0 size: 5 time: 14 predicate: (op0 == 0B)
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Wdg_ChannelValidateTrigerCondition/12 inlinable
+  global time:     14.225376
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:4.595200
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    Det_ReportError/32 function body not available
+      freq:0.47 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Wdg_ValidatePtrInit/11 inlinable
+  global time:     14.567730
+  self size:       18
+  global size:     18
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:0.500000, time:0.412850,  executed if:(op0 != 0B) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0 != 0B) && (not inlined)
+    size:0.500000, time:0.412850,  executed if:(op0 != 0B),  nonconst if:(op0[ref offset: 8] changed) && (op0 != 0B)
+    size:2.000000, time:1.651400,  executed if:(op0 != 0B),  nonconst if:(op0[ref offset: 8] changed || op1 changed) && (op0 != 0B)
+  calls:
+    Det_ReportError/32 function body not available
+      freq:0.40 loop depth: 0 size: 5 time: 14 predicate: (op0 != 0B)
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Det_ReportError/32 function body not available
+      freq:0.17 loop depth: 0 size: 5 time: 14 predicate: (op0 == 0B)
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Wdg_Cbk_GptNotification0/10 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelTrigger.constprop/66 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size:13 stack: 0
+       op0 is compile time invariant
+
+IPA function summary for Wdg_ChannelEndValidateGlobalCall/8 inlinable
+  global time:     29.320000
+  self size:       23
+  global size:     23
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:9.000000, time:2.990000,  executed if:(op0 != 0)
+    size:5.000000, time:1.330000,  executed if:(op0 != 0),  nonconst if:(op1 changed) && (op0 != 0)
+    size:1.000000, time:0.500000,  executed if:(op0 == 0)
+    size:1.000000, time:0.500000,  executed if:(op0 == 0),  nonconst if:(op1 changed) && (op0 == 0)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/34 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/33 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Wdg_ChannelValidateGlobalCall/7 inlinable
+  global time:     32.797148
+  self size:       25
+  global size:     25
+  min size:       13
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:5.755600
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op1 changed)
+    size:4.000000, time:1.403096,  nonconst if:(op0 changed)
+    size:1.000000, time:0.180774,  executed if:(op0 != 0)
+    size:1.000000, time:0.180774,  executed if:(op0 != 0),  nonconst if:(op1 changed) && (op0 != 0)
+    size:1.000000, time:0.180774,  executed if:(op0 == 0)
+    size:1.000000, time:0.180774,  executed if:(op0 == 0),  nonconst if:(op1 changed) && (op0 == 0)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/31 function body not available
+      freq:0.36 loop depth: 0 size: 1 time: 10
+    Wdg_ChannelValidateGlobalCall.part.0/63 function not considered for inlining
+      freq:0.64 loop depth: 0 size: 4 time: 13 callee size: 4 stack: 0
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/30 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+
+Flattening functions:
+Overall time estimate: 637.512212 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Wdg_ChannelTrigger.constprop/66.
+Enqueueing calls in Wdg_ChannelValidateMode.constprop/65.
+Enqueueing calls in Wdg_ChannelValidateMode.part.0/64.
+Enqueueing calls in Wdg_ChannelValidateGlobalCall.part.0/63.
+Enqueueing calls in Wdg_ChannelClearResetRequest/25.
+Enqueueing calls in Wdg_ChannelGetVersionInfo/24.
+Enqueueing calls in Wdg_ChannelSetTriggerCondition/23.
+Enqueueing calls in Wdg_ChannelSetMode/22.
+Enqueueing calls in Wdg_ChannelInit/21.
+Enqueueing calls in Wdg_ChannelStartGpt/20.
+Enqueueing calls in Wdg_VadidateDoChannelSetMode/19.
+Enqueueing calls in Wdg_DoChannelSetMode/18.
+Enqueueing calls in Wdg_VadidateHardwareSetting/17.
+Enqueueing calls in Wdg_InitialHardware/16.
+Enqueueing calls in Wdg_ValidateTimeout/15.
+Enqueueing calls in Wdg_ValidatePtrVersion/13.
+Enqueueing calls in Wdg_ChannelValidateTrigerCondition/12.
+Enqueueing calls in Wdg_ValidatePtrInit/11.
+Enqueueing calls in Wdg_Cbk_GptNotification0/10.
+Enqueueing calls in Wdg_ChannelEndValidateGlobalCall/8.
+Enqueueing calls in Wdg_ChannelValidateGlobalCall/7.
+
+Considering Wdg_ValidatePtrVersion/13 with 10 size
+ to be inlined into Wdg_ChannelGetVersionInfo/24 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1396
+ Estimated badness is -9.411765, frequency 1.00.
+
+Considering Wdg_ChannelValidateTrigerCondition/12 with 14 size
+ to be inlined into Wdg_ChannelSetTriggerCondition/23 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1325
+ Estimated badness is -1.098039, frequency 1.00.
+
+Considering Wdg_ChannelTrigger.constprop/66 with 27 size
+ to be inlined into Wdg_Cbk_GptNotification0/10 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:610
+ Estimated badness is -0.700337, frequency 1.00.
+
+Considering Wdg_ValidatePtrInit/11 with 18 size
+ to be inlined into Wdg_ChannelInit/21 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1168
+ Estimated badness is -0.217593, frequency 0.33.
+
+Considering Wdg_ValidateTimeout/15 with 29 size
+ to be inlined into Wdg_ChannelSetTriggerCondition/23 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1330
+ Estimated badness is -0.098630, frequency 0.33.
+
+Considering Wdg_ChannelValidateGlobalCall.part.0/63 with 9 size
+ to be inlined into Wdg_ChannelValidateGlobalCall/7 in unknown:0
+ Estimated badness is -0.070063, frequency 0.64.
+
+Considering Wdg_InitialHardware/16 with 23 size
+ to be inlined into Wdg_ChannelInit/21 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1201
+ Estimated badness is -0.058929, frequency 0.16.
+
+Considering Wdg_VadidateHardwareSetting/17 with 26 size
+ to be inlined into Wdg_ChannelInit/21 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1204
+ Estimated badness is -0.040470, frequency 0.16.
+
+Considering Wdg_DoChannelSetMode/18 with 45 size
+ to be inlined into Wdg_ChannelSetMode/22 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1283
+ Estimated badness is -0.019936, frequency 0.11.
+
+Considering Wdg_VadidateDoChannelSetMode/19 with 61 size
+ to be inlined into Wdg_ChannelSetMode/22 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1284
+ Estimated badness is -0.008623, frequency 0.11.
+
+Considering Wdg_ChannelStartGpt/20 with 40 size
+ to be inlined into Wdg_ChannelInit/21 in C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Wdg_TS_T40D34M30I0R0/src/Wdg_Channel.c:1210
+ Estimated badness is -0.004690, frequency 0.05.
+
+Considering Wdg_ChannelValidateMode.part.0/64 with 7 size
+ to be inlined into Wdg_ChannelValidateMode.constprop/65 in unknown:0
+ Estimated badness is -0.004579, frequency 0.17.
+node context cache: 2 hits, 8 misses, 17 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 323.128226 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :       58 calls, 13.122649 freq, 0 count
+call is unlikely and code size would grow         :        8 calls, 6.357225 freq, 0 count
+IPA function summary for Wdg_ChannelValidateMode.constprop/65 inlinable
+  global time:     24.787640
+  self size:       30
+  global size:     33
+  min size:       18
+  self stack:      0
+  global stack:    0
+  estimated growth:12
+    size:7.000000, time:4.020000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:2.000000, time:1.000000,  executed if:(op0 != 0),  nonconst if:(op0 changed) && (op0 != 0)
+    size:2.000000, time:0.660000,  executed if:(op0 != 2) && (op0 != 0),  nonconst if:(op0 changed) && (op0 != 2) && (op0 != 0)
+    size:4.000000, time:3.128800,  executed if:(op0 == 0 || op0 == 2 || op0 == 1)
+    size:1.000000, time:0.782200,  executed if:(op0 == 0 || op0 == 2 || op0 == 1),  nonconst if:(op3 changed) && (op0 == 0 || op0 == 2 || op0 == 1)
+    size:1.000000, time:0.782200,  executed if:(op0 == 0 || op0 == 2 || op0 == 1),  nonconst if:(op0 changed) && (op0 == 0 || op0 == 2 || op0 == 1)
+  calls:
+    Det_ReportError/32 function body not available
+      freq:0.45 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+    Wdg_ChannelValidateMode.part.0/64 inlined
+      freq:0.17
+      Stack frame offset 0, callee self size 0
+      Dem_SetEventStatus/40 function body not available
+        freq:0.17 loop depth: 0 size: 3 time: 12
+         op1 is compile time invariant
+    Dem_SetEventStatus/40 function body not available
+      freq:0.17 loop depth: 0 size: 3 time: 12
+       op1 is compile time invariant
+
+IPA function summary for Wdg_ChannelClearResetRequest/25 inlinable
+  global time:     54.275088
+  self size:       34
+  global size:     34
+  min size:       30
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/62 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/61 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Det_ReportError/32 function body not available
+      freq:0.44 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Det_ReportRuntimeError/60 function body not available
+      freq:0.23 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Det_ReportError/32 function body not available
+      freq:0.07 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Wdg_Ipw_Deinit/59 function body not available
+      freq:0.33 loop depth: 0 size: 3 time: 12
+    Wdg_Ipw_ClearResetRequest/58 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+IPA function summary for Wdg_ChannelGetVersionInfo/24 inlinable
+  global time:     10.940200
+  self size:       14
+  global size:     17
+  min size:       5
+  self stack:      0
+  global stack:    0
+    size:4.500000, time:3.250000
+    size:5.500000, time:3.250000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+  calls:
+    Wdg_ValidatePtrVersion/13 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+      Det_ReportError/32 function body not available
+        freq:0.17 loop depth: 0 size: 5 time: 14 predicate: (op1 == 0B)
+         op0 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+
+IPA function summary for Wdg_ChannelSetTriggerCondition/23 inlinable
+  global time:     30.831352
+  self size:       43
+  global size:     73
+  min size:       50
+  self stack:      0
+  global stack:    36
+    size:33.000000, time:12.789667
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:8.000000, time:2.159644,  nonconst if:(op0 changed)
+    size:4.000000, time:0.367026,  nonconst if:(op1 changed)
+    size:5.000000, time:0.120389,  executed if:(op1 != 0)
+    size:2.000000, time:0.048156,  executed if:(op1 != 0),  nonconst if:(op0 changed) && (op1 != 0)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/55 function body not available
+      freq:0.02 loop depth: 0 size: 1 time: 10 predicate: (op1 != 0)
+    Gpt_StopTimer/28 function body not available
+      freq:0.08 loop depth: 0 size: 2 time: 11
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/55 function body not available
+      freq:0.08 loop depth: 0 size: 1 time: 10
+    Gpt_GetTimeElapsed/49 function body not available
+      freq:0.11 loop depth: 0 size: 3 time: 12
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/54 function body not available
+      freq:0.11 loop depth: 0 size: 1 time: 10
+    Wdg_ValidateTimeout/15 inlined
+      freq:0.33
+      Stack frame offset 0, callee self size 36
+      Det_ReportError/32 function body not available
+        freq:0.16 loop depth: 0 size: 5 time: 14
+         op0 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+    Wdg_ChannelValidateTrigerCondition/12 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+      Det_ReportError/32 function body not available
+        freq:0.47 loop depth: 0 size: 5 time: 14
+         op0 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+
+IPA function summary for Wdg_ChannelSetMode/22 inlinable
+  global time:     46.598453
+  self size:       31
+  global size:     122
+  min size:       62
+  self stack:      0
+  global stack:    0
+    size:29.000000, time:4.508033
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:8.000000, time:0.716910,  nonconst if:(op0 changed)
+    size:5.000000, time:0.478376,  nonconst if:(op1 changed)
+    size:12.000000, time:0.539404,  executed if:(op1 != 0)
+    size:3.000000, time:0.145926,  executed if:(op1 != 0),  nonconst if:(op1 != 0) && (op0 changed)
+    size:2.000000, time:0.072963,  executed if:(op1 != 0),  nonconst if:(op1 != 0) && (op1 changed)
+    size:5.000000, time:0.107452,  executed if:(op1 == 0)
+    size:1.000000, time:0.011859,  executed if:(op1 == 0),  nonconst if:(op1 == 0) && (op0 changed)
+  calls:
+    Wdg_ChannelEndValidateGlobalCall/8 call is unlikely and code size would grow
+      freq:1.00 loop depth: 0 size: 3 time: 12 callee size:11 stack: 0
+    Wdg_VadidateDoChannelSetMode/19 inlined
+      freq:0.11
+      Stack frame offset 0, callee self size 0
+      SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/53 function body not available
+        freq:0.09 loop depth: 0 size: 1 time: 10
+      SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/52 function body not available
+        freq:0.09 loop depth: 0 size: 1 time: 10
+      Gpt_StartTimer/44 function body not available
+        freq:0.03 loop depth: 0 size: 3 time: 12 predicate: (op1 != 0)
+      SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/51 function body not available
+        freq:0.09 loop depth: 0 size: 1 time: 10
+      SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/50 function body not available
+        freq:0.09 loop depth: 0 size: 1 time: 10
+      Gpt_GetTimeElapsed/49 function body not available
+        freq:0.09 loop depth: 0 size: 3 time: 12
+      Gpt_StopTimer/28 function body not available
+        freq:0.09 loop depth: 0 size: 2 time: 11
+      Dem_SetEventStatus/40 function body not available
+        freq:0.02 loop depth: 0 size: 3 time: 12
+         op1 is compile time invariant
+      Dem_SetEventStatus/40 function body not available
+        freq:0.00 loop depth: 0 size: 3 time: 12
+         op1 is compile time invariant
+      Det_ReportError/32 function body not available
+        freq:0.02 loop depth: 0 size: 5 time: 14
+         op0 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+    Wdg_DoChannelSetMode/18 inlined
+      freq:0.11
+      Stack frame offset 0, callee self size 0
+      Wdg_Ipw_SetMode/41 function body not available
+        freq:0.04 loop depth: 0 size: 4 time: 13 predicate: (op1 != 0)
+      Wdg_Ipw_StartTimer/48 function body not available
+        freq:0.01 loop depth: 0 size: 3 time: 12 predicate: (op1 != 0)
+      Wdg_Ipw_SetMode/41 function body not available
+        freq:0.04 loop depth: 0 size: 4 time: 13 predicate: (op1 != 0)
+      Wdg_Ipw_SetMode/41 function body not available
+        freq:0.01 loop depth: 0 size: 4 time: 13 predicate: (op1 == 0)
+      Wdg_Ipw_StopTimer/47 function body not available
+        freq:0.04 loop depth: 0 size: 3 time: 12 predicate: (op1 == 0)
+    Wdg_ChannelValidateMode.constprop/65 call is unlikely and code size would grow
+      freq:0.33 loop depth: 0 size: 6 time: 15 callee size:16 stack: 0
+       op1 is compile time invariant
+       op2 is compile time invariant
+    Wdg_ChannelValidateGlobalCall/7 call is unlikely and code size would grow
+      freq:1.00 loop depth: 0 size: 4 time: 13 callee size:13 stack: 0
+       op0 is compile time invariant
+
+IPA function summary for Wdg_ChannelInit/21 inlinable
+  global time:     45.345372
+  self size:       57
+  global size:     138
+  min size:       103
+  self stack:      0
+  global stack:    0
+    size:60.000000, time:7.096041
+    size:4.000000, time:2.096113,  executed if:(not inlined)
+    size:16.000000, time:1.201414,  nonconst if:(op0 changed)
+    size:2.000000, time:0.660000,  nonconst if:(op1 changed)
+    size:2.500000, time:0.681202,  executed if:(op1 != 0B)
+  calls:
+    Wdg_ChannelEndValidateGlobalCall/8 call is unlikely and code size would grow
+      freq:1.00 loop depth: 0 size: 3 time: 12 callee size:11 stack: 0
+       op0 change 99.990000% of time
+       op1 change 99.990000% of time
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/37 function body not available
+      freq:0.05 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/36 function body not available
+      freq:0.05 loop depth: 0 size: 1 time: 10
+    Wdg_ChannelStartGpt/20 inlined
+      freq:0.05
+      Stack frame offset 0, callee self size 0
+      SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/46 function body not available
+        freq:0.05 loop depth: 0 size: 1 time: 10
+      SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/45 function body not available
+        freq:0.05 loop depth: 0 size: 1 time: 10
+      Gpt_StartTimer/44 function body not available
+        freq:0.02 loop depth: 0 size: 3 time: 12
+      Gpt_EnableNotification/43 function body not available
+        freq:0.05 loop depth: 0 size: 2 time: 11
+      Gpt_StopTimer/28 function body not available
+        freq:0.05 loop depth: 0 size: 2 time: 11
+    Wdg_VadidateHardwareSetting/17 inlined
+      freq:0.16
+      Stack frame offset 0, callee self size 0
+      Dem_SetEventStatus/40 function body not available
+        freq:0.03 loop depth: 0 size: 3 time: 12
+         op1 is compile time invariant
+      Dem_SetEventStatus/40 function body not available
+        freq:0.01 loop depth: 0 size: 3 time: 12
+         op1 is compile time invariant
+      Det_ReportError/32 function body not available
+        freq:0.03 loop depth: 0 size: 5 time: 14
+         op0 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+    Wdg_InitialHardware/16 inlined
+      freq:0.16
+      Stack frame offset 0, callee self size 0
+      Wdg_Ipw_Init/42 function body not available
+        freq:0.04 loop depth: 0 size: 4 time: 13
+      Wdg_Ipw_SetMode/41 function body not available
+        freq:0.04 loop depth: 0 size: 4 time: 13
+    Wdg_ChannelValidateMode.constprop/65 call is unlikely and code size would grow
+      freq:0.03 loop depth: 0 size: 6 time: 15 callee size:16 stack: 0
+       op1 is compile time invariant
+       op2 is compile time invariant
+    Wdg_ValidatePtrInit/11 inlined
+      freq:0.33
+      Stack frame offset 0, callee self size 0
+      Det_ReportError/32 function body not available
+        freq:0.13 loop depth: 0 size: 5 time: 14 predicate: (op1 != 0B)
+         op0 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+      Det_ReportError/32 function body not available
+        freq:0.06 loop depth: 0 size: 5 time: 14 predicate: (op1 == 0B)
+         op0 is compile time invariant
+         op2 is compile time invariant
+         op3 is compile time invariant
+    Wdg_ChannelValidateGlobalCall/7 call is unlikely and code size would grow
+      freq:1.00 loop depth: 0 size: 4 time: 13 callee size:13 stack: 0
+       op0 is compile time invariant
+
+IPA function summary for Wdg_Cbk_GptNotification0/10 inlinable
+  global time:     41.210000
+  self size:       5
+  global size:     27
+  min size:       24
+  self stack:      0
+  global stack:    0
+    size:10.000000, time:3.980000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Wdg_ChannelTrigger.constprop/66 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+      Wdg_ChannelValidateGlobalCall/7 call is unlikely and code size would grow
+        freq:1.00 loop depth: 0 size: 4 time: 13 callee size:13 stack: 0
+         op0 is compile time invariant
+         op1 is compile time invariant
+      SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/26 function body not available
+        freq:0.33 loop depth: 0 size: 1 time: 10
+      SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/27 function body not available
+        freq:0.16 loop depth: 0 size: 1 time: 10
+      Gpt_StopTimer/28 function body not available
+        freq:0.16 loop depth: 0 size: 2 time: 11
+      SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/27 function body not available
+        freq:0.16 loop depth: 0 size: 1 time: 10
+      Wdg_Ipw_Service/29 function body not available
+        freq:0.16 loop depth: 0 size: 2 time: 11
+      Wdg_ChannelEndValidateGlobalCall/8 call is unlikely and code size would grow
+        freq:1.00 loop depth: 0 size: 3 time: 12 callee size:11 stack: 0
+         op1 is compile time invariant
+
+IPA function summary for Wdg_ChannelEndValidateGlobalCall/8 inlinable
+  global time:     29.320000
+  self size:       23
+  global size:     23
+  min size:       2
+  self stack:      0
+  global stack:    0
+  estimated growth:22
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:9.000000, time:2.990000,  executed if:(op0 != 0)
+    size:5.000000, time:1.330000,  executed if:(op0 != 0),  nonconst if:(op1 changed) && (op0 != 0)
+    size:1.000000, time:0.500000,  executed if:(op0 == 0)
+    size:1.000000, time:0.500000,  executed if:(op0 == 0),  nonconst if:(op1 changed) && (op0 == 0)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/34 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/33 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Wdg_ChannelValidateGlobalCall/7 inlinable
+  global time:     39.820120
+  self size:       25
+  global size:     27
+  min size:       15
+  self stack:      0
+  global stack:    0
+  estimated growth:9
+    size:7.000000, time:5.755600
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op1 changed)
+    size:4.000000, time:1.403096,  nonconst if:(op0 changed)
+    size:1.000000, time:0.180774,  executed if:(op0 != 0)
+    size:1.000000, time:0.180774,  executed if:(op0 != 0),  nonconst if:(op1 changed) && (op0 != 0)
+    size:1.000000, time:0.180774,  executed if:(op0 == 0)
+    size:1.000000, time:0.180774,  executed if:(op0 == 0),  nonconst if:(op1 changed) && (op0 == 0)
+  calls:
+    SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/31 function body not available
+      freq:0.36 loop depth: 0 size: 1 time: 10
+    Wdg_ChannelValidateGlobalCall.part.0/63 inlined
+      freq:0.64
+      Stack frame offset 0, callee self size 0
+      SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/31 function body not available
+        freq:0.64 loop depth: 0 size: 1 time: 10
+      Det_ReportError/32 function body not available
+        freq:0.64 loop depth: 0 size: 5 time: 14
+         op0 is compile time invariant
+         op3 is compile time invariant
+    SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/30 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+Symbol table:
+
+Wdg_ChannelTrigger.constprop.0/66 (Wdg_ChannelTrigger.constprop) @0662cc40
+  Type: function definition analyzed
+  Visibility:
+  References: Wdg_au32Timeout/3 (read) Wdg_au32GptPeriod/4 (read) Wdg_apConfigPtr/1 (read) Wdg_au32Timeout/3 (write) 
+  Referring: 
+  Function Wdg_ChannelTrigger.constprop/66 is inline copy in Wdg_Cbk_GptNotification0/10
+  Clone of Wdg_ChannelTrigger/9
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) local optimize_size
+  Called by: Wdg_Cbk_GptNotification0/10 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: Wdg_ChannelValidateGlobalCall/7 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/26 (354334800 (estimated locally),0.33 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/27 (177167400 (estimated locally),0.16 per call) Gpt_StopTimer/28 (177167400 (estimated locally),0.16 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/27 (177167400 (estimated locally),0.16 per call) Wdg_Ipw_Service/29 (177167400 (estimated locally),0.16 per call) Wdg_ChannelEndValidateGlobalCall/8 (1073741824 (estimated locally),1.00 per call) 
+Wdg_ChannelValidateMode.constprop.0/65 (Wdg_ChannelValidateMode.constprop) @0662c9a0
+  Type: function definition analyzed
+  Visibility:
+  References: Wdg_apConfigPtr/1 (read) Wdg_E_Mode_Failed/39 (read) Wdg_E_Mode_Failed/39 (read) 
+  Referring: 
+  Clone of Wdg_ChannelValidateMode/14
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) local optimize_size
+  Called by: Wdg_ChannelInit/21 (29232621 (estimated locally),0.03 per call) Wdg_ChannelSetMode/22 (354334800 (estimated locally),0.33 per call) 
+  Calls: Det_ReportError/32 (485825222 (estimated locally),0.45 per call) Wdg_ChannelValidateMode.part.0/64 (inlined) (182536112 (estimated locally),0.17 per call) Dem_SetEventStatus/40 (182536112 (estimated locally),0.17 per call) 
+Wdg_ChannelValidateMode.part.0/64 (Wdg_ChannelValidateMode.part.0) @063be0e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: Wdg_E_Mode_Failed/39 (read) 
+  Referring: 
+  Function Wdg_ChannelValidateMode.part.0/64 is inline copy in Wdg_ChannelValidateMode.constprop/65
+  Availability: local
+  Function flags: count:182536112 (estimated locally) body local split_part optimize_size
+  Called by: Wdg_ChannelValidateMode.constprop.0/65 (inlined) (182536112 (estimated locally),0.17 per call) 
+  Calls: Dem_SetEventStatus/40 (182536112 (estimated locally),0.17 per call) 
+Wdg_ChannelValidateGlobalCall.part.0/63 (Wdg_ChannelValidateGlobalCall.part.0) @06469ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: 
+  Referring: 
+  Function Wdg_ChannelValidateGlobalCall.part.0/63 is inline copy in Wdg_ChannelValidateGlobalCall/7
+  Availability: local
+  Function flags: count:685532620 (estimated locally) body local split_part optimize_size
+  Called by: Wdg_ChannelValidateGlobalCall/7 (inlined) (685532620 (estimated locally),0.64 per call) 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/31 (685532620 (estimated locally),0.64 per call) Det_ReportError/32 (685532620 (estimated locally),0.64 per call) 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/62 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08) @06469700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelClearResetRequest/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/61 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08) @06479ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelClearResetRequest/25 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Det_ReportRuntimeError/60 (Det_ReportRuntimeError) @06479e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelClearResetRequest/25 (244598390 (estimated locally),0.23 per call) 
+  Calls: 
+Wdg_Ipw_Deinit/59 (Wdg_Ipw_Deinit) @06479d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelClearResetRequest/25 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Wdg_Ipw_ClearResetRequest/58 (Wdg_Ipw_ClearResetRequest) @06479c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelClearResetRequest/25 (1073741823 (estimated locally),1.00 per call) 
+  Calls: 
+Wdg_au16CfgMaxTimeout/57 (Wdg_au16CfgMaxTimeout) @0647f168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Wdg_ValidateTimeout/15 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+*.LC0/56 (*.LC0) @06477e58
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: 
+  Referring: Wdg_ValidateTimeout/15 (read) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/55 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05) @06479620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelSetTriggerCondition/23 (25853330 (estimated locally),0.02 per call) Wdg_ChannelSetTriggerCondition/23 (91077154 (estimated locally),0.08 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/54 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05) @06479540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelSetTriggerCondition/23 (116930483 (estimated locally),0.11 per call) 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/53 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04) @06479380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_VadidateDoChannelSetMode/19 (93263753 (estimated locally),0.09 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/52 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04) @064792a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_VadidateDoChannelSetMode/19 (93263753 (estimated locally),0.09 per call) 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/51 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03) @064791c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_VadidateDoChannelSetMode/19 (93263753 (estimated locally),0.09 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/50 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03) @064790e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_VadidateDoChannelSetMode/19 (93263753 (estimated locally),0.09 per call) 
+  Calls: 
+Gpt_GetTimeElapsed/49 (Gpt_GetTimeElapsed) @06479000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelSetTriggerCondition/23 (116930483 (estimated locally),0.11 per call) Wdg_VadidateDoChannelSetMode/19 (93263753 (estimated locally),0.09 per call) 
+  Calls: 
+Wdg_Ipw_StartTimer/48 (Wdg_Ipw_StartTimer) @06469e00
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_DoChannelSetMode/18 (12926665 (estimated locally),0.01 per call) 
+  Calls: 
+Wdg_Ipw_StopTimer/47 (Wdg_Ipw_StopTimer) @06469d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_DoChannelSetMode/18 (38587059 (estimated locally),0.04 per call) 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/46 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01) @06469a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelStartGpt/20 (58465242 (estimated locally),0.05 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/45 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01) @064699a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelStartGpt/20 (58465242 (estimated locally),0.05 per call) 
+  Calls: 
+Gpt_StartTimer/44 (Gpt_StartTimer) @064698c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_VadidateDoChannelSetMode/19 (30777038 (estimated locally),0.03 per call) Wdg_ChannelStartGpt/20 (19293530 (estimated locally),0.02 per call) 
+  Calls: 
+Gpt_EnableNotification/43 (Gpt_EnableNotification) @064697e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelStartGpt/20 (58465242 (estimated locally),0.05 per call) 
+  Calls: 
+Wdg_Ipw_Init/42 (Wdg_Ipw_Init) @06469380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_InitialHardware/16 (44291850 (estimated locally),0.04 per call) 
+  Calls: 
+Wdg_Ipw_SetMode/41 (Wdg_Ipw_SetMode) @064691c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_DoChannelSetMode/18 (39171712 (estimated locally),0.04 per call) Wdg_DoChannelSetMode/18 (39171712 (estimated locally),0.04 per call) Wdg_DoChannelSetMode/18 (12733729 (estimated locally),0.01 per call) Wdg_InitialHardware/16 (44291850 (estimated locally),0.04 per call) 
+  Calls: 
+Dem_SetEventStatus/40 (Dem_SetEventStatus) @063beb60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelValidateMode.constprop.0/65 (182536112 (estimated locally),0.17 per call) Wdg_VadidateDoChannelSetMode/19 (18876584 (estimated locally),0.02 per call) Wdg_VadidateDoChannelSetMode/19 (4790146 (estimated locally),0.00 per call) Wdg_VadidateHardwareSetting/17 (28600885 (estimated locally),0.03 per call) Wdg_VadidateHardwareSetting/17 (7257797 (estimated locally),0.01 per call) Wdg_ChannelValidateMode.part.0/64 (182536112 (estimated locally),0.17 per call) 
+  Calls: 
+Wdg_E_Mode_Failed/39 (Wdg_E_Mode_Failed) @064669d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Wdg_ChannelValidateMode.part.0/64 (read) Wdg_ChannelValidateMode.constprop.0/65 (read) Wdg_ChannelValidateMode.constprop.0/65 (read) Wdg_VadidateHardwareSetting/17 (read) Wdg_VadidateHardwareSetting/17 (read) Wdg_VadidateHardwareSetting/17 (read) Wdg_VadidateHardwareSetting/17 (read) Wdg_VadidateDoChannelSetMode/19 (read) Wdg_VadidateDoChannelSetMode/19 (read) Wdg_VadidateDoChannelSetMode/19 (read) Wdg_VadidateDoChannelSetMode/19 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/37 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02) @063bed20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelInit/21 (58465242 (estimated locally),0.05 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/36 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02) @063bec40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelInit/21 (58465242 (estimated locally),0.05 per call) 
+  Calls: 
+Wdg_au16CfgInitialTimeout/35 (Wdg_au16CfgInitialTimeout) @06466048
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Wdg_ChannelStartGpt/20 (read) Wdg_ChannelInit/21 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/34 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07) @063be9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelEndValidateGlobalCall/8 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/33 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07) @063be7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelEndValidateGlobalCall/8 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Det_ReportError/32 (Det_ReportError) @063be540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelValidateMode.constprop.0/65 (485825222 (estimated locally),0.45 per call) Wdg_ChannelClearResetRequest/25 (474808633 (estimated locally),0.44 per call) Wdg_ChannelClearResetRequest/25 (71717363 (estimated locally),0.07 per call) Wdg_VadidateDoChannelSetMode/19 (23666730 (estimated locally),0.02 per call) Wdg_VadidateHardwareSetting/17 (35858682 (estimated locally),0.03 per call) Wdg_ValidatePtrVersion/13 (187153200 (estimated locally),0.17 per call) Wdg_ValidateTimeout/15 (176281563 (estimated locally),0.16 per call) Wdg_ChannelValidateTrigerCondition/12 (508506950 (estimated locally),0.47 per call) Wdg_ValidatePtrInit/11 (143010290 (estimated locally),0.13 per call) Wdg_ValidatePtrInit/11 (61760556 (estimated locally),0.06 per call) Wdg_ChannelValidateGlobalCall.part.0/63 (685532620 (estimated locally),0.64 per call) 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/31 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06) @063be460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelValidateGlobalCall/7 (388209204 (estimated locally),0.36 per call) Wdg_ChannelValidateGlobalCall.part.0/63 (685532620 (estimated locally),0.64 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/30 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06) @063be380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelValidateGlobalCall/7 (1073741823 (estimated locally),1.00 per call) 
+  Calls: 
+Wdg_Ipw_Service/29 (Wdg_Ipw_Service) @063be1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelTrigger.constprop.0/66 (177167400 (estimated locally),0.16 per call) 
+  Calls: 
+Gpt_StopTimer/28 (Gpt_StopTimer) @063be000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelTrigger.constprop.0/66 (177167400 (estimated locally),0.16 per call) Wdg_ChannelSetTriggerCondition/23 (91077154 (estimated locally),0.08 per call) Wdg_VadidateDoChannelSetMode/19 (93263753 (estimated locally),0.09 per call) Wdg_ChannelStartGpt/20 (58465242 (estimated locally),0.05 per call) 
+  Calls: 
+SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00/27 (SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00) @063b78c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelTrigger.constprop.0/66 (177167400 (estimated locally),0.16 per call) Wdg_ChannelTrigger.constprop.0/66 (177167400 (estimated locally),0.16 per call) 
+  Calls: 
+SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00/26 (SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00) @063b7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Wdg_ChannelTrigger.constprop.0/66 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Wdg_ChannelClearResetRequest/25 (Wdg_ChannelClearResetRequest) @063b7a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Wdg_aePreviousMode/5 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08/62 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08/61 (1073741824 (estimated locally),1.00 per call) Det_ReportError/32 (474808633 (estimated locally),0.44 per call) Det_ReportRuntimeError/60 (244598390 (estimated locally),0.23 per call) Det_ReportError/32 (71717363 (estimated locally),0.07 per call) Wdg_Ipw_Deinit/59 (354334800 (estimated locally),0.33 per call) Wdg_Ipw_ClearResetRequest/58 (1073741823 (estimated locally),1.00 per call) 
+Wdg_ChannelGetVersionInfo/24 (Wdg_ChannelGetVersionInfo) @063b77e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Wdg_ValidatePtrVersion/13 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Wdg_ChannelSetTriggerCondition/23 (Wdg_ChannelSetTriggerCondition) @063b7540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Wdg_apConfigPtr/1 (read) Wdg_au32Timeout/3 (read) Wdg_au32Timeout/3 (write) Wdg_apConfigPtr/1 (read) Wdg_apConfigPtr/1 (read) Wdg_au32Timeout/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/55 (25853330 (estimated locally),0.02 per call) Gpt_StopTimer/28 (91077154 (estimated locally),0.08 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05/55 (91077154 (estimated locally),0.08 per call) Gpt_GetTimeElapsed/49 (116930483 (estimated locally),0.11 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05/54 (116930483 (estimated locally),0.11 per call) Wdg_ValidateTimeout/15 (inlined) (354334800 (estimated locally),0.33 per call) Wdg_ChannelValidateTrigerCondition/12 (inlined) (1073741823 (estimated locally),1.00 per call) 
+Wdg_ChannelSetMode/22 (Wdg_ChannelSetMode) @063b72a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Wdg_aeCurrentMode/6 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/8 (1073741824 (estimated locally),1.00 per call) Wdg_VadidateDoChannelSetMode/19 (inlined) (116930483 (estimated locally),0.11 per call) Wdg_DoChannelSetMode/18 (inlined) (116930483 (estimated locally),0.11 per call) Wdg_ChannelValidateMode.constprop.0/65 (354334800 (estimated locally),0.33 per call) Wdg_ChannelValidateGlobalCall/7 (1073741824 (estimated locally),1.00 per call) 
+Wdg_ChannelInit/21 (Wdg_ChannelInit) @063b7000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Wdg_apConfigPtr/1 (write) Wdg_aeCurrentMode/6 (write) Wdg_aePreviousMode/5 (read) Wdg_au16CfgInitialTimeout/35 (read) Wdg_apConfigPtr/1 (read) Wdg_aePreviousMode/5 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Wdg_ChannelEndValidateGlobalCall/8 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02/37 (58465242 (estimated locally),0.05 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02/36 (58465242 (estimated locally),0.05 per call) Wdg_ChannelStartGpt/20 (inlined) (58465242 (estimated locally),0.05 per call) Wdg_VadidateHardwareSetting/17 (inlined) (177167400 (estimated locally),0.16 per call) Wdg_InitialHardware/16 (inlined) (177167400 (estimated locally),0.16 per call) Wdg_ChannelValidateMode.constprop.0/65 (29232621 (estimated locally),0.03 per call) Wdg_ValidatePtrInit/11 (inlined) (354334800 (estimated locally),0.33 per call) Wdg_ChannelValidateGlobalCall/7 (1073741823 (estimated locally),1.00 per call) 
+Wdg_ChannelStartGpt/20 (Wdg_ChannelStartGpt) @06399ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Wdg_apConfigPtr/1 (read) Wdg_apConfigPtr/1 (read) Wdg_au32GptPeriod/4 (write) Wdg_apConfigPtr/1 (read) Wdg_au32GptPeriod/4 (read) Wdg_au16CfgInitialTimeout/35 (read) Wdg_apConfigPtr/1 (read) Wdg_au32Timeout/3 (write) 
+  Referring: 
+  Function Wdg_ChannelStartGpt/20 is inline copy in Wdg_ChannelInit/21
+  Availability: local
+  Function flags: count:58465242 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelInit/21 (inlined) (58465242 (estimated locally),0.05 per call) 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01/46 (58465242 (estimated locally),0.05 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01/45 (58465242 (estimated locally),0.05 per call) Gpt_StartTimer/44 (19293530 (estimated locally),0.02 per call) Gpt_EnableNotification/43 (58465242 (estimated locally),0.05 per call) Gpt_StopTimer/28 (58465242 (estimated locally),0.05 per call) 
+Wdg_VadidateDoChannelSetMode/19 (Wdg_VadidateDoChannelSetMode) @06399c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Wdg_E_Mode_Failed/39 (read) Wdg_E_Mode_Failed/39 (read) Wdg_E_Mode_Failed/39 (read) Wdg_E_Mode_Failed/39 (read) Wdg_apConfigPtr/1 (read) Wdg_apConfigPtr/1 (read) Wdg_au32Timeout/3 (read) Wdg_au32Timeout/3 (write) Wdg_apConfigPtr/1 (read) Wdg_au32GptPeriod/4 (write) Wdg_aePreviousMode/5 (write) 
+  Referring: 
+  Function Wdg_VadidateDoChannelSetMode/19 is inline copy in Wdg_ChannelSetMode/22
+  Availability: local
+  Function flags: count:116930483 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelSetMode/22 (inlined) (116930483 (estimated locally),0.11 per call) 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04/53 (93263753 (estimated locally),0.09 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04/52 (93263753 (estimated locally),0.09 per call) Gpt_StartTimer/44 (30777038 (estimated locally),0.03 per call) SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03/51 (93263753 (estimated locally),0.09 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03/50 (93263753 (estimated locally),0.09 per call) Gpt_GetTimeElapsed/49 (93263753 (estimated locally),0.09 per call) Gpt_StopTimer/28 (93263753 (estimated locally),0.09 per call) Dem_SetEventStatus/40 (18876584 (estimated locally),0.02 per call) Dem_SetEventStatus/40 (4790146 (estimated locally),0.00 per call) Det_ReportError/32 (23666730 (estimated locally),0.02 per call) 
+Wdg_DoChannelSetMode/18 (Wdg_DoChannelSetMode) @063999a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Wdg_apConfigPtr/1 (read) Wdg_aePreviousMode/5 (read) Wdg_apConfigPtr/1 (read) Wdg_apConfigPtr/1 (read) 
+  Referring: 
+  Function Wdg_DoChannelSetMode/18 is inline copy in Wdg_ChannelSetMode/22
+  Availability: local
+  Function flags: count:116930483 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelSetMode/22 (inlined) (116930483 (estimated locally),0.11 per call) 
+  Calls: Wdg_Ipw_SetMode/41 (39171712 (estimated locally),0.04 per call) Wdg_Ipw_StartTimer/48 (12926665 (estimated locally),0.01 per call) Wdg_Ipw_SetMode/41 (39171712 (estimated locally),0.04 per call) Wdg_Ipw_SetMode/41 (12733729 (estimated locally),0.01 per call) Wdg_Ipw_StopTimer/47 (38587059 (estimated locally),0.04 per call) 
+Wdg_VadidateHardwareSetting/17 (Wdg_VadidateHardwareSetting) @06399700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Wdg_E_Mode_Failed/39 (read) Wdg_E_Mode_Failed/39 (read) Wdg_apConfigPtr/1 (write) Wdg_E_Mode_Failed/39 (read) Wdg_E_Mode_Failed/39 (read) 
+  Referring: 
+  Function Wdg_VadidateHardwareSetting/17 is inline copy in Wdg_ChannelInit/21
+  Availability: local
+  Function flags: count:177167400 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelInit/21 (inlined) (177167400 (estimated locally),0.16 per call) 
+  Calls: Dem_SetEventStatus/40 (28600885 (estimated locally),0.03 per call) Dem_SetEventStatus/40 (7257797 (estimated locally),0.01 per call) Det_ReportError/32 (35858682 (estimated locally),0.03 per call) 
+Wdg_InitialHardware/16 (Wdg_InitialHardware) @06399460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Wdg_apConfigPtr/1 (read) 
+  Referring: 
+  Function Wdg_InitialHardware/16 is inline copy in Wdg_ChannelInit/21
+  Availability: local
+  Function flags: count:177167400 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelInit/21 (inlined) (177167400 (estimated locally),0.16 per call) 
+  Calls: Wdg_Ipw_Init/42 (44291850 (estimated locally),0.04 per call) Wdg_Ipw_SetMode/41 (44291850 (estimated locally),0.04 per call) 
+Wdg_ValidateTimeout/15 (Wdg_ValidateTimeout) @063991c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: *.LC0/56 (read) Wdg_au16CfgMaxTimeout/57 (read) Wdg_aeCurrentMode/6 (read) 
+  Referring: 
+  Function Wdg_ValidateTimeout/15 is inline copy in Wdg_ChannelSetTriggerCondition/23
+  Availability: local
+  Function flags: count:354334800 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelSetTriggerCondition/23 (inlined) (354334800 (estimated locally),0.33 per call) 
+  Calls: Det_ReportError/32 (176281563 (estimated locally),0.16 per call) 
+Wdg_ChannelValidateMode/14 (Wdg_ChannelValidateMode) @06154ee0
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Wdg_ValidatePtrVersion/13 (Wdg_ValidatePtrVersion) @061549a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Wdg_ValidatePtrVersion/13 is inline copy in Wdg_ChannelGetVersionInfo/24
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelGetVersionInfo/24 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: Det_ReportError/32 (187153200 (estimated locally),0.17 per call) 
+Wdg_ChannelValidateTrigerCondition/12 (Wdg_ChannelValidateTrigerCondition) @06154460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Wdg_aeStatus/2 (read) 
+  Referring: 
+  Function Wdg_ChannelValidateTrigerCondition/12 is inline copy in Wdg_ChannelSetTriggerCondition/23
+  Availability: local
+  Function flags: count:1073741823 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelSetTriggerCondition/23 (inlined) (1073741823 (estimated locally),1.00 per call) 
+  Calls: Det_ReportError/32 (508506950 (estimated locally),0.47 per call) 
+Wdg_ValidatePtrInit/11 (Wdg_ValidatePtrInit) @06154e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Wdg_ValidatePtrInit/11 is inline copy in Wdg_ChannelInit/21
+  Availability: local
+  Function flags: count:354334800 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelInit/21 (inlined) (354334800 (estimated locally),0.33 per call) 
+  Calls: Det_ReportError/32 (143010290 (estimated locally),0.13 per call) Det_ReportError/32 (61760556 (estimated locally),0.06 per call) 
+Wdg_Cbk_GptNotification0/10 (Wdg_Cbk_GptNotification0) @06154b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Wdg_ChannelTrigger.constprop.0/66 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Wdg_ChannelTrigger/9 (Wdg_ChannelTrigger) @061548c0
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Wdg_ChannelEndValidateGlobalCall/8 (Wdg_ChannelEndValidateGlobalCall) @06154620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Wdg_aeStatus/2 (write) Wdg_aeStatus/2 (read) Wdg_aeStatus/2 (write) Wdg_apConfigPtr/1 (read) Wdg_aeStatus/2 (write) Wdg_aeStatus/2 (write) 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelTrigger.constprop.0/66 (1073741824 (estimated locally),1.00 per call) Wdg_ChannelSetMode/22 (1073741824 (estimated locally),1.00 per call) Wdg_ChannelInit/21 (1073741824 (estimated locally),1.00 per call) 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07/34 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07/33 (1073741824 (estimated locally),1.00 per call) 
+Wdg_ChannelValidateGlobalCall/7 (Wdg_ChannelValidateGlobalCall) @06154380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Wdg_aeStatus/2 (read) Wdg_aeStatus/2 (write) Wdg_aeStatus/2 (write) 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741823 (estimated locally) body local optimize_size
+  Called by: Wdg_ChannelTrigger.constprop.0/66 (1073741824 (estimated locally),1.00 per call) Wdg_ChannelSetMode/22 (1073741824 (estimated locally),1.00 per call) Wdg_ChannelInit/21 (1073741823 (estimated locally),1.00 per call) 
+  Calls: SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06/31 (388209204 (estimated locally),0.36 per call) Wdg_ChannelValidateGlobalCall.part.0/63 (inlined) (685532620 (estimated locally),0.64 per call) SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06/30 (1073741823 (estimated locally),1.00 per call) 
+Wdg_aeCurrentMode/6 (Wdg_aeCurrentMode) @061478b8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Wdg_ChannelInit/21 (write) Wdg_ValidateTimeout/15 (read) Wdg_ChannelSetMode/22 (write) 
+  Availability: available
+  Varpool flags: initialized
+Wdg_aePreviousMode/5 (Wdg_aePreviousMode) @06147828
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Wdg_ChannelInit/21 (write) Wdg_DoChannelSetMode/18 (read) Wdg_VadidateDoChannelSetMode/19 (write) Wdg_ChannelInit/21 (read) Wdg_ChannelClearResetRequest/25 (write) 
+  Availability: available
+  Varpool flags: initialized
+Wdg_au32GptPeriod/4 (Wdg_au32GptPeriod) @06147798
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Wdg_ChannelStartGpt/20 (read) Wdg_ChannelTrigger.constprop.0/66 (read) Wdg_ChannelStartGpt/20 (write) Wdg_VadidateDoChannelSetMode/19 (write) 
+  Availability: available
+  Varpool flags:
+Wdg_au32Timeout/3 (Wdg_au32Timeout) @06147708
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Wdg_ChannelTrigger.constprop.0/66 (write) Wdg_ChannelTrigger.constprop.0/66 (read) Wdg_ChannelStartGpt/20 (write) Wdg_VadidateDoChannelSetMode/19 (write) Wdg_VadidateDoChannelSetMode/19 (read) Wdg_ChannelSetTriggerCondition/23 (read) Wdg_ChannelSetTriggerCondition/23 (write) Wdg_ChannelSetTriggerCondition/23 (write) 
+  Availability: available
+  Varpool flags:
+Wdg_aeStatus/2 (Wdg_aeStatus) @06147678
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Wdg_ChannelValidateTrigerCondition/12 (read) Wdg_ChannelValidateGlobalCall/7 (write) Wdg_ChannelValidateGlobalCall/7 (write) Wdg_ChannelValidateGlobalCall/7 (read) Wdg_ChannelEndValidateGlobalCall/8 (write) Wdg_ChannelEndValidateGlobalCall/8 (read) Wdg_ChannelEndValidateGlobalCall/8 (write) Wdg_ChannelEndValidateGlobalCall/8 (write) Wdg_ChannelEndValidateGlobalCall/8 (write) 
+  Availability: available
+  Varpool flags: initialized
+Wdg_apConfigPtr/1 (Wdg_apConfigPtr) @061475e8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Wdg_ChannelInit/21 (read) Wdg_VadidateDoChannelSetMode/19 (read) Wdg_ChannelStartGpt/20 (read) Wdg_DoChannelSetMode/18 (read) Wdg_DoChannelSetMode/18 (read) Wdg_DoChannelSetMode/18 (read) Wdg_ChannelEndValidateGlobalCall/8 (read) Wdg_ChannelStartGpt/20 (read) Wdg_ChannelStartGpt/20 (read) Wdg_VadidateDoChannelSetMode/19 (read) Wdg_VadidateDoChannelSetMode/19 (read) Wdg_ChannelTrigger.constprop.0/66 (read) Wdg_ChannelValidateMode.constprop.0/65 (read) Wdg_InitialHardware/16 (read) Wdg_ChannelStartGpt/20 (read) Wdg_VadidateHardwareSetting/17 (write) Wdg_ChannelInit/21 (write) Wdg_ChannelSetTriggerCondition/23 (read) Wdg_ChannelSetTriggerCondition/23 (read) Wdg_ChannelSetTriggerCondition/23 (read) 
+  Availability: available
+  Varpool flags:
+
+;; Function Wdg_ChannelEndValidateGlobalCall (Wdg_ChannelEndValidateGlobalCall, funcdef_no=2, decl_uid=6788, cgraph_uid=3, symbol_order=8)
+
+Wdg_ChannelEndValidateGlobalCall (Std_ReturnType Validation, const Wdg_Ipw_InstanceType Instance)
+{
+  int _1;
+  int _2;
+  <unnamed type> _3;
+  const struct Wdg_ConfigType * _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_07 ();
+  # DEBUG BEGIN_STMT
+  if (Validation_8(D) == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_9(D);
+  Wdg_aeStatus[_1] = 2;
+  goto <bb 9>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_9(D);
+  _3 = Wdg_aeStatus[_2];
+  if (_3 == 3)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 6>; [66.00%]
+
+  <bb 5> [local count: 182536112]:
+  # DEBUG BEGIN_STMT
+  Wdg_aeStatus[_2] = 2;
+  goto <bb 9>; [100.00%]
+
+  <bb 6> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  _4 = Wdg_apConfigPtr[_2];
+  if (_4 == 0B)
+    goto <bb 7>; [30.00%]
+  else
+    goto <bb 8>; [70.00%]
+
+  <bb 7> [local count: 106300439]:
+  # DEBUG BEGIN_STMT
+  Wdg_aeStatus[_2] = 1;
+  goto <bb 9>; [100.00%]
+
+  <bb 8> [local count: 248034361]:
+  # DEBUG BEGIN_STMT
+  Wdg_aeStatus[_2] = 2;
+
+  <bb 9> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_07 ();
+  return;
+
+}
+
+
+
+;; Function Wdg_ChannelValidateGlobalCall (Wdg_ChannelValidateGlobalCall, funcdef_no=1, decl_uid=6785, cgraph_uid=2, symbol_order=7)
+
+
+Symbols to be put in SSA form
+{ D.7053 D.7130 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 16
+Number of blocks to update: 15 ( 94%)
+
+
+Removing basic block 6
+Removing basic block 13
+Merging blocks 14 and 15
+Merging blocks 14 and 12
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11
+;; 2 succs { 3 4 }
+;; 3 succs { 6 4 }
+;; 4 succs { 6 5 }
+;; 5 succs { 6 7 }
+;; 6 succs { 11 }
+;; 7 succs { 8 9 }
+;; 8 succs { 10 }
+;; 9 succs { 10 }
+;; 10 succs { 11 }
+;; 11 succs { 1 }
+Wdg_ChannelValidateGlobalCall (const Wdg_ServiceIdType ServiceId, const Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType D.7130;
+  Std_ReturnType Valid;
+  int _1;
+  <unnamed type> _2;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => 0
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_06 ();
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_10(D);
+  _2 = Wdg_aeStatus[_1];
+  if (_2 == 1)
+    goto <bb 3>; [34.00%]
+  else
+    goto <bb 4>; [66.00%]
+
+  <bb 3> [local count: 365072224]:
+  if (ServiceId_11(D) != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 4> [local count: 891205711]:
+  if (_2 == 4)
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 5>; [66.00%]
+
+  <bb 5> [local count: 588195767]:
+  if (_2 == 3)
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 7>; [66.00%]
+
+  <bb 6> [local count: 685532621]:
+  # DEBUG ServiceId => ServiceId_11(D)
+  # DEBUG Instance => Instance_10(D)
+  # DEBUG INLINE_ENTRY Wdg_ChannelValidateGlobalCall
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06 ();
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_10(D), ServiceId_11(D), 16);
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => 1
+  # DEBUG Valid => 1
+  # DEBUG BEGIN_STMT
+  _18 = 1;
+  # DEBUG ServiceId => NULL
+  # DEBUG Instance => NULL
+  # DEBUG Valid => NULL
+  Valid_3 = _18;
+  goto <bb 11>; [100.00%]
+
+  <bb 7> [local count: 388209204]:
+  # DEBUG BEGIN_STMT
+  if (ServiceId_11(D) == 0)
+    goto <bb 8>; [50.00%]
+  else
+    goto <bb 9>; [50.00%]
+
+  <bb 8> [local count: 194104602]:
+  # DEBUG BEGIN_STMT
+  Wdg_aeStatus[_1] = 4;
+  goto <bb 10>; [100.00%]
+
+  <bb 9> [local count: 194104602]:
+  # DEBUG BEGIN_STMT
+  Wdg_aeStatus[_1] = 3;
+
+  <bb 10> [local count: 388209204]:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_06 ();
+
+  <bb 11> [local count: 1073741824]:
+  # Valid_6 = PHI <Valid_3(6), 0(10)>
+  # DEBUG Valid => Valid_6
+  # DEBUG BEGIN_STMT
+  return Valid_6;
+
+}
+
+
+
+;; Function Wdg_ChannelValidateMode.constprop (Wdg_ChannelValidateMode.constprop.0, funcdef_no=23, decl_uid=7108, cgraph_uid=55, symbol_order=65)
+
+
+Symbols to be put in SSA form
+{ D.7115 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 17
+Number of blocks to update: 16 ( 94%)
+
+
+Removing basic block 9
+Merging blocks 12 and 2
+Removing basic block 13
+Removing basic block 14
+Merging blocks 15 and 16
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11
+;; 2 succs { 3 5 }
+;; 3 succs { 4 5 }
+;; 4 succs { 6 5 }
+;; 5 succs { 6 7 }
+;; 6 succs { 7 }
+;; 7 succs { 8 11 }
+;; 8 succs { 9 10 }
+;; 9 succs { 11 }
+;; 10 succs { 11 }
+;; 11 succs { 1 }
+Wdg_ChannelValidateMode.constprop (WdgIf_ModeType Wdg_Mode, Wdg_ServiceIdType ServiceId, const Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType Valid;
+  boolean ModeFailedErrActive;
+  int _3;
+  const struct Wdg_ConfigType * _4;
+  int _5;
+  const struct Wdg_ModeType * _6;
+  long unsigned int _8;
+  long unsigned int _10;
+  short unsigned int _11;
+  long unsigned int _19;
+  short unsigned int _20;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG ErrorId => 17
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG DisableRejectedErrActive => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG ModeFailedErrActive => 0
+  # DEBUG BEGIN_STMT
+  if (Wdg_Mode_1(D) != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  if (Wdg_Mode_1(D) != 2)
+    goto <bb 4>; [66.00%]
+  else
+    goto <bb 5>; [34.00%]
+
+  <bb 4> [local count: 354334800]:
+  if (Wdg_Mode_1(D) != 1)
+    goto <bb 6>; [66.00%]
+  else
+    goto <bb 5>; [34.00%]
+
+  <bb 5> [local count: 839880858]:
+  _3 = (int) Instance_2(D);
+  _4 = Wdg_apConfigPtr[_3];
+  _5 = (int) Wdg_Mode_1(D);
+  _6 = _4->Wdg_ModeSettings[_5];
+  if (_6 == 0B)
+    goto <bb 6>; [30.00%]
+  else
+    goto <bb 7>; [70.00%]
+
+  <bb 6> [local count: 485825222]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_2(D), ServiceId_7(D), 17);
+  # DEBUG BEGIN_STMT
+  # DEBUG ModeFailedErrActive => 1
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => 1
+
+  <bb 7> [local count: 1073741824]:
+  # Valid_12 = PHI <0(5), 1(6)>
+  # ModeFailedErrActive_9 = PHI <0(5), 1(6)>
+  # DEBUG ModeFailedErrActive => ModeFailedErrActive_9
+  # DEBUG Valid => Valid_12
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _8 = Wdg_E_Mode_Failed.state;
+  if (_8 == 1)
+    goto <bb 8>; [34.00%]
+  else
+    goto <bb 11>; [66.00%]
+
+  <bb 8> [local count: 365072224]:
+  # DEBUG BEGIN_STMT
+  if (ModeFailedErrActive_9 != 0)
+    goto <bb 9>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 9> [local count: 182536112]:
+  # DEBUG D#1 => Wdg_Mode_1(D)
+  # DEBUG D#2 => ServiceId_7(D)
+  # DEBUG D#3 => 17
+  # DEBUG D#4 => Instance_2(D)
+  # DEBUG INLINE_ENTRY Wdg_ChannelValidateMode
+  # DEBUG D#8 => D#1
+  # DEBUG Wdg_Mode => D#8
+  # DEBUG D#7 => D#2
+  # DEBUG ServiceId => D#7
+  # DEBUG D#6 => D#3
+  # DEBUG ErrorId => D#6
+  # DEBUG D#5 => D#4
+  # DEBUG Instance => D#5
+  # DEBUG BEGIN_STMT
+  _19 = Wdg_E_Mode_Failed.id;
+  _20 = (short unsigned int) _19;
+  Dem_SetEventStatus (_20, 1);
+  goto <bb 11>; [100.00%]
+
+  <bb 10> [local count: 182536112]:
+  # DEBUG BEGIN_STMT
+  _10 = Wdg_E_Mode_Failed.id;
+  _11 = (short unsigned int) _10;
+  Dem_SetEventStatus (_11, 0);
+
+  <bb 11> [local count: 1073741824]:
+  # DEBUG Valid => NULL
+  # DEBUG DisableRejectedErrActive => NULL
+  # DEBUG ModeFailedErrActive => NULL
+  # DEBUG Wdg_Mode => NULL
+  # DEBUG ServiceId => NULL
+  # DEBUG ErrorId => NULL
+  # DEBUG Instance => NULL
+  # DEBUG BEGIN_STMT
+  return Valid_12;
+
+}
+
+
+
+;; Function Wdg_Cbk_GptNotification0 (Wdg_Cbk_GptNotification0, funcdef_no=4, decl_uid=6782, cgraph_uid=5, symbol_order=10)
+
+
+Symbols to be put in SSA form
+{ D.7066 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 10
+Number of blocks to update: 9 ( 90%)
+
+
+Merging blocks 2 and 4
+Merging blocks 9 and 3
+Merging blocks 2 and 5
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6
+;; 2 succs { 3 6 }
+;; 3 succs { 4 5 }
+;; 4 succs { 6 }
+;; 5 succs { 6 }
+;; 6 succs { 1 }
+Wdg_Cbk_GptNotification0 ()
+{
+  Std_ReturnType Valid;
+  uint32 TempTimeout;
+  int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  const struct Wdg_ConfigType * _7;
+  unsigned char _8;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG D#12 => 0
+  # DEBUG INLINE_ENTRY Wdg_ChannelTrigger
+  # DEBUG Instance => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Valid_3 = Wdg_ChannelValidateGlobalCall (2, 0);
+  # DEBUG Valid => Valid_3
+  # DEBUG BEGIN_STMT
+  if (Valid_3 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 6>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_00 ();
+  # DEBUG BEGIN_STMT
+  _4 = 0;
+  _5 = Wdg_au32Timeout[_4];
+  _6 = Wdg_au32GptPeriod[_4];
+  if (_5 < _6)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00 ();
+  # DEBUG BEGIN_STMT
+  _7 = Wdg_apConfigPtr[_4];
+  _8 = _7->Wdg_TimerChannel;
+  Gpt_StopTimer (_8);
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  TempTimeout_9 = _5 - _6;
+  # DEBUG TempTimeout => TempTimeout_9
+  # DEBUG BEGIN_STMT
+  Wdg_au32Timeout[_4] = TempTimeout_9;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_00 ();
+  # DEBUG BEGIN_STMT
+  Wdg_Ipw_Service (0);
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelEndValidateGlobalCall (Valid_3, 0);
+  # DEBUG BEGIN_STMT
+  # DEBUG TempTimeout => NULL
+  # DEBUG Valid => NULL
+  # DEBUG Instance => NULL
+  return;
+
+}
+
+
+
+;; Function Wdg_ChannelInit (Wdg_ChannelInit, funcdef_no=15, decl_uid=6615, cgraph_uid=16, symbol_order=21)
+
+
+Symbols to be put in SSA form
+{ D.7067 D.7154 D.7158 D.7162 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 34
+Number of blocks to update: 33 ( 97%)
+
+
+Removing basic block 3
+Merging blocks 7 and 25
+Removing basic block 8
+Merging blocks 15 and 10
+Merging blocks 23 and 16
+Merging blocks 29 and 24
+Merging blocks 33 and 30
+Merging blocks 29 and 17
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+;; 2 succs { 3 25 }
+;; 3 succs { 4 5 }
+;; 4 succs { 7 }
+;; 5 succs { 6 7 }
+;; 6 succs { 7 }
+;; 7 succs { 8 25 }
+;; 8 succs { 9 11 }
+;; 9 succs { 10 11 }
+;; 10 succs { 11 }
+;; 11 succs { 12 15 }
+;; 12 succs { 13 14 }
+;; 13 succs { 15 }
+;; 14 succs { 15 }
+;; 15 succs { 16 19 }
+;; 16 succs { 17 18 }
+;; 17 succs { 18 }
+;; 18 succs { 21 }
+;; 19 succs { 20 21 }
+;; 20 succs { 21 }
+;; 21 succs { 22 25 }
+;; 22 succs { 23 24 }
+;; 23 succs { 24 }
+;; 24 succs { 25 }
+;; 25 succs { 1 }
+Wdg_ChannelInit (const Wdg_Ipw_InstanceType Instance, const struct Wdg_ConfigType * ConfigPtr)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.7162;
+  Std_ReturnType D.7158;
+  Std_ReturnType valid;
+  Std_ReturnType D.7154;
+  Std_ReturnType Valid;
+  int _1;
+  <unnamed type> _2;
+  <unnamed type> _3;
+  short unsigned int _4;
+  <unnamed type> _5;
+  const struct Wdg_ConfigType * _6;
+  <unnamed type> _7;
+  <unnamed type> _32;
+  long unsigned int _34;
+  long unsigned int _35;
+  short unsigned int _36;
+  int _37;
+  long unsigned int _38;
+  long unsigned int _39;
+  short unsigned int _40;
+  int _41;
+  const struct Wdg_ConfigType * _42;
+  <unnamed type> _43;
+  const struct Wdg_ModeType * _44;
+  const struct Wdg_Ipw_ConfigType * _45;
+  int _47;
+  const struct Wdg_ModeType * _48;
+  const struct Wdg_Ipw_ConfigType * _49;
+  int _52;
+  const struct Wdg_ConfigType * _53;
+  unsigned char _54;
+  const struct Wdg_ConfigType * _55;
+  <unnamed type> _56;
+  int _57;
+  const struct Wdg_ModeType * _58;
+  long unsigned int _59;
+  unsigned char _60;
+  const struct Wdg_ConfigType * _61;
+  <unnamed type> _62;
+  unsigned char _63;
+  long unsigned int _64;
+  short unsigned int _65;
+  long unsigned int _66;
+  const struct Wdg_ConfigType * _67;
+  long unsigned int _68;
+  long unsigned int _69;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Valid_15 = Wdg_ChannelValidateGlobalCall (0, Instance_13(D));
+  # DEBUG Valid => Valid_15
+  # DEBUG BEGIN_STMT
+  if (Valid_15 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 25>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ConfigPtr => ConfigPtr_16(D)
+  # DEBUG Instance => Instance_13(D)
+  # DEBUG INLINE_ENTRY Wdg_ValidatePtrInit
+  # DEBUG BEGIN_STMT
+  # DEBUG valid => 0
+  # DEBUG BEGIN_STMT
+  if (ConfigPtr_16(D) == 0B)
+    goto <bb 4>; [17.43%]
+  else
+    goto <bb 5>; [82.57%]
+
+  <bb 4> [local count: 61760556]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_13(D), 0, 21);
+  # DEBUG BEGIN_STMT
+  # DEBUG valid => 1
+  goto <bb 7>; [100.00%]
+
+  <bb 5> [local count: 292574244]:
+  # DEBUG BEGIN_STMT
+  _32 = ConfigPtr_16(D)->Wdg_Instance;
+  if (Instance_13(D) != _32)
+    goto <bb 6>; [48.88%]
+  else
+    goto <bb 7>; [51.12%]
+
+  <bb 6> [local count: 143010290]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_13(D), 0, 21);
+  # DEBUG BEGIN_STMT
+  # DEBUG valid => 1
+
+  <bb 7> [local count: 354334800]:
+  # valid_33 = PHI <1(4), 0(5), 1(6)>
+  # DEBUG valid => valid_33
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _77 = valid_33;
+  # DEBUG ConfigPtr => NULL
+  # DEBUG Instance => NULL
+  # DEBUG valid => NULL
+  Valid_18 = _77;
+  # DEBUG Valid => Valid_18
+  # DEBUG BEGIN_STMT
+  if (Valid_18 == 0)
+    goto <bb 8>; [50.00%]
+  else
+    goto <bb 25>; [50.00%]
+
+  <bb 8> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_13(D);
+  Wdg_apConfigPtr[_1] = ConfigPtr_16(D);
+  # DEBUG BEGIN_STMT
+  _2 = ConfigPtr_16(D)->Wdg_DefaultMode;
+  Wdg_aeCurrentMode[_1] = _2;
+  # DEBUG BEGIN_STMT
+  _3 = Wdg_aePreviousMode[_1];
+  if (_3 == 0)
+    goto <bb 9>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 9> [local count: 88583700]:
+  _4 = Wdg_au16CfgInitialTimeout[_1];
+  if (_4 != 0)
+    goto <bb 10>; [33.00%]
+  else
+    goto <bb 11>; [67.00%]
+
+  <bb 10> [local count: 29232621]:
+  # DEBUG BEGIN_STMT
+  _5 = ConfigPtr_16(D)->Wdg_DefaultMode;
+  # DEBUG D#13 => 17
+  Valid_22 = Wdg_ChannelValidateMode.constprop (_5, 0, Instance_13(D));
+  # DEBUG Valid => Valid_22
+
+  <bb 11> [local count: 177167400]:
+  # Valid_8 = PHI <Valid_22(10), 1(9), 1(8)>
+  # DEBUG Valid => Valid_8
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_13(D)
+  # DEBUG Status => Valid_8
+  # DEBUG INLINE_ENTRY Wdg_InitialHardware
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => Valid_8
+  # DEBUG BEGIN_STMT
+  if (Valid_8 == 0)
+    goto <bb 12>; [50.00%]
+  else
+    goto <bb 15>; [50.00%]
+
+  <bb 12> [local count: 88583700]:
+  # DEBUG BEGIN_STMT
+  _41 = (int) Instance_13(D);
+  _42 = Wdg_apConfigPtr[_41];
+  _43 = _42->Wdg_DefaultMode;
+  if (_43 == 0)
+    goto <bb 13>; [50.00%]
+  else
+    goto <bb 14>; [50.00%]
+
+  <bb 13> [local count: 44291850]:
+  # DEBUG BEGIN_STMT
+  _44 = _42->Wdg_ModeSettings[0];
+  _45 = _44->Wdg_Ipw_pConfig;
+  Valid_46 = Wdg_Ipw_SetMode (Instance_13(D), _45);
+  # DEBUG Valid => Valid_46
+  goto <bb 15>; [100.00%]
+
+  <bb 14> [local count: 44291850]:
+  # DEBUG BEGIN_STMT
+  _47 = (int) _43;
+  _48 = _42->Wdg_ModeSettings[_47];
+  _49 = _48->Wdg_Ipw_pConfig;
+  Valid_50 = Wdg_Ipw_Init (Instance_13(D), _49);
+  # DEBUG Valid => Valid_50
+
+  <bb 15> [local count: 177167400]:
+  # Valid_51 = PHI <Valid_8(11), Valid_46(13), Valid_50(14)>
+  # DEBUG Valid => Valid_51
+  # DEBUG BEGIN_STMT
+  _80 = Valid_51;
+  # DEBUG Instance => NULL
+  # DEBUG Status => NULL
+  # DEBUG Valid => NULL
+  Valid_24 = _80;
+  # DEBUG Valid => Valid_24
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_13(D)
+  # DEBUG Status => Valid_24
+  # DEBUG INLINE_ENTRY Wdg_VadidateHardwareSetting
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => Valid_24
+  # DEBUG BEGIN_STMT
+  if (Valid_24 == 1)
+    goto <bb 16>; [20.24%]
+  else
+    goto <bb 19>; [79.76%]
+
+  <bb 16> [local count: 35858682]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_13(D), 0, 17);
+  # DEBUG BEGIN_STMT
+  _34 = Wdg_E_Mode_Failed.state;
+  if (_34 == 1)
+    goto <bb 17>; [20.24%]
+  else
+    goto <bb 18>; [79.76%]
+
+  <bb 17> [local count: 7257797]:
+  # DEBUG BEGIN_STMT
+  _35 = Wdg_E_Mode_Failed.id;
+  _36 = (short unsigned int) _35;
+  Dem_SetEventStatus (_36, 1);
+
+  <bb 18> [local count: 35858682]:
+  # DEBUG BEGIN_STMT
+  _37 = (int) Instance_13(D);
+  Wdg_apConfigPtr[_37] = 0B;
+  goto <bb 21>; [100.00%]
+
+  <bb 19> [local count: 141308719]:
+  # DEBUG BEGIN_STMT
+  _38 = Wdg_E_Mode_Failed.state;
+  if (_38 == 1)
+    goto <bb 20>; [20.24%]
+  else
+    goto <bb 21>; [79.76%]
+
+  <bb 20> [local count: 28600884]:
+  # DEBUG BEGIN_STMT
+  _39 = Wdg_E_Mode_Failed.id;
+  _40 = (short unsigned int) _39;
+  Dem_SetEventStatus (_40, 0);
+
+  <bb 21> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  _85 = Valid_24;
+  # DEBUG Instance => NULL
+  # DEBUG Status => NULL
+  Valid_26 = _85;
+  # DEBUG Valid => Valid_26
+  # DEBUG BEGIN_STMT
+  if (Valid_26 == 0)
+    goto <bb 22>; [33.00%]
+  else
+    goto <bb 25>; [67.00%]
+
+  <bb 22> [local count: 58465242]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_13(D)
+  # DEBUG INLINE_ENTRY Wdg_ChannelStartGpt
+  # DEBUG BEGIN_STMT
+  _52 = (int) Instance_13(D);
+  _53 = Wdg_apConfigPtr[_52];
+  _54 = _53->Wdg_TimerChannel;
+  Gpt_StopTimer (_54);
+  # DEBUG BEGIN_STMT
+  _55 = Wdg_apConfigPtr[_52];
+  _56 = _55->Wdg_DefaultMode;
+  _57 = (int) _56;
+  _58 = _55->Wdg_ModeSettings[_57];
+  _59 = _58->Wdg_u32TimerTriggeringPeriod;
+  Wdg_au32GptPeriod[_52] = _59;
+  # DEBUG BEGIN_STMT
+  _60 = _55->Wdg_TimerChannel;
+  Gpt_EnableNotification (_60);
+  # DEBUG BEGIN_STMT
+  _61 = Wdg_apConfigPtr[_52];
+  _62 = _61->Wdg_DefaultMode;
+  if (_62 != 0)
+    goto <bb 23>; [33.00%]
+  else
+    goto <bb 24>; [67.00%]
+
+  <bb 23> [local count: 19293530]:
+  # DEBUG BEGIN_STMT
+  _63 = _61->Wdg_TimerChannel;
+  _64 = Wdg_au32GptPeriod[_52];
+  Gpt_StartTimer (_63, _64);
+
+  <bb 24> [local count: 58465242]:
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_01 ();
+  # DEBUG BEGIN_STMT
+  _65 = Wdg_au16CfgInitialTimeout[_52];
+  _66 = (long unsigned int) _65;
+  _67 = Wdg_apConfigPtr[_52];
+  _68 = _67->Wdg_u32TriggerSourceClock;
+  _69 = _66 * _68;
+  Wdg_au32Timeout[_52] = _69;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_01 ();
+  # DEBUG Instance => NULL
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_02 ();
+  # DEBUG BEGIN_STMT
+  _6 = Wdg_apConfigPtr[_1];
+  _7 = _6->Wdg_DefaultMode;
+  Wdg_aePreviousMode[_1] = _7;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_02 ();
+
+  <bb 25> [local count: 1073741824]:
+  # Valid_9 = PHI <Valid_15(2), Valid_18(7), Valid_26(21), 0(24)>
+  # DEBUG Valid => Valid_9
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelEndValidateGlobalCall (Valid_9, Instance_13(D));
+  return;
+
+}
+
+
+
+;; Function Wdg_ChannelSetMode (Wdg_ChannelSetMode, funcdef_no=16, decl_uid=6618, cgraph_uid=17, symbol_order=22)
+
+
+Symbols to be put in SSA form
+{ D.7068 D.7173 D.7177 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 27
+Number of blocks to update: 26 ( 96%)
+
+
+Merging blocks 4 and 19
+Merging blocks 17 and 6
+Merging blocks 26 and 18
+Merging blocks 26 and 7
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
+;; 2 succs { 3 22 }
+;; 3 succs { 4 22 }
+;; 4 succs { 5 7 }
+;; 5 succs { 6 11 }
+;; 6 succs { 11 }
+;; 7 succs { 8 10 }
+;; 8 succs { 9 11 }
+;; 9 succs { 11 }
+;; 10 succs { 11 }
+;; 11 succs { 12 14 }
+;; 12 succs { 13 21 }
+;; 13 succs { 21 }
+;; 14 succs { 15 16 }
+;; 15 succs { 16 }
+;; 16 succs { 18 17 }
+;; 17 succs { 18 }
+;; 18 succs { 19 20 }
+;; 19 succs { 20 }
+;; 20 succs { 21 }
+;; 21 succs { 22 }
+;; 22 succs { 1 }
+Wdg_ChannelSetMode (const Wdg_Ipw_InstanceType Instance, WdgIf_ModeType Mode)
+{
+  Std_ReturnType Valid;
+  Std_ReturnType D.7177;
+  Std_ReturnType Valid;
+  Gpt_ValueType ElapsedTime;
+  uint32 ValueTempU32;
+  Std_ReturnType D.7173;
+  Std_ReturnType Valid;
+  Std_ReturnType Ret;
+  int _1;
+  long unsigned int _18;
+  long unsigned int _19;
+  short unsigned int _20;
+  long unsigned int _21;
+  long unsigned int _22;
+  short unsigned int _23;
+  int _24;
+  const struct Wdg_ConfigType * _25;
+  unsigned char _26;
+  const struct Wdg_ConfigType * _27;
+  unsigned char _28;
+  long unsigned int _30;
+  const struct Wdg_ConfigType * _33;
+  int _34;
+  const struct Wdg_ModeType * _35;
+  long unsigned int _36;
+  unsigned char _37;
+  unsigned char _39;
+  int _40;
+  const struct Wdg_ConfigType * _41;
+  const struct Wdg_ModeType * _42;
+  const struct Wdg_Ipw_ConfigType * _43;
+  int _45;
+  <unnamed type> _46;
+  const struct Wdg_ConfigType * _47;
+  int _48;
+  const struct Wdg_ModeType * _49;
+  const struct Wdg_Ipw_ConfigType * _50;
+  unsigned char _51;
+  const struct Wdg_ConfigType * _53;
+  int _54;
+  const struct Wdg_ModeType * _55;
+  const struct Wdg_Ipw_ConfigType * _56;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 1
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Valid_8 = Wdg_ChannelValidateGlobalCall (1, Instance_6(D));
+  # DEBUG Valid => Valid_8
+  # DEBUG BEGIN_STMT
+  if (Valid_8 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 22>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG D#13 => 17
+  Valid_11 = Wdg_ChannelValidateMode.constprop (Mode_9(D), 1, Instance_6(D));
+  # DEBUG Valid => Valid_11
+  # DEBUG BEGIN_STMT
+  if (Valid_11 == 0)
+    goto <bb 4>; [33.00%]
+  else
+    goto <bb 22>; [67.00%]
+
+  <bb 4> [local count: 116930483]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_6(D);
+  Wdg_aeCurrentMode[_1] = Mode_9(D);
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_6(D)
+  # DEBUG Mode => Mode_9(D)
+  # DEBUG INLINE_ENTRY Wdg_DoChannelSetMode
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => 0
+  # DEBUG BEGIN_STMT
+  if (Mode_9(D) == 0)
+    goto <bb 5>; [33.00%]
+  else
+    goto <bb 7>; [67.00%]
+
+  <bb 5> [local count: 38587059]:
+  # DEBUG BEGIN_STMT
+  _39 = Wdg_Ipw_StopTimer (Instance_6(D));
+  if (_39 == 0)
+    goto <bb 6>; [33.00%]
+  else
+    goto <bb 11>; [67.00%]
+
+  <bb 6> [local count: 12733729]:
+  # DEBUG BEGIN_STMT
+  _40 = (int) Instance_6(D);
+  _41 = Wdg_apConfigPtr[_40];
+  _42 = _41->Wdg_ModeSettings[0];
+  _43 = _42->Wdg_Ipw_pConfig;
+  Valid_44 = Wdg_Ipw_SetMode (Instance_6(D), _43);
+  # DEBUG Valid => Valid_44
+  goto <bb 11>; [100.00%]
+
+  <bb 7> [local count: 78343424]:
+  # DEBUG BEGIN_STMT
+  _45 = (int) Instance_6(D);
+  _46 = Wdg_aePreviousMode[_45];
+  if (_46 == 0)
+    goto <bb 8>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 8> [local count: 39171712]:
+  # DEBUG BEGIN_STMT
+  _47 = Wdg_apConfigPtr[_45];
+  _48 = (int) Mode_9(D);
+  _49 = _47->Wdg_ModeSettings[_48];
+  _50 = _49->Wdg_Ipw_pConfig;
+  _51 = Wdg_Ipw_SetMode (Instance_6(D), _50);
+  if (_51 == 0)
+    goto <bb 9>; [33.00%]
+  else
+    goto <bb 11>; [67.00%]
+
+  <bb 9> [local count: 12926665]:
+  # DEBUG BEGIN_STMT
+  Valid_52 = Wdg_Ipw_StartTimer (Instance_6(D));
+  # DEBUG Valid => Valid_52
+  goto <bb 11>; [100.00%]
+
+  <bb 10> [local count: 39171712]:
+  # DEBUG BEGIN_STMT
+  _53 = Wdg_apConfigPtr[_45];
+  _54 = (int) Mode_9(D);
+  _55 = _53->Wdg_ModeSettings[_54];
+  _56 = _55->Wdg_Ipw_pConfig;
+  Valid_57 = Wdg_Ipw_SetMode (Instance_6(D), _56);
+  # DEBUG Valid => Valid_57
+
+  <bb 11> [local count: 116930483]:
+  # Valid_58 = PHI <1(5), Valid_44(6), 1(8), Valid_52(9), Valid_57(10)>
+  # DEBUG Valid => Valid_58
+  # DEBUG BEGIN_STMT
+  _68 = Valid_58;
+  # DEBUG Instance => NULL
+  # DEBUG Mode => NULL
+  # DEBUG Valid => NULL
+  Valid_14 = _68;
+  # DEBUG Valid => Valid_14
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_6(D)
+  # DEBUG Mode => Mode_9(D)
+  # DEBUG Status => Valid_14
+  # DEBUG INLINE_ENTRY Wdg_VadidateDoChannelSetMode
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => Valid_14
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Valid_14 == 1)
+    goto <bb 12>; [20.24%]
+  else
+    goto <bb 14>; [79.76%]
+
+  <bb 12> [local count: 23666730]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_6(D), 1, 17);
+  # DEBUG BEGIN_STMT
+  _18 = Wdg_E_Mode_Failed.state;
+  if (_18 == 1)
+    goto <bb 13>; [20.24%]
+  else
+    goto <bb 21>; [79.76%]
+
+  <bb 13> [local count: 4790146]:
+  # DEBUG BEGIN_STMT
+  _19 = Wdg_E_Mode_Failed.id;
+  _20 = (short unsigned int) _19;
+  Dem_SetEventStatus (_20, 1);
+  goto <bb 21>; [100.00%]
+
+  <bb 14> [local count: 93263754]:
+  # DEBUG BEGIN_STMT
+  _21 = Wdg_E_Mode_Failed.state;
+  if (_21 == 1)
+    goto <bb 15>; [20.24%]
+  else
+    goto <bb 16>; [79.76%]
+
+  <bb 15> [local count: 18876584]:
+  # DEBUG BEGIN_STMT
+  _22 = Wdg_E_Mode_Failed.id;
+  _23 = (short unsigned int) _22;
+  Dem_SetEventStatus (_23, 0);
+
+  <bb 16> [local count: 93263754]:
+  # DEBUG BEGIN_STMT
+  _24 = (int) Instance_6(D);
+  _25 = Wdg_apConfigPtr[_24];
+  _26 = _25->Wdg_TimerChannel;
+  Gpt_StopTimer (_26);
+  # DEBUG BEGIN_STMT
+  _27 = Wdg_apConfigPtr[_24];
+  _28 = _27->Wdg_TimerChannel;
+  ElapsedTime_29 = Gpt_GetTimeElapsed (_28);
+  # DEBUG ElapsedTime => ElapsedTime_29
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_03 ();
+  # DEBUG BEGIN_STMT
+  _30 = Wdg_au32Timeout[_24];
+  if (ElapsedTime_29 > _30)
+    goto <bb 18>; [50.00%]
+  else
+    goto <bb 17>; [50.00%]
+
+  <bb 17> [local count: 46631877]:
+  # DEBUG BEGIN_STMT
+  ValueTempU32_31 = _30 - ElapsedTime_29;
+  # DEBUG ValueTempU32 => ValueTempU32_31
+
+  <bb 18> [local count: 93263754]:
+  # ValueTempU32_32 = PHI <0(16), ValueTempU32_31(17)>
+  # DEBUG ValueTempU32 => ValueTempU32_32
+  # DEBUG BEGIN_STMT
+  Wdg_au32Timeout[_24] = ValueTempU32_32;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_03 ();
+  # DEBUG BEGIN_STMT
+  _33 = Wdg_apConfigPtr[_24];
+  _34 = (int) Mode_9(D);
+  _35 = _33->Wdg_ModeSettings[_34];
+  _36 = _35->Wdg_u32TimerTriggeringPeriod;
+  Wdg_au32GptPeriod[_24] = _36;
+  # DEBUG BEGIN_STMT
+  if (Mode_9(D) != 0)
+    goto <bb 19>; [33.00%]
+  else
+    goto <bb 20>; [67.00%]
+
+  <bb 19> [local count: 30777039]:
+  # DEBUG BEGIN_STMT
+  _37 = _33->Wdg_TimerChannel;
+  Gpt_StartTimer (_37, _36);
+
+  <bb 20> [local count: 93263754]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => 0
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_04 ();
+  # DEBUG BEGIN_STMT
+  Wdg_aePreviousMode[_24] = Mode_9(D);
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_04 ();
+
+  <bb 21> [local count: 116930484]:
+  # Valid_38 = PHI <1(12), 1(13), 0(20)>
+  # DEBUG Valid => Valid_38
+  # DEBUG BEGIN_STMT
+  _82 = Valid_38;
+  # DEBUG Instance => NULL
+  # DEBUG Mode => NULL
+  # DEBUG Status => NULL
+  # DEBUG ValueTempU32 => NULL
+  # DEBUG ElapsedTime => NULL
+  # DEBUG Valid => NULL
+  Ret_16 = _82;
+  # DEBUG Ret => Ret_16
+
+  <bb 22> [local count: 1073741824]:
+  # Ret_2 = PHI <1(2), 1(3), Ret_16(21)>
+  # Valid_3 = PHI <Valid_8(2), Valid_11(3), Valid_14(21)>
+  # DEBUG Valid => Valid_3
+  # DEBUG Ret => Ret_2
+  # DEBUG BEGIN_STMT
+  Wdg_ChannelEndValidateGlobalCall (Valid_3, Instance_6(D));
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return Ret_2;
+
+}
+
+
+
+;; Function Wdg_ChannelSetTriggerCondition (Wdg_ChannelSetTriggerCondition, funcdef_no=17, decl_uid=6621, cgraph_uid=18, symbol_order=23)
+
+
+Symbols to be put in SSA form
+{ D.7069 D.7183 D.7189 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 20
+Number of blocks to update: 19 ( 95%)
+
+
+Merging blocks 2 and 10
+Removing basic block 3
+Merging blocks 13 and 9
+Merging blocks 19 and 14
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+;; 2 succs { 4 3 }
+;; 3 succs { 4 5 }
+;; 4 succs { 5 }
+;; 5 succs { 6 15 }
+;; 6 succs { 9 7 }
+;; 7 succs { 8 10 }
+;; 8 succs { 9 10 }
+;; 9 succs { 10 }
+;; 10 succs { 11 15 }
+;; 11 succs { 13 12 }
+;; 12 succs { 13 14 }
+;; 13 succs { 15 }
+;; 14 succs { 15 }
+;; 15 succs { 1 }
+Wdg_ChannelSetTriggerCondition (const Wdg_Ipw_InstanceType Instance, uint16 Timeout)
+{
+  Std_ReturnType Valid;
+  const uint32 Wdg_au32WdgTimeOutPeriod[3][3];
+  uint16 CfgMaxTimeout;
+  Std_ReturnType D.7189;
+  Std_ReturnType valid;
+  Std_ReturnType D.7183;
+  Std_ReturnType Valid;
+  Gpt_ValueType ElapsedTime;
+  int _1;
+  const struct Wdg_ConfigType * _2;
+  unsigned char _3;
+  long unsigned int _4;
+  const struct Wdg_ConfigType * _5;
+  unsigned char _6;
+  long unsigned int _7;
+  const struct Wdg_ConfigType * _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  int _28;
+  <unnamed type> _29;
+  int _31;
+  <unnamed type> _33;
+  int _34;
+  long unsigned int _35;
+  short unsigned int _36;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ElapsedTime => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Instance => Instance_14(D)
+  # DEBUG INLINE_ENTRY Wdg_ChannelValidateTrigerCondition
+  # DEBUG BEGIN_STMT
+  # DEBUG valid => 0
+  # DEBUG BEGIN_STMT
+  _28 = (int) Instance_14(D);
+  _29 = Wdg_aeStatus[_28];
+  if (_29 == 1)
+    goto <bb 4>; [20.24%]
+  else
+    goto <bb 3>; [79.76%]
+
+  <bb 3> [local count: 856416479]:
+  if (_29 == 4)
+    goto <bb 4>; [34.00%]
+  else
+    goto <bb 5>; [66.00%]
+
+  <bb 4> [local count: 508506950]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_14(D), 3, 16);
+  # DEBUG BEGIN_STMT
+  # DEBUG valid => 1
+
+  <bb 5> [local count: 1073741824]:
+  # valid_30 = PHI <0(3), 1(4)>
+  # DEBUG valid => valid_30
+  # DEBUG BEGIN_STMT
+  _41 = valid_30;
+  # DEBUG Instance => NULL
+  # DEBUG valid => NULL
+  Valid_16 = _41;
+  # DEBUG Valid => Valid_16
+  # DEBUG BEGIN_STMT
+  if (Valid_16 == 0)
+    goto <bb 6>; [33.00%]
+  else
+    goto <bb 15>; [67.00%]
+
+  <bb 6> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Timeout => Timeout_17(D)
+  # DEBUG Instance => Instance_14(D)
+  # DEBUG INLINE_ENTRY Wdg_ValidateTimeout
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => 0
+  # DEBUG BEGIN_STMT
+  Wdg_au32WdgTimeOutPeriod = *.LC0;
+  # DEBUG BEGIN_STMT
+  _31 = (int) Instance_14(D);
+  CfgMaxTimeout_32 = Wdg_au16CfgMaxTimeout[_31];
+  # DEBUG CfgMaxTimeout => CfgMaxTimeout_32
+  # DEBUG BEGIN_STMT
+  if (Timeout_17(D) > CfgMaxTimeout_32)
+    goto <bb 9>; [33.00%]
+  else
+    goto <bb 7>; [67.00%]
+
+  <bb 7> [local count: 237404317]:
+  _33 = Wdg_aeCurrentMode[_31];
+  _34 = (int) _33;
+  _35 = Wdg_au32WdgTimeOutPeriod[_31][_34];
+  _36 = (short unsigned int) _35;
+  if (Timeout_17(D) <= _36)
+    goto <bb 8>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 8> [local count: 118702158]:
+  if (Timeout_17(D) != 0)
+    goto <bb 9>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 9> [local count: 176281563]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_14(D), 3, 19);
+  # DEBUG BEGIN_STMT
+  # DEBUG Valid => 1
+
+  <bb 10> [local count: 354334800]:
+  # Valid_37 = PHI <0(7), 0(8), 1(9)>
+  # DEBUG Valid => Valid_37
+  # DEBUG BEGIN_STMT
+  Wdg_au32WdgTimeOutPeriod ={v} {CLOBBER};
+  _45 = Valid_37;
+  # DEBUG Timeout => NULL
+  # DEBUG Instance => NULL
+  # DEBUG CfgMaxTimeout => NULL
+  # DEBUG Valid => NULL
+  Valid_19 = _45;
+  # DEBUG Valid => Valid_19
+  # DEBUG BEGIN_STMT
+  if (Valid_19 == 0)
+    goto <bb 11>; [33.00%]
+  else
+    goto <bb 15>; [67.00%]
+
+  <bb 11> [local count: 116930483]:
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_05 ();
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_14(D);
+  _2 = Wdg_apConfigPtr[_1];
+  _3 = _2->Wdg_TimerChannel;
+  ElapsedTime_22 = Gpt_GetTimeElapsed (_3);
+  # DEBUG ElapsedTime => ElapsedTime_22
+  # DEBUG BEGIN_STMT
+  _4 = Wdg_au32Timeout[_1];
+  if (_4 < ElapsedTime_22)
+    goto <bb 13>; [33.00%]
+  else
+    goto <bb 12>; [67.00%]
+
+  <bb 12> [local count: 78343424]:
+  if (Timeout_17(D) == 0)
+    goto <bb 13>; [67.00%]
+  else
+    goto <bb 14>; [33.00%]
+
+  <bb 13> [local count: 91077154]:
+  # DEBUG BEGIN_STMT
+  Wdg_au32Timeout[_1] = 0;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05 ();
+  # DEBUG BEGIN_STMT
+  _5 = Wdg_apConfigPtr[_1];
+  _6 = _5->Wdg_TimerChannel;
+  Gpt_StopTimer (_6);
+  goto <bb 15>; [100.00%]
+
+  <bb 14> [local count: 25853330]:
+  # DEBUG BEGIN_STMT
+  _7 = (long unsigned int) Timeout_17(D);
+  _8 = Wdg_apConfigPtr[_1];
+  _9 = _8->Wdg_u32TriggerSourceClock;
+  _10 = _7 * _9;
+  _11 = _10 + ElapsedTime_22;
+  Wdg_au32Timeout[_1] = _11;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_05 ();
+
+  <bb 15> [local count: 1073741824]:
+  return;
+
+}
+
+
+
+;; Function Wdg_ChannelGetVersionInfo (Wdg_ChannelGetVersionInfo, funcdef_no=18, decl_uid=6624, cgraph_uid=19, symbol_order=24)
+
+
+Symbols to be put in SSA form
+{ D.7070 D.7196 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 9
+Number of blocks to update: 8 ( 89%)
+
+
+Merging blocks 2 and 6
+Merging blocks 8 and 5
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 5 6 }
+;; 5 succs { 6 }
+;; 6 succs { 1 }
+Wdg_ChannelGetVersionInfo (const Wdg_Ipw_InstanceType Instance, struct Std_VersionInfoType * VersionInfo)
+{
+  Std_ReturnType valid;
+  Std_ReturnType D.7196;
+  Std_ReturnType Valid;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG VersionInfo => VersionInfo_3(D)
+  # DEBUG Instance => Instance_4(D)
+  # DEBUG INLINE_ENTRY Wdg_ValidatePtrVersion
+  # DEBUG BEGIN_STMT
+  # DEBUG valid => 0
+  # DEBUG BEGIN_STMT
+  if (VersionInfo_3(D) == 0B)
+    goto <bb 3>; [17.43%]
+  else
+    goto <bb 4>; [82.57%]
+
+  <bb 3> [local count: 187153200]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_4(D), 4, 20);
+  # DEBUG BEGIN_STMT
+  # DEBUG valid => 1
+
+  <bb 4> [local count: 1073741824]:
+  # valid_12 = PHI <0(2), 1(3)>
+  # DEBUG valid => valid_12
+  # DEBUG BEGIN_STMT
+  _15 = valid_12;
+  # DEBUG VersionInfo => NULL
+  # DEBUG Instance => NULL
+  # DEBUG valid => NULL
+  Valid_6 = _15;
+  # DEBUG Valid => Valid_6
+  # DEBUG BEGIN_STMT
+  if (Valid_6 == 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 5> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  VersionInfo_3(D)->vendorID = 43;
+  # DEBUG BEGIN_STMT
+  VersionInfo_3(D)->moduleID = 102;
+  # DEBUG BEGIN_STMT
+  VersionInfo_3(D)->sw_major_version = 3;
+  # DEBUG BEGIN_STMT
+  VersionInfo_3(D)->sw_minor_version = 0;
+  # DEBUG BEGIN_STMT
+  VersionInfo_3(D)->sw_patch_version = 0;
+
+  <bb 6> [local count: 1073741824]:
+  return;
+
+}
+
+
+
+;; Function Wdg_ChannelClearResetRequest (Wdg_ChannelClearResetRequest, funcdef_no=19, decl_uid=6626, cgraph_uid=20, symbol_order=25)
+
+Wdg_ChannelClearResetRequest (const Wdg_Ipw_InstanceType Instance)
+{
+  Wdg_Ipw_StatusType RetClrReq;
+  unsigned char _1;
+  int _2;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetClrReq => 0
+  # DEBUG BEGIN_STMT
+  RetClrReq_7 = Wdg_Ipw_ClearResetRequest (Instance_5(D));
+  # DEBUG RetClrReq => RetClrReq_7
+  # DEBUG BEGIN_STMT
+  if (RetClrReq_7 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 5>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  _1 = Wdg_Ipw_Deinit (Instance_5(D));
+  if (_1 == 1)
+    goto <bb 4>; [20.24%]
+  else
+    goto <bb 8>; [79.76%]
+
+  <bb 4> [local count: 71717363]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_5(D), 6, 16);
+  goto <bb 8>; [100.00%]
+
+  <bb 5> [local count: 719407024]:
+  # DEBUG BEGIN_STMT
+  if (RetClrReq_7 == 2)
+    goto <bb 6>; [34.00%]
+  else
+    goto <bb 7>; [66.00%]
+
+  <bb 6> [local count: 244598390]:
+  # DEBUG BEGIN_STMT
+  Det_ReportRuntimeError (102, Instance_5(D), 6, 22);
+  goto <bb 8>; [100.00%]
+
+  <bb 7> [local count: 474808633]:
+  # DEBUG BEGIN_STMT
+  Det_ReportError (102, Instance_5(D), 6, 16);
+
+  <bb 8> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Wdg_WDG_EXCLUSIVE_AREA_08 ();
+  # DEBUG BEGIN_STMT
+  _2 = (int) Instance_5(D);
+  Wdg_aePreviousMode[_2] = 0;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Wdg_WDG_EXCLUSIVE_AREA_08 ();
+  return;
+
+}
+
+

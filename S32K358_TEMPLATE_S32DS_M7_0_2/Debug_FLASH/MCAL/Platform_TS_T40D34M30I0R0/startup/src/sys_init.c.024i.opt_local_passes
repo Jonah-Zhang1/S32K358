@@ -1,0 +1,3170 @@
+EUnit_GetCoreID ()
+{
+  uint8 _3;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _3 = Sys_GetCoreID ();
+  return _3;
+
+}
+
+
+sys_stop ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("  wfi");
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+sys_halt ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("  wfi");
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+sys_init ()
+{
+  volatile uint32 status;
+  long unsigned int _1;
+  long unsigned int status.1_2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int status.2_5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int status.3_8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int status.4_11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int status.5_14;
+  long unsigned int _15;
+  long unsigned int _16;
+  long unsigned int status.6_17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int status.7_20;
+  long unsigned int _21;
+  int _25;
+  int _28;
+  int _31;
+  int _34;
+  int _37;
+  int _40;
+  int _43;
+  Std_ReturnType _45;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  status ={v} 0;
+  # DEBUG BEGIN_STMT
+  _25 = Init_MC_ME ();
+  _1 = (long unsigned int) _25;
+  status.1_2 ={v} status;
+  _3 = _1 + status.1_2;
+  status ={v} _3;
+  # DEBUG BEGIN_STMT
+  _28 = Init_FIRC ();
+  _4 = (long unsigned int) _28;
+  status.2_5 ={v} status;
+  _6 = _4 + status.2_5;
+  status ={v} _6;
+  # DEBUG BEGIN_STMT
+  _31 = Switch_Core_FIRC ();
+  _7 = (long unsigned int) _31;
+  status.3_8 ={v} status;
+  _9 = _7 + status.3_8;
+  status ={v} _9;
+  # DEBUG BEGIN_STMT
+  _34 = Init_FXOSC ();
+  _10 = (long unsigned int) _34;
+  status.4_11 ={v} status;
+  _12 = _10 + status.4_11;
+  status ={v} _12;
+  # DEBUG BEGIN_STMT
+  _37 = Init_PLL ();
+  _13 = (long unsigned int) _37;
+  status.5_14 ={v} status;
+  _15 = _13 + status.5_14;
+  status ={v} _15;
+  # DEBUG BEGIN_STMT
+  _40 = Init_PMC ();
+  _16 = (long unsigned int) _40;
+  status.6_17 ={v} status;
+  _18 = _16 + status.6_17;
+  status ={v} _18;
+  # DEBUG BEGIN_STMT
+  _43 = Init_MC_CGM ();
+  _19 = (long unsigned int) _43;
+  status.7_20 ={v} status;
+  _21 = _19 + status.7_20;
+  status ={v} _21;
+  # DEBUG BEGIN_STMT
+  _45 = 0;
+  return _45;
+
+}
+
+
+Init_MC_ME ()
+{
+  struct MC_ME_Type * _1;
+  long unsigned int _2;
+  struct MC_ME_Type * _3;
+  long unsigned int _4;
+  struct MC_ME_Type * _5;
+  long unsigned int _6;
+  struct MC_ME_Type * _7;
+  long unsigned int _8;
+  struct MC_ME_Type * _9;
+  long unsigned int _10;
+  struct MC_ME_Type * _11;
+  long unsigned int _12;
+  struct MC_ME_Type * _13;
+  long unsigned int _14;
+  struct MC_ME_Type * _15;
+  long unsigned int _16;
+  struct MC_ME_Type * _17;
+  long unsigned int _18;
+  struct MC_ME_Type * _19;
+  long unsigned int _20;
+  struct MC_ME_Type * _21;
+  long unsigned int _22;
+  struct MC_ME_Type * _23;
+  long unsigned int _24;
+  struct MC_ME_Type * _25;
+  struct MC_ME_Type * _26;
+  struct MC_ME_Type * _27;
+  long unsigned int _28;
+  long unsigned int _29;
+  struct MC_ME_Type * _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  struct MC_ME_Type * _33;
+  long unsigned int _34;
+  long unsigned int _35;
+  struct MC_ME_Type * _36;
+  long unsigned int _37;
+  long unsigned int _38;
+  struct MC_ME_Type * _39;
+  long unsigned int _40;
+  long unsigned int _41;
+  struct MC_ME_Type * _42;
+  long unsigned int _43;
+  long unsigned int _44;
+  struct MC_ME_Type * _45;
+  long unsigned int _46;
+  struct MC_ME_Type * _47;
+  long unsigned int _48;
+  struct MC_ME_Type * _49;
+  long unsigned int _50;
+  struct MC_ME_Type * _51;
+  long unsigned int _52;
+  struct MC_ME_Type * _53;
+  long unsigned int _54;
+  struct MC_ME_Type * _55;
+  long unsigned int _56;
+  struct MC_ME_Type * _57;
+  long unsigned int _58;
+  struct MC_ME_Type * _59;
+  long unsigned int _60;
+  struct MC_ME_Type * _61;
+  long unsigned int _62;
+  struct MC_ME_Type * _63;
+  long unsigned int _64;
+  struct MC_ME_Type * _65;
+  long unsigned int _66;
+  struct MC_ME_Type * _67;
+  long unsigned int _68;
+  struct MC_ME_Type * _69;
+  long unsigned int _70;
+  struct MC_ME_Type * _71;
+  long unsigned int _72;
+  struct MC_ME_Type * _73;
+  long unsigned int _74;
+  struct MC_ME_Type * _75;
+  long unsigned int _76;
+  struct MC_ME_Type * _77;
+  long unsigned int _78;
+  struct MC_ME_Type * _79;
+  long unsigned int _80;
+  struct MC_ME_Type * _81;
+  long unsigned int _82;
+  struct MC_ME_Type * _83;
+  long unsigned int _84;
+  struct MC_ME_Type * _85;
+  long unsigned int _86;
+  struct MC_ME_Type * _87;
+  long unsigned int _88;
+  struct MC_ME_Type * _89;
+  long unsigned int _90;
+  struct MC_ME_Type * _91;
+  long unsigned int _92;
+  struct MC_ME_Type * _93;
+  struct MC_ME_Type * _94;
+  struct MC_ME_Type * _95;
+  long unsigned int _96;
+  long unsigned int _97;
+  struct MC_ME_Type * _98;
+  long unsigned int _99;
+  long unsigned int _100;
+  struct MC_ME_Type * _101;
+  long unsigned int _102;
+  long unsigned int _103;
+  struct MC_ME_Type * _104;
+  long unsigned int _105;
+  long unsigned int _106;
+  struct MC_ME_Type * _107;
+  long unsigned int _108;
+  long unsigned int _109;
+  struct MC_ME_Type * _110;
+  long unsigned int _111;
+  long unsigned int _112;
+  struct MC_ME_Type * _113;
+  long unsigned int _114;
+  long unsigned int _115;
+  struct MC_ME_Type * _116;
+  long unsigned int _117;
+  long unsigned int _118;
+  struct MC_ME_Type * _119;
+  long unsigned int _120;
+  long unsigned int _121;
+  struct MC_ME_Type * _122;
+  long unsigned int _123;
+  long unsigned int _124;
+  int _148;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 ={v} _1->PRTN0_PCONF;
+  _3 = 1076740096B;
+  _4 = _2 | 1;
+  _3->PRTN0_PCONF ={v} _4;
+  # DEBUG BEGIN_STMT
+  _5 = 1076740096B;
+  _6 ={v} _5->PRTN1_PCONF;
+  _7 = 1076740096B;
+  _8 = _6 | 1;
+  _7->PRTN1_PCONF ={v} _8;
+  # DEBUG BEGIN_STMT
+  _9 = 1076740096B;
+  _10 ={v} _9->PRTN2_PCONF;
+  _11 = 1076740096B;
+  _12 = _10 | 1;
+  _11->PRTN2_PCONF ={v} _12;
+  # DEBUG BEGIN_STMT
+  _13 = 1076740096B;
+  _14 ={v} _13->PRTN0_PUPD;
+  _15 = 1076740096B;
+  _16 = _14 | 1;
+  _15->PRTN0_PUPD ={v} _16;
+  # DEBUG BEGIN_STMT
+  _17 = 1076740096B;
+  _18 ={v} _17->PRTN1_PUPD;
+  _19 = 1076740096B;
+  _20 = _18 | 1;
+  _19->PRTN1_PUPD ={v} _20;
+  # DEBUG BEGIN_STMT
+  _21 = 1076740096B;
+  _22 ={v} _21->PRTN2_PUPD;
+  _23 = 1076740096B;
+  _24 = _22 | 1;
+  _23->PRTN2_PUPD ={v} _24;
+  # DEBUG BEGIN_STMT
+  _25 = 1076740096B;
+  _25->CTL_KEY ={v} 23280;
+  # DEBUG BEGIN_STMT
+  _26 = 1076740096B;
+  _26->CTL_KEY ={v} 42255;
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _27 = 1076740096B;
+  _28 ={v} _27->PRTN0_PUPD;
+  _29 = _28 & 1;
+  if (_29 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _30 = 1076740096B;
+  _31 ={v} _30->PRTN1_PUPD;
+  _32 = _31 & 1;
+  if (_32 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _33 = 1076740096B;
+  _34 ={v} _33->PRTN2_PUPD;
+  _35 = _34 & 1;
+  if (_35 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _36 = 1076740096B;
+  _37 ={v} _36->PRTN0_PCONF;
+  _38 = _37 & 1;
+  if (_38 != 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _39 = 1076740096B;
+  _40 ={v} _39->PRTN1_PCONF;
+  _41 = _40 & 1;
+  if (_41 != 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _42 = 1076740096B;
+  _43 ={v} _42->PRTN2_PCONF;
+  _44 = _43 & 1;
+  if (_44 != 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _45 = 1076740096B;
+  _46 ={v} _45->PRTN0_COFB0_CLKEN;
+  _47 = 1076740096B;
+  _48 = _46 | 8;
+  _47->PRTN0_COFB0_CLKEN ={v} _48;
+  # DEBUG BEGIN_STMT
+  _49 = 1076740096B;
+  _50 ={v} _49->PRTN0_COFB1_CLKEN;
+  _51 = 1076740096B;
+  _52 = _50 | 63455;
+  _51->PRTN0_COFB1_CLKEN ={v} _52;
+  # DEBUG BEGIN_STMT
+  _53 = 1076740096B;
+  _54 ={v} _53->PRTN1_COFB0_CLKEN;
+  _55 = 1076740096B;
+  _56 = _54 | 4290772991;
+  _55->PRTN1_COFB0_CLKEN ={v} _56;
+  # DEBUG BEGIN_STMT
+  _57 = 1076740096B;
+  _58 ={v} _57->PRTN1_COFB1_CLKEN;
+  _59 = 1076740096B;
+  _60 = _58 | 4294881279;
+  _59->PRTN1_COFB1_CLKEN ={v} _60;
+  # DEBUG BEGIN_STMT
+  _61 = 1076740096B;
+  _62 ={v} _61->PRTN1_COFB2_CLKEN;
+  _63 = 1076740096B;
+  _64 = _62 | 3153330174;
+  _63->PRTN1_COFB2_CLKEN ={v} _64;
+  # DEBUG BEGIN_STMT
+  _65 = 1076740096B;
+  _66 ={v} _65->PRTN1_COFB3_CLKEN;
+  _67 = 1076740096B;
+  _68 = _66 | 24559;
+  _67->PRTN1_COFB3_CLKEN ={v} _68;
+  # DEBUG BEGIN_STMT
+  _69 = 1076740096B;
+  _70 ={v} _69->PRTN2_COFB0_CLKEN;
+  _71 = 1076740096B;
+  _72 = _70 | 2147483639;
+  _71->PRTN2_COFB0_CLKEN ={v} _72;
+  # DEBUG BEGIN_STMT
+  _73 = 1076740096B;
+  _74 ={v} _73->PRTN2_COFB1_CLKEN;
+  _75 = 1076740096B;
+  _76 = _74 | 3465119738;
+  _75->PRTN2_COFB1_CLKEN ={v} _76;
+  # DEBUG BEGIN_STMT
+  _77 = 1076740096B;
+  _78 ={v} _77->PRTN2_COFB2_CLKEN;
+  _79 = 1076740096B;
+  _80 = _78 | 57;
+  _79->PRTN2_COFB2_CLKEN ={v} _80;
+  # DEBUG BEGIN_STMT
+  _81 = 1076740096B;
+  _82 ={v} _81->PRTN0_PUPD;
+  _83 = 1076740096B;
+  _84 = _82 | 1;
+  _83->PRTN0_PUPD ={v} _84;
+  # DEBUG BEGIN_STMT
+  _85 = 1076740096B;
+  _86 ={v} _85->PRTN1_PUPD;
+  _87 = 1076740096B;
+  _88 = _86 | 1;
+  _87->PRTN1_PUPD ={v} _88;
+  # DEBUG BEGIN_STMT
+  _89 = 1076740096B;
+  _90 ={v} _89->PRTN2_PUPD;
+  _91 = 1076740096B;
+  _92 = _90 | 1;
+  _91->PRTN2_PUPD ={v} _92;
+  # DEBUG BEGIN_STMT
+  _93 = 1076740096B;
+  _93->CTL_KEY ={v} 23280;
+  # DEBUG BEGIN_STMT
+  _94 = 1076740096B;
+  _94->CTL_KEY ={v} 42255;
+  # DEBUG BEGIN_STMT
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _95 = 1076740096B;
+  _96 ={v} _95->PRTN0_PUPD;
+  _97 = _96 & 1;
+  if (_97 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _98 = 1076740096B;
+  _99 ={v} _98->PRTN1_PUPD;
+  _100 = _99 & 1;
+  if (_100 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _101 = 1076740096B;
+  _102 ={v} _101->PRTN2_PUPD;
+  _103 = _102 & 1;
+  if (_103 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _104 = 1076740096B;
+  _105 ={v} _104->PRTN0_COFB1_STAT;
+  _106 = _105 & 63455;
+  if (_106 != 63455)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _107 = 1076740096B;
+  _108 ={v} _107->PRTN1_COFB1_STAT;
+  _109 = _108 & 4294881279;
+  if (_109 != 4294881279)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _110 = 1076740096B;
+  _111 ={v} _110->PRTN1_COFB2_STAT;
+  _112 = _111 & 3153330174;
+  if (_112 != 3153330174)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _113 = 1076740096B;
+  _114 ={v} _113->PRTN1_COFB0_STAT;
+  _115 = _114 & 4290772991;
+  if (_115 != 4290772991)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _116 = 1076740096B;
+  _117 ={v} _116->PRTN1_COFB3_STAT;
+  _118 = _117 & 24559;
+  if (_118 != 24559)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _119 = 1076740096B;
+  _120 ={v} _119->PRTN2_COFB0_STAT;
+  _121 = _120 & 2147483639;
+  if (_121 != 2147483639)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _122 = 1076740096B;
+  _123 ={v} _122->PRTN2_COFB1_STAT;
+  _124 = _123 & 3465119738;
+  if (_124 != 3465119738)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  _148 = 0;
+  return _148;
+
+}
+
+
+Switch_Core_FIRC ()
+{
+  volatile int result;
+  volatile uint32 timeout;
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  struct MC_CGM_Type * _4;
+  long unsigned int _5;
+  struct MC_CGM_Type * _6;
+  long unsigned int _7;
+  struct MC_CGM_Type * _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  struct MC_CGM_Type * _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int timeout.11_15;
+  long unsigned int timeout.12_16;
+  long unsigned int _17;
+  long unsigned int timeout.13_18;
+  int _28;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout ={v} 65535;
+  # DEBUG BEGIN_STMT
+  result ={v} 0;
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_CSS;
+  _3 = _2 & 65536;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _4 = 1076723712B;
+  _5 ={v} _4->MUX_0_CSC;
+  _6 = 1076723712B;
+  _7 = _5 | 11;
+  _6->MUX_0_CSC ={v} _7;
+  # DEBUG BEGIN_STMT
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _8 = 1076723712B;
+  _9 ={v} _8->MUX_0_CSS;
+  _10 = _9 >> 3;
+  _11 = _10 & 1;
+  if (_11 != 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _12 = 1076723712B;
+  _13 ={v} _12->MUX_0_CSS;
+  _14 = _13 & 65536;
+  if (_14 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  timeout.11_15 ={v} timeout;
+  timeout.12_16 = timeout.11_15;
+  _17 = timeout.12_16 + 4294967295;
+  timeout ={v} _17;
+  if (timeout.12_16 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  timeout.13_18 ={v} timeout;
+  if (timeout.13_18 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  result ={v} 1;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _28 ={v} result;
+  return _28;
+
+}
+
+
+Init_MC_CGM ()
+{
+  struct MC_CGM_Type * _1;
+  long unsigned int _2;
+  struct MC_CGM_Type * _3;
+  long unsigned int _4;
+  struct MC_CGM_Type * _5;
+  long unsigned int _6;
+  struct MC_CGM_Type * _7;
+  long unsigned int _8;
+  struct MC_CGM_Type * _9;
+  long unsigned int _10;
+  struct MC_CGM_Type * _11;
+  long unsigned int _12;
+  struct MC_CGM_Type * _13;
+  long unsigned int _14;
+  struct MC_CGM_Type * _15;
+  long unsigned int _16;
+  struct MC_CGM_Type * _17;
+  long unsigned int _18;
+  struct MC_CGM_Type * _19;
+  long unsigned int _20;
+  struct MC_CGM_Type * _21;
+  long unsigned int _22;
+  struct MC_CGM_Type * _23;
+  long unsigned int _24;
+  struct MC_CGM_Type * _25;
+  long unsigned int _26;
+  struct MC_CGM_Type * _27;
+  long unsigned int _28;
+  struct MC_CGM_Type * _29;
+  long unsigned int _30;
+  struct MC_CGM_Type * _31;
+  long unsigned int _32;
+  struct MC_CGM_Type * _33;
+  long unsigned int _34;
+  struct MC_CGM_Type * _35;
+  long unsigned int _36;
+  struct MC_CGM_Type * _37;
+  long unsigned int _38;
+  struct MC_CGM_Type * _39;
+  long unsigned int _40;
+  struct MC_CGM_Type * _41;
+  long unsigned int _42;
+  struct MC_CGM_Type * _43;
+  long unsigned int _44;
+  struct MC_CGM_Type * _45;
+  long unsigned int _46;
+  struct MC_CGM_Type * _47;
+  long unsigned int _48;
+  struct MC_CGM_Type * _49;
+  long unsigned int _50;
+  struct MC_CGM_Type * _51;
+  long unsigned int _52;
+  struct MC_CGM_Type * _53;
+  long unsigned int _54;
+  struct MC_CGM_Type * _55;
+  long unsigned int _56;
+  struct MC_CGM_Type * _57;
+  long unsigned int _58;
+  struct MC_CGM_Type * _59;
+  long unsigned int _60;
+  struct MC_CGM_Type * _61;
+  long unsigned int _62;
+  struct MC_CGM_Type * _63;
+  long unsigned int _64;
+  struct MC_CGM_Type * _65;
+  long unsigned int _66;
+  struct MC_CGM_Type * _67;
+  long unsigned int _68;
+  struct MC_CGM_Type * _69;
+  struct MC_CGM_Type * _70;
+  long unsigned int _71;
+  struct MC_CGM_Type * _72;
+  struct MC_CGM_Type * _73;
+  long unsigned int _74;
+  struct MC_CGM_Type * _75;
+  long unsigned int _76;
+  struct MC_CGM_Type * _77;
+  struct MC_CGM_Type * _78;
+  long unsigned int _79;
+  struct MC_CGM_Type * _80;
+  long unsigned int _81;
+  struct MC_CGM_Type * _82;
+  long unsigned int _83;
+  struct MC_CGM_Type * _84;
+  struct MC_CGM_Type * _85;
+  long unsigned int _86;
+  struct MC_CGM_Type * _87;
+  long unsigned int _88;
+  struct MC_CGM_Type * _89;
+  long unsigned int _90;
+  struct MC_CGM_Type * _91;
+  struct MC_CGM_Type * _92;
+  long unsigned int _93;
+  struct MC_CGM_Type * _94;
+  long unsigned int _95;
+  struct MC_CGM_Type * _96;
+  long unsigned int _97;
+  struct MC_CGM_Type * _98;
+  struct MC_CGM_Type * _99;
+  long unsigned int _100;
+  struct MC_CGM_Type * _101;
+  long unsigned int _102;
+  struct MC_CGM_Type * _103;
+  long unsigned int _104;
+  struct MC_CGM_Type * _105;
+  struct MC_CGM_Type * _106;
+  long unsigned int _107;
+  struct MC_CGM_Type * _108;
+  long unsigned int _109;
+  struct MC_CGM_Type * _110;
+  long unsigned int _111;
+  struct MC_CGM_Type * _112;
+  struct MC_CGM_Type * _113;
+  long unsigned int _114;
+  struct MC_CGM_Type * _115;
+  long unsigned int _116;
+  struct MC_CGM_Type * _117;
+  long unsigned int _118;
+  struct MC_CGM_Type * _119;
+  struct MC_CGM_Type * _120;
+  long unsigned int _121;
+  struct MC_CGM_Type * _122;
+  long unsigned int _123;
+  struct MC_CGM_Type * _124;
+  long unsigned int _125;
+  struct MC_CGM_Type * _126;
+  long unsigned int _127;
+  struct MC_CGM_Type * _128;
+  long unsigned int _129;
+  struct MC_CGM_Type * _130;
+  long unsigned int _131;
+  struct MC_CGM_Type * _132;
+  long unsigned int _133;
+  struct MC_CGM_Type * _134;
+  long unsigned int _135;
+  struct MC_CGM_Type * _136;
+  long unsigned int _137;
+  struct MC_CGM_Type * _138;
+  long unsigned int _139;
+  struct MC_CGM_Type * _140;
+  long unsigned int _141;
+  struct MC_CGM_Type * _142;
+  struct MC_CGM_Type * _143;
+  long unsigned int _144;
+  struct MC_CGM_Type * _145;
+  long unsigned int _146;
+  struct MC_CGM_Type * _147;
+  long unsigned int _148;
+  struct MC_CGM_Type * _149;
+  long unsigned int _150;
+  struct MC_CGM_Type * _151;
+  long unsigned int _152;
+  struct MC_CGM_Type * _153;
+  long unsigned int _154;
+  long unsigned int _155;
+  struct MC_CGM_Type * _156;
+  long unsigned int _157;
+  long unsigned int _158;
+  struct MC_CGM_Type * _159;
+  long unsigned int _160;
+  long unsigned int _161;
+  struct MC_CGM_Type * _162;
+  long unsigned int _163;
+  long unsigned int _164;
+  struct MC_CGM_Type * _165;
+  long unsigned int _166;
+  long unsigned int _167;
+  struct MC_CGM_Type * _168;
+  long unsigned int _169;
+  long unsigned int _170;
+  struct MC_CGM_Type * _171;
+  long unsigned int _172;
+  long unsigned int _173;
+  struct MC_CGM_Type * _174;
+  long unsigned int _175;
+  long unsigned int _176;
+  struct MC_CGM_Type * _177;
+  long unsigned int _178;
+  long unsigned int _179;
+  struct MC_CGM_Type * _180;
+  long unsigned int _181;
+  long unsigned int _182;
+  struct MC_CGM_Type * _183;
+  long unsigned int _184;
+  long unsigned int _185;
+  struct MC_CGM_Type * _186;
+  long unsigned int _187;
+  long unsigned int _188;
+  struct MC_CGM_Type * _189;
+  long unsigned int _190;
+  struct MC_CGM_Type * _191;
+  long unsigned int _192;
+  struct MC_CGM_Type * _193;
+  long unsigned int _194;
+  struct MC_CGM_Type * _195;
+  long unsigned int _196;
+  struct MC_CGM_Type * _197;
+  long unsigned int _198;
+  struct MC_CGM_Type * _199;
+  long unsigned int _200;
+  struct MC_CGM_Type * _201;
+  long unsigned int _202;
+  struct MC_CGM_Type * _203;
+  long unsigned int _204;
+  struct MC_CGM_Type * _205;
+  long unsigned int _206;
+  struct MC_CGM_Type * _207;
+  long unsigned int _208;
+  struct MC_CGM_Type * _209;
+  long unsigned int _210;
+  struct MC_CGM_Type * _211;
+  long unsigned int _212;
+  struct MC_CGM_Type * _213;
+  long unsigned int _214;
+  struct MC_CGM_Type * _215;
+  long unsigned int _216;
+  struct MC_CGM_Type * _217;
+  long unsigned int _218;
+  struct MC_CGM_Type * _219;
+  long unsigned int _220;
+  struct MC_CGM_Type * _221;
+  long unsigned int _222;
+  struct MC_CGM_Type * _223;
+  long unsigned int _224;
+  struct MC_CGM_Type * _225;
+  long unsigned int _226;
+  struct MC_CGM_Type * _227;
+  long unsigned int _228;
+  struct MC_CGM_Type * _229;
+  long unsigned int _230;
+  struct MC_CGM_Type * _231;
+  long unsigned int _232;
+  struct MC_CGM_Type * _233;
+  long unsigned int _234;
+  struct MC_CGM_Type * _235;
+  long unsigned int _236;
+  struct MC_CGM_Type * _237;
+  long unsigned int _238;
+  struct MC_CGM_Type * _239;
+  long unsigned int _240;
+  struct MC_CGM_Type * _241;
+  long unsigned int _242;
+  struct MC_CGM_Type * _243;
+  long unsigned int _244;
+  struct MC_CGM_Type * _245;
+  long unsigned int _246;
+  struct MC_CGM_Type * _247;
+  long unsigned int _248;
+  struct MC_CGM_Type * _249;
+  long unsigned int _250;
+  struct MC_CGM_Type * _251;
+  long unsigned int _252;
+  struct MC_CGM_Type * _253;
+  long unsigned int _254;
+  struct MC_CGM_Type * _255;
+  long unsigned int _256;
+  struct MC_CGM_Type * _257;
+  long unsigned int _258;
+  struct MC_CGM_Type * _259;
+  long unsigned int _260;
+  struct MC_CGM_Type * _261;
+  long unsigned int _262;
+  struct MC_CGM_Type * _263;
+  long unsigned int _264;
+  struct MC_CGM_Type * _265;
+  long unsigned int _266;
+  struct MC_CGM_Type * _267;
+  long unsigned int _268;
+  struct MC_CGM_Type * _269;
+  long unsigned int _270;
+  struct MC_CGM_Type * _271;
+  long unsigned int _272;
+  struct MC_CGM_Type * _273;
+  long unsigned int _274;
+  struct MC_CGM_Type * _275;
+  long unsigned int _276;
+  struct MC_CGM_Type * _277;
+  long unsigned int _278;
+  struct MC_CGM_Type * _279;
+  long unsigned int _280;
+  struct MC_CGM_Type * _281;
+  long unsigned int _282;
+  struct MC_CGM_Type * _283;
+  long unsigned int _284;
+  struct MC_CGM_Type * _285;
+  long unsigned int _286;
+  struct MC_CGM_Type * _287;
+  long unsigned int _288;
+  struct MC_CGM_Type * _289;
+  struct MC_CGM_Type * _290;
+  long unsigned int _291;
+  struct MC_CGM_Type * _292;
+  long unsigned int _293;
+  struct MC_CGM_Type * _294;
+  long unsigned int _295;
+  struct MC_CGM_Type * _296;
+  struct MC_CGM_Type * _297;
+  long unsigned int _298;
+  struct MC_CGM_Type * _299;
+  long unsigned int _300;
+  struct MC_CGM_Type * _301;
+  long unsigned int _302;
+  struct MC_CGM_Type * _303;
+  long unsigned int _304;
+  struct MC_CGM_Type * _305;
+  long unsigned int _306;
+  struct MC_CGM_Type * _307;
+  long unsigned int _308;
+  struct MC_CGM_Type * _309;
+  long unsigned int _310;
+  struct MC_CGM_Type * _311;
+  long unsigned int _312;
+  struct MC_CGM_Type * _313;
+  long unsigned int _314;
+  struct MC_CGM_Type * _315;
+  long unsigned int _316;
+  struct MC_CGM_Type * _317;
+  long unsigned int _318;
+  struct MC_CGM_Type * _319;
+  long unsigned int _320;
+  struct MC_CGM_Type * _321;
+  long unsigned int _322;
+  struct MC_CGM_Type * _323;
+  long unsigned int _324;
+  struct MC_CGM_Type * _325;
+  long unsigned int _326;
+  struct MC_CGM_Type * _327;
+  long unsigned int _328;
+  struct MC_CGM_Type * _329;
+  long unsigned int _330;
+  struct MC_CGM_Type * _331;
+  long unsigned int _332;
+  struct MC_CGM_Type * _333;
+  long unsigned int _334;
+  struct MC_CGM_Type * _335;
+  long unsigned int _336;
+  struct MC_CGM_Type * _337;
+  long unsigned int _338;
+  struct MC_CGM_Type * _339;
+  long unsigned int _340;
+  struct MC_CGM_Type * _341;
+  long unsigned int _342;
+  struct MC_CGM_Type * _343;
+  long unsigned int _344;
+  struct MC_CGM_Type * _345;
+  long unsigned int _346;
+  struct MC_CGM_Type * _347;
+  long unsigned int _348;
+  struct MC_CGM_Type * _349;
+  long unsigned int _350;
+  struct MC_CGM_Type * _351;
+  long unsigned int _352;
+  struct MC_CGM_Type * _353;
+  long unsigned int _354;
+  struct MC_CGM_Type * _355;
+  long unsigned int _356;
+  struct MC_CGM_Type * _357;
+  long unsigned int _358;
+  struct MC_CGM_Type * _359;
+  long unsigned int _360;
+  struct MC_CGM_Type * _361;
+  long unsigned int _362;
+  struct MC_CGM_Type * _363;
+  long unsigned int _364;
+  struct MC_CGM_Type * _365;
+  long unsigned int _366;
+  struct MC_CGM_Type * _367;
+  long unsigned int _368;
+  struct MC_CGM_Type * _369;
+  long unsigned int _370;
+  struct MC_CGM_Type * _371;
+  long unsigned int _372;
+  struct MC_CGM_Type * _373;
+  long unsigned int _374;
+  struct MC_CGM_Type * _375;
+  long unsigned int _376;
+  struct MC_CGM_Type * _377;
+  long unsigned int _378;
+  struct MC_CGM_Type * _379;
+  long unsigned int _380;
+  struct MC_CGM_Type * _381;
+  long unsigned int _382;
+  struct MC_CGM_Type * _383;
+  long unsigned int _384;
+  struct MC_CGM_Type * _385;
+  long unsigned int _386;
+  struct MC_CGM_Type * _387;
+  long unsigned int _388;
+  struct MC_CGM_Type * _389;
+  long unsigned int _390;
+  struct MC_CGM_Type * _391;
+  long unsigned int _392;
+  struct MC_CGM_Type * _393;
+  long unsigned int _394;
+  struct MC_CGM_Type * _395;
+  long unsigned int _396;
+  struct MC_CGM_Type * _397;
+  long unsigned int _398;
+  struct MC_CGM_Type * _399;
+  long unsigned int _400;
+  struct MC_CGM_Type * _401;
+  long unsigned int _402;
+  struct MC_CGM_Type * _403;
+  long unsigned int _404;
+  struct MC_CGM_Type * _405;
+  long unsigned int _406;
+  struct MC_CGM_Type * _407;
+  long unsigned int _408;
+  struct MC_CGM_Type * _409;
+  long unsigned int _410;
+  struct MC_CGM_Type * _411;
+  long unsigned int _412;
+  struct MC_CGM_Type * _413;
+  long unsigned int _414;
+  struct MC_CGM_Type * _415;
+  long unsigned int _416;
+  struct MC_CGM_Type * _417;
+  long unsigned int _418;
+  struct MC_CGM_Type * _419;
+  long unsigned int _420;
+  struct MC_CGM_Type * _421;
+  long unsigned int _422;
+  struct MC_CGM_Type * _423;
+  long unsigned int _424;
+  struct MC_CGM_Type * _425;
+  long unsigned int _426;
+  struct MC_CGM_Type * _427;
+  long unsigned int _428;
+  struct MC_CGM_Type * _429;
+  long unsigned int _430;
+  struct MC_CGM_Type * _431;
+  long unsigned int _432;
+  struct MC_CGM_Type * _433;
+  long unsigned int _434;
+  struct MC_CGM_Type * _435;
+  long unsigned int _436;
+  struct MC_CGM_Type * _437;
+  long unsigned int _438;
+  struct MC_CGM_Type * _439;
+  long unsigned int _440;
+  struct MC_CGM_Type * _441;
+  long unsigned int _442;
+  struct MC_CGM_Type * _443;
+  long unsigned int _444;
+  struct MC_CGM_Type * _445;
+  long unsigned int _446;
+  struct MC_CGM_Type * _447;
+  long unsigned int _448;
+  struct MC_CGM_Type * _449;
+  long unsigned int _450;
+  struct MC_CGM_Type * _451;
+  long unsigned int _452;
+  struct MC_CGM_Type * _453;
+  long unsigned int _454;
+  struct MC_CGM_Type * _455;
+  long unsigned int _456;
+  struct MC_CGM_Type * _457;
+  long unsigned int _458;
+  struct MC_CGM_Type * _459;
+  long unsigned int _460;
+  struct MC_CGM_Type * _461;
+  long unsigned int _462;
+  struct MC_CGM_Type * _463;
+  long unsigned int _464;
+  struct MC_CGM_Type * _465;
+  long unsigned int _466;
+  struct MC_CGM_Type * _467;
+  long unsigned int _468;
+  struct MC_CGM_Type * _469;
+  long unsigned int _470;
+  struct MC_CGM_Type * _471;
+  long unsigned int _472;
+  struct MC_CGM_Type * _473;
+  long unsigned int _474;
+  struct MC_CGM_Type * _475;
+  long unsigned int _476;
+  struct MC_CGM_Type * _477;
+  long unsigned int _478;
+  struct MC_CGM_Type * _479;
+  long unsigned int _480;
+  struct MC_CGM_Type * _481;
+  long unsigned int _482;
+  struct MC_CGM_Type * _483;
+  long unsigned int _484;
+  struct MC_CGM_Type * _485;
+  long unsigned int _486;
+  struct MC_CGM_Type * _487;
+  long unsigned int _488;
+  struct MC_CGM_Type * _489;
+  long unsigned int _490;
+  struct MC_CGM_Type * _491;
+  long unsigned int _492;
+  long unsigned int _493;
+  struct MC_CGM_Type * _494;
+  long unsigned int _495;
+  long unsigned int _496;
+  struct MC_CGM_Type * _497;
+  long unsigned int _498;
+  long unsigned int _499;
+  struct MC_CGM_Type * _500;
+  long unsigned int _501;
+  long unsigned int _502;
+  struct MC_CGM_Type * _503;
+  long unsigned int _504;
+  long unsigned int _505;
+  struct MC_CGM_Type * _506;
+  long unsigned int _507;
+  long unsigned int _508;
+  struct MC_CGM_Type * _509;
+  long unsigned int _510;
+  long unsigned int _511;
+  struct MC_CGM_Type * _512;
+  long unsigned int _513;
+  long unsigned int _514;
+  struct MC_CGM_Type * _515;
+  long unsigned int _516;
+  long unsigned int _517;
+  struct MC_CGM_Type * _518;
+  long unsigned int _519;
+  long unsigned int _520;
+  struct MC_CGM_Type * _521;
+  long unsigned int _522;
+  long unsigned int _523;
+  long unsigned int _524;
+  struct MC_CGM_Type * _525;
+  long unsigned int _526;
+  long unsigned int _527;
+  long unsigned int _528;
+  struct MC_CGM_Type * _529;
+  long unsigned int _530;
+  long unsigned int _531;
+  long unsigned int _532;
+  struct MC_CGM_Type * _533;
+  long unsigned int _534;
+  long unsigned int _535;
+  long unsigned int _536;
+  struct MC_CGM_Type * _537;
+  long unsigned int _538;
+  long unsigned int _539;
+  long unsigned int _540;
+  struct MC_CGM_Type * _541;
+  long unsigned int _542;
+  long unsigned int _543;
+  long unsigned int _544;
+  struct MC_CGM_Type * _545;
+  long unsigned int _546;
+  long unsigned int _547;
+  long unsigned int _548;
+  struct MC_CGM_Type * _549;
+  long unsigned int _550;
+  long unsigned int _551;
+  long unsigned int _552;
+  struct MC_CGM_Type * _553;
+  long unsigned int _554;
+  long unsigned int _555;
+  long unsigned int _556;
+  struct MC_CGM_Type * _557;
+  long unsigned int _558;
+  long unsigned int _559;
+  long unsigned int _560;
+  int _679;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 ={v} _1->MUX_0_DIV_TRIG_CTRL;
+  _3 = 1076723712B;
+  _4 = _2 & 2147483647;
+  _3->MUX_0_DIV_TRIG_CTRL ={v} _4;
+  # DEBUG BEGIN_STMT
+  _5 = 1076723712B;
+  _6 ={v} _5->MUX_0_DIV_TRIG_CTRL;
+  _7 = 1076723712B;
+  _8 = _6 | 2147483648;
+  _7->MUX_0_DIV_TRIG_CTRL ={v} _8;
+  # DEBUG BEGIN_STMT
+  _9 = 1076723712B;
+  _10 ={v} _9->MUX_0_DIV_TRIG_CTRL;
+  _11 = 1076723712B;
+  _12 = _10 & 4294967294;
+  _11->MUX_0_DIV_TRIG_CTRL ={v} _12;
+  # DEBUG BEGIN_STMT
+  _13 = 1076723712B;
+  _14 ={v} _13->MUX_0_DIV_TRIG_CTRL;
+  _15 = 1076723712B;
+  _16 = _14 | 1;
+  _15->MUX_0_DIV_TRIG_CTRL ={v} _16;
+  # DEBUG BEGIN_STMT
+  _17 = 1076723712B;
+  _18 ={v} _17->MUX_0_DC_0;
+  _19 = 1076723712B;
+  _20 = _18 & 4294508543;
+  _19->MUX_0_DC_0 ={v} _20;
+  # DEBUG BEGIN_STMT
+  _21 = 1076723712B;
+  _22 ={v} _21->MUX_0_DC_0;
+  _23 = 1076723712B;
+  _24 = _22 | 65536;
+  _23->MUX_0_DC_0 ={v} _24;
+  # DEBUG BEGIN_STMT
+  _25 = 1076723712B;
+  _26 ={v} _25->MUX_0_DC_1;
+  _27 = 1076723712B;
+  _28 = _26 & 4294508543;
+  _27->MUX_0_DC_1 ={v} _28;
+  # DEBUG BEGIN_STMT
+  _29 = 1076723712B;
+  _30 ={v} _29->MUX_0_DC_1;
+  _31 = 1076723712B;
+  _32 = _30 | 65536;
+  _31->MUX_0_DC_1 ={v} _32;
+  # DEBUG BEGIN_STMT
+  _33 = 1076723712B;
+  _34 ={v} _33->MUX_0_DC_2;
+  _35 = 1076723712B;
+  _36 = _34 & 4293984255;
+  _35->MUX_0_DC_2 ={v} _36;
+  # DEBUG BEGIN_STMT
+  _37 = 1076723712B;
+  _38 ={v} _37->MUX_0_DC_2;
+  _39 = 1076723712B;
+  _40 = _38 | 196608;
+  _39->MUX_0_DC_2 ={v} _40;
+  # DEBUG BEGIN_STMT
+  _41 = 1076723712B;
+  _42 ={v} _41->MUX_0_DC_3;
+  _43 = 1076723712B;
+  _44 = _42 & 4294508543;
+  _43->MUX_0_DC_3 ={v} _44;
+  # DEBUG BEGIN_STMT
+  _45 = 1076723712B;
+  _46 ={v} _45->MUX_0_DC_3;
+  _47 = 1076723712B;
+  _48 = _46 | 65536;
+  _47->MUX_0_DC_3 ={v} _48;
+  # DEBUG BEGIN_STMT
+  _49 = 1076723712B;
+  _50 ={v} _49->MUX_0_DC_4;
+  _51 = 1076723712B;
+  _52 = _50 & 4294508543;
+  _51->MUX_0_DC_4 ={v} _52;
+  # DEBUG BEGIN_STMT
+  _53 = 1076723712B;
+  _54 ={v} _53->MUX_0_DC_4;
+  _55 = 1076723712B;
+  _56 = _54 | 196608;
+  _55->MUX_0_DC_4 ={v} _56;
+  # DEBUG BEGIN_STMT
+  _57 = 1076723712B;
+  _58 ={v} _57->MUX_0_DC_5;
+  _59 = 1076723712B;
+  _60 = _58 & 4294508543;
+  _59->MUX_0_DC_5 ={v} _60;
+  # DEBUG BEGIN_STMT
+  _61 = 1076723712B;
+  _62 ={v} _61->MUX_0_DC_5;
+  _63 = 1076723712B;
+  _64 = _62 | 196608;
+  _63->MUX_0_DC_5 ={v} _64;
+  # DEBUG BEGIN_STMT
+  _65 = 1076723712B;
+  _66 ={v} _65->MUX_0_DC_6;
+  _67 = 1076723712B;
+  _68 = _66 & 4294508543;
+  _67->MUX_0_DC_6 ={v} _68;
+  # DEBUG BEGIN_STMT
+  _69 = 1076723712B;
+  _70 = 1076723712B;
+  _71 ={v} _69->MUX_0_DC_6;
+  _70->MUX_0_DC_6 ={v} _71;
+  # DEBUG BEGIN_STMT
+  _72 = 1076723712B;
+  _72->MUX_0_DIV_TRIG ={v} 4294967295;
+  # DEBUG BEGIN_STMT
+  _73 = 1076723712B;
+  _74 ={v} _73->MUX_1_DC_0;
+  _75 = 1076723712B;
+  _76 = _74 & 4294901759;
+  _75->MUX_1_DC_0 ={v} _76;
+  # DEBUG BEGIN_STMT
+  _77 = 1076723712B;
+  _78 = 1076723712B;
+  _79 ={v} _77->MUX_1_DC_0;
+  _78->MUX_1_DC_0 ={v} _79;
+  # DEBUG BEGIN_STMT
+  _80 = 1076723712B;
+  _81 ={v} _80->MUX_2_DC_0;
+  _82 = 1076723712B;
+  _83 = _81 & 4294901759;
+  _82->MUX_2_DC_0 ={v} _83;
+  # DEBUG BEGIN_STMT
+  _84 = 1076723712B;
+  _85 = 1076723712B;
+  _86 ={v} _84->MUX_2_DC_0;
+  _85->MUX_2_DC_0 ={v} _86;
+  # DEBUG BEGIN_STMT
+  _87 = 1076723712B;
+  _88 ={v} _87->MUX_13_DC_0;
+  _89 = 1076723712B;
+  _90 = _88 & 4294901759;
+  _89->MUX_13_DC_0 ={v} _90;
+  # DEBUG BEGIN_STMT
+  _91 = 1076723712B;
+  _92 = 1076723712B;
+  _93 ={v} _91->MUX_13_DC_0;
+  _92->MUX_13_DC_0 ={v} _93;
+  # DEBUG BEGIN_STMT
+  _94 = 1076723712B;
+  _95 ={v} _94->MUX_3_DC_0;
+  _96 = 1076723712B;
+  _97 = _95 & 4294770687;
+  _96->MUX_3_DC_0 ={v} _97;
+  # DEBUG BEGIN_STMT
+  _98 = 1076723712B;
+  _99 = 1076723712B;
+  _100 ={v} _98->MUX_3_DC_0;
+  _99->MUX_3_DC_0 ={v} _100;
+  # DEBUG BEGIN_STMT
+  _101 = 1076723712B;
+  _102 ={v} _101->MUX_4_DC_0;
+  _103 = 1076723712B;
+  _104 = _102 & 4294770687;
+  _103->MUX_4_DC_0 ={v} _104;
+  # DEBUG BEGIN_STMT
+  _105 = 1076723712B;
+  _106 = 1076723712B;
+  _107 ={v} _105->MUX_4_DC_0;
+  _106->MUX_4_DC_0 ={v} _107;
+  # DEBUG BEGIN_STMT
+  _108 = 1076723712B;
+  _109 ={v} _108->MUX_5_DC_0;
+  _110 = 1076723712B;
+  _111 = _109 & 4290838527;
+  _110->MUX_5_DC_0 ={v} _111;
+  # DEBUG BEGIN_STMT
+  _112 = 1076723712B;
+  _113 = 1076723712B;
+  _114 ={v} _112->MUX_5_DC_0;
+  _113->MUX_5_DC_0 ={v} _114;
+  # DEBUG BEGIN_STMT
+  _115 = 1076723712B;
+  _116 ={v} _115->MUX_6_DC_0;
+  _117 = 1076723712B;
+  _118 = _116 & 4290838527;
+  _117->MUX_6_DC_0 ={v} _118;
+  # DEBUG BEGIN_STMT
+  _119 = 1076723712B;
+  _120 = 1076723712B;
+  _121 ={v} _119->MUX_6_DC_0;
+  _120->MUX_6_DC_0 ={v} _121;
+  # DEBUG BEGIN_STMT
+  _122 = 1076723712B;
+  _123 ={v} _122->MUX_7_DC_0;
+  _124 = 1076723712B;
+  _125 = _123 & 4290838527;
+  _124->MUX_7_DC_0 ={v} _125;
+  # DEBUG BEGIN_STMT
+  _126 = 1076723712B;
+  _127 ={v} _126->MUX_7_DC_0;
+  _128 = 1076723712B;
+  _129 = _127 | 65536;
+  _128->MUX_7_DC_0 ={v} _129;
+  # DEBUG BEGIN_STMT
+  _130 = 1076723712B;
+  _131 ={v} _130->MUX_8_DC_0;
+  _132 = 1076723712B;
+  _133 = _131 & 4290838527;
+  _132->MUX_8_DC_0 ={v} _133;
+  # DEBUG BEGIN_STMT
+  _134 = 1076723712B;
+  _135 ={v} _134->MUX_8_DC_0;
+  _136 = 1076723712B;
+  _137 = _135 | 65536;
+  _136->MUX_8_DC_0 ={v} _137;
+  # DEBUG BEGIN_STMT
+  _138 = 1076723712B;
+  _139 ={v} _138->MUX_9_DC_0;
+  _140 = 1076723712B;
+  _141 = _139 & 4290838527;
+  _140->MUX_9_DC_0 ={v} _141;
+  # DEBUG BEGIN_STMT
+  _142 = 1076723712B;
+  _143 = 1076723712B;
+  _144 ={v} _142->MUX_9_DC_0;
+  _143->MUX_9_DC_0 ={v} _144;
+  # DEBUG BEGIN_STMT
+  _145 = 1076723712B;
+  _146 ={v} _145->MUX_10_DC_0;
+  _147 = 1076723712B;
+  _148 = _146 & 4294508543;
+  _147->MUX_10_DC_0 ={v} _148;
+  # DEBUG BEGIN_STMT
+  _149 = 1076723712B;
+  _150 ={v} _149->MUX_10_DC_0;
+  _151 = 1076723712B;
+  _152 = _150 | 131072;
+  _151->MUX_10_DC_0 ={v} _152;
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _153 = 1076723712B;
+  _154 ={v} _153->MUX_0_DIV_UPD_STAT;
+  _155 = _154 & 1;
+  if (_155 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _156 = 1076723712B;
+  _157 ={v} _156->MUX_1_DIV_UPD_STAT;
+  _158 = _157 & 1;
+  if (_158 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _159 = 1076723712B;
+  _160 ={v} _159->MUX_2_DIV_UPD_STAT;
+  _161 = _160 & 1;
+  if (_161 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _162 = 1076723712B;
+  _163 ={v} _162->MUX_3_DIV_UPD_STAT;
+  _164 = _163 & 1;
+  if (_164 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _165 = 1076723712B;
+  _166 ={v} _165->MUX_4_DIV_UPD_STAT;
+  _167 = _166 & 1;
+  if (_167 == 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _168 = 1076723712B;
+  _169 ={v} _168->MUX_5_DIV_UPD_STAT;
+  _170 = _169 & 1;
+  if (_170 == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _171 = 1076723712B;
+  _172 ={v} _171->MUX_6_DIV_UPD_STAT;
+  _173 = _172 & 1;
+  if (_173 == 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _174 = 1076723712B;
+  _175 ={v} _174->MUX_7_DIV_UPD_STAT;
+  _176 = _175 & 1;
+  if (_176 == 1)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _177 = 1076723712B;
+  _178 ={v} _177->MUX_8_DIV_UPD_STAT;
+  _179 = _178 & 1;
+  if (_179 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _180 = 1076723712B;
+  _181 ={v} _180->MUX_9_DIV_UPD_STAT;
+  _182 = _181 & 1;
+  if (_182 == 1)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _183 = 1076723712B;
+  _184 ={v} _183->MUX_10_DIV_UPD_STAT;
+  _185 = _184 & 1;
+  if (_185 == 1)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _186 = 1076723712B;
+  _187 ={v} _186->MUX_13_DIV_UPD_STAT;
+  _188 = _187 & 1;
+  if (_188 == 1)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  _189 = 1076723712B;
+  _190 ={v} _189->MUX_0_DC_0;
+  _191 = 1076723712B;
+  _192 = _190 & 2147483647;
+  _191->MUX_0_DC_0 ={v} _192;
+  # DEBUG BEGIN_STMT
+  _193 = 1076723712B;
+  _194 ={v} _193->MUX_0_DC_0;
+  _195 = 1076723712B;
+  _196 = _194 | 2147483648;
+  _195->MUX_0_DC_0 ={v} _196;
+  # DEBUG BEGIN_STMT
+  _197 = 1076723712B;
+  _198 ={v} _197->MUX_0_DC_1;
+  _199 = 1076723712B;
+  _200 = _198 & 2147483647;
+  _199->MUX_0_DC_1 ={v} _200;
+  # DEBUG BEGIN_STMT
+  _201 = 1076723712B;
+  _202 ={v} _201->MUX_0_DC_1;
+  _203 = 1076723712B;
+  _204 = _202 | 2147483648;
+  _203->MUX_0_DC_1 ={v} _204;
+  # DEBUG BEGIN_STMT
+  _205 = 1076723712B;
+  _206 ={v} _205->MUX_0_DC_2;
+  _207 = 1076723712B;
+  _208 = _206 & 2147483647;
+  _207->MUX_0_DC_2 ={v} _208;
+  # DEBUG BEGIN_STMT
+  _209 = 1076723712B;
+  _210 ={v} _209->MUX_0_DC_2;
+  _211 = 1076723712B;
+  _212 = _210 | 2147483648;
+  _211->MUX_0_DC_2 ={v} _212;
+  # DEBUG BEGIN_STMT
+  _213 = 1076723712B;
+  _214 ={v} _213->MUX_0_DC_3;
+  _215 = 1076723712B;
+  _216 = _214 & 2147483647;
+  _215->MUX_0_DC_3 ={v} _216;
+  # DEBUG BEGIN_STMT
+  _217 = 1076723712B;
+  _218 ={v} _217->MUX_0_DC_3;
+  _219 = 1076723712B;
+  _220 = _218 | 2147483648;
+  _219->MUX_0_DC_3 ={v} _220;
+  # DEBUG BEGIN_STMT
+  _221 = 1076723712B;
+  _222 ={v} _221->MUX_0_DC_4;
+  _223 = 1076723712B;
+  _224 = _222 & 2147483647;
+  _223->MUX_0_DC_4 ={v} _224;
+  # DEBUG BEGIN_STMT
+  _225 = 1076723712B;
+  _226 ={v} _225->MUX_0_DC_4;
+  _227 = 1076723712B;
+  _228 = _226 | 2147483648;
+  _227->MUX_0_DC_4 ={v} _228;
+  # DEBUG BEGIN_STMT
+  _229 = 1076723712B;
+  _230 ={v} _229->MUX_0_DC_5;
+  _231 = 1076723712B;
+  _232 = _230 & 2147483647;
+  _231->MUX_0_DC_5 ={v} _232;
+  # DEBUG BEGIN_STMT
+  _233 = 1076723712B;
+  _234 ={v} _233->MUX_0_DC_5;
+  _235 = 1076723712B;
+  _236 = _234 | 2147483648;
+  _235->MUX_0_DC_5 ={v} _236;
+  # DEBUG BEGIN_STMT
+  _237 = 1076723712B;
+  _238 ={v} _237->MUX_0_DC_6;
+  _239 = 1076723712B;
+  _240 = _238 & 2147483647;
+  _239->MUX_0_DC_6 ={v} _240;
+  # DEBUG BEGIN_STMT
+  _241 = 1076723712B;
+  _242 ={v} _241->MUX_0_DC_6;
+  _243 = 1076723712B;
+  _244 = _242 | 2147483648;
+  _243->MUX_0_DC_6 ={v} _244;
+  # DEBUG BEGIN_STMT
+  _245 = 1076723712B;
+  _246 ={v} _245->MUX_1_DC_0;
+  _247 = 1076723712B;
+  _248 = _246 & 2147483647;
+  _247->MUX_1_DC_0 ={v} _248;
+  # DEBUG BEGIN_STMT
+  _249 = 1076723712B;
+  _250 ={v} _249->MUX_1_DC_0;
+  _251 = 1076723712B;
+  _252 = _250 | 2147483648;
+  _251->MUX_1_DC_0 ={v} _252;
+  # DEBUG BEGIN_STMT
+  _253 = 1076723712B;
+  _254 ={v} _253->MUX_2_DC_0;
+  _255 = 1076723712B;
+  _256 = _254 & 2147483647;
+  _255->MUX_2_DC_0 ={v} _256;
+  # DEBUG BEGIN_STMT
+  _257 = 1076723712B;
+  _258 ={v} _257->MUX_2_DC_0;
+  _259 = 1076723712B;
+  _260 = _258 | 2147483648;
+  _259->MUX_2_DC_0 ={v} _260;
+  # DEBUG BEGIN_STMT
+  _261 = 1076723712B;
+  _262 ={v} _261->MUX_13_DC_0;
+  _263 = 1076723712B;
+  _264 = _262 & 2147483647;
+  _263->MUX_13_DC_0 ={v} _264;
+  # DEBUG BEGIN_STMT
+  _265 = 1076723712B;
+  _266 ={v} _265->MUX_13_DC_0;
+  _267 = 1076723712B;
+  _268 = _266 | 2147483648;
+  _267->MUX_13_DC_0 ={v} _268;
+  # DEBUG BEGIN_STMT
+  _269 = 1076723712B;
+  _270 ={v} _269->MUX_3_DC_0;
+  _271 = 1076723712B;
+  _272 = _270 & 2147483647;
+  _271->MUX_3_DC_0 ={v} _272;
+  # DEBUG BEGIN_STMT
+  _273 = 1076723712B;
+  _274 ={v} _273->MUX_3_DC_0;
+  _275 = 1076723712B;
+  _276 = _274 | 2147483648;
+  _275->MUX_3_DC_0 ={v} _276;
+  # DEBUG BEGIN_STMT
+  _277 = 1076723712B;
+  _278 ={v} _277->MUX_4_DC_0;
+  _279 = 1076723712B;
+  _280 = _278 & 2147483647;
+  _279->MUX_4_DC_0 ={v} _280;
+  # DEBUG BEGIN_STMT
+  _281 = 1076723712B;
+  _282 ={v} _281->MUX_4_DC_0;
+  _283 = 1076723712B;
+  _284 = _282 | 2147483648;
+  _283->MUX_4_DC_0 ={v} _284;
+  # DEBUG BEGIN_STMT
+  _285 = 1076723712B;
+  _286 ={v} _285->MUX_5_DC_0;
+  _287 = 1076723712B;
+  _288 = _286 & 2147483647;
+  _287->MUX_5_DC_0 ={v} _288;
+  # DEBUG BEGIN_STMT
+  _289 = 1076723712B;
+  _290 = 1076723712B;
+  _291 ={v} _289->MUX_5_DC_0;
+  _290->MUX_5_DC_0 ={v} _291;
+  # DEBUG BEGIN_STMT
+  _292 = 1076723712B;
+  _293 ={v} _292->MUX_6_DC_0;
+  _294 = 1076723712B;
+  _295 = _293 & 2147483647;
+  _294->MUX_6_DC_0 ={v} _295;
+  # DEBUG BEGIN_STMT
+  _296 = 1076723712B;
+  _297 = 1076723712B;
+  _298 ={v} _296->MUX_6_DC_0;
+  _297->MUX_6_DC_0 ={v} _298;
+  # DEBUG BEGIN_STMT
+  _299 = 1076723712B;
+  _300 ={v} _299->MUX_7_DC_0;
+  _301 = 1076723712B;
+  _302 = _300 & 2147483647;
+  _301->MUX_7_DC_0 ={v} _302;
+  # DEBUG BEGIN_STMT
+  _303 = 1076723712B;
+  _304 ={v} _303->MUX_7_DC_0;
+  _305 = 1076723712B;
+  _306 = _304 | 2147483648;
+  _305->MUX_7_DC_0 ={v} _306;
+  # DEBUG BEGIN_STMT
+  _307 = 1076723712B;
+  _308 ={v} _307->MUX_8_DC_0;
+  _309 = 1076723712B;
+  _310 = _308 & 2147483647;
+  _309->MUX_8_DC_0 ={v} _310;
+  # DEBUG BEGIN_STMT
+  _311 = 1076723712B;
+  _312 ={v} _311->MUX_8_DC_0;
+  _313 = 1076723712B;
+  _314 = _312 | 2147483648;
+  _313->MUX_8_DC_0 ={v} _314;
+  # DEBUG BEGIN_STMT
+  _315 = 1076723712B;
+  _316 ={v} _315->MUX_9_DC_0;
+  _317 = 1076723712B;
+  _318 = _316 & 2147483647;
+  _317->MUX_9_DC_0 ={v} _318;
+  # DEBUG BEGIN_STMT
+  _319 = 1076723712B;
+  _320 ={v} _319->MUX_9_DC_0;
+  _321 = 1076723712B;
+  _322 = _320 | 2147483648;
+  _321->MUX_9_DC_0 ={v} _322;
+  # DEBUG BEGIN_STMT
+  _323 = 1076723712B;
+  _324 ={v} _323->MUX_10_DC_0;
+  _325 = 1076723712B;
+  _326 = _324 & 2147483647;
+  _325->MUX_10_DC_0 ={v} _326;
+  # DEBUG BEGIN_STMT
+  _327 = 1076723712B;
+  _328 ={v} _327->MUX_10_DC_0;
+  _329 = 1076723712B;
+  _330 = _328 | 2147483648;
+  _329->MUX_10_DC_0 ={v} _330;
+  # DEBUG BEGIN_STMT
+  _331 = 1076723712B;
+  _332 ={v} _331->MUX_0_CSC;
+  _333 = 1076723712B;
+  _334 = _332 & 4043309055;
+  _333->MUX_0_CSC ={v} _334;
+  # DEBUG BEGIN_STMT
+  _335 = 1076723712B;
+  _336 ={v} _335->MUX_0_CSC;
+  _337 = 1076723712B;
+  _338 = _336 | 134217728;
+  _337->MUX_0_CSC ={v} _338;
+  # DEBUG BEGIN_STMT
+  _339 = 1076723712B;
+  _340 ={v} _339->MUX_1_CSC;
+  _341 = 1076723712B;
+  _342 = _340 & 3774873599;
+  _341->MUX_1_CSC ={v} _342;
+  # DEBUG BEGIN_STMT
+  _343 = 1076723712B;
+  _344 ={v} _343->MUX_1_CSC;
+  _345 = 1076723712B;
+  _346 = _344 | 369098752;
+  _345->MUX_1_CSC ={v} _346;
+  # DEBUG BEGIN_STMT
+  _347 = 1076723712B;
+  _348 ={v} _347->MUX_2_CSC;
+  _349 = 1076723712B;
+  _350 = _348 & 3774873599;
+  _349->MUX_2_CSC ={v} _350;
+  # DEBUG BEGIN_STMT
+  _351 = 1076723712B;
+  _352 ={v} _351->MUX_2_CSC;
+  _353 = 1076723712B;
+  _354 = _352 | 369098752;
+  _353->MUX_2_CSC ={v} _354;
+  # DEBUG BEGIN_STMT
+  _355 = 1076723712B;
+  _356 ={v} _355->MUX_13_CSC;
+  _357 = 1076723712B;
+  _358 = _356 & 3774873599;
+  _357->MUX_13_CSC ={v} _358;
+  # DEBUG BEGIN_STMT
+  _359 = 1076723712B;
+  _360 ={v} _359->MUX_13_CSC;
+  _361 = 1076723712B;
+  _362 = _360 | 369098752;
+  _361->MUX_13_CSC ={v} _362;
+  # DEBUG BEGIN_STMT
+  _363 = 1076723712B;
+  _364 ={v} _363->MUX_3_CSC;
+  _365 = 1076723712B;
+  _366 = _364 & 3774873599;
+  _365->MUX_3_CSC ={v} _366;
+  # DEBUG BEGIN_STMT
+  _367 = 1076723712B;
+  _368 ={v} _367->MUX_3_CSC;
+  _369 = 1076723712B;
+  _370 = _368 | 369098752;
+  _369->MUX_3_CSC ={v} _370;
+  # DEBUG BEGIN_STMT
+  _371 = 1076723712B;
+  _372 ={v} _371->MUX_4_CSC;
+  _373 = 1076723712B;
+  _374 = _372 & 3774873599;
+  _373->MUX_4_CSC ={v} _374;
+  # DEBUG BEGIN_STMT
+  _375 = 1076723712B;
+  _376 ={v} _375->MUX_4_CSC;
+  _377 = 1076723712B;
+  _378 = _376 | 369098752;
+  _377->MUX_4_CSC ={v} _378;
+  # DEBUG BEGIN_STMT
+  _379 = 1076723712B;
+  _380 ={v} _379->MUX_7_CSC;
+  _381 = 1076723712B;
+  _382 = _380 & 3774873599;
+  _381->MUX_7_CSC ={v} _382;
+  # DEBUG BEGIN_STMT
+  _383 = 1076723712B;
+  _384 ={v} _383->MUX_7_CSC;
+  _385 = 1076723712B;
+  _386 = _384 | 402653184;
+  _385->MUX_7_CSC ={v} _386;
+  # DEBUG BEGIN_STMT
+  _387 = 1076723712B;
+  _388 ={v} _387->MUX_8_CSC;
+  _389 = 1076723712B;
+  _390 = _388 & 3774873599;
+  _389->MUX_8_CSC ={v} _390;
+  # DEBUG BEGIN_STMT
+  _391 = 1076723712B;
+  _392 ={v} _391->MUX_8_CSC;
+  _393 = 1076723712B;
+  _394 = _392 | 402653184;
+  _393->MUX_8_CSC ={v} _394;
+  # DEBUG BEGIN_STMT
+  _395 = 1076723712B;
+  _396 ={v} _395->MUX_9_CSC;
+  _397 = 1076723712B;
+  _398 = _396 & 3774873599;
+  _397->MUX_9_CSC ={v} _398;
+  # DEBUG BEGIN_STMT
+  _399 = 1076723712B;
+  _400 ={v} _399->MUX_9_CSC;
+  _401 = 1076723712B;
+  _402 = _400 | 402653184;
+  _401->MUX_9_CSC ={v} _402;
+  # DEBUG BEGIN_STMT
+  _403 = 1076723712B;
+  _404 ={v} _403->MUX_10_CSC;
+  _405 = 1076723712B;
+  _406 = _404 & 4043309055;
+  _405->MUX_10_CSC ={v} _406;
+  # DEBUG BEGIN_STMT
+  _407 = 1076723712B;
+  _408 ={v} _407->MUX_10_CSC;
+  _409 = 1076723712B;
+  _410 = _408 | 150994944;
+  _409->MUX_10_CSC ={v} _410;
+  # DEBUG BEGIN_STMT
+  _411 = 1076723712B;
+  _412 ={v} _411->MUX_0_CSC;
+  _413 = 1076723712B;
+  _414 = _412 & 4294967291;
+  _413->MUX_0_CSC ={v} _414;
+  # DEBUG BEGIN_STMT
+  _415 = 1076723712B;
+  _416 ={v} _415->MUX_0_CSC;
+  _417 = 1076723712B;
+  _418 = _416 | 7;
+  _417->MUX_0_CSC ={v} _418;
+  # DEBUG BEGIN_STMT
+  _419 = 1076723712B;
+  _420 ={v} _419->MUX_1_CSC;
+  _421 = 1076723712B;
+  _422 = _420 & 4294967291;
+  _421->MUX_1_CSC ={v} _422;
+  # DEBUG BEGIN_STMT
+  _423 = 1076723712B;
+  _424 ={v} _423->MUX_1_CSC;
+  _425 = 1076723712B;
+  _426 = _424 | 4;
+  _425->MUX_1_CSC ={v} _426;
+  # DEBUG BEGIN_STMT
+  _427 = 1076723712B;
+  _428 ={v} _427->MUX_2_CSC;
+  _429 = 1076723712B;
+  _430 = _428 & 4294967291;
+  _429->MUX_2_CSC ={v} _430;
+  # DEBUG BEGIN_STMT
+  _431 = 1076723712B;
+  _432 ={v} _431->MUX_2_CSC;
+  _433 = 1076723712B;
+  _434 = _432 | 4;
+  _433->MUX_2_CSC ={v} _434;
+  # DEBUG BEGIN_STMT
+  _435 = 1076723712B;
+  _436 ={v} _435->MUX_3_CSC;
+  _437 = 1076723712B;
+  _438 = _436 & 4294967291;
+  _437->MUX_3_CSC ={v} _438;
+  # DEBUG BEGIN_STMT
+  _439 = 1076723712B;
+  _440 ={v} _439->MUX_3_CSC;
+  _441 = 1076723712B;
+  _442 = _440 | 4;
+  _441->MUX_3_CSC ={v} _442;
+  # DEBUG BEGIN_STMT
+  _443 = 1076723712B;
+  _444 ={v} _443->MUX_4_CSC;
+  _445 = 1076723712B;
+  _446 = _444 & 4294967291;
+  _445->MUX_4_CSC ={v} _446;
+  # DEBUG BEGIN_STMT
+  _447 = 1076723712B;
+  _448 ={v} _447->MUX_4_CSC;
+  _449 = 1076723712B;
+  _450 = _448 | 4;
+  _449->MUX_4_CSC ={v} _450;
+  # DEBUG BEGIN_STMT
+  _451 = 1076723712B;
+  _452 ={v} _451->MUX_13_CSC;
+  _453 = 1076723712B;
+  _454 = _452 & 4294967291;
+  _453->MUX_13_CSC ={v} _454;
+  # DEBUG BEGIN_STMT
+  _455 = 1076723712B;
+  _456 ={v} _455->MUX_13_CSC;
+  _457 = 1076723712B;
+  _458 = _456 | 4;
+  _457->MUX_13_CSC ={v} _458;
+  # DEBUG BEGIN_STMT
+  _459 = 1076723712B;
+  _460 ={v} _459->MUX_7_CSC;
+  _461 = 1076723712B;
+  _462 = _460 & 4294967291;
+  _461->MUX_7_CSC ={v} _462;
+  # DEBUG BEGIN_STMT
+  _463 = 1076723712B;
+  _464 ={v} _463->MUX_7_CSC;
+  _465 = 1076723712B;
+  _466 = _464 | 4;
+  _465->MUX_7_CSC ={v} _466;
+  # DEBUG BEGIN_STMT
+  _467 = 1076723712B;
+  _468 ={v} _467->MUX_8_CSC;
+  _469 = 1076723712B;
+  _470 = _468 & 4294967291;
+  _469->MUX_8_CSC ={v} _470;
+  # DEBUG BEGIN_STMT
+  _471 = 1076723712B;
+  _472 ={v} _471->MUX_8_CSC;
+  _473 = 1076723712B;
+  _474 = _472 | 4;
+  _473->MUX_8_CSC ={v} _474;
+  # DEBUG BEGIN_STMT
+  _475 = 1076723712B;
+  _476 ={v} _475->MUX_9_CSC;
+  _477 = 1076723712B;
+  _478 = _476 & 4294967291;
+  _477->MUX_9_CSC ={v} _478;
+  # DEBUG BEGIN_STMT
+  _479 = 1076723712B;
+  _480 ={v} _479->MUX_9_CSC;
+  _481 = 1076723712B;
+  _482 = _480 | 4;
+  _481->MUX_9_CSC ={v} _482;
+  # DEBUG BEGIN_STMT
+  _483 = 1076723712B;
+  _484 ={v} _483->MUX_10_CSC;
+  _485 = 1076723712B;
+  _486 = _484 & 4294967291;
+  _485->MUX_10_CSC ={v} _486;
+  # DEBUG BEGIN_STMT
+  _487 = 1076723712B;
+  _488 ={v} _487->MUX_10_CSC;
+  _489 = 1076723712B;
+  _490 = _488 | 4;
+  _489->MUX_10_CSC ={v} _490;
+  # DEBUG BEGIN_STMT
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _491 = 1076723712B;
+  _492 ={v} _491->MUX_0_CSS;
+  _493 = _492 & 4;
+  if (_493 == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _494 = 1076723712B;
+  _495 ={v} _494->MUX_1_CSS;
+  _496 = _495 & 4;
+  if (_496 == 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _497 = 1076723712B;
+  _498 ={v} _497->MUX_2_CSS;
+  _499 = _498 & 4;
+  if (_499 == 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _500 = 1076723712B;
+  _501 ={v} _500->MUX_3_CSS;
+  _502 = _501 & 4;
+  if (_502 == 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _503 = 1076723712B;
+  _504 ={v} _503->MUX_4_CSS;
+  _505 = _504 & 4;
+  if (_505 == 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 21> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _506 = 1076723712B;
+  _507 ={v} _506->MUX_13_CSS;
+  _508 = _507 & 4;
+  if (_508 == 0)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 22> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _509 = 1076723712B;
+  _510 ={v} _509->MUX_7_CSS;
+  _511 = _510 & 4;
+  if (_511 == 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 23> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _512 = 1076723712B;
+  _513 ={v} _512->MUX_8_CSS;
+  _514 = _513 & 4;
+  if (_514 == 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 24> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _515 = 1076723712B;
+  _516 ={v} _515->MUX_9_CSS;
+  _517 = _516 & 4;
+  if (_517 == 0)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 25> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _518 = 1076723712B;
+  _519 ={v} _518->MUX_10_CSS;
+  _520 = _519 & 4;
+  if (_520 == 0)
+    goto <bb 25>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 26> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _521 = 1076723712B;
+  _522 ={v} _521->MUX_0_CSS;
+  _523 = _522 >> 16;
+  _524 = _523 & 1;
+  if (_524 == 1)
+    goto <bb 26>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 27> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _525 = 1076723712B;
+  _526 ={v} _525->MUX_1_CSS;
+  _527 = _526 >> 16;
+  _528 = _527 & 1;
+  if (_528 == 1)
+    goto <bb 27>; [INV]
+  else
+    goto <bb 28>; [INV]
+
+  <bb 28> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _529 = 1076723712B;
+  _530 ={v} _529->MUX_2_CSS;
+  _531 = _530 >> 16;
+  _532 = _531 & 1;
+  if (_532 == 1)
+    goto <bb 28>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 29> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _533 = 1076723712B;
+  _534 ={v} _533->MUX_3_CSS;
+  _535 = _534 >> 16;
+  _536 = _535 & 1;
+  if (_536 == 1)
+    goto <bb 29>; [INV]
+  else
+    goto <bb 30>; [INV]
+
+  <bb 30> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _537 = 1076723712B;
+  _538 ={v} _537->MUX_4_CSS;
+  _539 = _538 >> 16;
+  _540 = _539 & 1;
+  if (_540 == 1)
+    goto <bb 30>; [INV]
+  else
+    goto <bb 31>; [INV]
+
+  <bb 31> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _541 = 1076723712B;
+  _542 ={v} _541->MUX_7_CSS;
+  _543 = _542 >> 16;
+  _544 = _543 & 1;
+  if (_544 == 1)
+    goto <bb 31>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 32> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _545 = 1076723712B;
+  _546 ={v} _545->MUX_8_CSS;
+  _547 = _546 >> 16;
+  _548 = _547 & 1;
+  if (_548 == 1)
+    goto <bb 32>; [INV]
+  else
+    goto <bb 33>; [INV]
+
+  <bb 33> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _549 = 1076723712B;
+  _550 ={v} _549->MUX_9_CSS;
+  _551 = _550 >> 16;
+  _552 = _551 & 1;
+  if (_552 == 1)
+    goto <bb 33>; [INV]
+  else
+    goto <bb 34>; [INV]
+
+  <bb 34> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _553 = 1076723712B;
+  _554 ={v} _553->MUX_10_CSS;
+  _555 = _554 >> 16;
+  _556 = _555 & 1;
+  if (_556 == 1)
+    goto <bb 34>; [INV]
+  else
+    goto <bb 35>; [INV]
+
+  <bb 35> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _557 = 1076723712B;
+  _558 ={v} _557->MUX_13_CSS;
+  _559 = _558 >> 16;
+  _560 = _559 & 1;
+  if (_560 == 1)
+    goto <bb 35>; [INV]
+  else
+    goto <bb 36>; [INV]
+
+  <bb 36> :
+  # DEBUG BEGIN_STMT
+  _679 = 0;
+  return _679;
+
+}
+
+
+Init_PLL ()
+{
+  volatile int result;
+  volatile uint32 timeout;
+  struct PLL_Type * _1;
+  long unsigned int _2;
+  struct PLL_Type * _3;
+  long unsigned int _4;
+  struct PLL_Type * _5;
+  struct PLL_Type * _6;
+  long unsigned int _7;
+  struct PLL_Type * _8;
+  long unsigned int _9;
+  struct PLL_Type * _10;
+  long unsigned int _11;
+  struct PLL_Type * _12;
+  struct PLL_Type * _13;
+  long unsigned int _14;
+  struct PLL_Type * _15;
+  long unsigned int _16;
+  struct PLL_Type * _17;
+  long unsigned int _18;
+  struct PLL_Type * _19;
+  long unsigned int _20;
+  struct PLL_Type * _21;
+  long unsigned int _22;
+  struct PLL_Type * _23;
+  long unsigned int _24;
+  struct PLL_Type * _25;
+  long unsigned int _26;
+  struct PLL_Type * _27;
+  struct PLL_Type * _28;
+  long unsigned int _29;
+  struct PLL_Type * _30;
+  long unsigned int _31;
+  struct PLL_Type * _32;
+  long unsigned int _33;
+  struct PLL_Type * _34;
+  long unsigned int _35;
+  struct PLL_Type * _36;
+  long unsigned int _37;
+  struct PLL_Type * _38;
+  long unsigned int _39;
+  struct PLL_Type * _40;
+  long unsigned int _41;
+  struct PLL_Type * _42;
+  long unsigned int _43;
+  struct PLL_Type * _44;
+  long unsigned int _45;
+  struct PLL_Type * _46;
+  long unsigned int _47;
+  struct PLL_Type * _48;
+  long unsigned int _49;
+  struct PLL_Type * _50;
+  struct PLL_Type * _51;
+  long unsigned int _52;
+  struct PLL_Type * _53;
+  long unsigned int _54;
+  struct PLL_Type * _55;
+  long unsigned int _56;
+  struct PLL_Type * _57;
+  long unsigned int _58;
+  struct PLL_Type * _59;
+  long unsigned int _60;
+  struct PLL_Type * _61;
+  long unsigned int _62;
+  struct PLL_Type * _63;
+  long unsigned int _64;
+  struct PLL_Type * _65;
+  long unsigned int _66;
+  struct PLL_Type * _67;
+  long unsigned int _68;
+  struct PLL_Type * _69;
+  long unsigned int _70;
+  struct PLL_Type * _71;
+  long unsigned int _72;
+  struct PLL_Type * _73;
+  struct PLL_Type * _74;
+  long unsigned int _75;
+  struct PLL_Type * _76;
+  long unsigned int _77;
+  struct PLL_Type * _78;
+  long unsigned int _79;
+  struct PLL_Type * _80;
+  long unsigned int _81;
+  struct PLL_Type * _82;
+  long unsigned int _83;
+  struct PLL_Type * _84;
+  long unsigned int _85;
+  struct PLL_Type * _86;
+  long unsigned int _87;
+  struct PLL_Type * _88;
+  struct PLL_Type * _89;
+  long unsigned int _90;
+  struct PLL_Type * _91;
+  long unsigned int _92;
+  struct PLL_Type * _93;
+  long unsigned int _94;
+  struct PLL_Type * _95;
+  long unsigned int _96;
+  struct PLL_Type * _97;
+  long unsigned int _98;
+  struct PLL_Type * _99;
+  long unsigned int _100;
+  struct PLL_Type * _101;
+  long unsigned int _102;
+  struct PLL_Type * _103;
+  struct PLL_Type * _104;
+  long unsigned int _105;
+  struct PLL_Type * _106;
+  long unsigned int _107;
+  long unsigned int _108;
+  long unsigned int _109;
+  struct PLL_Type * _110;
+  long unsigned int _111;
+  struct PLL_Type * _112;
+  long unsigned int _113;
+  struct PLL_Type * _114;
+  struct PLL_Type * _115;
+  long unsigned int _116;
+  struct PLL_Type * _117;
+  long unsigned int _118;
+  struct PLL_Type * _119;
+  long unsigned int _120;
+  struct PLL_Type * _121;
+  long unsigned int _122;
+  struct PLL_Type * _123;
+  long unsigned int _124;
+  struct PLL_Type * _125;
+  long unsigned int _126;
+  struct PLL_Type * _127;
+  long unsigned int _128;
+  struct PLL_Type * _129;
+  long unsigned int _130;
+  struct PLL_Type * _131;
+  long unsigned int _132;
+  struct PLL_Type * _133;
+  long unsigned int _134;
+  struct PLL_Type * _135;
+  long unsigned int _136;
+  struct PLL_Type * _137;
+  long unsigned int _138;
+  struct PLL_Type * _139;
+  long unsigned int _140;
+  struct PLL_Type * _141;
+  long unsigned int _142;
+  struct PLL_Type * _143;
+  long unsigned int _144;
+  struct PLL_Type * _145;
+  struct PLL_Type * _146;
+  long unsigned int _147;
+  struct PLL_Type * _148;
+  long unsigned int _149;
+  long unsigned int _150;
+  long unsigned int _151;
+  long unsigned int timeout.17_152;
+  long unsigned int timeout.18_153;
+  long unsigned int _154;
+  long unsigned int timeout.19_155;
+  struct PLL_Type * _156;
+  long unsigned int _157;
+  struct PLL_Type * _158;
+  long unsigned int _159;
+  struct PLL_Type * _160;
+  long unsigned int _161;
+  struct PLL_Type * _162;
+  long unsigned int _163;
+  struct PLL_Type * _164;
+  long unsigned int _165;
+  struct PLL_Type * _166;
+  long unsigned int _167;
+  struct PLL_Type * _168;
+  long unsigned int _169;
+  struct PLL_Type * _170;
+  long unsigned int _171;
+  int _223;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout ={v} 65535;
+  # DEBUG BEGIN_STMT
+  result ={v} 0;
+  # DEBUG BEGIN_STMT
+  _1 = 1076756480B;
+  _2 ={v} _1->PLLODIV[0];
+  _3 = 1076756480B;
+  _4 = _2 & 2147483647;
+  _3->PLLODIV[0] ={v} _4;
+  # DEBUG BEGIN_STMT
+  _5 = 1076756480B;
+  _6 = 1076756480B;
+  _7 ={v} _5->PLLODIV[0];
+  _6->PLLODIV[0] ={v} _7;
+  # DEBUG BEGIN_STMT
+  _8 = 1076756480B;
+  _9 ={v} _8->PLLODIV[1];
+  _10 = 1076756480B;
+  _11 = _9 & 2147483647;
+  _10->PLLODIV[1] ={v} _11;
+  # DEBUG BEGIN_STMT
+  _12 = 1076756480B;
+  _13 = 1076756480B;
+  _14 ={v} _12->PLLODIV[1];
+  _13->PLLODIV[1] ={v} _14;
+  # DEBUG BEGIN_STMT
+  _15 = 1076756480B;
+  _16 ={v} _15->PLLCR;
+  _17 = 1076756480B;
+  _18 = _16 & 2147483647;
+  _17->PLLCR ={v} _18;
+  # DEBUG BEGIN_STMT
+  _19 = 1076756480B;
+  _20 ={v} _19->PLLCR;
+  _21 = 1076756480B;
+  _22 = _20 | 2147483648;
+  _21->PLLCR ={v} _22;
+  # DEBUG BEGIN_STMT
+  _23 = 1076756480B;
+  _24 ={v} _23->PLLDV;
+  _25 = 1076756480B;
+  _26 = _24 & 2181038079;
+  _25->PLLDV ={v} _26;
+  # DEBUG BEGIN_STMT
+  _27 = 1076756480B;
+  _28 = 1076756480B;
+  _29 ={v} _27->PLLDV;
+  _28->PLLDV ={v} _29;
+  # DEBUG BEGIN_STMT
+  _30 = 1076756480B;
+  _31 ={v} _30->PLLDV;
+  _32 = 1076756480B;
+  _33 = _31 & 4294938623;
+  _32->PLLDV ={v} _33;
+  # DEBUG BEGIN_STMT
+  _34 = 1076756480B;
+  _35 ={v} _34->PLLDV;
+  _36 = 1076756480B;
+  _37 = _35 | 4096;
+  _36->PLLDV ={v} _37;
+  # DEBUG BEGIN_STMT
+  _38 = 1076756480B;
+  _39 ={v} _38->PLLDV;
+  _40 = 1076756480B;
+  _41 = _39 & 4294967040;
+  _40->PLLDV ={v} _41;
+  # DEBUG BEGIN_STMT
+  _42 = 1076756480B;
+  _43 ={v} _42->PLLDV;
+  _44 = 1076756480B;
+  _45 = _43 | 30;
+  _44->PLLDV ={v} _45;
+  # DEBUG BEGIN_STMT
+  _46 = 1076756480B;
+  _47 ={v} _46->PLLFD;
+  _48 = 1076756480B;
+  _49 = _47 & 3221225471;
+  _48->PLLFD ={v} _49;
+  # DEBUG BEGIN_STMT
+  _50 = 1076756480B;
+  _51 = 1076756480B;
+  _52 ={v} _50->PLLFD;
+  _51->PLLFD ={v} _52;
+  # DEBUG BEGIN_STMT
+  _53 = 1076756480B;
+  _54 ={v} _53->PLLFD;
+  _55 = 1076756480B;
+  _56 = _54 & 3758096383;
+  _55->PLLFD ={v} _56;
+  # DEBUG BEGIN_STMT
+  _57 = 1076756480B;
+  _58 ={v} _57->PLLFD;
+  _59 = 1076756480B;
+  _60 = _58 | 536870912;
+  _59->PLLFD ={v} _60;
+  # DEBUG BEGIN_STMT
+  _61 = 1076756480B;
+  _62 ={v} _61->PLLFD;
+  _63 = 1076756480B;
+  _64 = _62 & 4026531839;
+  _63->PLLFD ={v} _64;
+  # DEBUG BEGIN_STMT
+  _65 = 1076756480B;
+  _66 ={v} _65->PLLFD;
+  _67 = 1076756480B;
+  _68 = _66 | 268435456;
+  _67->PLLFD ={v} _68;
+  # DEBUG BEGIN_STMT
+  _69 = 1076756480B;
+  _70 ={v} _69->PLLFD;
+  _71 = 1076756480B;
+  _72 = _70 & 4294934528;
+  _71->PLLFD ={v} _72;
+  # DEBUG BEGIN_STMT
+  _73 = 1076756480B;
+  _74 = 1076756480B;
+  _75 ={v} _73->PLLFD;
+  _74->PLLFD ={v} _75;
+  # DEBUG BEGIN_STMT
+  _76 = 1076756480B;
+  _77 ={v} _76->PLLFM;
+  _78 = 1076756480B;
+  _79 = _77 & 3221225471;
+  _78->PLLFM ={v} _79;
+  # DEBUG BEGIN_STMT
+  _80 = 1076756480B;
+  _81 ={v} _80->PLLFM;
+  _82 = 1076756480B;
+  _83 = _81 | 1073741824;
+  _82->PLLFM ={v} _83;
+  # DEBUG BEGIN_STMT
+  _84 = 1076756480B;
+  _85 ={v} _84->PLLFM;
+  _86 = 1076756480B;
+  _87 = _85 & 4294965248;
+  _86->PLLFM ={v} _87;
+  # DEBUG BEGIN_STMT
+  _88 = 1076756480B;
+  _89 = 1076756480B;
+  _90 ={v} _88->PLLFM;
+  _89->PLLFM ={v} _90;
+  # DEBUG BEGIN_STMT
+  _91 = 1076756480B;
+  _92 ={v} _91->PLLFM;
+  _93 = 1076756480B;
+  _94 = _92 & 3758096383;
+  _93->PLLFM ={v} _94;
+  # DEBUG BEGIN_STMT
+  _95 = 1076756480B;
+  _96 ={v} _95->PLLFM;
+  _97 = 1076756480B;
+  _98 = _96 | 536870912;
+  _97->PLLFM ={v} _98;
+  # DEBUG BEGIN_STMT
+  _99 = 1076756480B;
+  _100 ={v} _99->PLLFM;
+  _101 = 1076756480B;
+  _102 = _100 & 4227923967;
+  _101->PLLFM ={v} _102;
+  # DEBUG BEGIN_STMT
+  _103 = 1076756480B;
+  _104 = 1076756480B;
+  _105 ={v} _103->PLLFM;
+  _104->PLLFM ={v} _105;
+  # DEBUG BEGIN_STMT
+  _106 = 1076756480B;
+  _107 ={v} _106->PLLFM;
+  _108 = _107 >> 30;
+  _109 = _108 & 1;
+  if (_109 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _110 = 1076756480B;
+  _111 ={v} _110->PLLCAL2;
+  _112 = 1076756480B;
+  _113 = _111 & 4294966911;
+  _112->PLLCAL2 ={v} _113;
+  # DEBUG BEGIN_STMT
+  _114 = 1076756480B;
+  _115 = 1076756480B;
+  _116 ={v} _114->PLLCAL2;
+  _115->PLLCAL2 ={v} _116;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _117 = 1076756480B;
+  _118 ={v} _117->PLLCAL2;
+  _119 = 1076756480B;
+  _120 = _118 & 4294966911;
+  _119->PLLCAL2 ={v} _120;
+  # DEBUG BEGIN_STMT
+  _121 = 1076756480B;
+  _122 ={v} _121->PLLCAL2;
+  _123 = 1076756480B;
+  _124 = _122 | 128;
+  _123->PLLCAL2 ={v} _124;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _125 = 1076756480B;
+  _126 ={v} _125->PLLODIV[0];
+  _127 = 1076756480B;
+  _128 = _126 & 4278255615;
+  _127->PLLODIV[0] ={v} _128;
+  # DEBUG BEGIN_STMT
+  _129 = 1076756480B;
+  _130 ={v} _129->PLLODIV[0];
+  _131 = 1076756480B;
+  _132 = _130 | 131072;
+  _131->PLLODIV[0] ={v} _132;
+  # DEBUG BEGIN_STMT
+  _133 = 1076756480B;
+  _134 ={v} _133->PLLODIV[1];
+  _135 = 1076756480B;
+  _136 = _134 & 4278255615;
+  _135->PLLODIV[1] ={v} _136;
+  # DEBUG BEGIN_STMT
+  _137 = 1076756480B;
+  _138 ={v} _137->PLLODIV[1];
+  _139 = 1076756480B;
+  _140 = _138 | 65536;
+  _139->PLLODIV[1] ={v} _140;
+  # DEBUG BEGIN_STMT
+  _141 = 1076756480B;
+  _142 ={v} _141->PLLCR;
+  _143 = 1076756480B;
+  _144 = _142 & 2147483647;
+  _143->PLLCR ={v} _144;
+  # DEBUG BEGIN_STMT
+  _145 = 1076756480B;
+  _146 = 1076756480B;
+  _147 ={v} _145->PLLCR;
+  _146->PLLCR ={v} _147;
+  # DEBUG BEGIN_STMT
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _148 = 1076756480B;
+  _149 ={v} _148->PLLSR;
+  _150 = _149 >> 2;
+  _151 = _150 & 1;
+  if (_151 != 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  timeout.17_152 ={v} timeout;
+  timeout.18_153 = timeout.17_152;
+  _154 = timeout.18_153 + 4294967295;
+  timeout ={v} _154;
+  if (timeout.18_153 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  timeout.19_155 ={v} timeout;
+  if (timeout.19_155 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  result ={v} 1;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _156 = 1076756480B;
+  _157 ={v} _156->PLLODIV[0];
+  _158 = 1076756480B;
+  _159 = _157 & 2147483647;
+  _158->PLLODIV[0] ={v} _159;
+  # DEBUG BEGIN_STMT
+  _160 = 1076756480B;
+  _161 ={v} _160->PLLODIV[0];
+  _162 = 1076756480B;
+  _163 = _161 | 2147483648;
+  _162->PLLODIV[0] ={v} _163;
+  # DEBUG BEGIN_STMT
+  _164 = 1076756480B;
+  _165 ={v} _164->PLLODIV[1];
+  _166 = 1076756480B;
+  _167 = _165 & 2147483647;
+  _166->PLLODIV[1] ={v} _167;
+  # DEBUG BEGIN_STMT
+  _168 = 1076756480B;
+  _169 ={v} _168->PLLODIV[1];
+  _170 = 1076756480B;
+  _171 = _169 | 2147483648;
+  _170->PLLODIV[1] ={v} _171;
+  # DEBUG BEGIN_STMT
+  _223 ={v} result;
+  return _223;
+
+}
+
+
+Init_PMC ()
+{
+  volatile int result;
+  volatile uint32 timeout;
+  struct PMC_Type * _1;
+  struct PMC_Type * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct PMC_Type * _5;
+  long unsigned int _6;
+  struct PMC_Type * _7;
+  long unsigned int _8;
+  struct PMC_Type * _9;
+  struct PMC_Type * _10;
+  long unsigned int _11;
+  long unsigned int timeout.20_12;
+  long unsigned int timeout.21_13;
+  long unsigned int _14;
+  int _25;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout ={v} 65535;
+  # DEBUG BEGIN_STMT
+  result ={v} 0;
+  # DEBUG BEGIN_STMT
+  _1 = 1076789248B;
+  _1->LVSC ={v} 4294967295;
+  # DEBUG BEGIN_STMT
+  _2 = 1076789248B;
+  _3 ={v} _2->VERID;
+  _4 = _3 & 1;
+  if (_4 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 = 1076789248B;
+  _6 ={v} _5->CONFIG;
+  _7 = 1076789248B;
+  _8 = _6 & 4294967291;
+  _7->CONFIG ={v} _8;
+  # DEBUG BEGIN_STMT
+  _9 = 1076789248B;
+  _10 = 1076789248B;
+  _11 ={v} _9->CONFIG;
+  _10->CONFIG ={v} _11;
+  # DEBUG BEGIN_STMT
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  timeout.20_12 ={v} timeout;
+  timeout.21_13 = timeout.20_12;
+  _14 = timeout.21_13 + 4294967295;
+  timeout ={v} _14;
+  if (timeout.21_13 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  timeout ={v} 65535;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _25 ={v} result;
+  return _25;
+
+}
+
+
+Init_FXOSC ()
+{
+  volatile int result;
+  volatile uint32 timeout;
+  struct FXOSC_Type * _1;
+  long unsigned int _2;
+  struct FXOSC_Type * _3;
+  long unsigned int _4;
+  struct FXOSC_Type * _5;
+  long unsigned int _6;
+  struct FXOSC_Type * _7;
+  long unsigned int _8;
+  struct FXOSC_Type * _9;
+  long unsigned int _10;
+  struct FXOSC_Type * _11;
+  long unsigned int _12;
+  struct FXOSC_Type * _13;
+  long unsigned int _14;
+  struct FXOSC_Type * _15;
+  long unsigned int _16;
+  struct FXOSC_Type * _17;
+  long unsigned int _18;
+  struct FXOSC_Type * _19;
+  long unsigned int _20;
+  struct FXOSC_Type * _21;
+  struct FXOSC_Type * _22;
+  long unsigned int _23;
+  struct FXOSC_Type * _24;
+  long unsigned int _25;
+  struct FXOSC_Type * _26;
+  long unsigned int _27;
+  struct FXOSC_Type * _28;
+  long unsigned int _29;
+  struct FXOSC_Type * _30;
+  long unsigned int _31;
+  struct FXOSC_Type * _32;
+  long unsigned int _33;
+  struct FXOSC_Type * _34;
+  long unsigned int _35;
+  struct FXOSC_Type * _36;
+  long unsigned int _37;
+  struct FXOSC_Type * _38;
+  long unsigned int _39;
+  struct FXOSC_Type * _40;
+  long unsigned int _41;
+  long unsigned int _42;
+  long unsigned int _43;
+  long unsigned int timeout.14_44;
+  long unsigned int timeout.15_45;
+  long unsigned int _46;
+  long unsigned int timeout.16_47;
+  int _66;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout ={v} 65535;
+  # DEBUG BEGIN_STMT
+  result ={v} 0;
+  # DEBUG BEGIN_STMT
+  _1 = 1076707328B;
+  _2 ={v} _1->CTRL;
+  _3 = 1076707328B;
+  _4 = _2 & 4278255615;
+  _3->CTRL ={v} _4;
+  # DEBUG BEGIN_STMT
+  _5 = 1076707328B;
+  _6 ={v} _5->CTRL;
+  _7 = 1076707328B;
+  _8 = _6 | 10289152;
+  _7->CTRL ={v} _8;
+  # DEBUG BEGIN_STMT
+  _9 = 1076707328B;
+  _10 ={v} _9->CTRL;
+  _11 = 1076707328B;
+  _12 = _10 & 4294967055;
+  _11->CTRL ={v} _12;
+  # DEBUG BEGIN_STMT
+  _13 = 1076707328B;
+  _14 ={v} _13->CTRL;
+  _15 = 1076707328B;
+  _16 = _14 | 192;
+  _15->CTRL ={v} _16;
+  # DEBUG BEGIN_STMT
+  _17 = 1076707328B;
+  _18 ={v} _17->CTRL;
+  _19 = 1076707328B;
+  _20 = _18 & 2147483647;
+  _19->CTRL ={v} _20;
+  # DEBUG BEGIN_STMT
+  _21 = 1076707328B;
+  _22 = 1076707328B;
+  _23 ={v} _21->CTRL;
+  _22->CTRL ={v} _23;
+  # DEBUG BEGIN_STMT
+  _24 = 1076707328B;
+  _25 ={v} _24->CTRL;
+  _26 = 1076707328B;
+  _27 = _25 & 4278190079;
+  _26->CTRL ={v} _27;
+  # DEBUG BEGIN_STMT
+  _28 = 1076707328B;
+  _29 ={v} _28->CTRL;
+  _30 = 1076707328B;
+  _31 = _29 | 16777216;
+  _30->CTRL ={v} _31;
+  # DEBUG BEGIN_STMT
+  _32 = 1076707328B;
+  _33 ={v} _32->CTRL;
+  _34 = 1076707328B;
+  _35 = _33 & 4294967294;
+  _34->CTRL ={v} _35;
+  # DEBUG BEGIN_STMT
+  _36 = 1076707328B;
+  _37 ={v} _36->CTRL;
+  _38 = 1076707328B;
+  _39 = _37 | 1;
+  _38->CTRL ={v} _39;
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _40 = 1076707328B;
+  _41 ={v} _40->STAT;
+  _42 = _41 >> 31;
+  _43 = _42 & 1;
+  if (_43 != 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  timeout.14_44 ={v} timeout;
+  timeout.15_45 = timeout.14_44;
+  _46 = timeout.15_45 + 4294967295;
+  timeout ={v} _46;
+  if (timeout.15_45 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  timeout.16_47 ={v} timeout;
+  if (timeout.16_47 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  result ={v} 1;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _66 ={v} result;
+  return _66;
+
+}
+
+
+Init_FIRC ()
+{
+  volatile uint32 * io_config_reg_gpr;
+  volatile int result;
+  volatile uint32 timeout;
+  struct CONFIGURATION_GPR_Type * _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  struct FIRC_Type * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int timeout.8_8;
+  long unsigned int timeout.9_9;
+  long unsigned int _10;
+  long unsigned int timeout.10_11;
+  int _22;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout ={v} 65535;
+  # DEBUG BEGIN_STMT
+  result ={v} 0;
+  # DEBUG BEGIN_STMT
+  io_config_reg_gpr_18 = 1077526628B;
+  # DEBUG io_config_reg_gpr => io_config_reg_gpr_18
+  # DEBUG BEGIN_STMT
+  _1 = 1077526528B;
+  _2 ={v} _1->CONFIG_REG_GPR;
+  _3 = _2 >> 29;
+  _4 = _3 & 7;
+  if (_4 == 5)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  *io_config_reg_gpr_18 ={v} 2684354563;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _5 = 1076690944B;
+  _6 ={v} _5->STATUS_REGISTER;
+  _7 = _6 & 1;
+  if (_7 != 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  timeout.8_8 ={v} timeout;
+  timeout.9_9 = timeout.8_8;
+  _10 = timeout.9_9 + 4294967295;
+  timeout ={v} _10;
+  if (timeout.9_9 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  timeout.10_11 ={v} timeout;
+  if (timeout.10_11 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  result ={v} 1;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _22 ={v} result;
+  return _22;
+
+}
+
+
+sys_registerIsrHandler (uint8 irq_id, void (*int_function_t) (void) isr_handler)
+{
+  volatile uint32 * _1;
+  long unsigned int _2;
+  int _3;
+  int _4;
+  int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  volatile uint32 * _8;
+  long unsigned int isr_handler.0_9;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+  # DEBUG BEGIN_STMT
+  _1 = 3758157064B;
+  _2 ={v} *_1;
+  _3 = (int) irq_id_12(D);
+  _4 = _3 + 16;
+  _5 = _4 << 2;
+  _6 = (long unsigned int) _5;
+  _7 = _2 + _6;
+  _8 = (volatile uint32 *) _7;
+  isr_handler.0_9 = (long unsigned int) isr_handler_13(D);
+  *_8 ={v} isr_handler.0_9;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+  return;
+
+}
+
+
+sys_enableIsrSource (uint8 id, uint8 prio)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  NVIC_SetPriority (id_2(D), prio_3(D));
+  # DEBUG BEGIN_STMT
+  NVIC_EnableIRQ (id_2(D));
+  return;
+
+}
+
+
+sys_disableIsrSource (uint8 id)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  NVIC_DisableIRQ (id_2(D));
+  return;
+
+}
+
+
+sys_disableAllInterrupts ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+  return;
+
+}
+
+
+sys_enableAllInterrupts ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+  return;
+
+}
+
+

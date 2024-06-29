@@ -1,0 +1,2193 @@
+EUnit_GetCoreID ()
+{
+  uint8 D.9958;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  D.9958 = Sys_GetCoreID ();
+  return D.9958;
+
+}
+
+
+sys_stop ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("  wfi");
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+sys_halt ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("  wfi");
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+sys_init ()
+{
+  volatile uint32 status;
+  Std_ReturnType D.9918;
+  int D.9917;
+  int D.9916;
+  int D.9915;
+  int D.9914;
+  int D.9913;
+  int D.9912;
+  int D.9911;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  status = 0;
+  # DEBUG BEGIN_STMT
+  D.9911 = Init_MC_ME ();
+  _1 = (long unsigned int) D.9911;
+  status.1_2 = status;
+  _3 = _1 + status.1_2;
+  status = _3;
+  # DEBUG BEGIN_STMT
+  D.9912 = Init_FIRC ();
+  _4 = (long unsigned int) D.9912;
+  status.2_5 = status;
+  _6 = _4 + status.2_5;
+  status = _6;
+  # DEBUG BEGIN_STMT
+  D.9913 = Switch_Core_FIRC ();
+  _7 = (long unsigned int) D.9913;
+  status.3_8 = status;
+  _9 = _7 + status.3_8;
+  status = _9;
+  # DEBUG BEGIN_STMT
+  D.9914 = Init_FXOSC ();
+  _10 = (long unsigned int) D.9914;
+  status.4_11 = status;
+  _12 = _10 + status.4_11;
+  status = _12;
+  # DEBUG BEGIN_STMT
+  D.9915 = Init_PLL ();
+  _13 = (long unsigned int) D.9915;
+  status.5_14 = status;
+  _15 = _13 + status.5_14;
+  status = _15;
+  # DEBUG BEGIN_STMT
+  D.9916 = Init_PMC ();
+  _16 = (long unsigned int) D.9916;
+  status.6_17 = status;
+  _18 = _16 + status.6_17;
+  status = _18;
+  # DEBUG BEGIN_STMT
+  D.9917 = Init_MC_CGM ();
+  _19 = (long unsigned int) D.9917;
+  status.7_20 = status;
+  _21 = _19 + status.7_20;
+  status = _21;
+  # DEBUG BEGIN_STMT
+  D.9918 = 0;
+  return D.9918;
+
+}
+
+
+Init_MC_ME ()
+{
+  int D.9920;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 = _1->PRTN0_PCONF;
+  _3 = 1076740096B;
+  _4 = _2 | 1;
+  _3->PRTN0_PCONF = _4;
+  # DEBUG BEGIN_STMT
+  _5 = 1076740096B;
+  _6 = _5->PRTN1_PCONF;
+  _7 = 1076740096B;
+  _8 = _6 | 1;
+  _7->PRTN1_PCONF = _8;
+  # DEBUG BEGIN_STMT
+  _9 = 1076740096B;
+  _10 = _9->PRTN2_PCONF;
+  _11 = 1076740096B;
+  _12 = _10 | 1;
+  _11->PRTN2_PCONF = _12;
+  # DEBUG BEGIN_STMT
+  _13 = 1076740096B;
+  _14 = _13->PRTN0_PUPD;
+  _15 = 1076740096B;
+  _16 = _14 | 1;
+  _15->PRTN0_PUPD = _16;
+  # DEBUG BEGIN_STMT
+  _17 = 1076740096B;
+  _18 = _17->PRTN1_PUPD;
+  _19 = 1076740096B;
+  _20 = _18 | 1;
+  _19->PRTN1_PUPD = _20;
+  # DEBUG BEGIN_STMT
+  _21 = 1076740096B;
+  _22 = _21->PRTN2_PUPD;
+  _23 = 1076740096B;
+  _24 = _22 | 1;
+  _23->PRTN2_PUPD = _24;
+  # DEBUG BEGIN_STMT
+  _25 = 1076740096B;
+  _25->CTL_KEY = 23280;
+  # DEBUG BEGIN_STMT
+  _26 = 1076740096B;
+  _26->CTL_KEY = 42255;
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _27 = 1076740096B;
+  _28 = _27->PRTN0_PUPD;
+  _29 = _28 & 1;
+  if (_29 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _30 = 1076740096B;
+  _31 = _30->PRTN1_PUPD;
+  _32 = _31 & 1;
+  if (_32 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _33 = 1076740096B;
+  _34 = _33->PRTN2_PUPD;
+  _35 = _34 & 1;
+  if (_35 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _36 = 1076740096B;
+  _37 = _36->PRTN0_PCONF;
+  _38 = _37 & 1;
+  if (_38 != 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _39 = 1076740096B;
+  _40 = _39->PRTN1_PCONF;
+  _41 = _40 & 1;
+  if (_41 != 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _42 = 1076740096B;
+  _43 = _42->PRTN2_PCONF;
+  _44 = _43 & 1;
+  if (_44 != 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _45 = 1076740096B;
+  _46 = _45->PRTN0_COFB0_CLKEN;
+  _47 = 1076740096B;
+  _48 = _46 | 8;
+  _47->PRTN0_COFB0_CLKEN = _48;
+  # DEBUG BEGIN_STMT
+  _49 = 1076740096B;
+  _50 = _49->PRTN0_COFB1_CLKEN;
+  _51 = 1076740096B;
+  _52 = _50 | 63455;
+  _51->PRTN0_COFB1_CLKEN = _52;
+  # DEBUG BEGIN_STMT
+  _53 = 1076740096B;
+  _54 = _53->PRTN1_COFB0_CLKEN;
+  _55 = 1076740096B;
+  _56 = _54 | 4290772991;
+  _55->PRTN1_COFB0_CLKEN = _56;
+  # DEBUG BEGIN_STMT
+  _57 = 1076740096B;
+  _58 = _57->PRTN1_COFB1_CLKEN;
+  _59 = 1076740096B;
+  _60 = _58 | 4294881279;
+  _59->PRTN1_COFB1_CLKEN = _60;
+  # DEBUG BEGIN_STMT
+  _61 = 1076740096B;
+  _62 = _61->PRTN1_COFB2_CLKEN;
+  _63 = 1076740096B;
+  _64 = _62 | 3153330174;
+  _63->PRTN1_COFB2_CLKEN = _64;
+  # DEBUG BEGIN_STMT
+  _65 = 1076740096B;
+  _66 = _65->PRTN1_COFB3_CLKEN;
+  _67 = 1076740096B;
+  _68 = _66 | 24559;
+  _67->PRTN1_COFB3_CLKEN = _68;
+  # DEBUG BEGIN_STMT
+  _69 = 1076740096B;
+  _70 = _69->PRTN2_COFB0_CLKEN;
+  _71 = 1076740096B;
+  _72 = _70 | 2147483639;
+  _71->PRTN2_COFB0_CLKEN = _72;
+  # DEBUG BEGIN_STMT
+  _73 = 1076740096B;
+  _74 = _73->PRTN2_COFB1_CLKEN;
+  _75 = 1076740096B;
+  _76 = _74 | 3465119738;
+  _75->PRTN2_COFB1_CLKEN = _76;
+  # DEBUG BEGIN_STMT
+  _77 = 1076740096B;
+  _78 = _77->PRTN2_COFB2_CLKEN;
+  _79 = 1076740096B;
+  _80 = _78 | 57;
+  _79->PRTN2_COFB2_CLKEN = _80;
+  # DEBUG BEGIN_STMT
+  _81 = 1076740096B;
+  _82 = _81->PRTN0_PUPD;
+  _83 = 1076740096B;
+  _84 = _82 | 1;
+  _83->PRTN0_PUPD = _84;
+  # DEBUG BEGIN_STMT
+  _85 = 1076740096B;
+  _86 = _85->PRTN1_PUPD;
+  _87 = 1076740096B;
+  _88 = _86 | 1;
+  _87->PRTN1_PUPD = _88;
+  # DEBUG BEGIN_STMT
+  _89 = 1076740096B;
+  _90 = _89->PRTN2_PUPD;
+  _91 = 1076740096B;
+  _92 = _90 | 1;
+  _91->PRTN2_PUPD = _92;
+  # DEBUG BEGIN_STMT
+  _93 = 1076740096B;
+  _93->CTL_KEY = 23280;
+  # DEBUG BEGIN_STMT
+  _94 = 1076740096B;
+  _94->CTL_KEY = 42255;
+  # DEBUG BEGIN_STMT
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _95 = 1076740096B;
+  _96 = _95->PRTN0_PUPD;
+  _97 = _96 & 1;
+  if (_97 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _98 = 1076740096B;
+  _99 = _98->PRTN1_PUPD;
+  _100 = _99 & 1;
+  if (_100 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _101 = 1076740096B;
+  _102 = _101->PRTN2_PUPD;
+  _103 = _102 & 1;
+  if (_103 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _104 = 1076740096B;
+  _105 = _104->PRTN0_COFB1_STAT;
+  _106 = _105 & 63455;
+  if (_106 != 63455)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _107 = 1076740096B;
+  _108 = _107->PRTN1_COFB1_STAT;
+  _109 = _108 & 4294881279;
+  if (_109 != 4294881279)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _110 = 1076740096B;
+  _111 = _110->PRTN1_COFB2_STAT;
+  _112 = _111 & 3153330174;
+  if (_112 != 3153330174)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _113 = 1076740096B;
+  _114 = _113->PRTN1_COFB0_STAT;
+  _115 = _114 & 4290772991;
+  if (_115 != 4290772991)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _116 = 1076740096B;
+  _117 = _116->PRTN1_COFB3_STAT;
+  _118 = _117 & 24559;
+  if (_118 != 24559)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _119 = 1076740096B;
+  _120 = _119->PRTN2_COFB0_STAT;
+  _121 = _120 & 2147483639;
+  if (_121 != 2147483639)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _122 = 1076740096B;
+  _123 = _122->PRTN2_COFB1_STAT;
+  _124 = _123 & 3465119738;
+  if (_124 != 3465119738)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  D.9920 = 0;
+  return D.9920;
+
+}
+
+
+Switch_Core_FIRC ()
+{
+  volatile int result;
+  volatile uint32 timeout;
+  int D.9935;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout = 65535;
+  # DEBUG BEGIN_STMT
+  result = 0;
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 = _1->MUX_0_CSS;
+  _3 = _2 & 65536;
+  if (_3 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _4 = 1076723712B;
+  _5 = _4->MUX_0_CSC;
+  _6 = 1076723712B;
+  _7 = _5 | 11;
+  _6->MUX_0_CSC = _7;
+  # DEBUG BEGIN_STMT
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _8 = 1076723712B;
+  _9 = _8->MUX_0_CSS;
+  _10 = _9 >> 3;
+  _11 = _10 & 1;
+  if (_11 != 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _12 = 1076723712B;
+  _13 = _12->MUX_0_CSS;
+  _14 = _13 & 65536;
+  if (_14 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  timeout.11_15 = timeout;
+  timeout.12_16 = timeout.11_15;
+  _17 = timeout.12_16 + 4294967295;
+  timeout = _17;
+  if (timeout.12_16 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  timeout.13_18 = timeout;
+  if (timeout.13_18 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  result = 1;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  D.9935 = result;
+  return D.9935;
+
+}
+
+
+Init_MC_CGM ()
+{
+  int D.9956;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076723712B;
+  _2 = _1->MUX_0_DIV_TRIG_CTRL;
+  _3 = 1076723712B;
+  _4 = _2 & 2147483647;
+  _3->MUX_0_DIV_TRIG_CTRL = _4;
+  # DEBUG BEGIN_STMT
+  _5 = 1076723712B;
+  _6 = _5->MUX_0_DIV_TRIG_CTRL;
+  _7 = 1076723712B;
+  _8 = _6 | 2147483648;
+  _7->MUX_0_DIV_TRIG_CTRL = _8;
+  # DEBUG BEGIN_STMT
+  _9 = 1076723712B;
+  _10 = _9->MUX_0_DIV_TRIG_CTRL;
+  _11 = 1076723712B;
+  _12 = _10 & 4294967294;
+  _11->MUX_0_DIV_TRIG_CTRL = _12;
+  # DEBUG BEGIN_STMT
+  _13 = 1076723712B;
+  _14 = _13->MUX_0_DIV_TRIG_CTRL;
+  _15 = 1076723712B;
+  _16 = _14 | 1;
+  _15->MUX_0_DIV_TRIG_CTRL = _16;
+  # DEBUG BEGIN_STMT
+  _17 = 1076723712B;
+  _18 = _17->MUX_0_DC_0;
+  _19 = 1076723712B;
+  _20 = _18 & 4294508543;
+  _19->MUX_0_DC_0 = _20;
+  # DEBUG BEGIN_STMT
+  _21 = 1076723712B;
+  _22 = _21->MUX_0_DC_0;
+  _23 = 1076723712B;
+  _24 = _22 | 65536;
+  _23->MUX_0_DC_0 = _24;
+  # DEBUG BEGIN_STMT
+  _25 = 1076723712B;
+  _26 = _25->MUX_0_DC_1;
+  _27 = 1076723712B;
+  _28 = _26 & 4294508543;
+  _27->MUX_0_DC_1 = _28;
+  # DEBUG BEGIN_STMT
+  _29 = 1076723712B;
+  _30 = _29->MUX_0_DC_1;
+  _31 = 1076723712B;
+  _32 = _30 | 65536;
+  _31->MUX_0_DC_1 = _32;
+  # DEBUG BEGIN_STMT
+  _33 = 1076723712B;
+  _34 = _33->MUX_0_DC_2;
+  _35 = 1076723712B;
+  _36 = _34 & 4293984255;
+  _35->MUX_0_DC_2 = _36;
+  # DEBUG BEGIN_STMT
+  _37 = 1076723712B;
+  _38 = _37->MUX_0_DC_2;
+  _39 = 1076723712B;
+  _40 = _38 | 196608;
+  _39->MUX_0_DC_2 = _40;
+  # DEBUG BEGIN_STMT
+  _41 = 1076723712B;
+  _42 = _41->MUX_0_DC_3;
+  _43 = 1076723712B;
+  _44 = _42 & 4294508543;
+  _43->MUX_0_DC_3 = _44;
+  # DEBUG BEGIN_STMT
+  _45 = 1076723712B;
+  _46 = _45->MUX_0_DC_3;
+  _47 = 1076723712B;
+  _48 = _46 | 65536;
+  _47->MUX_0_DC_3 = _48;
+  # DEBUG BEGIN_STMT
+  _49 = 1076723712B;
+  _50 = _49->MUX_0_DC_4;
+  _51 = 1076723712B;
+  _52 = _50 & 4294508543;
+  _51->MUX_0_DC_4 = _52;
+  # DEBUG BEGIN_STMT
+  _53 = 1076723712B;
+  _54 = _53->MUX_0_DC_4;
+  _55 = 1076723712B;
+  _56 = _54 | 196608;
+  _55->MUX_0_DC_4 = _56;
+  # DEBUG BEGIN_STMT
+  _57 = 1076723712B;
+  _58 = _57->MUX_0_DC_5;
+  _59 = 1076723712B;
+  _60 = _58 & 4294508543;
+  _59->MUX_0_DC_5 = _60;
+  # DEBUG BEGIN_STMT
+  _61 = 1076723712B;
+  _62 = _61->MUX_0_DC_5;
+  _63 = 1076723712B;
+  _64 = _62 | 196608;
+  _63->MUX_0_DC_5 = _64;
+  # DEBUG BEGIN_STMT
+  _65 = 1076723712B;
+  _66 = _65->MUX_0_DC_6;
+  _67 = 1076723712B;
+  _68 = _66 & 4294508543;
+  _67->MUX_0_DC_6 = _68;
+  # DEBUG BEGIN_STMT
+  _69 = 1076723712B;
+  _70 = 1076723712B;
+  _71 = _69->MUX_0_DC_6;
+  _70->MUX_0_DC_6 = _71;
+  # DEBUG BEGIN_STMT
+  _72 = 1076723712B;
+  _72->MUX_0_DIV_TRIG = 4294967295;
+  # DEBUG BEGIN_STMT
+  _73 = 1076723712B;
+  _74 = _73->MUX_1_DC_0;
+  _75 = 1076723712B;
+  _76 = _74 & 4294901759;
+  _75->MUX_1_DC_0 = _76;
+  # DEBUG BEGIN_STMT
+  _77 = 1076723712B;
+  _78 = 1076723712B;
+  _79 = _77->MUX_1_DC_0;
+  _78->MUX_1_DC_0 = _79;
+  # DEBUG BEGIN_STMT
+  _80 = 1076723712B;
+  _81 = _80->MUX_2_DC_0;
+  _82 = 1076723712B;
+  _83 = _81 & 4294901759;
+  _82->MUX_2_DC_0 = _83;
+  # DEBUG BEGIN_STMT
+  _84 = 1076723712B;
+  _85 = 1076723712B;
+  _86 = _84->MUX_2_DC_0;
+  _85->MUX_2_DC_0 = _86;
+  # DEBUG BEGIN_STMT
+  _87 = 1076723712B;
+  _88 = _87->MUX_13_DC_0;
+  _89 = 1076723712B;
+  _90 = _88 & 4294901759;
+  _89->MUX_13_DC_0 = _90;
+  # DEBUG BEGIN_STMT
+  _91 = 1076723712B;
+  _92 = 1076723712B;
+  _93 = _91->MUX_13_DC_0;
+  _92->MUX_13_DC_0 = _93;
+  # DEBUG BEGIN_STMT
+  _94 = 1076723712B;
+  _95 = _94->MUX_3_DC_0;
+  _96 = 1076723712B;
+  _97 = _95 & 4294770687;
+  _96->MUX_3_DC_0 = _97;
+  # DEBUG BEGIN_STMT
+  _98 = 1076723712B;
+  _99 = 1076723712B;
+  _100 = _98->MUX_3_DC_0;
+  _99->MUX_3_DC_0 = _100;
+  # DEBUG BEGIN_STMT
+  _101 = 1076723712B;
+  _102 = _101->MUX_4_DC_0;
+  _103 = 1076723712B;
+  _104 = _102 & 4294770687;
+  _103->MUX_4_DC_0 = _104;
+  # DEBUG BEGIN_STMT
+  _105 = 1076723712B;
+  _106 = 1076723712B;
+  _107 = _105->MUX_4_DC_0;
+  _106->MUX_4_DC_0 = _107;
+  # DEBUG BEGIN_STMT
+  _108 = 1076723712B;
+  _109 = _108->MUX_5_DC_0;
+  _110 = 1076723712B;
+  _111 = _109 & 4290838527;
+  _110->MUX_5_DC_0 = _111;
+  # DEBUG BEGIN_STMT
+  _112 = 1076723712B;
+  _113 = 1076723712B;
+  _114 = _112->MUX_5_DC_0;
+  _113->MUX_5_DC_0 = _114;
+  # DEBUG BEGIN_STMT
+  _115 = 1076723712B;
+  _116 = _115->MUX_6_DC_0;
+  _117 = 1076723712B;
+  _118 = _116 & 4290838527;
+  _117->MUX_6_DC_0 = _118;
+  # DEBUG BEGIN_STMT
+  _119 = 1076723712B;
+  _120 = 1076723712B;
+  _121 = _119->MUX_6_DC_0;
+  _120->MUX_6_DC_0 = _121;
+  # DEBUG BEGIN_STMT
+  _122 = 1076723712B;
+  _123 = _122->MUX_7_DC_0;
+  _124 = 1076723712B;
+  _125 = _123 & 4290838527;
+  _124->MUX_7_DC_0 = _125;
+  # DEBUG BEGIN_STMT
+  _126 = 1076723712B;
+  _127 = _126->MUX_7_DC_0;
+  _128 = 1076723712B;
+  _129 = _127 | 65536;
+  _128->MUX_7_DC_0 = _129;
+  # DEBUG BEGIN_STMT
+  _130 = 1076723712B;
+  _131 = _130->MUX_8_DC_0;
+  _132 = 1076723712B;
+  _133 = _131 & 4290838527;
+  _132->MUX_8_DC_0 = _133;
+  # DEBUG BEGIN_STMT
+  _134 = 1076723712B;
+  _135 = _134->MUX_8_DC_0;
+  _136 = 1076723712B;
+  _137 = _135 | 65536;
+  _136->MUX_8_DC_0 = _137;
+  # DEBUG BEGIN_STMT
+  _138 = 1076723712B;
+  _139 = _138->MUX_9_DC_0;
+  _140 = 1076723712B;
+  _141 = _139 & 4290838527;
+  _140->MUX_9_DC_0 = _141;
+  # DEBUG BEGIN_STMT
+  _142 = 1076723712B;
+  _143 = 1076723712B;
+  _144 = _142->MUX_9_DC_0;
+  _143->MUX_9_DC_0 = _144;
+  # DEBUG BEGIN_STMT
+  _145 = 1076723712B;
+  _146 = _145->MUX_10_DC_0;
+  _147 = 1076723712B;
+  _148 = _146 & 4294508543;
+  _147->MUX_10_DC_0 = _148;
+  # DEBUG BEGIN_STMT
+  _149 = 1076723712B;
+  _150 = _149->MUX_10_DC_0;
+  _151 = 1076723712B;
+  _152 = _150 | 131072;
+  _151->MUX_10_DC_0 = _152;
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _153 = 1076723712B;
+  _154 = _153->MUX_0_DIV_UPD_STAT;
+  _155 = _154 & 1;
+  if (_155 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _156 = 1076723712B;
+  _157 = _156->MUX_1_DIV_UPD_STAT;
+  _158 = _157 & 1;
+  if (_158 == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _159 = 1076723712B;
+  _160 = _159->MUX_2_DIV_UPD_STAT;
+  _161 = _160 & 1;
+  if (_161 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _162 = 1076723712B;
+  _163 = _162->MUX_3_DIV_UPD_STAT;
+  _164 = _163 & 1;
+  if (_164 == 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _165 = 1076723712B;
+  _166 = _165->MUX_4_DIV_UPD_STAT;
+  _167 = _166 & 1;
+  if (_167 == 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _168 = 1076723712B;
+  _169 = _168->MUX_5_DIV_UPD_STAT;
+  _170 = _169 & 1;
+  if (_170 == 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _171 = 1076723712B;
+  _172 = _171->MUX_6_DIV_UPD_STAT;
+  _173 = _172 & 1;
+  if (_173 == 1)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _174 = 1076723712B;
+  _175 = _174->MUX_7_DIV_UPD_STAT;
+  _176 = _175 & 1;
+  if (_176 == 1)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _177 = 1076723712B;
+  _178 = _177->MUX_8_DIV_UPD_STAT;
+  _179 = _178 & 1;
+  if (_179 == 1)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _180 = 1076723712B;
+  _181 = _180->MUX_9_DIV_UPD_STAT;
+  _182 = _181 & 1;
+  if (_182 == 1)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _183 = 1076723712B;
+  _184 = _183->MUX_10_DIV_UPD_STAT;
+  _185 = _184 & 1;
+  if (_185 == 1)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _186 = 1076723712B;
+  _187 = _186->MUX_13_DIV_UPD_STAT;
+  _188 = _187 & 1;
+  if (_188 == 1)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  _189 = 1076723712B;
+  _190 = _189->MUX_0_DC_0;
+  _191 = 1076723712B;
+  _192 = _190 & 2147483647;
+  _191->MUX_0_DC_0 = _192;
+  # DEBUG BEGIN_STMT
+  _193 = 1076723712B;
+  _194 = _193->MUX_0_DC_0;
+  _195 = 1076723712B;
+  _196 = _194 | 2147483648;
+  _195->MUX_0_DC_0 = _196;
+  # DEBUG BEGIN_STMT
+  _197 = 1076723712B;
+  _198 = _197->MUX_0_DC_1;
+  _199 = 1076723712B;
+  _200 = _198 & 2147483647;
+  _199->MUX_0_DC_1 = _200;
+  # DEBUG BEGIN_STMT
+  _201 = 1076723712B;
+  _202 = _201->MUX_0_DC_1;
+  _203 = 1076723712B;
+  _204 = _202 | 2147483648;
+  _203->MUX_0_DC_1 = _204;
+  # DEBUG BEGIN_STMT
+  _205 = 1076723712B;
+  _206 = _205->MUX_0_DC_2;
+  _207 = 1076723712B;
+  _208 = _206 & 2147483647;
+  _207->MUX_0_DC_2 = _208;
+  # DEBUG BEGIN_STMT
+  _209 = 1076723712B;
+  _210 = _209->MUX_0_DC_2;
+  _211 = 1076723712B;
+  _212 = _210 | 2147483648;
+  _211->MUX_0_DC_2 = _212;
+  # DEBUG BEGIN_STMT
+  _213 = 1076723712B;
+  _214 = _213->MUX_0_DC_3;
+  _215 = 1076723712B;
+  _216 = _214 & 2147483647;
+  _215->MUX_0_DC_3 = _216;
+  # DEBUG BEGIN_STMT
+  _217 = 1076723712B;
+  _218 = _217->MUX_0_DC_3;
+  _219 = 1076723712B;
+  _220 = _218 | 2147483648;
+  _219->MUX_0_DC_3 = _220;
+  # DEBUG BEGIN_STMT
+  _221 = 1076723712B;
+  _222 = _221->MUX_0_DC_4;
+  _223 = 1076723712B;
+  _224 = _222 & 2147483647;
+  _223->MUX_0_DC_4 = _224;
+  # DEBUG BEGIN_STMT
+  _225 = 1076723712B;
+  _226 = _225->MUX_0_DC_4;
+  _227 = 1076723712B;
+  _228 = _226 | 2147483648;
+  _227->MUX_0_DC_4 = _228;
+  # DEBUG BEGIN_STMT
+  _229 = 1076723712B;
+  _230 = _229->MUX_0_DC_5;
+  _231 = 1076723712B;
+  _232 = _230 & 2147483647;
+  _231->MUX_0_DC_5 = _232;
+  # DEBUG BEGIN_STMT
+  _233 = 1076723712B;
+  _234 = _233->MUX_0_DC_5;
+  _235 = 1076723712B;
+  _236 = _234 | 2147483648;
+  _235->MUX_0_DC_5 = _236;
+  # DEBUG BEGIN_STMT
+  _237 = 1076723712B;
+  _238 = _237->MUX_0_DC_6;
+  _239 = 1076723712B;
+  _240 = _238 & 2147483647;
+  _239->MUX_0_DC_6 = _240;
+  # DEBUG BEGIN_STMT
+  _241 = 1076723712B;
+  _242 = _241->MUX_0_DC_6;
+  _243 = 1076723712B;
+  _244 = _242 | 2147483648;
+  _243->MUX_0_DC_6 = _244;
+  # DEBUG BEGIN_STMT
+  _245 = 1076723712B;
+  _246 = _245->MUX_1_DC_0;
+  _247 = 1076723712B;
+  _248 = _246 & 2147483647;
+  _247->MUX_1_DC_0 = _248;
+  # DEBUG BEGIN_STMT
+  _249 = 1076723712B;
+  _250 = _249->MUX_1_DC_0;
+  _251 = 1076723712B;
+  _252 = _250 | 2147483648;
+  _251->MUX_1_DC_0 = _252;
+  # DEBUG BEGIN_STMT
+  _253 = 1076723712B;
+  _254 = _253->MUX_2_DC_0;
+  _255 = 1076723712B;
+  _256 = _254 & 2147483647;
+  _255->MUX_2_DC_0 = _256;
+  # DEBUG BEGIN_STMT
+  _257 = 1076723712B;
+  _258 = _257->MUX_2_DC_0;
+  _259 = 1076723712B;
+  _260 = _258 | 2147483648;
+  _259->MUX_2_DC_0 = _260;
+  # DEBUG BEGIN_STMT
+  _261 = 1076723712B;
+  _262 = _261->MUX_13_DC_0;
+  _263 = 1076723712B;
+  _264 = _262 & 2147483647;
+  _263->MUX_13_DC_0 = _264;
+  # DEBUG BEGIN_STMT
+  _265 = 1076723712B;
+  _266 = _265->MUX_13_DC_0;
+  _267 = 1076723712B;
+  _268 = _266 | 2147483648;
+  _267->MUX_13_DC_0 = _268;
+  # DEBUG BEGIN_STMT
+  _269 = 1076723712B;
+  _270 = _269->MUX_3_DC_0;
+  _271 = 1076723712B;
+  _272 = _270 & 2147483647;
+  _271->MUX_3_DC_0 = _272;
+  # DEBUG BEGIN_STMT
+  _273 = 1076723712B;
+  _274 = _273->MUX_3_DC_0;
+  _275 = 1076723712B;
+  _276 = _274 | 2147483648;
+  _275->MUX_3_DC_0 = _276;
+  # DEBUG BEGIN_STMT
+  _277 = 1076723712B;
+  _278 = _277->MUX_4_DC_0;
+  _279 = 1076723712B;
+  _280 = _278 & 2147483647;
+  _279->MUX_4_DC_0 = _280;
+  # DEBUG BEGIN_STMT
+  _281 = 1076723712B;
+  _282 = _281->MUX_4_DC_0;
+  _283 = 1076723712B;
+  _284 = _282 | 2147483648;
+  _283->MUX_4_DC_0 = _284;
+  # DEBUG BEGIN_STMT
+  _285 = 1076723712B;
+  _286 = _285->MUX_5_DC_0;
+  _287 = 1076723712B;
+  _288 = _286 & 2147483647;
+  _287->MUX_5_DC_0 = _288;
+  # DEBUG BEGIN_STMT
+  _289 = 1076723712B;
+  _290 = 1076723712B;
+  _291 = _289->MUX_5_DC_0;
+  _290->MUX_5_DC_0 = _291;
+  # DEBUG BEGIN_STMT
+  _292 = 1076723712B;
+  _293 = _292->MUX_6_DC_0;
+  _294 = 1076723712B;
+  _295 = _293 & 2147483647;
+  _294->MUX_6_DC_0 = _295;
+  # DEBUG BEGIN_STMT
+  _296 = 1076723712B;
+  _297 = 1076723712B;
+  _298 = _296->MUX_6_DC_0;
+  _297->MUX_6_DC_0 = _298;
+  # DEBUG BEGIN_STMT
+  _299 = 1076723712B;
+  _300 = _299->MUX_7_DC_0;
+  _301 = 1076723712B;
+  _302 = _300 & 2147483647;
+  _301->MUX_7_DC_0 = _302;
+  # DEBUG BEGIN_STMT
+  _303 = 1076723712B;
+  _304 = _303->MUX_7_DC_0;
+  _305 = 1076723712B;
+  _306 = _304 | 2147483648;
+  _305->MUX_7_DC_0 = _306;
+  # DEBUG BEGIN_STMT
+  _307 = 1076723712B;
+  _308 = _307->MUX_8_DC_0;
+  _309 = 1076723712B;
+  _310 = _308 & 2147483647;
+  _309->MUX_8_DC_0 = _310;
+  # DEBUG BEGIN_STMT
+  _311 = 1076723712B;
+  _312 = _311->MUX_8_DC_0;
+  _313 = 1076723712B;
+  _314 = _312 | 2147483648;
+  _313->MUX_8_DC_0 = _314;
+  # DEBUG BEGIN_STMT
+  _315 = 1076723712B;
+  _316 = _315->MUX_9_DC_0;
+  _317 = 1076723712B;
+  _318 = _316 & 2147483647;
+  _317->MUX_9_DC_0 = _318;
+  # DEBUG BEGIN_STMT
+  _319 = 1076723712B;
+  _320 = _319->MUX_9_DC_0;
+  _321 = 1076723712B;
+  _322 = _320 | 2147483648;
+  _321->MUX_9_DC_0 = _322;
+  # DEBUG BEGIN_STMT
+  _323 = 1076723712B;
+  _324 = _323->MUX_10_DC_0;
+  _325 = 1076723712B;
+  _326 = _324 & 2147483647;
+  _325->MUX_10_DC_0 = _326;
+  # DEBUG BEGIN_STMT
+  _327 = 1076723712B;
+  _328 = _327->MUX_10_DC_0;
+  _329 = 1076723712B;
+  _330 = _328 | 2147483648;
+  _329->MUX_10_DC_0 = _330;
+  # DEBUG BEGIN_STMT
+  _331 = 1076723712B;
+  _332 = _331->MUX_0_CSC;
+  _333 = 1076723712B;
+  _334 = _332 & 4043309055;
+  _333->MUX_0_CSC = _334;
+  # DEBUG BEGIN_STMT
+  _335 = 1076723712B;
+  _336 = _335->MUX_0_CSC;
+  _337 = 1076723712B;
+  _338 = _336 | 134217728;
+  _337->MUX_0_CSC = _338;
+  # DEBUG BEGIN_STMT
+  _339 = 1076723712B;
+  _340 = _339->MUX_1_CSC;
+  _341 = 1076723712B;
+  _342 = _340 & 3774873599;
+  _341->MUX_1_CSC = _342;
+  # DEBUG BEGIN_STMT
+  _343 = 1076723712B;
+  _344 = _343->MUX_1_CSC;
+  _345 = 1076723712B;
+  _346 = _344 | 369098752;
+  _345->MUX_1_CSC = _346;
+  # DEBUG BEGIN_STMT
+  _347 = 1076723712B;
+  _348 = _347->MUX_2_CSC;
+  _349 = 1076723712B;
+  _350 = _348 & 3774873599;
+  _349->MUX_2_CSC = _350;
+  # DEBUG BEGIN_STMT
+  _351 = 1076723712B;
+  _352 = _351->MUX_2_CSC;
+  _353 = 1076723712B;
+  _354 = _352 | 369098752;
+  _353->MUX_2_CSC = _354;
+  # DEBUG BEGIN_STMT
+  _355 = 1076723712B;
+  _356 = _355->MUX_13_CSC;
+  _357 = 1076723712B;
+  _358 = _356 & 3774873599;
+  _357->MUX_13_CSC = _358;
+  # DEBUG BEGIN_STMT
+  _359 = 1076723712B;
+  _360 = _359->MUX_13_CSC;
+  _361 = 1076723712B;
+  _362 = _360 | 369098752;
+  _361->MUX_13_CSC = _362;
+  # DEBUG BEGIN_STMT
+  _363 = 1076723712B;
+  _364 = _363->MUX_3_CSC;
+  _365 = 1076723712B;
+  _366 = _364 & 3774873599;
+  _365->MUX_3_CSC = _366;
+  # DEBUG BEGIN_STMT
+  _367 = 1076723712B;
+  _368 = _367->MUX_3_CSC;
+  _369 = 1076723712B;
+  _370 = _368 | 369098752;
+  _369->MUX_3_CSC = _370;
+  # DEBUG BEGIN_STMT
+  _371 = 1076723712B;
+  _372 = _371->MUX_4_CSC;
+  _373 = 1076723712B;
+  _374 = _372 & 3774873599;
+  _373->MUX_4_CSC = _374;
+  # DEBUG BEGIN_STMT
+  _375 = 1076723712B;
+  _376 = _375->MUX_4_CSC;
+  _377 = 1076723712B;
+  _378 = _376 | 369098752;
+  _377->MUX_4_CSC = _378;
+  # DEBUG BEGIN_STMT
+  _379 = 1076723712B;
+  _380 = _379->MUX_7_CSC;
+  _381 = 1076723712B;
+  _382 = _380 & 3774873599;
+  _381->MUX_7_CSC = _382;
+  # DEBUG BEGIN_STMT
+  _383 = 1076723712B;
+  _384 = _383->MUX_7_CSC;
+  _385 = 1076723712B;
+  _386 = _384 | 402653184;
+  _385->MUX_7_CSC = _386;
+  # DEBUG BEGIN_STMT
+  _387 = 1076723712B;
+  _388 = _387->MUX_8_CSC;
+  _389 = 1076723712B;
+  _390 = _388 & 3774873599;
+  _389->MUX_8_CSC = _390;
+  # DEBUG BEGIN_STMT
+  _391 = 1076723712B;
+  _392 = _391->MUX_8_CSC;
+  _393 = 1076723712B;
+  _394 = _392 | 402653184;
+  _393->MUX_8_CSC = _394;
+  # DEBUG BEGIN_STMT
+  _395 = 1076723712B;
+  _396 = _395->MUX_9_CSC;
+  _397 = 1076723712B;
+  _398 = _396 & 3774873599;
+  _397->MUX_9_CSC = _398;
+  # DEBUG BEGIN_STMT
+  _399 = 1076723712B;
+  _400 = _399->MUX_9_CSC;
+  _401 = 1076723712B;
+  _402 = _400 | 402653184;
+  _401->MUX_9_CSC = _402;
+  # DEBUG BEGIN_STMT
+  _403 = 1076723712B;
+  _404 = _403->MUX_10_CSC;
+  _405 = 1076723712B;
+  _406 = _404 & 4043309055;
+  _405->MUX_10_CSC = _406;
+  # DEBUG BEGIN_STMT
+  _407 = 1076723712B;
+  _408 = _407->MUX_10_CSC;
+  _409 = 1076723712B;
+  _410 = _408 | 150994944;
+  _409->MUX_10_CSC = _410;
+  # DEBUG BEGIN_STMT
+  _411 = 1076723712B;
+  _412 = _411->MUX_0_CSC;
+  _413 = 1076723712B;
+  _414 = _412 & 4294967291;
+  _413->MUX_0_CSC = _414;
+  # DEBUG BEGIN_STMT
+  _415 = 1076723712B;
+  _416 = _415->MUX_0_CSC;
+  _417 = 1076723712B;
+  _418 = _416 | 7;
+  _417->MUX_0_CSC = _418;
+  # DEBUG BEGIN_STMT
+  _419 = 1076723712B;
+  _420 = _419->MUX_1_CSC;
+  _421 = 1076723712B;
+  _422 = _420 & 4294967291;
+  _421->MUX_1_CSC = _422;
+  # DEBUG BEGIN_STMT
+  _423 = 1076723712B;
+  _424 = _423->MUX_1_CSC;
+  _425 = 1076723712B;
+  _426 = _424 | 4;
+  _425->MUX_1_CSC = _426;
+  # DEBUG BEGIN_STMT
+  _427 = 1076723712B;
+  _428 = _427->MUX_2_CSC;
+  _429 = 1076723712B;
+  _430 = _428 & 4294967291;
+  _429->MUX_2_CSC = _430;
+  # DEBUG BEGIN_STMT
+  _431 = 1076723712B;
+  _432 = _431->MUX_2_CSC;
+  _433 = 1076723712B;
+  _434 = _432 | 4;
+  _433->MUX_2_CSC = _434;
+  # DEBUG BEGIN_STMT
+  _435 = 1076723712B;
+  _436 = _435->MUX_3_CSC;
+  _437 = 1076723712B;
+  _438 = _436 & 4294967291;
+  _437->MUX_3_CSC = _438;
+  # DEBUG BEGIN_STMT
+  _439 = 1076723712B;
+  _440 = _439->MUX_3_CSC;
+  _441 = 1076723712B;
+  _442 = _440 | 4;
+  _441->MUX_3_CSC = _442;
+  # DEBUG BEGIN_STMT
+  _443 = 1076723712B;
+  _444 = _443->MUX_4_CSC;
+  _445 = 1076723712B;
+  _446 = _444 & 4294967291;
+  _445->MUX_4_CSC = _446;
+  # DEBUG BEGIN_STMT
+  _447 = 1076723712B;
+  _448 = _447->MUX_4_CSC;
+  _449 = 1076723712B;
+  _450 = _448 | 4;
+  _449->MUX_4_CSC = _450;
+  # DEBUG BEGIN_STMT
+  _451 = 1076723712B;
+  _452 = _451->MUX_13_CSC;
+  _453 = 1076723712B;
+  _454 = _452 & 4294967291;
+  _453->MUX_13_CSC = _454;
+  # DEBUG BEGIN_STMT
+  _455 = 1076723712B;
+  _456 = _455->MUX_13_CSC;
+  _457 = 1076723712B;
+  _458 = _456 | 4;
+  _457->MUX_13_CSC = _458;
+  # DEBUG BEGIN_STMT
+  _459 = 1076723712B;
+  _460 = _459->MUX_7_CSC;
+  _461 = 1076723712B;
+  _462 = _460 & 4294967291;
+  _461->MUX_7_CSC = _462;
+  # DEBUG BEGIN_STMT
+  _463 = 1076723712B;
+  _464 = _463->MUX_7_CSC;
+  _465 = 1076723712B;
+  _466 = _464 | 4;
+  _465->MUX_7_CSC = _466;
+  # DEBUG BEGIN_STMT
+  _467 = 1076723712B;
+  _468 = _467->MUX_8_CSC;
+  _469 = 1076723712B;
+  _470 = _468 & 4294967291;
+  _469->MUX_8_CSC = _470;
+  # DEBUG BEGIN_STMT
+  _471 = 1076723712B;
+  _472 = _471->MUX_8_CSC;
+  _473 = 1076723712B;
+  _474 = _472 | 4;
+  _473->MUX_8_CSC = _474;
+  # DEBUG BEGIN_STMT
+  _475 = 1076723712B;
+  _476 = _475->MUX_9_CSC;
+  _477 = 1076723712B;
+  _478 = _476 & 4294967291;
+  _477->MUX_9_CSC = _478;
+  # DEBUG BEGIN_STMT
+  _479 = 1076723712B;
+  _480 = _479->MUX_9_CSC;
+  _481 = 1076723712B;
+  _482 = _480 | 4;
+  _481->MUX_9_CSC = _482;
+  # DEBUG BEGIN_STMT
+  _483 = 1076723712B;
+  _484 = _483->MUX_10_CSC;
+  _485 = 1076723712B;
+  _486 = _484 & 4294967291;
+  _485->MUX_10_CSC = _486;
+  # DEBUG BEGIN_STMT
+  _487 = 1076723712B;
+  _488 = _487->MUX_10_CSC;
+  _489 = 1076723712B;
+  _490 = _488 | 4;
+  _489->MUX_10_CSC = _490;
+  # DEBUG BEGIN_STMT
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _491 = 1076723712B;
+  _492 = _491->MUX_0_CSS;
+  _493 = _492 & 4;
+  if (_493 == 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _494 = 1076723712B;
+  _495 = _494->MUX_1_CSS;
+  _496 = _495 & 4;
+  if (_496 == 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _497 = 1076723712B;
+  _498 = _497->MUX_2_CSS;
+  _499 = _498 & 4;
+  if (_499 == 0)
+    goto <bb 18>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _500 = 1076723712B;
+  _501 = _500->MUX_3_CSS;
+  _502 = _501 & 4;
+  if (_502 == 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _503 = 1076723712B;
+  _504 = _503->MUX_4_CSS;
+  _505 = _504 & 4;
+  if (_505 == 0)
+    goto <bb 20>; [INV]
+  else
+    goto <bb 21>; [INV]
+
+  <bb 21> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _506 = 1076723712B;
+  _507 = _506->MUX_13_CSS;
+  _508 = _507 & 4;
+  if (_508 == 0)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 22> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _509 = 1076723712B;
+  _510 = _509->MUX_7_CSS;
+  _511 = _510 & 4;
+  if (_511 == 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 23>; [INV]
+
+  <bb 23> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _512 = 1076723712B;
+  _513 = _512->MUX_8_CSS;
+  _514 = _513 & 4;
+  if (_514 == 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 24> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _515 = 1076723712B;
+  _516 = _515->MUX_9_CSS;
+  _517 = _516 & 4;
+  if (_517 == 0)
+    goto <bb 24>; [INV]
+  else
+    goto <bb 25>; [INV]
+
+  <bb 25> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _518 = 1076723712B;
+  _519 = _518->MUX_10_CSS;
+  _520 = _519 & 4;
+  if (_520 == 0)
+    goto <bb 25>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 26> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _521 = 1076723712B;
+  _522 = _521->MUX_0_CSS;
+  _523 = _522 >> 16;
+  _524 = _523 & 1;
+  if (_524 == 1)
+    goto <bb 26>; [INV]
+  else
+    goto <bb 27>; [INV]
+
+  <bb 27> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _525 = 1076723712B;
+  _526 = _525->MUX_1_CSS;
+  _527 = _526 >> 16;
+  _528 = _527 & 1;
+  if (_528 == 1)
+    goto <bb 27>; [INV]
+  else
+    goto <bb 28>; [INV]
+
+  <bb 28> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _529 = 1076723712B;
+  _530 = _529->MUX_2_CSS;
+  _531 = _530 >> 16;
+  _532 = _531 & 1;
+  if (_532 == 1)
+    goto <bb 28>; [INV]
+  else
+    goto <bb 29>; [INV]
+
+  <bb 29> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _533 = 1076723712B;
+  _534 = _533->MUX_3_CSS;
+  _535 = _534 >> 16;
+  _536 = _535 & 1;
+  if (_536 == 1)
+    goto <bb 29>; [INV]
+  else
+    goto <bb 30>; [INV]
+
+  <bb 30> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _537 = 1076723712B;
+  _538 = _537->MUX_4_CSS;
+  _539 = _538 >> 16;
+  _540 = _539 & 1;
+  if (_540 == 1)
+    goto <bb 30>; [INV]
+  else
+    goto <bb 31>; [INV]
+
+  <bb 31> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _541 = 1076723712B;
+  _542 = _541->MUX_7_CSS;
+  _543 = _542 >> 16;
+  _544 = _543 & 1;
+  if (_544 == 1)
+    goto <bb 31>; [INV]
+  else
+    goto <bb 32>; [INV]
+
+  <bb 32> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _545 = 1076723712B;
+  _546 = _545->MUX_8_CSS;
+  _547 = _546 >> 16;
+  _548 = _547 & 1;
+  if (_548 == 1)
+    goto <bb 32>; [INV]
+  else
+    goto <bb 33>; [INV]
+
+  <bb 33> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _549 = 1076723712B;
+  _550 = _549->MUX_9_CSS;
+  _551 = _550 >> 16;
+  _552 = _551 & 1;
+  if (_552 == 1)
+    goto <bb 33>; [INV]
+  else
+    goto <bb 34>; [INV]
+
+  <bb 34> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _553 = 1076723712B;
+  _554 = _553->MUX_10_CSS;
+  _555 = _554 >> 16;
+  _556 = _555 & 1;
+  if (_556 == 1)
+    goto <bb 34>; [INV]
+  else
+    goto <bb 35>; [INV]
+
+  <bb 35> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _557 = 1076723712B;
+  _558 = _557->MUX_13_CSS;
+  _559 = _558 >> 16;
+  _560 = _559 & 1;
+  if (_560 == 1)
+    goto <bb 35>; [INV]
+  else
+    goto <bb 36>; [INV]
+
+  <bb 36> :
+  # DEBUG BEGIN_STMT
+  D.9956 = 0;
+  return D.9956;
+
+}
+
+
+Init_PLL ()
+{
+  volatile int result;
+  volatile uint32 timeout;
+  int D.9950;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout = 65535;
+  # DEBUG BEGIN_STMT
+  result = 0;
+  # DEBUG BEGIN_STMT
+  _1 = 1076756480B;
+  _2 = _1->PLLODIV[0];
+  _3 = 1076756480B;
+  _4 = _2 & 2147483647;
+  _3->PLLODIV[0] = _4;
+  # DEBUG BEGIN_STMT
+  _5 = 1076756480B;
+  _6 = 1076756480B;
+  _7 = _5->PLLODIV[0];
+  _6->PLLODIV[0] = _7;
+  # DEBUG BEGIN_STMT
+  _8 = 1076756480B;
+  _9 = _8->PLLODIV[1];
+  _10 = 1076756480B;
+  _11 = _9 & 2147483647;
+  _10->PLLODIV[1] = _11;
+  # DEBUG BEGIN_STMT
+  _12 = 1076756480B;
+  _13 = 1076756480B;
+  _14 = _12->PLLODIV[1];
+  _13->PLLODIV[1] = _14;
+  # DEBUG BEGIN_STMT
+  _15 = 1076756480B;
+  _16 = _15->PLLCR;
+  _17 = 1076756480B;
+  _18 = _16 & 2147483647;
+  _17->PLLCR = _18;
+  # DEBUG BEGIN_STMT
+  _19 = 1076756480B;
+  _20 = _19->PLLCR;
+  _21 = 1076756480B;
+  _22 = _20 | 2147483648;
+  _21->PLLCR = _22;
+  # DEBUG BEGIN_STMT
+  _23 = 1076756480B;
+  _24 = _23->PLLDV;
+  _25 = 1076756480B;
+  _26 = _24 & 2181038079;
+  _25->PLLDV = _26;
+  # DEBUG BEGIN_STMT
+  _27 = 1076756480B;
+  _28 = 1076756480B;
+  _29 = _27->PLLDV;
+  _28->PLLDV = _29;
+  # DEBUG BEGIN_STMT
+  _30 = 1076756480B;
+  _31 = _30->PLLDV;
+  _32 = 1076756480B;
+  _33 = _31 & 4294938623;
+  _32->PLLDV = _33;
+  # DEBUG BEGIN_STMT
+  _34 = 1076756480B;
+  _35 = _34->PLLDV;
+  _36 = 1076756480B;
+  _37 = _35 | 4096;
+  _36->PLLDV = _37;
+  # DEBUG BEGIN_STMT
+  _38 = 1076756480B;
+  _39 = _38->PLLDV;
+  _40 = 1076756480B;
+  _41 = _39 & 4294967040;
+  _40->PLLDV = _41;
+  # DEBUG BEGIN_STMT
+  _42 = 1076756480B;
+  _43 = _42->PLLDV;
+  _44 = 1076756480B;
+  _45 = _43 | 30;
+  _44->PLLDV = _45;
+  # DEBUG BEGIN_STMT
+  _46 = 1076756480B;
+  _47 = _46->PLLFD;
+  _48 = 1076756480B;
+  _49 = _47 & 3221225471;
+  _48->PLLFD = _49;
+  # DEBUG BEGIN_STMT
+  _50 = 1076756480B;
+  _51 = 1076756480B;
+  _52 = _50->PLLFD;
+  _51->PLLFD = _52;
+  # DEBUG BEGIN_STMT
+  _53 = 1076756480B;
+  _54 = _53->PLLFD;
+  _55 = 1076756480B;
+  _56 = _54 & 3758096383;
+  _55->PLLFD = _56;
+  # DEBUG BEGIN_STMT
+  _57 = 1076756480B;
+  _58 = _57->PLLFD;
+  _59 = 1076756480B;
+  _60 = _58 | 536870912;
+  _59->PLLFD = _60;
+  # DEBUG BEGIN_STMT
+  _61 = 1076756480B;
+  _62 = _61->PLLFD;
+  _63 = 1076756480B;
+  _64 = _62 & 4026531839;
+  _63->PLLFD = _64;
+  # DEBUG BEGIN_STMT
+  _65 = 1076756480B;
+  _66 = _65->PLLFD;
+  _67 = 1076756480B;
+  _68 = _66 | 268435456;
+  _67->PLLFD = _68;
+  # DEBUG BEGIN_STMT
+  _69 = 1076756480B;
+  _70 = _69->PLLFD;
+  _71 = 1076756480B;
+  _72 = _70 & 4294934528;
+  _71->PLLFD = _72;
+  # DEBUG BEGIN_STMT
+  _73 = 1076756480B;
+  _74 = 1076756480B;
+  _75 = _73->PLLFD;
+  _74->PLLFD = _75;
+  # DEBUG BEGIN_STMT
+  _76 = 1076756480B;
+  _77 = _76->PLLFM;
+  _78 = 1076756480B;
+  _79 = _77 & 3221225471;
+  _78->PLLFM = _79;
+  # DEBUG BEGIN_STMT
+  _80 = 1076756480B;
+  _81 = _80->PLLFM;
+  _82 = 1076756480B;
+  _83 = _81 | 1073741824;
+  _82->PLLFM = _83;
+  # DEBUG BEGIN_STMT
+  _84 = 1076756480B;
+  _85 = _84->PLLFM;
+  _86 = 1076756480B;
+  _87 = _85 & 4294965248;
+  _86->PLLFM = _87;
+  # DEBUG BEGIN_STMT
+  _88 = 1076756480B;
+  _89 = 1076756480B;
+  _90 = _88->PLLFM;
+  _89->PLLFM = _90;
+  # DEBUG BEGIN_STMT
+  _91 = 1076756480B;
+  _92 = _91->PLLFM;
+  _93 = 1076756480B;
+  _94 = _92 & 3758096383;
+  _93->PLLFM = _94;
+  # DEBUG BEGIN_STMT
+  _95 = 1076756480B;
+  _96 = _95->PLLFM;
+  _97 = 1076756480B;
+  _98 = _96 | 536870912;
+  _97->PLLFM = _98;
+  # DEBUG BEGIN_STMT
+  _99 = 1076756480B;
+  _100 = _99->PLLFM;
+  _101 = 1076756480B;
+  _102 = _100 & 4227923967;
+  _101->PLLFM = _102;
+  # DEBUG BEGIN_STMT
+  _103 = 1076756480B;
+  _104 = 1076756480B;
+  _105 = _103->PLLFM;
+  _104->PLLFM = _105;
+  # DEBUG BEGIN_STMT
+  _106 = 1076756480B;
+  _107 = _106->PLLFM;
+  _108 = _107 >> 30;
+  _109 = _108 & 1;
+  if (_109 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _110 = 1076756480B;
+  _111 = _110->PLLCAL2;
+  _112 = 1076756480B;
+  _113 = _111 & 4294966911;
+  _112->PLLCAL2 = _113;
+  # DEBUG BEGIN_STMT
+  _114 = 1076756480B;
+  _115 = 1076756480B;
+  _116 = _114->PLLCAL2;
+  _115->PLLCAL2 = _116;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _117 = 1076756480B;
+  _118 = _117->PLLCAL2;
+  _119 = 1076756480B;
+  _120 = _118 & 4294966911;
+  _119->PLLCAL2 = _120;
+  # DEBUG BEGIN_STMT
+  _121 = 1076756480B;
+  _122 = _121->PLLCAL2;
+  _123 = 1076756480B;
+  _124 = _122 | 128;
+  _123->PLLCAL2 = _124;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _125 = 1076756480B;
+  _126 = _125->PLLODIV[0];
+  _127 = 1076756480B;
+  _128 = _126 & 4278255615;
+  _127->PLLODIV[0] = _128;
+  # DEBUG BEGIN_STMT
+  _129 = 1076756480B;
+  _130 = _129->PLLODIV[0];
+  _131 = 1076756480B;
+  _132 = _130 | 131072;
+  _131->PLLODIV[0] = _132;
+  # DEBUG BEGIN_STMT
+  _133 = 1076756480B;
+  _134 = _133->PLLODIV[1];
+  _135 = 1076756480B;
+  _136 = _134 & 4278255615;
+  _135->PLLODIV[1] = _136;
+  # DEBUG BEGIN_STMT
+  _137 = 1076756480B;
+  _138 = _137->PLLODIV[1];
+  _139 = 1076756480B;
+  _140 = _138 | 65536;
+  _139->PLLODIV[1] = _140;
+  # DEBUG BEGIN_STMT
+  _141 = 1076756480B;
+  _142 = _141->PLLCR;
+  _143 = 1076756480B;
+  _144 = _142 & 2147483647;
+  _143->PLLCR = _144;
+  # DEBUG BEGIN_STMT
+  _145 = 1076756480B;
+  _146 = 1076756480B;
+  _147 = _145->PLLCR;
+  _146->PLLCR = _147;
+  # DEBUG BEGIN_STMT
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _148 = 1076756480B;
+  _149 = _148->PLLSR;
+  _150 = _149 >> 2;
+  _151 = _150 & 1;
+  if (_151 != 1)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  timeout.17_152 = timeout;
+  timeout.18_153 = timeout.17_152;
+  _154 = timeout.18_153 + 4294967295;
+  timeout = _154;
+  if (timeout.18_153 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  timeout.19_155 = timeout;
+  if (timeout.19_155 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  result = 1;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _156 = 1076756480B;
+  _157 = _156->PLLODIV[0];
+  _158 = 1076756480B;
+  _159 = _157 & 2147483647;
+  _158->PLLODIV[0] = _159;
+  # DEBUG BEGIN_STMT
+  _160 = 1076756480B;
+  _161 = _160->PLLODIV[0];
+  _162 = 1076756480B;
+  _163 = _161 | 2147483648;
+  _162->PLLODIV[0] = _163;
+  # DEBUG BEGIN_STMT
+  _164 = 1076756480B;
+  _165 = _164->PLLODIV[1];
+  _166 = 1076756480B;
+  _167 = _165 & 2147483647;
+  _166->PLLODIV[1] = _167;
+  # DEBUG BEGIN_STMT
+  _168 = 1076756480B;
+  _169 = _168->PLLODIV[1];
+  _170 = 1076756480B;
+  _171 = _169 | 2147483648;
+  _170->PLLODIV[1] = _171;
+  # DEBUG BEGIN_STMT
+  D.9950 = result;
+  return D.9950;
+
+}
+
+
+Init_PMC ()
+{
+  volatile int result;
+  volatile uint32 timeout;
+  int D.9954;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout = 65535;
+  # DEBUG BEGIN_STMT
+  result = 0;
+  # DEBUG BEGIN_STMT
+  _1 = 1076789248B;
+  _1->LVSC = 4294967295;
+  # DEBUG BEGIN_STMT
+  _2 = 1076789248B;
+  _3 = _2->VERID;
+  _4 = _3 & 1;
+  if (_4 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _5 = 1076789248B;
+  _6 = _5->CONFIG;
+  _7 = 1076789248B;
+  _8 = _6 & 4294967291;
+  _7->CONFIG = _8;
+  # DEBUG BEGIN_STMT
+  _9 = 1076789248B;
+  _10 = 1076789248B;
+  _11 = _9->CONFIG;
+  _10->CONFIG = _11;
+  # DEBUG BEGIN_STMT
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  timeout.20_12 = timeout;
+  timeout.21_13 = timeout.20_12;
+  _14 = timeout.21_13 + 4294967295;
+  timeout = _14;
+  if (timeout.21_13 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  timeout = 65535;
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  D.9954 = result;
+  return D.9954;
+
+}
+
+
+Init_FXOSC ()
+{
+  volatile int result;
+  volatile uint32 timeout;
+  int D.9941;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout = 65535;
+  # DEBUG BEGIN_STMT
+  result = 0;
+  # DEBUG BEGIN_STMT
+  _1 = 1076707328B;
+  _2 = _1->CTRL;
+  _3 = 1076707328B;
+  _4 = _2 & 4278255615;
+  _3->CTRL = _4;
+  # DEBUG BEGIN_STMT
+  _5 = 1076707328B;
+  _6 = _5->CTRL;
+  _7 = 1076707328B;
+  _8 = _6 | 10289152;
+  _7->CTRL = _8;
+  # DEBUG BEGIN_STMT
+  _9 = 1076707328B;
+  _10 = _9->CTRL;
+  _11 = 1076707328B;
+  _12 = _10 & 4294967055;
+  _11->CTRL = _12;
+  # DEBUG BEGIN_STMT
+  _13 = 1076707328B;
+  _14 = _13->CTRL;
+  _15 = 1076707328B;
+  _16 = _14 | 192;
+  _15->CTRL = _16;
+  # DEBUG BEGIN_STMT
+  _17 = 1076707328B;
+  _18 = _17->CTRL;
+  _19 = 1076707328B;
+  _20 = _18 & 2147483647;
+  _19->CTRL = _20;
+  # DEBUG BEGIN_STMT
+  _21 = 1076707328B;
+  _22 = 1076707328B;
+  _23 = _21->CTRL;
+  _22->CTRL = _23;
+  # DEBUG BEGIN_STMT
+  _24 = 1076707328B;
+  _25 = _24->CTRL;
+  _26 = 1076707328B;
+  _27 = _25 & 4278190079;
+  _26->CTRL = _27;
+  # DEBUG BEGIN_STMT
+  _28 = 1076707328B;
+  _29 = _28->CTRL;
+  _30 = 1076707328B;
+  _31 = _29 | 16777216;
+  _30->CTRL = _31;
+  # DEBUG BEGIN_STMT
+  _32 = 1076707328B;
+  _33 = _32->CTRL;
+  _34 = 1076707328B;
+  _35 = _33 & 4294967294;
+  _34->CTRL = _35;
+  # DEBUG BEGIN_STMT
+  _36 = 1076707328B;
+  _37 = _36->CTRL;
+  _38 = 1076707328B;
+  _39 = _37 | 1;
+  _38->CTRL = _39;
+  # DEBUG BEGIN_STMT
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _40 = 1076707328B;
+  _41 = _40->STAT;
+  _42 = _41 >> 31;
+  _43 = _42 & 1;
+  if (_43 != 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  timeout.14_44 = timeout;
+  timeout.15_45 = timeout.14_44;
+  _46 = timeout.15_45 + 4294967295;
+  timeout = _46;
+  if (timeout.15_45 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  timeout.16_47 = timeout;
+  if (timeout.16_47 == 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  result = 1;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  D.9941 = result;
+  return D.9941;
+
+}
+
+
+Init_FIRC ()
+{
+  volatile uint32 * io_config_reg_gpr;
+  volatile int result;
+  volatile uint32 timeout;
+  int D.9929;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  timeout = 65535;
+  # DEBUG BEGIN_STMT
+  result = 0;
+  # DEBUG BEGIN_STMT
+  io_config_reg_gpr = 1077526628B;
+  # DEBUG BEGIN_STMT
+  _1 = 1077526528B;
+  _2 = _1->CONFIG_REG_GPR;
+  _3 = _2 >> 29;
+  _4 = _3 & 7;
+  if (_4 == 5)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  *io_config_reg_gpr = 2684354563;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _5 = 1076690944B;
+  _6 = _5->STATUS_REGISTER;
+  _7 = _6 & 1;
+  if (_7 != 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  timeout.8_8 = timeout;
+  timeout.9_9 = timeout.8_8;
+  _10 = timeout.9_9 + 4294967295;
+  timeout = _10;
+  if (timeout.9_9 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  timeout.10_11 = timeout;
+  if (timeout.10_11 == 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  result = 1;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  D.9929 = result;
+  return D.9929;
+
+}
+
+
+sys_registerIsrHandler (uint8 irq_id, void (*int_function_t) (void) isr_handler)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+  # DEBUG BEGIN_STMT
+  _1 = 3758157064B;
+  _2 = *_1;
+  _3 = (int) irq_id;
+  _4 = _3 + 16;
+  _5 = _4 << 2;
+  _6 = (long unsigned int) _5;
+  _7 = _2 + _6;
+  _8 = (volatile uint32 *) _7;
+  isr_handler.0_9 = (long unsigned int) isr_handler;
+  *_8 = isr_handler.0_9;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+  return;
+
+}
+
+
+sys_enableIsrSource (uint8 id, uint8 prio)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  NVIC_SetPriority (id, prio);
+  # DEBUG BEGIN_STMT
+  NVIC_EnableIRQ (id);
+  return;
+
+}
+
+
+sys_disableIsrSource (uint8 id)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  NVIC_DisableIRQ (id);
+  return;
+
+}
+
+
+sys_disableAllInterrupts ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+  return;
+
+}
+
+
+sys_enableAllInterrupts ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+  return;
+
+}
+
+

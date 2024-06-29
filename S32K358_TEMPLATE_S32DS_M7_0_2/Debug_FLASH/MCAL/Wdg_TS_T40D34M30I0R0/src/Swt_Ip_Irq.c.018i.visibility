@@ -1,0 +1,43 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Swt_Ip_Swt0_Isr/0
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Swt_Ip_IrqHandler/1 (Swt_Ip_IrqHandler) @06bfbee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Swt_Ip_Swt0_Isr/0 
+  Calls: 
+Swt_Ip_Swt0_Isr/0 (Swt_Ip_Swt0_Isr) @06bfb8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Swt_Ip_IrqHandler/1 
+Swt_Ip_Swt0_Isr ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Swt_Ip_IrqHandler (0);
+  return;
+
+}
+
+

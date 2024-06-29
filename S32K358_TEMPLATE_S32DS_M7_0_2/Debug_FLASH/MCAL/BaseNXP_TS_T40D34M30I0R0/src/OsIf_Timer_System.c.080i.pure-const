@@ -1,0 +1,425 @@
+
+
+ local analysis of OsIf_Timer_System_MicrosToTicks/5
+   scanning: _1 = (long long unsigned int) Micros_4(D);
+  scanning: _2 = OsIf_au32InternalFrequencies[0];
+  scanning: _3 = (long long unsigned int) _2;
+  scanning: interim_6 = _1 * _3;
+  scanning: interim_7 = interim_6 / 1000000;
+  scanning: ticks_8 = (uint32) interim_7;
+  scanning: return ticks_8;
+Function is locally const.
+
+
+ local analysis of OsIf_Timer_System_SetTimerFrequency/4
+   scanning: OsIf_au32InternalFrequencies[0] = Freq_2(D);
+  scanning: return;
+Function is locally const.
+
+
+ local analysis of OsIf_Timer_System_GetElapsed/3
+   scanning: Elapsed_4 = OsIf_Timer_System_Internal_GetElapsed (CurrentRef_2(D));
+  scanning: return Elapsed_4;
+Function is locally const.
+
+
+ local analysis of OsIf_Timer_System_GetCounter/2
+   scanning: Counter_3 = OsIf_Timer_System_Internal_GetCounter ();
+  scanning: return Counter_3;
+Function is locally const.
+
+
+ local analysis of OsIf_Timer_System_Init/1
+   scanning: _1 = OsIf_apxPredefinedConfig[0];
+  scanning: _2 = _1->counterFrequency;
+    Indirect ref read is not const
+  scanning: OsIf_au32InternalFrequencies[0] = _2;
+  scanning: OsIf_Timer_System_Internal_Init (_2);
+  scanning: return;
+Function is locally pure.
+callgraph:
+
+OsIf_Timer_System_Internal_GetElapsed/9 (OsIf_Timer_System_Internal_GetElapsed) @061032a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetElapsed/3 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/8 (OsIf_Timer_System_Internal_GetCounter) @06103ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetCounter/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_Timer_System_Internal_Init/7 (OsIf_Timer_System_Internal_Init) @06103d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_Init/1 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_Timer_System_MicrosToTicks/5 (OsIf_Timer_System_MicrosToTicks) @06103700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96878
+  References: OsIf_au32InternalFrequencies/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_SetTimerFrequency/4 (OsIf_Timer_System_SetTimerFrequency) @06103460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96678
+  References: OsIf_au32InternalFrequencies/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_GetElapsed/3 (OsIf_Timer_System_GetElapsed) @061031c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96618
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/9 (1073741824 (estimated locally),1.00 per call) 
+OsIf_Timer_System_GetCounter/2 (OsIf_Timer_System_GetCounter) @060ffd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96578
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/8 (1073741824 (estimated locally),1.00 per call) 
+OsIf_Timer_System_Init/1 (OsIf_Timer_System_Init) @060ffee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b968f8
+  References: OsIf_apxPredefinedConfig/6 (read) OsIf_au32InternalFrequencies/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/7 (1073741824 (estimated locally),1.00 per call) 
+
+
+ ordered call graph: reduced for nothrow
+OsIf_Timer_System_MicrosToTicks/5 (OsIf_Timer_System_MicrosToTicks) @06103700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96878
+  References: OsIf_au32InternalFrequencies/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_SetTimerFrequency/4 (OsIf_Timer_System_SetTimerFrequency) @06103460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96678
+  References: OsIf_au32InternalFrequencies/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_GetElapsed/3 (OsIf_Timer_System_GetElapsed) @061031c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96618
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/9 (1073741824 (estimated locally),1.00 per call) 
+OsIf_Timer_System_GetCounter/2 (OsIf_Timer_System_GetCounter) @060ffd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96578
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/8 (1073741824 (estimated locally),1.00 per call) 
+OsIf_Timer_System_Init/1 (OsIf_Timer_System_Init) @060ffee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b968f8
+  References: OsIf_apxPredefinedConfig/6 (read) OsIf_au32InternalFrequencies/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/7 (1073741824 (estimated locally),1.00 per call) 
+
+
+
+MALLOC LATTICE Initial:
+OsIf_Timer_System_MicrosToTicks/5: malloc_bottom
+OsIf_Timer_System_SetTimerFrequency/4: malloc_bottom
+OsIf_Timer_System_GetElapsed/3: malloc_bottom
+OsIf_Timer_System_GetCounter/2: malloc_bottom
+OsIf_Timer_System_Init/1: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+OsIf_Timer_System_MicrosToTicks/5: malloc_bottom
+OsIf_Timer_System_SetTimerFrequency/4: malloc_bottom
+OsIf_Timer_System_GetElapsed/3: malloc_bottom
+OsIf_Timer_System_GetCounter/2: malloc_bottom
+OsIf_Timer_System_Init/1: malloc_bottom
+callgraph:
+
+OsIf_Timer_System_Internal_GetElapsed/9 (OsIf_Timer_System_Internal_GetElapsed) @061032a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetElapsed/3 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/8 (OsIf_Timer_System_Internal_GetCounter) @06103ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetCounter/2 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_Timer_System_Internal_Init/7 (OsIf_Timer_System_Internal_Init) @06103d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_Init/1 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_Timer_System_MicrosToTicks/5 (OsIf_Timer_System_MicrosToTicks) @06103700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96818
+  References: OsIf_au32InternalFrequencies/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_SetTimerFrequency/4 (OsIf_Timer_System_SetTimerFrequency) @06103460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96718
+  References: OsIf_au32InternalFrequencies/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_GetElapsed/3 (OsIf_Timer_System_GetElapsed) @061031c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b968f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/9 (1073741824 (estimated locally),1.00 per call) 
+OsIf_Timer_System_GetCounter/2 (OsIf_Timer_System_GetCounter) @060ffd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96678
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/8 (1073741824 (estimated locally),1.00 per call) 
+OsIf_Timer_System_Init/1 (OsIf_Timer_System_Init) @060ffee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96558
+  References: OsIf_apxPredefinedConfig/6 (read) OsIf_au32InternalFrequencies/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/7 (1073741824 (estimated locally),1.00 per call) 
+
+
+ ordered call graph: reduced
+OsIf_Timer_System_MicrosToTicks/5 (OsIf_Timer_System_MicrosToTicks) @06103700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96818
+  References: OsIf_au32InternalFrequencies/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_SetTimerFrequency/4 (OsIf_Timer_System_SetTimerFrequency) @06103460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96718
+  References: OsIf_au32InternalFrequencies/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_GetElapsed/3 (OsIf_Timer_System_GetElapsed) @061031c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b968f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/9 (1073741824 (estimated locally),1.00 per call) 
+OsIf_Timer_System_GetCounter/2 (OsIf_Timer_System_GetCounter) @060ffd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96678
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/8 (1073741824 (estimated locally),1.00 per call) 
+OsIf_Timer_System_Init/1 (OsIf_Timer_System_Init) @060ffee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @05b96558
+  References: OsIf_apxPredefinedConfig/6 (read) OsIf_au32InternalFrequencies/0 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/7 (1073741824 (estimated locally),1.00 per call) 
+
+Function found not to call free: OsIf_Timer_System_SetTimerFrequency/4
+Function found not to call free: OsIf_Timer_System_MicrosToTicks/5
+OsIf_Timer_System_MicrosToTicks (uint32 Micros)
+{
+  uint32 ticks;
+  uint64 interim;
+  long long unsigned int _1;
+  long unsigned int _2;
+  long long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG ticks => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  _1 = (long long unsigned int) Micros_4(D);
+  _2 = OsIf_au32InternalFrequencies[0];
+  _3 = (long long unsigned int) _2;
+  interim_6 = _1 * _3;
+  # DEBUG interim => interim_6
+  # DEBUG BEGIN_STMT
+  interim_7 = interim_6 / 1000000;
+  # DEBUG interim => interim_7
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ticks_8 = (uint32) interim_7;
+  # DEBUG ticks => ticks_8
+  # DEBUG BEGIN_STMT
+  return ticks_8;
+
+}
+
+
+OsIf_Timer_System_SetTimerFrequency (uint32 Freq)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  OsIf_au32InternalFrequencies[0] = Freq_2(D);
+  return;
+
+}
+
+
+OsIf_Timer_System_GetElapsed (uint32 * const CurrentRef)
+{
+  uint32 Elapsed;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Elapsed => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Elapsed_4 = OsIf_Timer_System_Internal_GetElapsed (CurrentRef_2(D));
+  # DEBUG Elapsed => Elapsed_4
+  # DEBUG BEGIN_STMT
+  return Elapsed_4;
+
+}
+
+
+OsIf_Timer_System_GetCounter ()
+{
+  uint32 Counter;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Counter => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Counter_3 = OsIf_Timer_System_Internal_GetCounter ();
+  # DEBUG Counter => Counter_3
+  # DEBUG BEGIN_STMT
+  return Counter_3;
+
+}
+
+
+OsIf_Timer_System_Init ()
+{
+  const struct OsIf_ConfigType * _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG CoreId => 0
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_apxPredefinedConfig[0];
+  _2 = _1->counterFrequency;
+  OsIf_au32InternalFrequencies[0] = _2;
+  # DEBUG BEGIN_STMT
+  OsIf_Timer_System_Internal_Init (_2);
+  return;
+
+}
+
+

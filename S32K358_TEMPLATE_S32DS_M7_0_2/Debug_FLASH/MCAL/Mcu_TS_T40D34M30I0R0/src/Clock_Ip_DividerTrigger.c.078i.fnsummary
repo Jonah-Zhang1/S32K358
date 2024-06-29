@@ -1,0 +1,392 @@
+
+Analyzing function: Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 10 7 8 9
+;;
+;; Loop 1
+;;  header 5, latch 10
+;;  depth 1, outer 0
+;;  nodes: 5 10 6
+;; 2 succs { 3 9 }
+;; 3 succs { 4 9 }
+;; 4 succs { 5 }
+;; 5 succs { 6 7 }
+;; 6 succs { 10 7 }
+;; 10 succs { 5 }
+;; 7 succs { 8 9 }
+;; 8 succs { 9 }
+;; 9 succs { 1 }
+
+Analyzing function body size: Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2
+		Accounting address calculation.
+		Accounting address calculation.
+		Accounting address calculation.
+		Accounting address calculation.
+
+IPA function summary for Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2 inlinable
+  global time:     60.320502
+  self size:       40
+  global size:     0
+  min size:       0
+  self stack:      12
+  global stack:    12
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:0.500000, time:0.350000,  executed if:(op0 != 0B) && (not inlined),  nonconst if:(op0[ref offset: 0] changed) && (op0 != 0B) && (not inlined)
+    size:2.500000, time:1.750000,  executed if:(op0 != 0B),  nonconst if:(op0[ref offset: 0] changed) && (op0 != 0B)
+    size:2.000000, time:1.400000,  executed if:(op0 != 0B)
+    size:0.500000, time:0.350000,  executed if:(op0 != 0B) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0 != 0B) && (not inlined)
+    size:2.500000, time:1.750000,  executed if:(op0 != 0B),  nonconst if:(op0[ref offset: 8] changed) && (op0 != 0B)
+    size:13.500000, time:16.302264,  executed if:(op0[ref offset: 8] != 0) && (op0 != 0B)
+    size:0.500000, time:0.038115,  executed if:(op0[ref offset: 8] != 0) && (op0 != 0B) && (not inlined)
+  calls:
+    Clock_Ip_ReportClockErrors/8 function body not available
+      freq:0.08 loop depth: 0 size: 3 time: 12 predicate: (op0[ref offset: 8] != 0) && (op0 != 0B)
+       op0 is compile time invariant
+    Clock_Ip_TimeoutExpired/7 function body not available
+      freq:2.16 loop depth: 1 size: 5 time: 14 predicate: (op0[ref offset: 8] != 0) && (op0 != 0B)
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/6 function body not available
+      freq:0.23 loop depth: 0 size: 5 time: 14 predicate: (op0[ref offset: 8] != 0) && (op0 != 0B)
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+
+Analyzing function: Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat/1
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6
+;; 2 succs { 3 6 }
+;; 3 succs { 4 5 }
+;; 4 succs { 6 }
+;; 5 succs { 6 }
+;; 6 succs { 1 }
+
+Analyzing function body size: Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat/1
+		Accounting address calculation.
+		Accounting address calculation.
+		Accounting address calculation.
+		Accounting address calculation.
+		Accounting address calculation.
+		Accounting address calculation.
+
+IPA function summary for Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat/1 inlinable
+  global time:     13.100000
+  self size:       23
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op0 changed)
+    size:0.500000, time:0.350000,  executed if:(op0 != 0B) && (not inlined),  nonconst if:(op0[ref offset: 0] changed) && (op0 != 0B) && (not inlined)
+    size:2.500000, time:1.750000,  executed if:(op0 != 0B),  nonconst if:(op0[ref offset: 0] changed) && (op0 != 0B)
+    size:2.000000, time:1.400000,  executed if:(op0 != 0B)
+    size:0.500000, time:0.350000,  executed if:(op0 != 0B) && (not inlined),  nonconst if:(op0[ref offset: 8] changed) && (op0 != 0B) && (not inlined)
+    size:2.500000, time:1.750000,  executed if:(op0 != 0B),  nonconst if:(op0[ref offset: 8] changed) && (op0 != 0B)
+    size:6.000000, time:2.100000,  executed if:(op0[ref offset: 8] == 0) && (op0 != 0B)
+    size:4.000000, time:1.400000,  executed if:(op0[ref offset: 8] != 0) && (op0 != 0B)
+  calls:
+
+
+Analyzing function: Clock_Ip_Callback_DividerTriggerEmpty/0
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Clock_Ip_Callback_DividerTriggerEmpty/0
+
+IPA function summary for Clock_Ip_Callback_DividerTriggerEmpty/0 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+Symbol table:
+
+Clock_Ip_ReportClockErrors/8 (Clock_Ip_ReportClockErrors) @062c7460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2 (37904965 (estimated locally),0.08 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/7 (Clock_Ip_TimeoutExpired) @062c7380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2 (1073741824 (estimated locally),2.16 per call) 
+  Calls: 
+Clock_Ip_StartTimeout/6 (Clock_Ip_StartTimeout) @062c72a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2 (114863530 (estimated locally),0.23 per call) 
+  Calls: 
+Clock_Ip_apxCgm/5 (Clock_Ip_apxCgm) @062c8438
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat/1 (read) Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat/1 (read) Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/4 (Clock_Ip_au8ClockFeatures) @062c83f0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat/1 (read) Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat/1 (read) Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2 (read) Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axDividerTriggerCallbacks/3 (Clock_Ip_axDividerTriggerCallbacks) @061c7e58
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_Callback_DividerTriggerEmpty/0 (addr) Clock_Ip_Callback_DividerTriggerEmpty/0 (addr) Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat/1 (addr) Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat/2 (Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat) @061cbc40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/4 (read) Clock_Ip_au8ClockFeatures/4 (read) Clock_Ip_apxCgm/5 (read) 
+  Referring: Clock_Ip_axDividerTriggerCallbacks/3 (addr) 
+  Availability: available
+  Function flags: count:497244719 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/8 (37904965 (estimated locally),0.08 per call) Clock_Ip_TimeoutExpired/7 (1073741824 (estimated locally),2.16 per call) Clock_Ip_StartTimeout/6 (114863530 (estimated locally),0.23 per call) 
+Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat/1 (Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat) @061cb8c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/4 (read) Clock_Ip_au8ClockFeatures/4 (read) Clock_Ip_apxCgm/5 (read) Clock_Ip_apxCgm/5 (read) 
+  Referring: Clock_Ip_axDividerTriggerCallbacks/3 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_Callback_DividerTriggerEmpty/0 (Clock_Ip_Callback_DividerTriggerEmpty) @061cb620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axDividerTriggerCallbacks/3 (addr) Clock_Ip_axDividerTriggerCallbacks/3 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat (const struct Clock_Ip_DividerTriggerConfigType * Config)
+{
+  uint32 DividerStatus;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  uint32 SelectorIndex;
+  uint32 Instance;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  unsigned char _5;
+  <unnamed type> _6;
+  volatile struct Clock_Ip_CgmMuxType * _7;
+  long unsigned int _8;
+  long unsigned int TimeoutTicks.0_9;
+  <unnamed type> _10;
+
+  <bb 2> [local count: 497244719]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_13(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 9>; [30.00%]
+
+  <bb 3> [local count: 348071305]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_13(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_15 = (uint32) _3;
+  # DEBUG Instance => Instance_15
+  # DEBUG BEGIN_STMT
+  _5 = Clock_Ip_au8ClockFeatures[_2][4];
+  SelectorIndex_16 = (uint32) _5;
+  # DEBUG SelectorIndex => SelectorIndex_16
+  # DEBUG BEGIN_STMT
+  _6 = Config_13(D)->TriggerType;
+  if (_6 != 0)
+    goto <bb 4>; [33.00%]
+  else
+    goto <bb 9>; [67.00%]
+
+  <bb 4> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  _7 = Clock_Ip_apxCgm[Instance_15][SelectorIndex_16];
+  _7->MUX_DIV_TRIG ={v} 1;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _8 ={v} _7->MUX_DIV_UPD_STAT;
+  DividerStatus_19 = _8 & 1;
+  # DEBUG DividerStatus => DividerStatus_19
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.0_9 = TimeoutTicks;
+  TimeoutOccurred_21 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.0_9);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_21
+  # DEBUG BEGIN_STMT
+  if (DividerStatus_19 != 0)
+    goto <bb 6>; [94.50%]
+  else
+    goto <bb 7>; [5.50%]
+
+  <bb 6> [local count: 1014686024]:
+  if (TimeoutOccurred_21 != 0)
+    goto <bb 7>; [5.50%]
+  else
+    goto <bb 10>; [94.50%]
+
+  <bb 10> [local count: 958878293]:
+  goto <bb 5>; [100.00%]
+
+  <bb 7> [local count: 114863531]:
+  # TimeoutOccurred_4 = PHI <TimeoutOccurred_21(5), TimeoutOccurred_21(6)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_4 != 0)
+    goto <bb 8>; [33.00%]
+  else
+    goto <bb 9>; [67.00%]
+
+  <bb 8> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  _10 = Config_13(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _10);
+
+  <bb 9> [local count: 497244720]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat (const struct Clock_Ip_DividerTriggerConfigType * Config)
+{
+  uint32 SelectorIndex;
+  uint32 Instance;
+  <unnamed type> _1;
+  int _2;
+  unsigned char _3;
+  unsigned char _4;
+  <unnamed type> _5;
+  volatile struct Clock_Ip_CgmMuxType * _6;
+  volatile struct Clock_Ip_CgmMuxType * _7;
+  long unsigned int _8;
+  long unsigned int _9;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (Config_11(D) != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 6>; [30.00%]
+
+  <bb 3> [local count: 751619281]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_11(D)->Name;
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8ClockFeatures[_2][0];
+  Instance_13 = (uint32) _3;
+  # DEBUG Instance => Instance_13
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_au8ClockFeatures[_2][4];
+  SelectorIndex_14 = (uint32) _4;
+  # DEBUG SelectorIndex => SelectorIndex_14
+  # DEBUG BEGIN_STMT
+  _5 = Config_11(D)->TriggerType;
+  if (_5 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 375809640]:
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_apxCgm[Instance_13][SelectorIndex_14];
+  _6->MUX_DIV_TRIG_CTRL ={v} 1;
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 375809640]:
+  # DEBUG BEGIN_STMT
+  _7 = Clock_Ip_apxCgm[Instance_13][SelectorIndex_14];
+  _8 ={v} _7->MUX_DIV_TRIG_CTRL;
+  _9 = _8 & 4294967294;
+  _7->MUX_DIV_TRIG_CTRL ={v} _9;
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_Callback_DividerTriggerEmpty (const struct Clock_Ip_DividerTriggerConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

@@ -1,0 +1,12 @@
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:157:13:Clock_Ip_ExternalOscillatorEmpty	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:162:13:Clock_Ip_DisableClockIpExternalOscillatorEmpty	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:172:13:Clock_Ip_ResetFxoscOsconBypEocvGmSel	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:286:13:Clock_Ip_DisableFxoscOsconBypEocvGmSel	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:293:13:Clock_Ip_EnableFxoscOsconBypEocvGmSel	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:315:13:Clock_Ip_ResetSxoscOsconEocv	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:359:13:Clock_Ip_CompleteSxoscOsconEocv	32	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:229:13:Clock_Ip_CompleteFxoscOsconBypEocvGmSel	32	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:333:13:Clock_Ip_SetSxoscOsconEocv	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:190:13:Clock_Ip_SetFxoscOsconBypEocvGmSel	4	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:417:13:Clock_Ip_EnableSxoscOsconEocv	0	static
+C:/Users/zhang_liu/workspaceS32DS.3.5/S32K358_TEMPLATE_S32DS/S32K358_TEMPLATE_S32DS_M7_0_0/MCAL/Mcu_TS_T40D34M30I0R0/src/Clock_Ip_ExtOsc.c:411:13:Clock_Ip_DisableSxoscOsconEocv	0	static

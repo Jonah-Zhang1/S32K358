@@ -1,0 +1,263 @@
+Wdg_Ipw_ClearResetRequest (Wdg_Ipw_InstanceType Instance)
+{
+  Swt_Ip_StatusType RetClrReq;
+  Wdg_Ipw_StatusType Ret;
+  long unsigned int _1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG RetClrReq => 0
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) Instance_3(D);
+  RetClrReq_6 = Swt_Ip_ClearResetRequest (_1);
+  # DEBUG RetClrReq => RetClrReq_6
+  # DEBUG BEGIN_STMT
+  if (RetClrReq_6 == 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 3>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  if (RetClrReq_6 == 2)
+    goto <bb 5>; [21.72%]
+  else
+    goto <bb 4>; [78.28%]
+
+  <bb 4> [local count: 420262548]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 1
+
+  <bb 5> [local count: 1073741824]:
+  # Ret_2 = PHI <0(2), 2(3), 1(4)>
+  # DEBUG Ret => Ret_2
+  # DEBUG BEGIN_STMT
+  return Ret_2;
+
+}
+
+
+Wdg_Ipw_Service (Wdg_Ipw_InstanceType Instance)
+{
+  int _1;
+  <unnamed type> _2;
+  long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_5(D);
+  _2 = Wdg_Ipw_aeIp[_1];
+  if (_2 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _3 = (long unsigned int) Instance_5(D);
+  Swt_Ip_Service (_3);
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  return;
+
+}
+
+
+Wdg_Ipw_Deinit (Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType Ret;
+  long unsigned int _1;
+  <unnamed type> _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 0
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) Instance_4(D);
+  _2 = Swt_Ip_Deinit (_1);
+  if (_2 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 1
+
+  <bb 4> [local count: 1073741824]:
+  # Ret_3 = PHI <0(2), 1(3)>
+  # DEBUG Ret => Ret_3
+  # DEBUG BEGIN_STMT
+  return Ret_3;
+
+}
+
+
+Wdg_Ipw_StopTimer (Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType Ret;
+  long unsigned int _1;
+  <unnamed type> _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 0
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) Instance_4(D);
+  _2 = Swt_Ip_StopTimer (_1);
+  if (_2 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 1
+
+  <bb 4> [local count: 1073741824]:
+  # Ret_3 = PHI <0(2), 1(3)>
+  # DEBUG Ret => Ret_3
+  # DEBUG BEGIN_STMT
+  return Ret_3;
+
+}
+
+
+Wdg_Ipw_StartTimer (Wdg_Ipw_InstanceType Instance)
+{
+  Std_ReturnType Ret;
+  int _1;
+  <unnamed type> _2;
+  long unsigned int _3;
+  <unnamed type> _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_7(D);
+  _2 = Wdg_Ipw_aeIp[_1];
+  if (_2 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 5>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _3 = (long unsigned int) Instance_7(D);
+  _4 = Swt_Ip_StartTimer (_3);
+  if (_4 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 1
+
+  <bb 5> [local count: 1073741824]:
+  # Ret_5 = PHI <1(4), 1(2), 0(3)>
+  # DEBUG Ret => Ret_5
+  # DEBUG BEGIN_STMT
+  return Ret_5;
+
+}
+
+
+Wdg_Ipw_SetMode (Wdg_Ipw_InstanceType Instance, const struct Wdg_Ipw_ConfigType * const IpwConfig)
+{
+  Std_ReturnType Ret;
+  int _1;
+  <unnamed type> _2;
+  long unsigned int _3;
+  const struct Swt_Ip_ConfigType * _4;
+  <unnamed type> _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_8(D);
+  _2 = IpwConfig_10(D)->eWdgIp;
+  Wdg_Ipw_aeIp[_1] = _2;
+  # DEBUG BEGIN_STMT
+  if (_2 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 5>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _3 = (long unsigned int) Instance_8(D);
+  _4 = IpwConfig_10(D)->aSwtConfig;
+  _5 = Swt_Ip_Config (_3, _4);
+  if (_5 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 1
+
+  <bb 5> [local count: 1073741824]:
+  # Ret_6 = PHI <1(4), 1(2), 0(3)>
+  # DEBUG Ret => Ret_6
+  # DEBUG BEGIN_STMT
+  return Ret_6;
+
+}
+
+
+Wdg_Ipw_Init (Wdg_Ipw_InstanceType Instance, const struct Wdg_Ipw_ConfigType * const IpwConfig)
+{
+  Std_ReturnType Ret;
+  int _1;
+  <unnamed type> _2;
+  long unsigned int _3;
+  const struct Swt_Ip_ConfigType * _4;
+  <unnamed type> _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 0
+  # DEBUG BEGIN_STMT
+  _1 = (int) Instance_8(D);
+  _2 = IpwConfig_10(D)->eWdgIp;
+  Wdg_Ipw_aeIp[_1] = _2;
+  # DEBUG BEGIN_STMT
+  if (_2 == 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 5>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  _3 = (long unsigned int) Instance_8(D);
+  _4 = IpwConfig_10(D)->aSwtConfig;
+  _5 = Swt_Ip_Init (_3, _4);
+  if (_5 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 177167400]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Ret => 1
+
+  <bb 5> [local count: 1073741824]:
+  # Ret_6 = PHI <1(4), 1(2), 0(3)>
+  # DEBUG Ret => Ret_6
+  # DEBUG BEGIN_STMT
+  return Ret_6;
+
+}
+
+

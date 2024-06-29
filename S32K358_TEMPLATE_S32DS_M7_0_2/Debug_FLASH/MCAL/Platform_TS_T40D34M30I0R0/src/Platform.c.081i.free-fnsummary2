@@ -1,0 +1,116 @@
+Platform_InstallIrqHandler (IRQn_Type eIrqNumber, void (*Platform_IrqHandlerType) (void) pfNewHandler, void (*Platform_IrqHandlerType) (void) * const pfOldHandler)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => eIrqNumber_2(D)
+  # DEBUG pfNewHandler => pfNewHandler_3(D)
+  # DEBUG pfOldHandler => pfOldHandler_4(D)
+  # DEBUG INLINE_ENTRY Platform_Ipw_InstallIrqHandler
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_InstallHandler (eIrqNumber_2(D), pfNewHandler_3(D), pfOldHandler_4(D));
+  # DEBUG eIrqNumber => NULL
+  # DEBUG pfNewHandler => NULL
+  # DEBUG pfOldHandler => NULL
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+Platform_GetIrqPriority (IRQn_Type eIrqNumber, uint8 * u8Priority)
+{
+  unsigned char _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => eIrqNumber_2(D)
+  # DEBUG INLINE_ENTRY Platform_Ipw_GetIrqPriority
+  # DEBUG BEGIN_STMT
+  _5 = IntCtrl_Ip_GetPriority (eIrqNumber_2(D));
+  # DEBUG eIrqNumber => NULL
+  *u8Priority_3(D) = _5;
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+Platform_SetIrqPriority (IRQn_Type eIrqNumber, uint8 u8Priority)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG eIrqNumber => eIrqNumber_2(D)
+  # DEBUG u8Priority => u8Priority_3(D)
+  # DEBUG INLINE_ENTRY Platform_Ipw_SetIrqPriority
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_SetPriority (eIrqNumber_2(D), u8Priority_3(D));
+  # DEBUG eIrqNumber => NULL
+  # DEBUG u8Priority => NULL
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+Platform_SetIrq (IRQn_Type eIrqNumber, boolean bEnable)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 0
+  # DEBUG BEGIN_STMT
+  Platform_Ipw_SetIrq (eIrqNumber_2(D), bEnable_3(D));
+  # DEBUG BEGIN_STMT
+  return 0;
+
+}
+
+
+Platform_Init (const struct Platform_ConfigType * pConfig)
+{
+  const struct Platform_ConfigType * _1;
+  const struct Platform_Ipw_ConfigType * _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG u8CoreId => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Platform_Config[0];
+  _2 = _1->pIpwConfig;
+  Platform_Ipw_Init (_2);
+  return;
+
+}
+
+
+Platform_Ipw_SetIrq (IRQn_Type eIrqNumber, boolean bEnable)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  if (bEnable_2(D) != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_EnableIrq (eIrqNumber_4(D));
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  IntCtrl_Ip_DisableIrq (eIrqNumber_4(D));
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+

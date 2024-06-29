@@ -1,0 +1,21 @@
+Platform_Ipw_Init (const struct Platform_Ipw_ConfigType * pConfig)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = pConfig->pIntCtrlConfig;
+  if (_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _2 = pConfig->pIntCtrlConfig;
+  IntCtrl_Ip_Init (_2);
+
+  <bb 4> :
+  return;
+
+}
+
+
