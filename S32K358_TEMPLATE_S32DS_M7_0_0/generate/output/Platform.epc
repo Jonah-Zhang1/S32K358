@@ -1047,7 +1047,30 @@
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>1</VALUE>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>STM2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_42</SHORT-NAME>
+                  <INDEX>42</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
@@ -1065,7 +1088,53 @@
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
                   <SHORT-NAME>PlatformIsrConfig_43</SHORT-NAME>
-                  <INDEX>42</INDEX>
+                  <INDEX>43</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>SWT1_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_44</SHORT-NAME>
+                  <INDEX>44</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>SWT2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_45</SHORT-NAME>
+                  <INDEX>45</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1087,8 +1156,31 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_45</SHORT-NAME>
-                  <INDEX>43</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_46</SHORT-NAME>
+                  <INDEX>46</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>CTI1_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_47</SHORT-NAME>
+                  <INDEX>47</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1110,8 +1202,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_46</SHORT-NAME>
-                  <INDEX>44</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_48</SHORT-NAME>
+                  <INDEX>48</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1133,8 +1225,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_47</SHORT-NAME>
-                  <INDEX>45</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_49</SHORT-NAME>
+                  <INDEX>49</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1156,8 +1248,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_48</SHORT-NAME>
-                  <INDEX>46</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_50</SHORT-NAME>
+                  <INDEX>50</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1179,8 +1271,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_49</SHORT-NAME>
-                  <INDEX>47</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_51</SHORT-NAME>
+                  <INDEX>51</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1202,8 +1294,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_50</SHORT-NAME>
-                  <INDEX>48</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_52</SHORT-NAME>
+                  <INDEX>52</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1225,8 +1317,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_51</SHORT-NAME>
-                  <INDEX>49</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_53</SHORT-NAME>
+                  <INDEX>53</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1248,8 +1340,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_52</SHORT-NAME>
-                  <INDEX>50</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_54</SHORT-NAME>
+                  <INDEX>54</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1271,8 +1363,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_53</SHORT-NAME>
-                  <INDEX>51</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_55</SHORT-NAME>
+                  <INDEX>55</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1294,8 +1386,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_54</SHORT-NAME>
-                  <INDEX>52</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_56</SHORT-NAME>
+                  <INDEX>56</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1317,8 +1409,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_55</SHORT-NAME>
-                  <INDEX>53</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_57</SHORT-NAME>
+                  <INDEX>57</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1340,8 +1432,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_56</SHORT-NAME>
-                  <INDEX>54</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_58</SHORT-NAME>
+                  <INDEX>58</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1363,8 +1455,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_57</SHORT-NAME>
-                  <INDEX>55</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_59</SHORT-NAME>
+                  <INDEX>59</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1386,8 +1478,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_58</SHORT-NAME>
-                  <INDEX>56</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_60</SHORT-NAME>
+                  <INDEX>60</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1409,8 +1501,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_59</SHORT-NAME>
-                  <INDEX>57</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_61</SHORT-NAME>
+                  <INDEX>61</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1432,8 +1524,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_60</SHORT-NAME>
-                  <INDEX>58</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_62</SHORT-NAME>
+                  <INDEX>62</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1455,8 +1547,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_61</SHORT-NAME>
-                  <INDEX>59</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_63</SHORT-NAME>
+                  <INDEX>63</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1478,8 +1570,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_62</SHORT-NAME>
-                  <INDEX>60</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_64</SHORT-NAME>
+                  <INDEX>64</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1501,8 +1593,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_63</SHORT-NAME>
-                  <INDEX>61</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_65</SHORT-NAME>
+                  <INDEX>65</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1524,8 +1616,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_64</SHORT-NAME>
-                  <INDEX>62</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_66</SHORT-NAME>
+                  <INDEX>66</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1547,8 +1639,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_65</SHORT-NAME>
-                  <INDEX>63</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_67</SHORT-NAME>
+                  <INDEX>67</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1570,8 +1662,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_66</SHORT-NAME>
-                  <INDEX>64</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_68</SHORT-NAME>
+                  <INDEX>68</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1593,8 +1685,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_67</SHORT-NAME>
-                  <INDEX>65</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_69</SHORT-NAME>
+                  <INDEX>69</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1616,8 +1708,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_68</SHORT-NAME>
-                  <INDEX>66</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_70</SHORT-NAME>
+                  <INDEX>70</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1639,8 +1731,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_69</SHORT-NAME>
-                  <INDEX>67</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_71</SHORT-NAME>
+                  <INDEX>71</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1662,8 +1754,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_70</SHORT-NAME>
-                  <INDEX>68</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_72</SHORT-NAME>
+                  <INDEX>72</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1685,8 +1777,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_71</SHORT-NAME>
-                  <INDEX>69</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_73</SHORT-NAME>
+                  <INDEX>73</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1708,8 +1800,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_72</SHORT-NAME>
-                  <INDEX>70</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_74</SHORT-NAME>
+                  <INDEX>74</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1731,8 +1823,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_73</SHORT-NAME>
-                  <INDEX>71</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_75</SHORT-NAME>
+                  <INDEX>75</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1754,8 +1846,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_74</SHORT-NAME>
-                  <INDEX>72</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_76</SHORT-NAME>
+                  <INDEX>76</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1777,8 +1869,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_75</SHORT-NAME>
-                  <INDEX>73</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_77</SHORT-NAME>
+                  <INDEX>77</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1800,8 +1892,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_76</SHORT-NAME>
-                  <INDEX>74</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_78</SHORT-NAME>
+                  <INDEX>78</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1823,8 +1915,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_77</SHORT-NAME>
-                  <INDEX>75</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_79</SHORT-NAME>
+                  <INDEX>79</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1846,8 +1938,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_78</SHORT-NAME>
-                  <INDEX>76</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_80</SHORT-NAME>
+                  <INDEX>80</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1869,8 +1961,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_79</SHORT-NAME>
-                  <INDEX>77</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_81</SHORT-NAME>
+                  <INDEX>81</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1879,7 +1971,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>PIT_0_ISR</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -1892,17 +1984,17 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_80</SHORT-NAME>
-                  <INDEX>78</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_82</SHORT-NAME>
+                  <INDEX>82</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>PIT_1_ISR</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -1915,8 +2007,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_81</SHORT-NAME>
-                  <INDEX>79</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_83</SHORT-NAME>
+                  <INDEX>83</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1938,8 +2030,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_82</SHORT-NAME>
-                  <INDEX>80</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_84</SHORT-NAME>
+                  <INDEX>84</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -1961,17 +2053,17 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_87</SHORT-NAME>
-                  <INDEX>81</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_85</SHORT-NAME>
+                  <INDEX>85</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>CAN0_ORED_IRQHandler</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -1984,17 +2076,17 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_88</SHORT-NAME>
-                  <INDEX>82</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_86</SHORT-NAME>
+                  <INDEX>86</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>CAN0_ORED_0_31_MB_IRQHandler</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -2007,17 +2099,17 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_89</SHORT-NAME>
-                  <INDEX>83</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_87</SHORT-NAME>
+                  <INDEX>87</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>CAN0_ORED_32_63_MB_IRQHandler</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -2030,17 +2122,17 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_90</SHORT-NAME>
-                  <INDEX>84</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_88</SHORT-NAME>
+                  <INDEX>88</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>CAN0_ORED_64_95_MB_IRQHandler</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -2053,17 +2145,17 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_91</SHORT-NAME>
-                  <INDEX>85</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_89</SHORT-NAME>
+                  <INDEX>89</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>CAN1_ORED_IRQHandler</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -2076,17 +2168,17 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_92</SHORT-NAME>
-                  <INDEX>86</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_90</SHORT-NAME>
+                  <INDEX>90</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>CAN1_ORED_0_31_MB_IRQHandler</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -2099,17 +2191,17 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_93</SHORT-NAME>
-                  <INDEX>87</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_91</SHORT-NAME>
+                  <INDEX>91</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>CAN1_ORED_32_63_MB_IRQHandler</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -2122,8 +2214,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_94</SHORT-NAME>
-                  <INDEX>88</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_92</SHORT-NAME>
+                  <INDEX>92</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2132,7 +2224,7 @@
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>CAN2_ORED_IRQHandler</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -2145,8 +2237,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_95</SHORT-NAME>
-                  <INDEX>89</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_93</SHORT-NAME>
+                  <INDEX>93</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2168,8 +2260,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_96</SHORT-NAME>
-                  <INDEX>90</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_94</SHORT-NAME>
+                  <INDEX>94</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2191,8 +2283,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_97</SHORT-NAME>
-                  <INDEX>91</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_95</SHORT-NAME>
+                  <INDEX>95</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2214,8 +2306,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_98</SHORT-NAME>
-                  <INDEX>92</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_96</SHORT-NAME>
+                  <INDEX>96</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2237,8 +2329,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_99</SHORT-NAME>
-                  <INDEX>93</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_97</SHORT-NAME>
+                  <INDEX>97</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2260,8 +2352,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_100</SHORT-NAME>
-                  <INDEX>94</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_98</SHORT-NAME>
+                  <INDEX>98</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2283,8 +2375,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_101</SHORT-NAME>
-                  <INDEX>95</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_99</SHORT-NAME>
+                  <INDEX>99</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2306,8 +2398,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_102</SHORT-NAME>
-                  <INDEX>96</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_100</SHORT-NAME>
+                  <INDEX>100</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2329,8 +2421,261 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_101</SHORT-NAME>
+                  <INDEX>101</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN6_0_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_102</SHORT-NAME>
+                  <INDEX>102</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN6_1_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
                   <SHORT-NAME>PlatformIsrConfig_103</SHORT-NAME>
-                  <INDEX>97</INDEX>
+                  <INDEX>103</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN7_0_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_104</SHORT-NAME>
+                  <INDEX>104</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN7_1_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_105</SHORT-NAME>
+                  <INDEX>105</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN1_3_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_106</SHORT-NAME>
+                  <INDEX>106</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN2_3_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_107</SHORT-NAME>
+                  <INDEX>107</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN3_2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_108</SHORT-NAME>
+                  <INDEX>108</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN4_2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_109</SHORT-NAME>
+                  <INDEX>109</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN5_2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_110</SHORT-NAME>
+                  <INDEX>110</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN6_2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_111</SHORT-NAME>
+                  <INDEX>111</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>FlexCAN7_2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_112</SHORT-NAME>
+                  <INDEX>112</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2352,8 +2697,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_104</SHORT-NAME>
-                  <INDEX>98</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_113</SHORT-NAME>
+                  <INDEX>113</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2375,8 +2720,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_105</SHORT-NAME>
-                  <INDEX>99</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_114</SHORT-NAME>
+                  <INDEX>114</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2398,8 +2743,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_106</SHORT-NAME>
-                  <INDEX>100</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_115</SHORT-NAME>
+                  <INDEX>115</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2421,8 +2766,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_107</SHORT-NAME>
-                  <INDEX>101</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_116</SHORT-NAME>
+                  <INDEX>116</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2444,8 +2789,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_108</SHORT-NAME>
-                  <INDEX>102</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_117</SHORT-NAME>
+                  <INDEX>117</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2467,8 +2812,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_109</SHORT-NAME>
-                  <INDEX>103</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_118</SHORT-NAME>
+                  <INDEX>118</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2490,17 +2835,17 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_110</SHORT-NAME>
-                  <INDEX>104</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_119</SHORT-NAME>
+                  <INDEX>119</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>1</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
-                      <VALUE>undefined_handler</VALUE>
+                      <VALUE>LPUART_UART_IP_6_IRQHandler</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
@@ -2513,8 +2858,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_111</SHORT-NAME>
-                  <INDEX>105</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_120</SHORT-NAME>
+                  <INDEX>120</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2536,8 +2881,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_112</SHORT-NAME>
-                  <INDEX>106</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_121</SHORT-NAME>
+                  <INDEX>121</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2559,8 +2904,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_113</SHORT-NAME>
-                  <INDEX>107</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_122</SHORT-NAME>
+                  <INDEX>122</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2582,8 +2927,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_114</SHORT-NAME>
-                  <INDEX>108</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_123</SHORT-NAME>
+                  <INDEX>123</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2605,8 +2950,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_115</SHORT-NAME>
-                  <INDEX>109</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_124</SHORT-NAME>
+                  <INDEX>124</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2628,8 +2973,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_116</SHORT-NAME>
-                  <INDEX>110</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_125</SHORT-NAME>
+                  <INDEX>125</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2651,8 +2996,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_117</SHORT-NAME>
-                  <INDEX>111</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_126</SHORT-NAME>
+                  <INDEX>126</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2674,8 +3019,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_118</SHORT-NAME>
-                  <INDEX>112</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_127</SHORT-NAME>
+                  <INDEX>127</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2697,8 +3042,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_119</SHORT-NAME>
-                  <INDEX>113</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_128</SHORT-NAME>
+                  <INDEX>128</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2720,8 +3065,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_120</SHORT-NAME>
-                  <INDEX>114</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_129</SHORT-NAME>
+                  <INDEX>129</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2743,8 +3088,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_121</SHORT-NAME>
-                  <INDEX>115</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_130</SHORT-NAME>
+                  <INDEX>130</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2766,8 +3111,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_122</SHORT-NAME>
-                  <INDEX>116</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_131</SHORT-NAME>
+                  <INDEX>131</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2789,8 +3134,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_123</SHORT-NAME>
-                  <INDEX>117</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_132</SHORT-NAME>
+                  <INDEX>132</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2812,8 +3157,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_124</SHORT-NAME>
-                  <INDEX>118</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_133</SHORT-NAME>
+                  <INDEX>133</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2835,8 +3180,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_125</SHORT-NAME>
-                  <INDEX>119</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_134</SHORT-NAME>
+                  <INDEX>134</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2858,8 +3203,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_126</SHORT-NAME>
-                  <INDEX>120</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_135</SHORT-NAME>
+                  <INDEX>135</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2881,8 +3226,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_127</SHORT-NAME>
-                  <INDEX>121</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_136</SHORT-NAME>
+                  <INDEX>136</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2904,8 +3249,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_128</SHORT-NAME>
-                  <INDEX>122</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_137</SHORT-NAME>
+                  <INDEX>137</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2927,8 +3272,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_129</SHORT-NAME>
-                  <INDEX>123</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_138</SHORT-NAME>
+                  <INDEX>138</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2950,8 +3295,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_130</SHORT-NAME>
-                  <INDEX>124</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_139</SHORT-NAME>
+                  <INDEX>139</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2973,8 +3318,31 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_131</SHORT-NAME>
-                  <INDEX>125</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_140</SHORT-NAME>
+                  <INDEX>140</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>USDHC_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_141</SHORT-NAME>
+                  <INDEX>141</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -2996,8 +3364,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_132</SHORT-NAME>
-                  <INDEX>126</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_142</SHORT-NAME>
+                  <INDEX>142</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3019,8 +3387,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_133</SHORT-NAME>
-                  <INDEX>127</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_143</SHORT-NAME>
+                  <INDEX>143</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3042,8 +3410,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_134</SHORT-NAME>
-                  <INDEX>128</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_144</SHORT-NAME>
+                  <INDEX>144</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3065,8 +3433,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_135</SHORT-NAME>
-                  <INDEX>129</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_145</SHORT-NAME>
+                  <INDEX>145</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3088,8 +3456,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_136</SHORT-NAME>
-                  <INDEX>130</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_146</SHORT-NAME>
+                  <INDEX>146</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3111,8 +3479,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_137</SHORT-NAME>
-                  <INDEX>131</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_147</SHORT-NAME>
+                  <INDEX>147</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3134,8 +3502,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_138</SHORT-NAME>
-                  <INDEX>132</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_148</SHORT-NAME>
+                  <INDEX>148</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3157,8 +3525,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_139</SHORT-NAME>
-                  <INDEX>133</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_149</SHORT-NAME>
+                  <INDEX>149</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3180,8 +3548,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_140</SHORT-NAME>
-                  <INDEX>134</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_150</SHORT-NAME>
+                  <INDEX>150</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3203,8 +3571,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_141</SHORT-NAME>
-                  <INDEX>135</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_151</SHORT-NAME>
+                  <INDEX>151</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3226,8 +3594,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_142</SHORT-NAME>
-                  <INDEX>136</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_152</SHORT-NAME>
+                  <INDEX>152</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3249,8 +3617,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_143</SHORT-NAME>
-                  <INDEX>137</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_153</SHORT-NAME>
+                  <INDEX>153</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3272,8 +3640,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_144</SHORT-NAME>
-                  <INDEX>138</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_154</SHORT-NAME>
+                  <INDEX>154</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3295,8 +3663,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_145</SHORT-NAME>
-                  <INDEX>139</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_155</SHORT-NAME>
+                  <INDEX>155</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3318,8 +3686,8 @@
                   </PARAMETER-VALUES>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>PlatformIsrConfig_146</SHORT-NAME>
-                  <INDEX>140</INDEX>
+                  <SHORT-NAME>PlatformIsrConfig_156</SHORT-NAME>
+                  <INDEX>156</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
@@ -3333,6 +3701,420 @@
                     <ECUC-TEXTUAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
                       <VALUE>HSE_MU1_ORED_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_157</SHORT-NAME>
+                  <INDEX>157</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>MU_A_0_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_158</SHORT-NAME>
+                  <INDEX>158</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>MU_A_1_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_159</SHORT-NAME>
+                  <INDEX>159</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>MU_A_2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_160</SHORT-NAME>
+                  <INDEX>160</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>MU_B_0_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_161</SHORT-NAME>
+                  <INDEX>161</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>MU_B_1_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_162</SHORT-NAME>
+                  <INDEX>162</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>MU_B_2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_163</SHORT-NAME>
+                  <INDEX>163</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>SoC_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_164</SHORT-NAME>
+                  <INDEX>164</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>SoC2_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_165</SHORT-NAME>
+                  <INDEX>165</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>XRDC_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_166</SHORT-NAME>
+                  <INDEX>166</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>GMAC0_Common_IRQHandler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>GMAC0_Common_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_167</SHORT-NAME>
+                  <INDEX>167</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>GMAC0_CH0_TX_IRQHandler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>GMAC0_CH0_TX_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_168</SHORT-NAME>
+                  <INDEX>168</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>GMAC0_CH0_RX_IRQHandler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>GMAC0_CH0_RX_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_169</SHORT-NAME>
+                  <INDEX>169</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>GMAC0_CH1_TX_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_170</SHORT-NAME>
+                  <INDEX>170</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>GMAC0_CH1_RX_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_171</SHORT-NAME>
+                  <INDEX>171</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>GMAC0_CH2_TX_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_172</SHORT-NAME>
+                  <INDEX>172</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>GMAC0_CH2_RX_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_173</SHORT-NAME>
+                  <INDEX>173</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>GMAC0_SIC_IRQn</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>PlatformIsrConfig_174</SHORT-NAME>
+                  <INDEX>174</INDEX>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrEnabled</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrHandler</DEFINITION-REF>
+                      <VALUE>undefined_handler</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrName</DEFINITION-REF>
+                      <VALUE>GMAC0_SIUC_IRQn</VALUE>
                     </ECUC-TEXTUAL-PARAM-VALUE>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Platform/IntCtrlConfig/PlatformIsrConfig/IsrPriority</DEFINITION-REF>

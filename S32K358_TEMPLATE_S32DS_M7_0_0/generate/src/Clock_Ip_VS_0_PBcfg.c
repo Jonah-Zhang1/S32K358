@@ -306,12 +306,12 @@ static const Clock_Ip_SelectorConfigType Clock_Ip_SelectorConfigurations_0_VS_0[
         
     {
         FLEXCANA_CLK,                     /* Clock name associated to selector */
-        FIRC_CLK,                       /* Name of the selected input source */
+        AIPS_PLAT_CLK,                       /* Name of the selected input source */
     },
         
     {
         FLEXCANB_CLK,                     /* Clock name associated to selector */
-        FIRC_CLK,                       /* Name of the selected input source */
+        AIPS_PLAT_CLK,                       /* Name of the selected input source */
     },
         
     {
@@ -326,17 +326,17 @@ static const Clock_Ip_SelectorConfigType Clock_Ip_SelectorConfigurations_0_VS_0[
         
     {
         EMAC_RX_CLK,                     /* Clock name associated to selector */
-        FIRC_CLK,                       /* Name of the selected input source */
+        EMAC_MII_RMII_TX_CLK,                       /* Name of the selected input source */
     },
         
     {
         EMAC_TX_CLK,                     /* Clock name associated to selector */
-        FIRC_CLK,                       /* Name of the selected input source */
+        EMAC_MII_RMII_TX_CLK,                       /* Name of the selected input source */
     },
         
     {
         EMAC_TS_CLK,                     /* Clock name associated to selector */
-        FIRC_CLK,                       /* Name of the selected input source */
+        EMAC_MII_RMII_TX_CLK,                       /* Name of the selected input source */
     },
         
     {
@@ -377,7 +377,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
 
     {
         PLL_PHI0_CLK,
-        10U,
+        3U,
         {
             0U,
         }
@@ -385,7 +385,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
 
     {
         PLL_PHI1_CLK,
-        0U,
+        3U,
         {
             0U,
         }
@@ -432,14 +432,6 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
 
     {
         AIPS_PLAT_CLK,
-        1U,
-        {
-            0U,
-        }
-    },
-
-    {
-        AIPS_SLOW_CLK,
         2U,
         {
             0U,
@@ -447,8 +439,16 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
     },
 
     {
+        AIPS_SLOW_CLK,
+        4U,
+        {
+            0U,
+        }
+    },
+
+    {
         HSE_CLK,
-        1U,
+        2U,
         {
             0U,
         }
@@ -456,7 +456,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
 
     {
         DCM_CLK,
-        1U,
+        4U,
         {
             0U,
         }
@@ -496,7 +496,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
 
     {
         FLEXCANA_CLK,
-        0U,
+        2U,
         {
             0U,
         }
@@ -504,7 +504,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
 
     {
         FLEXCANB_CLK,
-        0U,
+        1U,
         {
             0U,
         }
@@ -528,7 +528,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
 
     {
         EMAC_RX_CLK,
-        0U,
+        1U,
         {
             0U,
         }
@@ -536,7 +536,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
 
     {
         EMAC_TX_CLK,
-        0U,
+        1U,
         {
             0U,
         }
@@ -544,7 +544,7 @@ static const Clock_Ip_DividerConfigType Clock_Ip_DividerConfigurations_0_VS_0[CL
 
     {
         EMAC_TS_CLK,
-        0U,
+        1U,
         {
             0U,
         }
@@ -632,7 +632,7 @@ static const Clock_Ip_CmuConfigType Clock_Ip_CmuConfigurations_0_VS_0[CLOCK_IP_C
         CMU_FC_IER_FLLAIE(0U) |
         CMU_FC_IER_FHHAIE(0U)
         ),
-        48000000U,
+        160000000U,
         {
             0U,          /* Start index in register values array */
             0U,          /* End index in register values array */
@@ -647,7 +647,7 @@ static const Clock_Ip_CmuConfigType Clock_Ip_CmuConfigurations_0_VS_0[CLOCK_IP_C
         CMU_FC_IER_FLLAIE(0U) |
         CMU_FC_IER_FHHAIE(0U)
         ),
-        48000000U,
+        80000000U,
         {
             0U,          /* Start index in register values array */
             0U,          /* End index in register values array */
@@ -662,7 +662,7 @@ static const Clock_Ip_CmuConfigType Clock_Ip_CmuConfigurations_0_VS_0[CLOCK_IP_C
         CMU_FC_IER_FLLAIE(0U) |
         CMU_FC_IER_FHHAIE(0U)
         ),
-        48000000U,
+        80000000U,
         {
             0U,          /* Start index in register values array */
             0U,          /* End index in register values array */
@@ -691,19 +691,19 @@ static const Clock_Ip_ConfiguredFrequencyType Clock_Ip_ConfiguredFrequencyConfig
     #if CLOCK_IP_CONFIGURED_FREQUENCIES_COUNT > 3U
     {
         CORE_CLK,
-        48000000U,
+        160000000U,
     },
     #endif
     #if CLOCK_IP_CONFIGURED_FREQUENCIES_COUNT > 4U
     {
         AIPS_PLAT_CLK,
-        48000000U,
+        80000000U,
     },
     #endif
     #if CLOCK_IP_CONFIGURED_FREQUENCIES_COUNT > 5U
     {
         AIPS_SLOW_CLK,
-        24000000U,
+        40000000U,
     },
     #endif
 };

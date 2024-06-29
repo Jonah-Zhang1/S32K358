@@ -83,7 +83,7 @@
               <d:lst name="WdgClockReferencePoint" type="MAP">
                 <d:ctr name="WdgClockReferencePoint_0" type="IDENTIFIABLE">
                   <d:ref name="WdgClockReference" type="REFERENCE" 
-                         value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_1/McuClockReferencePoint_0"/>
+                         value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_StandBy/McuClockReferencePoint_0"/>
                 </d:ctr>
               </d:lst>
               <d:ctr name="WdgSettingsConfig" type="IDENTIFIABLE">
@@ -98,7 +98,7 @@
                   <a:a name="IMPORTER_INFO" value="@DEF"/>
                 </d:var>
                 <d:ref name="WdgExternalTriggerCounterRef" type="REFERENCE" 
-                       value="ASPath:/Gpt/Gpt/GptChannelConfigSet/GptChannelConfiguration_0"/>
+                       value="ASPath:/Gpt/Gpt/GptChannelConfigSet/GptChannelConfiguration_PIT0"/>
                 <d:var name="WdgInterruptContentEnable" type="BOOLEAN" 
                        value="true">
                   <a:a name="IMPORTER_INFO" value="@DEF"/>

@@ -7,6 +7,7 @@
         "os_cfg.h": "c",
         "port_ipw.h": "c",
         "port_cfg.h": "c",
-        "port_vs_0_pbcfg.h": "c"
+        "port_vs_0_pbcfg.h": "c",
+        "can_43_flexcan.h": "c"
     }
 }

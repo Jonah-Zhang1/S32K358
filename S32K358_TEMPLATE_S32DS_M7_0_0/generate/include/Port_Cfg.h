@@ -2922,16 +2922,35 @@ PORT_CONFIG_VS_0_PB \
 *
 */
 #define PortConf_PortPin_LED_PTB14  0
+#define PortConf_PortPin_PortPin_MII_RMII_MDC_PTB5  1
+#define PortConf_PortPin_PortPin_MII_RMII_MDIO_PTB4  2
+#define PortConf_PortPin_PortPin_MII_RMII_RXD0_PTC1  3
+#define PortConf_PortPin_PortPin_MII_RMII_RXD1_PTC0  4
+#define PortConf_PortPin_PortPin_MII_RMII_TXD0_PTC2  5
+#define PortConf_PortPin_PortPin_MII_RMII_TXD1_PTD7  6
+#define PortConf_PortPin_PortPin_MII_RMII_RXDV_PTC17  7
+#define PortConf_PortPin_PortPin_MII_RMII_RXER_PTC16  8
+#define PortConf_PortPin_PortPin_MII_RMII_RXCLK_REFCLK_PTD10  9
+#define PortConf_PortPin_PortPin_MII_RMII_TXEN_PTD12  10
+#define PortConf_PortPin_PortPin_MII_TXCLK_PTD11  11
+#define PortConf_PortPin_PortPin_MII_RXD2_PTD9  12
+#define PortConf_PortPin_PortPin_MII_RXD3_PTD8  13
+#define PortConf_PortPin_PortPin_MII_TXD2_PTD6  14
+#define PortConf_PortPin_PortPin_MII_TXD3_PTD5  15
+#define PortConf_PortPin_PTA6_CAN0_RX  16
+#define PortConf_PortPin_PTA7_CAN0_TX  17
+#define PortConf_PortPin_UART6_RX_PTA15  18
+#define PortConf_PortPin_UART6_TX_PTA16  19
 
 /**
 * @brief The maximum number of configured pins
 */
-#define PORT_MAX_CONFIGURED_PADS_U16   ((uint16)1)
+#define PORT_MAX_CONFIGURED_PADS_U16   ((uint16)20)
 
 /**
 * @brief Number of UnUsed pin array
 */
-#define PORT_MAX_UNUSED_PADS_U16    (148U)
+#define PORT_MAX_UNUSED_PADS_U16    (129U)
 
 /**
 * @brief Port driver Post-build configuration switch

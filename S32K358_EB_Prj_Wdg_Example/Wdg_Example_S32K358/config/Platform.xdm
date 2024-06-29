@@ -871,13 +871,33 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_41" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" value="STM2_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_42" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" value="SWT0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
@@ -887,7 +907,25 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_43" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="CTI0_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="SWT1_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_44" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" value="SWT2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -905,8 +943,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_45" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="FLASH_0_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="CTI0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -924,8 +961,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_46" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="FLASH_1_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="CTI1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -944,7 +980,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_47" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="FLASH_2_IRQn">
+                             value="FLASH_0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -962,7 +998,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_48" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="RGM_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="FLASH_1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -980,7 +1017,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_49" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="PMC_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="FLASH_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -998,8 +1036,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_50" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="SIUL_0_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="RGM_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1017,8 +1054,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_51" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="SIUL_1_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="PMC_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1037,7 +1073,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_52" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="SIUL_2_IRQn">
+                             value="SIUL_0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1056,7 +1092,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_53" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="SIUL_3_IRQn">
+                             value="SIUL_1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1075,7 +1111,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_54" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS0_0_IRQn">
+                             value="SIUL_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1094,7 +1130,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_55" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS0_1_IRQn">
+                             value="SIUL_3_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1113,7 +1149,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_56" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS0_2_IRQn">
+                             value="EMIOS0_0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1132,7 +1168,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_57" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS0_3_IRQn">
+                             value="EMIOS0_1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1151,7 +1187,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_58" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS0_4_IRQn">
+                             value="EMIOS0_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1170,7 +1206,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_59" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS0_5_IRQn">
+                             value="EMIOS0_3_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1189,7 +1225,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_60" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS1_0_IRQn">
+                             value="EMIOS0_4_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1208,7 +1244,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_61" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS1_1_IRQn">
+                             value="EMIOS0_5_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1227,7 +1263,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_62" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS1_2_IRQn">
+                             value="EMIOS1_0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1246,7 +1282,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_63" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS1_3_IRQn">
+                             value="EMIOS1_1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1265,7 +1301,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_64" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS1_4_IRQn">
+                             value="EMIOS1_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1284,7 +1320,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_65" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS1_5_IRQn">
+                             value="EMIOS1_3_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1303,7 +1339,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_66" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS2_0_IRQn">
+                             value="EMIOS1_4_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1322,7 +1358,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_67" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS2_1_IRQn">
+                             value="EMIOS1_5_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1341,7 +1377,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_68" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS2_2_IRQn">
+                             value="EMIOS2_0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1360,7 +1396,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_69" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS2_3_IRQn">
+                             value="EMIOS2_1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1379,7 +1415,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_70" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS2_4_IRQn">
+                             value="EMIOS2_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1398,7 +1434,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_71" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="EMIOS2_5_IRQn">
+                             value="EMIOS2_3_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1416,7 +1452,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_72" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="WKPU_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="EMIOS2_4_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1434,7 +1471,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_73" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="CMU0_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="EMIOS2_5_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1452,7 +1490,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_74" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="CMU1_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="WKPU_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1470,7 +1508,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_75" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="CMU2_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="CMU0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1488,7 +1526,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_76" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="BCTU_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="CMU1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1506,7 +1544,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_77" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="LCU0_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="CMU2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1524,7 +1562,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_78" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="LCU1_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="BCTU_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1542,13 +1580,15 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_79" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="PIT0_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="LCU0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
@@ -1558,7 +1598,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_80" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="PIT1_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="LCU1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1576,6 +1616,34 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_81" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" value="PIT0_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="PIT_0_ISR"/>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_82" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" value="PIT1_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="PIT_1_ISR"/>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_83" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" value="PIT2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
@@ -1593,7 +1661,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_82" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_84" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" value="RTC_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
@@ -1611,7 +1679,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_87" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_85" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN0_0_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1619,18 +1687,14 @@
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="undefined_handler">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="CAN0_ORED_IRQHandler"/>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_88" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_86" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN0_1_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1638,18 +1702,14 @@
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="undefined_handler">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="CAN0_ORED_0_31_MB_IRQHandler"/>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_89" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_87" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN0_2_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1657,18 +1717,14 @@
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="undefined_handler">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="CAN0_ORED_32_63_MB_IRQHandler"/>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_90" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_88" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN0_3_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1676,18 +1732,14 @@
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="undefined_handler">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="CAN0_ORED_64_95_MB_IRQHandler"/>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_91" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_89" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN1_0_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1695,18 +1747,14 @@
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="undefined_handler">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="CAN1_ORED_IRQHandler"/>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_92" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_90" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN1_1_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1714,18 +1762,14 @@
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="undefined_handler">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="CAN1_ORED_0_31_MB_IRQHandler"/>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_93" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_91" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN1_2_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1733,18 +1777,14 @@
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="undefined_handler">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="CAN1_ORED_32_63_MB_IRQHandler"/>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_94" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_92" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN2_0_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1752,18 +1792,14 @@
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false"/>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="undefined_handler">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="CAN2_ORED_IRQHandler"/>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_95" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_93" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN2_1_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1782,7 +1818,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_96" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_94" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN2_2_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1801,7 +1837,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_97" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_95" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN3_0_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1820,7 +1856,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_98" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_96" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN3_1_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1839,7 +1875,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_99" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_97" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN4_0_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1858,7 +1894,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_100" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_98" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN4_1_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1877,7 +1913,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_101" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_99" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN5_0_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1896,7 +1932,7 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
-                    <d:ctr name="PlatformIsrConfig_102" type="IDENTIFIABLE">
+                    <d:ctr name="PlatformIsrConfig_100" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
                              value="FlexCAN5_1_IRQn">
                         <a:a name="IMPORTER_INFO">
@@ -1915,9 +1951,47 @@
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                     </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_101" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="FlexCAN6_0_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_102" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="FlexCAN6_1_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
                     <d:ctr name="PlatformIsrConfig_103" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="FLEXIO_IRQn">
+                             value="FlexCAN7_0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1936,7 +2010,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_104" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART0_IRQn">
+                             value="FlexCAN7_1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1955,7 +2029,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_105" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART1_IRQn">
+                             value="FlexCAN1_3_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1974,7 +2048,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_106" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART2_IRQn">
+                             value="FlexCAN2_3_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -1993,7 +2067,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_107" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART3_IRQn">
+                             value="FlexCAN3_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2012,7 +2086,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_108" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART4_IRQn">
+                             value="FlexCAN4_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2031,7 +2105,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_109" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART5_IRQn">
+                             value="FlexCAN5_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2050,7 +2124,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_110" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART6_IRQn">
+                             value="FlexCAN6_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2069,7 +2143,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_111" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART7_IRQn">
+                             value="FlexCAN7_2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2088,7 +2162,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_112" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART8_IRQn">
+                             value="FLEXIO_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2107,7 +2181,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_113" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART9_IRQn">
+                             value="LPUART0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2126,7 +2200,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_114" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART10_IRQn">
+                             value="LPUART1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2145,7 +2219,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_115" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART11_IRQn">
+                             value="LPUART2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2164,7 +2238,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_116" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART12_IRQn">
+                             value="LPUART3_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2183,7 +2257,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_117" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART13_IRQn">
+                             value="LPUART4_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2202,7 +2276,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_118" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART14_IRQn">
+                             value="LPUART5_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2221,26 +2295,22 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_119" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPUART15_IRQn">
+                             value="LPUART6_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
                         </a:a>
                       </d:var>
-                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
                       <d:var name="IsrPriority" type="INTEGER" value="0">
                         <a:a name="IMPORTER_INFO" value="@DEF"/>
                       </d:var>
                       <d:var name="IsrHandler" type="FUNCTION-NAME" 
-                             value="undefined_handler">
-                        <a:a name="IMPORTER_INFO" value="@DEF"/>
-                      </d:var>
+                             value="LPUART_UART_IP_6_IRQHandler"/>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_120" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPI2C0_IRQn">
+                             value="LPUART7_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2259,7 +2329,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_121" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPI2C1_IRQn">
+                             value="LPUART8_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2278,7 +2348,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_122" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPSPI0_IRQn">
+                             value="LPUART9_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2297,7 +2367,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_123" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPSPI1_IRQn">
+                             value="LPUART10_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2316,7 +2386,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_124" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPSPI2_IRQn">
+                             value="LPUART11_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2335,7 +2405,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_125" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPSPI3_IRQn">
+                             value="LPUART12_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2354,7 +2424,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_126" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPSPI4_IRQn">
+                             value="LPUART13_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2373,7 +2443,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_127" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPSPI5_IRQn">
+                             value="LPUART14_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2391,7 +2461,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_128" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="QSPI_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="LPUART15_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2409,7 +2480,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_129" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="SAI0_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="LPI2C0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2427,7 +2499,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_130" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="SAI1_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="LPI2C1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2445,7 +2518,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_131" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="JDC_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="LPSPI0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2463,7 +2537,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_132" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="ADC0_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="LPSPI1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2481,7 +2556,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_133" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="ADC1_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="LPSPI2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2499,7 +2575,8 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_134" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" value="ADC2_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="LPSPI3_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2518,7 +2595,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_135" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPCMP0_IRQn">
+                             value="LPSPI4_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2537,7 +2614,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_136" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPCMP1_IRQn">
+                             value="LPSPI5_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2555,8 +2632,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_137" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="LPCMP2_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="QSPI_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2574,8 +2650,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_138" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="FCCU_0_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="SAI0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2593,8 +2668,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_139" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="FCCU_1_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="SAI1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2613,7 +2687,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_140" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="STCU_LBIST_MBIST_IRQn">
+                             value="USDHC_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2631,8 +2705,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_141" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="HSE_MU0_TX_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="JDC_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2650,8 +2723,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_142" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="HSE_MU0_RX_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="ADC0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2669,8 +2741,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_143" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="HSE_MU0_ORED_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="ADC1_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2688,8 +2759,7 @@
                       </d:var>
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_144" type="IDENTIFIABLE">
-                      <d:var name="IsrName" type="ENUMERATION" 
-                             value="HSE_MU1_TX_IRQn">
+                      <d:var name="IsrName" type="ENUMERATION" value="ADC2_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2708,7 +2778,7 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_145" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
-                             value="HSE_MU1_RX_IRQn">
+                             value="LPCMP0_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>
@@ -2727,7 +2797,524 @@
                     </d:ctr>
                     <d:ctr name="PlatformIsrConfig_146" type="IDENTIFIABLE">
                       <d:var name="IsrName" type="ENUMERATION" 
+                             value="LPCMP1_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_147" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="LPCMP2_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_148" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="FCCU_0_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_149" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="FCCU_1_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_150" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="STCU_LBIST_MBIST_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_151" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="HSE_MU0_TX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_152" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="HSE_MU0_RX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_153" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="HSE_MU0_ORED_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_154" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="HSE_MU1_TX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_155" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="HSE_MU1_RX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_156" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
                              value="HSE_MU1_ORED_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_157" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="MU_A_0_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_158" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="MU_A_1_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_159" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="MU_A_2_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_160" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="MU_B_0_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_161" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="MU_B_1_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_162" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="MU_B_2_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_163" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" value="SoC_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_164" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" value="SoC2_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_165" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" value="XRDC_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_166" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="GMAC0_Common_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="GMAC0_Common_IRQHandler"/>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_167" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="GMAC0_CH0_TX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="GMAC0_CH0_TX_IRQHandler"/>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_168" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="GMAC0_CH0_RX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="true"/>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="GMAC0_CH0_RX_IRQHandler"/>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_169" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="GMAC0_CH1_TX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_170" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="GMAC0_CH1_RX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_171" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="GMAC0_CH2_TX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_172" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="GMAC0_CH2_RX_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_173" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="GMAC0_SIC_IRQn">
+                        <a:a name="IMPORTER_INFO">
+                          <a:v>@DEF</a:v>
+                          <a:v>@CALC</a:v>
+                        </a:a>
+                      </d:var>
+                      <d:var name="IsrEnabled" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrPriority" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                      <d:var name="IsrHandler" type="FUNCTION-NAME" 
+                             value="undefined_handler">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PlatformIsrConfig_174" type="IDENTIFIABLE">
+                      <d:var name="IsrName" type="ENUMERATION" 
+                             value="GMAC0_SIUC_IRQn">
                         <a:a name="IMPORTER_INFO">
                           <a:v>@DEF</a:v>
                           <a:v>@CALC</a:v>

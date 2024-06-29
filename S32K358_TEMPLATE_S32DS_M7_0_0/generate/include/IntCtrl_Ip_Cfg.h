@@ -78,6 +78,20 @@ extern const IntCtrl_Ip_CtrlConfigType intCtrlConfig;
  * NOTE: For application specific handlers, these functions must be implemented in the application code!
  */
 extern void undefined_handler(void);
+extern void PIT_0_ISR(void);
+extern void PIT_1_ISR(void);
+extern void CAN0_ORED_IRQHandler(void);
+extern void CAN0_ORED_0_31_MB_IRQHandler(void);
+extern void CAN0_ORED_32_63_MB_IRQHandler(void);
+extern void CAN0_ORED_64_95_MB_IRQHandler(void);
+extern void CAN1_ORED_IRQHandler(void);
+extern void CAN1_ORED_0_31_MB_IRQHandler(void);
+extern void CAN1_ORED_32_63_MB_IRQHandler(void);
+extern void CAN2_ORED_IRQHandler(void);
+extern void LPUART_UART_IP_6_IRQHandler(void);
+extern void GMAC0_Common_IRQHandler(void);
+extern void GMAC0_CH0_TX_IRQHandler(void);
+extern void GMAC0_CH0_RX_IRQHandler(void);
 
 
 #define PLATFORM_STOP_SEC_CONFIG_DATA_UNSPECIFIED

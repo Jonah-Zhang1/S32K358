@@ -697,14 +697,14 @@ typedef uint32 Mcu_PowerModeStateType;
 */
 
 
-#define McuClockSettingConfig_0   ((Mcu_ClockType)0U)
+#define McuClockSettingConfig_Run   ((Mcu_ClockType)0U)
 
-#define McuConf_McuClockSettingConfig_McuClockSettingConfig_0   ((Mcu_ClockType)0U)
+#define McuConf_McuClockSettingConfig_McuClockSettingConfig_Run   ((Mcu_ClockType)0U)
 
 
-#define McuClockSettingConfig_1   ((Mcu_ClockType)1U)
+#define McuClockSettingConfig_StandBy   ((Mcu_ClockType)1U)
 
-#define McuConf_McuClockSettingConfig_McuClockSettingConfig_1   ((Mcu_ClockType)1U)
+#define McuConf_McuClockSettingConfig_McuClockSettingConfig_StandBy   ((Mcu_ClockType)1U)
 
 
 #endif

@@ -485,7 +485,7 @@
                   </a:a>
                 </d:var>
                 <d:lst name="McuClockSettingConfig" type="MAP">
-                  <d:ctr name="McuClockSettingConfig_0" type="IDENTIFIABLE">
+                  <d:ctr name="McuClockSettingConfig_Run" type="IDENTIFIABLE">
                     <d:var name="McuClockSettingId" type="INTEGER" value="0">
                       <a:a name="IMPORTER_INFO">
                         <a:v>@DEF</a:v>
@@ -777,7 +777,7 @@
                             </a:a>
                           </d:var>
                           <d:var name="McuPCS_SourceFrequency" type="FLOAT" 
-                                 value="4.8E7">
+                                 value="1.6E8">
                             <a:a name="IMPORTER_INFO">
                               <a:v>@CALC</a:v>
                               <a:v>@DEF</a:v>
@@ -901,7 +901,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux0Divider0_Frequency" 
-                               type="FLOAT" value="4.8E7">
+                               type="FLOAT" value="1.6E8">
                           <a:a name="IMPORTER_INFO">
                             <a:v>@CALC</a:v>
                             <a:v>@DEF</a:v>
@@ -930,8 +930,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux0Div1_Divisor" type="INTEGER" 
-                               value="0">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="1">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -956,11 +955,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux0Divider1_Frequency" 
-                               type="FLOAT" value="4.8E7">
-                          <a:a name="IMPORTER_INFO">
-                            <a:v>@CALC</a:v>
-                            <a:v>@DEF</a:v>
-                          </a:a>
+                               type="FLOAT" value="8.0E7">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -985,8 +980,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux0Div2_Divisor" type="INTEGER" 
-                               value="1">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="3">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1011,7 +1005,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux0Divider2_Frequency" 
-                               type="FLOAT" value="2.4E7">
+                               type="FLOAT" value="4.0E7">
                           <a:a name="IMPORTER_INFO">
                             <a:v>@CALC</a:v>
                             <a:v>@DEF</a:v>
@@ -1040,8 +1034,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux0Div3_Divisor" type="INTEGER" 
-                               value="0">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="1">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1066,7 +1059,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux0Divider3_Frequency" 
-                               type="FLOAT" value="4.8E7">
+                               type="FLOAT" value="8.0E7">
                           <a:a name="IMPORTER_INFO">
                             <a:v>@CALC</a:v>
                             <a:v>@DEF</a:v>
@@ -1095,8 +1088,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux0Div4_Divisor" type="INTEGER" 
-                               value="0">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="3">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1121,7 +1113,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux0Divider4_Frequency" 
-                               type="FLOAT" value="4.8E7">
+                               type="FLOAT" value="4.0E7">
                           <a:a name="IMPORTER_INFO">
                             <a:v>@CALC</a:v>
                             <a:v>@DEF</a:v>
@@ -1179,7 +1171,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux0Divider5_Frequency" 
-                               type="FLOAT" value="1.2E7">
+                               type="FLOAT" value="4.0E7">
                           <a:a name="IMPORTER_INFO">
                             <a:v>@CALC</a:v>
                             <a:v>@DEF</a:v>
@@ -1212,7 +1204,6 @@
                         </d:var>
                         <d:var name="McuClkMux0Div6_Divisor" type="INTEGER" 
                                value="0">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1236,7 +1227,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux0Divider6_Frequency" 
-                               type="FLOAT" value="4.8E7">
+                               type="FLOAT" value="1.6E8">
                           <a:a name="IMPORTER_INFO">
                             <a:v>@CALC</a:v>
                             <a:v>@DEF</a:v>
@@ -1470,11 +1461,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux3_Source" type="ENUMERATION" 
-                               value="FIRC_CLK">
-                          <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
-                            <a:v>@CALC</a:v>
-                          </a:a>
+                               value="AIPS_PLAT_CLK">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1486,8 +1473,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux3Div0_En" type="BOOLEAN" 
-                               value="false">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="true">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1499,8 +1485,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux3Div0_Divisor" type="INTEGER" 
-                               value="0">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="1">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1512,10 +1497,10 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux3Divider0_Frequency" 
-                               type="FLOAT" value="0.0">
+                               type="FLOAT" value="4.0E7">
                           <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
                             <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
                           </a:a>
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
@@ -1543,11 +1528,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux4_Source" type="ENUMERATION" 
-                               value="FIRC_CLK">
-                          <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
-                            <a:v>@CALC</a:v>
-                          </a:a>
+                               value="AIPS_PLAT_CLK">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1559,8 +1540,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux4Div0_En" type="BOOLEAN" 
-                               value="false">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="true">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1585,10 +1565,10 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux4Divider0_Frequency" 
-                               type="FLOAT" value="0.0">
+                               type="FLOAT" value="8.0E7">
                           <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
                             <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
                           </a:a>
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
@@ -1762,11 +1742,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux7_Source" type="ENUMERATION" 
-                               value="FIRC_CLK">
-                          <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
-                            <a:v>@CALC</a:v>
-                          </a:a>
+                               value="EMAC_MII_RMII_TX_CLK">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1778,8 +1754,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux7Div0_En" type="BOOLEAN" 
-                               value="false">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="true">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1804,10 +1779,10 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux7Divider0_Frequency" 
-                               type="FLOAT" value="0.0">
+                               type="FLOAT" value="5.0E7">
                           <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
                             <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
                           </a:a>
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
@@ -1835,11 +1810,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux8_Source" type="ENUMERATION" 
-                               value="FIRC_CLK">
-                          <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
-                            <a:v>@CALC</a:v>
-                          </a:a>
+                               value="EMAC_MII_RMII_TX_CLK">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1851,8 +1822,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux8Div0_En" type="BOOLEAN" 
-                               value="false">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="true">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1877,10 +1847,10 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux8Divider0_Frequency" 
-                               type="FLOAT" value="0.0">
+                               type="FLOAT" value="5.0E7">
                           <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
                             <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
                           </a:a>
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
@@ -1908,11 +1878,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux9_Source" type="ENUMERATION" 
-                               value="FIRC_CLK">
-                          <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
-                            <a:v>@CALC</a:v>
-                          </a:a>
+                               value="EMAC_MII_RMII_TX_CLK">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1924,8 +1890,7 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClkMux9Div0_En" type="BOOLEAN" 
-                               value="false">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                               value="true">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -1950,10 +1915,10 @@
                           </a:a>
                         </d:var>
                         <d:var name="McuClockMux9Divider0_Frequency" 
-                               type="FLOAT" value="0.0">
+                               type="FLOAT" value="5.0E7">
                           <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
                             <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
                           </a:a>
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
@@ -2781,7 +2746,7 @@
                             </variant:pbvcond>
                           </a:a>
                         </d:var>
-                        <d:var name="McuPllOdiv0_Div" type="INTEGER" value="9">
+                        <d:var name="McuPllOdiv0_Div" type="INTEGER" value="2">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -2792,9 +2757,7 @@
                             </variant:pbvcond>
                           </a:a>
                         </d:var>
-                        <d:var name="McuPllOdiv1_En" type="BOOLEAN" 
-                               value="false">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        <d:var name="McuPllOdiv1_En" type="BOOLEAN" value="true">
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
                               <variant:criterion 
@@ -2820,7 +2783,7 @@
                       </d:ctr>
                       <d:ctr name="McuPll_Parameter" type="IDENTIFIABLE">
                         <d:var name="PLL_PHI0_Frequency" type="FLOAT" 
-                               value="4.8E7">
+                               value="1.6E8">
                           <a:a name="IMPORTER_INFO">
                             <a:v>@CALC</a:v>
                             <a:v>@DEF</a:v>
@@ -2836,10 +2799,10 @@
                           </a:a>
                         </d:var>
                         <d:var name="PLL_PHI1_Frequency" type="FLOAT" 
-                               value="0.0">
+                               value="1.6E8">
                           <a:a name="IMPORTER_INFO">
-                            <a:v>@DEF</a:v>
                             <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
                           </a:a>
                           <a:a name="VARIANTS" type="Variant">
                             <variant:pbvcond>
@@ -3431,10 +3394,9 @@
                       </d:ctr>
                     </d:lst>
                     <d:lst name="McuClockReferencePoint" type="MAP">
-                      <d:ctr name="McuClockReferencePoint_0" 
-                             type="IDENTIFIABLE">
+                      <d:ctr name="CORE_CLK" type="IDENTIFIABLE">
                         <d:var name="McuClockReferencePointFrequency" 
-                               type="FLOAT" value="4.8E7">
+                               type="FLOAT" value="1.6E8">
                           <a:a name="IMPORTER_INFO">
                             <a:v>@CALC</a:v>
                             <a:v>@DEF</a:v>
@@ -3463,9 +3425,161 @@
                           </a:a>
                         </d:var>
                       </d:ctr>
+                      <d:ctr name="ETH_CLK" type="IDENTIFIABLE">
+                        <d:var name="McuClockReferencePointFrequency" 
+                               type="FLOAT" value="1.6E8">
+                          <a:a name="IMPORTER_INFO">
+                            <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
+                          </a:a>
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                        <d:var name="McuClockFrequencySelect" 
+                               type="ENUMERATION" value="CORE_CLK">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="APIS_PLAT_CLK" type="IDENTIFIABLE">
+                        <d:var name="McuClockReferencePointFrequency" 
+                               type="FLOAT" value="8.0E7">
+                          <a:a name="IMPORTER_INFO">
+                            <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
+                          </a:a>
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                        <d:var name="McuClockFrequencySelect" 
+                               type="ENUMERATION" value="AIPS_PLAT_CLK">
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="APIS_SLOW_CLK" type="IDENTIFIABLE">
+                        <d:var name="McuClockReferencePointFrequency" 
+                               type="FLOAT" value="4.0E7">
+                          <a:a name="IMPORTER_INFO">
+                            <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
+                          </a:a>
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                        <d:var name="McuClockFrequencySelect" 
+                               type="ENUMERATION" value="AIPS_SLOW_CLK">
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="STIM0_CLK" type="IDENTIFIABLE">
+                        <d:var name="McuClockReferencePointFrequency" 
+                               type="FLOAT" value="4.8E7">
+                          <a:a name="IMPORTER_INFO">
+                            <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
+                          </a:a>
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                        <d:var name="McuClockFrequencySelect" 
+                               type="ENUMERATION" value="STM0_CLK">
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="FLEXCAN_PE_CLK0_2" type="IDENTIFIABLE">
+                        <d:var name="McuClockReferencePointFrequency" 
+                               type="FLOAT" value="4.0E7">
+                          <a:a name="IMPORTER_INFO">
+                            <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
+                          </a:a>
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                        <d:var name="McuClockFrequencySelect" 
+                               type="ENUMERATION" value="FLEXCAN_PE_CLK0_2">
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                      </d:ctr>
                     </d:lst>
                   </d:ctr>
-                  <d:ctr name="McuClockSettingConfig_1" type="IDENTIFIABLE">
+                  <d:ctr name="McuClockSettingConfig_StandBy" 
+                         type="IDENTIFIABLE">
                     <d:var name="McuClockSettingId" type="INTEGER" value="1">
                       <a:a name="IMPORTER_INFO">
                         <a:v>@DEF</a:v>
@@ -5548,10 +5662,6 @@
                     <d:ctr name="McuPll_0" type="IDENTIFIABLE">
                       <d:var name="McuPLLUnderMcuControl" type="BOOLEAN" 
                              value="true">
-                        <a:a name="IMPORTER_INFO">
-                          <a:v>@DEF</a:v>
-                          <a:v>@CALC</a:v>
-                        </a:a>
                         <a:a name="VARIANTS" type="Variant">
                           <variant:pbvcond>
                             <variant:criterion 
@@ -7401,11 +7511,7 @@
                             </a:a>
                           </d:var>
                           <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO">
-                              <a:v>@DEF</a:v>
-                              <a:v>@CALC</a:v>
-                            </a:a>
+                                 value="true">
                             <a:a name="VARIANTS" type="Variant">
                               <variant:pbvcond>
                                 <variant:criterion 
@@ -8477,11 +8583,7 @@
                             </a:a>
                           </d:var>
                           <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO">
-                              <a:v>@DEF</a:v>
-                              <a:v>@CALC</a:v>
-                            </a:a>
+                                 value="true">
                             <a:a name="VARIANTS" type="Variant">
                               <variant:pbvcond>
                                 <variant:criterion 
@@ -8509,11 +8611,7 @@
                             </a:a>
                           </d:var>
                           <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO">
-                              <a:v>@DEF</a:v>
-                              <a:v>@CALC</a:v>
-                            </a:a>
+                                 value="true">
                             <a:a name="VARIANTS" type="Variant">
                               <variant:pbvcond>
                                 <variant:criterion 
@@ -8957,11 +9055,7 @@
                             </a:a>
                           </d:var>
                           <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO">
-                              <a:v>@DEF</a:v>
-                              <a:v>@CALC</a:v>
-                            </a:a>
+                                 value="true">
                             <a:a name="VARIANTS" type="Variant">
                               <variant:pbvcond>
                                 <variant:criterion 
@@ -10205,11 +10299,7 @@
                             </a:a>
                           </d:var>
                           <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                                 value="false">
-                            <a:a name="IMPORTER_INFO">
-                              <a:v>@DEF</a:v>
-                              <a:v>@CALC</a:v>
-                            </a:a>
+                                 value="true">
                             <a:a name="VARIANTS" type="Variant">
                               <variant:pbvcond>
                                 <variant:criterion 

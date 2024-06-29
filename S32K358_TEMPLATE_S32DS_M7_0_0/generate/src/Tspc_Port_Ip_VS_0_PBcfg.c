@@ -106,6 +106,82 @@ const Tspc_Port_Ip_ObeGroupConfig aTspc_InitConfigArr_VS_0[NUM_OF_OBE_GROUP_CONF
     {
         .obeGroupSelect = 0,
         .obeGroupIndex  = 22
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
+    },
+    {
+        .obeGroupSelect = 0,
+        .obeGroupIndex  = 65535
     }
 };
 

@@ -291,7 +291,7 @@
               </PARAMETER-VALUES>
               <SUB-CONTAINERS>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>McuClockSettingConfig_0</SHORT-NAME>
+                  <SHORT-NAME>McuClockSettingConfig_Run</SHORT-NAME>
                   <INDEX>0</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -337,7 +337,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClkMux0Div1_Divisor</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClkMux0Div1_En</DEFINITION-REF>
@@ -349,7 +349,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClkMux0Div2_Divisor</DEFINITION-REF>
-                              <VALUE>1</VALUE>
+                              <VALUE>3</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClkMux0Div2_En</DEFINITION-REF>
@@ -361,7 +361,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClkMux0Div3_Divisor</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClkMux0Div3_En</DEFINITION-REF>
@@ -373,7 +373,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClkMux0Div4_Divisor</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>3</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClkMux0Div4_En</DEFINITION-REF>
@@ -421,31 +421,31 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClockMux0Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>4.8E7</VALUE>
+                              <VALUE>1.6E8</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClockMux0Divider1_Frequency</DEFINITION-REF>
-                              <VALUE>4.8E7</VALUE>
+                              <VALUE>8.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClockMux0Divider2_Frequency</DEFINITION-REF>
-                              <VALUE>2.4E7</VALUE>
+                              <VALUE>4.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClockMux0Divider3_Frequency</DEFINITION-REF>
-                              <VALUE>4.8E7</VALUE>
+                              <VALUE>8.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClockMux0Divider4_Frequency</DEFINITION-REF>
-                              <VALUE>4.8E7</VALUE>
+                              <VALUE>4.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClockMux0Divider5_Frequency</DEFINITION-REF>
-                              <VALUE>1.2E7</VALUE>
+                              <VALUE>4.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClockMux0Divider6_Frequency</DEFINITION-REF>
-                              <VALUE>4.8E7</VALUE>
+                              <VALUE>1.6E8</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux0/McuClockMux0Divider7_Frequency</DEFINITION-REF>
@@ -775,19 +775,19 @@
                           <PARAMETER-VALUES>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux3/McuClkMux3Div0_Divisor</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux3/McuClkMux3Div0_En</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux3/McuClkMux3_Source</DEFINITION-REF>
-                              <VALUE>FIRC_CLK</VALUE>
+                              <VALUE>AIPS_PLAT_CLK</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux3/McuClockMux3Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
+                              <VALUE>4.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux3/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -805,15 +805,15 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux4/McuClkMux4Div0_En</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux4/McuClkMux4_Source</DEFINITION-REF>
-                              <VALUE>FIRC_CLK</VALUE>
+                              <VALUE>AIPS_PLAT_CLK</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux4/McuClockMux4Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
+                              <VALUE>8.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux4/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -883,15 +883,15 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux7/McuClkMux7Div0_En</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux7/McuClkMux7_Source</DEFINITION-REF>
-                              <VALUE>FIRC_CLK</VALUE>
+                              <VALUE>EMAC_MII_RMII_TX_CLK</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux7/McuClockMux7Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
+                              <VALUE>5.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux7/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -909,15 +909,15 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux8/McuClkMux8Div0_En</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux8/McuClkMux8_Source</DEFINITION-REF>
-                              <VALUE>FIRC_CLK</VALUE>
+                              <VALUE>EMAC_MII_RMII_TX_CLK</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux8/McuClockMux8Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
+                              <VALUE>5.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux8/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -935,15 +935,15 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux9/McuClkMux9Div0_En</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux9/McuClkMux9_Source</DEFINITION-REF>
-                              <VALUE>FIRC_CLK</VALUE>
+                              <VALUE>EMAC_MII_RMII_TX_CLK</VALUE>
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux9/McuClockMux9Divider0_Frequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
+                              <VALUE>5.0E7</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0ClockMux9/McuClockMuxUnderMcuControl</DEFINITION-REF>
@@ -970,7 +970,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuCgm0SettingConfig/McuCgm0PcsConfig/McuPCS_SourceFrequency</DEFINITION-REF>
-                              <VALUE>4.8E7</VALUE>
+                              <VALUE>1.6E8</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
@@ -1117,7 +1117,7 @@
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>McuClockReferencePoint_0</SHORT-NAME>
+                      <SHORT-NAME>CORE_CLK</SHORT-NAME>
                       <INDEX>0</INDEX>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
                       <PARAMETER-VALUES>
@@ -1127,7 +1127,82 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockReferencePointFrequency</DEFINITION-REF>
+                          <VALUE>1.6E8</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>ETH_CLK</SHORT-NAME>
+                      <INDEX>1</INDEX>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockFrequencySelect</DEFINITION-REF>
+                          <VALUE>CORE_CLK</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockReferencePointFrequency</DEFINITION-REF>
+                          <VALUE>1.6E8</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>APIS_PLAT_CLK</SHORT-NAME>
+                      <INDEX>2</INDEX>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockFrequencySelect</DEFINITION-REF>
+                          <VALUE>AIPS_PLAT_CLK</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockReferencePointFrequency</DEFINITION-REF>
+                          <VALUE>8.0E7</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>APIS_SLOW_CLK</SHORT-NAME>
+                      <INDEX>3</INDEX>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockFrequencySelect</DEFINITION-REF>
+                          <VALUE>AIPS_SLOW_CLK</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockReferencePointFrequency</DEFINITION-REF>
+                          <VALUE>4.0E7</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>STIM0_CLK</SHORT-NAME>
+                      <INDEX>4</INDEX>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockFrequencySelect</DEFINITION-REF>
+                          <VALUE>STM0_CLK</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockReferencePointFrequency</DEFINITION-REF>
                           <VALUE>4.8E7</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>FLEXCAN_PE_CLK0_2</SHORT-NAME>
+                      <INDEX>5</INDEX>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-TEXTUAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockFrequencySelect</DEFINITION-REF>
+                          <VALUE>FLEXCAN_PE_CLK0_2</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuClockReferencePoint/McuClockReferencePointFrequency</DEFINITION-REF>
+                          <VALUE>4.0E7</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
@@ -1259,7 +1334,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllOdiv0_Div</DEFINITION-REF>
-                              <VALUE>9</VALUE>
+                              <VALUE>2</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllOdiv0_En</DEFINITION-REF>
@@ -1271,7 +1346,7 @@
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Configuration/McuPllOdiv1_En</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                           </PARAMETER-VALUES>
                         </ECUC-CONTAINER-VALUE>
@@ -1281,11 +1356,11 @@
                           <PARAMETER-VALUES>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Parameter/PLL_PHI0_Frequency</DEFINITION-REF>
-                              <VALUE>4.8E7</VALUE>
+                              <VALUE>1.6E8</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Parameter/PLL_PHI1_Frequency</DEFINITION-REF>
-                              <VALUE>0.0</VALUE>
+                              <VALUE>1.6E8</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig/McuPll_0/McuPll_Parameter/PLL_VCO_Frequency</DEFINITION-REF>
@@ -1436,7 +1511,7 @@
                   </SUB-CONTAINERS>
                 </ECUC-CONTAINER-VALUE>
                 <ECUC-CONTAINER-VALUE>
-                  <SHORT-NAME>McuClockSettingConfig_1</SHORT-NAME>
+                  <SHORT-NAME>McuClockSettingConfig_StandBy</SHORT-NAME>
                   <INDEX>1</INDEX>
                   <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuClockSettingConfig</DEFINITION-REF>
                   <PARAMETER-VALUES>
@@ -3094,7 +3169,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
@@ -3740,7 +3815,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
@@ -3759,7 +3834,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
@@ -4025,7 +4100,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>
@@ -4766,7 +4841,7 @@
                             </ECUC-TEXTUAL-PARAM-VALUE>
                             <ECUC-NUMERICAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralClockEnable</DEFINITION-REF>
-                              <VALUE>0</VALUE>
+                              <VALUE>1</VALUE>
                             </ECUC-NUMERICAL-PARAM-VALUE>
                             <ECUC-TEXTUAL-PARAM-VALUE>
                               <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T40D34M30I0R0/Mcu/McuModuleConfiguration/McuModeSettingConf/McuPartitionConfiguration/McuPeripheral/McuPeripheralName</DEFINITION-REF>

@@ -55,7 +55,7 @@
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:ref>
                     <d:ref name="OsIfSystemTimerClockRef" type="REFERENCE" 
-                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_0">
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_Run/CORE_CLK">
                       <a:a name="ENABLE" value="true"/>
                     </d:ref>
                     <d:ref name="OsIfOsCounterRef" type="REFERENCE" >

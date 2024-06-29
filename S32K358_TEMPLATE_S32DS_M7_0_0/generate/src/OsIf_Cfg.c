@@ -117,7 +117,7 @@ extern "C"{
 static const OsIf_ConfigType OsIf_xPredefinedConfig =
 {
     /*.counterId */         0,
-    /*.counterFrequency */  48000000U
+    /*.counterFrequency */  160000000U
 };
 
 #define BASENXP_STOP_SEC_CONFIG_DATA_UNSPECIFIED

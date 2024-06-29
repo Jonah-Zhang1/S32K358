@@ -3,3 +3,6 @@
 /generate/
 /src/
 /Project_Settings/
+/S32K358_TEMPLATE_S32DS_M7_0_0.args
+/makefile
+/objects.mk

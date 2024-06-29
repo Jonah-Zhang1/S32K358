@@ -23,7 +23,8 @@
                      value="VariantPreCompile"/>
               <d:ctr name="GptChannelConfigSet" type="IDENTIFIABLE">
                 <d:lst name="GptChannelConfiguration" type="MAP">
-                  <d:ctr name="GptChannelConfiguration_0" type="IDENTIFIABLE">
+                  <d:ctr name="GptChannelConfiguration_PIT0" 
+                         type="IDENTIFIABLE">
                     <d:var name="GptChannelId" type="INTEGER" value="0">
                       <a:a name="IMPORTER_INFO">
                         <a:v>@CALC</a:v>
@@ -39,7 +40,7 @@
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:var>
                     <d:var name="GptChannelTickFrequency" type="FLOAT" 
-                           value="4.8E7">
+                           value="4.0E7">
                       <a:a name="IMPORTER_INFO">
                         <a:v>@CALC</a:v>
                         <a:v>@DEF</a:v>
@@ -68,6 +69,139 @@
                       </d:ref>
                     </d:ctr>
                   </d:ctr>
+                  <d:ctr name="GptChannelConfiguration_PIT1" 
+                         type="IDENTIFIABLE">
+                    <d:var name="GptChannelId" type="INTEGER" value="1">
+                      <a:a name="IMPORTER_INFO">
+                        <a:v>@DEF</a:v>
+                        <a:v>@CALC</a:v>
+                      </a:a>
+                    </d:var>
+                    <d:lst name="GptChannelEcucPartitionRef"/>
+                    <d:var name="GptHwIp" type="ENUMERATION" value="PIT">
+                      <a:a name="IMPORTER_INFO">
+                        <a:v>@DEF</a:v>
+                        <a:v>@CALC</a:v>
+                      </a:a>
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:var>
+                    <d:ref name="GptModuleRef" type="REFERENCE" 
+                           value="ASPath:/Gpt/Gpt/GptChannelConfigSet/GptPit_1/GptPitChannels_0">
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:ref>
+                    <d:var name="GptChannelMode" type="ENUMERATION" 
+                           value="GPT_CH_MODE_CONTINUOUS">
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:var>
+                    <d:var name="GptChannelTickFrequency" type="FLOAT" 
+                           value="4.0E7">
+                      <a:a name="IMPORTER_INFO">
+                        <a:v>@CALC</a:v>
+                        <a:v>@DEF</a:v>
+                      </a:a>
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:var>
+                    <d:ref name="GptChannelClkSrcRef" type="REFERENCE" 
+                           value="ASPath:/Gpt/Gpt/GptDriverConfiguration/GptClockReferencePoint_0">
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:ref>
+                    <d:var name="GptChannelTickValueMax" type="INTEGER" 
+                           value="4294967295">
+                      <a:a name="IMPORTER_INFO">
+                        <a:v>@DEF</a:v>
+                        <a:v>@CALC</a:v>
+                      </a:a>
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:var>
+                    <d:var name="GptEnableWakeup" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:var>
+                    <d:var name="GptNotification" type="FUNCTION-NAME" 
+                           value="Gpt_Pit1_Notification">
+                      <a:a name="ENABLE" value="true"/>
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:var>
+                    <d:ctr name="GptWakeupConfiguration" type="IDENTIFIABLE">
+                      <a:a name="ENABLE" value="false"/>
+                      <d:ref name="GptWakeupSourceRef" type="REFERENCE" >
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                        <a:a name="VARIANTS" type="Variant">
+                          <variant:pbvcond>
+                            <variant:criterion 
+                                               value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                            <variant:cond>
+                              <variant:tst expr="0"/>
+                            </variant:cond>
+                          </variant:pbvcond>
+                        </a:a>
+                      </d:ref>
+                    </d:ctr>
+                  </d:ctr>
                 </d:lst>
                 <d:lst name="GptPit" type="MAP">
                   <d:ctr name="GptPit_0" type="IDENTIFIABLE">
@@ -86,7 +220,60 @@
                         </variant:pbvcond>
                       </a:a>
                     </d:var>
-                    <d:var name="PitFreezeEnable" type="BOOLEAN" value="true">
+                    <d:var name="PitFreezeEnable" type="BOOLEAN" value="false">
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:var>
+                    <d:lst name="GptPitChannels" type="MAP">
+                      <d:ctr name="GptPitChannels_0" type="IDENTIFIABLE">
+                        <d:var name="GptPitChannel" type="ENUMERATION" 
+                               value="CH_0">
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                        <d:var name="ChainMode" type="BOOLEAN" value="false">
+                          <a:a name="IMPORTER_INFO" value="@DEF"/>
+                          <a:a name="VARIANTS" type="Variant">
+                            <variant:pbvcond>
+                              <variant:criterion 
+                                                 value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                              <variant:cond>
+                                <variant:tst expr="0"/>
+                              </variant:cond>
+                            </variant:pbvcond>
+                          </a:a>
+                        </d:var>
+                      </d:ctr>
+                    </d:lst>
+                  </d:ctr>
+                  <d:ctr name="GptPit_1" type="IDENTIFIABLE">
+                    <d:var name="GptPitModule" type="ENUMERATION" value="PIT_1">
+                      <a:a name="VARIANTS" type="Variant">
+                        <variant:pbvcond>
+                          <variant:criterion 
+                                             value="ASPath:/EB/PostBuildSelectable/PostBuildSelectableCriterion"/>
+                          <variant:cond>
+                            <variant:tst expr="0"/>
+                          </variant:cond>
+                        </variant:pbvcond>
+                      </a:a>
+                    </d:var>
+                    <d:var name="PitFreezeEnable" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
                       <a:a name="VARIANTS" type="Variant">
                         <variant:pbvcond>
                           <variant:criterion 
@@ -318,12 +505,8 @@
                       <a:v>@CALC</a:v>
                     </a:a>
                   </d:var>
-                  <d:var name="GptIsrEnable" type="BOOLEAN" value="false">
-                    <a:a name="IMPORTER_INFO" value="@DEF"/>
-                  </d:var>
-                  <d:var name="GptChannelIsUsed" type="BOOLEAN" value="false">
-                    <a:a name="IMPORTER_INFO" value="@DEF"/>
-                  </d:var>
+                  <d:var name="GptIsrEnable" type="BOOLEAN" value="true"/>
+                  <d:var name="GptChannelIsUsed" type="BOOLEAN" value="true"/>
                 </d:ctr>
                 <d:ctr name="GptHwConfiguration_14" type="IDENTIFIABLE">
                   <d:var name="GptIsrHwId" type="ENUMERATION" value="PIT_1_CH_1">
@@ -928,7 +1111,7 @@
                 <d:lst name="GptClockReferencePoint" type="MAP">
                   <d:ctr name="GptClockReferencePoint_0" type="IDENTIFIABLE">
                     <d:ref name="GptClockReference" type="REFERENCE" 
-                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_0"/>
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_Run/APIS_SLOW_CLK"/>
                   </d:ctr>
                 </d:lst>
               </d:ctr>

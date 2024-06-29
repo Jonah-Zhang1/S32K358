@@ -130,7 +130,7 @@ static const Wdg_ModeType Wdg_OffModeSettings_0_VS_0=
 
 static const Wdg_ModeType Wdg_SlowModeSettings_0_VS_0=
 {
-    (uint32) 0xafc80,
+    (uint32) 0x927c0,
 
     &Wdg_Ipw_SlowModeSettings_0_VS_0
 
@@ -138,7 +138,7 @@ static const Wdg_ModeType Wdg_SlowModeSettings_0_VS_0=
 
 static const Wdg_ModeType Wdg_FastModeSettings_0_VS_0=
 {
-    (uint32) 0x75300,
+    (uint32) 0x61a80,
 
     &Wdg_Ipw_FastModeSettings_0_VS_0
 
@@ -170,8 +170,8 @@ const Wdg_ConfigType Wdg_Config_0_VS_0=
     WDGIF_SLOW_MODE,
     WDG_IPW_INSTANCE0,
 #if (WDG_DIRECT_SERVICE == STD_OFF)
-        (Gpt_ChannelType)GptConf_GptChannelConfiguration_GptChannelConfiguration_0,
-    (uint32)48000,
+        (Gpt_ChannelType)GptConf_GptChannelConfiguration_GptChannelConfiguration_PIT0,
+    (uint32)40000,
     #endif
     {&Wdg_OffModeSettings_0_VS_0, &Wdg_SlowModeSettings_0_VS_0, &Wdg_FastModeSettings_0_VS_0}
 };

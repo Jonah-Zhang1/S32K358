@@ -181,7 +181,7 @@ extern "C"{
 #define GPT_START_SEC_CONFIG_DATA_UNSPECIFIED
 #include "Gpt_MemMap.h"
 
-Gpt_Ipw_HwInstanceConfigType Gpt_Ipw_HwInstanceConfig_PB_VS_0[1U]=
+Gpt_Ipw_HwInstanceConfigType Gpt_Ipw_HwInstanceConfig_PB_VS_0[2U]=
 {
     {
         /** @brief IP type  */
@@ -194,6 +194,18 @@ Gpt_Ipw_HwInstanceConfigType Gpt_Ipw_HwInstanceConfig_PB_VS_0[1U]=
             NULL_PTR
         }
     }
+,
+    {
+        /** @brief IP type  */
+        GPT_PIT_MODULE,
+        /** @brief IP instance */
+        1U,
+        /** @brief IP instance pointer */
+        {
+            &PIT_1_InitConfig_PB_VS_0,
+            NULL_PTR
+        }
+    }
 };
 
 
@@ -202,9 +214,9 @@ Gpt_Ipw_HwInstanceConfigType Gpt_Ipw_HwInstanceConfig_PB_VS_0[1U]=
 /** 
  * @brief   Gpt channels IP related configuration array
  */
-Gpt_Ipw_HwChannelConfigType Gpt_Ipw_ChannelConfig_PB_VS_0[1U] =
+Gpt_Ipw_HwChannelConfigType Gpt_Ipw_ChannelConfig_PB_VS_0[2U] =
 {
-    /** @brief GptChannelConfiguration_0 */
+    /** @brief GptChannelConfiguration_PIT0 */
     {
         /** @brief IP type  */
         GPT_PIT_MODULE,
@@ -215,6 +227,23 @@ Gpt_Ipw_HwChannelConfigType Gpt_Ipw_ChannelConfig_PB_VS_0[1U] =
         /** @brief IP channel pointer */
         {
             &PIT_0_ChannelConfig_PB_VS_0[0U],
+            NULL_PTR,
+            NULL_PTR,
+            NULL_PTR
+        }
+    }
+    ,
+    /** @brief GptChannelConfiguration_PIT1 */
+    {
+        /** @brief IP type  */
+        GPT_PIT_MODULE,
+        /** @brief IP instance */
+        1U,
+        /** @brief IP channel */
+        0U,
+        /** @brief IP channel pointer */
+        {
+            &PIT_1_ChannelConfig_PB_VS_0[0U],
             NULL_PTR,
             NULL_PTR,
             NULL_PTR

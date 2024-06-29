@@ -13,6 +13,7 @@ RM := rm -rf
 -include Project_Settings/Debugger/subdir.mk
 -include MCAL/Wdg_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/WdgIf_TS_T40D34M30I0R0/src/subdir.mk
+-include MCAL/Uart_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/Rte_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/Port_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/Platform_TS_T40D34M30I0R0/startup/src/m7/gcc/subdir.mk
@@ -23,9 +24,16 @@ RM := rm -rf
 -include MCAL/Os_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/Mcu_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/Gpt_TS_T40D34M30I0R0/src/subdir.mk
+-include MCAL/Eth_43_GMAC_TS_T40D34M30I0R0/src/subdir.mk
+-include MCAL/EthTrcv_TS_T40D34M30I0R0/src/subdir.mk
+-include MCAL/EthSwt_TS_T40D34M30I0R0/src/subdir.mk
+-include MCAL/EthIf_TS_T40D34M30I0R0/src/subdir.mk
+-include MCAL/EcuM_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/Dio_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/Det_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/Dem_TS_T40D34M30I0R0/src/subdir.mk
+-include MCAL/Can_43_FLEXCAN_TS_T40D34M30I0R0/src/subdir.mk
+-include MCAL/CanIf_TS_T40D34M30I0R0/src/subdir.mk
 -include MCAL/BaseNXP_TS_T40D34M30I0R0/src/subdir.mk
 -include subdir.mk
 -include objects.mk

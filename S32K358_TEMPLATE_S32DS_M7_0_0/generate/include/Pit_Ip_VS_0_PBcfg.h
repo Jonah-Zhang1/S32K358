@@ -100,7 +100,9 @@ extern "C"
 #include "Gpt_MemMap.h"
 
 extern const Pit_Ip_InstanceConfigType PIT_0_InitConfig_PB_VS_0;
+extern const Pit_Ip_InstanceConfigType PIT_1_InitConfig_PB_VS_0;
 extern const Pit_Ip_ChannelConfigType PIT_0_ChannelConfig_PB_VS_0[1U];
+extern const Pit_Ip_ChannelConfigType PIT_1_ChannelConfig_PB_VS_0[1U];
 
 
 #define GPT_STOP_SEC_CONFIG_DATA_UNSPECIFIED
