@@ -148,7 +148,7 @@ void EthIf_RxIndication(\
                         const Eth_DataType* DataPtr,\
                         uint16 LenByte)
 {
-	User_UartPrintString("EthIf_RxIndication!\r\n");
+	User_UartPrintString("\r\nEthIf_RxIndication!\r\n");
 	print("Receive DataLen: %d\r\n", LenByte);
 	print("Receive FrameType: 0x%x\r\n", FrameType);
 	print("\r\nReceive PhysAddr: \r\n");
@@ -190,7 +190,7 @@ void EthIf_TxConfirmation(uint8 CtrlIdx, \
     ++EthIf_TxConfirmations[CtrlIdx];
     (void)BufIdx;
     (void)Result;
-    User_UartPrintString("EthIf_TxConfirmation!\r\n");
+    //User_UartPrintString("EthIf_TxConfirmation!\r\n");
 }
 
 /*================================================================================================*/

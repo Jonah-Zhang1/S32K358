@@ -126,7 +126,7 @@ const Flexcan_Ip_ConfigType Flexcan_aCtrlConfigPB_VS_0[2U]=
     /* Can Hardware Channel FLEXCAN_0 */
     {
         /* Number Of Message Buffer used .max_num_mb */
-        (uint8)55U,
+        (uint8)2U,
         /*Can Hw filter count* .num_id_filters */
         (Flexcan_Ip_RxFifoIdFilterNumType)0U,
         /* Legacy FIFO ENABLED .is_rx_fifo_needed */
@@ -142,7 +142,7 @@ const Flexcan_Ip_ConfigType Flexcan_aCtrlConfigPB_VS_0[2U]=
         (boolean)FALSE,
         #endif
         /* Loopback enabled .flexcanMode */
-        FLEXCAN_NORMAL_MODE,
+        FLEXCAN_LOOPBACK_MODE,
         /* Controller Options .ctrlOptions */
         (uint32)( FLEXCAN_IP_BUSOFF_RECOVERY_U32 | FLEXCAN_IP_ISO_U32 |FLEXCAN_IP_EACEN_U32),
         /* Can FD RamBlock specified .payload */
@@ -187,7 +187,7 @@ const Flexcan_Ip_ConfigType Flexcan_aCtrlConfigPB_VS_0[2U]=
     /* Can Hardware Channel FLEXCAN_1 */
     {
         /* Number Of Message Buffer used .max_num_mb */
-        (uint8)55U,
+        (uint8)54U,
         /*Can Hw filter count* .num_id_filters */
         (Flexcan_Ip_RxFifoIdFilterNumType)0U,
         /* Legacy FIFO ENABLED .is_rx_fifo_needed */

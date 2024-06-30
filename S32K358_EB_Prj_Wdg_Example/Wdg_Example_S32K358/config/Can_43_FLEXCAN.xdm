@@ -200,9 +200,7 @@
                     <d:var name="CanWakeupSupport" type="BOOLEAN" value="false">
                       <a:a name="IMPORTER_INFO" value="@DEF"/>
                     </d:var>
-                    <d:var name="CanLoopBackMode" type="BOOLEAN" value="false">
-                      <a:a name="IMPORTER_INFO" value="@DEF"/>
-                    </d:var>
+                    <d:var name="CanLoopBackMode" type="BOOLEAN" value="true"/>
                     <d:var name="CanAutoBusOffRecovery" type="BOOLEAN" 
                            value="true"/>
                     <d:var name="CanTrippleSamplingEnable" type="BOOLEAN" 
@@ -1933,7 +1931,7 @@
                       </a:a>
                     </d:ref>
                     <d:var name="CanHwObjectUsesBlock" type="ENUMERATION" 
-                           value="CAN_RAM_BLOCK_2">
+                           value="CAN_RAM_BLOCK_0">
                       <a:a name="ENABLE" value="true"/>
                       <a:a name="VARIANTS" type="Variant">
                         <variant:pbvcond>
@@ -2301,7 +2299,7 @@
                       </a:a>
                     </d:ref>
                     <d:var name="CanHwObjectUsesBlock" type="ENUMERATION" 
-                           value="CAN_RAM_BLOCK_2">
+                           value="CAN_RAM_BLOCK_0">
                       <a:a name="ENABLE" value="true"/>
                       <a:a name="VARIANTS" type="Variant">
                         <variant:pbvcond>
@@ -2434,7 +2432,7 @@
                       </a:a>
                     </d:ref>
                     <d:var name="CanHwObjectUsesBlock" type="ENUMERATION" 
-                           value="CAN_RAM_BLOCK_2">
+                           value="CAN_RAM_BLOCK_0">
                       <a:a name="ENABLE" value="true"/>
                       <a:a name="VARIANTS" type="Variant">
                         <variant:pbvcond>

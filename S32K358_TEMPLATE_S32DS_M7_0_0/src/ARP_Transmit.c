@@ -10,6 +10,7 @@
  *******************************/
 
 #include "ARP_Transmit.h"
+#include "TJA1101.h"
 
 static uint8 myTxbuffer[5];
 static Eth_bufIdxType TmpBufferIdx;
@@ -72,6 +73,7 @@ FUNC(Std_ReturnType, ETH_PUBLIC_CODE) Ethernet_Init
     Eth_RxStatusType RxStatus;
 
     Eth_43_GMAC_Init(NULL_PTR);
+    Eth_TJA1101_InitPhys();
 
     if(Eth_43_GMAC_SetControllerMode(EthConf_EthCtrlConfig_EthCtrlConfig_0, ETH_MODE_ACTIVE) == E_OK)
     {

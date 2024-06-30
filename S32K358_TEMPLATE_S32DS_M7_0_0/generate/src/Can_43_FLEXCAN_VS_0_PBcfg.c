@@ -182,8 +182,8 @@ extern "C"{
 */
 static const uint32 Can_au32HwBufferAddr_Ctrl0[2U]=
 {
-    (FLEXCAN_0_BASE + (uint32)0x0480U),
-    (FLEXCAN_0_BASE + (uint32)0x04c8U)
+    (FLEXCAN_0_BASE + (uint32)0x0080U),
+    (FLEXCAN_0_BASE + (uint32)0x0090U)
 };
 
 /**
@@ -192,7 +192,7 @@ static const uint32 Can_au32HwBufferAddr_Ctrl0[2U]=
 static const uint32 Can_au32HwBufferAddr_Ctrl1[2U]=
 {
     (FLEXCAN_1_BASE + (uint32)0x0480U),
-    (FLEXCAN_1_BASE + (uint32)0x04c8U)
+    (FLEXCAN_1_BASE + (uint32)0x0080U)
 };
 
 
@@ -274,7 +274,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* MainFunction RW period reference */
         (uint8)0xFFU,
         /* Data Payload length */
-        (uint8)64U,
+        (uint8)8U,
         /* Padding value */
         (uint8)0U,
         /* Hardware Filter Count */
@@ -284,7 +284,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Message Buffer is Rx normal */
         CAN_RX_NORMAL,
         /* Buffer Index in Message buffer ram */
-        (uint8)53U,
+        (uint8)0U,
         /* Message buffer address */
         &Can_au32HwBufferAddr_Ctrl0[0U]
     },
@@ -336,7 +336,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* MainFunction RW period reference */
         (uint8)0xFFU,
         /* Data Payload length */
-        (uint8)64U,
+        (uint8)8U,
         /* Padding value */
         (uint8)0U,
         /* Hardware Filter Count */
@@ -346,7 +346,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Message Buffer is Tx normal */
         CAN_TX_NORMAL,
         /* Buffer Index in Message buffer ram */
-        (uint8)54U,
+        (uint8)1U,
         /* Message buffer address */
         &Can_au32HwBufferAddr_Ctrl0[1U]
     },
@@ -367,7 +367,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* MainFunction RW period reference */
         (uint8)0xFFU,
         /* Data Payload length */
-        (uint8)64U,
+        (uint8)8U,
         /* Padding value */
         (uint8)0U,
         /* Hardware Filter Count */
@@ -377,7 +377,7 @@ static const Can_43_FLEXCAN_HwObjectConfigType Can_aHwObjectConfig[CAN_43_FLEXCA
         /* Message Buffer is Tx normal */
         CAN_TX_NORMAL,
         /* Buffer Index in Message buffer ram */
-        (uint8)54U,
+        (uint8)0U,
         /* Message buffer address */
         &Can_au32HwBufferAddr_Ctrl1[1U]
     }

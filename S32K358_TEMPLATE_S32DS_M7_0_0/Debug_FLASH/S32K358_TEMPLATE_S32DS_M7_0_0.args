@@ -223,5 +223,6 @@
 "./src/ARP_Transmit.o"
 "./src/CDD.o"
 "./src/Queue.o"
+"./src/TJA1101.o"
 "./src/main.o"
 "./src/print.o"
