@@ -148,6 +148,17 @@ void EthIf_RxIndication(\
                         const Eth_DataType* DataPtr,\
                         uint16 LenByte)
 {
+	User_UartPrintString("EthIf_RxIndication!\r\n");
+	print("Receive DataLen: %d\r\n", LenByte);
+	print("Receive FrameType: 0x%x\r\n", FrameType);
+	print("\r\nReceive PhysAddr: \r\n");
+	for(int i = 0;i<6;i++)
+		print("0x%x  ", PhysAddrPtr[i]);
+
+	print("\r\nReceive Data:\r\n");
+	for(int i  = 0;i<LenByte;i++)
+		print("%x  ", DataPtr[i]);
+
     /* This is an empty stub function */
     ++EthIf_RxIndications[CtrlIdx];
     EthIf_ChecksumValue[CtrlIdx] = *((uint16 *)(&DataPtr[10U]));
@@ -179,6 +190,7 @@ void EthIf_TxConfirmation(uint8 CtrlIdx, \
     ++EthIf_TxConfirmations[CtrlIdx];
     (void)BufIdx;
     (void)Result;
+    User_UartPrintString("EthIf_TxConfirmation!\r\n");
 }
 
 /*================================================================================================*/

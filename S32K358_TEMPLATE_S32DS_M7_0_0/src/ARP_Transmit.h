@@ -4,8 +4,8 @@
  * Date:
  * 2024/06/23
  * Time:
- * 8：18
- * Author：
+ * 8锛�18
+ * Author:
  * Mei Wen
  *******************************/
 
@@ -23,6 +23,11 @@
 typedef uint32 Eth_bufIdxType;
 
 FUNC(Std_ReturnType, ETH_PUBLIC_CODE) Ethernet_Init
+(
+    void
+);
+
+FUNC(void, ETH_PUBLIC_CODE) TranmitArpFrame
 (
     void
 );

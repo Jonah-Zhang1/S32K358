@@ -135,6 +135,7 @@ void Task_100ms(void)
 
    CanIf_Transmit(CanIfTxPduCfg_CAN0, &TxPdu_Can0);
    CanIf_Transmit(CanIfTxPduCfg_CAN1, &TxPdu_Can1);
+   TranmitArpFrame();
 }
 
 void Task_10ms(void)
@@ -147,12 +148,12 @@ void Task_1000ms(void)
 {
     static unsigned int high = 0;
 
-    if(high <= 1)
+    if(high < 1)
     {
     	high ++;
     	Dio_WriteChannel(DioConf_DioChannel_LED_PTB14, STD_HIGH);
     }
-    else if((high > 1) && (high <= 2))
+    else if((high >= 1) && (high < 2))
     {
     	high ++;
     	Dio_WriteChannel(DioConf_DioChannel_LED_PTB14, STD_LOW);
